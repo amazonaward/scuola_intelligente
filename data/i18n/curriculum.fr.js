@@ -224,7 +224,7 @@ CURRICULUM_I18N.fr = {
   "m2-mat-aree": ["Les aires des polygones","Formules directes et inverses"],
   "m2-mat-pitagora": ["Le théorème de Pythagore","Triangles rectangles et applications"],
   "m2-mat-trasformazioni": ["Les transformations géométriques","Symétries, translations, rotations, similitude"],
-  "m2-sci-chimica": ["Éléments, composés, réactions","Atomes et molécules"],
+  "m2-sci-chimica": ["Chimie : éléments, composés, réactions", "Atomes, molécules et laboratoire de chimie en ligne"],
   "m2-sci-forze-moto": ["Forces et mouvement","Vitesse, accélération, leviers"],
   "m2-sci-apparato-circolatorio": ["L'appareil circulatoire","Le cœur, les vaisseaux sanguins et le sang"],
   "m2-sci-apparato-digerente": ["L'appareil digestif","De la bouche à l'intestin"],

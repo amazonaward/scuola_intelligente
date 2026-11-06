@@ -224,7 +224,7 @@ CURRICULUM_I18N.ro = {
   "m2-mat-aree": ["Ariile poligoanelor","Formule directe și inverse"],
   "m2-mat-pitagora": ["Teorema lui Pitagora","Triunghiuri dreptunghice și aplicații"],
   "m2-mat-trasformazioni": ["Transformările geometrice","Simetrii, translații, rotații, asemănare"],
-  "m2-sci-chimica": ["Elemente, compuși, reacții","Atomi și molecule"],
+  "m2-sci-chimica": ["Chimie: elemente, compuși, reacții", "Atomi, molecule și laborator de chimie online"],
   "m2-sci-forze-moto": ["Forțe și mișcare","Viteză, accelerație, pârghii"],
   "m2-sci-apparato-circolatorio": ["Aparatul circulator","Inima, vasele de sânge și sângele"],
   "m2-sci-apparato-digerente": ["Aparatul digestiv","De la gură la intestin"],
