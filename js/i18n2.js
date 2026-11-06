@@ -2,6 +2,7 @@
 (function () {
   const X = {
     it: {
+      'nav.library': 'Come funziona', 'nav.coding': 'Coding', 'nav.places': 'Storia dei luoghi',
       'g.gcd': 'MCD', 'g.lcm': 'mcm',
       'subj.tec': 'Tecnologia e informatica', 'subj.lat': 'Latino (LEL)',
       'ref.note': 'Programma secondo le Indicazioni nazionali 2025 (D.M. 221/2025), in vigore dall\'a.s. 2026/27 a partire dalle classi prime.',
@@ -31,6 +32,7 @@
       'pt.cat.metalloid': 'Semimetallo', 'pt.cat.nonmetal': 'Non metallo', 'pt.cat.halogen': 'Alogeno', 'pt.cat.noble': 'Gas nobile'
     },
     en: {
+      'nav.library': 'How it works', 'nav.coding': 'Coding', 'nav.places': 'History of places',
       'g.gcd': 'GCD', 'g.lcm': 'LCM',
       'subj.tec': 'Technology & computing', 'subj.lat': 'Latin',
       'ref.note': 'Curriculum based on the Italian National Guidelines 2025 (Ministerial Decree 221/2025), in force from school year 2026/27 starting with first classes.',
@@ -60,6 +62,7 @@
       'pt.cat.metalloid': 'Metalloid', 'pt.cat.nonmetal': 'Non-metal', 'pt.cat.halogen': 'Halogen', 'pt.cat.noble': 'Noble gas'
     },
     fr: {
+      'nav.library': 'Comment ça marche', 'nav.coding': 'Codage', 'nav.places': 'Histoire des lieux',
       'g.gcd': 'PGCD', 'g.lcm': 'PPCM',
       'subj.tec': 'Technologie et informatique', 'subj.lat': 'Latin',
       'ref.note': 'Programme selon les Indications nationales italiennes 2025 (D.M. 221/2025), en vigueur depuis l\'année 2026/27 à partir des premières classes.',
@@ -89,6 +92,7 @@
       'pt.cat.metalloid': 'Métalloïde', 'pt.cat.nonmetal': 'Non-métal', 'pt.cat.halogen': 'Halogène', 'pt.cat.noble': 'Gaz noble'
     },
     ru: {
+      'nav.library': 'Как это устроено', 'nav.coding': 'Программирование', 'nav.places': 'История мест',
       'g.gcd': 'НОД', 'g.lcm': 'НОК',
       'subj.tec': 'Технология и информатика', 'subj.lat': 'Латынь',
       'ref.note': 'Программа по Национальным указаниям Италии 2025 (Министерский декрет 221/2025), действует с 2026/27 учебного года начиная с первых классов.',
@@ -118,6 +122,7 @@
       'pt.cat.metalloid': 'Полуметалл', 'pt.cat.nonmetal': 'Неметалл', 'pt.cat.halogen': 'Галоген', 'pt.cat.noble': 'Благородный газ'
     },
     ro: {
+      'nav.library': 'Cum funcționează', 'nav.coding': 'Programare', 'nav.places': 'Istoria locurilor',
       'g.gcd': 'c.m.m.d.c.', 'g.lcm': 'c.m.m.m.c.',
       'subj.tec': 'Tehnologie și informatică', 'subj.lat': 'Latină',
       'ref.note': 'Programa conform Indicațiilor naționale italiene 2025 (D.M. 221/2025), în vigoare din anul școlar 2026/27 începând cu clasele întâi.',

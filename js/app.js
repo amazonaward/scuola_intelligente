@@ -39,7 +39,7 @@
   function renderChrome() {
     const p = Store.current();
     $('#tagline').textContent = t('app.tagline');
-    $('#nav').innerHTML = `<a href="#/">${t('nav.home')}</a><a href="#/programma">${t('nav.program')}</a><a href="#/storico">${t('nav.history')}</a><a href="#/profili">${t('nav.profiles')}</a>`;
+    $('#nav').innerHTML = `<a href="#/">${t('nav.home')}</a><a href="#/programma">${t('nav.program')}</a><a href="#/libreria">${t('nav.library')}</a><a href="#/coding">${t('nav.coding')}</a><a href="#/luoghi">${t('nav.places')}</a><a href="#/storico">${t('nav.history')}</a><a href="#/profili">${t('nav.profiles')}</a>`;
     $('#who').innerHTML = p ? `<a href="#/profili" class="who" title="${t('profile.switch')}"><span class="av" style="background:${p.color}">${p.avatar}</span><span>${esc(p.name)}</span></a>` : '';
     $('#lang').innerHTML = LANGS.map((l) => `<option value="${l.id}" ${l.id === i18n.lang ? 'selected' : ''}>${l.flag} ${l.name}</option>`).join('');
     $('#search').placeholder = t('search.placeholder');
@@ -54,6 +54,7 @@
     window.scrollTo(0, 0);
     document.querySelectorAll('#nav a').forEach((x) => x.classList.toggle('active', x.getAttribute('href') === '#/' + (page || '')));
     if (!Store.current() && page !== 'profili') return pageProfiles(true);
+    if (window.ZPages && ZPages[page]) { const m = main(); m.innerHTML = ''; m.style.removeProperty('--c'); return ZPages[page](m, a, b); }
     switch (page) {
       case '': case undefined: return pageHome();
       case 'programma': return pageProgram(a);
@@ -124,10 +125,10 @@
     if (!log.length) return null;
     const ul = el('ul', 'log');
     log.forEach((e) => {
-      if (!INDEX[e.topic]) return;
+      if (!INDEX[e.topic] && !(Z.titles[e.topic])) return;
       const d = new Date(e.at);
       const sc = e.score != null ? ` <span class="score ${e.passed === false ? 'bad' : e.score >= 70 ? 'good' : ''}">${e.score}%</span>` : '';
-      ul.appendChild(el('li', '', `<time>${d.toLocaleDateString(i18n.lang)} ${d.toLocaleTimeString(i18n.lang, { hour: '2-digit', minute: '2-digit' })}</time> <span class="ev ev-${e.type}">${t('ev.' + e.type)}</span> <a href="#/t/${e.topic}">${esc(title(e.topic))}</a>${sc}`));
+      ul.appendChild(el('li', '', `<time>${d.toLocaleDateString(i18n.lang)} ${d.toLocaleTimeString(i18n.lang, { hour: '2-digit', minute: '2-digit' })}</time> <span class="ev ev-${e.type}">${t('ev.' + e.type)}</span> <a href="${INDEX[e.topic] ? '#/t/' + e.topic : Z.titles[e.topic].href}">${esc(INDEX[e.topic] ? title(e.topic) : Z.titles[e.topic].title())}</a>${sc}`));
     });
     return ul;
   }
@@ -431,5 +432,11 @@
     window.addEventListener('hashchange', route);
     route();
   }
+  /* API per le sezioni aggiuntive (libreria, coding, luoghi): registrano pagine in window.ZPages */
+  window.Z = { el, esc, shuffle, loadScript, renderSection, lazy, mountVisual, logList, bar, titles: {},
+    /* titolo e link da mostrare nello storico per attività che non sono lezioni del programma */
+    registerTitle(id, href, titleFn) { this.titles[id] = { href, title: titleFn }; },
+    rerender() { route(); } };
+  window.ZPages = window.ZPages || {};
   document.addEventListener('DOMContentLoaded', boot);
 })();
