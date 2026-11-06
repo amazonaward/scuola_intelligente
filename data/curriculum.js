@@ -548,11 +548,11 @@ window.CURRICULUM = {
     'm3-mat-calcolo-letterale', 'm3-mat-equazioni', 'm3-mat-piano-cartesiano', 'm3-mat-cerchio',
     'm3-mat-solidi', 'm3-mat-probabilita', 'm3-sci-struttura-terra-vulcani', 'm3-sci-universo',
     'm3-sci-sistema-nervoso', 'm3-sci-riproduzione-genetica', 'm3-sci-elettricita', 'm3-sci-evoluzione',
-    'm3-sto-prima-guerra-mondiale', 'm3-sto-totalitarismi', 'm3-sto-seconda-guerra-mondiale', 'm3-sto-guerra-fredda',
-    'm3-sto-decolonizzazione', 'm3-sto-globalizzazione', 'm3-geo-pianeta', 'm3-geo-globalizzazione',
-    'm3-geo-asia', 'm3-geo-africa', 'm3-geo-america', 'm3-geo-oceania',
-    'm3-ing-present-perfect', 'm3-ing-conditionals', 'm3-ing-passive', 'm3-ing-reported-speech',
-    'm3-tec-assonometria', 'm3-tec-elettricita-elettronica', 'm3-tec-ia-dati', 'm3-tec-robotica',
-    'm3-lat-casi-funzioni', 'm3-lat-verbo-sum', 'm3-lat-motti-celebri'
+    'm3-sto-prima-guerra-mondiale', 'm3-sto-totalitarismi', 'm3-sto-seconda-guerra-mondiale', 'm3-sto-repubblica-italiana',
+    'm3-sto-guerra-fredda', 'm3-sto-decolonizzazione', 'm3-sto-globalizzazione', 'm3-geo-pianeta',
+    'm3-geo-globalizzazione', 'm3-geo-asia', 'm3-geo-africa', 'm3-geo-america',
+    'm3-geo-oceania', 'm3-ing-present-perfect', 'm3-ing-conditionals', 'm3-ing-passive',
+    'm3-ing-reported-speech', 'm3-tec-assonometria', 'm3-tec-elettricita-elettronica', 'm3-tec-ia-dati',
+    'm3-tec-robotica', 'm3-lat-casi-funzioni', 'm3-lat-verbo-sum', 'm3-lat-motti-celebri'
   ]
 };
