@@ -84,7 +84,7 @@ main.pg-enter { animation: pg-in .42s var(--ease) backwards; }
 .logo:hover .logo-mark { transform: rotate(-10deg) scale(1.08); }
 .logo b { background: linear-gradient(90deg, var(--ink), color-mix(in srgb, var(--accent) 70%, var(--ink))); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
-#nav { display: flex; align-items: center; gap: 2px; margin: 0 auto; min-width: 0; }
+#nav { display: flex; flex: 1 1 auto; justify-content: center; align-items: center; gap: 2px; min-width: 0; overflow: hidden; padding-bottom: 8px; margin-bottom: -8px; }
 #nav a { position: relative; display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 5px 8px 4px; border-radius: 14px; text-decoration: none; color: var(--muted); font-weight: 800; font-size: .74rem; line-height: 1.1; white-space: nowrap; transition: background .2s, color .2s; }
 #nav .ni { display: grid; place-items: center; width: 34px; height: 28px; font-size: 1.25rem; transition: transform .3s var(--spring); }
 #nav a:hover { color: var(--ink); background: color-mix(in srgb, var(--nc) 11%, transparent); }
@@ -113,7 +113,7 @@ main.pg-enter { animation: pg-in .42s var(--ease) backwards; }
 .ubtn { display: flex; align-items: center; gap: 8px; height: 42px; padding: 3px 8px 3px 3px; border: 0; border-radius: 999px; background: var(--surface-2); color: var(--ink); font-weight: 800; cursor: pointer; transition: background .2s; }
 .ubtn:hover, .umenu.open .ubtn { background: var(--surface-3); }
 .ubtn .av { width: 36px; height: 36px; font-size: 1.25rem; }
-.un { max-width: 110px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.un { max-width: 96px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .caret { display: grid; color: var(--muted); transition: transform .25s; } .caret svg { width: 16px; height: 16px; }
 .umenu.open .caret { transform: rotate(180deg); }
 .umenu-pop { position: absolute; right: 0; top: calc(100% + 10px); z-index: 60; width: 286px; padding: 8px; border-radius: 20px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-lg); transform-origin: top right; animation: pop-in .2s var(--ease); }
@@ -166,6 +166,9 @@ footer { flex: none; margin-top: 30px; padding: 34px 16px 44px; text-align: cent
 .foot-logo { display: inline-flex; align-items: center; gap: 8px; font-size: 1.15rem; font-weight: 900; color: var(--ink); }
 .foot-logo .logo-mark { width: 34px; height: 34px; font-size: 1.1rem; border-radius: 11px; }
 .foot-tag { font-weight: 800; color: var(--ink); }
+footer > br { display: none; }
+footer > .contact-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; padding: 8px 16px; border-radius: 999px; background: var(--surface); border: 2px solid var(--line); color: var(--ink); font-weight: 800; text-decoration: none; transition: border-color .2s, transform .2s var(--spring); }
+footer > .contact-link:hover { border-color: var(--accent); transform: translateY(-2px); }
 
 /* =====================================================================
    Elementi comuni
@@ -772,8 +775,15 @@ body[data-page="metodi"] main > h1 { font-size: clamp(1.7rem, 3.6vw, 2.3rem); }
   #nav .ni { width: 28px; }
   #nav a .nl { display: none; }
   #nav a.active .nl { display: inline; font-size: .82rem; padding-right: 4px; }
-  #nav a.active::after { bottom: -12px; }
+  #nav a.active::after { bottom: -4px; }
 }
+.top.nav-compact #nav a { flex-direction: row; gap: 4px; padding: 6px 7px; }
+.top.nav-compact #nav .ni { width: 28px; }
+.top.nav-compact #nav a .nl { display: none; }
+.top.nav-compact #nav a.active .nl { display: inline; font-size: .82rem; padding-right: 4px; }
+.top.nav-compact #nav a.active::after { bottom: -4px; }
+.top.nav-burger .burger { display: inline-grid; }
+.top.nav-burger #nav { visibility: hidden; }
 @media (max-width: 860px) {
   .burger { display: inline-grid; }
   #nav { display: none; }

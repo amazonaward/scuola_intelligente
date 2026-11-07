@@ -80,7 +80,8 @@
     { r: 'luoghi', ic: '🏰', k: 'nav.places', c: '#0ea5e9', top: true },
     { r: 'spazio', ic: '🔭', k: 'nav.space', c: '#4338ca', top: true },
     { r: 'storico', ic: '📈', k: 'nav.history', c: '#ec4899', top: true },
-    { r: 'profili', ic: '👥', k: 'nav.profiles', c: '#14b8a6', top: false }
+    { r: 'profili', ic: '👥', k: 'nav.profiles', c: '#14b8a6', top: false },
+    { r: 'contatti', ic: '✉️', k: 'nav.contacts', c: '#0891b2', top: false }
   ];
   const EXPLORE = [['metodi', '🧮', 'nav.methods', 'explore.methods', '#16a34a'], ['libreria', '⚙️', 'nav.library', 'explore.library', '#f97316'], ['coding', '🤖', 'nav.coding', 'explore.coding', '#8b5cf6'], ['luoghi', '🏰', 'nav.places', 'explore.places', '#0ea5e9'], ['spazio', '🔭', 'nav.space', 'explore.space', '#312e81']];
 
@@ -199,6 +200,8 @@
     const th = el('div', 'toast-host'); th.setAttribute('aria-live', 'polite'); th.setAttribute('role', 'status'); document.body.appendChild(th);
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
+    let rz = 0; window.addEventListener('resize', () => { cancelAnimationFrame(rz); rz = requestAnimationFrame(fitNav); });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitNav);
   }
 
   const navLink = (n, cls) => `<a href="#/${n.r}" data-r="${n.r}" class="${cls}" style="--nc:${n.c}" title="${esc(t(n.k))}"><span class="ni" aria-hidden="true">${n.ic}</span><span class="nl">${t(n.k)}</span></a>`;
@@ -216,7 +219,7 @@
     const pop = $('#umenu-pop');
     if (pop) {
       $('.um-head', pop).innerHTML = p ? `<span class="av big" style="background:${p.color}">${p.avatar}</span><div><b>${esc(p.name)}</b><small>${t('year.' + p.year)}</small></div>` : `<span class="av big">👤</span><div><b>${t('ui.guest')}</b></div>`;
-      $('.um-links', pop).innerHTML = `<a href="#/profili" class="um-row">👥 <span>${t('profile.switch')}</span></a>${p ? `<a href="#/storico" class="um-row">📈 <span>${t('nav.history')}</span></a>` : ''}`;
+      $('.um-links', pop).innerHTML = `<a href="#/profili" class="um-row">👥 <span>${t('profile.switch')}</span></a>${p ? `<a href="#/storico" class="um-row">📈 <span>${t('nav.history')}</span></a>` : ''}<a href="#/contatti" class="um-row">✉️ <span>${t('nav.contacts')}</span></a>`;
       $('.um-lbl', pop).innerHTML = `${ICONS.globe}<span>${t('profile.lang')}</span>`;
     }
     $('#lang').innerHTML = LANGS.map((l) => `<option value="${l.id}" ${l.id === i18n.lang ? 'selected' : ''}>${l.flag} ${l.name}</option>`).join('');
@@ -225,6 +228,14 @@
     const fab = $('.to-top'); if (fab) { fab.setAttribute('aria-label', t('ui.toTop')); fab.title = t('ui.toTop'); }
     applyTheme(currentTheme());
     setActive(curPage);
+    fitNav();
+  }
+  /* se le etichette non ci stanno (lingue con parole lunghe), passa a sole icone e poi al menu a cassetto */
+  function fitNav() {
+    const top = $('header.top'), nav = $('#nav'); if (!top || !nav) return;
+    top.classList.remove('nav-compact', 'nav-burger');
+    const over = () => { if (!nav.offsetParent) return false; let w = 0; for (const a of nav.children) w += a.offsetWidth + 2; return w > nav.clientWidth + 1; };
+    if (over()) { top.classList.add('nav-compact'); if (over()) top.classList.add('nav-burger'); }
   }
   function setActive(page) {
     const key = page === 't' || page === 'anno' ? 'programma' : page || '';

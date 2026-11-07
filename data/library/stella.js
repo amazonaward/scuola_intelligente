@@ -28,16 +28,16 @@
     photons.push({ t: 'sphere', r: 0.05, n: 6, m: 8, pos: pts[0], color: '#fef08a', anim: [ { type: 'path', pts, wave: 'saw', rate: 0.5, phase: i / 9 }, { type: 'blink', fade: true, wave: 'window', from: 0.02, to: 0.98, ramp: 0.05, rate: 0.5, phase: i / 9 } ] });
   }
   const at = (p, shapes) => ({ t: 'group', pos: p, shapes });
-  const P = { nebulosa: [-3.7, 0.3, -1.6], proto: [-1.7, 0.2, -3.7], gigante: [1.8, 0.5, -3.8], planetaria: [4.0, 0.2, -1.2], supernova: [3.7, 0.2, 2.0], neutroni: [1.4, 0, 3.9], buco: [-1.9, 0, 3.6] };
+  const P = { nebulosa: [-3.3, 0.3, -1.3], proto: [-1.5, 0.2, -3.2], gigante: [1.6, 0.5, -3.3], planetaria: [3.5, 0.2, -1.0], supernova: [3.2, 0.2, 1.7], neutroni: [1.2, 0, 3.4], buco: [-1.7, 0, 3.1] };
 
   LIBRARY({
     id: 'stella',
     title: 'La stella',
     intro: 'Una stella è una gigantesca palla di gas caldissimo che <b>brilla di luce propria</b>. Dentro, nel nucleo, l\'idrogeno si trasforma in elio e libera un\'energia enorme. Anche le stelle nascono, vivono e muoiono!',
     model: {
-      rx: 0.5, ry: -0.35, speed: 0.35, height: 480, bg: 'space', fit: 1.05,
+      rx: 0.55, ry: -0.35, speed: 0.35, height: 480, bg: 'space', fit: 0.98,
       parts: [
-        { id: 'involucro', name: 'Stella (come il Sole)', label: 'Stella', color: '#fbbf24', alpha: 0.3, explode: [0, 0, 0],
+        { id: 'involucro', name: 'Stella (come il Sole)', label: 'Stella', color: '#fcd34d', alpha: 0.4, explode: [0, 0, 0],
           info: '<p>Una stella adulta, come il nostro Sole. È fatta soprattutto di <b>idrogeno</b> ed <b>elio</b>, così caldi da essere un gas speciale chiamato <b>plasma</b>. In superficie ci sono circa 5500 °C.</p>',
           more: '<p>Le stelle hanno colori diversi a seconda della temperatura: le più fredde sono <b>rosse</b> (3000 °C), quelle come il Sole <b>gialle</b>, le più calde <b>azzurre</b> (oltre 20 000 °C). Il colore ci dice la temperatura anche a distanze enormi.</p>',
           shapes: [ { t: 'sphere', r: 1.25, n: 22, m: 36 }, { t: 'sphere', r: 1.32, n: 18, m: 30, color: '#fde68a', alpha: 0.12, anim: { type: 'scale', from: 1, to: 1.04, rate: 0.7 } } ] },
@@ -60,11 +60,11 @@
           shapes: radial(0.62, 0.5, '#fb923c', false, 0).map((g) => (delete g._d, g)) },
         { id: 'percorso', name: 'Ciclo di vita', label: 'Ciclo di vita', color: '#c4b5fd', explode: [0, 0, 0], noLabel: true,
           info: '<p>Le stelle cambiano durante la loro vita: nascono in una nube, brillano a lungo e alla fine si trasformano. <b>Come</b> finiscono dipende da <b>quanto sono grandi</b>.</p>',
-          shapes: [ { t: 'pipe', r: 0.02, n: 6, curve: true, pts: [P.nebulosa, P.proto, [0.1, 0.3, -2.4], P.gigante, P.planetaria], color: '#c4b5fd', alpha: 0.5 },
-            { t: 'pipe', r: 0.02, n: 6, curve: true, pts: [P.gigante, [3.5, 0.4, 0.2], P.supernova, P.neutroni], color: '#fca5a5', alpha: 0.5 },
-            { t: 'pipe', r: 0.02, n: 6, curve: true, pts: [P.supernova, [1.0, 0.1, 3.3], P.buco], color: '#fca5a5', alpha: 0.5 } ]
+          shapes: [ { t: 'pipe', r: 0.02, n: 6, curve: true, pts: [P.nebulosa, P.proto, [0.1, 0.3, -2.1], P.gigante, P.planetaria], color: '#c4b5fd', alpha: 0.5 },
+            { t: 'pipe', r: 0.02, n: 6, curve: true, pts: [P.gigante, [3.1, 0.4, 0.2], P.supernova, P.neutroni], color: '#fca5a5', alpha: 0.5 },
+            { t: 'pipe', r: 0.02, n: 6, curve: true, pts: [P.supernova, [0.9, 0.1, 2.9], P.buco], color: '#fca5a5', alpha: 0.5 } ]
             .concat(Array.from({ length: 6 }, (_, k) => ({ t: 'sphere', r: 0.06, n: 6, m: 8, pos: P.nebulosa, color: '#ede9fe',
-              anim: { type: 'path', pts: [P.nebulosa, P.proto, [0.1, 0.3, -2.4], P.gigante, P.planetaria], wave: 'saw', rate: 0.12, phase: k / 6 } }))) },
+              anim: { type: 'path', pts: [P.nebulosa, P.proto, [0.1, 0.3, -2.1], P.gigante, P.planetaria], wave: 'saw', rate: 0.12, phase: k / 6 } }))) },
         { id: 'nebulosa', name: 'Nebulosa (dove nascono le stelle)', label: 'Nebulosa', color: '#c084fc', alpha: 0.32, explode: [-0.6, 0.3, -0.3],
           info: '<p>Le stelle nascono in enormi <b>nubi di gas e polvere</b>, le nebulose. Dove la nube è più fitta, la gravità la fa raggrumare in palle sempre più dense.</p>',
           shapes: [ at(P.nebulosa, [ { t: 'group', anim: { type: 'spin', axis: 'y', rate: 0.15 }, shapes: [
@@ -117,11 +117,11 @@
         html: '<p>La <b>gravità</b> (frecce blu) vorrebbe schiacciare la stella; la <b>pressione</b> del gas caldo (frecce arancioni) spinge verso fuori. Finché c\'è fusione, le due forze si bilanciano e la stella resta stabile per <b>miliardi di anni</b>.</p>' },
       { icon: '☀️', title: 'Il lungo viaggio della luce', focus: ['luce', 'involucro', 'nucleo'], view: { rx: 0.3, ry: -0.6 }, zoom: 1.7,
         html: '<p>L\'energia prodotta al centro esce piano piano, rimbalzando a zig-zag, e infine lascia la superficie come <b>luce</b>. Viaggia nello spazio a 300 000 km al secondo.</p>' },
-      { icon: '☁️', title: 'Nascita: nebulose e protostelle', focus: ['nebulosa', 'protostella', 'percorso'], view: { rx: 0.5, ry: 0.35 },
+      { icon: '☁️', title: 'Nascita: nebulose e protostelle', focus: ['nebulosa', 'protostella', 'percorso'], view: { rx: 0.6, ry: -0.6 },
         html: '<p>Le stelle nascono dentro <b>nebulose</b>, nubi di gas e polvere. La gravità raccoglie il gas in una palla sempre più calda: una <b>protostella</b>, con intorno un disco da cui possono nascere i <b>pianeti</b>.</p>' },
-      { icon: '🔴', title: 'Vecchiaia: la gigante rossa', focus: ['gigante-rossa', 'nana-bianca', 'percorso'], view: { rx: 0.5, ry: -0.9 },
+      { icon: '🔴', title: 'Vecchiaia: la gigante rossa', focus: ['gigante-rossa', 'nana-bianca', 'percorso'], view: { rx: 0.6, ry: 0.1 },
         html: '<p>Quando l\'idrogeno finisce, la stella si gonfia e diventa una <b>gigante rossa</b>. Le stelle come il Sole poi perdono gli strati esterni (una <b>nebulosa planetaria</b>) e resta una piccola <b>nana bianca</b>.</p>' },
-      { icon: '💥', title: 'Le stelle giganti esplodono', focus: ['supernova', 'stella-neutroni', 'buco-nero', 'percorso'], view: { rx: 0.5, ry: -2.2 },
+      { icon: '💥', title: 'Le stelle giganti esplodono', focus: ['supernova', 'stella-neutroni', 'buco-nero', 'percorso'], view: { rx: 0.6, ry: 2.8 },
         html: '<p>Le stelle molto più grandi del Sole finiscono con un\'esplosione: una <b>supernova</b>. Resta una <b>stella di neutroni</b> piccolissima e pesantissima, oppure un <b>buco nero</b>.</p><p class="tip">✨ Gli atomi del tuo corpo sono stati creati dentro stelle antiche: sei fatto di polvere di stelle!</p>' }
     ],
     facts: [
