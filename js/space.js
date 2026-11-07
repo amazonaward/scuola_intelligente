@@ -298,12 +298,27 @@
      ====================================================================== */
   let OBJ = null; const BY = {};
   let loadingObj = null, loadingStars = null;
+  /* testi tradotti: data/space/<lingua>/sistema.js e cielo.js aggiungono SPACE_TR[<lingua>][id] = { kind, lead, facts, html, cur, quiz } */
+  const TR_FIELDS = ['kind', 'lead', 'facts', 'html', 'cur', 'quiz'];
+  const trLoading = {};
+  function loadTr(l) {
+    if (l === 'it') return Promise.resolve();
+    return trLoading[l] || (trLoading[l] = Promise.all(['sistema', 'cielo'].map((f) => Z.loadScript('data/space/' + l + '/' + f + '.js').catch(() => null))));
+  }
+  function applyTr() {
+    const l = i18n.lang, T = (window.SPACE_TR || {})[l] || {};
+    for (const o of OBJ) {
+      if (!o._it) { o._it = {}; for (const f of TR_FIELDS) o._it[f] = o[f]; }
+      const x = l === 'it' ? null : T[o.id];
+      for (const f of TR_FIELDS) o[f] = x && x[f] != null ? x[f] : o._it[f];
+    }
+    return OBJ;
+  }
   function loadObjects() {
-    if (OBJ) return Promise.resolve(OBJ);
     if (!loadingObj) loadingObj = Promise.all([Z.loadScript('data/space/sistema.js'), Z.loadScript('data/space/cielo.js')]).then(() => {
       OBJ = window.SPACE_OBJECTS || []; OBJ.forEach((o) => { BY[o.id] = o; Z.registerTitle('space:' + o.id, '#/spazio/' + o.id, () => objName(o)); }); return OBJ;
     });
-    return loadingObj;
+    return loadingObj.then(() => loadTr(i18n.lang)).then(applyTr);
   }
   let STARS = null;
   function loadStars() {

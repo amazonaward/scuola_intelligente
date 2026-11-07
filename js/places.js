@@ -137,7 +137,9 @@
       CAT.byId[p.id] = p; CAT.list.push(p);
     });
   };
-  window.PLACE = (d) => { STORIES[d.id] = d; (d.eras || []).sort((a, b) => a.from - b.from); };
+  // le traduzioni stanno in data/places/<lingua>/<id>.js e chiamano PLACE({ lang: '<lingua>', ... })
+  const skey = (id, l) => (l && l !== 'it' ? l + ':' : '') + id;
+  window.PLACE = (d) => { STORIES[skey(d.id, d.lang)] = d; (d.eras || []).sort((a, b) => a.from - b.from); };
   window.PLACE_EMPIRES = (o) => { for (const k in o) { o[k].rings = ringsOf(o[k]); EMPIRES[k] = o[k]; } };
 
   function ringsOf(p) {
@@ -155,9 +157,15 @@
   const loadCatalog = () => catP || (catP = Z.loadScript(ROOT + 'index.js').then(() => { registerTitles(); return CAT; }));
   const loadEmpires = () => empP || (empP = Z.loadScript(ROOT + 'empires.js').catch(() => null));
   const storyP = {};
-  function loadStory(id) {
+  function loadIt(id) {
     if (STORIES[id]) return Promise.resolve(STORIES[id]);
     return storyP[id] || (storyP[id] = Z.loadScript(ROOT + id + '.js').then(() => STORIES[id]).catch(() => null));
+  }
+  function loadStory(id) {
+    const l = i18n.lang, k = skey(id, l);
+    if (l === 'it') return loadIt(id);
+    if (STORIES[k]) return Promise.resolve(STORIES[k]);
+    return storyP[k] || (storyP[k] = Z.loadScript(ROOT + l + '/' + id + '.js').then(() => STORIES[k] || loadIt(id)).catch(() => loadIt(id)));
   }
   const nameOf = (p) => (p ? (p.n[LANG_IX[i18n.lang]] || p.n[0]) : '');
   const chain = (p) => { const c = []; while (p) { c.unshift(p); p = CAT.byId[p.parent]; } return c; };
