@@ -79,11 +79,11 @@
       this.canvas.width = w * dpr; this.canvas.height = h * dpr;
       this.canvas.style.height = h + 'px';
       this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      this.W = w; this.H = h;
+      this.W = w; this.H = h; this._dpr = dpr;
       this.invalidate();
     }
     _loop(now) {
-      if (!this.wrap.isConnected) { this._ro.disconnect(); return; }
+      if (!this.wrap.isConnected) { this._ro.disconnect(); if (this.dispose) { try { this.dispose(); } catch (e) { /* ignore */ } } return; }
       const dt = Math.min(0.05, (now - this._last) / 1000); this._last = now;
       if (this.auto) this.ry += dt * (this.autoSpeed || 0.35);
       const visible = this.wrap.getBoundingClientRect();
@@ -178,7 +178,7 @@
      opzioni nuove (facoltative): smooth, specular, shininess, rim, emissive, alpha, bevel, edgeColor, edgeWidth */
   function drawFaces(v, ctx, faces, opts) {
     const o = opts || {};
-    if (glOn(v, ctx) && GL.plainTransform(ctx)) { GL.faces(v, faces, o.color, o); return; }
+    if (glOn(v, ctx) && GL.plainTransform(ctx, v)) { GL.faces(v, faces, o.color, o); return; }
     const color = o.color, edges = o.edges !== false, cull = !!o.cull;
     const list = [];
     for (const f of faces) {

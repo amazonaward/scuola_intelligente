@@ -562,7 +562,7 @@
     ['pluto', 'charon', null, 19591, 6.387, 606, '#a8a29e', NM('Caronte', 'Charon', 'Charon', 'Харон', 'Charon')]
   ].map(([p, id, obj, a, P, r, color, n], i) => ({ p, id, obj, a: a / AU_KM, P, r, color, n, ph: (i * 2.399) % TAU, rank: 0 }));
   { const cnt = {}; MOONS.forEach((m) => { m.rank = cnt[m.p] = (cnt[m.p] || 0) + 1; }); }
-  const SOL_FOCUS = { sun: 4.5, mercury: 0.01, venus: 0.012, earth: 0.008, mars: 0.008, jupiter: 0.05, saturn: 0.045, uranus: 0.02, neptune: 0.012, pluto: 0.006 };
+  const SOL_FOCUS = { sun: 4.5, mercury: 0.01, venus: 0.012, earth: 0.008, mars: 0.008, jupiter: 0.03, saturn: 0.022, uranus: 0.02, neptune: 0.012, pluto: 0.006 };
 
   function makeBelts() {
     const r = rng(7); const belt = [], kuiper = [], trojans = [];
@@ -717,7 +717,8 @@
       // etichette
       if (st.labels) {
         for (const it of items) { const big_ = !it.b.dwarf || it.b.id === st.focus || cam.dist < 30; if (big_) text(ctx, nm(it.b), it.q[0] + it.px + 5, it.q[1] - 1, { color: it.b.dwarf ? '#cbd5e1' : '#f8fafc', size: it.b.id === 'sun' ? 13 : 12 }); }
-        for (const mi of moonItems) if (cam.focal / mi.q[2] * 0.002 > 1) text(ctx, mi.m.n[LI()], mi.q[0] + mi.px + 4, mi.q[1], { color: '#94a3b8', size: 11, weight: 400 });
+        Labels.reset(); for (const it of items) Labels.list.push([it.q[0] + it.px + 3, it.q[1] - 8, it.q[0] + it.px + 70, it.q[1] + 8]);
+        for (const mi of moonItems.slice().sort((a, b) => b.m.r - a.m.r)) if (cam.focal / mi.q[2] * 0.002 > 1) Labels.put(ctx, mi.m.n[LI()], mi.q[0] + mi.px + 4, mi.q[1], { color: '#94a3b8', size: 11, weight: 400 });
         if (wpp < 0.05 && wpp > 0.002) { const q = cam.p([0, 0, 0]); const ang = -0.6; const q2 = cam.p([2.75 * Math.cos(ang), 2.75 * Math.sin(ang), 0]); if (q2) text(ctx, tr('belt'), q2[0], q2[1], { color: 'rgba(253,230,138,.85)', size: 11, align: 'center' }); }
         if (wpp < 1 && wpp > 0.01) { const q2 = cam.p([44 * Math.cos(2.4), 44 * Math.sin(2.4), 0]); if (q2) text(ctx, tr('kuiper'), q2[0], q2[1], { color: 'rgba(186,230,253,.9)', size: 11, align: 'center' }); }
       }

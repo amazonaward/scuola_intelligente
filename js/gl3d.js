@@ -595,9 +595,9 @@ void main() {
     if (ctx && ctx !== view.ctx) return false;
     return true;
   };
-  G.plainTransform = function (ctx) {
+  G.plainTransform = function (ctx, v) {
     const t = ctx.getTransform ? ctx.getTransform() : null; if (!t) return true;
-    const d = window.devicePixelRatio || 1;
+    const d = (v && v._dpr) || window.devicePixelRatio || 1;
     return Math.abs(t.a - d) < 1e-6 && Math.abs(t.d - d) < 1e-6 && Math.abs(t.b) < 1e-6 && Math.abs(t.c) < 1e-6 && Math.abs(t.e) < 1e-6 && Math.abs(t.f) < 1e-6;
   };
 
@@ -737,7 +737,7 @@ void main() {
   /* sfera "a schermo" (ball): x, y, r in px css già proiettati */
   G.ball = function (v, ctx, x, y, r, color, glow) {
     const t = ctx.getTransform ? ctx.getTransform() : { a: 1, b: 0, c: 0, d: 1, e: 0, f: 0 };
-    const dpr = window.devicePixelRatio || 1;
+    const dpr = v._dpr || window.devicePixelRatio || 1;
     // in px css della vista (tiene conto di eventuali translate/scale della scena)
     const X = (t.a * x + t.c * y + t.e) / dpr, Y = (t.b * x + t.d * y + t.f) / dpr, R = Math.max(0.5, r * Math.sqrt(Math.abs(t.a * t.d - t.b * t.c)) / dpr);
     const c = rgba(color);
@@ -888,10 +888,10 @@ void main() {
   }
 
   function drawSprites(v, it, vw, vh) {
-    const prog = P.sprite, u = prog.u, dpr = window.devicePixelRatio || 1;
+    const prog = P.sprite, u = prog.u;
     const list = it.list;
     gl.useProgram(prog.p);
-    gl.uniform2f(u.uPx, vw / dpr, vh / dpr);
+    gl.uniform2f(u.uPx, v.W || vw, (v.W ? vh * v.W / vw : vh));
     lightUniforms(prog, matOf({ specular: 0.45, shininess: 40, rim: 0.25 }), null, null);
     gl.disable(gl.DEPTH_TEST); gl.depthMask(false);
     // prima gli aloni, poi le sfere

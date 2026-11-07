@@ -227,6 +227,7 @@
     if (useGL) { v.wrap.style.background = 'linear-gradient(180deg, #b9d9ff 0%, #e2efff 55%, #f6f9ff 100%)'; GL.setFog(v, '#d6e8ff', 0.16); }
     const N = useGL ? 96 : 52, cells = buildTerrain(N), S = 1.35, VY = 0.9;
     let meshes = null, meshKey = null;
+    v.dispose = () => { if (meshes) meshes.free(); meshes = null; };
     const feats = o.features || {};
     const ids = Object.keys(feats).filter((k) => FEATURES[k]);
     let sel = null;
