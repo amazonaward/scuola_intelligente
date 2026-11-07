@@ -1,6 +1,6 @@
 PLACE({
   id: "abruzzo",
-  names: { it: "Abruzzo", en: "Abruzzo", fr: "Abruzzes", ru: "Абруццо", ro: "Abruzzo" },
+  names: { it: "Abruzzo", en: "Abruzzo", fr: "Abruzzes", ru: "Абруццо", ro: "Abruzzo", de: 'Abruzzen' },
   intro: "L'Abruzzo è la regione delle montagne più alte dell'Appennino: il <b>Gran Sasso</b> e la <b>Maiella</b>. Dai monti al mare Adriatico scendono valli strette, e per secoli i pastori hanno portato le greggi in Puglia lungo i <b>tratturi</b>. Qui vivevano fieri popoli italici, che nella guerra sociale chiamarono per la prima volta «<b>Italia</b>» la loro capitale, Corfinio.",
   start: -650000,
   eras: [

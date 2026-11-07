@@ -1,6 +1,6 @@
 PLACE({
   id: "tunisia",
-  names: { it: "Tunisia", en: "Tunisia", fr: "Tunisie", ru: "Тунис", ro: "Tunisia" },
+  names: { it: "Tunisia", en: "Tunisia", fr: "Tunisie", ru: "Тунис", ro: "Tunisia", de: 'Tunesien' },
   intro: "La Tunisia è il Paese dell'Africa più vicino all'Italia: da Capo Bon alla Sicilia ci sono solo 140 km. Qui sorgeva Cartagine, la grande rivale di Roma; poi vennero Romani, Vandali, Bizantini, Arabi, Ottomani e Francesi. Nel 2011 da qui è partita la «Primavera araba».",
   start: -200000,
   eras: [

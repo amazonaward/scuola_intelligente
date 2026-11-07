@@ -1,6 +1,6 @@
 PLACE({
   id: "india",
-  names: { it: "India", en: "India", fr: "Inde", ru: "Индия", ro: "India" },
+  names: { it: "India", en: "India", fr: "Inde", ru: "Индия", ro: "India", de: 'Indien' },
   intro: "L'India è un enorme subcontinente chiuso a nord dall'Himalaya e circondato dall'Oceano Indiano. È il Paese più popoloso del mondo, con centinaia di lingue e molte religioni: qui sono nati l'induismo, il buddhismo, il giainismo e il sikhismo. Dall'India vengono anche i numeri che usiamo ogni giorno, con lo zero.",
   start: -1500000,
   eras: [

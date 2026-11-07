@@ -1,6 +1,6 @@
 PLACE({
   id: 'italia',
-  names: { it: 'Italia', en: 'Italy', fr: 'Italie', ru: 'Италия', ro: 'Italia' },
+  names: { it: 'Italia', en: 'Italy', fr: 'Italie', ru: 'Италия', ro: 'Italia', de: 'Italien' },
   intro: 'L\'Italia è una penisola lunga e stretta nel mezzo del Mediterraneo: un ponte tra Europa, Africa e Oriente. Per questo vi sono arrivati tantissimi popoli, è nata Roma, e per secoli è stata divisa in molti Stati prima di diventare un unico Paese nel 1861.',
   start: -850000,
   focus: {

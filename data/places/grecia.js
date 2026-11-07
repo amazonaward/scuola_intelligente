@@ -1,6 +1,6 @@
 PLACE({
   id: 'grecia',
-  names: { it: 'Grecia', en: 'Greece', fr: 'Grèce', ru: 'Греция', ro: 'Grecia' },
+  names: { it: 'Grecia', en: 'Greece', fr: 'Grèce', ru: 'Греция', ro: 'Grecia', de: 'Griechenland' },
   intro: 'La Grecia è un mondo di montagne, isole e mare. Qui sono nate la democrazia, la filosofia, il teatro e le Olimpiadi. Dopo Romani, Bizantini e quattro secoli di dominio ottomano, è tornata indipendente nel 1830.',
   start: -700000,
   focus: { atene: '<p><b>Atene</b>, città della dea Atena, ebbe la prima <b>democrazia</b> (508 a.C.) e il Partenone. Dopo secoli da piccola città, nel 1834 diventa la capitale della Grecia moderna.</p>' },

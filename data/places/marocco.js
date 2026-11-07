@@ -1,6 +1,6 @@
 PLACE({
   id: "marocco",
-  names: { it: "Marocco", en: "Morocco", fr: "Maroc", ru: "Марокко", ro: "Maroc" },
+  names: { it: "Marocco", en: "Morocco", fr: "Maroc", ru: "Марокко", ro: "Maroc", de: 'Marokko' },
   intro: "Il Marocco si trova all'angolo nord-ovest dell'Africa, dove il Mediterraneo incontra l'Oceano Atlantico, a soli 14 km dalla Spagna. Ha le montagne dell'Atlante, il deserto del Sahara e città imperiali come Fès e Marrakech. Qui sono stati trovati i resti più antichi di Homo sapiens, e qui vivono da millenni i Berberi (Amazigh).",
   start: -1300000,
   eras: [

@@ -1,6 +1,6 @@
 PLACE({
   id: 'romania',
-  names: { it: 'Romania', en: 'Romania', fr: 'Roumanie', ru: 'Румыния', ro: 'România' },
+  names: { it: 'Romania', en: 'Romania', fr: 'Roumanie', ru: 'Румыния', ro: 'România', de: 'Rumänien' },
   intro: 'La Romania è attraversata dall\'arco dei Carpazi e chiusa dal Danubio e dal Mar Nero. Il suo nome ricorda Roma: qui Traiano conquistò la Dacia e da allora si parla una lingua latina, anche se per secoli la terra fu divisa tra Valacchia, Moldavia e Transilvania.',
   start: -1000000,
   focus: { bucarest: '<p><b>Bucarest</b> compare nei documenti nel 1459 al tempo di <b>Vlad l\'Impalatore</b>. Diventa capitale della Valacchia, poi della Romania unita (1862): per i suoi viali era chiamata la "piccola Parigi".</p>' },

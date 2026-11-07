@@ -1,6 +1,6 @@
 PLACE({
   id: "albania",
-  names: { it: "Albania", en: "Albania", fr: "Albanie", ru: "Албания", ro: "Albania" },
+  names: { it: "Albania", en: "Albania", fr: "Albanie", ru: "Албания", ro: "Albania", de: 'Albanien' },
   intro: "L'Albania si trova proprio di fronte alla Puglia, dall'altra parte del Canale d'Otranto. Gli Albanesi chiamano il loro Paese Shqipëria, «terra delle aquile». Discendenti degli antichi Illiri, hanno conosciuto Greci, Romani, Bizantini, Veneziani e Ottomani, l'eroe Scanderbeg e una delle dittature più chiuse del Novecento.",
   start: -100000,
   eras: [

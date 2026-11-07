@@ -1,6 +1,6 @@
 PLACE({
   id: "trentino-alto-adige",
-  names: { it: "Trentino-Alto Adige", en: "Trentino-South Tyrol", fr: "Trentin-Haut-Adige", ru: "Трентино-Альто-Адидже", ro: "Trentino-Tirolul de Sud" },
+  names: { it: "Trentino-Alto Adige", en: "Trentino-South Tyrol", fr: "Trentin-Haut-Adige", ru: "Трентино-Альто-Адидже", ro: "Trentino-Tirolul de Sud", de: 'Trentino-Südtirol' },
   intro: "Il Trentino-Alto Adige è la terra delle <b>Dolomiti</b> e della valle dell'Adige, la grande strada naturale che porta al <b>passo del Brennero</b>, il valico più basso delle Alpi. Per questo qui si sono sempre incontrati il mondo latino e quello tedesco: oggi si parlano italiano, tedesco e ladino, e le due province di Trento e Bolzano sono autonome.",
   start: -14000,
   eras: [

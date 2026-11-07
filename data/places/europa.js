@@ -1,6 +1,6 @@
 PLACE({
   id: "europa",
-  names: { it: "Europa", en: "Europe", fr: "Europe", ru: "Европа", ro: "Europa" },
+  names: { it: "Europa", en: "Europe", fr: "Europe", ru: "Европа", ro: "Europa", de: 'Europa' },
   intro: "L'Europa è un continente piccolo, pieno di penisole, isole, fiumi e mari interni: per questo popoli diversi hanno potuto viaggiare, commerciare e combattere tra loro molto spesso. Qui sono nati la democrazia greca, il diritto romano, le università, la stampa, la scienza moderna e la rivoluzione industriale; ma anche due guerre mondiali. Oggi gran parte dell'Europa è unita nell'<b>Unione Europea</b>.",
   start: -1200000,
   focus: {

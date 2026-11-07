@@ -1,6 +1,6 @@
 PLACE({
   id: 'slovenia',
-  names: { it: 'Slovenia', en: 'Slovenia', fr: 'Slovénie', ru: 'Словения', ro: 'Slovenia' },
+  names: { it: 'Slovenia', en: 'Slovenia', fr: 'Slovénie', ru: 'Словения', ro: 'Slovenia', de: 'Slowenien' },
   intro: 'La Slovenia è un piccolo Paese tra Alpi, Carso, pianura pannonica e un pezzetto di mare Adriatico, al confine con l\'Italia. Per mille anni gli Sloveni vissero sotto i Franchi e poi gli Asburgo; dopo la Prima guerra mondiale entrarono nella Jugoslavia. Dal 1991 sono indipendenti e oggi la Slovenia fa parte dell\'UE.',
   start: -250000,
   eras: [

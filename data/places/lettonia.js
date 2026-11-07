@@ -1,6 +1,6 @@
 PLACE({
   id: 'lettonia',
-  names: { it: 'Lettonia', en: 'Latvia', fr: 'Lettonie', ru: 'Латвия', ro: 'Letonia' },
+  names: { it: 'Lettonia', en: 'Latvia', fr: 'Lettonie', ru: 'Латвия', ro: 'Letonia', de: 'Lettland' },
   intro: 'La Lettonia è il Paese baltico di mezzo, attraversato dal fiume Daugava che sfocia nel golfo di Riga. I Lettoni parlano una lingua baltica, molto antica e parente del lituano. Dopo secoli di dominio tedesco, polacco, svedese e russo, sono diventati indipendenti nel 1918 e di nuovo nel 1991. Oggi la Lettonia fa parte dell\'UE.',
   start: -9000,
   eras: [

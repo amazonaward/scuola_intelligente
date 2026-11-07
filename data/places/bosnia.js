@@ -1,6 +1,6 @@
 PLACE({
   id: "bosnia",
-  names: { it: "Bosnia ed Erzegovina", en: "Bosnia and Herzegovina", fr: "Bosnie-Herzégovine", ru: "Босния и Герцеговина", ro: "Bosnia și Herțegovina" },
+  names: { it: "Bosnia ed Erzegovina", en: "Bosnia and Herzegovina", fr: "Bosnie-Herzégovine", ru: "Босния и Герцеговина", ro: "Bosnia și Herțegovina", de: 'Bosnien und Herzegowina' },
   intro: "La Bosnia ed Erzegovina è un Paese di montagne, boschi e fiumi verdi come la Drina e la Neretva. Al centro dei Balcani, è sempre stata un luogo d'incontro tra Oriente e Occidente: qui convivono da secoli Bosgnacchi musulmani, Serbi ortodossi e Croati cattolici, a volte in pace, a volte in guerra.",
   start: -300000,
   eras: [

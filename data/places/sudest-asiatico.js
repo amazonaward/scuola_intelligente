@@ -1,6 +1,6 @@
 PLACE({
   id: "sudest-asiatico",
-  names: { it: "Sud-est asiatico", en: "Southeast Asia", fr: "Asie du Sud-Est", ru: "Юго-Восточная Азия", ro: "Asia de Sud-Est" },
+  names: { it: "Sud-est asiatico", en: "Southeast Asia", fr: "Asie du Sud-Est", ru: "Юго-Восточная Азия", ro: "Asia de Sud-Est", de: 'Südostasien' },
   intro: "Il Sud-est asiatico è fatto di una penisola (Indocina: Myanmar, Thailandia, Laos, Cambogia, Vietnam, Malesia) e di migliaia di isole (Indonesia, Filippine). Foreste tropicali, vulcani, risaie e mari caldi dove soffiano i <b>monsoni</b>. Qui si sono incontrate le culture dell'India e della Cina, poi l'Islam e gli Europei, attirati dalle <b>spezie</b>: chiodi di garofano, noce moscata, pepe.",
   start: -1800000,
   eras: [

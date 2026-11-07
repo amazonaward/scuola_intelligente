@@ -1,6 +1,6 @@
 PLACE({
   id: "macedonia-nord",
-  names: { it: "Macedonia del Nord", en: "North Macedonia", fr: "Macédoine du Nord", ru: "Северная Македония", ro: "Macedonia de Nord" },
+  names: { it: "Macedonia del Nord", en: "North Macedonia", fr: "Macédoine du Nord", ru: "Северная Македония", ro: "Macedonia de Nord", de: 'Nordmazedonien' },
   intro: "La Macedonia del Nord è un Paese di montagne e di laghi, senza mare, attraversato dal fiume Vardar. Sul lago di Ocrida, uno dei più antichi del mondo, sono nati alfabeti e scuole medievali; per secoli questa terra è stata contesa tra Bizantini, Bulgari, Serbi e Ottomani, e il suo stesso nome è stato a lungo una questione con la Grecia.",
   start: -100000,
   eras: [

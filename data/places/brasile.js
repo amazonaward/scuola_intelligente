@@ -1,6 +1,6 @@
 PLACE({
   id: "brasile",
-  names: { it: "Brasile", en: "Brazil", fr: "Brésil", ru: "Бразилия", ro: "Brazilia" },
+  names: { it: "Brasile", en: "Brazil", fr: "Brésil", ru: "Бразилия", ro: "Brazilia", de: 'Brasilien' },
   intro: "Il Brasile è il Paese più grande del Sud America: contiene gran parte della foresta amazzonica, il fiume più ricco d'acqua del mondo e lunghissime spiagge sull'Atlantico. Abitato da migliaia di anni da popoli indigeni, fu colonia del Portogallo, poi un impero e infine una repubblica. Oggi è un Paese di 210 milioni di persone, figlie di indigeni, Europei (tanti Italiani!), Africani e Asiatici.",
   start: -30000,
   eras: [

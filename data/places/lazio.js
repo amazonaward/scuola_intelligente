@@ -1,6 +1,6 @@
 PLACE({
   id: 'lazio',
-  names: { it: 'Lazio', en: 'Lazio', fr: 'Latium', ru: 'Лацио', ro: 'Lazio' },
+  names: { it: 'Lazio', en: 'Lazio', fr: 'Latium', ru: 'Лацио', ro: 'Lazio', de: 'Latium' },
   intro: 'Il Lazio (Latium) è la terra dei Latini, dove è nata Roma. Da qui è partito l\'Impero romano, qui c\'è il centro della Chiesa cattolica, e Roma è la capitale d\'Italia dal 1871.',
   start: -600000,
   focus: { roma: '<p><b>Roma</b>: fondata secondo la leggenda il 21 aprile 753 a.C. da Romolo; capitale di un Impero, poi città dei Papi per più di mille anni e capitale d\'Italia dal 1871. La chiamano "Città eterna".</p>' },

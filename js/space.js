@@ -10,11 +10,11 @@
   const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
   const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const LI = () => Math.max(0, ['it', 'en', 'fr', 'ru', 'ro'].indexOf(i18n.lang));
+  const LI = () => Math.max(0, ['it', 'en', 'fr', 'ru', 'ro', 'de'].indexOf(i18n.lang));
   const tr = (k, v) => t('sp.' + k, v);
 
   /* ======================================================================
-     Testi dell'interfaccia (5 lingue)
+     Testi dell'interfaccia (6 lingue)
      ====================================================================== */
   const STR = {
     it: {
@@ -146,6 +146,32 @@
       dayN: 'Zi', nightN: 'Noapte', twilight: 'Amurg', viewOf: 'Vedere', moons: 'Sateliți', note: 'Notă', vis: 'Vizibil', trail: 'Urme',
       galCenter: 'Centrul galactic', sunOrbit: 'Orbita Soarelui', armPer: 'Brațul Perseu', armSag: 'Brațul Săgetător-Carina', armSct: 'Brațul Scutul-Centaur', armNor: 'Brațul Echerul și Exterior', armOri: 'Brațul Orion', bar: 'Bara centrală',
       kuiper: 'Centura Kuiper', belt: 'Centura de asteroizi', trojans: 'Troienii lui Jupiter', oort: 'Norul lui Oort', cmb: 'Marginea Universului observabil', web: 'Rețeaua cosmică', virgo: 'Roiul Fecioarei', lania: 'Superroiul Laniakea', coma: 'Roiul Coma'
+    },
+    de: {
+      title: 'Weltall', sub: 'Echte Planeten, Sterne und Galaxien an ihren echten Positionen. Ziehen zum Drehen, Mausrad oder zwei Finger zum Zoomen, tippe auf ein Objekt, um es kennenzulernen.',
+      'v.solar': 'Sonnensystem', 'v.stars': 'Nahe Sterne', 'v.cosmos': 'Reise durch den Kosmos', 'v.sky': 'Der Himmel heute Abend',
+      'vd.solar': 'Echte Umlaufbahnen, berechnet für jedes Datum: Wähle einen Tag und schau, wo die Planeten stehen.',
+      'vd.stars': 'Die Sterne an ihren echten Positionen in 3D. Von der Erde aus siehst du die Sternbilder; flieg weg, und sie verzerren sich!',
+      'vd.cosmos': 'Von der Erde bis zum Rand des beobachtbaren Universums, mit einer Skala in Lichtjahren.',
+      'vd.sky': 'Der Himmel über deiner Stadt an jedem Tag und zu jeder Uhrzeit, mit Sternen, Planeten und Mond.',
+      'cat.all': 'Alle', 'cat.sun': 'Sonne', 'cat.planet': 'Planeten', 'cat.dwarf': 'Zwergplaneten', 'cat.moon': 'Monde', 'cat.comet': 'Kometen',
+      'cat.star': 'Sterne', 'cat.nebula': 'Nebel und Sternhaufen', 'cat.galaxy': 'Galaxien', 'cat.blackhole': 'Schwarze Löcher',
+      catalog: 'Katalog des Universums', find: 'Einen Planeten, einen Stern suchen…', open: 'Karte öffnen', fly: 'Hierher fliegen', lookHere: 'Den Himmel von hier aus sehen',
+      fromEarth: 'Blick von der Erde', realSize: 'Echte Größen', labels: 'Namen', lines: 'Sternbilder', today: 'Heute', now: 'Jetzt',
+      play: 'Start', pause: 'Pause', speed: 'Tempo', date: 'Datum', time: 'Uhrzeit', city: 'Stadt', dome: 'Kuppel', horizon: 'Horizont',
+      atmo: 'Tageslicht', ecliptic: 'Ekliptik', grid: 'Gitter', distSun: 'Entfernung von der Sonne', distEarth: 'Entfernung von der Erde', light: 'Das Licht braucht',
+      type: 'Typ', temp: 'Temperatur', lum: 'Leuchtkraft', radius: 'Radius', mag: 'Helligkeit von der Erde aus (Magnitude)', con: 'Sternbild', desig: 'Bezeichnung',
+      facts: 'Wichtige Daten', cur: 'Wusstest du schon?', compare: 'Wie groß ist es?', quiz: 'Teste dich selbst', lessons: 'Passende Lektionen', see3d: 'In 3D ansehen',
+      back: 'Weltall', markDone: 'Ich habe diese Karte gelernt', done: 'Gelernt!', below: 'Unter dem Horizont', above: 'Über dem Horizont', alt: 'Höhe', az: 'Richtung',
+      loading: 'Das Universum wird geladen…', scale: 'Maßstab', you: 'Du bist hier', illus: 'Illustration', moonsNote: 'Die Positionen der Monde (außer unserem) sind nur ungefähr.',
+      tap: 'Tippe auf ein Objekt', hint: 'Ziehen · zoomen mit Mausrad oder zwei Fingern · tippen', full: 'Vollbild', reset: 'Neu beginnen', objects: '{n} Objekte',
+      daylight: 'Die Sonne steht hoch: Ihr Licht verdeckt die Sterne. Schalte „Tageslicht“ aus, um sie trotzdem zu sehen.', sunSet: 'Die Sonne ist unter dem Horizont.',
+      ly: 'Lichtjahre', ly1: 'Lichtjahr', au: 'AE', km: 'km', times: 'mal die Sonne', sunLike: 'wie die Sonne', yrs: 'Jahre', days: 'Tage', hours: 'Stunden', min: 'Minuten', sec: 'Sekunden',
+      'st.earth': 'Erde', 'st.solar': 'Sonnensystem', 'st.oort': 'Oortsche Wolke', 'st.stars': 'Nahe Sterne', 'st.mw': 'Milchstraße', 'st.lg': 'Lokale Gruppe', 'st.uni': 'Beobachtbares Universum',
+      card: 'N', cardE: 'O', cardS: 'S', cardW: 'W', posFrom: 'Standpunkt', nearSun: 'die Sonne', moonPhase: 'Mond', planets: 'Planeten', notVisible: 'Von hier nicht sichtbar',
+      dayN: 'Tag', nightN: 'Nacht', twilight: 'Dämmerung', viewOf: 'Ansicht', moons: 'Monde', note: 'Hinweis', vis: 'Sichtbar', trail: 'Spuren',
+      galCenter: 'Zentrum der Galaxis', sunOrbit: 'Bahn der Sonne', armPer: 'Perseus-Arm', armSag: 'Schütze-Kiel-Arm', armSct: 'Schild-Zentaur-Arm', armNor: 'Winkelmaß-Arm und äußerer Arm', armOri: 'Orion-Arm', bar: 'Zentraler Balken',
+      kuiper: 'Kuipergürtel', belt: 'Asteroidengürtel', trojans: 'Jupiter-Trojaner', oort: 'Oortsche Wolke', cmb: 'Rand des beobachtbaren Universums', web: 'Kosmisches Netz', virgo: 'Virgo-Haufen', lania: 'Laniakea-Superhaufen', coma: 'Coma-Haufen'
     }
   };
   for (const l in STR) { I18N[l] = I18N[l] || {}; for (const k in STR[l]) I18N[l]['sp.' + k] = STR[l][k]; }
@@ -159,7 +185,7 @@
     try { return n.toLocaleString(i18n.lang === 'en' ? 'en-GB' : i18n.lang, { maximumFractionDigits: d, minimumFractionDigits: 0 }); } catch (e) { return String(Math.round(n)); }
   }
   /* numero "grande" con parole (milioni, miliardi) */
-  const BIG = { it: ['mila', 'milioni', 'miliardi'], en: ['thousand', 'million', 'billion'], fr: ['mille', 'millions', 'milliards'], ru: ['тыс.', 'млн', 'млрд'], ro: ['mii', 'milioane', 'miliarde'] };
+  const BIG = { it: ['mila', 'milioni', 'miliardi'], en: ['thousand', 'million', 'billion'], fr: ['mille', 'millions', 'milliards'], ru: ['тыс.', 'млн', 'млрд'], ro: ['mii', 'milioane', 'miliarde'], de: ['Tausend', 'Millionen', 'Milliarden'] };
   function big(n) {
     const w = BIG[i18n.lang] || BIG.it;
     if (n >= 1e9) return fmt(n / 1e9, n >= 1e10 ? 0 : 1) + ' ' + w[2];
@@ -528,7 +554,8 @@
     en: { ps1: '1 day per second', psN: '{n} days per second', psH: '1 hour per second', psM: '{n} minutes per second', focus: 'Centre on', zoomIn: 'Zoom in', zoomOut: 'Zoom out' },
     fr: { ps1: '1 jour par seconde', psN: '{n} jours par seconde', psH: '1 heure par seconde', psM: '{n} minutes par seconde', focus: 'Centrer', zoomIn: 'Rapprocher', zoomOut: 'Éloigner' },
     ru: { ps1: '1 день в секунду', psN: '{n} дн. в секунду', psH: '1 час в секунду', psM: '{n} мин. в секунду', focus: 'Центр', zoomIn: 'Ближе', zoomOut: 'Дальше' },
-    ro: { ps1: '1 zi pe secundă', psN: '{n} zile pe secundă', psH: '1 oră pe secundă', psM: '{n} minute pe secundă', focus: 'Centrează', zoomIn: 'Apropie', zoomOut: 'Depărtează' }
+    ro: { ps1: '1 zi pe secundă', psN: '{n} zile pe secundă', psH: '1 oră pe secundă', psM: '{n} minute pe secundă', focus: 'Centrează', zoomIn: 'Apropie', zoomOut: 'Depărtează' },
+    de: { ps1: '1 Tag pro Sekunde', psN: '{n} Tage pro Sekunde', psH: '1 Stunde pro Sekunde', psM: '{n} Minuten pro Sekunde', focus: 'Zentrieren', zoomIn: 'Heranzoomen', zoomOut: 'Herauszoomen' }
   };
   for (const l in STR2) for (const k in STR2[l]) I18N[l]['sp.' + k] = STR2[l][k];
   const perSec = (d) => (d < 1 / 24 + 1e-9 ? (d * 1440 < 59 ? tr('psM', { n: fmt(d * 1440, 0) }) : tr('psH')) : d === 1 ? tr('ps1') : tr('psN', { n: fmt(d, 0) }));
@@ -536,45 +563,45 @@
   /* ======================================================================
      SCENA: Sistema Solare (UA, coordinate eclittiche J2000)
      ====================================================================== */
-  const NM = (it, en, fr, ru, ro) => [it, en || it, fr || it, ru || it, ro || it];
+  const NM = (it, en, fr, ru, ro, de) => [it, en || it, fr || it, ru || it, ro || it, de || en || it];
   const SOLB = [
-    { id: 'sun', obj: 'sole', r: 696000, color: '#fdb813', n: NM('Sole', 'Sun', 'Soleil', 'Солнце', 'Soare') },
-    { id: 'mercury', obj: 'mercurio', r: 2440, color: '#b5ada5', n: NM('Mercurio', 'Mercury', 'Mercure', 'Меркурий', 'Mercur') },
-    { id: 'venus', obj: 'venere', r: 6052, color: '#e9c886', n: NM('Venere', 'Venus', 'Vénus', 'Венера', 'Venus') },
-    { id: 'earth', obj: 'terra', r: 6371, color: '#3f7fe0', n: NM('Terra', 'Earth', 'Terre', 'Земля', 'Pământ') },
-    { id: 'mars', obj: 'marte', r: 3390, color: '#d9573b', n: NM('Marte', 'Mars', 'Mars', 'Марс', 'Marte') },
-    { id: 'jupiter', obj: 'giove', r: 69911, color: '#d8a878', n: NM('Giove', 'Jupiter', 'Jupiter', 'Юпитер', 'Jupiter') },
-    { id: 'saturn', obj: 'saturno', r: 58232, color: '#e3c98e', n: NM('Saturno', 'Saturn', 'Saturne', 'Сатурн', 'Saturn') },
-    { id: 'uranus', obj: 'urano', r: 25362, color: '#9bd8e6', n: NM('Urano', 'Uranus', 'Uranus', 'Уран', 'Uranus') },
-    { id: 'neptune', obj: 'nettuno', r: 24622, color: '#4f6df5', n: NM('Nettuno', 'Neptune', 'Neptune', 'Нептун', 'Neptun') },
-    { id: 'pluto', obj: 'plutone', r: 1188, color: '#cfb497', dwarf: true, n: NM('Plutone', 'Pluto', 'Pluton', 'Плутон', 'Pluto') },
-    { id: 'ceres', obj: 'cerere', r: 470, color: '#9ca3af', dwarf: true, n: NM('Cerere', 'Ceres', 'Cérès', 'Церера', 'Ceres') },
-    { id: 'eris', obj: 'eris', r: 1163, color: '#e5e7eb', dwarf: true, n: NM('Eris', 'Eris', 'Éris', 'Эрида', 'Eris') },
-    { id: 'haumea', obj: 'haumea', r: 780, color: '#f1f5f9', dwarf: true, n: NM('Haumea', 'Haumea', 'Hauméa', 'Хаумеа', 'Haumea') }
+    { id: 'sun', obj: 'sole', r: 696000, color: '#fdb813', n: NM('Sole', 'Sun', 'Soleil', 'Солнце', 'Soare', 'Sonne') },
+    { id: 'mercury', obj: 'mercurio', r: 2440, color: '#b5ada5', n: NM('Mercurio', 'Mercury', 'Mercure', 'Меркурий', 'Mercur', 'Merkur') },
+    { id: 'venus', obj: 'venere', r: 6052, color: '#e9c886', n: NM('Venere', 'Venus', 'Vénus', 'Венера', 'Venus', 'Venus') },
+    { id: 'earth', obj: 'terra', r: 6371, color: '#3f7fe0', n: NM('Terra', 'Earth', 'Terre', 'Земля', 'Pământ', 'Erde') },
+    { id: 'mars', obj: 'marte', r: 3390, color: '#d9573b', n: NM('Marte', 'Mars', 'Mars', 'Марс', 'Marte', 'Mars') },
+    { id: 'jupiter', obj: 'giove', r: 69911, color: '#d8a878', n: NM('Giove', 'Jupiter', 'Jupiter', 'Юпитер', 'Jupiter', 'Jupiter') },
+    { id: 'saturn', obj: 'saturno', r: 58232, color: '#e3c98e', n: NM('Saturno', 'Saturn', 'Saturne', 'Сатурн', 'Saturn', 'Saturn') },
+    { id: 'uranus', obj: 'urano', r: 25362, color: '#9bd8e6', n: NM('Urano', 'Uranus', 'Uranus', 'Уран', 'Uranus', 'Uranus') },
+    { id: 'neptune', obj: 'nettuno', r: 24622, color: '#4f6df5', n: NM('Nettuno', 'Neptune', 'Neptune', 'Нептун', 'Neptun', 'Neptun') },
+    { id: 'pluto', obj: 'plutone', r: 1188, color: '#cfb497', dwarf: true, n: NM('Plutone', 'Pluto', 'Pluton', 'Плутон', 'Pluto', 'Pluto') },
+    { id: 'ceres', obj: 'cerere', r: 470, color: '#9ca3af', dwarf: true, n: NM('Cerere', 'Ceres', 'Cérès', 'Церера', 'Ceres', 'Ceres') },
+    { id: 'eris', obj: 'eris', r: 1163, color: '#e5e7eb', dwarf: true, n: NM('Eris', 'Eris', 'Éris', 'Эрида', 'Eris', 'Eris') },
+    { id: 'haumea', obj: 'haumea', r: 780, color: '#f1f5f9', dwarf: true, n: NM('Haumea', 'Haumea', 'Hauméa', 'Хаумеа', 'Haumea', 'Haumea') }
   ];
   /* lune: pianeta, id, scheda, semiasse (km), periodo (giorni, negativo = retrogrado), raggio (km), colore, nomi */
   const MOONS = [
-    ['earth', 'moon', 'luna', 384400, 27.3217, 1737, '#d4d4d8', NM('Luna', 'Moon', 'Lune', 'Луна', 'Luna')],
-    ['mars', 'phobos', null, 9376, 0.31891, 11, '#8b7d6b', NM('Phobos', 'Phobos', 'Phobos', 'Фобос', 'Phobos')],
-    ['mars', 'deimos', null, 23463, 1.26244, 6, '#a39684', NM('Deimos', 'Deimos', 'Déimos', 'Деймос', 'Deimos')],
-    ['jupiter', 'io', 'io', 421700, 1.769, 1822, '#f2d046', NM('Io', 'Io', 'Io', 'Ио', 'Io')],
-    ['jupiter', 'europa', 'europa', 671034, 3.551, 1561, '#e7dcc8', NM('Europa', 'Europa', 'Europe', 'Европа', 'Europa')],
-    ['jupiter', 'ganymede', 'ganimede', 1070412, 7.155, 2634, '#a3a091', NM('Ganimede', 'Ganymede', 'Ganymède', 'Ганимед', 'Ganymede')],
-    ['jupiter', 'callisto', 'callisto', 1882709, 16.689, 2410, '#7a7064', NM('Callisto', 'Callisto', 'Callisto', 'Каллисто', 'Callisto')],
-    ['saturn', 'mimas', null, 185539, 0.942, 198, '#cfcfcf', NM('Mimas', 'Mimas', 'Mimas', 'Мимас', 'Mimas')],
-    ['saturn', 'enceladus', 'encelado', 238042, 1.370, 252, '#f8fafc', NM('Encelado', 'Enceladus', 'Encelade', 'Энцелад', 'Enceladus')],
-    ['saturn', 'tethys', null, 294672, 1.888, 531, '#e5e5e5', NM('Teti', 'Tethys', 'Téthys', 'Тефия', 'Tethys')],
-    ['saturn', 'dione', null, 377415, 2.737, 561, '#d6d3d1', NM('Dione', 'Dione', 'Dioné', 'Диона', 'Dione')],
-    ['saturn', 'rhea', null, 527068, 4.518, 764, '#d4d4d4', NM('Rea', 'Rhea', 'Rhéa', 'Рея', 'Rhea')],
-    ['saturn', 'titan', 'titano', 1221870, 15.945, 2575, '#e0a458', NM('Titano', 'Titan', 'Titan', 'Титан', 'Titan')],
-    ['saturn', 'iapetus', null, 3560820, 79.32, 734, '#a8a29e', NM('Giapeto', 'Iapetus', 'Japet', 'Япет', 'Iapetus')],
-    ['uranus', 'miranda', null, 129900, 1.413, 236, '#cbd5e1', NM('Miranda', 'Miranda', 'Miranda', 'Миранда', 'Miranda')],
-    ['uranus', 'ariel', null, 190900, 2.520, 579, '#d1d5db', NM('Ariel', 'Ariel', 'Ariel', 'Ариэль', 'Ariel')],
-    ['uranus', 'umbriel', null, 266000, 4.144, 585, '#9ca3af', NM('Umbriel', 'Umbriel', 'Umbriel', 'Умбриэль', 'Umbriel')],
-    ['uranus', 'titania', null, 435910, 8.706, 789, '#d6d3d1', NM('Titania', 'Titania', 'Titania', 'Титания', 'Titania')],
-    ['uranus', 'oberon', null, 583520, 13.463, 761, '#c4b5a5', NM('Oberon', 'Oberon', 'Obéron', 'Оберон', 'Oberon')],
-    ['neptune', 'triton', 'tritone', 354759, -5.877, 1353, '#cbd5e1', NM('Tritone', 'Triton', 'Triton', 'Тритон', 'Triton')],
-    ['pluto', 'charon', null, 19591, 6.387, 606, '#a8a29e', NM('Caronte', 'Charon', 'Charon', 'Харон', 'Charon')]
+    ['earth', 'moon', 'luna', 384400, 27.3217, 1737, '#d4d4d8', NM('Luna', 'Moon', 'Lune', 'Луна', 'Luna', 'Mond')],
+    ['mars', 'phobos', null, 9376, 0.31891, 11, '#8b7d6b', NM('Phobos', 'Phobos', 'Phobos', 'Фобос', 'Phobos', 'Phobos')],
+    ['mars', 'deimos', null, 23463, 1.26244, 6, '#a39684', NM('Deimos', 'Deimos', 'Déimos', 'Деймос', 'Deimos', 'Deimos')],
+    ['jupiter', 'io', 'io', 421700, 1.769, 1822, '#f2d046', NM('Io', 'Io', 'Io', 'Ио', 'Io', 'Io')],
+    ['jupiter', 'europa', 'europa', 671034, 3.551, 1561, '#e7dcc8', NM('Europa', 'Europa', 'Europe', 'Европа', 'Europa', 'Europa')],
+    ['jupiter', 'ganymede', 'ganimede', 1070412, 7.155, 2634, '#a3a091', NM('Ganimede', 'Ganymede', 'Ganymède', 'Ганимед', 'Ganymede', 'Ganymed')],
+    ['jupiter', 'callisto', 'callisto', 1882709, 16.689, 2410, '#7a7064', NM('Callisto', 'Callisto', 'Callisto', 'Каллисто', 'Callisto', 'Kallisto')],
+    ['saturn', 'mimas', null, 185539, 0.942, 198, '#cfcfcf', NM('Mimas', 'Mimas', 'Mimas', 'Мимас', 'Mimas', 'Mimas')],
+    ['saturn', 'enceladus', 'encelado', 238042, 1.370, 252, '#f8fafc', NM('Encelado', 'Enceladus', 'Encelade', 'Энцелад', 'Enceladus', 'Enceladus')],
+    ['saturn', 'tethys', null, 294672, 1.888, 531, '#e5e5e5', NM('Teti', 'Tethys', 'Téthys', 'Тефия', 'Tethys', 'Tethys')],
+    ['saturn', 'dione', null, 377415, 2.737, 561, '#d6d3d1', NM('Dione', 'Dione', 'Dioné', 'Диона', 'Dione', 'Dione')],
+    ['saturn', 'rhea', null, 527068, 4.518, 764, '#d4d4d4', NM('Rea', 'Rhea', 'Rhéa', 'Рея', 'Rhea', 'Rhea')],
+    ['saturn', 'titan', 'titano', 1221870, 15.945, 2575, '#e0a458', NM('Titano', 'Titan', 'Titan', 'Титан', 'Titan', 'Titan')],
+    ['saturn', 'iapetus', null, 3560820, 79.32, 734, '#a8a29e', NM('Giapeto', 'Iapetus', 'Japet', 'Япет', 'Iapetus', 'Iapetus')],
+    ['uranus', 'miranda', null, 129900, 1.413, 236, '#cbd5e1', NM('Miranda', 'Miranda', 'Miranda', 'Миранда', 'Miranda', 'Miranda')],
+    ['uranus', 'ariel', null, 190900, 2.520, 579, '#d1d5db', NM('Ariel', 'Ariel', 'Ariel', 'Ариэль', 'Ariel', 'Ariel')],
+    ['uranus', 'umbriel', null, 266000, 4.144, 585, '#9ca3af', NM('Umbriel', 'Umbriel', 'Umbriel', 'Умбриэль', 'Umbriel', 'Umbriel')],
+    ['uranus', 'titania', null, 435910, 8.706, 789, '#d6d3d1', NM('Titania', 'Titania', 'Titania', 'Титания', 'Titania', 'Titania')],
+    ['uranus', 'oberon', null, 583520, 13.463, 761, '#c4b5a5', NM('Oberon', 'Oberon', 'Obéron', 'Оберон', 'Oberon', 'Oberon')],
+    ['neptune', 'triton', 'tritone', 354759, -5.877, 1353, '#cbd5e1', NM('Tritone', 'Triton', 'Triton', 'Тритон', 'Triton', 'Triton')],
+    ['pluto', 'charon', null, 19591, 6.387, 606, '#a8a29e', NM('Caronte', 'Charon', 'Charon', 'Харон', 'Charon', 'Charon')]
   ].map(([p, id, obj, a, P, r, color, n], i) => ({ p, id, obj, a: a / AU_KM, P, r, color, n, ph: (i * 2.399) % TAU, rank: 0 }));
   { const cnt = {}; MOONS.forEach((m) => { m.rank = cnt[m.p] = (cnt[m.p] || 0) + 1; }); }
   const SOL_FOCUS = { sun: 4.5, mercury: 0.01, venus: 0.012, earth: 0.008, mars: 0.008, jupiter: 0.03, saturn: 0.022, uranus: 0.02, neptune: 0.012, pluto: 0.006 };
@@ -1196,15 +1223,15 @@
      SCENA: cielo da una città (planetario)
      ====================================================================== */
   const CITIES = [
-    [NM('Torino', 'Turin', 'Turin', 'Турин', 'Torino'), 45.07, 7.69], [NM('Milano', 'Milan', 'Milan', 'Милан', 'Milano'), 45.46, 9.19],
-    [NM('Roma', 'Rome', 'Rome', 'Рим', 'Roma'), 41.90, 12.50], [NM('Napoli', 'Naples', 'Naples', 'Неаполь', 'Napoli'), 40.85, 14.27],
-    [NM('Palermo', 'Palermo', 'Palerme', 'Палермо', 'Palermo'), 38.12, 13.36], [NM('Londra', 'London', 'Londres', 'Лондон', 'Londra'), 51.51, -0.13],
-    [NM('Parigi', 'Paris', 'Paris', 'Париж', 'Paris'), 48.86, 2.35], [NM('Bucarest', 'Bucharest', 'Bucarest', 'Бухарест', 'București'), 44.43, 26.10],
-    [NM('Chișinău', 'Chișinău', 'Chișinău', 'Кишинёв', 'Chișinău'), 47.01, 28.86], [NM('Mosca', 'Moscow', 'Moscou', 'Москва', 'Moscova'), 55.76, 37.62],
-    [NM('New York', 'New York', 'New York', 'Нью-Йорк', 'New York'), 40.71, -74.01], [NM('Quito (Equatore)', 'Quito (Equator)', 'Quito (équateur)', 'Кито (экватор)', 'Quito (Ecuator)'), -0.18, -78.47],
-    [NM('Tokyo', 'Tokyo', 'Tokyo', 'Токио', 'Tokyo'), 35.68, 139.69], [NM('Sydney', 'Sydney', 'Sydney', 'Сидней', 'Sydney'), -33.87, 151.21],
-    [NM('Città del Capo', 'Cape Town', 'Le Cap', 'Кейптаун', 'Cape Town'), -33.92, 18.42], [NM('Buenos Aires', 'Buenos Aires', 'Buenos Aires', 'Буэнос-Айрес', 'Buenos Aires'), -34.60, -58.38],
-    [NM('Polo Nord', 'North Pole', 'Pôle Nord', 'Северный полюс', 'Polul Nord'), 89.99, 0], [NM('Polo Sud', 'South Pole', 'Pôle Sud', 'Южный полюс', 'Polul Sud'), -89.99, 0]
+    [NM('Torino', 'Turin', 'Turin', 'Турин', 'Torino', 'Turin'), 45.07, 7.69], [NM('Milano', 'Milan', 'Milan', 'Милан', 'Milano', 'Mailand'), 45.46, 9.19],
+    [NM('Roma', 'Rome', 'Rome', 'Рим', 'Roma', 'Rom'), 41.90, 12.50], [NM('Napoli', 'Naples', 'Naples', 'Неаполь', 'Napoli', 'Neapel'), 40.85, 14.27],
+    [NM('Palermo', 'Palermo', 'Palerme', 'Палермо', 'Palermo', 'Palermo'), 38.12, 13.36], [NM('Londra', 'London', 'Londres', 'Лондон', 'Londra', 'London'), 51.51, -0.13],
+    [NM('Parigi', 'Paris', 'Paris', 'Париж', 'Paris', 'Paris'), 48.86, 2.35], [NM('Bucarest', 'Bucharest', 'Bucarest', 'Бухарест', 'București', 'Bukarest'), 44.43, 26.10],
+    [NM('Chișinău', 'Chișinău', 'Chișinău', 'Кишинёв', 'Chișinău', 'Chișinău'), 47.01, 28.86], [NM('Mosca', 'Moscow', 'Moscou', 'Москва', 'Moscova', 'Moskau'), 55.76, 37.62],
+    [NM('New York', 'New York', 'New York', 'Нью-Йорк', 'New York', 'New York'), 40.71, -74.01], [NM('Quito (Equatore)', 'Quito (Equator)', 'Quito (équateur)', 'Кито (экватор)', 'Quito (Ecuator)', 'Quito (Äquator)'), -0.18, -78.47],
+    [NM('Tokyo', 'Tokyo', 'Tokyo', 'Токио', 'Tokyo', 'Tokio'), 35.68, 139.69], [NM('Sydney', 'Sydney', 'Sydney', 'Сидней', 'Sydney', 'Sydney'), -33.87, 151.21],
+    [NM('Città del Capo', 'Cape Town', 'Le Cap', 'Кейптаун', 'Cape Town', 'Kapstadt'), -33.92, 18.42], [NM('Buenos Aires', 'Buenos Aires', 'Buenos Aires', 'Буэнос-Айрес', 'Buenos Aires', 'Buenos Aires'), -34.60, -58.38],
+    [NM('Polo Nord', 'North Pole', 'Pôle Nord', 'Северный полюс', 'Polul Nord', 'Nordpol'), 89.99, 0], [NM('Polo Sud', 'South Pole', 'Pôle Sud', 'Южный полюс', 'Polul Sud', 'Südpol'), -89.99, 0]
   ];
   Mini3D.scenes.spaceSky = function (host, opts = {}) {
     const v = new SpaceView(host, { cls: 'sp-sky' });

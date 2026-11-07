@@ -1,6 +1,6 @@
 PLACE({
   id: 'sicilia',
-  names: { it: 'Sicilia', en: 'Sicily', fr: 'Sicile', ru: 'Сицилия', ro: 'Sicilia' },
+  names: { it: 'Sicilia', en: 'Sicily', fr: 'Sicile', ru: 'Сицилия', ro: 'Sicilia', de: 'Sizilien' },
   intro: 'La Sicilia è la più grande isola del Mediterraneo, proprio nel mezzo tra Europa e Africa. Per questo ci sono arrivati quasi tutti: Sicani, Greci, Fenici, Romani, Bizantini, Arabi, Normanni, Svevi, Spagnoli… e ognuno ha lasciato qualcosa.',
   start: -40000,
   focus: { palermo: '<p><b>Palermo</b> nasce come città fenicia (Ziz, "il fiore"), i Greci la chiamano <b>Panormos</b> ("tutto porto"). Con gli Arabi diventa una delle città più grandi del mondo; con i Normanni capitale di un regno multiculturale (Cappella Palatina, Monreale).</p>' },

@@ -1,6 +1,6 @@
 PLACE({
   id: "turchia",
-  names: { it: "Turchia", en: "Turkey", fr: "Turquie", ru: "Турция", ro: "Turcia" },
+  names: { it: "Turchia", en: "Turkey", fr: "Turquie", ru: "Турция", ro: "Turcia", de: 'Türkei' },
   intro: "La Turchia è un ponte tra Europa e Asia: la sua parte asiatica, l'Anatolia, è stata abitata da popoli antichissimi, mentre Istanbul, sul Bosforo, è stata capitale di due imperi per oltre 1.500 anni. Qui sono nati i primi templi del mondo, l'Impero ittita, Troia, le città greche della Ionia, Bisanzio e l'Impero ottomano.",
   start: -1200000,
   eras: [

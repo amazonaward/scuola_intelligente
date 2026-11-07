@@ -1,6 +1,6 @@
 PLACE({
   id: "asia-orientale",
-  names: { it: "Asia orientale", en: "East Asia", fr: "Asie de l'Est", ru: "Восточная Азия", ro: "Asia de Est" },
+  names: { it: "Asia orientale", en: "East Asia", fr: "Asie de l'Est", ru: "Восточная Азия", ro: "Asia de Est", de: 'Ostasien' },
   intro: "L'Asia orientale comprende <b>Cina</b>, <b>Mongolia</b>, <b>Corea</b>, <b>Giappone</b> e Taiwan. Lungo i grandi fiumi cinesi, il <b>Fiume Giallo</b> e lo <b>Yangtze</b>, è nata una civiltà che dura da più di 3.000 anni, con la stessa scrittura a caratteri. Da qui vengono la carta, la stampa, la bussola, la polvere da sparo, la seta e la porcellana. Oggi è una delle zone più popolose e tecnologiche del mondo.",
   start: -1700000,
   focus: {

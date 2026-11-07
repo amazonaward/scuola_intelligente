@@ -1,16 +1,16 @@
 /* "Matematica dal mondo": raccoglie i metodi di altri Paesi e civiltà presenti nelle lezioni (route #/metodi). */
 (function () {
   const NAMES = {
-    jp: ['Giappone', 'Japan', 'Japon', 'Япония', 'Japonia'], cn: ['Cina', 'China', 'Chine', 'Китай', 'China'], ru: ['Russia', 'Russia', 'Russie', 'Россия', 'Rusia'],
-    eg: ['Antico Egitto', 'Ancient Egypt', 'Égypte ancienne', 'Древний Египет', 'Egiptul antic'], ar: ['Mondo arabo', 'Arab world', 'Monde arabe', 'Арабский мир', 'Lumea arabă'],
-    in: ['India', 'India', 'Inde', 'Индия', 'India'], mes: ['Mesopotamia', 'Mesopotamia', 'Mésopotamie', 'Месопотамия', 'Mesopotamia'],
-    gr: ['Antica Grecia', 'Ancient Greece', 'Grèce antique', 'Древняя Греция', 'Grecia antică'], sg: ['Singapore', 'Singapore', 'Singapour', 'Сингапур', 'Singapore'],
-    us: ['Stati Uniti', 'United States', 'États-Unis', 'США', 'Statele Unite'], gb: ['Regno Unito', 'United Kingdom', 'Royaume-Uni', 'Великобритания', 'Regatul Unit'],
-    fr: ['Francia', 'France', 'France', 'Франция', 'Franța'], de: ['Germania', 'Germany', 'Allemagne', 'Германия', 'Germania'], maya: ['Maya', 'Maya', 'Mayas', 'Майя', 'Maya'],
-    ro: ['Romania', 'Romania', 'Roumanie', 'Румыния', 'România'], md: ['Moldavia', 'Moldova', 'Moldavie', 'Молдова', 'Moldova'], fi: ['Finlandia', 'Finland', 'Finlande', 'Финляндия', 'Finlanda'],
-    rome: ['Antica Roma', 'Ancient Rome', 'Rome antique', 'Древний Рим', 'Roma antică'], kr: ['Corea', 'Korea', 'Corée', 'Корея', 'Coreea'], idea: ['Altre idee', 'Other ideas', 'Autres idées', 'Другие идеи', 'Alte idei']
+    jp: ['Giappone', 'Japan', 'Japon', 'Япония', 'Japonia', 'Japan'], cn: ['Cina', 'China', 'Chine', 'Китай', 'China', 'China'], ru: ['Russia', 'Russia', 'Russie', 'Россия', 'Rusia', 'Russland'],
+    eg: ['Antico Egitto', 'Ancient Egypt', 'Égypte ancienne', 'Древний Египет', 'Egiptul antic', 'Altes Ägypten'], ar: ['Mondo arabo', 'Arab world', 'Monde arabe', 'Арабский мир', 'Lumea arabă', 'Arabische Welt'],
+    in: ['India', 'India', 'Inde', 'Индия', 'India', 'Indien'], mes: ['Mesopotamia', 'Mesopotamia', 'Mésopotamie', 'Месопотамия', 'Mesopotamia', 'Mesopotamien'],
+    gr: ['Antica Grecia', 'Ancient Greece', 'Grèce antique', 'Древняя Греция', 'Grecia antică', 'Antikes Griechenland'], sg: ['Singapore', 'Singapore', 'Singapour', 'Сингапур', 'Singapore', 'Singapur'],
+    us: ['Stati Uniti', 'United States', 'États-Unis', 'США', 'Statele Unite', 'Vereinigte Staaten'], gb: ['Regno Unito', 'United Kingdom', 'Royaume-Uni', 'Великобритания', 'Regatul Unit', 'Vereinigtes Königreich'],
+    fr: ['Francia', 'France', 'France', 'Франция', 'Franța', 'Frankreich'], de: ['Germania', 'Germany', 'Allemagne', 'Германия', 'Germania', 'Deutschland'], maya: ['Maya', 'Maya', 'Mayas', 'Майя', 'Maya', 'Maya'],
+    ro: ['Romania', 'Romania', 'Roumanie', 'Румыния', 'România', 'Rumänien'], md: ['Moldavia', 'Moldova', 'Moldavie', 'Молдова', 'Moldova', 'Moldau'], fi: ['Finlandia', 'Finland', 'Finlande', 'Финляндия', 'Finlanda', 'Finnland'],
+    rome: ['Antica Roma', 'Ancient Rome', 'Rome antique', 'Древний Рим', 'Roma antică', 'Antikes Rom'], kr: ['Corea', 'Korea', 'Corée', 'Корея', 'Coreea', 'Korea'], idea: ['Altre idee', 'Other ideas', 'Autres idées', 'Другие идеи', 'Alte idei', 'Weitere Ideen']
   };
-  const L = ['it', 'en', 'fr', 'ru', 'ro'];
+  const L = ['it', 'en', 'fr', 'ru', 'ro', 'de'];
   const cname = (c) => (NAMES[c] || [c])[Math.max(0, L.indexOf(i18n.lang))] || c;
 
   function page(m, filter) {

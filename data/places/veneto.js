@@ -1,6 +1,6 @@
 PLACE({
   id: 'veneto',
-  names: { it: 'Veneto', en: 'Veneto', fr: 'Vénétie', ru: 'Венеция (область)', ro: 'Veneto' },
+  names: { it: 'Veneto', en: 'Veneto', fr: 'Vénétie', ru: 'Венеция (область)', ro: 'Veneto', de: 'Venetien' },
   intro: 'Dalle Dolomiti alla laguna, il Veneto è stato la terra degli antichi Veneti, dei Romani e soprattutto della Repubblica di Venezia, che per mille anni ha dominato i mari tra Europa e Oriente.',
   start: -250000,
   focus: { venezia: '<p><b>Venezia</b> nasce tra il V e il IX secolo quando la gente della terraferma si rifugia sulle isole della laguna per sfuggire alle invasioni. Diventa una repubblica di mercanti guidata dal <b>doge</b>, indipendente per oltre mille anni (fino al 1797).</p>' },

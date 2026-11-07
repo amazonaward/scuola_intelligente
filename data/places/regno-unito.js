@@ -1,6 +1,6 @@
 PLACE({
   id: 'regno-unito',
-  names: { it: 'Regno Unito', en: 'United Kingdom', fr: 'Royaume-Uni', ru: 'Великобритания', ro: 'Regatul Unit' },
+  names: { it: 'Regno Unito', en: 'United Kingdom', fr: 'Royaume-Uni', ru: 'Великобритания', ro: 'Regatul Unit', de: 'Vereinigtes Königreich' },
   intro: 'Il Regno Unito unisce Inghilterra, Scozia, Galles e Irlanda del Nord, su due isole dell\'Atlantico. Proprio perché è un\'isola, è stato invaso poche volte dopo il 1066, ha sviluppato presto un Parlamento, ha dato il via alla Rivoluzione industriale e ha costruito il più grande impero della storia.',
   start: -900000,
   eras: [

@@ -1,6 +1,6 @@
 PLACE({
   id: 'cechia',
-  names: { it: 'Repubblica Ceca', en: 'Czech Republic', fr: 'Tchéquie', ru: 'Чехия', ro: 'Cehia' },
+  names: { it: 'Repubblica Ceca', en: 'Czech Republic', fr: 'Tchéquie', ru: 'Чехия', ro: 'Cehia', de: 'Tschechien' },
   intro: 'La Repubblica Ceca è formata da Boemia, Moravia e un pezzo di Slesia, nel cuore dell\'Europa, circondata da montagne. La sua capitale Praga, la "città dalle cento torri", fu per un periodo la capitale del Sacro Romano Impero. Dopo secoli sotto gli Asburgo nacque la Cecoslovacchia (1918); dal 1993 i Cechi hanno uno Stato proprio, membro dell\'UE.',
   start: -800000,
   eras: [

@@ -1,6 +1,6 @@
 PLACE({
   id: "calabria",
-  names: { it: "Calabria", en: "Calabria", fr: "Calabre", ru: "Калабрия", ro: "Calabria" },
+  names: { it: "Calabria", en: "Calabria", fr: "Calabre", ru: "Калабрия", ro: "Calabria", de: 'Kalabrien' },
   intro: "La Calabria è la «punta dello stivale», stretta tra il Tirreno e lo Ionio, con montagne come la Sila e l'Aspromonte. Proprio qui nacque il nome <b>Italia</b>: gli antichi chiamavano così la terra del re Italo, all'estremità della penisola. Poi vennero le grandi città della <b>Magna Grecia</b>, Roma, secoli di dominio <b>bizantino</b>, i Normanni e tanti altri.",
   start: -700000,
   eras: [

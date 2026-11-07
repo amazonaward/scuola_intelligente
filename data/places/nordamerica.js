@@ -1,6 +1,6 @@
 PLACE({
   id: "nordamerica",
-  names: { it: "Nord America", en: "North America", fr: "Amérique du Nord", ru: "Северная Америка", ro: "America de Nord" },
+  names: { it: "Nord America", en: "North America", fr: "Amérique du Nord", ru: "Северная Америка", ro: "America de Nord", de: 'Nordamerika' },
   intro: "Il Nord America va dai ghiacci dell'Artico e della Groenlandia fino al deserto del Messico settentrionale: grandi praterie, le Montagne Rocciose, i Grandi Laghi e il fiume Mississippi. Per migliaia di anni vi hanno vissuto centinaia di <b>popoli nativi</b> diversi; dal Cinquecento arrivano gli Europei. Qui sono nati gli <b>Stati Uniti</b>, la prima repubblica democratica moderna, e il <b>Canada</b>.",
   start: -25000,
   focus: {

@@ -1,6 +1,6 @@
 PLACE({
   id: "bielorussia",
-  names: { it: "Bielorussia", en: "Belarus", fr: "Biélorussie", ru: "Беларусь", ro: "Belarus" },
+  names: { it: "Bielorussia", en: "Belarus", fr: "Biélorussie", ru: "Беларусь", ro: "Belarus", de: 'Belarus' },
   intro: "La Bielorussia, «Russia Bianca», è una terra piatta di foreste, paludi e migliaia di laghi, tra Polonia, Lituania, Russia e Ucraina. Per secoli ha fatto parte del Granducato di Lituania e della Polonia, poi dell'Impero russo e dell'Unione Sovietica. Nella Seconda guerra mondiale ha sofferto come pochi altri Paesi.",
   start: -100000,
   eras: [

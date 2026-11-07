@@ -1,6 +1,6 @@
 PLACE({
   id: "puglia",
-  names: { it: "Puglia", en: "Apulia", fr: "Pouilles", ru: "Апулия", ro: "Apulia" },
+  names: { it: "Puglia", en: "Apulia", fr: "Pouilles", ru: "Апулия", ro: "Apulia", de: 'Apulien' },
   intro: "La Puglia è il «tacco» d'Italia: una terra lunga e piatta, con il promontorio del Gargano, la grande pianura del Tavoliere, gli ulivi del Salento e quasi 900 km di coste. È la regione italiana più vicina ai Balcani e alla Grecia: per questo da qui sono passati Greci, Romani, Bizantini, Arabi, Normanni, Svevi e Turchi. Ancora oggi è una porta tra Oriente e Occidente.",
   start: -300000,
   eras: [

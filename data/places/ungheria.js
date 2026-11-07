@@ -1,6 +1,6 @@
 PLACE({
   id: 'ungheria',
-  names: { it: 'Ungheria', en: 'Hungary', fr: 'Hongrie', ru: 'Венгрия', ro: 'Ungaria' },
+  names: { it: 'Ungheria', en: 'Hungary', fr: 'Hongrie', ru: 'Венгрия', ro: 'Ungaria', de: 'Ungarn' },
   intro: 'L\'Ungheria occupa la grande pianura del bacino dei Carpazi, attraversata dal Danubio e dal Tibisco. Gli Ungheresi (Magiari) arrivarono a cavallo dalle steppe dell\'est e parlano una lingua diversa da tutti i vicini. Il loro regno, nato nell\'anno 1000, fu diviso dai Turchi, governato dagli Asburgo e ridotto dopo la Prima guerra mondiale. Oggi è una repubblica dell\'UE.',
   start: -500000,
   eras: [

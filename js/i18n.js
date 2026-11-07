@@ -1,10 +1,11 @@
-/* Testi dell'interfaccia nelle 5 lingue */
+/* Testi dell'interfaccia nelle 6 lingue */
 window.LANGS = [
   { id: 'it', name: 'Italiano', flag: '🇮🇹' },
   { id: 'en', name: 'English', flag: '🇬🇧' },
   { id: 'fr', name: 'Français', flag: '🇫🇷' },
   { id: 'ru', name: 'Русский', flag: '🇷🇺' },
-  { id: 'ro', name: 'Română', flag: '🇷🇴' }
+  { id: 'ro', name: 'Română', flag: '🇷🇴' },
+  { id: 'de', name: 'Deutsch', flag: '🇩🇪' }
 ];
 
 window.I18N = {
@@ -317,6 +318,68 @@ window.I18N = {
     'g.explainPyth': 'c = √(a² + b²) = √({s}) = {c}', 'g.explainCount': 'Numără obiectele pe rând.',
     'misc.ok': 'OK', 'misc.cancel': 'Renunță', 'misc.close': 'Închide', 'misc.yes': 'Da', 'misc.no': 'Nu',
     'footer.text': 'Zainetto este un proiect educațional liber. Datele rămân pe dispozitivul tău.'
+  },
+  de: {
+    'app.tagline': 'Spielend lernen, von der 1. Klasse Grundschule bis zur 3. Klasse Mittelschule',
+    'nav.home': 'Start', 'nav.program': 'Lehrplan', 'nav.history': 'Verlauf', 'nav.profiles': 'Profile', 'nav.search': 'Suchen',
+    'profile.who': 'Wer lernt heute?', 'profile.new': 'Neues Profil', 'profile.name': 'Name',
+    'profile.avatar': 'Wähle einen Avatar', 'profile.year': 'Klasse', 'profile.create': 'Profil erstellen', 'profile.edit': 'Bearbeiten',
+    'profile.delete': 'Löschen', 'profile.deleteConfirm': 'Das Profil von {name} und den ganzen Verlauf löschen?',
+    'profile.export': 'Sicherung speichern', 'profile.import': 'Sicherung laden', 'profile.switch': 'Profil wechseln', 'profile.save': 'Speichern',
+    'profile.note': 'Die Profile werden in diesem Browser gespeichert, ohne Passwort. Mit „Sicherung speichern“ kannst du sie auf ein anderes Gerät übertragen.',
+    'profile.lang': 'Sprache', 'profile.imported': 'Sicherung geladen: {n} Profile.', 'profile.badFile': 'Ungültige Datei.',
+    'school.p': 'Grundschule', 'school.m': 'Mittelschule',
+    'year.p1': '1. Klasse (Grundschule)', 'year.p2': '2. Klasse (Grundschule)', 'year.p3': '3. Klasse (Grundschule)', 'year.p4': '4. Klasse (Grundschule)', 'year.p5': '5. Klasse (Grundschule)',
+    'year.m1': '1. Klasse Mittelschule', 'year.m2': '2. Klasse Mittelschule', 'year.m3': '3. Klasse Mittelschule',
+    'subj.ita': 'Italienisch', 'subj.mat': 'Mathematik', 'subj.sci': 'Naturwissenschaften', 'subj.sto': 'Geschichte', 'subj.geo': 'Erdkunde', 'subj.ing': 'Englisch',
+    'dash.hello': 'Hallo, {name}!', 'dash.continue': 'Mach weiter, wo du aufgehört hast', 'dash.recent': 'Letzte Aktivitäten',
+    'dash.none': 'Du hast noch kein Thema angefangen. Such dir unten eins aus!', 'dash.suggest': 'Vollständige Lektionen für deine Klasse',
+    'dash.progress': 'Fortschritt – {year}', 'dash.chooseYear': 'Wähle die Klasse', 'dash.otherYears': 'Andere Klassen entdecken',
+    'topic.full': 'Vollständige Lektion', 'topic.soon': 'In Vorbereitung', 'topic.practice': 'Übungen', 'topic.contents': 'In dieser Lektion',
+    'topic.glossary': 'Glossar', 'topic.verifica': 'Abschlusstest', 'topic.start': 'Test starten', 'topic.minutes': '{n} Min.',
+    'topic.markDone': 'Ich habe dieses Thema gelernt', 'topic.done': 'Gelernt ✓', 'topic.fallback': 'Diese Lektion ist noch nicht auf {lang} übersetzt: Du siehst sie auf Italienisch.',
+    'topic.soonText': 'Die vollständige Lektion wird gerade vorbereitet. In der Zwischenzeit kannst du mit den Übungen unten trainieren.',
+    'topic.soonNoGen': 'Die vollständige Lektion zu diesem Thema wird gerade vorbereitet. Schau bald wieder vorbei!',
+    'topic.back': 'Zurück', 'topic.next': 'Nächstes Thema', 'topic.prev': 'Vorheriges Thema', 'topic.loading': 'Wird geladen…',
+    'topic.filterAll': 'Alle', 'topic.filterFull': 'Nur vollständige Lektionen', 'topic.count': '{n} Themen',
+    'status.todo': 'Zu erledigen', 'status.seen': 'Angesehen', 'status.done': 'Gelernt', 'status.passed': 'Test bestanden',
+    'quiz.check': 'Prüfen', 'quiz.correct': 'Richtig! 🎉', 'quiz.wrong': 'Nicht ganz…', 'quiz.answer': 'Richtige Antwort: {a}',
+    'quiz.next': 'Weiter', 'quiz.finish': 'Ergebnis ansehen', 'quiz.score': 'Du hast {ok} von {n} Fragen richtig beantwortet ({p} %)',
+    'quiz.passed': 'Test bestanden! 🏆', 'quiz.failed': 'Noch nicht: Wiederhole die Lektion und versuch es noch einmal!', 'quiz.retry': 'Nochmal versuchen',
+    'quiz.true': 'Richtig', 'quiz.false': 'Falsch', 'quiz.placeholder': 'Schreib deine Antwort', 'quiz.orderHint': 'Bring sie mit den Pfeilen in die richtige Reihenfolge',
+    'quiz.best': 'Bestes Ergebnis: {p} %', 'quiz.newSet': 'Neue Übungen', 'quiz.practiceTitle': 'Endloses Training',
+    'quiz.practiceText': 'Immer neue Übungen: jedes Mal andere Zahlen.', 'quiz.question': 'Frage {i} von {n}', 'quiz.done': 'Fertig',
+    'hist.title': 'Mein Verlauf', 'hist.empty': 'Noch keine Aktivitäten.', 'hist.studied': 'Gelernte Themen', 'hist.passed': 'Bestandene Tests',
+    'hist.avg': 'Testdurchschnitt', 'hist.activities': 'Aktivitäten', 'hist.bySubject': 'Nach Fach', 'hist.log': 'Tagebuch', 'hist.todo': 'Zu erledigen',
+    'hist.badges': 'Medaillen', 'hist.streak': 'Lerntage',
+    'ev.visit': 'Geöffnet', 'ev.done': 'Gelernt', 'ev.quiz': 'Mini-Quiz', 'ev.verifica': 'Test', 'ev.practice': 'Übungen',
+    'search.placeholder': 'Ein Thema suchen…', 'search.none': 'Keine Ergebnisse', 'search.results': 'Ergebnisse für „{q}“',
+    'w.numerator': 'Zähler', 'w.denominator': 'Nenner', 'w.base': 'Grundseite', 'w.height': 'Höhe', 'w.perimeter': 'Umfang', 'w.area': 'Flächeninhalt',
+    'w.add': 'Hinzufügen', 'w.remove': 'Wegnehmen', 'w.flip': 'Tippe auf die Karte, um sie umzudrehen', 'w.matchDone': 'Alle Paare gefunden! 🎉',
+    'w.classifyDone': 'Alles am richtigen Platz! 🎉', 'w.reset': 'Neu beginnen', 'w.legA': 'Kathete a', 'w.legB': 'Kathete b', 'w.hyp': 'Hypotenuse c',
+    'w.drag': 'Zum Drehen ziehen', 'w.pause': 'Pause', 'w.play': 'Start', 'w.labels': 'Beschriftungen', 'w.choose': 'Was ist das?',
+    'w.value': 'Wert', 'w.jump': 'Springe um', 'w.start': 'Start', 'w.squares': 'Kästchen', 'w.tapItem': 'Tippe auf ein Element und dann auf die richtige Gruppe',
+    'w.tapPair': 'Tippe links auf ein Element und dann rechts auf das passende', 'w.found': '{a} von {b} gefunden', 'w.tapSpot': 'Tippe auf die nummerierten Punkte und wähle den richtigen Namen',
+    'w.speed': 'Geschwindigkeit', 'w.cut': 'Querschnitt', 'w.edges': 'Kanten', 'w.faces': 'Flächen', 'w.vertices': 'Ecken', 'w.yearsAgo': 'Jahre her',
+    'w.bc': 'v. Chr.', 'w.ad': 'n. Chr.', 'w.million': 'Millionen', 'w.billion': 'Milliarden', 'w.pick': 'Wähle ein Feld', 'w.total': 'Gesamt',
+    'shape.cube': 'Würfel', 'shape.box': 'Quader', 'shape.prism': 'Prisma', 'shape.pyramid': 'Pyramide', 'shape.cylinder': 'Zylinder', 'shape.cone': 'Kegel', 'shape.sphere': 'Kugel',
+    'planet.sun': 'Sonne', 'planet.mercury': 'Merkur', 'planet.venus': 'Venus', 'planet.earth': 'Erde', 'planet.mars': 'Mars',
+    'planet.jupiter': 'Jupiter', 'planet.saturn': 'Saturn', 'planet.uranus': 'Uranus', 'planet.neptune': 'Neptun', 'planet.moon': 'Mond',
+    'g.howMany': 'Wie viele sind es?', 'g.bigger': 'Welche Zahl ist größer?', 'g.tensIn': 'Wie viele Zehner sind in {n}?',
+    'g.digitValue': 'Welchen Wert hat die Ziffer {d} in der Zahl {n}?', 'g.remainder': 'Wie groß ist der Rest von {a} : {b}?', 'g.fracOf': 'Wie viel sind {f} von {n}?',
+    'g.fracEquiv': 'Welcher Bruch ist gleichwertig zu {f}?', 'g.numerator': 'Schreib den Zähler des Ergebnisses.',
+    'g.perimRect': 'Ein Rechteck ist {b} cm breit und {h} cm hoch. Wie groß ist sein Umfang?',
+    'g.areaRect': 'Ein Rechteck ist {b} cm breit und {h} cm hoch. Wie groß ist sein Flächeninhalt?',
+    'g.areaTri': 'Ein Dreieck hat die Grundseite {b} cm und die Höhe {h} cm. Wie groß ist sein Flächeninhalt?',
+    'g.percent': 'Wie viel sind {p} % von {n}?', 'g.circle': 'Ein Kreis hat den Radius {r} cm. Wie lang ist sein Umfang? (rechne mit π = 3,14)',
+    'g.isPrime': '{n} ist eine Primzahl.', 'g.triAngle': 'In einem Dreieck messen zwei Winkel {a}° und {b}°. Wie groß ist der dritte Winkel?',
+    'g.proportion': 'Finde x: {a} : {b} = {c} : x', 'g.pythagoras': 'Ein rechtwinkliges Dreieck hat Katheten von {a} cm und {b} cm. Wie lang ist die Hypotenuse?',
+    'g.equation': 'Löse die Gleichung: {e}', 'g.volCube': 'Ein Würfel hat eine Kantenlänge von {l} cm. Wie groß ist sein Volumen?',
+    'g.volBox': 'Ein Quader misst {a} cm × {b} cm × {c} cm. Wie groß ist sein Volumen?', 'g.convert': 'Ergänze: {a} = ? {u}',
+    'g.explainSum': 'Man rechnet {e}.', 'g.explainPrimeYes': '{n} ist nur durch 1 und durch sich selbst teilbar.', 'g.explainPrimeNo': '{n} ist auch durch {d} teilbar.',
+    'g.explainPyth': 'c = √(a² + b²) = √({s}) = {c}', 'g.explainCount': 'Zähle die Gegenstände einzeln.',
+    'misc.ok': 'OK', 'misc.cancel': 'Abbrechen', 'misc.close': 'Schließen', 'misc.yes': 'Ja', 'misc.no': 'Nein',
+    'footer.text': 'Zainetto ist ein freies Lernprojekt. Deine Daten bleiben auf deinem Gerät.'
   }
 };
 

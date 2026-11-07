@@ -1,6 +1,6 @@
 PLACE({
   id: "liguria",
-  names: { it: "Liguria", en: "Liguria", fr: "Ligurie", ru: "Лигурия", ro: "Liguria" },
+  names: { it: "Liguria", en: "Liguria", fr: "Ligurie", ru: "Лигурия", ro: "Liguria", de: 'Ligurien' },
   intro: "La Liguria è un sottile arco di terra tra le montagne e il mare: poca pianura, tanti porti. Per questo i Liguri sono diventati <b>navigatori, mercanti e banchieri</b>. La sua città più importante, <b>Genova</b>, è stata per secoli una repubblica marinara potente in tutto il Mediterraneo e oltre: da qui partirono Cristoforo Colombo e, molto più tardi, i Mille di Garibaldi.",
   start: -300000,
   eras: [

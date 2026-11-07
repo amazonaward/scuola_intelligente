@@ -1,6 +1,6 @@
 PLACE({
   id: 'irlanda',
-  names: { it: 'Irlanda', en: 'Ireland', fr: 'Irlande', ru: 'Ирландия', ro: 'Irlanda' },
+  names: { it: 'Irlanda', en: 'Ireland', fr: 'Irlande', ru: 'Ирландия', ro: 'Irlanda', de: 'Irland' },
   intro: 'L\'Irlanda è l\'"isola verde" dell\'Atlantico, a ovest della Gran Bretagna. Non fu mai conquistata da Roma, ebbe monasteri famosi in tutta Europa e poi per secoli fu dominata dall\'Inghilterra. Dal 1922 è indipendente (tranne l\'Irlanda del Nord, che fa parte del Regno Unito) e oggi è un Paese dell\'Unione Europea.',
   start: -12000,
   eras: [

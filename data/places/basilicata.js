@@ -1,6 +1,6 @@
 PLACE({
   id: "basilicata",
-  names: { it: "Basilicata", en: "Basilicata", fr: "Basilicate", ru: "Базиликата", ro: "Basilicata" },
+  names: { it: "Basilicata", en: "Basilicata", fr: "Basilicate", ru: "Базиликата", ro: "Basilicata", de: 'Basilikata' },
   intro: "La Basilicata, chiamata anche <b>Lucania</b>, è una regione di montagne, calanchi e due brevi coste, sul Tirreno e sullo Ionio. Il suo nome viene forse dal <i>basilikós</i>, il funzionario dell'imperatore bizantino. Qui ci sono i <b>Sassi di Matera</b>, una delle città abitate più antiche del mondo, e qui i Normanni ebbero la loro prima capitale, Melfi.",
   start: -700000,
   eras: [

@@ -1,6 +1,6 @@
 PLACE({
   id: 'danimarca',
-  names: { it: 'Danimarca', en: 'Denmark', fr: 'Danemark', ru: 'Дания', ro: 'Danemarca' },
+  names: { it: 'Danimarca', en: 'Denmark', fr: 'Danemark', ru: 'Дания', ro: 'Danemarca', de: 'Dänemark' },
   intro: 'La Danimarca è formata dalla penisola dello Jutland e da centinaia di isole tra il Mare del Nord e il Baltico. Controllando gli stretti che portano al Baltico, fu a lungo una potenza: dai Vichinghi all\'Unione di Kalmar. Ha la monarchia più antica d\'Europa ancora esistente ed è oggi una democrazia dell\'Unione Europea.',
   start: -130000,
   eras: [

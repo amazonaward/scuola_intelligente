@@ -1,6 +1,6 @@
 PLACE({
   id: "medio-oriente",
-  names: { it: "Medio Oriente", en: "Middle East", fr: "Moyen-Orient", ru: "Ближний Восток", ro: "Orientul Mijlociu" },
+  names: { it: "Medio Oriente", en: "Middle East", fr: "Moyen-Orient", ru: "Ближний Восток", ro: "Orientul Mijlociu", de: 'Naher Osten' },
   intro: "Il Medio Oriente è la terra tra il Mediterraneo, il Mar Nero, il Golfo Persico e il Mar Rosso: Anatolia, Mesopotamia, Levante, Arabia e Iran. Qui, nella <b>Mezzaluna fertile</b>, sono nati l'agricoltura, le prime città, la scrittura e le leggi scritte. Qui sono nate tre grandi religioni: <b>ebraismo</b>, <b>cristianesimo</b> e <b>islam</b>. È sempre stato un incrocio di strade e di imperi.",
   start: -1500000,
   focus: {

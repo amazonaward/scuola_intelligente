@@ -1,6 +1,6 @@
 PLACE({
   id: "valle-daosta",
-  names: { it: "Valle d'Aosta", en: "Aosta Valley", fr: "Vallée d'Aoste", ru: "Валле-д'Аоста", ro: "Valea Aostei" },
+  names: { it: "Valle d'Aosta", en: "Aosta Valley", fr: "Vallée d'Aoste", ru: "Валле-д'Аоста", ro: "Valea Aostei", de: 'Aostatal' },
   intro: "La Valle d'Aosta è la regione più piccola d'Italia: una valle stretta tra le montagne più alte d'Europa (Monte Bianco, Cervino, Monte Rosa, Gran Paradiso). È sempre stata una <b>porta delle Alpi</b>: dai suoi passi, il Piccolo e il Gran San Bernardo, sono passati Celti, legioni romane, pellegrini, mercanti ed eserciti. Per questo qui si parlano italiano, francese e patois.",
   start: -10000,
   eras: [

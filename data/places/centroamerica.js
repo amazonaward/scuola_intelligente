@@ -1,6 +1,6 @@
 PLACE({
   id: "centroamerica",
-  names: { it: "Centro America e Caraibi", en: "Central America & Caribbean", fr: "Amérique centrale et Caraïbes", ru: "Центральная Америка и Карибы", ro: "America Centrală și Caraibe" },
+  names: { it: "Centro America e Caraibi", en: "Central America & Caribbean", fr: "Amérique centrale et Caraïbes", ru: "Центральная Америка и Карибы", ro: "America Centrală și Caraibe", de: 'Mittelamerika und Karibik' },
   intro: "Il Centro America comprende il <b>Messico</b>, lo stretto istmo fino a Panamá e le isole dei <b>Caraibi</b>. Qui è stato addomesticato il <b>mais</b> e sono fiorite le grandi civiltà della <b>Mesoamerica</b>: Olmechi, Maya, Teotihuacan, Aztechi, con piramidi, calendari e scritture. Poi arrivarono Colombo e i conquistadores spagnoli; oggi è una regione di culture mescolate: native, europee e africane.",
   start: -15000,
   focus: {

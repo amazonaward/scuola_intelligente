@@ -1,6 +1,6 @@
 PLACE({
   id: "cina",
-  names: { it: "Cina", en: "China", fr: "Chine", ru: "Китай", ro: "China" },
+  names: { it: "Cina", en: "China", fr: "Chine", ru: "Китай", ro: "China", de: 'China' },
   intro: "La Cina è uno dei Paesi più grandi e popolosi del mondo, attraversato da due grandi fiumi, il Fiume Giallo e il Fiume Azzurro (Yangtze). La sua civiltà è una delle più antiche e continue della Terra: la scrittura cinese usata oggi discende da quella di 3.000 anni fa. Dalla Cina vengono la carta, la stampa, la bussola, la polvere da sparo, la seta e il tè.",
   start: -1700000,
   eras: [

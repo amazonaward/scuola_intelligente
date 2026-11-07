@@ -1,6 +1,6 @@
 PLACE({
   id: 'lombardia',
-  names: { it: 'Lombardia', en: 'Lombardy', fr: 'Lombardie', ru: 'Ломбардия', ro: 'Lombardia' },
+  names: { it: 'Lombardia', en: 'Lombardy', fr: 'Lombardie', ru: 'Ломбардия', ro: 'Lombardia', de: 'Lombardei' },
   intro: 'La Lombardia prende il nome dai Longobardi. Tra Alpi, laghi e la pianura del Po, è sempre stata una terra ricca e di passaggio: Milano è stata capitale dell\'Impero romano, centro dei Comuni, del Rinascimento e dell\'industria.',
   start: -200000,
   focus: { milano: '<p><b>Milano</b> nasce come villaggio celtico (<i>Mediolanum</i>, "in mezzo alla pianura"), diventa capitale dell\'Impero romano d\'Occidente (286–402), città di sant\'Ambrogio, dei Visconti e degli Sforza, di Leonardo, e oggi è la capitale economica d\'Italia.</p>' },

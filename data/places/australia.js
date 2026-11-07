@@ -1,6 +1,6 @@
 PLACE({
   id: "australia",
-  names: { it: "Australia", en: "Australia", fr: "Australie", ru: "Австралия", ro: "Australia" },
+  names: { it: "Australia", en: "Australia", fr: "Australie", ru: "Австралия", ro: "Australia", de: 'Australien' },
   intro: "L'Australia è un'isola grande come un continente, con deserti rossi, foreste pluviali, la Grande Barriera Corallina e animali che non esistono altrove, come canguri e koala. Per almeno 50.000 anni è stata la terra dei popoli aborigeni e degli isolani dello Stretto di Torres, una delle culture più antiche ancora vive. Dal 1788 arrivarono i coloni britannici.",
   start: -65000,
   eras: [

@@ -1,6 +1,6 @@
 PLACE({
   id: "serbia",
-  names: { it: "Serbia", en: "Serbia", fr: "Serbie", ru: "Сербия", ro: "Serbia" },
+  names: { it: "Serbia", en: "Serbia", fr: "Serbie", ru: "Сербия", ro: "Serbia", de: 'Serbien' },
   intro: "La Serbia è il cuore dei Balcani: qui la Sava si getta nel Danubio, sotto la fortezza di Belgrado. Terra di antichi villaggi neolitici, di imperatori romani e di monasteri medievali, ha vissuto quasi quattro secoli sotto gli Ottomani e poi è stata il centro della Jugoslavia.",
   start: -500000,
   eras: [

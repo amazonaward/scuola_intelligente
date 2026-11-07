@@ -1,6 +1,6 @@
 PLACE({
   id: "bulgaria",
-  names: { it: "Bulgaria", en: "Bulgaria", fr: "Bulgarie", ru: "Болгария", ro: "Bulgaria" },
+  names: { it: "Bulgaria", en: "Bulgaria", fr: "Bulgarie", ru: "Болгария", ro: "Bulgaria", de: 'Bulgarien' },
   intro: "La Bulgaria si stende tra il Danubio e il Mar Nero, divisa a metà dai monti Balcani. Qui si trovano l'oro lavorato più antico del mondo, le tombe dei re traci, e qui è nato l'alfabeto cirillico che oggi usano anche Russi, Ucraini e Serbi. È stata un grande impero medievale, poi per quasi cinque secoli parte dell'Impero ottomano.",
   start: -1400000,
   eras: [

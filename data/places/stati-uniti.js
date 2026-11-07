@@ -1,6 +1,6 @@
 PLACE({
   id: "stati-uniti",
-  names: { it: "Stati Uniti", en: "United States", fr: "États-Unis", ru: "США", ro: "Statele Unite" },
+  names: { it: "Stati Uniti", en: "United States", fr: "États-Unis", ru: "США", ro: "Statele Unite", de: 'Vereinigte Staaten' },
   intro: "Gli Stati Uniti d'America si stendono dall'Atlantico al Pacifico, con grandi pianure, montagne rocciose e deserti. Per migliaia di anni sono stati la terra di centinaia di popoli nativi; poi sono arrivati coloni europei e africani portati in schiavitù. Nel 1776 tredici colonie si sono dichiarate indipendenti e hanno creato la prima grande repubblica moderna, diventata nel Novecento una superpotenza.",
   start: -23000,
   eras: [

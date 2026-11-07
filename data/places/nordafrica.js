@@ -1,6 +1,6 @@
 PLACE({
   id: "nordafrica",
-  names: { it: "Nord Africa", en: "North Africa", fr: "Afrique du Nord", ru: "Северная Африка", ro: "Africa de Nord" },
+  names: { it: "Nord Africa", en: "North Africa", fr: "Afrique du Nord", ru: "Северная Африка", ro: "Africa de Nord", de: 'Nordafrika' },
   intro: "Il Nord Africa è la fascia di terre tra il <b>Mediterraneo</b> e il <b>Sahara</b>: dal Marocco e dall'Atlante fino all'Egitto e al Nilo. Qui vivevano i <b>Berberi</b> (Amazigh), qui sono fioriti l'Egitto dei faraoni e Cartagine; poi Roma, gli Arabi che hanno portato l'Islam, gli Ottomani e le potenze coloniali europee. È da sempre un ponte tra Africa, Europa e Medio Oriente.",
   start: -2400000,
   focus: {

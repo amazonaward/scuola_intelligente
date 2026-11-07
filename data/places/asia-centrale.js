@@ -1,6 +1,6 @@
 PLACE({
   id: "asia-centrale",
-  names: { it: "Asia centrale", en: "Central Asia", fr: "Asie centrale", ru: "Центральная Азия", ro: "Asia Centrală" },
+  names: { it: "Asia centrale", en: "Central Asia", fr: "Asie centrale", ru: "Центральная Азия", ro: "Asia Centrală", de: 'Zentralasien' },
   intro: "L'Asia centrale è il cuore del grande continente eurasiatico: immense <b>steppe</b>, deserti, oasi e montagne altissime (Tian Shan, Pamir), lontanissime da ogni oceano. Qui sono stati addomesticati i <b>cavalli</b>, qui sono passati popoli nomadi di cavalieri e la <b>Via della Seta</b>, con città leggendarie come Samarcanda e Bukhara. Oggi vi si trovano Kazakistan, Uzbekistan, Turkmenistan, Kirghizistan e Tagikistan.",
   start: -800000,
   eras: [

@@ -1,6 +1,6 @@
 PLACE({
   id: 'sardegna',
-  names: { it: 'Sardegna', en: 'Sardinia', fr: 'Sardaigne', ru: 'Сардиния', ro: 'Sardinia' },
+  names: { it: 'Sardegna', en: 'Sardinia', fr: 'Sardaigne', ru: 'Сардиния', ro: 'Sardinia', de: 'Sardinien' },
   intro: 'La Sardegna è un\'isola antichissima, piena di misteri: più di 7000 nuraghi, i giganti di Mont\'e Prama, i giudicati medievali. Isolata ma sempre desiderata, è stata fenicia, punica, romana, bizantina, pisana, aragonese, spagnola e sabauda.',
   start: -20000,
   focus: { cagliari: '<p><b>Cagliari</b> nasce come porto fenicio (<i>Karalis</i>), diventa città romana, capitale del giudicato di Cagliari, roccaforte pisana (Castello) e capitale del Regno di Sardegna.</p>' },

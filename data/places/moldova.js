@@ -1,6 +1,6 @@
 PLACE({
   id: 'moldova',
-  names: { it: 'Moldova', en: 'Moldova', fr: 'Moldavie', ru: 'Молдова', ro: 'Republica Moldova' },
+  names: { it: 'Moldova', en: 'Moldova', fr: 'Moldavie', ru: 'Молдова', ro: 'Republica Moldova', de: 'Moldau' },
   intro: 'La Repubblica Moldova si trova tra i fiumi Prut e Nistro, tra la Romania e l\'Ucraina. È la parte orientale dell\'antica Moldavia: una terra di colline e vigneti, attraversata da popoli delle steppe, contesa per secoli tra grandi imperi, indipendente dal 1991.',
   start: -800000,
   focus: { chisinau: '<p><b>Chișinău</b> è citata per la prima volta nel 1436 come piccolo villaggio vicino a una sorgente. Cresce soprattutto dopo il 1812 come capoluogo della Bessarabia russa ed è la capitale della Repubblica Moldova dal 1991.</p>' },

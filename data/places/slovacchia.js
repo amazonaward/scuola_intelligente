@@ -1,6 +1,6 @@
 PLACE({
   id: 'slovacchia',
-  names: { it: 'Slovacchia', en: 'Slovakia', fr: 'Slovaquie', ru: 'Словакия', ro: 'Slovacia' },
+  names: { it: 'Slovacchia', en: 'Slovakia', fr: 'Slovaquie', ru: 'Словакия', ro: 'Slovacia', de: 'Slowakei' },
   intro: 'La Slovacchia è un Paese di montagne (i Carpazi e i Tatra) e di pianure lungo il Danubio, tra Polonia, Ungheria, Austria e Repubblica Ceca. Per quasi mille anni fece parte del Regno d\'Ungheria; poi fu unita ai Cechi nella Cecoslovacchia. È indipendente dal 1993 e oggi fa parte dell\'UE e usa l\'euro.',
   start: -250000,
   eras: [

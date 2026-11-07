@@ -1,6 +1,6 @@
 PLACE({
   id: 'lituania',
-  names: { it: 'Lituania', en: 'Lithuania', fr: 'Lituanie', ru: 'Литва', ro: 'Lituania' },
+  names: { it: 'Lituania', en: 'Lithuania', fr: 'Lituanie', ru: 'Литва', ro: 'Lituania', de: 'Litauen' },
   intro: 'La Lituania è il più meridionale dei Paesi baltici, una terra di laghi, foreste e dune sul Mar Baltico. Fu l\'ultimo popolo pagano d\'Europa e nel Medioevo il Granducato di Lituania era lo Stato più grande del continente. Unita per secoli alla Polonia, poi all\'Impero russo e all\'URSS, è indipendente dal 1990 e fa parte dell\'UE.',
   start: -11000,
   eras: [

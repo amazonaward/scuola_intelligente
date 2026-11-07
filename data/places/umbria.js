@@ -1,6 +1,6 @@
 PLACE({
   id: "umbria",
-  names: { it: "Umbria", en: "Umbria", fr: "Ombrie", ru: "Умбрия", ro: "Umbria" },
+  names: { it: "Umbria", en: "Umbria", fr: "Ombrie", ru: "Умбрия", ro: "Umbria", de: 'Umbrien' },
   intro: "L'Umbria è il «cuore verde d'Italia», l'unica regione dell'Italia peninsulare senza mare. Colline, boschi e borghi sulle alture come <b>Perugia</b>, <b>Assisi</b>, <b>Gubbio</b>, <b>Orvieto</b> e <b>Spoleto</b>. Qui vivevano gli antichi <b>Umbri</b> e gli <b>Etruschi</b>; qui sono nati <b>san Benedetto</b> e <b>san Francesco</b>, e per secoli la regione ha fatto parte dello Stato della Chiesa.",
   start: -500000,
   eras: [

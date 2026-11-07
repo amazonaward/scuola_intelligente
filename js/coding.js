@@ -533,7 +533,7 @@
   W.Coding = { makeWorld, runRobot, solveRobot, countBlocks, progCount, fromShort, cond, tokenize, parseLogo, runLogo, segmentsOf, compareDrawing, COLORS, PALETTE, LogoError };
 
   /* =====================================================================
-     TESTI DELL'INTERFACCIA (5 lingue)
+     TESTI DELL'INTERFACCIA (6 lingue)
      ===================================================================== */
   const TXT = {
     it: {
@@ -820,6 +820,63 @@
       'lg.err.negrep': 'nu se poate repeta de un număr negativ de ori.', 'lg.err.width': 'grosimea trebuie să fie între 0 și 60.',
       'lg.err.char': 'simbolul „{w}” nu se folosește în cod.', 'lg.err.colon': 'după „:” scrie numele unei variabile, de exemplu :lat.', 'lg.err.quote': 'după „"” scrie un nume, de exemplu "lat.',
       'lg.err.badnum': '„{w}” nu este un număr valid.'
+    },
+    de: {
+      'cd.title': 'Programmieren mit Spaß', 'cd.robot': 'Der Roboter', 'cd.turtle': 'Die Schildkröte',
+      'cd.hub.lead': 'Lerne spielend programmieren: Steuere einen Roboter mit Blöcken oder lass eine Schildkröte zeichnen, indem du echten Code schreibst.',
+      'cd.hub.rec': 'Für dich empfohlen', 'cd.hub.primaria': 'Grundschule · Blöcke', 'cd.hub.medie': 'Mittelschule · Logo-Code',
+      'cd.hub.robotDesc': 'Bring den Roboter zum Stern: Abfolgen, Schleifen, Bedingungen und Funktionen in 34 Levels.',
+      'cd.hub.turtleDesc': 'Schreib Befehle wie „forward 100“ und „repeat 4 [ … ]“ und zeichne Sterne, Spiralen, Bäume und Fraktale.',
+      'cd.levelsDone': '{n} von {tot} Levels', 'cd.challDone': '{n} von {tot} Aufgaben', 'cd.play': 'Spielen', 'cd.continue': 'Weiter', 'cd.open': 'Öffnen',
+      'cd.what.title': 'Was ist Programmieren?', 'cd.what.seqT': 'Abfolge', 'cd.what.seq': 'Ein Programm ist eine Liste von Anweisungen, die nacheinander in der richtigen Reihenfolge ausgeführt werden.',
+      'cd.what.loopT': 'Schleife', 'cd.what.loop': 'Wenn sich etwas wiederholt, schreibst du es nur einmal und sagst, wie oft es gemacht werden soll.',
+      'cd.what.ifT': 'Bedingung', 'cd.what.if': 'Das Programm schaut sich die Lage an und entscheidet: Wenn das passiert… sonst…',
+      'cd.what.fnT': 'Funktion', 'cd.what.fn': 'Gib einer Gruppe von Anweisungen einen Namen und benutze sie wie einen neuen Befehl.',
+      'cd.robot.mapLead': 'Jedes Level bringt dir etwas Neues bei. Benutze wenige Blöcke, um 3 Sterne zu gewinnen!',
+      'cd.level': 'Level {n}', 'cd.run': 'Start', 'cd.pause': 'Pause', 'cd.step': 'Schritt', 'cd.stepT': 'Einen Block nach dem anderen ausführen', 'cd.resetT': 'Neu beginnen',
+      'cd.speed': 'Tempo', 'cd.blocks': 'Blöcke', 'cd.blocksHelp': 'zum Hinzufügen antippen', 'cd.program': 'Programm',
+      'cd.count': '{n} Blöcke · ⭐⭐⭐ mit {best}', 'cd.fnHelp': 'der Befehl, den du erfindest', 'cd.addHere': 'hier hinzufügen', 'cd.tapRemove': 'Zum Entfernen antippen',
+      'cd.progEmpty': 'Das Programm ist leer. Tippe auf die Blöcke oben!', 'cd.fnEmpty': 'Tippe hier und füge dann die Blöcke der Funktion hinzu.',
+      'cd.condT': 'Antippen, um die Bedingung zu ändern', 'cd.undo': 'Rückgängig', 'cd.clear': 'Leeren', 'cd.hint': 'Tipp', 'cd.solution': 'Lösung',
+      'cd.prev': 'Zurück', 'cd.next': 'Weiter', 'cd.map': 'Level-Karte',
+      'cd.b.fwd': 'Vorwärts', 'cd.b.left': 'Nach links drehen', 'cd.b.right': 'Nach rechts drehen', 'cd.b.pick': 'Aufheben', 'cd.b.rep': 'Wiederhole', 'cd.b.times': 'mal',
+      'cd.b.until': 'Wiederhole bis zum Stern', 'cd.b.if': 'Wenn', 'cd.b.else': 'sonst', 'cd.b.fn': 'Funktion',
+      'cd.c.wall': 'vorne ist eine Mauer', 'cd.c.water': 'vorne ist Wasser', 'cd.c.coin': 'hier liegt etwas', 'cd.c.pathR': 'rechts ist ein Weg', 'cd.c.pathL': 'links ist ein Weg',
+      'cd.msg.start': 'Tippe auf die Blöcke, um das Programm zu bauen, und drück dann ▶ Start.', 'cd.msg.ready': 'Fertig! Drück ▶ Start oder ⏭ Schritt.', 'cd.msg.running': 'Der Roboter führt das Programm aus…',
+      'cd.msg.paused': 'Pause. Drück ▶, um weiterzumachen.', 'cd.msg.max': 'In diesem Level darfst du höchstens {n} Blöcke benutzen.',
+      'cd.msg.solution': 'Hier ist eine Lösung: Schau zu, wie sie funktioniert, und versuch dann, sie selbst zu bauen!',
+      'cd.fail.wall': 'Bums! Der Roboter ist gegen ein Hindernis gestoßen.', 'cd.fail.door': 'Die Tür ist verschlossen: Du brauchst zuerst einen Schlüssel!', 'cd.fail.water': 'Platsch! Der Roboter ist ins Wasser gefallen.',
+      'cd.fail.nothing': 'Hier gibt es nichts zum Aufheben.', 'cd.fail.tired': 'Der Roboter ist müde: zu viele Schritte! Vielleicht hört eine Schleife nie auf.',
+      'cd.end.coins': 'Das Programm ist zu Ende, aber es müssen noch {n} aufgehoben werden.', 'cd.end.star': 'Das Programm ist zu Ende, aber der Roboter steht nicht auf dem Stern.', 'cd.end.empty': 'Das Programm ist leer: Füge ein paar Blöcke hinzu!',
+      'cd.win': 'Hurra! Level geschafft!', 'cd.win3': 'Perfekt! Drei Sterne!', 'cd.winBlocks': 'Du hast {n} Blöcke benutzt.', 'cd.winBest': 'Es geht auch mit {n}: Versuchst du es noch einmal?', 'cd.winPerfect': 'Kürzer geht es nicht!',
+      'cd.newRecord': '★ Neuer Rekord!', 'cd.again': 'Nochmal versuchen',
+      'cd.turtle.lead': 'Schreib den Code, drück auf Zeichnen und vergleiche deine Zeichnung mit der grauen Form.', 'cd.free': 'Freies Zeichnen', 'cd.freeDesc': 'Zeichne, was du willst, ohne Regeln',
+      'cd.challenge': 'Aufgabe {n}', 'cd.solved': 'Gelöst', 'cd.allChall': 'Alle Aufgaben', 'cd.draw': 'Zeichnen', 'cd.stop': 'Stopp', 'cd.examples': 'Beispiele', 'cd.savePng': 'Bild speichern',
+      'cd.ref': 'Befehle', 'cd.ref.move': 'Bewegen', 'cd.ref.pen': 'Stift', 'cd.ref.loop': 'Wiederholen und zählen', 'cd.ref.proc': 'Prozeduren und Entscheidungen',
+      'cd.ref.note': 'Die Befehle funktionieren auf Italienisch und auf Englisch: forward, back, right, left, penup, pendown, color, width, repeat, make "x, to … end, if, random.',
+      'cd.codeLabel': 'Code', 'cd.codePh': 'Schreib deine Befehle hier, zum Beispiel:\nforward 100\nright 90', 'cd.targetLegend': 'die Zeichnung, die du machen sollst',
+      'cd.heading': 'Richtung', 'cd.penDown': 'Stift unten', 'cd.penUp': 'Stift oben', 'cd.lineN': 'Zeile {n}:',
+      'cd.need.repeat': 'repeat zu benutzen', 'cd.need.to': 'to … end zu benutzen', 'cd.need.make': 'eine Variable zu benutzen', 'cd.need.recursion': 'Rekursion zu benutzen',
+      'cd.t.ready': 'Schreib den Code und drück ▶ Zeichnen (oder Strg+Enter).', 'cd.t.empty': 'Schreib mindestens einen Befehl, zum Beispiel forward 100.', 'cd.t.drawing': 'Die Schildkröte zeichnet…',
+      'cd.t.doneFree': 'Fertig! Was für eine schöne Zeichnung.', 'cd.t.ok': 'Super! Die Zeichnung stimmt.', 'cd.t.no': 'Noch nicht: Deine Zeichnung ist der grauen zu {p} % ähnlich. Prüfe die Längen und Winkel.',
+      'cd.t.needs': 'Die Zeichnung stimmt! Aber bei dieser Aufgabe sollst du versuchen, {w}.', 'cd.t.stopped': 'Gestoppt.', 'cd.msg.solutionT': 'Hier ist eine Lösung. Lies sie Zeile für Zeile und versuch, sie zu verändern!',
+      'cd.loadErr': 'Die Levels können nicht geladen werden. Lade die Seite neu.',
+      'lg.err.unknown': 'ich kenne den Befehl „{w}“ nicht.', 'lg.err.unknownS': 'ich kenne „{w}“ nicht. Meintest du „{s}“?',
+      'lg.err.neednum': 'nach „{c}“ muss eine Zahl stehen (zum Beispiel {c} 50).', 'lg.err.nocmd': 'ich weiß nicht, was ich mit „{w}“ machen soll. Jede Zeile muss mit einem Befehl beginnen, zum Beispiel forward.',
+      'lg.err.noclose': 'die schließende eckige Klammer „]“ fehlt.', 'lg.err.extraclose': 'da ist ein „]“ zu viel.', 'lg.err.strayopen': 'ein „[“ muss nach einem Befehl wie repeat stehen.',
+      'lg.err.needblock': 'nach „{c}“ muss ein Block in eckigen Klammern [ … ] stehen.', 'lg.err.paren': 'die schließende Klammer „)“ fehlt.',
+      'lg.err.novar': 'die Variable :{w} gibt es nicht. Erstelle sie zuerst mit make "{w} … oder prüfe die Schreibweise.',
+      'lg.err.makename': 'schreib nach „make“ den Namen der Variablen und dann den Wert, zum Beispiel make "seite 50.', 'lg.err.makereserved': '„{w}“ ist ein Befehl: Wähle einen anderen Namen für die Variable.',
+      'lg.err.pen': 'schreib „pen up“ oder „pen down“ (oder penup / pendown).', 'lg.err.color': 'ich kenne die Farbe „{w}“ nicht. Probier red, blue, green… oder einen Code wie #ff8800.', 'lg.err.colorS': 'ich kenne die Farbe „{w}“ nicht. Meintest du „{s}“?',
+      'lg.err.hex': 'die Farbe „{w}“ ist ungültig: Benutze # und 3 oder 6 Zeichen, zum Beispiel #f80 oder #ff8800.',
+      'lg.err.toname': 'schreib nach „to“ den Namen der neuen Prozedur.', 'lg.err.toreserved': '„{w}“ ist schon ein Befehl: Wähle einen anderen Namen für die Prozedur.',
+      'lg.err.noend': 'die Prozedur „{w}“ hört nie auf: „end“ fehlt.', 'lg.err.endalone': 'da steht ein „end“ ohne ein „to“ davor.', 'lg.err.tonested': 'du kannst keine Prozedur in einer anderen erstellen: Schließe sie zuerst mit „end“.',
+      'lg.err.else': '„else“ muss direkt nach dem Block [ … ] eines „if“ stehen.', 'lg.err.funcalone': '„{w}“ berechnet eine Zahl: Benutze es in einem Befehl, zum Beispiel forward {w} 100.',
+      'lg.err.div0': 'durch null kann man nicht teilen!', 'lg.err.sqrt': 'aus einer negativen Zahl kann man keine Quadratwurzel ziehen.', 'lg.err.big': 'diese Zahl ist zu groß für die Zeichenfläche.',
+      'lg.err.toolong': 'die Zeichnung ist zu lang: Hört vielleicht eine Schleife oder eine Rekursion nie auf?', 'lg.err.deep': 'die Prozedur „{w}“ ruft sich zu oft selbst auf: Sie braucht eine Regel zum Aufhören, zum Beispiel if :l < 5 [stop].',
+      'lg.err.negrep': 'man kann nicht eine negative Anzahl von Malen wiederholen.', 'lg.err.width': 'die Strichstärke muss zwischen 0 und 60 liegen.',
+      'lg.err.char': 'das Zeichen „{w}“ wird im Code nicht benutzt.', 'lg.err.colon': 'schreib nach „:“ den Namen einer Variablen, zum Beispiel :seite.', 'lg.err.quote': 'schreib nach „"“ einen Namen, zum Beispiel "seite.',
+      'lg.err.badnum': '„{w}“ ist keine gültige Zahl.'
     }
   };
   if (W.I18N) for (const l of Object.keys(TXT)) { W.I18N[l] = W.I18N[l] || {}; Object.assign(W.I18N[l], TXT[l]); }
@@ -829,7 +886,7 @@
      INTERFACCIA
      ===================================================================== */
   if (typeof document === 'undefined') return; // (test in Node: solo motori)
-  const LANG_IDX = ['it', 'en', 'fr', 'ru', 'ro'];
+  const LANG_IDX = ['it', 'en', 'fr', 'ru', 'ro', 'de'];
   const L = (arr) => (arr ? (arr[Math.max(0, LANG_IDX.indexOf(i18n.lang))] || arr[0]) : '');
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };

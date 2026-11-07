@@ -1,6 +1,6 @@
 PLACE({
   id: "cipro",
-  names: { it: "Cipro", en: "Cyprus", fr: "Chypre", ru: "Кипр", ro: "Cipru" },
+  names: { it: "Cipro", en: "Cyprus", fr: "Chypre", ru: "Кипр", ro: "Cipru", de: 'Zypern' },
   intro: "Cipro è la terza isola del Mediterraneo, vicinissima alle coste della Turchia e della Siria. Secondo il mito vi nacque Afrodite dalla schiuma del mare. Il suo nome è legato al rame (in latino cuprum): per questo metallo, e per la sua posizione, l'hanno voluta Egizi, Fenici, Greci, Romani, Bizantini, crociati, Veneziani, Ottomani e Britannici.",
   start: -11000,
   eras: [

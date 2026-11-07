@@ -1,6 +1,6 @@
 PLACE({
   id: "asia-meridionale",
-  names: { it: "Asia meridionale (India)", en: "South Asia (India)", fr: "Asie du Sud (Inde)", ru: "Южная Азия (Индия)", ro: "Asia de Sud (India)" },
+  names: { it: "Asia meridionale (India)", en: "South Asia (India)", fr: "Asie du Sud (Inde)", ru: "Южная Азия (Индия)", ro: "Asia de Sud (India)", de: 'Südasien (Indien)' },
   intro: "L'Asia meridionale è il «subcontinente indiano»: un grande triangolo di terra chiuso a nord dall'<b>Himalaya</b>, le montagne più alte del mondo, e bagnato dall'Oceano Indiano. I fiumi <b>Indo</b> e <b>Gange</b> e le piogge dei monsoni hanno nutrito una delle civiltà più antiche. Qui sono nati l'induismo, il buddhismo, il giainismo e il sikhismo, e i numeri con lo <b>zero</b> che usiamo ogni giorno. Oggi vi si trovano India, Pakistan, Bangladesh, Nepal, Sri Lanka e altri Stati.",
   start: -1500000,
   focus: {

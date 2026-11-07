@@ -1,6 +1,6 @@
 PLACE({
   id: 'francia',
-  names: { it: 'Francia', en: 'France', fr: 'France', ru: 'Франция', ro: 'Franța' },
+  names: { it: 'Francia', en: 'France', fr: 'France', ru: 'Франция', ro: 'Franța', de: 'Frankreich' },
   intro: 'La Francia, l\'antica Gallia, è affacciata su due mari e confina con l\'Italia sulle Alpi. Qui ci sono alcune delle grotte dipinte più antiche del mondo; poi Galli, Romani, Franchi, grandi re, la Rivoluzione del 1789 e Napoleone hanno cambiato la storia d\'Europa.',
   start: -1200000,
   focus: { parigi: '<p><b>Parigi</b> nasce come villaggio dei Celti <b>Parisii</b> sull\'isola della Senna, diventa la romana <i>Lutetia</i>, capitale dei re Franchi con Clodoveo e poi del Regno di Francia: città della Rivoluzione, della Torre Eiffel e delle Olimpiadi 2024.</p>' },

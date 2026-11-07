@@ -1,6 +1,6 @@
 PLACE({
   id: "croazia",
-  names: { it: "Croazia", en: "Croatia", fr: "Croatie", ru: "Хорватия", ro: "Croația" },
+  names: { it: "Croazia", en: "Croatia", fr: "Croatie", ru: "Хорватия", ro: "Croația", de: 'Kroatien' },
   intro: "La Croazia ha la forma di una mezzaluna: da una parte le pianure del Danubio e della Sava, dall'altra la lunga costa dell'Adriatico con più di mille isole. Proprio di fronte all'Italia, è stata terra di Illiri, Greci e Romani, poi di Croati, Ungheresi, Veneziani, Austriaci e Jugoslavi, fino all'indipendenza nel 1991.",
   start: -800000,
   eras: [

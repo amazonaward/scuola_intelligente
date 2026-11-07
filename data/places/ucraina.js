@@ -1,6 +1,6 @@
 PLACE({
   id: "ucraina",
-  names: { it: "Ucraina", en: "Ukraine", fr: "Ukraine", ru: "Украина", ro: "Ucraina" },
+  names: { it: "Ucraina", en: "Ukraine", fr: "Ukraine", ru: "Украина", ro: "Ucraina", de: 'Ukraine' },
   intro: "L'Ucraina è il più grande Paese interamente europeo: pianure di terra nera fertilissima, il grande fiume Dnipro e le coste del Mar Nero. Il suo nome significa probabilmente «terra di confine». Qui si sono incontrati per millenni i popoli della steppa e gli agricoltori, e qui è nata Kyiv, la madre delle città della Rus'.",
   start: -1400000,
   eras: [

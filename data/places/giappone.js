@@ -1,6 +1,6 @@
 PLACE({
   id: "giappone",
-  names: { it: "Giappone", en: "Japan", fr: "Japon", ru: "Япония", ro: "Japonia" },
+  names: { it: "Giappone", en: "Japan", fr: "Japon", ru: "Япония", ro: "Japonia", de: 'Japan' },
   intro: "Il Giappone è un arcipelago di quattro grandi isole e migliaia di isole più piccole nell'Oceano Pacifico, pieno di vulcani e spesso scosso da terremoti. I Giapponesi lo chiamano Nihon, «origine del Sole». È stato a lungo la terra di imperatori, shogun e samurai; oggi è una delle nazioni più moderne e tecnologiche del mondo.",
   start: -38000,
   eras: [

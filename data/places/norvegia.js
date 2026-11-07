@@ -1,6 +1,6 @@
 PLACE({
   id: 'norvegia',
-  names: { it: 'Norvegia', en: 'Norway', fr: 'Norvège', ru: 'Норвегия', ro: 'Norvegia' },
+  names: { it: 'Norvegia', en: 'Norway', fr: 'Norvège', ru: 'Норвегия', ro: 'Norvegia', de: 'Norwegen' },
   intro: 'La Norvegia è una lunga terra di montagne e fiordi sulla costa atlantica della Scandinavia, fin oltre il Circolo polare artico. Il suo nome significa "la via del nord". Fu patria di Vichinghi esploratori, poi per secoli unita a Danimarca e Svezia; indipendente dal 1905, oggi è uno dei Paesi più ricchi del mondo.',
   start: -12000,
   eras: [

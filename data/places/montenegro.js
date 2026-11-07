@@ -1,6 +1,6 @@
 PLACE({
   id: "montenegro",
-  names: { it: "Montenegro", en: "Montenegro", fr: "Monténégro", ru: "Черногория", ro: "Muntenegru" },
+  names: { it: "Montenegro", en: "Montenegro", fr: "Monténégro", ru: "Черногория", ro: "Muntenegru", de: 'Montenegro' },
   intro: "Il Montenegro, la «Montagna Nera», è un piccolo Paese di montagne scure e di mare, con le Bocche di Cattaro che sembrano un fiordo. Le sue montagne lo hanno reso difficile da conquistare: qui piccoli principi-vescovi hanno resistito per secoli all'Impero ottomano.",
   start: -100000,
   eras: [

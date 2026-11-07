@@ -1,6 +1,6 @@
 PLACE({
   id: 'paesi-bassi',
-  names: { it: 'Paesi Bassi', en: 'Netherlands', fr: 'Pays-Bas', ru: 'Нидерланды', ro: 'Țările de Jos' },
+  names: { it: 'Paesi Bassi', en: 'Netherlands', fr: 'Pays-Bas', ru: 'Нидерланды', ro: 'Țările de Jos', de: 'Niederlande' },
   intro: 'I Paesi Bassi (spesso chiamati Olanda) sono una terra piatta sul Mare del Nord, in gran parte sotto il livello del mare. I suoi abitanti hanno "costruito" il loro Paese con dighe, mulini e canali. Nel Seicento questa piccola repubblica di mercanti era la più ricca del mondo. Oggi è una monarchia democratica dell\'Unione Europea.',
   start: -250000,
   eras: [

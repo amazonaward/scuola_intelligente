@@ -1,6 +1,6 @@
 PLACE({
   id: 'piemonte',
-  names: { it: 'Piemonte', en: 'Piedmont', fr: 'Piémont', ru: 'Пьемонт', ro: 'Piemont' },
+  names: { it: 'Piemonte', en: 'Piedmont', fr: 'Piémont', ru: 'Пьемонт', ro: 'Piemont', de: 'Piemont' },
   intro: 'Il Piemonte è la regione "ai piedi dei monti": un grande anfiteatro di Alpi che si apre sulla pianura del Po. Qui sono passati cacciatori della preistoria, Liguri e Celti, Romani, Longobardi e Franchi; poi i Savoia, che da Torino hanno costruito il Regno che ha unito l\'Italia.',
   start: -300000,
   focus: {

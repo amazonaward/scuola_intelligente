@@ -27,7 +27,7 @@ function warn(m) { warnings++; console.log('  ⚠ ' + m); }
 for (const id of Object.keys(C.gen)) if (!ids.has(id)) err(`gen: id sconosciuto ${id}`);
 for (const id of C.full) if (!ids.has(id)) err(`full: id sconosciuto ${id}`);
 
-const LANGS = ['it', 'en', 'fr', 'ru', 'ro'];
+const LANGS = ['it', 'en', 'fr', 'ru', 'ro', 'de'];
 // traduzioni curriculum
 for (const l of LANGS.slice(1)) {
   const f = path.join(root, `data/i18n/curriculum.${l}.js`);

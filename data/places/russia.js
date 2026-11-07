@@ -1,6 +1,6 @@
 PLACE({
   id: "russia",
-  names: { it: "Russia", en: "Russia", fr: "Russie", ru: "Россия", ro: "Rusia" },
+  names: { it: "Russia", en: "Russia", fr: "Russie", ru: "Россия", ro: "Rusia", de: 'Russland' },
   intro: "La Russia è il Paese più grande del mondo: va dal Mar Baltico all'Oceano Pacifico, attraversando undici fusi orari, foreste di taiga, steppe e tundra ghiacciata. La sua storia comincia tra le foreste e i fiumi dell'Europa orientale, con i principati della Rus', e continua con i Mongoli, gli zar, la rivoluzione e l'Unione Sovietica.",
   start: -300000,
   eras: [

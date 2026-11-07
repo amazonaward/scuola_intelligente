@@ -44,7 +44,7 @@
   const TXT = {
     it: ['visitatori', 'tempo medio per visitatore'], en: ['visitors', 'average time per visitor'],
     fr: ['visiteurs', 'temps moyen par visiteur'], ru: ['посетителей', 'среднее время на посетителя'],
-    ro: ['vizitatori', 'timp mediu per vizitator'] };
+    ro: ['vizitatori', 'timp mediu per vizitator'], de: ['Besucher', 'durchschnittliche Zeit pro Besucher'] };
   let stats = null;
   function fmt(sec) {
     const m = Math.round(sec / 60);

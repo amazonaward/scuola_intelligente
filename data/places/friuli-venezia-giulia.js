@@ -1,6 +1,6 @@
 PLACE({
   id: "friuli-venezia-giulia",
-  names: { it: "Friuli-Venezia Giulia", en: "Friuli-Venezia Giulia", fr: "Frioul-Vénétie Julienne", ru: "Фриули-Венеция-Джулия", ro: "Friuli-Veneția Giulia" },
+  names: { it: "Friuli-Venezia Giulia", en: "Friuli-Venezia Giulia", fr: "Frioul-Vénétie Julienne", ru: "Фриули-Венеция-Джулия", ro: "Friuli-Veneția Giulia", de: 'Friaul-Julisch Venetien' },
   intro: "Il Friuli-Venezia Giulia è l'angolo nord-orientale d'Italia, dove il mondo <b>latino</b>, quello <b>germanico</b> e quello <b>slavo</b> si incontrano. Dalle Alpi Carniche scende la pianura fino al mare di <b>Aquileia</b>, <b>Grado</b> e <b>Trieste</b>. È una «porta orientale»: da qui sono entrati Unni, Longobardi, Ungari e Turchi, e qui sono passati i confini delle guerre del Novecento.",
   start: -450000,
   eras: [

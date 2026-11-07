@@ -6,11 +6,11 @@
 (function () {
   window.ZPages = window.ZPages || {};
   const ROOT = 'data/places/';
-  const LANG_IX = { it: 0, en: 1, fr: 2, ru: 3, ro: 4 };
+  const LANG_IX = { it: 0, en: 1, fr: 2, ru: 3, ro: 4, de: 5 };
   const DEG = Math.PI / 180, TAU = Math.PI * 2;
   const NOW = 2026;
 
-  /* ================= testi dell'interfaccia (5 lingue) ================= */
+  /* ================= testi dell'interfaccia (6 lingue) ================= */
   const TXT = {
     it: {
       'pl.title': 'Storia dei luoghi', 'pl.sub': 'Tocca un punto del globo e scopri tutta la storia di quel luogo: dai primi esseri umani fino a oggi.',
@@ -116,6 +116,27 @@
       'pl.q.event': 'În ce epocă s-a întâmplat? «{text}»', 'pl.q.before': '«{a}» vine înainte de «{b}» în istoria locului {place}.',
       'pl.q.exRuler': 'Din {from} până în {to} aici a condus: {ruler}.', 'pl.q.exOrder': 'Ordinea corectă: {list}.', 'pl.q.exEvent': 'S-a întâmplat în {year}, în epoca «{era}».',
       'pl.q.exBefore': '«{a}» începe în {ya}, «{b}» în {yb}.', 'pl.loading': 'Se încarcă povestea…'
+    },
+    de: {
+      'pl.title': 'Geschichte der Orte', 'pl.sub': 'Tippe auf einen Punkt des Globus und entdecke die ganze Geschichte dieses Ortes: von den ersten Menschen bis heute.',
+      'pl.search': 'Eine Region oder ein Land suchen…', 'pl.where': 'Wo bin ich?', 'pl.whereTitle': 'Wo wohnst du?', 'pl.whereText': 'Wähle deinen Ort aus der Liste: Ich merke ihn mir für dein Profil.',
+      'pl.home': 'Mein Zuhause', 'pl.tapHint': 'Ziehen, um den Globus zu drehen; Mausrad oder zwei Finger zum Zoomen; tippen, um einen Ort zu wählen.',
+      'pl.pickFirst': 'Tippe auf den Globus oder wähle einen Ort aus der Liste.', 'pl.open': 'Geschichte öffnen', 'pl.ready': 'Geschichte fertig: {n} Epochen',
+      'pl.coming': 'Geschichte in Vorbereitung', 'pl.comingUse': 'In der Zwischenzeit kannst du die Geschichte von {name} lesen.', 'pl.sea': 'Du hast das Meer angetippt! Der nächste Ort ist:',
+      'pl.readyList': 'Fertige Geschichten', 'pl.allList': 'Alle Orte', 'pl.g.italia': 'Regionen Italiens', 'pl.g.europa': 'Länder Europas', 'pl.g.mondo': 'Die Welt', 'pl.g.citta': 'Städte',
+      'pl.none': 'Kein Ort gefunden.', 'pl.zoomIn': 'Heranzoomen', 'pl.zoomOut': 'Herauszoomen', 'pl.reset': 'Ganzer Globus',
+      'pl.timeline': 'Reise durch die Zeit', 'pl.drag': 'Zieh den Zeitstrahl oder drück ▶', 'pl.play': 'Start', 'pl.pause': 'Pause',
+      'pl.prev': 'Vorherige Epoche', 'pl.next': 'Nächste Epoche', 'pl.ruler': 'Wer herrschte', 'pl.life': 'Wie man lebte', 'pl.why': 'Warum kam es so?',
+      'pl.events': 'Wichtige Ereignisse', 'pl.lessons': 'Passende Lektionen', 'pl.map': 'Wo wir sind und wie weit der Staat reichte',
+      'pl.mapRegion': 'Region', 'pl.mapEmpire': 'Staat/Reich', 'pl.who': 'Wer hier herrschte', 'pl.whoHint': 'Jeder Balken ist ein Staat oder ein Volk. Tippe darauf, um zu dieser Epoche zu springen.',
+      'pl.explored': 'Entdeckte Epochen: {a} von {b}', 'pl.allDone': 'Du hast die ganze Geschichte von {name} entdeckt! 🏅', 'pl.quiz': 'Teste dich selbst',
+      'pl.fallback': 'Die Geschichte von {name} wird in der Geschichte von {parent} erzählt.', 'pl.comingTitle': '{name}: Geschichte in Vorbereitung',
+      'pl.comingText': 'Wir schreiben die Geschichte dieses Ortes noch. Entdecke in der Zwischenzeit diese fertigen Geschichten:', 'pl.back': 'Zurück zum Globus',
+      'pl.yearsAgo': 'vor etwa {n} Jahren', 'pl.today': 'heute', 'pl.from': 'von', 'pl.to': 'bis', 'pl.eras': 'Epochen', 'pl.here': 'Hier',
+      'pl.q.ruler': 'Wer herrschte um das Jahr {year} über {place}?', 'pl.q.order': 'Bring diese Epochen aus der Geschichte von {place} in die richtige Reihenfolge, von der ältesten zur jüngsten.',
+      'pl.q.event': 'In welcher Epoche ist das passiert? «{text}»', 'pl.q.before': '«{a}» kommt in der Geschichte von {place} vor «{b}».',
+      'pl.q.exRuler': 'Von {from} bis {to} herrschte hier: {ruler}.', 'pl.q.exOrder': 'Richtige Reihenfolge: {list}.', 'pl.q.exEvent': 'Es geschah {year}, in der Epoche «{era}».',
+      'pl.q.exBefore': '«{a}» beginnt {ya}, «{b}» {yb}.', 'pl.loading': 'Die Geschichte wird geladen…'
     }
   };
   for (const l in TXT) { I18N[l] = I18N[l] || {}; Object.assign(I18N[l], TXT[l]); }
@@ -168,6 +189,9 @@
     return storyP[k] || (storyP[k] = Z.loadScript(ROOT + l + '/' + id + '.js').then(() => STORIES[k] || loadIt(id)).catch(() => loadIt(id)));
   }
   const nameOf = (p) => (p ? (p.n[LANG_IX[i18n.lang]] || p.n[0]) : '');
+  /* nome e data di uno Stato/impero di empires.js nella lingua attiva (names: { <lingua>: … }, altrimenti il nome italiano) */
+  const empName = (E) => (E.names && E.names[i18n.lang]) || E.name;
+  const empDate = (d) => (i18n.lang === 'it' ? d : String(d).replace(/ a\.C\.$/, ' ' + t('w.bc')).replace(/ d\.C\.$/, ' ' + t('w.ad')));
   const chain = (p) => { const c = []; while (p) { c.unshift(p); p = CAT.byId[p.parent]; } return c; };
   /* il luogo (o l'antenato più vicino) che ha una storia scritta */
   const storyOwner = (p) => { while (p && !p.ready) p = CAT.byId[p.parent]; return p || null; };
@@ -690,7 +714,7 @@
       if (!e.extent) return null;
       if (Array.isArray(e.extent)) return { rings: Array.isArray(e.extent[0][0]) ? e.extent : [e.extent], name: e.ruler };
       if (e.extent.startsWith('place:')) { const p = CAT.byId[e.extent.slice(6)]; return p && { rings: p.rings, name: nameOf(p) }; }
-      const E = EMPIRES[e.extent]; return E && { rings: E.rings, name: E.name + (E.date ? ' (' + E.date + ')' : '') };
+      const E = EMPIRES[e.extent]; return E && { rings: E.rings, name: empName(E) + (E.date ? ' (' + empDate(E.date) + ')' : '') };
     };
 
     /* --- chi governava (barre impilate) --- */

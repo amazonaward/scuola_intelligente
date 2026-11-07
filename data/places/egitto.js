@@ -1,6 +1,6 @@
 PLACE({
   id: 'egitto',
-  names: { it: 'Egitto', en: 'Egypt', fr: 'Égypte', ru: 'Египет', ro: 'Egipt' },
+  names: { it: 'Egitto', en: 'Egypt', fr: 'Égypte', ru: 'Египет', ro: 'Egipt', de: 'Ägypten' },
   intro: 'L\'Egitto è "un dono del Nilo": un lungo nastro verde in mezzo al deserto. Qui per tremila anni hanno regnato i faraoni; poi sono arrivati Persiani, Greci, Romani, Arabi, Ottomani e Inglesi, fino alla Repubblica di oggi.',
   start: -500000,
   focus: { cairo: '<p><b>Il Cairo</b> ("la vittoriosa") viene fondato dai Fatimidi nel 969, vicino all\'antica Menfi e alle piramidi di Giza. Oggi è la città più grande del mondo arabo e dell\'Africa.</p>' },

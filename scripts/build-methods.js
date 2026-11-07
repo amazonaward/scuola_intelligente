@@ -11,7 +11,7 @@ const COUNTRIES = [
   ['gb', '🇬🇧', /ingles|inghilterra|chunking|🇬🇧/i], ['us', '🇺🇸', /americ|usa\b|stati uniti|algebra tiles|🇺🇸/i],
   ['de', '🇩🇪', /german|🇩🇪/i], ['maya', '🗿', /maya|azteca/i], ['md', '🇲🇩', /moldav|🇲🇩/i], ['ro', '🇷🇴', /romania|romen|🇷🇴/i], ['fi', '🇫🇮', /finland|🇫🇮/i], ['kr', '🇰🇷', /corea|🇰🇷/i]
 ];
-const LANGS = ['it', 'en', 'fr', 'ru', 'ro'];
+const LANGS = ['it', 'en', 'fr', 'ru', 'ro', 'de'];
 const ctx = {}; ctx.window = ctx; let cur = null; ctx.TOPIC = (l, t) => { cur = t; }; vm.createContext(ctx);
 const read = (f) => { cur = null; vm.runInContext(fs.readFileSync(f, 'utf8'), ctx); return cur; };
 const out = [];

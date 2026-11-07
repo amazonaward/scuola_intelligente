@@ -1,6 +1,6 @@
 PLACE({
   id: 'austria',
-  names: { it: 'Austria', en: 'Austria', fr: 'Autriche', ru: 'Австрия', ro: 'Austria' },
+  names: { it: 'Austria', en: 'Austria', fr: 'Autriche', ru: 'Австрия', ro: 'Austria', de: 'Österreich' },
   intro: 'L\'Austria è un Paese di Alpi e di Danubio nel centro dell\'Europa. Il suo nome significa "terra dell\'est" (Österreich): era la marca orientale dell\'Impero. Per più di 600 anni gli Asburgo da Vienna governarono un impero di molti popoli, anche parte dell\'Italia. Oggi è una piccola repubblica neutrale dell\'Unione Europea.',
   start: -250000,
   eras: [

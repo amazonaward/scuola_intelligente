@@ -1,6 +1,6 @@
 PLACE({
   id: 'germania',
-  names: { it: 'Germania', en: 'Germany', fr: 'Allemagne', ru: 'Германия', ro: 'Germania' },
+  names: { it: 'Germania', en: 'Germany', fr: 'Allemagne', ru: 'Германия', ro: 'Germania', de: 'Deutschland' },
   intro: 'La Germania è al centro dell\'Europa, tra le Alpi e i mari del Nord e Baltico, attraversata da grandi fiumi come il Reno, l\'Elba e il Danubio. Per mille anni è stata divisa in tanti Stati dentro il Sacro Romano Impero; si è unita solo nel 1871, ha scatenato due guerre mondiali, è stata divisa in due e si è riunificata nel 1990.',
   start: -600000,
   eras: [

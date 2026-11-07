@@ -1,6 +1,6 @@
 PLACE({
   id: "malta",
-  names: { it: "Malta", en: "Malta", fr: "Malte", ru: "Мальта", ro: "Malta" },
+  names: { it: "Malta", en: "Malta", fr: "Malte", ru: "Мальта", ro: "Malta", de: 'Malta' },
   intro: "Malta è un piccolo arcipelago (Malta, Gozo e Comino) in mezzo al Mediterraneo, a meno di 100 km dalla Sicilia. È piccolissima ma la sua posizione è preziosa: per questo l'hanno governata Fenici, Cartaginesi, Romani, Arabi, Normanni, i Cavalieri di San Giovanni e i Britannici. Qui si trovano templi più antichi delle piramidi d'Egitto.",
   start: -5900,
   eras: [

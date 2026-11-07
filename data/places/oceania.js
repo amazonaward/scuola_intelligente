@@ -1,6 +1,6 @@
 PLACE({
   id: "oceania",
-  names: { it: "Oceania", en: "Oceania", fr: "Océanie", ru: "Океания", ro: "Oceania" },
+  names: { it: "Oceania", en: "Oceania", fr: "Océanie", ru: "Океания", ro: "Oceania", de: 'Ozeanien' },
   intro: "L'Oceania comprende l'<b>Australia</b>, la <b>Nuova Guinea</b>, la <b>Nuova Zelanda</b> e migliaia di isole sparse nell'Oceano Pacifico (Melanesia, Micronesia, Polinesia). Gli <b>Aborigeni australiani</b> hanno una delle culture continue più antiche del mondo; i <b>Polinesiani</b> furono i più grandi navigatori della storia, capaci di trovare isole minuscole in mezzo all'oceano guidati da stelle, onde e uccelli.",
   start: -65000,
   focus: {

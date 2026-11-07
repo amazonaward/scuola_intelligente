@@ -1,6 +1,6 @@
 PLACE({
   id: 'estonia',
-  names: { it: 'Estonia', en: 'Estonia', fr: 'Estonie', ru: 'Эстония', ro: 'Estonia' },
+  names: { it: 'Estonia', en: 'Estonia', fr: 'Estonie', ru: 'Эстония', ro: 'Estonia', de: 'Estland' },
   intro: 'L\'Estonia è il più settentrionale dei tre Paesi baltici, affacciata sul golfo di Finlandia. Gli Estoni parlano una lingua simile al finlandese. Per sette secoli furono governati da Danesi, cavalieri tedeschi, Svedesi e Russi; sono diventati indipendenti nel 1918 e di nuovo nel 1991, con una "rivoluzione cantata". Oggi l\'Estonia è un Paese digitale dell\'UE.',
   start: -9000,
   eras: [

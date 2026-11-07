@@ -4,7 +4,7 @@
 window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
   /* ======================= STELLE ======================= */
   { id: 'sirio', cat: 'star', emoji: '✨', star: 'sirio', rs: 1.71, temp: 9940,
-    name: ['Sirio', 'Sirius', 'Sirius', 'Сириус', 'Sirius'], kind: 'Stella bianca di sequenza principale (A1V) + nana bianca',
+    name: ['Sirio', 'Sirius', 'Sirius', 'Сириус', 'Sirius', 'Sirius'], kind: 'Stella bianca di sequenza principale (A1V) + nana bianca',
     lead: 'La stella più brillante del cielo notturno, nella costellazione del Cane Maggiore.',
     facts: [['Distanza', '8,6 anni luce'], ['Tipo', 'A1V, bianca'], ['Temperatura', 'circa 9.940 K (≈ 9.670 °C)'], ['Raggio', '1,7 volte il Sole'], ['Luminosità', '25 volte il Sole'], ['Compagna', 'Sirio B, una nana bianca grande come la Terra']],
     html: '<p>Sirio è la stella più luminosa del cielo notturno. Il suo nome viene dal greco e significa <b>"ardente"</b>. In inverno la trovi seguendo verso sinistra in basso la cintura di Orione.</p><p>In realtà è una <b>stella doppia</b>: accanto a Sirio A gira <b>Sirio B</b>, una <b>nana bianca</b>, cioè il nucleo spento di una stella morta. È grande come la Terra ma pesa quanto il Sole: un cucchiaino del suo materiale peserebbe tonnellate!</p>',
@@ -15,7 +15,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Che cos\'è Sirio B?', options: ['Un pianeta', 'Una nana bianca', 'Una cometa'], answer: 1, explain: 'Il nucleo caldissimo e compatto di una stella che ha finito il combustibile.' }
     ] },
   { id: 'alfa-centauri', cat: 'star', emoji: '⭐', star: 'alfa-centauri', rs: 1.22, temp: 5790,
-    name: ['Alfa Centauri', 'Alpha Centauri', 'Alpha du Centaure', 'Альфа Центавра', 'Alfa Centauri'], kind: 'Sistema di tre stelle, il più vicino al Sole',
+    name: ['Alfa Centauri', 'Alpha Centauri', 'Alpha du Centaure', 'Альфа Центавра', 'Alfa Centauri', 'Alpha Centauri'], kind: 'Sistema di tre stelle, il più vicino al Sole',
     lead: 'Il sistema stellare più vicino a noi: tre stelle a poco più di 4 anni luce.',
     facts: [['Distanza', '4,37 anni luce (A e B), 4,24 (Proxima)'], ['Alfa Centauri A', 'tipo G2V come il Sole, 1,2 volte più grande'], ['Alfa Centauri B', 'tipo K1V, arancione, un po\' più piccola del Sole'], ['Giro di A e B', 'circa 80 anni'], ['Visibilità', 'cielo australe, non si vede dall\'Italia']],
     html: '<p>A occhio nudo sembra una sola stella, la terza più brillante del cielo. Con un telescopio si vede che è formata da <b>due stelle gemelle del Sole</b>, A e B, che si girano intorno in circa 80 anni. Un po\' più lontano gira una terza piccola stella rossa: <b>Proxima</b>.</p><p>La sua luce, che vediamo oggi, è partita più di 4 anni fa. Con le astronavi di oggi ci vorrebbero decine di migliaia di anni per arrivarci!</p>',
@@ -26,7 +26,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Quanto è lontana Alfa Centauri?', options: ['4,4 anni luce', '44 anni luce', '4.400 anni luce'], answer: 0, explain: 'Circa 4,37 anni luce.' }
     ] },
   { id: 'proxima', cat: 'star', emoji: '🔴', star: 'proxima', rs: 0.154, temp: 3040,
-    name: ['Proxima Centauri', 'Proxima Centauri', 'Proxima du Centaure', 'Проксима Центавра', 'Proxima Centauri'], kind: 'Nana rossa (M5.5V), la stella più vicina al Sole',
+    name: ['Proxima Centauri', 'Proxima Centauri', 'Proxima du Centaure', 'Проксима Центавра', 'Proxima Centauri', 'Proxima Centauri'], kind: 'Nana rossa (M5.5V), la stella più vicina al Sole',
     lead: 'La stella più vicina a noi dopo il Sole… ma è troppo debole per vederla a occhio nudo.',
     facts: [['Distanza', '4,24 anni luce (40.000 miliardi di km)'], ['Tipo', 'M5.5V, nana rossa'], ['Temperatura', 'circa 3.040 K'], ['Raggio', '0,15 volte il Sole (poco più di Giove)'], ['Luminosità', 'meno di 1/500 del Sole'], ['Pianeti', 'almeno 2, tra cui Proxima b (2016)']],
     html: '<p>Proxima vuol dire <b>"la più vicina"</b>. È una <b>nana rossa</b>: una stella piccola, fredda e poco luminosa, il tipo di stella più comune nella nostra galassia.</p><p>Intorno a lei gira <b>Proxima b</b>, un pianeta poco più grande della Terra nella <b>zona abitabile</b>, dove l\'acqua potrebbe essere liquida. Però Proxima lancia spesso brillamenti fortissimi, che renderebbero difficile la vita.</p>',
@@ -37,7 +37,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'text', q: 'Come si chiama il pianeta di Proxima nella zona abitabile?', answer: ['proxima b'], explain: 'Proxima b, scoperto nel 2016.' }
     ] },
   { id: 'barnard', cat: 'star', emoji: '🔴', star: 'barnard', rs: 0.19, temp: 3200,
-    name: ['Stella di Barnard', "Barnard's Star", 'Étoile de Barnard', 'Звезда Барнарда', 'Steaua lui Barnard'], kind: 'Nana rossa (M4V)',
+    name: ['Stella di Barnard', "Barnard's Star", 'Étoile de Barnard', 'Звезда Барнарда', 'Steaua lui Barnard', 'Barnards Stern'], kind: 'Nana rossa (M4V)',
     lead: 'La stella singola più vicina al Sole e quella che si sposta più veloce nel cielo.',
     facts: [['Distanza', '5,96 anni luce'], ['Tipo', 'M4V, nana rossa'], ['Temperatura', 'circa 3.200 K'], ['Raggio', '0,19 volte il Sole'], ['Moto nel cielo', '10,3 secondi d\'arco all\'anno (il record)'], ['Età', 'forse 10 miliardi di anni']],
     html: '<p>Nel 1916 l\'astronomo <b>Edward Barnard</b> si accorse che questa debole stella si muoveva nel cielo più di ogni altra: in 180 anni percorre una distanza pari alla larghezza della Luna piena. Succede perché è vicina e viaggia veloce.</p><p>È molto più vecchia del Sole. Tra circa 10.000 anni sarà a meno di 4 anni luce: per un po\' diventerà la stella più vicina a noi!</p>',
@@ -48,7 +48,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Che tipo di stella è?', options: ['Nana rossa', 'Gigante gialla', 'Nana bianca'], answer: 0, explain: 'Una nana rossa di tipo M4.' }
     ] },
   { id: 'betelgeuse', cat: 'star', emoji: '🔴', star: 'betelgeuse', rs: 760, temp: 3600,
-    name: ['Betelgeuse', 'Betelgeuse', 'Bételgeuse', 'Бетельгейзе', 'Betelgeuse'], kind: 'Supergigante rossa (M1-2 Ia)',
+    name: ['Betelgeuse', 'Betelgeuse', 'Bételgeuse', 'Бетельгейзе', 'Betelgeuse', 'Betelgeuse'], kind: 'Supergigante rossa (M1-2 Ia)',
     lead: 'Una stella così gigante che, al posto del Sole, arriverebbe oltre l\'orbita di Marte.',
     facts: [['Distanza', 'circa 550 anni luce (incerta, tra 500 e 700)'], ['Tipo', 'M1-2 Ia, supergigante rossa'], ['Temperatura', 'circa 3.600 K'], ['Raggio', 'circa 760 volte il Sole'], ['Luminosità', 'circa 100.000 volte il Sole'], ['Massa', 'circa 15–20 volte il Sole'], ['Costellazione', 'Orione (la spalla)']],
     html: '<p>Betelgeuse è la stella rossa della <b>spalla di Orione</b>. È una <b>supergigante rossa</b>: una stella vecchia che si è gonfiata enormemente. Se fosse al posto del Sole, inghiottirebbe Mercurio, Venere, la Terra e Marte!</p><p>Tra il 2019 e il 2020 la sua luce si è abbassata moltissimo (il <b>"Grande Affievolimento"</b>): era una nube di polvere espulsa dalla stella. Betelgeuse finirà la sua vita esplodendo come <b>supernova</b>, forse entro 100.000 anni: per settimane sarà visibile anche di giorno!</p>',
@@ -59,7 +59,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'Betelgeuse è nella costellazione di Orione.', answer: true, explain: 'È la sua spalla, la stella rossa in alto a sinistra.' }
     ] },
   { id: 'rigel', cat: 'star', emoji: '💎', star: 'rigel', rs: 79, temp: 12100,
-    name: ['Rigel', 'Rigel', 'Rigel', 'Ригель', 'Rigel'], kind: 'Supergigante blu (B8 Ia)',
+    name: ['Rigel', 'Rigel', 'Rigel', 'Ригель', 'Rigel', 'Rigel'], kind: 'Supergigante blu (B8 Ia)',
     lead: 'Il piede luminoso di Orione: una supergigante blu-bianca decine di migliaia di volte più luminosa del Sole.',
     facts: [['Distanza', 'circa 860 anni luce'], ['Tipo', 'B8 Ia, supergigante blu'], ['Temperatura', 'circa 12.100 K'], ['Raggio', 'circa 79 volte il Sole'], ['Luminosità', 'circa 100.000 volte il Sole'], ['Costellazione', 'Orione (il piede)']],
     html: '<p>Rigel è la stella più brillante di Orione e la settima del cielo. È una <b>supergigante blu</b>: molto più calda del Sole, per questo la sua luce è bianco-azzurra.</p><p>Il colore delle stelle dice la loro <b>temperatura</b>: le rosse come Betelgeuse sono le più "fredde", le blu come Rigel le più calde. Guarda Orione in una notte d\'inverno: vedrai entrambi i colori!</p>',
@@ -70,7 +70,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Quale parte di Orione è Rigel?', options: ['La spalla', 'Il piede', 'La spada'], answer: 1, explain: 'Rigel significa proprio "piede".' }
     ] },
   { id: 'vega', cat: 'star', emoji: '💠', star: 'vega', rs: 2.5, temp: 9600,
-    name: ['Vega', 'Vega', 'Véga', 'Вега', 'Vega'], kind: 'Stella bianca di sequenza principale (A0V)',
+    name: ['Vega', 'Vega', 'Véga', 'Вега', 'Vega', 'Vega'], kind: 'Stella bianca di sequenza principale (A0V)',
     lead: 'La stella azzurrina delle sere d\'estate: tra 12.000 anni sarà la nostra stella polare.',
     facts: [['Distanza', '25 anni luce'], ['Tipo', 'A0V, bianco-azzurra'], ['Temperatura', 'circa 9.600 K'], ['Raggio', 'circa 2,5 volte il Sole'], ['Luminosità', 'circa 40 volte il Sole'], ['Costellazione', 'Lira']],
     html: '<p>Vega è la stella più brillante della costellazione della <b>Lira</b> e d\'estate brilla quasi sopra la nostra testa. Insieme a <b>Deneb</b> e <b>Altair</b> forma il <b>Triangolo estivo</b>.</p><p>L\'asse della Terra si muove lentamente come una trottola (si chiama <b>precessione</b>) e fa un giro in circa 26.000 anni. Per questo verso l\'anno 13.700 sarà Vega a indicare il nord, al posto della Stella Polare.</p><p>Gira velocissima su se stessa: è un po\' schiacciata ai poli.</p>',
@@ -81,7 +81,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'In che costellazione si trova Vega?', options: ['Lira', 'Cigno', 'Aquila'], answer: 0, explain: 'È la stella alfa della Lira.' }
     ] },
   { id: 'polare', cat: 'star', emoji: '🧭', star: 'polare', rs: 46, temp: 6000,
-    name: ['Stella Polare', 'Polaris', 'Étoile polaire', 'Полярная звезда', 'Steaua Polară'], kind: 'Supergigante gialla variabile (F7 Ib)',
+    name: ['Stella Polare', 'Polaris', 'Étoile polaire', 'Полярная звезда', 'Steaua Polară', 'Polarstern'], kind: 'Supergigante gialla variabile (F7 Ib)',
     lead: 'Non è la più brillante, ma è la più utile: indica sempre il nord.',
     facts: [['Distanza', 'circa 430 anni luce'], ['Tipo', 'F7 Ib, supergigante gialla (variabile cefeide)'], ['Temperatura', 'circa 6.000 K'], ['Raggio', 'circa 46 volte il Sole'], ['Luminosità', 'circa 1.300 volte il Sole'], ['Costellazione', 'Orsa Minore (la punta del timone)']],
     html: '<p>La Stella Polare si trova quasi esattamente sopra il <b>Polo Nord</b> della Terra. Mentre la Terra gira, tutte le stelle sembrano ruotare intorno a lei, mentre lei resta (quasi) ferma. Per questo da sempre i viaggiatori la usano per trovare il <b>nord</b>.</p><p>Per trovarla: cerca il <b>Grande Carro</b> (Orsa Maggiore), prendi le due stelle in fondo al carro (Merak e Dubhe) e prolunga la linea circa 5 volte.</p><p>La sua altezza sull\'orizzonte è uguale alla tua <b>latitudine</b>: da Torino è alta circa 45°.</p>',
@@ -92,7 +92,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Da Torino (latitudine 45°) quanto è alta la Polare sull\'orizzonte?', options: ['Circa 10°', 'Circa 45°', 'Circa 90°'], answer: 1, explain: 'L\'altezza della Polare è uguale alla latitudine.' }
     ] },
   { id: 'aldebaran', cat: 'star', emoji: '🟠', star: 'aldebaran', rs: 44, temp: 3900,
-    name: ['Aldebaran', 'Aldebaran', 'Aldébaran', 'Альдебаран', 'Aldebaran'], kind: 'Gigante arancione (K5 III)',
+    name: ['Aldebaran', 'Aldebaran', 'Aldébaran', 'Альдебаран', 'Aldebaran', 'Aldebaran'], kind: 'Gigante arancione (K5 III)',
     lead: 'L\'occhio rosso-arancio del Toro, che "segue" le Pleiadi nel cielo.',
     facts: [['Distanza', 'circa 65 anni luce'], ['Tipo', 'K5 III, gigante arancione'], ['Temperatura', 'circa 3.900 K'], ['Raggio', 'circa 44 volte il Sole'], ['Luminosità', 'circa 440 volte il Sole'], ['Costellazione', 'Toro']],
     html: '<p>Aldebaran è l\'occhio della costellazione del <b>Toro</b>. Il suo nome in arabo vuol dire <b>"colui che segue"</b>, perché sorge dopo l\'ammasso delle <b>Pleiadi</b> e sembra inseguirle.</p><p>Sembra far parte dell\'ammasso delle <b>Iadi</b> (la "V" del muso del Toro), ma in realtà è a metà strada: le Iadi sono a circa 150 anni luce.</p><p>È una <b>gigante</b>: ha finito l\'idrogeno nel centro e si è gonfiata. Anche il Sole un giorno diventerà così.</p>',
@@ -103,7 +103,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'Aldebaran fa davvero parte dell\'ammasso delle Iadi.', answer: false, explain: 'È più vicina a noi: si trova solo sulla stessa linea di vista.' }
     ] },
   { id: 'antares', cat: 'star', emoji: '🔴', star: 'antares', rs: 680, temp: 3600,
-    name: ['Antares', 'Antares', 'Antarès', 'Антарес', 'Antares'], kind: 'Supergigante rossa (M1.5 Iab)',
+    name: ['Antares', 'Antares', 'Antarès', 'Антарес', 'Antares', 'Antares'], kind: 'Supergigante rossa (M1.5 Iab)',
     lead: 'Il cuore rosso dello Scorpione, la "rivale di Marte".',
     facts: [['Distanza', 'circa 550 anni luce'], ['Tipo', 'M1.5 Iab, supergigante rossa'], ['Temperatura', 'circa 3.600 K'], ['Raggio', 'circa 680 volte il Sole'], ['Luminosità', 'circa 75.000 volte il Sole'], ['Costellazione', 'Scorpione']],
     html: '<p>Antares è il <b>cuore dello Scorpione</b>, una costellazione bassa sull\'orizzonte sud nelle sere d\'estate. Il nome significa <b>"rivale di Marte"</b> (anti-Ares), perché ha lo stesso colore rosso del pianeta.</p><p>Come Betelgeuse è una <b>supergigante rossa</b>: al posto del Sole arriverebbe oltre l\'orbita di Marte. Ha una piccola compagna blu, Antares B.</p>',
@@ -114,7 +114,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'Antares è una nana rossa.', answer: false, explain: 'È una supergigante rossa, enorme.' }
     ] },
   { id: 'deneb', cat: 'star', emoji: '🤍', star: 'deneb', rs: 200, temp: 8500,
-    name: ['Deneb', 'Deneb', 'Deneb', 'Денеб', 'Deneb'], kind: 'Supergigante bianca (A2 Ia)',
+    name: ['Deneb', 'Deneb', 'Deneb', 'Денеб', 'Deneb', 'Deneb'], kind: 'Supergigante bianca (A2 Ia)',
     lead: 'Una delle stelle più luminose che conosciamo: la coda del Cigno.',
     facts: [['Distanza', 'circa 2.600 anni luce (molto incerta)'], ['Tipo', 'A2 Ia, supergigante bianca'], ['Temperatura', 'circa 8.500 K'], ['Raggio', 'circa 200 volte il Sole'], ['Luminosità', 'circa 200.000 volte il Sole'], ['Costellazione', 'Cigno']],
     html: '<p>Deneb, che in arabo vuol dire <b>"coda"</b>, è la coda del <b>Cigno</b> (chiamato anche Croce del Nord). È uno dei tre vertici del <b>Triangolo estivo</b>.</p><p>Ci sembra brillante come Vega, ma è <b>100 volte più lontana</b>! Vuol dire che emette una quantità di luce enorme: è una delle stelle più luminose della nostra galassia visibili a occhio nudo.</p><p>La luce che vediamo stasera è partita quando a Roma c\'erano ancora i re, circa 2.600 anni fa.</p>',
@@ -125,7 +125,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Quale figura formano Deneb, Vega e Altair?', options: ['Il Grande Carro', 'Il Triangolo estivo', 'La Croce del Sud'], answer: 1, explain: 'Il Triangolo estivo, ben visibile d\'estate.' }
     ] },
   { id: 'arturo', cat: 'star', emoji: '🟠', star: 'arturo', rs: 25, temp: 4290,
-    name: ['Arturo', 'Arcturus', 'Arcturus', 'Арктур', 'Arcturus'], kind: 'Gigante arancione (K1.5 III)',
+    name: ['Arturo', 'Arcturus', 'Arcturus', 'Арктур', 'Arcturus', 'Arktur'], kind: 'Gigante arancione (K1.5 III)',
     lead: 'La stella più brillante dell\'emisfero celeste nord, color arancio.',
     facts: [['Distanza', '36,7 anni luce'], ['Tipo', 'K1.5 III, gigante arancione'], ['Temperatura', 'circa 4.290 K'], ['Raggio', 'circa 25 volte il Sole'], ['Luminosità', 'circa 170 volte il Sole'], ['Costellazione', 'Boote']],
     html: '<p>Arturo è la stella più brillante del <b>Boote</b> (il Bovaro) e del cielo a nord dell\'equatore celeste. Per trovarla, segui la curva del timone del Grande Carro: "<b>segui l\'arco fino ad Arturo</b>".</p><p>Il nome significa <b>"guardiano dell\'Orsa"</b>, perché sembra seguire l\'Orsa Maggiore nel cielo. È una gigante arancione, più vecchia del Sole.</p>',
@@ -136,7 +136,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'Arturo è più vicina della stella Deneb.', answer: true, explain: '36,7 anni luce contro circa 2.600.' }
     ] },
   { id: 'canopo', cat: 'star', emoji: '🤍', star: 'canopo', rs: 71, temp: 7400,
-    name: ['Canopo', 'Canopus', 'Canopus', 'Канопус', 'Canopus'], kind: 'Gigante bianco-gialla (A9 II)',
+    name: ['Canopo', 'Canopus', 'Canopus', 'Канопус', 'Canopus', 'Canopus'], kind: 'Gigante bianco-gialla (A9 II)',
     lead: 'La seconda stella più brillante del cielo, guida delle sonde spaziali.',
     facts: [['Distanza', 'circa 310 anni luce'], ['Tipo', 'A9 II, gigante luminosa'], ['Temperatura', 'circa 7.400 K'], ['Raggio', 'circa 71 volte il Sole'], ['Luminosità', 'circa 10.000 volte il Sole'], ['Costellazione', 'Carena']],
     html: '<p>Canopo è la seconda stella più brillante del cielo notturno, dopo Sirio. Si trova nella <b>Carena</b>, la chiglia dell\'antica nave Argo.</p><p>È così luminosa e lontana dall\'eclittica che molte <b>sonde spaziali</b> la usano come punto di riferimento per orientarsi, con dei sensori chiamati "star tracker".</p><p>Dall\'Italia è difficile vederla: dal sud della Sicilia si alza appena sopra l\'orizzonte.</p>',
@@ -147,7 +147,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Per cosa la usano le sonde spaziali?', options: ['Per fare rifornimento', 'Per orientarsi', 'Per comunicare'], answer: 1, explain: 'È un ottimo punto di riferimento.' }
     ] },
   { id: 'altair', cat: 'star', emoji: '⚪', star: 'altair', rs: 1.8, temp: 7700,
-    name: ['Altair', 'Altair', 'Altaïr', 'Альтаир', 'Altair'], kind: 'Stella bianca di sequenza principale (A7V)',
+    name: ['Altair', 'Altair', 'Altaïr', 'Альтаир', 'Altair', 'Altair'], kind: 'Stella bianca di sequenza principale (A7V)',
     lead: 'Una stella vicina che gira su se stessa in meno di 9 ore ed è tutta schiacciata.',
     facts: [['Distanza', '16,7 anni luce'], ['Tipo', 'A7V, bianca'], ['Temperatura', 'circa 7.700 K (più calda ai poli)'], ['Raggio', 'circa 1,8 volte il Sole (2 all\'equatore)'], ['Rotazione', 'circa 9 ore (il Sole impiega circa 27 giorni)'], ['Costellazione', 'Aquila']],
     html: '<p>Altair è la stella più brillante dell\'<b>Aquila</b> ed è uno dei vertici del <b>Triangolo estivo</b>. È una delle stelle brillanti più vicine a noi.</p><p>Gira così veloce che è <b>schiacciata</b>: il suo diametro all\'equatore è circa il 20% più grande di quello tra i poli. Nel 2007 gli astronomi sono riusciti a fare una "foto" della sua superficie unendo più telescopi.</p>',
@@ -158,7 +158,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Altair, Vega e Deneb formano…', options: ['il Triangolo estivo', 'la Croce del Sud', 'il Grande Carro'], answer: 0, explain: 'Il Triangolo estivo.' }
     ] },
   { id: 'trappist1', cat: 'star', emoji: '🔴', star: 'trappist1', rs: 0.12, temp: 2570,
-    name: ['TRAPPIST-1', 'TRAPPIST-1', 'TRAPPIST-1', 'TRAPPIST-1', 'TRAPPIST-1'], kind: 'Nana rossa ultrafredda (M8V) con 7 pianeti',
+    name: ['TRAPPIST-1', 'TRAPPIST-1', 'TRAPPIST-1', 'TRAPPIST-1', 'TRAPPIST-1', 'TRAPPIST-1'], kind: 'Nana rossa ultrafredda (M8V) con 7 pianeti',
     lead: 'Una stellina poco più grande di Giove con ben sette pianeti grandi come la Terra.',
     facts: [['Distanza', 'circa 40 anni luce'], ['Tipo', 'M8V, nana rossa ultrafredda'], ['Temperatura', 'circa 2.570 K'], ['Raggio', '0,12 volte il Sole (poco più di Giove)'], ['Pianeti', '7, rocciosi, da b a h'], ['Costellazione', 'Acquario']],
     html: '<p>Nel 2017 gli astronomi hanno annunciato che intorno a questa piccola stella girano <b>sette pianeti rocciosi</b>, simili per grandezza alla Terra. Sono tutti vicinissimi alla stella: l\'anno del pianeta più lontano dura meno di 19 giorni!</p><p>Tre o quattro sono nella <b>zona abitabile</b>. Il telescopio spaziale <b>James Webb</b> li sta studiando per capire se hanno un\'atmosfera.</p><p>Il nome viene dal piccolo telescopio belga TRAPPIST, in Cile, che ha scoperto i primi pianeti nel 2016.</p>',
@@ -171,7 +171,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
 
   /* ======================= NEBULOSE E AMMASSI ======================= */
   { id: 'orione-nebulosa', cat: 'nebula', emoji: '🌸', body: 'neb-orion', dly: 24, distLy: 1344, sky: ['05 35 17', '-05 23 28'],
-    name: ['Nebulosa di Orione (M42)', 'Orion Nebula (M42)', 'Nébuleuse d\'Orion (M42)', 'Туманность Ориона (M42)', 'Nebuloasa Orion (M42)'], kind: 'Nebulosa a emissione, nursery di stelle',
+    name: ['Nebulosa di Orione (M42)', 'Orion Nebula (M42)', 'Nébuleuse d\'Orion (M42)', 'Туманность Ориона (M42)', 'Nebuloasa Orion (M42)', 'Orionnebel (M42)'], kind: 'Nebulosa a emissione, nursery di stelle',
     lead: 'Una culla di stelle che puoi vedere a occhio nudo nella spada di Orione.',
     facts: [['Distanza', 'circa 1.340 anni luce'], ['Diametro', 'circa 24 anni luce'], ['Stelle giovani', 'circa 2.000, con il "Trapezio" al centro'], ['Età delle stelle', 'meno di 1–2 milioni di anni'], ['Dove guardare', 'sotto la cintura di Orione, nella "spada"']],
     html: '<p>Una <b>nebulosa</b> è una nube enorme di <b>gas e polvere</b>. Nella Nebulosa di Orione il gas si sta raccogliendo e sta formando <b>nuove stelle</b>: è come una nursery cosmica!</p><p>Al centro ci sono quattro stelle giovani e caldissime, il <b>Trapezio</b>, che illuminano il gas facendolo brillare di rosso e verde-azzurro. Il telescopio Hubble ha visto anche dischi di polvere intorno alle stelline: lì potrebbero nascere pianeti.</p>',
@@ -182,7 +182,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Come si chiamano le quattro stelle al suo centro?', options: ['Il Trapezio', 'Il Carro', 'La Croce'], answer: 0, explain: 'Il Trapezio, che illumina tutta la nebulosa.' }
     ] },
   { id: 'granchio', cat: 'nebula', emoji: '🦀', body: 'neb-crab', dly: 11, distLy: 6500, sky: ['05 34 32', '+22 00 52'],
-    name: ['Nebulosa del Granchio (M1)', 'Crab Nebula (M1)', 'Nébuleuse du Crabe (M1)', 'Крабовидная туманность (M1)', 'Nebuloasa Crabului (M1)'], kind: 'Resto di supernova con pulsar',
+    name: ['Nebulosa del Granchio (M1)', 'Crab Nebula (M1)', 'Nébuleuse du Crabe (M1)', 'Крабовидная туманность (M1)', 'Nebuloasa Crabului (M1)', 'Krebsnebel (M1)'], kind: 'Resto di supernova con pulsar',
     lead: 'Ciò che resta di una stella esplosa nel 1054, vista dagli astronomi cinesi.',
     facts: [['Distanza', 'circa 6.500 anni luce'], ['Diametro', 'circa 11 anni luce, e si allarga ancora'], ['Esplosione vista', 'anno 1054'], ['Al centro', 'una pulsar che gira 30 volte al secondo'], ['Costellazione', 'Toro']],
     html: '<p>Nel <b>1054</b> gli astronomi cinesi videro apparire una "stella ospite" così luminosa da essere visibile <b>di giorno</b> per 23 giorni. Era una <b>supernova</b>: l\'esplosione di una stella gigante.</p><p>Oggi al suo posto c\'è la Nebulosa del Granchio, una nube di filamenti che si allarga a 1.500 km al secondo. Al centro resta una <b>stella di neutroni</b> grande come una città, che gira <b>30 volte al secondo</b> e lancia fasci di radiazione come un faro: è una <b>pulsar</b>.</p>',
@@ -193,7 +193,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'La Nebulosa del Granchio è il resto di una supernova.', answer: true, explain: 'È ciò che resta di una stella esplosa.' }
     ] },
   { id: 'pilastri', cat: 'nebula', emoji: '🏛️', body: 'neb-pillars', dly: 5, distLy: 6500, sky: ['18 18 48', '-13 49 00'],
-    name: ['Pilastri della Creazione', 'Pillars of Creation', 'Piliers de la création', 'Столпы Творения', 'Stâlpii Creației'], kind: 'Colonne di gas nella Nebulosa Aquila (M16)',
+    name: ['Pilastri della Creazione', 'Pillars of Creation', 'Piliers de la création', 'Столпы Творения', 'Stâlpii Creației', 'Säulen der Schöpfung'], kind: 'Colonne di gas nella Nebulosa Aquila (M16)',
     lead: 'Tre torri di gas e polvere alte anni luce, dove nascono nuove stelle.',
     facts: [['Distanza', 'circa 6.500 anni luce'], ['Altezza della colonna più alta', 'circa 4–5 anni luce'], ['Nebulosa', 'Aquila (M16), costellazione del Serpente'], ['Foto famose', 'Hubble 1995 e 2014, James Webb 2022']],
     html: '<p>I <b>Pilastri della Creazione</b> sono tre colonne di gas freddo e polvere dentro la <b>Nebulosa Aquila</b>. La foto del telescopio Hubble del 1995 è una delle immagini più famose della storia.</p><p>Dentro i pilastri il gas si condensa e forma <b>nuove stelle</b>. Ma le stelle giovani e caldissime vicine li stanno lentamente "erodendo" con la loro luce, come il vento scava le rocce.</p><p>Nel 2022 il telescopio <b>James Webb</b> li ha fotografati in infrarosso, vedendo attraverso la polvere tante stelle appena nate.</p>',
@@ -204,7 +204,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Quale telescopio li ha fotografati per primo nel 1995?', options: ['Hubble', 'James Webb', 'Galileo'], answer: 0, explain: 'Hubble, nel 1995. Webb nel 2022.' }
     ] },
   { id: 'anello', cat: 'nebula', emoji: '💍', body: 'neb-ring', dly: 1.3, distLy: 2300, sky: ['18 53 35', '+33 01 45'],
-    name: ['Nebulosa ad Anello (M57)', 'Ring Nebula (M57)', 'Nébuleuse de la Lyre (M57)', 'Туманность Кольцо (M57)', 'Nebuloasa Inelară (M57)'], kind: 'Nebulosa planetaria',
+    name: ['Nebulosa ad Anello (M57)', 'Ring Nebula (M57)', 'Nébuleuse de la Lyre (M57)', 'Туманность Кольцо (M57)', 'Nebuloasa Inelară (M57)', 'Ringnebel (M57)'], kind: 'Nebulosa planetaria',
     lead: 'Un anello di gas soffiato via da una stella morente: il futuro del nostro Sole.',
     facts: [['Distanza', 'circa 2.300 anni luce'], ['Diametro', 'circa 1,3 anni luce'], ['Età', 'circa 4.000 anni'], ['Al centro', 'una nana bianca caldissima'], ['Costellazione', 'Lira, tra Sheliak e Sulafat']],
     html: '<p>Una <b>nebulosa planetaria</b> non ha niente a che fare con i pianeti: nel 1700 al telescopio sembravano dischetti come i pianeti, e il nome è rimasto.</p><p>Quando una stella come il Sole invecchia, si gonfia e poi <b>soffia via i suoi strati esterni</b>, che formano un guscio di gas colorato. Al centro rimane il nucleo, una <b>nana bianca</b>. Questo succederà anche al Sole, tra circa 5 miliardi di anni.</p>',
@@ -215,7 +215,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'Le nebulose planetarie sono fatte di pianeti.', answer: false, explain: 'Il nome è storico: sono gusci di gas.' }
     ] },
   { id: 'pleiadi', cat: 'nebula', emoji: '💫', body: 'pleiades', dly: 86, distLy: 444, sky: ['03 47 24', '+24 07 00'],
-    name: ['Pleiadi (M45)', 'Pleiades (M45)', 'Pléiades (M45)', 'Плеяды (M45)', 'Pleiadele (M45)'], kind: 'Ammasso aperto di stelle giovani',
+    name: ['Pleiadi (M45)', 'Pleiades (M45)', 'Pléiades (M45)', 'Плеяды (M45)', 'Pleiadele (M45)', 'Plejaden (M45)'], kind: 'Ammasso aperto di stelle giovani',
     lead: 'Le "Sette Sorelle": un gruppo di stelle azzurre e giovani nella costellazione del Toro.',
     facts: [['Distanza', 'circa 444 anni luce'], ['Stelle', 'più di 1.000; a occhio nudo se ne vedono 6–7'], ['Età', 'circa 100 milioni di anni'], ['Stella più brillante', 'Alcione'], ['Costellazione', 'Toro'], ['Diametro', 'circa 86 anni luce']],
     html: '<p>Le Pleiadi sono un <b>ammasso aperto</b>: un gruppo di stelle nate insieme dalla stessa nube di gas. Sono giovani (circa 100 milioni di anni, quando sulla Terra c\'erano i dinosauri!) e caldissime, per questo sono <b>azzurre</b>.</p><p>Nelle foto si vede una nebbiolina blu intorno alle stelle: è polvere che l\'ammasso sta attraversando e che riflette la loro luce.</p><p>Nella mitologia greca erano le sette figlie di Atlante e Pleione.</p>',
@@ -228,7 +228,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
 
   /* ======================= GALASSIE ======================= */
   { id: 'via-lattea', cat: 'galaxy', emoji: '🌌', body: 'gal-mw', dly: 100000, lg: 'mw',
-    name: ['Via Lattea', 'Milky Way', 'Voie lactée', 'Млечный Путь', 'Calea Lactee'], kind: 'Galassia a spirale barrata, la nostra',
+    name: ['Via Lattea', 'Milky Way', 'Voie lactée', 'Млечный Путь', 'Calea Lactee', 'Milchstraße'], kind: 'Galassia a spirale barrata, la nostra',
     lead: 'La nostra galassia: tra 100 e 400 miliardi di stelle, e una di queste è il Sole.',
     facts: [['Diametro', 'circa 100.000 anni luce'], ['Stelle', 'tra 100 e 400 miliardi'], ['Distanza del Sole dal centro', 'circa 26.000 anni luce'], ['Un giro del Sole intorno al centro', 'circa 230 milioni di anni'], ['Al centro', 'il buco nero Sagittarius A*'], ['Età', 'circa 13 miliardi di anni']],
     html: '<p>Quella striscia chiara che attraversa il cielo nelle notti buie, lontano dalle luci, è la <b>Via Lattea</b>: è la nostra galassia vista <b>dall\'interno</b>. Noi siamo dentro il disco, quindi lo vediamo come una fascia.</p><p>Vista da fuori sarebbe una grande <b>spirale barrata</b>: un nucleo allungato (la barra) con dei bracci che si avvolgono. Il Sole si trova in un piccolo braccio, il <b>Braccio di Orione</b>, a metà strada tra il centro e il bordo.</p><p>Galileo, nel 1610, fu il primo a vedere con il cannocchiale che la Via Lattea è fatta di innumerevoli stelle.</p>',
@@ -239,7 +239,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'La striscia della Via Lattea nel cielo è la nostra galassia vista dall\'interno.', answer: true, explain: 'Siamo dentro il disco, che vediamo come una fascia.' }
     ] },
   { id: 'andromeda', cat: 'galaxy', emoji: '🌀', body: 'gal-m31', dly: 152000, distLy: 2500000, lg: 'm31', sky: ['00 42 44', '+41 16 09'],
-    name: ['Galassia di Andromeda (M31)', 'Andromeda Galaxy (M31)', 'Galaxie d\'Andromède (M31)', 'Галактика Андромеды (M31)', 'Galaxia Andromeda (M31)'], kind: 'Galassia a spirale',
+    name: ['Galassia di Andromeda (M31)', 'Andromeda Galaxy (M31)', 'Galaxie d\'Andromède (M31)', 'Галактика Андромеды (M31)', 'Galaxia Andromeda (M31)', 'Andromedagalaxie (M31)'], kind: 'Galassia a spirale',
     lead: 'La grande galassia più vicina: la sua luce ha viaggiato 2,5 milioni di anni per arrivare ai tuoi occhi.',
     facts: [['Distanza', 'circa 2,5 milioni di anni luce'], ['Diametro', 'circa 150.000 anni luce'], ['Stelle', 'circa 1.000 miliardi'], ['Velocità', 'si avvicina a noi a circa 110 km/s'], ['Costellazione', 'Andromeda']],
     html: '<p>Andromeda è la <b>galassia grande più vicina</b> a noi ed è l\'oggetto più lontano che si può vedere facilmente a occhio nudo, come una macchiolina allungata in un cielo buio d\'autunno.</p><p>Fino al 1923 molti pensavano che fosse una nebulosa dentro la Via Lattea. Poi <b>Edwin Hubble</b> misurò la sua distanza e dimostrò che era un\'altra galassia: l\'Universo diventò di colpo enormemente più grande!</p><p>Andromeda e la Via Lattea si stanno avvicinando: tra circa 4–5 miliardi di anni potrebbero scontrarsi e fondersi (studi recenti dicono che non è sicuro).</p>',
@@ -250,7 +250,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'Andromeda si sta avvicinando alla Via Lattea.', answer: true, explain: 'A circa 110 km al secondo.' }
     ] },
   { id: 'triangolo', cat: 'galaxy', emoji: '🌀', body: 'gal-m33', dly: 60000, distLy: 2730000, lg: 'm33', sky: ['01 33 51', '+30 39 37'],
-    name: ['Galassia del Triangolo (M33)', 'Triangulum Galaxy (M33)', 'Galaxie du Triangle (M33)', 'Галактика Треугольника (M33)', 'Galaxia Triunghiului (M33)'], kind: 'Galassia a spirale',
+    name: ['Galassia del Triangolo (M33)', 'Triangulum Galaxy (M33)', 'Galaxie du Triangle (M33)', 'Галактика Треугольника (M33)', 'Galaxia Triunghiului (M33)', 'Dreiecksgalaxie (M33)'], kind: 'Galassia a spirale',
     lead: 'La terza galassia più grande del Gruppo Locale, una spirale vista quasi di fronte.',
     facts: [['Distanza', 'circa 2,7 milioni di anni luce'], ['Diametro', 'circa 60.000 anni luce'], ['Stelle', 'circa 40 miliardi'], ['Costellazione', 'Triangolo']],
     html: '<p>La Galassia del Triangolo è una spirale più piccola della nostra e la vediamo quasi <b>di fronte</b>, così si notano bene i suoi bracci pieni di nebulose rosa dove nascono stelle.</p><p>Con un cielo perfettamente buio, chi ha una vista eccellente riesce a vederla a occhio nudo: sarebbe l\'oggetto più lontano visibile senza strumenti.</p><p>Forse è una "compagna" di Andromeda e gira intorno a lei.</p>',
@@ -261,7 +261,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Come la vediamo?', options: ['Di taglio', 'Quasi di fronte', 'Non si vede'], answer: 1, explain: 'Quasi di fronte: i bracci si vedono bene.' }
     ] },
   { id: 'grande-nube', cat: 'galaxy', emoji: '☁️', body: 'gal-lmc', dly: 32000, distLy: 160000, lg: 'lmc', sky: ['05 23 35', '-69 45 22'],
-    name: ['Grande Nube di Magellano', 'Large Magellanic Cloud', 'Grand Nuage de Magellan', 'Большое Магелланово Облако', 'Norul Mare al lui Magellan'], kind: 'Galassia satellite della Via Lattea',
+    name: ['Grande Nube di Magellano', 'Large Magellanic Cloud', 'Grand Nuage de Magellan', 'Большое Магелланово Облако', 'Norul Mare al lui Magellan', 'Große Magellansche Wolke'], kind: 'Galassia satellite della Via Lattea',
     lead: 'Una piccola galassia compagna della nostra, ben visibile nel cielo dell\'emisfero sud.',
     facts: [['Distanza', 'circa 160.000 anni luce'], ['Diametro', 'circa 32.000 anni luce'], ['Stelle', 'circa 30 miliardi'], ['Tipo', 'spirale di Magellano (irregolare con una barra)'], ['Visibile da', 'emisfero sud']],
     html: '<p>Dall\'emisfero sud, in una notte buia, si vedono due nuvolette chiare staccate dalla Via Lattea: sono le <b>Nubi di Magellano</b>, due piccole galassie che girano intorno alla nostra.</p><p>Prendono il nome da <b>Ferdinando Magellano</b>, perché furono descritte dai marinai della sua spedizione intorno al mondo (1519–1522), ma i popoli del sud le conoscevano da sempre.</p><p>Nel <b>1987</b> nella Grande Nube è esplosa una <b>supernova</b> (SN 1987A), la più vicina vista dai tempi dei telescopi.</p>',
@@ -272,7 +272,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'La Grande Nube di Magellano gira intorno alla Via Lattea.', answer: true, explain: 'È una galassia satellite.' }
     ] },
   { id: 'piccola-nube', cat: 'galaxy', emoji: '☁️', body: 'gal-smc', dly: 19000, distLy: 200000, lg: 'smc', sky: ['00 52 44', '-72 49 43'],
-    name: ['Piccola Nube di Magellano', 'Small Magellanic Cloud', 'Petit Nuage de Magellan', 'Малое Магелланово Облако', 'Norul Mic al lui Magellan'], kind: 'Galassia nana irregolare',
+    name: ['Piccola Nube di Magellano', 'Small Magellanic Cloud', 'Petit Nuage de Magellan', 'Малое Магелланово Облако', 'Norul Mic al lui Magellan', 'Kleine Magellansche Wolke'], kind: 'Galassia nana irregolare',
     lead: 'La sorella minore della Grande Nube, a circa 200.000 anni luce.',
     facts: [['Distanza', 'circa 200.000 anni luce'], ['Diametro', 'circa 19.000 anni luce'], ['Stelle', 'qualche centinaio di milioni'], ['Visibile da', 'emisfero sud (costellazione del Tucano)']],
     html: '<p>La Piccola Nube di Magellano è una <b>galassia nana irregolare</b>: non ha una forma precisa, perché la gravità della Via Lattea e della Grande Nube la stanno "tirando" da tutte le parti.</p><p>Fra le due Nubi c\'è un <b>ponte di gas</b> che le collega. Studiando le stelle variabili della Piccola Nube, nel 1912 l\'astronoma <b>Henrietta Leavitt</b> scoprì un metodo per misurare le distanze nell\'Universo.</p>',
@@ -283,7 +283,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'La Piccola Nube si vede bene da Torino.', answer: false, explain: 'Si vede solo dall\'emisfero sud.' }
     ] },
   { id: 'vortice', cat: 'galaxy', emoji: '🌀', body: 'gal-m51', dly: 76000, distLy: 31000000, sky: ['13 29 53', '+47 11 43'],
-    name: ['Galassia Vortice (M51)', 'Whirlpool Galaxy (M51)', 'Galaxie du Tourbillon (M51)', 'Галактика Водоворот (M51)', 'Galaxia Vârtej (M51)'], kind: 'Galassia a spirale con una compagna',
+    name: ['Galassia Vortice (M51)', 'Whirlpool Galaxy (M51)', 'Galaxie du Tourbillon (M51)', 'Галактика Водоворот (M51)', 'Galaxia Vârtej (M51)', 'Whirlpool-Galaxie (M51)'], kind: 'Galassia a spirale con una compagna',
     lead: 'Una spirale perfetta che sta "giocando" con una galassia più piccola.',
     facts: [['Distanza', 'circa 31 milioni di anni luce'], ['Diametro', 'circa 76.000 anni luce'], ['Compagna', 'NGC 5195'], ['Costellazione', 'Cani da Caccia (vicino al timone del Grande Carro)']],
     html: '<p>La Galassia Vortice è una delle spirali più belle del cielo: la vediamo <b>di fronte</b> e i suoi due bracci sono nitidissimi.</p><p>Fu la prima galassia in cui si vide la forma a spirale, disegnata da <b>Lord Rosse</b> nel 1845 con un telescopio gigante. All\'estremità di un braccio c\'è una galassia più piccola, <b>NGC 5195</b>: passandole vicino, con la sua gravità ha reso i bracci così evidenti.</p>',
@@ -294,7 +294,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Quanto è lontana?', options: ['31 anni luce', 'circa 31 milioni di anni luce', '31 miliardi di anni luce'], answer: 1, explain: 'Circa 31 milioni di anni luce.' }
     ] },
   { id: 'sombrero', cat: 'galaxy', emoji: '👒', body: 'gal-m104', dly: 50000, distLy: 31000000, sky: ['12 39 59', '-11 37 23'],
-    name: ['Galassia Sombrero (M104)', 'Sombrero Galaxy (M104)', 'Galaxie du Sombrero (M104)', 'Галактика Сомбреро (M104)', 'Galaxia Sombrero (M104)'], kind: 'Galassia a spirale vista quasi di taglio',
+    name: ['Galassia Sombrero (M104)', 'Sombrero Galaxy (M104)', 'Galaxie du Sombrero (M104)', 'Галактика Сомбреро (M104)', 'Galaxia Sombrero (M104)', 'Sombrerogalaxie (M104)'], kind: 'Galassia a spirale vista quasi di taglio',
     lead: 'Una galassia che sembra un cappello messicano, con una banda scura di polvere.',
     facts: [['Distanza', 'circa 30 milioni di anni luce'], ['Diametro', 'circa 50.000 anni luce'], ['Al centro', 'un buco nero di circa 1 miliardo di masse solari'], ['Ammassi globulari', 'circa 2.000'], ['Costellazione', 'Vergine']],
     html: '<p>La vediamo quasi <b>di taglio</b>: per questo sembra un <b>sombrero</b>, il cappello messicano a tesa larga. Il rigonfiamento centrale (il <b>bulge</b>) è grande e luminoso, e davanti passa una <b>fascia scura di polvere</b>.</p><p>Intorno ha circa 2.000 <b>ammassi globulari</b>, grandi palle di stelle antichissime: molti più della nostra galassia, che ne ha circa 150.</p>',
@@ -307,7 +307,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
 
   /* ======================= BUCHI NERI ======================= */
   { id: 'sagittarius-a', cat: 'blackhole', emoji: '🕳️', body: 'bh-sgra', massSun: 4.3e6, distLy: 26000, sky: ['17 45 40', '-29 00 28'],
-    name: ['Sagittarius A*', 'Sagittarius A*', 'Sagittarius A*', 'Стрелец A*', 'Săgetătorul A*'], kind: 'Buco nero supermassiccio al centro della Via Lattea',
+    name: ['Sagittarius A*', 'Sagittarius A*', 'Sagittarius A*', 'Стрелец A*', 'Săgetătorul A*', 'Sagittarius A*'], kind: 'Buco nero supermassiccio al centro della Via Lattea',
     lead: 'Il buco nero gigante al centro della nostra galassia: pesa come 4 milioni di Soli.',
     facts: [['Distanza', 'circa 26.000 anni luce'], ['Massa', 'circa 4,3 milioni di volte il Sole'], ['Orizzonte degli eventi', 'diametro circa 25 milioni di km (starebbe dentro l\'orbita di Mercurio)'], ['Prima immagine', '12 maggio 2022, Event Horizon Telescope'], ['Costellazione', 'Sagittario']],
     html: '<p>Un <b>buco nero</b> è un posto dove la materia è così concentrata che la gravità non lascia uscire <b>niente, nemmeno la luce</b>. Il confine da cui non si torna indietro si chiama <b>orizzonte degli eventi</b>.</p><p>Al centro della Via Lattea gli astronomi hanno visto delle stelle girare velocissime intorno a un punto invisibile: per farle girare così serve una massa di <b>4 milioni di Soli</b> in uno spazio piccolissimo. Per questa scoperta <b>Reinhard Genzel</b> e <b>Andrea Ghez</b> hanno vinto il Nobel per la fisica nel 2020.</p><p>Nel 2022 l\'<b>Event Horizon Telescope</b>, una rete di radiotelescopi in tutto il mondo, ha mostrato la sua "ombra" circondata da un anello di gas luminoso.</p>',
@@ -318,7 +318,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Come hanno capito che c\'è un buco nero?', options: ['Lo hanno toccato', 'Osservando stelle che girano velocissime intorno a un punto invisibile', 'Lo ha detto una sonda'], answer: 1, explain: 'Le orbite delle stelle rivelano la massa nascosta.' }
     ] },
   { id: 'm87', cat: 'blackhole', emoji: '🕳️', body: 'bh-m87', massSun: 6.5e9, distLy: 55000000, sky: ['12 30 49', '+12 23 28'],
-    name: ['M87*', 'M87*', 'M87*', 'M87*', 'M87*'], kind: 'Buco nero supermassiccio nella galassia M87',
+    name: ['M87*', 'M87*', 'M87*', 'M87*', 'M87*', 'M87*'], kind: 'Buco nero supermassiccio nella galassia M87',
     lead: 'Il primo buco nero mai "fotografato": pesa 6,5 miliardi di Soli.',
     facts: [['Distanza', 'circa 55 milioni di anni luce'], ['Massa', 'circa 6,5 miliardi di volte il Sole'], ['Orizzonte degli eventi', 'più grande dell\'intero Sistema Solare fino a Plutone'], ['Prima immagine', '10 aprile 2019, Event Horizon Telescope'], ['Getto', 'un getto di particelle lungo circa 5.000 anni luce']],
     html: '<p>Il 10 aprile 2019 è stata mostrata la <b>prima immagine di un buco nero</b>: un anello arancione intorno a un centro scuro. È M87*, al centro della galassia gigante <b>M87</b>, nella costellazione della Vergine.</p><p>Per fotografarlo serviva un telescopio grande come la Terra! Gli scienziati hanno collegato radiotelescopi in tutto il pianeta, dall\'Europa alle Hawaii fino al Polo Sud: l\'<b>Event Horizon Telescope</b>.</p><p>M87* lancia anche un enorme <b>getto</b> di particelle quasi alla velocità della luce, visibile persino con telescopi amatoriali molto grandi.</p>',
@@ -329,7 +329,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'tf', q: 'M87* è più leggero di Sagittarius A*.', answer: false, explain: 'È circa 1.500 volte più massiccio.' }
     ] },
   { id: 'cygnus-x1', cat: 'blackhole', emoji: '🕳️', body: 'bh-x1', massSun: 21, distLy: 7200, sky: ['19 58 21.7', '+35 12 06'],
-    name: ['Cygnus X-1', 'Cygnus X-1', 'Cygnus X-1', 'Лебедь X-1', 'Cygnus X-1'], kind: 'Buco nero stellare con una stella compagna',
+    name: ['Cygnus X-1', 'Cygnus X-1', 'Cygnus X-1', 'Лебедь X-1', 'Cygnus X-1', 'Cygnus X-1'], kind: 'Buco nero stellare con una stella compagna',
     lead: 'Il primo buco nero scoperto: "succhia" gas da una stella supergigante blu.',
     facts: [['Distanza', 'circa 7.200 anni luce'], ['Massa', 'circa 21 volte il Sole'], ['Orizzonte degli eventi', 'diametro circa 120 km'], ['Compagna', 'supergigante blu HDE 226868'], ['Giro della coppia', '5,6 giorni'], ['Costellazione', 'Cigno']],
     html: '<p>Cygnus X-1 è un <b>buco nero stellare</b>: è nato dal collasso di una stella molto grande. Negli anni \'70 fu il <b>primo oggetto</b> che gli astronomi riconobbero come un buco nero.</p><p>Gira insieme a una stella gigante blu e le "ruba" gas. Il gas forma un <b>disco</b> che, cadendo a spirale, si scalda a milioni di gradi ed emette <b>raggi X</b>: per questo si chiama "X-1", la prima sorgente X del Cigno.</p>',
@@ -340,7 +340,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'Che tipo di buco nero è?', options: ['Supermassiccio', 'Stellare', 'Primordiale'], answer: 1, explain: 'Nato dal collasso di una stella.' }
     ] },
   { id: 'gaia-bh1', cat: 'blackhole', emoji: '🕳️', body: 'bh-dormant', massSun: 9.6, distLy: 1560, sky: ['17 28 41.1', '-00 34 52'],
-    name: ['Gaia BH1', 'Gaia BH1', 'Gaia BH1', 'Gaia BH1', 'Gaia BH1'], kind: 'Buco nero "dormiente", il più vicino conosciuto',
+    name: ['Gaia BH1', 'Gaia BH1', 'Gaia BH1', 'Gaia BH1', 'Gaia BH1', 'Gaia BH1'], kind: 'Buco nero "dormiente", il più vicino conosciuto',
     lead: 'Il buco nero più vicino che conosciamo, trovato perché fa "ballare" una stella simile al Sole.',
     facts: [['Distanza', 'circa 1.560 anni luce'], ['Massa', 'circa 10 volte il Sole'], ['Compagna', 'una stella simile al Sole, che gli gira intorno in 186 giorni'], ['Scoperta', '2022, grazie al satellite europeo Gaia'], ['Costellazione', 'Ofiuco']],
     html: '<p>Non tutti i buchi neri brillano di raggi X. Gaia BH1 è <b>"dormiente"</b>: non sta mangiando gas, quindi è completamente invisibile.</p><p>Il satellite <b>Gaia</b>, che misura con precisione incredibile le posizioni di quasi 2 miliardi di stelle, ha notato una stella che si muove avanti e indietro come se ballasse con un compagno invisibile. Calcolando la sua orbita, si è capito che il compagno pesa circa 10 Soli ma non emette luce: un buco nero!</p>',

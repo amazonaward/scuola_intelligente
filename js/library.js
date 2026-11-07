@@ -13,7 +13,7 @@
   const smooth = (x) => x * x * (3 - 2 * x);
   const arr = (x) => (x == null ? [] : Array.isArray(x) ? x : [x]);
 
-  /* ======================= TESTI (5 lingue) ======================= */
+  /* ======================= TESTI (6 lingue) ======================= */
   const TXT = {
     it: {
       'lib.title': 'Come funzionano le cose', 'lib.subtitle': 'Ruota, smonta e guarda dentro gli oggetti in 3D. Tocca un pezzo per scoprire a cosa serve!',
@@ -84,6 +84,20 @@
       'lib.anim': 'Animație', 'lib.reset': 'Pune la loc', 'lib.full': 'Ecran complet', 'lib.close': 'Închide',
       'lib.italian': 'Explicațiile din această fișă sunt în italiană.', 'lib.back': 'Toată biblioteca', 'lib.loading': 'Deschid fișa…',
       'lib.notFound': 'Obiect negăsit.', 'lib.level': 'din {y}', 'lib.again': 'Ia de la capăt', 'lib.seen': 'Văzut', 'lib.studied': 'Înțeles'
+    },
+    de: {
+      'lib.title': 'Wie funktioniert das?', 'lib.subtitle': 'Drehe Gegenstände in 3D, nimm sie auseinander und schau hinein. Tippe auf ein Teil, um herauszufinden, wofür es da ist!',
+      'lib.search': 'Einen Gegenstand suchen…', 'lib.none': 'Kein Gegenstand gefunden. Probier ein anderes Wort.', 'lib.all': 'Alle',
+      'lib.coming': 'Bald da', 'lib.comingText': 'Diese Karte wird gerade vorbereitet: Bald kannst du sie in 3D auseinandernehmen! In der Zwischenzeit kannst du die passenden Lektionen lernen.',
+      'lib.ready': '{n} zum Entdecken', 'lib.soon': '{n} bald da', 'lib.count': '{n} Gegenstände',
+      'lib.steps': 'So funktioniert es, Schritt für Schritt', 'lib.step': 'Schritt {i} von {n}', 'lib.prev': 'Zurück', 'lib.next': 'Weiter',
+      'lib.facts': 'Wusstest du schon?', 'lib.quiz': 'Teste dich selbst', 'lib.related': 'Das lernst du auch in der Schule', 'lib.sameShelf': 'Im selben Regal',
+      'lib.done': 'Ich habe verstanden, wie es funktioniert!', 'lib.doneOk': 'Verstanden ✓', 'lib.parts': 'Die Teile', 'lib.nParts': '{n} Teile',
+      'lib.tapPart': 'Tippe auf ein Teil des Modells oder auf einen Namen unten.', 'lib.more': 'Mehr erfahren',
+      'lib.only': 'Nur dieses Teil zeigen', 'lib.showAll': 'Alles zeigen', 'lib.explode': 'Auseinanderziehen', 'lib.labels': 'Namen',
+      'lib.anim': 'Animation', 'lib.reset': 'Zusammensetzen', 'lib.full': 'Vollbild', 'lib.close': 'Schließen',
+      'lib.italian': 'Die Erklärungen auf dieser Karte sind auf Italienisch.', 'lib.back': 'Ganze Bibliothek', 'lib.loading': 'Die Karte wird geöffnet…',
+      'lib.notFound': 'Gegenstand nicht gefunden.', 'lib.level': 'ab {y}', 'lib.again': 'Neu beginnen', 'lib.seen': 'Angesehen', 'lib.studied': 'Verstanden'
     }
   };
   for (const l of Object.keys(TXT)) I18N[l] = Object.assign(I18N[l] || {}, TXT[l]);

@@ -1,6 +1,6 @@
 PLACE({
   id: 'belgio',
-  names: { it: 'Belgio', en: 'Belgium', fr: 'Belgique', ru: 'Бельгия', ro: 'Belgia' },
+  names: { it: 'Belgio', en: 'Belgium', fr: 'Belgique', ru: 'Бельгия', ro: 'Belgia', de: 'Belgien' },
   intro: 'Il Belgio è un piccolo Paese tra Francia, Germania e Paesi Bassi, dove si parlano olandese (fiammingo), francese e tedesco. Per la sua posizione è stato il "campo di battaglia d\'Europa", ma anche una terra di città ricche e di grandi pittori. Nato nel 1830, oggi ospita a Bruxelles le istituzioni dell\'Unione Europea.',
   start: -500000,
   eras: [

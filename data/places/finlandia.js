@@ -1,6 +1,6 @@
 PLACE({
   id: 'finlandia',
-  names: { it: 'Finlandia', en: 'Finland', fr: 'Finlande', ru: 'Финляндия', ro: 'Finlanda' },
+  names: { it: 'Finlandia', en: 'Finland', fr: 'Finlande', ru: 'Финляндия', ro: 'Finlanda', de: 'Finnland' },
   intro: 'La Finlandia è la "terra dei mille laghi", coperta di foreste, tra la Svezia e la Russia. I Finlandesi parlano una lingua molto diversa da quasi tutte le altre d\'Europa. Per secoli il Paese fu parte della Svezia, poi della Russia; è indipendente dal 1917 ed è oggi una democrazia dell\'Unione Europea e della NATO.',
   start: -9000,
   eras: [

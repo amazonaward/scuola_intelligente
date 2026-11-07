@@ -16,7 +16,10 @@
       go: 'Перейти', lab: 'Лаборатория', table: 'Таблица Менделеева', atom: 'Атом', mol: '3D-молекулы', lessons: 'Уроки с химией', lessonsSub: 'Чтобы лучше понять, что происходит в лаборатории.', err: 'Не удалось загрузить лабораторию. Попробуй ещё раз.' },
     ro: { nav: 'Laborator', explore: 'Amestecă substanțe, privește reacțiile și cântărește produșii', title: 'Laborator de chimie',
       intro: 'Toarnă reactivii în pahar, provoacă reacțiile și descoperă ce se formează și cât cântărește. Apoi explorează tabelul periodic, atomul și moleculele în 3D.',
-      go: 'Mergi la', lab: 'Laborator', table: 'Tabel periodic', atom: 'Atom', mol: 'Molecule 3D', lessons: 'Lecții cu chimie', lessonsSub: 'Ca să înțelegi mai bine ce se întâmplă în laborator.', err: 'Nu pot încărca laboratorul. Încearcă din nou.' }
+      go: 'Mergi la', lab: 'Laborator', table: 'Tabel periodic', atom: 'Atom', mol: 'Molecule 3D', lessons: 'Lecții cu chimie', lessonsSub: 'Ca să înțelegi mai bine ce se întâmplă în laborator.', err: 'Nu pot încărca laboratorul. Încearcă din nou.' },
+    de: { nav: 'Labor', explore: 'Mische Stoffe, beobachte Reaktionen und wiege die Produkte', title: 'Chemielabor',
+      intro: 'Gieß die Stoffe ins Becherglas, lass sie reagieren und finde heraus, was entsteht und wie viel es wiegt. Dann erkunde das Periodensystem, das Atom und die Moleküle in 3D.',
+      go: 'Gehe zu', lab: 'Labor', table: 'Periodensystem', atom: 'Atom', mol: '3D-Moleküle', lessons: 'Lektionen mit Chemie', lessonsSub: 'Damit du besser verstehst, was im Labor passiert.', err: 'Das Labor kann nicht geladen werden. Versuch es noch einmal.' }
   };
   for (const l of Object.keys(T)) if (window.I18N && I18N[l]) { I18N[l]['nav.lab'] = T[l].nav; I18N[l]['explore.lab'] = T[l].explore; }
   const lang = () => { try { return (typeof Store !== 'undefined' && Store.getLang && Store.getLang()) || 'it'; } catch (e) { return 'it'; } };
@@ -43,7 +46,7 @@
   ];
 
   function title(id) {
-    for (const y of CURRICULUM.years) for (const sub of CURRICULUM.subjects) for (const e of ((CURRICULUM.program[y] || {})[sub] || [])) if (e[0] === id) return [e[1], y];
+    for (const y of CURRICULUM.years) for (const sub of CURRICULUM.subjects) for (const e of ((CURRICULUM.program[y] || {})[sub] || [])) if (e[0] === id) return [(window.i18n && i18n.topicTitle) ? i18n.topicTitle(e) : e[1], y];
     return [id, ''];
   }
 

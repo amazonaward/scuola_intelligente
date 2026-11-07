@@ -1,6 +1,6 @@
 PLACE({
   id: 'polonia',
-  names: { it: 'Polonia', en: 'Poland', fr: 'Pologne', ru: 'Польша', ro: 'Polonia' },
+  names: { it: 'Polonia', en: 'Poland', fr: 'Pologne', ru: 'Польша', ro: 'Polonia', de: 'Polen' },
   intro: 'La Polonia è una grande pianura (il nome viene da "pole", campo) tra il Mar Baltico e i monti Tatra, nel cuore dell\'Europa. Fu un regno potente unito alla Lituania, poi per 123 anni sparì dalle carte geografiche, spartita tra i vicini. Rinata nel 1918, devastata dalla Seconda guerra mondiale, ha riconquistato la libertà nel 1989 con Solidarność.',
   start: -500000,
   eras: [

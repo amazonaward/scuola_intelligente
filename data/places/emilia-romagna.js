@@ -1,6 +1,6 @@
 PLACE({
   id: "emilia-romagna",
-  names: { it: "Emilia-Romagna", en: "Emilia-Romagna", fr: "Émilie-Romagne", ru: "Эмилия-Романья", ro: "Emilia-Romagna" },
+  names: { it: "Emilia-Romagna", en: "Emilia-Romagna", fr: "Émilie-Romagne", ru: "Эмилия-Романья", ro: "Emilia-Romagna", de: 'Emilia-Romagna' },
   intro: "L'Emilia-Romagna è una grande pianura fertile tra il <b>Po</b> e l'Appennino, attraversata da una strada dritta di 2.200 anni fa: la <b>via Emilia</b>, che le ha dato il nome. La parte orientale si chiama <b>Romagna</b> perché restò a lungo «romana», cioè bizantina. Qui ci sono state Ravenna capitale d'Impero, la prima università del mondo occidentale a Bologna e le corti del Rinascimento.",
   start: -850000,
   eras: [

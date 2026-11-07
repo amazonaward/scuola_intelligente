@@ -52,7 +52,15 @@
       'ui.guest': 'Invitat', 'ui.lessonProgress': 'Progresul lecției', 'ui.sections': 'Secțiuni', 'ui.locked': 'De câștigat', 'ui.yourYear': 'Clasa ta',
       'ui.minutes': 'min', 'ui.progress': 'Progres',
       'badge.0': 'Primul pas', 'badge.0d': 'Studiază prima lecție', 'badge.1': 'Cititor', 'badge.1d': 'Studiază 5 lecții', 'badge.2': 'Învățat', 'badge.2d': 'Studiază 15 lecții',
-      'badge.3': 'Campion', 'badge.3d': 'Promovează un test', 'badge.4': 'Perfecțiune', 'badge.4d': '100% la un test', 'badge.5': 'Constanță', 'badge.5d': '3 zile de studiu', 'badge.6': 'Explorator', 'badge.6d': '4 materii diferite' }
+      'badge.3': 'Campion', 'badge.3d': 'Promovează un test', 'badge.4': 'Perfecțiune', 'badge.4d': '100% la un test', 'badge.5': 'Constanță', 'badge.5d': '3 zile de studiu', 'badge.6': 'Explorator', 'badge.6d': '4 materii diferite' },
+    de: { 'ui.menu': 'Menü', 'ui.close': 'Schließen', 'ui.themeDark': 'Dunkles Design', 'ui.themeLight': 'Helles Design', 'ui.theme': 'Design', 'ui.toTop': 'Nach oben',
+      'ui.today': 'Der Tipp des Tages', 'ui.start': 'Los geht’s', 'ui.continueBtn': 'Weiter', 'ui.streak': 'Tage am Stück', 'ui.lessonsDone': 'Lektionen gelernt',
+      'ui.medals': 'Medaillen', 'ui.morning': 'Guten Morgen', 'ui.afternoon': 'Guten Tag', 'ui.evening': 'Guten Abend', 'ui.overall': 'insgesamt',
+      'ui.perfect': 'Perfekt, alles richtig!', 'ui.great': 'Super, toll gemacht!', 'ui.doneToast': 'Lektion als gelernt markiert!', 'ui.allDone': 'Du hast alle Lektionen deiner Klasse gelernt: Such dir eine aus einer anderen Klasse aus!',
+      'ui.guest': 'Gast', 'ui.lessonProgress': 'Fortschritt der Lektion', 'ui.sections': 'Abschnitte', 'ui.locked': 'Noch zu gewinnen', 'ui.yourYear': 'Deine Klasse',
+      'ui.minutes': 'Min.', 'ui.progress': 'Fortschritt',
+      'badge.0': 'Erster Schritt', 'badge.0d': 'Lerne deine erste Lektion', 'badge.1': 'Leseratte', 'badge.1d': 'Lerne 5 Lektionen', 'badge.2': 'Lernprofi', 'badge.2d': 'Lerne 15 Lektionen',
+      'badge.3': 'Champion', 'badge.3d': 'Bestehe einen Test', 'badge.4': 'Perfektion', 'badge.4d': '100 % in einem Test', 'badge.5': 'Ausdauer', 'badge.5d': '3 Lerntage', 'badge.6': 'Entdecker', 'badge.6d': '4 verschiedene Fächer' }
   };
   for (const l of Object.keys(UI)) { if (!I18N[l]) continue; for (const k of Object.keys(UI[l])) if (!(k in I18N[l])) I18N[l][k] = UI[l][k]; }
 

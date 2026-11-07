@@ -1,6 +1,6 @@
 PLACE({
   id: 'svizzera',
-  names: { it: 'Svizzera', en: 'Switzerland', fr: 'Suisse', ru: 'Швейцария', ro: 'Elveția' },
+  names: { it: 'Svizzera', en: 'Switzerland', fr: 'Suisse', ru: 'Швейцария', ro: 'Elveția', de: 'Schweiz' },
   intro: 'La Svizzera è un piccolo Paese nel cuore delle Alpi, dove si parlano quattro lingue: tedesco, francese, italiano e romancio. Non è nata da un re, ma da un patto tra comunità di montagna che volevano difendere la loro libertà. Da secoli è neutrale e oggi è una delle democrazie più dirette del mondo.',
   start: -150000,
   eras: [

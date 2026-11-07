@@ -1,6 +1,6 @@
 PLACE({
   id: 'portogallo',
-  names: { it: 'Portogallo', en: 'Portugal', fr: 'Portugal', ru: 'Португалия', ro: 'Portugalia' },
+  names: { it: 'Portogallo', en: 'Portugal', fr: 'Portugal', ru: 'Португалия', ro: 'Portugalia', de: 'Portugal' },
   intro: 'Il Portogallo è una striscia di terra affacciata sull\'Oceano Atlantico, all\'estremo ovest dell\'Europa. Proprio perché guardava il mare, questo piccolo regno ha aperto la strada delle grandi esplorazioni e ha costruito un impero dal Brasile all\'India. Oggi è una democrazia dell\'Unione Europea.',
   start: -500000,
   eras: [

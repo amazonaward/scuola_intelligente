@@ -1,6 +1,6 @@
 PLACE({
   id: "messico",
-  names: { it: "Messico", en: "Mexico", fr: "Mexique", ru: "Мексика", ro: "Mexic" },
+  names: { it: "Messico", en: "Mexico", fr: "Mexique", ru: "Мексика", ro: "Mexic", de: 'Mexiko' },
   intro: "Il Messico è la terra del mais, del cacao e del peperoncino, dei vulcani e delle piramidi. Qui sono fiorite grandi civiltà come gli Olmechi, i Maya e gli Aztechi; poi, per tre secoli, la Nuova Spagna. Il Messico di oggi, con oltre 130 milioni di abitanti, è il Paese con più persone di lingua spagnola al mondo.",
   start: -13000,
   eras: [

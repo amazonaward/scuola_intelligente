@@ -1,6 +1,6 @@
 PLACE({
   id: "marche",
-  names: { it: "Marche", en: "Marche", fr: "Marches", ru: "Марке", ro: "Marche" },
+  names: { it: "Marche", en: "Marche", fr: "Marches", ru: "Марке", ro: "Marche", de: 'Marken' },
   intro: "Le Marche sono una regione di colline ordinate che scendono dall'Appennino all'Adriatico, solcate da tante valli parallele. Il nome è plurale perché nel Medioevo qui c'erano diverse «<b>marche</b>», cioè province di confine. Qui vivevano i <b>Piceni</b>; poi vennero Roma, i Bizantini, i papi e la splendida corte di <b>Urbino</b>, la città di Raffaello.",
   start: -500000,
   eras: [

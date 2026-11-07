@@ -1,6 +1,6 @@
 PLACE({
   id: "africa",
-  names: { it: "Africa subsahariana", en: "Sub-Saharan Africa", fr: "Afrique subsaharienne", ru: "Африка южнее Сахары", ro: "Africa subsahariană" },
+  names: { it: "Africa subsahariana", en: "Sub-Saharan Africa", fr: "Afrique subsaharienne", ru: "Африка южнее Сахары", ro: "Africa subsahariană", de: 'Afrika südlich der Sahara' },
   intro: "L'Africa a sud del Sahara è la <b>culla dell'umanità</b>: qui sono comparsi i nostri antenati e la nostra specie, <i>Homo sapiens</i>. Savane, foreste pluviali, grandi fiumi (Niger, Congo, Zambesi) e altipiani hanno ospitato regni ricchi come Kush, Aksum, Mali e Grande Zimbabwe. Poi la tratta degli schiavi e il colonialismo europeo hanno segnato profondamente il continente, che oggi è il più giovane del mondo.",
   start: -3300000,
   eras: [

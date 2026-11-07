@@ -1,6 +1,6 @@
 PLACE({
   id: "argentina",
-  names: { it: "Argentina", en: "Argentina", fr: "Argentine", ru: "Аргентина", ro: "Argentina" },
+  names: { it: "Argentina", en: "Argentina", fr: "Argentine", ru: "Аргентина", ro: "Argentina", de: 'Argentinien' },
   intro: "L'Argentina si allunga per quasi 4.000 km, dai deserti del nord alla Terra del Fuoco vicino all'Antartide, con le Ande a ovest e le immense praterie della Pampa al centro. Il nome viene dall'argento (in latino argentum) che i primi esploratori speravano di trovare. Quasi metà degli Argentini ha un antenato italiano.",
   start: -13000,
   eras: [

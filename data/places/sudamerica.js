@@ -1,6 +1,6 @@
 PLACE({
   id: "sudamerica",
-  names: { it: "Sud America", en: "South America", fr: "Amérique du Sud", ru: "Южная Америка", ro: "America de Sud" },
+  names: { it: "Sud America", en: "South America", fr: "Amérique du Sud", ru: "Южная Америка", ro: "America de Sud", de: 'Südamerika' },
   intro: "Il Sud America è il continente delle <b>Ande</b>, la catena montuosa più lunga del mondo, e dell'<b>Amazzonia</b>, la foresta pluviale più grande. Sulle Ande sono nate civiltà sorprendenti, fino all'<b>Impero inca</b>, che costruiva strade e città a 3.000 metri d'altezza. Dal Cinquecento il continente è stato conquistato da Spagnoli e Portoghesi; oggi vi si parlano soprattutto spagnolo e portoghese, ma vivono ancora molti popoli indigeni.",
   start: -16000,
   focus: {

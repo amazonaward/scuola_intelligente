@@ -1,6 +1,6 @@
 PLACE({
   id: 'spagna',
-  names: { it: 'Spagna', en: 'Spain', fr: 'Espagne', ru: 'Испания', ro: 'Spania' },
+  names: { it: 'Spagna', en: 'Spain', fr: 'Espagne', ru: 'Испания', ro: 'Spania', de: 'Spanien' },
   intro: 'La Spagna occupa quasi tutta la penisola iberica, tra l\'Atlantico e il Mediterraneo, separata dalla Francia dai Pirenei. Qui sono passati Fenici, Romani, Visigoti e Arabi; poi i regni cristiani hanno riconquistato la penisola e la Spagna è diventata un impero mondiale. Oggi è una democrazia dell\'Unione Europea.',
   start: -1200000,
   eras: [

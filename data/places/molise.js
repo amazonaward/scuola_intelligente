@@ -1,6 +1,6 @@
 PLACE({
   id: "molise",
-  names: { it: "Molise", en: "Molise", fr: "Molise", ru: "Молизе", ro: "Molise" },
+  names: { it: "Molise", en: "Molise", fr: "Molise", ru: "Молизе", ro: "Molise", de: 'Molise' },
   intro: "Il Molise è una delle regioni più piccole e giovani d'Italia (autonoma dal 1963), ma ha una storia antichissima: a <b>Isernia</b> vivevano uomini più di 580.000 anni fa. Era il cuore del <b>Sannio</b>, la terra dei fieri Sanniti che sfidarono Roma. Tra montagne, tratturi e paesi di pietra convivono ancora oggi comunità di lingua <b>croata</b> e <b>albanese</b>.",
   start: -650000,
   eras: [

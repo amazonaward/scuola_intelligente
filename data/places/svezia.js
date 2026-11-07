@@ -1,6 +1,6 @@
 PLACE({
   id: 'svezia',
-  names: { it: 'Svezia', en: 'Sweden', fr: 'Suède', ru: 'Швеция', ro: 'Suedia' },
+  names: { it: 'Svezia', en: 'Sweden', fr: 'Suède', ru: 'Швеция', ro: 'Suedia', de: 'Schweden' },
   intro: 'La Svezia è il Paese più grande della Scandinavia, tra le montagne al confine con la Norvegia e il Mar Baltico, ricco di foreste, laghi e ferro. Nel Seicento fu una grande potenza che dominava il Baltico; poi scelse la neutralità e la pace, diventando un modello di Stato sociale. Oggi fa parte dell\'UE e della NATO.',
   start: -12000,
   eras: [

@@ -1,6 +1,6 @@
 PLACE({
   id: 'islanda',
-  names: { it: 'Islanda', en: 'Iceland', fr: 'Islande', ru: 'Исландия', ro: 'Islanda' },
+  names: { it: 'Islanda', en: 'Iceland', fr: 'Islande', ru: 'Исландия', ro: 'Islanda', de: 'Island' },
   intro: 'L\'Islanda è un\'isola di vulcani, ghiacciai e geyser vicino al Circolo polare artico. È stata una delle ultime terre d\'Europa a essere abitata: i Vichinghi arrivarono solo nell\'Ottocento dopo Cristo. Qui è nato uno dei parlamenti più antichi del mondo, l\'Alþingi.',
   start: -16000000,
   eras: [

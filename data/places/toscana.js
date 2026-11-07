@@ -1,6 +1,6 @@
 PLACE({
   id: 'toscana',
-  names: { it: 'Toscana', en: 'Tuscany', fr: 'Toscane', ru: 'Тоскана', ro: 'Toscana' },
+  names: { it: 'Toscana', en: 'Tuscany', fr: 'Toscane', ru: 'Тоскана', ro: 'Toscana', de: 'Toskana' },
   intro: 'La Toscana prende il nome dai Tusci, cioè gli Etruschi. Terra di colline, città-stato e grandi banchieri, è la culla della lingua italiana e del Rinascimento.',
   start: -200000,
   focus: { firenze: '<p><b>Firenze</b> nasce come colonia romana (<i>Florentia</i>, 59 a.C.), diventa un Comune ricchissimo grazie alla lana e alle banche, la città di Dante, dei <b>Medici</b>, di Brunelleschi, Michelangelo e Leonardo, e capitale d\'Italia dal 1865 al 1871.</p>' },

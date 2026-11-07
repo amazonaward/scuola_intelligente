@@ -1,6 +1,6 @@
 PLACE({
   id: 'campania',
-  names: { it: 'Campania', en: 'Campania', fr: 'Campanie', ru: 'Кампания', ro: 'Campania' },
+  names: { it: 'Campania', en: 'Campania', fr: 'Campanie', ru: 'Кампания', ro: 'Campania', de: 'Kampanien' },
   intro: 'La Campania, la "Campania felix" dei Romani, è una terra fertilissima grazie ai vulcani. Greci, Sanniti, Romani, Bizantini, Normanni, Angioini, Aragonesi, Spagnoli e Borbone hanno fatto di Napoli una delle più grandi capitali d\'Europa.',
   start: -700000,
   focus: { napoli: '<p><b>Napoli</b> nasce come colonia greca, <b>Neapolis</b> ("città nuova"), verso il 470 a.C. accanto alla più antica Partenope. Sarà ducato bizantino indipendente, capitale del Regno di Napoli per sei secoli e oggi una delle città più vive del Mediterraneo.</p>' },
