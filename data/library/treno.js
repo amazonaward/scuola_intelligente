@@ -52,7 +52,7 @@
             { t: 'pipe', r: 0.025, n: 8, pts: [[-0.2, 0.12, 0], [0.45, 0.48, 0]] }, { t: 'pipe', r: 0.02, n: 8, pts: [[0.45, 0.48, 0], [0.0, 0.83, 0]] },
             { t: 'pipe', r: 0.012, n: 6, pts: [[-0.1, 0.12, 0], [0.4, 0.45, 0]], color: '#94a3b8' },
             { t: 'box', s: [0.1, 0.04, 0.8], pos: [0, 0.85, 0], color: '#1f2937' }, { t: 'box', s: [0.06, 0.03, 0.8], pos: [0, 0.875, 0], color: '#a3a3a3' } ] },
-        { id: 'catenaria', name: 'Linea aerea (catenaria)', label: 'Catenaria', color: '#b45309', explode: [0, 1.9, 0],
+        { id: 'catenaria', name: 'Linea aerea (catenaria)', label: 'Catenaria', color: '#b45309', explode: [0, 1.9, 0], anchor: [2.2, 3.2, 0],
           info: '<p>Sopra i binari corre un <b>filo di rame</b> sempre in tensione elettrica, appeso a pali. Sull\'alta velocità la tensione è di <b>25 000 volt</b>: pericolosissimo, mai avvicinarsi!</p>',
           more: '<p>Il filo di contatto è appeso con tanti piccoli "pendini" a una fune più in alto (la <b>catenaria</b> vera e propria, che prende il nome dalla curva che fa una catena appesa). Così resta perfettamente orizzontale. In Italia le linee normali usano 3000 V in corrente continua.</p>',
           shapes: [ { t: 'pipe', r: 0.018, n: 6, pts: [[-4.2, 2.79, 0], [4.2, 2.79, 0]] },
