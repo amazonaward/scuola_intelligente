@@ -883,3 +883,25 @@ body[data-page="metodi"] main > h1 { font-size: clamp(1.7rem, 3.6vw, 2.3rem); }
 .visit-counter .vc-dot { width: 12px; height: 12px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 0 rgba(34, 197, 94, .6); animation: vc-pulse 1.8s infinite; }
 @keyframes vc-pulse { 0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, .55); } 70% { box-shadow: 0 0 0 9px rgba(34, 197, 94, 0); } 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); } }
 @media (prefers-reduced-motion: reduce) { .visit-counter .vc-dot { animation: none; } }
+
+/* Laboratorio: scegli l'effetto */
+.fx-warn { display: flex; gap: 12px; align-items: flex-start; background: #fef2f2; border: 2px solid #ef4444; color: #7f1d1d; border-radius: 14px; padding: 12px 16px; margin: 12px 0 16px; font-weight: 700; }
+.fx-warn > span { font-size: 1.6rem; line-height: 1; }
+.fx-warn p { margin: 0; }
+.fx-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.fx-chip { border: 2px solid var(--line, #e2e7f0); background: var(--surface, #fff); color: var(--ink, #1c2333); border-radius: 999px; padding: 8px 14px; font: inherit; font-weight: 700; cursor: pointer; transition: border-color .2s, background .2s, transform .15s; }
+.fx-chip:hover { transform: translateY(-1px); border-color: #db2777; }
+.fx-chip[aria-selected="true"] { background: #db2777; border-color: #db2777; color: #fff; }
+.fx-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.fx-card { border-radius: 16px; padding: 14px 16px; border: 2px solid; background: var(--surface, #fff); color: var(--ink, #1c2333); display: flex; flex-direction: column; gap: 4px; }
+.fx-card h3 { margin: 4px 0; font-size: 1.05rem; }
+.fx-card p { margin: 2px 0; font-size: .95rem; }
+.fx-badge { align-self: flex-start; font-size: .8rem; font-weight: 800; border-radius: 999px; padding: 3px 10px; }
+.fx-home { border-color: #86efac; } .fx-home .fx-badge { background: #dcfce7; color: #14532d; }
+.fx-lab { border-color: #fcd34d; } .fx-lab .fx-badge { background: #fef3c7; color: #78350f; }
+.fx-danger { border-color: #ef4444; background: #fff5f5; } .fx-danger .fx-badge { background: #dc2626; color: #fff; }
+.fx-danger h3 { color: #b91c1c; }
+.fx-eq { font-family: ui-monospace, Menlo, monospace; background: rgba(127, 127, 127, .1); border-radius: 8px; padding: 4px 8px; }
+.fx-note { color: #92400e; }
+.fx-try { align-self: flex-start; margin-top: 6px; }
+.fx-rules { margin-top: 16px; } .fx-rules summary { cursor: pointer; font-weight: 800; }

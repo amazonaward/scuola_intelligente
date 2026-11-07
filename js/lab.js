@@ -50,6 +50,74 @@
     return [id, ''];
   }
 
+
+  /* --- "Scegli l'effetto": combinazioni per ottenere un effetto, con livello di sicurezza --- */
+  const FX = {
+    it: { nav: 'Scegli l’effetto', title: 'Che effetto vuoi ottenere?', sub: 'Scegli un effetto: ti mostro quali combinazioni lo producono e quanto sono sicure.',
+      warn: 'Le reazioni con ⚠️ e ☠️ NON vanno provate a casa. Alcune producono gas che possono uccidere in pochi minuti. Qui le trovi solo per sapere cosa NON fare mai.',
+      home: 'Si può fare a casa con un adulto', lab: 'Solo in laboratorio con l’insegnante', danger: 'PERICOLOSO – può essere mortale. Non provarlo mai!',
+      mix: 'Cosa si mescola', what: 'Cosa succede', never: 'Cosa NON mescolare', why: 'Perché è pericoloso', note: 'Attenzione', try: 'Provalo nel laboratorio virtuale', rules: 'Regole d’oro della sicurezza' },
+    en: { nav: 'Pick an effect', title: 'What effect do you want?', sub: 'Pick an effect: I’ll show you which combinations produce it and how safe they are.',
+      warn: 'Reactions marked ⚠️ and ☠️ must NOT be tried at home. Some produce gases that can kill within minutes. They are here only so you know what NEVER to do.',
+      home: 'OK at home with an adult', lab: 'Only in the school lab with the teacher', danger: 'DANGEROUS – can be deadly. Never try it!',
+      mix: 'What is mixed', what: 'What happens', never: 'What NOT to mix', why: 'Why it is dangerous', note: 'Careful', try: 'Try it in the virtual lab', rules: 'Golden safety rules' },
+    fr: { nav: 'Choisis l’effet', title: 'Quel effet veux-tu obtenir ?', sub: 'Choisis un effet : je te montre quelles combinaisons le produisent et à quel point elles sont sûres.',
+      warn: 'Les réactions marquées ⚠️ et ☠️ ne doivent PAS être essayées à la maison. Certaines produisent des gaz qui peuvent tuer en quelques minutes. Elles sont ici seulement pour savoir ce qu’il ne faut JAMAIS faire.',
+      home: 'Possible à la maison avec un adulte', lab: 'Seulement au labo de l’école avec l’enseignant', danger: 'DANGEREUX – peut être mortel. Ne jamais essayer !',
+      mix: 'Ce qu’on mélange', what: 'Ce qui se passe', never: 'Ce qu’il ne faut PAS mélanger', why: 'Pourquoi c’est dangereux', note: 'Attention', try: 'Essaie-le dans le labo virtuel', rules: 'Règles d’or de la sécurité' },
+    ru: { nav: 'Выбери эффект', title: 'Какой эффект ты хочешь получить?', sub: 'Выбери эффект — я покажу, какие сочетания его дают и насколько они безопасны.',
+      warn: 'Реакции с ⚠️ и ☠️ НЕЛЬЗЯ повторять дома. Некоторые выделяют газы, которые могут убить за несколько минут. Они здесь только для того, чтобы ты знал, чего НИКОГДА нельзя делать.',
+      home: 'Можно дома вместе со взрослым', lab: 'Только в школьной лаборатории с учителем', danger: 'ОПАСНО — может быть смертельно. Никогда не пробуй!',
+      mix: 'Что смешивают', what: 'Что происходит', never: 'Что НЕЛЬЗЯ смешивать', why: 'Почему это опасно', note: 'Осторожно', try: 'Попробуй в виртуальной лаборатории', rules: 'Золотые правила безопасности' },
+    ro: { nav: 'Alege efectul', title: 'Ce efect vrei să obții?', sub: 'Alege un efect: îți arăt ce combinații îl produc și cât de sigure sunt.',
+      warn: 'Reacțiile marcate cu ⚠️ și ☠️ NU trebuie încercate acasă. Unele produc gaze care pot ucide în câteva minute. Sunt aici doar ca să știi ce să NU faci niciodată.',
+      home: 'Se poate acasă, cu un adult', lab: 'Doar în laboratorul școlii, cu profesorul', danger: 'PERICULOS – poate fi mortal. Nu încerca niciodată!',
+      mix: 'Ce se amestecă', what: 'Ce se întâmplă', never: 'Ce NU trebuie amestecat', why: 'De ce e periculos', note: 'Atenție', try: 'Încearcă în laboratorul virtual', rules: 'Regulile de aur ale siguranței' },
+    de: { nav: 'Effekt wählen', title: 'Welchen Effekt möchtest du?', sub: 'Wähle einen Effekt: Ich zeige dir, welche Kombinationen ihn erzeugen und wie sicher sie sind.',
+      warn: 'Reaktionen mit ⚠️ und ☠️ darf man NICHT zu Hause ausprobieren. Manche erzeugen Gase, die in wenigen Minuten töten können. Sie stehen nur hier, damit du weißt, was du NIEMALS tun darfst.',
+      home: 'Zu Hause mit einem Erwachsenen möglich', lab: 'Nur im Schullabor mit der Lehrkraft', danger: 'GEFÄHRLICH – kann tödlich sein. Niemals ausprobieren!',
+      mix: 'Was gemischt wird', what: 'Was passiert', never: 'Was man NICHT mischen darf', why: 'Warum es gefährlich ist', note: 'Achtung', try: 'Probier es im virtuellen Labor', rules: 'Goldene Sicherheitsregeln' }
+  };
+  const fx = (k) => (FX[lang()] || FX.it)[k] || FX.it[k];
+  const tx = (o) => (o == null ? '' : typeof o === 'string' ? o : o[lang()] || o.it || o.en || '');
+  const LV = { home: ['✅', 'fx-home'], lab: ['⚠️', 'fx-lab'], danger: ['☠️', 'fx-danger'] };
+
+  function effectsSection(labBox) {
+    const D = window.CHEM_EFFECTS; if (!D) return null;
+    const sec = Z.el('section', 'card fx', `<h2>✨ ${fx('title')}</h2><p class="muted">${fx('sub')}</p>
+      <div class="fx-warn" role="alert"><span aria-hidden="true">🚨</span><p>${fx('warn')}</p></div>
+      <div class="fx-chips" role="tablist"></div><div class="fx-list" aria-live="polite"></div>
+      <details class="fx-rules"><summary>🛡️ ${fx('rules')}</summary><ul>${(D.rules[lang()] || D.rules.it).map((r) => `<li>${Z.esc(r)}</li>`).join('')}</ul></details>`);
+    const chips = sec.querySelector('.fx-chips'), list = sec.querySelector('.fx-list');
+    function show(e) {
+      chips.querySelectorAll('button').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.id === e.id)));
+      const order = { home: 0, lab: 1, danger: 2 };
+      list.innerHTML = '';
+      e.items.slice().sort((a, b) => order[a.safe] - order[b.safe]).forEach((it) => {
+        const [ic, cls] = LV[it.safe]; const d = it.safe === 'danger';
+        const c = Z.el('article', 'fx-card ' + cls, `
+          <div class="fx-badge">${ic} ${fx(it.safe)}</div>
+          <h3>${Z.esc(tx(it.name))}</h3>
+          <p><b>${d ? fx('never') : fx('mix')}:</b> ${Z.esc(tx(it.mix))}</p>
+          <p><b>${d ? fx('why') : fx('what')}:</b> ${Z.esc(tx(it.what))}</p>
+          ${it.eq && !d ? `<p class="fx-eq">${Z.esc(it.eq)}</p>` : ''}
+          ${it.note ? `<p class="fx-note">⚠️ <b>${fx('note')}:</b> ${Z.esc(tx(it.note))}</p>` : ''}`);
+        if (it.lab && labBox) {
+          const b = Z.el('button', 'btn btn-small fx-try', '🧪 ' + fx('try'));
+          b.onclick = () => labBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          c.appendChild(b);
+        }
+        list.appendChild(c);
+      });
+    }
+    D.effects.forEach((e, i) => {
+      const b = Z.el('button', 'fx-chip', `<span aria-hidden="true">${e.icon}</span> ${Z.esc(tx(e.name))}`);
+      b.dataset.id = e.id; b.setAttribute('role', 'tab'); b.onclick = () => show(e);
+      chips.appendChild(b); if (!i) show(e);
+    });
+    return sec;
+  }
+
   window.ZPages = window.ZPages || {};
   ZPages.laboratorio = async (m) => {
     m.innerHTML = `<section class="card lab-hero"><span class="lab-hero-ico" aria-hidden="true">⚗️</span><div><h1>${s('title')}</h1><p class="lead">${s('intro')}</p>
@@ -59,12 +127,22 @@
     if (!d) { body.innerHTML = `<div class="card"><p>${s('err')}</p></div>`; return; }
     body.innerHTML = '';
     const secs = d.sections || [];
+    if (!window.CHEM_EFFECTS) { try { await Z.loadScript('data/chem-effects.js'); } catch (e) {} }
+    let labBox = null;
+    const addJump = (box, label) => {
+      const a = Z.el('a', 'chip', label); a.href = '#/laboratorio';
+      a.onclick = e => { e.preventDefault(); box.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+      jump.appendChild(a);
+    };
     PICK.forEach(([k, ic, f]) => {
       const i = secs.findIndex(f); if (i < 0) return;
       const box = Z.renderSection(secs[i], SRC, i); box.id = 'lab-' + k; body.appendChild(box);
-      const a = Z.el('a', 'chip', ic + ' ' + s(k)); a.href = '#/laboratorio';
-      a.onclick = e => { e.preventDefault(); box.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
-      jump.appendChild(a);
+      addJump(box, ic + ' ' + s(k));
+      if (k === 'lab') {
+        labBox = box;
+        const fxs = effectsSection(labBox);
+        if (fxs) { fxs.id = 'lab-fx'; body.appendChild(fxs); addJump(fxs, '✨ ' + fx('nav')); }
+      }
     });
     const ls = Z.el('section', 'card lab-lessons', `<h2>📚 ${s('lessons')}</h2><p class="muted">${s('lessonsSub')}</p><div class="lab-lesson-list"></div>`);
     const list = ls.querySelector('.lab-lesson-list');
