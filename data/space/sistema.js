@@ -285,7 +285,7 @@ window.SPACE_OBJECTS = (window.SPACE_OBJECTS || []).concat([
       { type: 'mc', q: 'A cosa assomiglia 67P?', options: ['A una palla', 'A una paperella', 'A un cubo'], answer: 1, explain: 'Ha due lobi uniti da un collo.' },
       { type: 'num', q: 'In che anno Philae è atterrato sulla cometa?', answer: 2014, explain: 'Il 12 novembre 2014.' }
     ] },
-  { id: 'shoemaker-levy', cat: 'comet', emoji: '💥', color: '#fca5a5', body: 'comet', r: 1,
+  { id: 'shoemaker-levy', cat: 'comet', emoji: '💥', color: '#fca5a5', body: 'comet-sl9', r: 1,
     name: ['Cometa Shoemaker-Levy 9', 'Comet Shoemaker–Levy 9', 'Comète Shoemaker-Levy 9', 'Комета Шумейкеров — Леви 9', 'Cometa Shoemaker-Levy 9'], kind: 'Cometa caduta su Giove (D/1993 F2)',
     lead: 'La cometa che nel 1994 si è schiantata su Giove, sotto gli occhi di tutti i telescopi.',
     facts: [['Scoperta', 'marzo 1993 (Carolyn e Eugene Shoemaker, David Levy)'], ['Frammenti', '21 pezzi visibili, in fila come le perle di una collana'], ['Impatti', 'dal 16 al 22 luglio 1994'], ['Macchie lasciate', 'alcune più grandi della Terra']],

@@ -66,7 +66,7 @@ vec3 shadeIt(vec3 base, vec3 N, vec3 V, vec3 P, float spec, float shin, float ri
   vec3 L = uLight.w > 0.5 ? normalize(uLight.xyz - P) : uLight.xyz;
   float nl = dot(N, L);
   float hemi = dot(N, uUp) * 0.5 + 0.5;
-  vec3 amb = mix(vec3(0.26, 0.24, 0.23), vec3(0.60, 0.66, 0.78), hemi) * uAmb.x;
+  vec3 amb = mix(vec3(0.40, 0.37, 0.35), vec3(0.70, 0.73, 0.80), hemi) * uAmb.x;
   vec3 key = vec3(1.0, 0.97, 0.93) * uAmb.y;
   float fill = max(dot(N, normalize(vec3(-0.65, -0.15, 0.55))), 0.0) * uAmb.z;
   vec3 H = normalize(L + V);
@@ -173,12 +173,12 @@ void main() {
       spec = 0.0; rim = 0.0;
       N = facing < 0.0 ? -normalize(vFN) : normalize(vFN);
     } else if (uPat < 10.5) {               // 10: acqua
-      vec3 p = vObj * 26.0;
+      vec3 p = vObj * 11.0;
       vec2 rp = vec2(vnoise(p + vec3(uTime * 0.4, 0.0, 0.0)) - 0.5, vnoise(p.zyx + vec3(5.0, 0.0, uTime * 0.3)) - 0.5);
-      N = normalize(N + (uR * vec3(rp.x, 0.0, rp.y)) * 0.35);
+      N = normalize(N + (uR * vec3(rp.x, 0.0, rp.y)) * 0.14);
       float fr = pow(1.0 - max(dot(N, V), 0.0), 4.0);
-      alpha *= clamp(mix(0.5, 0.9, vX) + fr * 0.3, 0.0, 1.0);
-      spec = 1.4; shin = 140.0;
+      alpha *= clamp(mix(0.45, 0.9, vX) + fr * 0.3, 0.0, 1.0);
+      shin = 90.0;
     } else if (uPat < 11.5) {               // 11: cubetti smussati
       float e = min(min(vUV.x, 1.0 - vUV.x), min(vUV.y, 1.0 - vUV.y));
       float b = 1.0 - smoothstep(0.0, uBevel, e);
@@ -793,7 +793,7 @@ void main() {
     if (mat.light && mat.light.point) { const p = toCam(cam, mat.light.point); gl.uniform4f(u.uLight, p[0], p[1], p[2], 1); }
     else { const d = (mat.light && mat.light.dir) || LIGHT_DIR; gl.uniform4f(u.uLight, d[0], d[1], d[2], 0); }
     if (u.uUp) gl.uniform3fv(u.uUp, cam ? cam.up : [0, 1, 0]);
-    const a = mat.amb || [0.42, 0.85, 0.12];
+    const a = mat.amb || [0.5, 0.8, 0.12];
     gl.uniform3f(u.uAmb, a[0], a[1], a[2]);
     const rc = mat.rimColor ? rgba(mat.rimColor) : [0.85, 0.92, 1];
     gl.uniform3f(u.uRimCol, rc[0], rc[1], rc[2]);

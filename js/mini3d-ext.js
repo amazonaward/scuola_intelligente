@@ -173,22 +173,29 @@
     const idx = [];
     for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) { const a = i * n1 + j; idx.push(a, a + n1, a + 1, a + 1, a + n1, a + n1 + 1); }
     const land = GL.createMesh({ pos, nor, fn: nor, col, idx });
-    // acqua: un quadrato per cella d'acqua, alla quota del mare (0) o del lago
-    const wp = [], wc = [], wx = [], wi = [];
+    // acqua: griglia sulle celle d'acqua, alla quota del mare (0) o del lago; colori sfumati fra le celle
     const SEA_A = rgba('#45c6dc'), SEA_B = rgba('#1d3f9e');
-    for (const c of cells) {
-      if (!c.water) continue;
-      const y = c.lake ? 0.12 * VY : 0;
+    const wcol = cells.map((c) => {
+      if (!c.water) return null;
       let k = c.lake ? rgba('#3aa0d8') : c.lagoon ? rgba('#2cc2b0') : mixc(SEA_A, SEA_B, Math.min(1, (c.dn || 0) * 1.25));
       if (mask && mask(c)) k = mixc(k, HL, 0.8);
-      const x0 = (-1 + (2 * c.j) / N) * S, x1 = (-1 + (2 * (c.j + 1)) / N) * S, z0 = (-1 + (2 * c.i) / N) * S, z1 = (-1 + (2 * (c.i + 1)) / N) * S;
-      const b = wp.length / 3;
-      wp.push(x0, y, z0, x1, y, z0, x1, y, z1, x0, y, z1);
-      for (let q = 0; q < 4; q++) { wc.push(k[0], k[1], k[2]); wx.push(c.lake ? 0.6 : c.lagoon ? 0.25 : Math.min(1, 0.15 + (c.dn || 0))); }
-      wi.push(b, b + 1, b + 2, b, b + 2, b + 3);
+      return k;
+    });
+    const wp = new Float32Array(n1 * n1 * 3), wc = new Float32Array(n1 * n1 * 3), wx = new Float32Array(n1 * n1), wi = [];
+    for (let i = 0; i <= N; i++) for (let j = 0; j <= N; j++) {
+      let n = 0, r = 0, g = 0, b = 0, x = 0, lake = false;
+      for (const [a, bb] of [[0, 0], [-1, 0], [0, -1], [-1, -1]]) {
+        const ii = i + a, jj = j + bb; if (ii < 0 || jj < 0 || ii >= N || jj >= N) continue;
+        const c = cells[ii * N + jj], k = wcol[ii * N + jj]; if (!k) continue;
+        r += k[0]; g += k[1]; b += k[2]; x += c.lake ? 0.6 : c.lagoon ? 0.25 : Math.min(1, 0.15 + (c.dn || 0)); n++; if (c.lake) lake = true;
+      }
+      const v = i * n1 + j; n = n || 1;
+      wp[v * 3] = pos[v * 3]; wp[v * 3 + 1] = lake ? 0.12 * VY : 0; wp[v * 3 + 2] = pos[v * 3 + 2];
+      wc[v * 3] = r / n; wc[v * 3 + 1] = g / n; wc[v * 3 + 2] = b / n; wx[v] = x / n;
     }
+    for (const c of cells) if (c.water) { const a = c.i * n1 + c.j; wi.push(a, a + n1, a + 1, a + 1, a + n1, a + n1 + 1); }
     const wn = new Float32Array(wp.length); for (let q = 1; q < wn.length; q += 3) wn[q] = 1;
-    const water = wi.length ? GL.createMesh({ pos: new Float32Array(wp), nor: wn, fn: wn, col: new Float32Array(wc), x: new Float32Array(wx), idx: wi }) : null;
+    const water = wi.length ? GL.createMesh({ pos: wp, nor: wn, fn: wn, col: wc, x: wx, idx: wi }) : null;
     // bordi del plastico
     const bp = [], bn = [], bc = [], bi = [], Y0 = -0.24;
     const TOPL = rgba('#7b5532'), TOPW = rgba('#2f74b5'), BOT = rgba('#3a2513');
@@ -217,7 +224,7 @@
     v.height = 460;
     v.onDemand = true;
     const useGL = v._gl;
-    if (useGL) { v.wrap.style.background = 'linear-gradient(180deg, #b9d9ff 0%, #e2efff 55%, #f6f9ff 100%)'; GL.setFog(v, '#d6e8ff', 0.32); }
+    if (useGL) { v.wrap.style.background = 'linear-gradient(180deg, #b9d9ff 0%, #e2efff 55%, #f6f9ff 100%)'; GL.setFog(v, '#d6e8ff', 0.16); }
     const N = useGL ? 96 : 52, cells = buildTerrain(N), S = 1.35, VY = 0.9;
     let meshes = null, meshKey = null;
     const feats = o.features || {};
@@ -276,7 +283,7 @@
         GL.mesh(v, meshes.land, null, { specular: 0.1, shininess: 14, rim: 0.1, ambient: [0.5, 0.82, 0.12] });
         // fiume sopra il terreno (nascosto dalle montagne davanti)
         line3d(v, ctx, riverPts.map(([x, z]) => [x * S, Math.max(0.02, heightAt(x, z) * VY - 0.04) + 0.018, z * S]), sel === 'river' ? '#facc15' : '#1d5fe0', 3, { bias: 0.004 });
-        if (meshes.water) GL.mesh(v, meshes.water, null, { pattern: 10, specular: 1.2, shininess: 140, rim: 0.25, rimColor: '#ffffff', ambient: [0.55, 0.75, 0.1] });
+        if (meshes.water) GL.mesh(v, meshes.water, null, { pattern: 10, specular: 0.55, shininess: 90, rim: 0.25, rimColor: '#ffffff', ambient: [0.55, 0.75, 0.1] });
         drawPins(ctx);
         return;
       }
@@ -366,7 +373,8 @@
       const cs = corners.map((p) => v.P(p));
       ctx.save();
       ctx.beginPath(); cs.forEach((p, i) => (i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]))); ctx.closePath();
-      ctx.fillStyle = '#bfdbfe'; ctx.fill(); ctx.clip();
+      ctx.shadowColor = 'rgba(15,23,42,.28)'; ctx.shadowBlur = 22; ctx.shadowOffsetY = 10;
+      ctx.fillStyle = '#bfdbfe'; ctx.fill(); ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0; ctx.clip();
       const poly = (ring, fill) => { ctx.beginPath(); ring.forEach((pt, i) => { const [lo, la] = clampLL(pt[0], pt[1]); const p = v.P(map(la, lo)); i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1]); }); ctx.closePath(); ctx.fillStyle = fill; ctx.fill(); ctx.strokeStyle = 'rgba(60,80,40,.5)'; ctx.lineWidth = 1; ctx.stroke(); };
       if (window.GEO) { GEO.land.forEach((r) => poly(r, '#d9f99d')); GEO.water.forEach((r) => poly(r, '#bfdbfe')); }
       ctx.strokeStyle = 'rgba(30,64,175,.15)'; ctx.lineWidth = 1;

@@ -31,9 +31,9 @@ LIBRARY_INDEX({
       topics: ['m2-sci-apparato-circolatorio', 'p5-sci-corpo-umano', 'm2-sci-apparato-respiratorio', 'p1-sci-corpo'] },
 
     /* ---- in arrivo ---- */
-    { id: 'smartphone', emoji: '📱', shelf: 'casa', status: 'coming', tags: 'telefono cellulare touch',
+    { id: 'smartphone', emoji: '📱', shelf: 'casa', status: 'ready', year: 'p4', tags: 'telefono cellulare touch touchscreen schermo pixel batteria antenna fotocamera app',
       name: { it: 'Lo smartphone', en: 'The smartphone', fr: 'Le smartphone', ru: 'Смартфон', ro: 'Smartphone-ul' }, topics: ['p2-tec-computer', 'm2-tec-reti', 'p5-sci-luce-suono'] },
-    { id: 'frigorifero', emoji: '🧊', shelf: 'casa', status: 'coming', tags: 'frigo freddo compressore',
+    { id: 'frigorifero', emoji: '🧊', shelf: 'casa', status: 'ready', year: 'p4', tags: 'frigo freddo compressore condensatore evaporatore refrigerante freezer calore isolamento',
       name: { it: 'Il frigorifero', en: 'The fridge', fr: 'Le réfrigérateur', ru: 'Холодильник', ro: 'Frigiderul' }, topics: ['p4-sci-calore', 'm1-sci-materia-stati'] },
     { id: 'lavatrice', emoji: '🫧', shelf: 'casa', status: 'coming', tags: 'bucato cestello',
       name: { it: 'La lavatrice', en: 'The washing machine', fr: 'Le lave-linge', ru: 'Стиральная машина', ro: 'Mașina de spălat' }, topics: ['m3-sci-elettricita', 'm2-sci-forze-moto'] },
@@ -49,9 +49,9 @@ LIBRARY_INDEX({
       name: { it: 'L\'aereo', en: 'The airplane', fr: 'L\'avion', ru: 'Самолёт', ro: 'Avionul' }, topics: ['m2-sci-forze-moto', 'p3-sci-aria'] },
     { id: 'elicottero', emoji: '🚁', shelf: 'motori', status: 'coming', tags: 'rotore pale',
       name: { it: 'L\'elicottero', en: 'The helicopter', fr: 'L\'hélicoptère', ru: 'Вертолёт', ro: 'Elicopterul' }, topics: ['m2-sci-forze-moto', 'p3-sci-aria'] },
-    { id: 'iss', emoji: '🛸', shelf: 'spazio', status: 'coming', tags: 'stazione spaziale internazionale astronauti',
+    { id: 'iss', emoji: '🛸', shelf: 'spazio', status: 'ready', year: 'p5', tags: 'stazione spaziale internazionale astronauti',
       name: { it: 'La Stazione Spaziale', en: 'The Space Station', fr: 'La Station spatiale', ru: 'Космическая станция', ro: 'Stația Spațială' }, topics: ['m3-sci-universo', 'p5-sci-sistema-solare'] },
-    { id: 'rover', emoji: '🤖', shelf: 'spazio', status: 'coming', tags: 'marte robot ruote',
+    { id: 'rover', emoji: '🤖', shelf: 'spazio', status: 'ready', year: 'p5', tags: 'marte robot ruote',
       name: { it: 'Il rover su Marte', en: 'The Mars rover', fr: 'Le rover martien', ru: 'Марсоход', ro: 'Roverul de pe Marte' }, topics: ['p5-sci-sistema-solare', 'm3-tec-robotica'] },
     { id: 'telescopio', emoji: '🔭', shelf: 'spazio', status: 'coming', tags: 'lenti specchio stelle',
       name: { it: 'Il telescopio', en: 'The telescope', fr: 'Le télescope', ru: 'Телескоп', ro: 'Telescopul' }, topics: ['m3-sci-universo', 'p5-sci-luce-suono'] },

@@ -375,7 +375,7 @@
         }
         ctx.globalAlpha = 1;
         // scala adatta: le orbite riempiono la scena
-        v.scale = Math.min(W * 0.46 / 3.1, H * 0.44 / (3.1 * 0.44)) * v.zoom;
+        v.scale = Math.min(W * 0.42 / 3.1, H * 0.44 / (3.1 * 0.44)) * v.zoom;
         orbits.forEach((pts) => line3d(v, ctx, pts, 'rgba(170,190,255,.26)', 1, { closed: true }));
         const sunR = 0.26;
         const sp = v.P([0, 0, 0]);
@@ -387,7 +387,7 @@
         for (const p of P) {
           const a = p.ang + (time / p.per) * TAU;
           const pos = [p.dist * Math.cos(a), 0, -p.dist * Math.sin(a)];
-          const r = 0.032 * Math.pow(p.size, 0.75);
+          const r = 0.038 * Math.pow(p.size, 0.7);
           const tilt = TILT[p.id], spin = spinT * SPIN[p.id];
           const mat = { pattern: p.id === 'earth' && !earthTex ? 0 : PAT[p.id], tex: earthTex, spin: spinMat(tilt, spin), light: sun, ambient: [0.32, 1.35, 0], rim: 0.18, rimColor: p.id === 'earth' ? '#7cc4ff' : '#c7d2fe', specular: 0.15, shininess: 30, time: spinT };
           sphere(v, ctx, pos, r, p.color, mat);
@@ -602,7 +602,7 @@
           a.addColorStop(0, 'rgba(110,170,255,.55)'); a.addColorStop(0.35, 'rgba(90,150,255,.22)'); a.addColorStop(1, 'rgba(90,150,255,0)');
           ctx.fillStyle = a; ctx.beginPath(); ctx.arc(c[0], c[1], rr * 1.25, 0, TAU); ctx.fill();
           const tex = earthTexture();
-          sphere(v, ctx, [0, 0, 0], R, tex ? '#ffffff' : '#2563eb', { pattern: tex ? 8 : 0, tex, rim: 0.75, rimColor: '#8cc8ff', ambient: [0.62, 0.8, 0.12], specular: 0.6, shininess: 40 });
+          sphere(v, ctx, [0, 0, 0], R, tex ? '#ffffff' : '#2563eb', { pattern: tex ? 8 : 0, tex, rim: 0.75, rimColor: '#8cc8ff', ambient: [0.62, 0.8, 0.12], specular: 0.3, shininess: 60 });
         } else {
           const g = ctx.createRadialGradient(c[0] - rr * 0.3, c[1] - rr * 0.3, rr * 0.1, c[0], c[1], rr * 1.05);
           g.addColorStop(0, '#93c5fd'); g.addColorStop(1, '#1d4ed8');
@@ -634,7 +634,7 @@
             const dot = Math.max(-1, Math.min(1, a[0] * b[0] + a[1] * b[1] + a[2] * b[2])); const om = Math.acos(dot) || 1e-6;
             for (let s = 0; s <= 24; s++) { const f = s / 24; const k1 = Math.sin((1 - f) * om) / Math.sin(om), k2 = Math.sin(f * om) / Math.sin(om); l.push([0, 1, 2].map((i) => (a[i] * k1 + b[i] * k2) * R * 1.01)); }
           }
-          if (gl) line(ctx, l, 'rgba(0,0,0,.35)', 5, [7, 4], R);
+          if (gl) line(ctx, l, 'rgba(0,0,0,.22)', 4.5, null, R);
           line(ctx, l, color, 3, [7, 4], R);
         }
         for (const p of pts) {
