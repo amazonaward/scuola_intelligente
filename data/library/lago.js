@@ -109,7 +109,7 @@
         html: '<p>L\'<b>immissario</b> porta al lago l\'acqua della neve e del ghiacciaio. L\'<b>emissario</b> la porta via. Se entra ed esce la stessa quantità d\'acqua, il livello del lago resta (quasi) uguale.</p>' },
       { icon: '🌡️', title: 'Sopra tiepido, sotto freddo', focus: ['strati', 'acqua', 'sedimenti'], view: { rx: 0.08, ry: -0.05 }, zoom: 1.4,
         html: '<p>D\'estate il Sole scalda solo la parte alta del lago. Sotto, l\'acqua resta <b>fredda e buia</b>, intorno ai 4–6 °C. Sul fondo si posa piano piano il fango: i <b>sedimenti</b>.</p>' },
-      { icon: '🐟', title: 'Chi vive nel lago', focus: ['pesci', 'canneto', 'ninfee', 'plancton', 'anatra'], view: { rx: 0.35, ry: -0.35 }, zoom: 1.2,
+      { icon: '🐟', title: 'Chi vive nel lago', focus: ['pesci', 'canneto', 'ninfee', 'plancton', 'anatra', 'acqua'], view: { rx: 0.3, ry: -0.35 }, zoom: 1.3,
         html: '<p>Il lago è un <b>ecosistema</b>: il <b>plancton</b> nutre i piccoli pesci, che nutrono i pesci più grandi e gli uccelli. Nel <b>canneto</b> sulle rive nascono pesci e anatre; le <b>ninfee</b> galleggiano con le foglie sull\'acqua.</p>' },
       { icon: '☁️', title: 'Il ciclo dell\'acqua', focus: ['ciclo', 'acqua', 'vetta', 'immissario'], view: { rx: 0.25, ry: -0.6 },
         html: '<p>Il Sole fa <b>evaporare</b> un po\' d\'acqua del lago. Il vapore sale, forma le <b>nuvole</b> e ricade come <b>pioggia</b> o neve sulle montagne. I fiumi la riportano nel lago: un giro senza fine!</p>' },

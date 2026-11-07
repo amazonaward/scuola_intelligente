@@ -38,7 +38,7 @@
   const ash = [];
   for (let i = 0; i < 10; i++) {
     const a = i * 2.1, s = 0.35 + (i % 3) * 0.15;
-    ash.push({ t: 'sphere', r: s, n: 10, m: 14, pos: [0, H + 0.3, Z0], color: i % 2 ? '#78716c' : '#a8a29e', alpha: 0.75,
+    ash.push({ t: 'sphere', r: s, n: 10, m: 14, pos: [0, H + 0.3, Z0], color: i % 2 ? '#78716c' : '#a8a29e',
       anim: [ { type: 'path', pts: [[0, H + 0.3, Z0], [Math.cos(a) * 0.4, H + 1.6, Z0 + Math.sin(a) * 0.3], [Math.cos(a) * 0.9 + 0.6, H + 3.0, Z0 + Math.sin(a) * 0.6]], wave: 'saw', rate: 0.35, phase: i / 10 },
         { type: 'scale', from: 0.4, to: 1.5, wave: 'saw', rate: 0.35, phase: i / 10 }, { type: 'blink', fade: true, wave: 'rsaw', rate: 0.35, phase: i / 10 } ] });
   }
@@ -55,7 +55,7 @@
     model: {
       rx: 0.32, ry: -0.42, speed: 0.4, height: 480, fit: 1.0,
       parts: [
-        { id: 'fianco', name: 'Fianco del vulcano', label: 'Fianco', color: '#6b5b53', explode: [3.2, -0.2, 4.0],
+        { id: 'fianco', name: 'Fianco del vulcano', label: 'Fianco', color: '#6b5b53', explode: [7.5, -0.8, 2.5],
           info: '<p>La metà del vulcano che vediamo da fuori: un <b>cono</b> di roccia formato da tante eruzioni. Sui fianchi bassi cresce la vegetazione: la cenere vulcanica rende la terra fertilissima.</p>',
           more: '<p>Sulle pendici dell\'Etna e del Vesuvio si coltivano vigne, agrumi e pistacchi proprio grazie ai terreni vulcanici, ricchi di minerali.</p>',
           shapes: halfLathe(PROF, 180, 360, 22, '#6b5b53').concat(ground(Z0, 3.4)) },
@@ -96,7 +96,7 @@
           info: '<p>Il vulcano emette vapore acqueo, gas e <b>cenere</b>: minuscoli frammenti di roccia. La nube può salire per chilometri e il vento la porta lontano.</p>',
           more: '<p>Nel 2010 la nube del vulcano islandese Eyjafjallajökull bloccò per giorni i voli di mezza Europa: la cenere può danneggiare i motori degli aerei.</p>',
           shapes: ash },
-        { id: 'colate', name: 'Colate di lava', label: 'Colate di lava', color: '#ea580c', explode: [3.2, -0.2, 4.0],
+        { id: 'colate', name: 'Colate di lava', label: 'Colate di lava', color: '#ea580c', explode: [7.5, -0.8, 2.5],
           info: '<p>La lava scende lungo i fianchi come un fiume rosso. Raffreddandosi diventa scura e dura: è <b>roccia nuova</b> (basalto).</p>',
           more: '<p>Le colate dell\'Etna avanzano di solito lentamente, pochi metri all\'ora: c\'è tempo per allontanarsi. Più pericolose sono le <b>nubi ardenti</b> (flussi piroclastici), come quella che nel 79 d.C. seppellì Pompei.</p>',
           shapes: [ lavaFlow(240, 6, 0.75, 0.1), lavaFlow(290, 9, 0.95, 0.12), lavaFlow(320, 5, 0.6, 0.08) ] }
@@ -107,15 +107,15 @@
         html: '<p>Da fuori un vulcano sembra una montagna a forma di <b>cono</b>, con una conca in cima: il <b>cratere</b>. Ma la sua storia comincia molto più in basso, sotto terra.</p>' },
       { icon: '🔪', title: 'Tagliamolo a metà', explode: 1,
         html: '<p>Togliamo la metà davanti. Ora vediamo l\'interno: sotto il vulcano c\'è la <b>camera magmatica</b>, collegata al cratere da un lungo tubo, il <b>camino</b>.</p>' },
-      { icon: '🔥', title: 'La camera magmatica', explode: 1, focus: ['camera', 'crosta', 'magma'], view: { rx: 0.15, ry: -0.2 }, zoom: 1.3,
+      { icon: '🔥', title: 'La camera magmatica', explode: 1, focus: ['camera', 'crosta', 'magma', 'cono', 'strati'], view: { rx: 0.15, ry: -0.2 }, zoom: 1.3,
         html: '<p>A qualche chilometro di profondità si raccoglie il <b>magma</b>: roccia fusa a più di 1000 °C, piena di gas. Essendo più leggero delle rocce intorno, il magma tende a <b>salire</b>.</p><p class="tip">🥤 Il gas nel magma è come l\'anidride carbonica in una bottiglia di bibita: se apri di colpo… schizza fuori!</p>' },
-      { icon: '⬆️', title: 'Il magma risale', explode: 1, focus: ['camino', 'magma', 'camera', 'condotto'], view: { rx: 0.15, ry: -0.2 },
+      { icon: '⬆️', title: 'Il magma risale', explode: 1, focus: ['camino', 'magma', 'camera', 'condotto', 'cono', 'strati', 'crosta'], view: { rx: 0.15, ry: -0.2 },
         html: '<p>Quando la pressione dei gas è troppo alta, il magma sale nel <b>camino</b>. A volte trova anche una via laterale e apre una <b>bocca sul fianco</b>.</p>' },
-      { icon: '💥', title: 'L\'eruzione', explode: 0, focus: ['cratere', 'fontana', 'nube', 'cono', 'fianco'], view: { rx: 0.2, ry: -0.4 },
+      { icon: '💥', title: 'L\'eruzione', explode: 0, view: { rx: 0.2, ry: -0.4 },
         html: '<p>Il magma esce dal cratere e diventa <b>lava</b>. Nelle eruzioni esplosive vola in aria in brandelli (<b>lapilli</b> e <b>bombe</b>) e si alza una grande <b>nube di cenere e gas</b>.</p>' },
-      { icon: '🟠', title: 'Le colate di lava', explode: 0, focus: ['colate', 'fianco', 'cratere'], view: { rx: 0.35, ry: 0.15 },
+      { icon: '🟠', title: 'Le colate di lava', explode: 0, view: { rx: 0.35, ry: 0.15 },
         html: '<p>La lava scende lungo i fianchi come un fiume lento e incandescente. Raffreddandosi diventa <b>roccia</b> scura: il vulcano costruisce se stesso!</p>' },
-      { icon: '🍰', title: 'Strati su strati', explode: 1, focus: ['strati', 'cono'], view: { rx: 0.1, ry: -0.1 }, zoom: 1.2,
+      { icon: '🍰', title: 'Strati su strati', explode: 1, focus: ['strati', 'cono', 'crosta'], view: { rx: 0.1, ry: -0.1 }, zoom: 1.2,
         html: '<p>Ogni eruzione aggiunge uno strato: lava (scura) e cenere (chiara) si alternano come in una torta a strati. Per questo l\'Etna e il Vesuvio si chiamano <b>strato-vulcani</b>.</p><p class="tip">🇮🇹 In Italia i vulcani attivi sono vicino a dove la placca africana spinge sotto quella europea.</p>' }
     ],
     facts: [

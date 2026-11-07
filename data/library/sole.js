@@ -30,6 +30,9 @@
     wind.push({ t: 'sphere', r: 0.035, n: 6, m: 8, pos: [d[0] * 2.1, d[1] * 2.1, d[2] * 2.1], color: '#fde68a',
       anim: [ { type: 'path', pts: [[d[0] * 2.1, d[1] * 2.1, d[2] * 2.1], [d[0] * 4.6, d[1] * 4.6, d[2] * 4.6]], wave: 'saw', rate: 0.4, phase: i / 14 }, { type: 'blink', fade: true, wave: 'rsaw', rate: 0.4, phase: i / 14 } ] });
   }
+  /* granuli della fotosfera, sparsi a caso (generatore pseudo-casuale fisso) */
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const GRAN = Array.from({ length: 46 }, () => [12 + rnd() * 160, -85 + rnd() * 170, 0.05 + rnd() * 0.07, rnd() < 0.5 ? '#f9c74f' : '#f6a821']);
   const prom = (ax, ay, s, ph) => onSurf(ax, ay, [ { t: 'group', anim: [ { type: 'scale', from: 0.85, to: 1.15, rate: 0.5, phase: ph }, { type: 'blink', color: '#fde047', amount: 0.5, rate: 0.5, phase: ph } ], shapes: [
     { t: 'torus', R: 0.32 * s, r: 0.08 * s, n: 22, m: 10, arc: 180, rot: [-90, 0, 0], color: '#f97316' },
     { t: 'torus', R: 0.32 * s, r: 0.035 * s, n: 22, m: 6, arc: 180, rot: [-90, 0, 0], pos: [0, 0.05 * s, 0], color: '#fde047' } ] } ]);
@@ -45,7 +48,7 @@
           info: '<p>È la "superficie" luminosa del Sole, quella che vediamo (mai a occhio nudo!). Non è solida: è gas a circa <b>5500 °C</b>, tutto a granelli che ribollono.</p>',
           more: '<p>I "granelli" (granuli) sono le cime di enormi bolle di gas caldo, larghe come l\'Italia, che salgono dall\'interno, si raffreddano e riscendono in pochi minuti.</p>',
           shapes: [ { t: 'sphere', r: R, n: 20, m: 40, hemi: true, rot: [90, 0, 0] } ]
-            .concat(Array.from({ length: 34 }, (_, i) => onSurf(18 + (i * 37) % 150, -80 + (i * 61) % 160, [ { t: 'sphere', r: 0.07 + (i % 3) * 0.025, n: 6, m: 10, scale: [1, 0.12, 1], color: i % 2 ? '#f59e0b' : '#fcd34d', decal: 1 } ]))) },
+            .concat(GRAN.map(([ax, ay, r, c]) => onSurf(ax, ay, [ { t: 'sphere', r, n: 6, m: 10, scale: [1, 0.1, 1], color: c, decal: 1 } ]))) },
         { id: 'macchie', name: 'Macchie solari', color: '#451a03', explode: [4.6, 0.3, -2.6],
           info: '<p>Zone più "fredde" (si fa per dire: 3500 °C!) e quindi più scure. Una macchia può essere più grande della Terra.</p>',
           more: '<p>Le macchie nascono dove il <b>campo magnetico</b> del Sole è fortissimo e frena il gas caldo che sale. Il loro numero aumenta e diminuisce con un ciclo di circa <b>11 anni</b>.</p>',
@@ -54,15 +57,15 @@
             onSurf(110, 30, [ { t: 'sphere', r: 0.18, n: 8, m: 14, scale: [1, 0.1, 1], color: '#b45309', decal: 2 }, { t: 'sphere', r: 0.1, n: 8, m: 12, scale: [1, 0.14, 1], color: '#451a03', decal: 3 } ]) ] },
         { id: 'zona-convettiva', name: 'Zona convettiva', label: 'Zona convettiva', color: '#f97316', explode: [0, 0, 0],
           info: '<p>Lo strato esterno dell\'interno del Sole. Qui il gas caldo <b>sale</b>, si raffredda in superficie e <b>riscende</b>, come l\'acqua in una pentola che bolle.</p>',
-          shapes: [ backHemi(R, '#f97316', 0), { t: 'tube', r: R + 0.005, ri: R - 0.05, h: 0.03, n: 40, rot: [90, 0, 0], pos: [0, 0, 0.012], color: '#fde047' } ] },
-        { id: 'celle', name: 'Correnti convettive', label: 'Correnti convettive', color: '#fef3c7', explode: [0, 0, 0.05], chip: true,
+          shapes: [ backHemi(R, '#fbbf24', 0), { t: 'cyl', r: R - 0.03, h: 0.01, n: 48, rot: [90, 0, 0], pos: [0, 0, 0.007], color: '#f97316' }, { t: 'tube', r: R + 0.005, ri: R - 0.05, h: 0.03, n: 40, rot: [90, 0, 0], pos: [0, 0, 0.012], color: '#fde047' } ] },
+        { id: 'celle', name: 'Correnti convettive', label: 'Correnti convettive', color: '#fef3c7', explode: [0, 0, 0.05], chip: true, noLabel: true,
           info: '<p>Le bolle di gas fanno un giro continuo: salgono calde (chiare), cedono il calore in superficie e scendono più fredde (scure). Così il calore arriva fuori.</p>',
           shapes: cells },
         { id: 'zona-radiativa', name: 'Zona radiativa', label: 'Zona radiativa', color: '#fcd34d', explode: [0, 0, 0.05],
           info: '<p>Qui il gas è così fitto che non si muove: l\'energia viaggia come <b>luce</b> che rimbalza da una particella all\'altra, a zig-zag.</p>',
           more: '<p>Un fotone può impiegare da <b>decine di migliaia a centinaia di migliaia di anni</b> per attraversare questa zona. La luce che ti scalda oggi è nata nel nucleo quando sulla Terra c\'erano i mammut!</p>',
           shapes: [ backHemi(1.45, '#fcd34d', 0.02) ] },
-        { id: 'fotoni', name: 'Luce che rimbalza (fotoni)', label: 'Fotoni', color: '#ffffff', explode: [0, 0, 0.1], chip: true,
+        { id: 'fotoni', name: 'Luce che rimbalza (fotoni)', label: 'Fotoni', color: '#ffffff', explode: [0, 0, 0.1], chip: true, noLabel: true,
           info: '<p>Piccoli "pacchetti" di luce, i <b>fotoni</b>, partono dal nucleo e vengono assorbiti e rilanciati miliardi di volte prima di uscire.</p>',
           shapes: photons },
         { id: 'nucleo', name: 'Nucleo', color: '#fffbeb', explode: [0, 0, 0.1],
@@ -75,7 +78,7 @@
         { id: 'brillamento', name: 'Brillamento (flare)', label: 'Brillamento', color: '#ffffff', explode: [4.6, 0.3, -2.6],
           info: '<p>Un\'esplosione improvvisa sulla superficie, vicino alle macchie: in pochi minuti libera tanta energia quanto milioni di vulcani.</p>',
           more: '<p>I brillamenti e le grandi "bolle" di gas espulse (CME) possono disturbare satelliti, GPS e reti elettriche sulla Terra, e accendere aurore bellissime.</p>',
-          shapes: [ onSurf(62, -12, [ { t: 'sphere', r: 0.3, n: 10, m: 14, color: '#ffffff', alpha: 0.85, anim: [ { type: 'blink', fade: true, wave: 'window', from: 0.1, to: 0.3, ramp: 0.3 }, { type: 'scale', from: 0.4, to: 1.4, wave: 'window', win: [0.1, 0.3] } ] } ]) ] },
+          shapes: [ onSurf(62, -12, [ { t: 'sphere', r: 0.2, n: 14, m: 20, color: '#fef9c3', alpha: 0.9, anim: [ { type: 'blink', fade: true, wave: 'window', from: 0.1, to: 0.3, ramp: 0.3 }, { type: 'scale', from: 0.4, to: 1.4, wave: 'window', win: [0.1, 0.3] } ] } ]) ] },
         { id: 'corona', name: 'Corona', color: '#fde68a', alpha: 0.12, explode: [0, 0, 0],
           info: '<p>Un\'atmosfera sottilissima che circonda il Sole ed è più calda della superficie: oltre <b>1 milione di gradi</b>. Si vede a occhio nudo solo durante le <b>eclissi totali</b>.</p>',
           more: '<p>Perché la corona sia così calda è ancora uno dei grandi misteri della fisica solare. La sonda <b>Parker Solar Probe</b> l\'ha attraversata per studiarla.</p>',
@@ -101,9 +104,9 @@
         html: '<p>Nella <b>zona radiativa</b> l\'energia viaggia come luce, ma il gas è così fitto che i fotoni rimbalzano a zig-zag: per uscire impiegano <b>migliaia di anni</b>.</p>' },
       { icon: '♨️', title: 'Il Sole ribolle', explode: 1, focus: ['zona-convettiva', 'celle'], zoom: 1.3, view: { rx: 0.1, ry: -0.15 },
         html: '<p>Nella <b>zona convettiva</b> il gas si muove in grandi giri: sale caldo, si raffredda in superficie e riscende, come l\'acqua che bolle in pentola. Queste correnti si chiamano <b>moti convettivi</b>.</p>' },
-      { icon: '🌑', title: 'Macchie, archi ed esplosioni', explode: 0, focus: ['fotosfera', 'macchie', 'protuberanze', 'brillamento'],
+      { icon: '🌑', title: 'Macchie, archi ed esplosioni', explode: 0, focus: ['fotosfera', 'macchie', 'protuberanze', 'brillamento', 'celle', 'fotoni'],
         html: '<p>Sulla superficie compaiono <b>macchie</b> scure (zone più fredde), enormi archi di gas detti <b>protuberanze</b> e improvvisi lampi, i <b>brillamenti</b>. Sono tutti causati dal <b>magnetismo</b> del Sole.</p>' },
-      { icon: '🌬️', title: 'Corona e vento solare', explode: 0, focus: ['corona', 'vento-solare', 'terra'], view: { rx: 0.25, ry: -0.7 },
+      { icon: '🌬️', title: 'Corona e vento solare', explode: 0, focus: ['corona', 'vento-solare', 'terra', 'fotosfera', 'celle', 'fotoni'], view: { rx: 0.25, ry: -0.7 },
         html: '<p>Intorno al Sole c\'è la <b>corona</b>, caldissima ma sottilissima. Da lì parte il <b>vento solare</b>, un flusso di particelle che arriva fino alla Terra e accende le <b>aurore polari</b>.</p><p class="tip">🌍 Guarda il puntino blu: è la Terra nella stessa scala del Sole!</p>' }
     ],
     facts: [

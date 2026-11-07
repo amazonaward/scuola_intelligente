@@ -24,7 +24,7 @@
       const step = 6 / Math.max(0.25, Math.cos(lat * D));
       for (let lon = -180; lon < 180; lon += step) {
         const isFront = Math.abs(lon) < 90; if (isFront !== front || !isLand(lat, lon)) continue;
-        s.push({ t: 'group', rot: [0, lon, 0], shapes: [ { t: 'group', rot: [-lat, 0, 0], shapes: [ { t: 'cyl', r: 0.13, h: 0.02, n: 6, rot: [90, 0, 0], pos: [0, 0, R + 0.005], color: landColor(lat, lon), decal: 1 } ] } ] });
+        s.push({ t: 'group', rot: [0, lon, 0], shapes: [ { t: 'group', rot: [-lat, 0, 0], shapes: [ { t: 'cyl', r: 0.17, h: 0.02, n: 8, rot: [90, 0, 0], pos: [0, 0, R + 0.005], color: landColor(lat, lon), decal: 1 } ] } ] });
       }
     }
     return s;
@@ -45,9 +45,9 @@
   };
   /* linee del campo magnetico (dipolo): r = L·cos²(lat) */
   const field = [];
-  [3.0, 4.2].forEach((Lr) => [0, 60, 120, 180, 240, 300].forEach((lon) => {
+  [2.6, 3.2].forEach((Lr) => [0, 60, 120, 180, 240, 300].forEach((lon) => {
     const pts = []; for (let lat = -70; lat <= 70; lat += 5) { const r = Lr * Math.cos(lat * D) ** 2; if (r > R + 0.08) pts.push(ll(lat, lon, r)); }
-    if (pts.length > 2) { field.push({ t: 'pipe', r: 0.015, n: 5, curve: true, pts, color: '#a78bfa', alpha: 0.5 }); field.push({ t: 'sphere', r: 0.045, n: 6, m: 8, pos: pts[0], color: '#ddd6fe', anim: { type: 'path', pts, wave: 'saw', rate: 0.3, phase: lon / 360 } }); }
+    if (pts.length > 2) { field.push({ t: 'pipe', r: 0.014, n: 5, curve: true, pts, color: '#a78bfa' }); field.push({ t: 'sphere', r: 0.045, n: 6, m: 8, pos: pts[0], color: '#ddd6fe', anim: { type: 'path', pts, wave: 'saw', rate: 0.3, phase: lon / 360 } }); }
   }));
   const clouds = [[50, -30, 1.4], [10, -20, 1.0], [-40, 0, 1.6], [55, 20, 1.0], [5, 60, 1.2], [-50, 60, 1.3], [-10, -60, 1.1], [30, -50, 0.9], [62, -5, 0.8]];
 
@@ -64,7 +64,7 @@
           shapes: T([ hemi(R, '#1d4ed8', 0, true) ].concat(tiles(true))) },
         { id: 'nuvole', name: 'Nuvole', color: '#ffffff', explode: [4.6, 0.3, -2.6],
           info: '<p>Le nuvole sono goccioline d\'acqua e cristalli di ghiaccio sospesi nell\'aria. In ogni momento coprono circa due terzi del pianeta.</p>',
-          shapes: T(clouds.map(([a, o, s], i) => ({ t: 'group', rot: [0, o, 0], shapes: [ { t: 'group', rot: [-a, 0, 0], shapes: [ { t: 'sphere', r: 0.22 * s, n: 6, m: 10, scale: [1.6, 0.6, 0.12], rot: [0, 0, i * 25], pos: [0, 0, R + 0.06], color: '#ffffff' } ] } ] }))) },
+          shapes: T(clouds.map(([a, o, s], i) => ({ t: 'group', rot: [0, o, 0], shapes: [ { t: 'group', rot: [-a, 0, 0], shapes: [ { t: 'sphere', r: 0.16 * s, n: 6, m: 10, scale: [1.6, 0.6, 0.1], rot: [0, 0, i * 25], pos: [0, 0, R + 0.06], color: '#ffffff' } ] } ] }))) },
         { id: 'crosta', name: 'Crosta', color: '#92400e', explode: [0, 0, -0.4],
           info: '<p>La "buccia" rocciosa su cui viviamo. È sottilissima: in proporzione è più sottile della buccia di una mela! Sotto i continenti è spessa 30–70 km, sotto gli oceani solo 5–10 km.</p>',
           more: '<p>La crosta è divisa in grandi pezzi, le <b>placche</b>, che galleggiano sul mantello e si muovono di pochi centimetri l\'anno, più o meno quanto crescono le tue unghie.</p>',
@@ -111,17 +111,17 @@
     steps: [
       { icon: '🌍', title: 'Il pianeta blu', explode: 0,
         html: '<p>Vista dallo spazio la Terra è blu e bianca: <b>oceani</b> e <b>nuvole</b>. È l\'unico pianeta che conosciamo con acqua liquida in superficie e con la vita.</p><p class="tip">🇮🇹 Riesci a trovare l\'Italia? È lo "stivale" in mezzo al mare, sopra l\'Africa.</p>' },
-      { icon: '🔄', title: 'Gira su se stessa', focus: ['asse', 'superficie', 'nuvole'], explode: 0,
+      { icon: '🔄', title: 'Gira su se stessa', explode: 0,
         html: '<p>La Terra ruota intorno al suo <b>asse</b> in 24 ore, da ovest verso est: per questo il Sole sembra sorgere a est e tramontare a ovest. L\'asse è <b>inclinato</b> e questo ci regala le stagioni.</p>' },
       { icon: '🍑', title: 'Dentro è fatta a strati', explode: 1, focus: ['crosta', 'mantello-superiore', 'mantello-inferiore', 'nucleo-esterno', 'nucleo-interno'], view: { rx: 0.15, ry: -0.2 },
         html: '<p>Se potessimo tagliare la Terra come una pesca vedremmo la <b>crosta</b> (la buccia), il <b>mantello</b> (la polpa) e il <b>nucleo</b> (il nocciolo), diviso in nucleo esterno liquido e nucleo interno solido.</p><p class="tip">🌡️ Più si scende, più fa caldo: al centro ci sono circa 5400 °C.</p>' },
-      { icon: '🥾', title: 'La crosta e le placche', explode: 0, focus: ['crosta', 'placche', 'superficie'], view: { rx: 0.3, ry: -0.05 },
+      { icon: '🥾', title: 'La crosta e le placche', explode: 0, view: { rx: 0.3, ry: -0.05 },
         html: '<p>La crosta è sottilissima e divisa in grandi pezzi, le <b>placche</b>. Dove si scontrano nascono montagne, vulcani e terremoti: l\'Italia si trova proprio dove la placca africana spinge contro quella europea.</p>' },
       { icon: '♨️', title: 'Il mantello si muove', explode: 1, focus: ['mantello-superiore', 'mantello-inferiore', 'convezione'], view: { rx: 0.1, ry: -0.15 }, zoom: 1.2,
         html: '<p>Il mantello è roccia caldissima che si muove lentissimamente, come una pasta densa: la parte calda sale, quella fredda scende. Queste <b>correnti</b> spostano le placche di pochi centimetri ogni anno.</p>' },
       { icon: '🧲', title: 'Il nucleo e la calamita Terra', explode: 1, focus: ['nucleo-esterno', 'nucleo-interno', 'campo-magnetico'], view: { rx: 0.15, ry: -0.3 },
         html: '<p>Nel <b>nucleo esterno</b> il ferro liquido gira e crea il <b>campo magnetico</b>: la Terra è come una grande calamita. È grazie a lui che la bussola funziona e che il vento solare non ci colpisce.</p>' },
-      { icon: '🌬️', title: 'La coperta d\'aria', explode: 0, focus: ['atmosfera', 'nuvole', 'superficie'],
+      { icon: '🌬️', title: 'La coperta d\'aria', explode: 0, 
         html: '<p>Intorno alla Terra c\'è l\'<b>atmosfera</b>: l\'aria che respiriamo. Trattiene il calore del Sole (senza, faremmo −18 °C!) e ci protegge. Dentro l\'atmosfera si formano le nuvole e il tempo meteorologico.</p>' }
     ],
     facts: [
