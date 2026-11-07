@@ -1,8 +1,0 @@
-{
-  "name": "zainetto",
-  "private": true,
-  "description": "Zainetto: sito statico + 2 funzioni per le statistiche anonime",
-  "dependencies": {
-    "@vercel/blob": "latest"
-  }
-}
