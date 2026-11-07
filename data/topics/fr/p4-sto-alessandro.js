@@ -869,7 +869,7 @@ TOPIC('fr', {
     "type": "tf",
     "q": "En Égypte, Alexandre fut proclamé pharaon.",
     "answer": true,
-    "explain": "Il fut accueilli comme un libérateur par les Perses et proclamé pharaon."
+    "explain": "Les Égyptiens l’accueillirent comme un libérateur face aux Perses et le proclamèrent pharaon."
    },
    {
     "type": "mc",

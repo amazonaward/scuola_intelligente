@@ -428,7 +428,7 @@ TOPIC('it', {
       { type: `mc`, q: `Con quale battaglia Filippo II sottomise le polis greche?`, options: [`Maratona`, `Cheronea`, `Gaugamela`], answer: 1, explain: `Cheronea, nel 338 a.C.` },
       { type: `text`, q: `Come si chiamava il cavallo di Alessandro?`, answer: [`bucefalo`], explain: `Bucefalo, che lo accompagnò fino in India.` },
       { type: `order`, q: `Metti in ordine le battaglie di Alessandro.`, items: [`Granico`, `Isso`, `Gaugamela`, `Idaspe (contro Poro)`], explain: `334, 333, 331, 326 a.C.` },
-      { type: `tf`, q: `In Egitto Alessandro fu proclamato faraone.`, answer: true, explain: `Fu accolto come liberatore dai Persiani e proclamato faraone.` },
+      { type: `tf`, q: `In Egitto Alessandro fu proclamato faraone.`, answer: true, explain: `Gli Egizi lo accolsero come un liberatore dai Persiani e lo proclamarono faraone.` },
       { type: `mc`, q: `Perché Alessandro tornò indietro dall'India?`, options: [`Perché aveva perso una battaglia`, `Perché i soldati, stanchi, si rifiutarono di proseguire`, `Perché era finita la terra`], answer: 1, explain: `Sul fiume Ifasi l'esercito si rifiutò di andare avanti.` },
       { type: `num`, q: `In che anno (a.C.) morì Alessandro? Scrivi il numero.`, answer: 323, explain: `Nel 323 a.C., a Babilonia.` },
       { type: `mc`, q: `Quale dinastia regnò in Egitto dopo Alessandro?`, options: [`I Seleucidi`, `I Tolomei`, `Gli Antigonidi`], answer: 1, explain: `I Tolomei, fino a Cleopatra.` },
