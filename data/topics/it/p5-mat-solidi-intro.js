@@ -285,6 +285,25 @@ TOPIC('it', {
 <li>🇧🇪 L'<b>Atomium</b> di Bruxelles: 9 sfere collegate da tubi cilindrici.</li>
 <li>🇯🇵 In Giappone si coltivano <b>angurie cubiche</b>, fatte crescere dentro scatole di vetro, perché stanno meglio nei frigoriferi!</li>
 </ul>`
+        },
+        {
+          "label": "🇬🇷 I cinque solidi di Platone",
+          "html": "<p>Un poliedro si dice <b>regolare</b> se tutte le sue facce sono <b>poligoni regolari uguali</b> e in ogni vertice si incontra lo <b>stesso numero</b> di facce. Il filosofo <b>greco</b> <b>Platone</b> (circa 360 a.C.) ne parlò nel libro <i>Timeo</i> e li collegò al fuoco, alla terra, all'aria, all'acqua e all'universo: per questo si chiamano <b>solidi platonici</b>. <b>Euclide</b> dimostrò che sono <b>solo cinque</b>!</p><table><tr><th>Solido</th><th>Facce</th><th>Vertici</th><th>Spigoli</th></tr><tr><td>Tetraedro</td><td>4 triangoli</td><td>4</td><td>6</td></tr><tr><td>Cubo (esaedro)</td><td>6 quadrati</td><td>8</td><td>12</td></tr><tr><td>Ottaedro</td><td>8 triangoli</td><td>6</td><td>12</td></tr><tr><td>Dodecaedro</td><td>12 pentagoni</td><td>20</td><td>30</td></tr><tr><td>Icosaedro</td><td>20 triangoli</td><td>12</td><td>30</td></tr></table><p><b>Perché solo 5?</b> In un vertice si devono incontrare almeno 3 facce, e i loro angoli devono fare <b>meno di 360°</b> (altrimenti il solido diventa piatto):</p><ul><li>triangoli (60°): 3 → 180°, 4 → 240°, 5 → 300° ✔; 6 → 360° ✘ piatto;</li><li>quadrati (90°): 3 → 270° ✔; 4 → 360° ✘;</li><li>pentagoni (108°): 3 → 324° ✔;</li><li>esagoni (120°): 3 → 360° ✘ già piatto.</li></ul><p>Sono 3 + 1 + 1 = <b>5</b> possibilità. Controlla la formula di Eulero su ogni riga della tabella! I dadi dei giochi di ruolo a 4, 6, 8, 12 e 20 facce sono proprio i solidi di Platone.</p>"
+        },
+        {
+          "label": "🇩🇪 Sfera, cubo, cilindro: il dono di Fröbel (Germania)",
+          "html": "<p><b>Friedrich Fröbel</b>, il maestro <b>tedesco</b> che inventò il <b>Kindergarten</b> (la scuola dell'infanzia), regalava ai bambini una scatola di legno con tre solidi: <b>sfera, cubo e cilindro</b>. Era il suo «secondo dono». Perché proprio questi tre? Perché sono i più diversi tra loro, e il cilindro sta <b>a metà</b> tra gli altri due.</p><ol><li><b>Sfera</b>: solo superficie <b>curva</b>. Rotola in tutte le direzioni e non sta mai ferma su un piano inclinato.</li><li><b>Cubo</b>: solo facce <b>piatte</b> (6 quadrati), 8 vertici e 12 spigoli. Non rotola: scivola o sta fermo.</li><li><b>Cilindro</b>: 2 facce piatte (due cerchi) e una superficie curva. Se lo metti in piedi sta fermo come il cubo; se lo corichi rotola come la sfera, ma solo <b>in una direzione</b>, dritto.</li></ol><p>🎯 Prova con una palla, un dado e un rotolo di carta su un libro inclinato. Poi guarda il modello qui sotto e cambia solido con i pulsanti: quale è un <b>poliedro</b>? Quali sono <b>solidi di rotazione</b>?</p>",
+          "scene": "solid",
+          "options": {
+            "shapes": [
+              "sphere",
+              "cube",
+              "cylinder"
+            ],
+            "shape": "sphere",
+            "labels": true,
+            "color": "#f59e0b"
+          }
         }
       ]
     },

@@ -92,7 +92,7 @@ body.mdl-noscroll { overflow: hidden; }
 /* curiosità, quiz, lezioni collegate */
 .lib-fgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
 .lib-fact { background: #fffbeb; border-radius: 14px; padding: 12px 14px; border-top: 5px solid #f59e0b; }
-.lib-fact b { display: block; margin-bottom: 4px; }
+.lib-fact > b { display: block; margin-bottom: 4px; }
 .lib-fact p { margin: 0; font-size: .95rem; }
 .lib-ficon { float: right; font-size: 1.8rem; margin-left: 6px; }
 .lib-tlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
@@ -118,8 +118,11 @@ body.mdl-noscroll { overflow: hidden; }
   .lib-hero-art { display: none; }
   .lib-row { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px; padding: 4px 6px 20px; }
   .lib-card { min-height: 122px; } .lib-card .lib-em { font-size: 2.4rem; } .lib-card b { font-size: .86rem; }
-  .lib-head > .lib-em { font-size: 2.6rem; padding: 6px 10px; }
+  .lib-head { flex-wrap: wrap; gap: 10px; }
+  .lib-head > .lib-em { font-size: 2.2rem; padding: 4px 10px; border-radius: 16px; }
+  .lib-head > div { flex: 1 1 100%; }
   .lib-head h1 { font-size: 1.5rem; }
+  .lib-head .lead { font-size: 1rem; }
   .lib-view { padding: 10px; }
   .lib-stepbody { min-height: 0; }
   .mdl-hud span { font-size: .68rem; padding: 1px 7px; }

@@ -6,8 +6,12 @@
   <title>Zainetto · Scuola intelligente</title>
   <meta name="description" content="Impara giocando dalla 1ª elementare alla 3ª media: programma ministeriale, lezioni con 3D, spiegazioni alternative, mappe concettuali, quiz e verifiche. In italiano, inglese, francese, russo e rumeno.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎒</text></svg>">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light dark">
+  <script>/* tema chiaro/scuro prima del primo disegno, per evitare lampi */(function () { var th = null; try { th = localStorage.getItem('zainetto-theme'); } catch (e) {} if (th !== 'dark' && th !== 'light') th = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; document.documentElement.setAttribute('data-theme', th); })();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>

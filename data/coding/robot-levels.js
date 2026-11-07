@@ -62,7 +62,7 @@ window.CODING_ROBOT = {
       name: ['Il tesoro in fila', 'Treasure in a row', 'Le trésor en file', 'Сокровища в ряд', 'Comoara în șir'],
       goal: ['Raccogli tutte le monete con al massimo 5 blocchi.', 'Collect all the coins with at most 5 blocks.', 'Ramasse toutes les pièces avec 5 blocs au maximum.', 'Собери все монетки, используя не больше 5 блоков.', 'Strânge toate monedele cu cel mult 5 blocuri.'],
       hint: ['Cosa si ripete? «Avanti» e poi «Raccogli».', 'What repeats? “Forward” then “Pick up”.', 'Qu’est-ce qui se répète ? « Avance » puis « Ramasse ».', 'Что повторяется? «Вперёд», потом «Подбери».', 'Ce se repetă? „Înainte”, apoi „Ia”.'] },
-    { map: ['TTTTTTT', 'TTTTT..', 'TTTT..T', 'TTT..TT', 'TT..TTT', 'R..TTTT'], dir: 'E', blocks: ['fwd', 'left', 'right', 'rep'], max: 7, sol: { main: ['F', ['rep', 5, ['F', 'L', 'F', 'R']]] },
+    { map: ['TTTTTT*', 'TTTTT..', 'TTTT..T', 'TTT..TT', 'TT..TTT', 'R..TTTT'], dir: 'E', blocks: ['fwd', 'left', 'right', 'rep'], max: 7, sol: { main: ['F', ['rep', 5, ['F', 'L', 'F', 'R']]] },
       name: ['La scala magica', 'The magic staircase', 'L’escalier magique', 'Волшебная лестница', 'Scara magică'],
       goal: ['Una scala più alta! Usa al massimo 7 blocchi.', 'A taller staircase! Use at most 7 blocks.', 'Un escalier plus haut ! 7 blocs au maximum.', 'Лестница повыше! Не больше 7 блоков.', 'O scară mai înaltă! Cel mult 7 blocuri.'],
       hint: ['Un gradino è sempre uguale: mettilo dentro «Ripeti».', 'Each step is the same: put it inside “Repeat”.', 'Chaque marche est pareille : mets-la dans « Répète ».', 'Все ступеньки одинаковые: положи одну в «Повтори».', 'Fiecare treaptă e la fel: pune-o în „Repetă”.'] },

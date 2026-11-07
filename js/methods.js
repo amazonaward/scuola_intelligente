@@ -8,7 +8,7 @@
     us: ['Stati Uniti', 'United States', 'États-Unis', 'США', 'Statele Unite'], gb: ['Regno Unito', 'United Kingdom', 'Royaume-Uni', 'Великобритания', 'Regatul Unit'],
     fr: ['Francia', 'France', 'France', 'Франция', 'Franța'], de: ['Germania', 'Germany', 'Allemagne', 'Германия', 'Germania'], maya: ['Maya', 'Maya', 'Mayas', 'Майя', 'Maya'],
     ro: ['Romania', 'Romania', 'Roumanie', 'Румыния', 'România'], md: ['Moldavia', 'Moldova', 'Moldavie', 'Молдова', 'Moldova'], fi: ['Finlandia', 'Finland', 'Finlande', 'Финляндия', 'Finlanda'],
-    kr: ['Corea', 'Korea', 'Corée', 'Корея', 'Coreea'], idea: ['Altre idee', 'Other ideas', 'Autres idées', 'Другие идеи', 'Alte idei']
+    rome: ['Antica Roma', 'Ancient Rome', 'Rome antique', 'Древний Рим', 'Roma antică'], kr: ['Corea', 'Korea', 'Corée', 'Корея', 'Coreea'], idea: ['Altre idee', 'Other ideas', 'Autres idées', 'Другие идеи', 'Alte idei']
   };
   const L = ['it', 'en', 'fr', 'ru', 'ro'];
   const cname = (c) => (NAMES[c] || [c])[Math.max(0, L.indexOf(i18n.lang))] || c;

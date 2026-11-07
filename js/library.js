@@ -131,9 +131,22 @@
   const PRIM = {
     box(o) {
       const [w, h, d] = o.s || o.size || [1, 1, 1]; const x = w / 2, y = h / 2, z = d / 2;
-      const v = [[-x, -y, -z], [x, -y, -z], [x, y, -z], [-x, y, -z], [-x, -y, z], [x, -y, z], [x, y, z], [-x, y, z]];
-      return [[[0, 1, 2, 3], [0, 0, -1]], [[4, 5, 6, 7], [0, 0, 1]], [[0, 1, 5, 4], [0, -1, 0]], [[3, 2, 6, 7], [0, 1, 0]], [[0, 3, 7, 4], [-1, 0, 0]], [[1, 2, 6, 5], [1, 0, 0]]]
-        .map(([f, n]) => ({ pts: f.map((i) => v[i]), hint: n }));
+      const cell = o.cell || 0.45, dv = (L) => Math.max(1, Math.min(6, o.div || Math.ceil(L / cell)));
+      const F = [];
+      /* ogni faccia grande è divisa in riquadri: l'ordinamento in profondità diventa più affidabile */
+      const face = (o0, u, v, nu, nv, n) => {
+        for (let i = 0; i < nu; i++) for (let j = 0; j < nv; j++) {
+          const P = (a, b) => [o0[0] + u[0] * a / nu + v[0] * b / nv, o0[1] + u[1] * a / nu + v[1] * b / nv, o0[2] + u[2] * a / nu + v[2] * b / nv];
+          F.push({ pts: [P(i, j), P(i + 1, j), P(i + 1, j + 1), P(i, j + 1)], hint: n });
+        }
+      };
+      face([-x, -y, -z], [w, 0, 0], [0, h, 0], dv(w), dv(h), [0, 0, -1]);
+      face([-x, -y, z], [w, 0, 0], [0, h, 0], dv(w), dv(h), [0, 0, 1]);
+      face([-x, -y, -z], [w, 0, 0], [0, 0, d], dv(w), dv(d), [0, -1, 0]);
+      face([-x, y, -z], [w, 0, 0], [0, 0, d], dv(w), dv(d), [0, 1, 0]);
+      face([-x, -y, -z], [0, h, 0], [0, 0, d], dv(h), dv(d), [-1, 0, 0]);
+      face([x, -y, -z], [0, h, 0], [0, 0, d], dv(h), dv(d), [1, 0, 0]);
+      return F;
     },
     cyl(o) {
       const r = o.r != null ? o.r : 0.5, r2 = o.r2 != null ? o.r2 : r, h = o.h != null ? o.h : 1, n = o.n || 24, F = []; const sm = n >= 10;
@@ -257,12 +270,12 @@
       let pts = f.pts; const n = newell(pts);
       if (n[0] * f.hint[0] + n[1] * f.hint[1] + n[2] * f.hint[2] < 0) pts = pts.slice().reverse();
       pts = pts.map((p) => Mx.ap(m, p)); if (flip) pts.reverse();
-      node.faces.push({ p: pts, col: st.color, a: st.alpha, sm: f.sm || st.smooth, ds: st.ds || s.t === 'pipe' && s.caps === false, edge: st.edges });
+      node.faces.push({ p: pts, col: st.color, a: st.alpha, sm: f.sm || st.smooth, ds: st.ds || s.t === 'pipe' && s.caps === false, edge: st.edges, decal: st.decal });
     }
   }
   function addChildren(node, list, acc, style) {
     for (const s of list) {
-      const st = { color: s.color || style.color, alpha: s.alpha != null ? s.alpha : style.alpha, ds: s.ds != null ? s.ds : style.ds, smooth: s.smooth != null ? s.smooth : style.smooth, edges: s.edges != null ? s.edges : style.edges };
+      const st = { color: s.color || style.color, alpha: s.alpha != null ? s.alpha : style.alpha, ds: s.ds != null ? s.ds : style.ds, smooth: s.smooth != null ? s.smooth : style.smooth, edges: s.edges != null ? s.edges : style.edges, decal: s.decal || style.decal };
       const m = Mx.mul(acc, trs(s));
       if (s.anim) { const k = { local: m, anims: arr(s.anim), faces: [], kids: [] }; node.kids.push(k); placeShape(k, s, Mx.id(), st); }
       else placeShape(node, s, m, st);
@@ -282,9 +295,10 @@
       case 'sin01': return (1 - Math.cos(TAU * u)) / 2;
       case 'tri': { const f = mod(u, 1); return f < 0.5 ? f * 2 : 2 - f * 2; }
       case 'saw': return mod(u, 1);
+      case 'rsaw': return 1 - mod(u, 1);
       case 'square': return mod(u, 1) < 0.5 ? 1 : 0;
       case 'window': {
-        const c = a.cycle || model.cycle || 1, f = mod(u, c) / c, from = a.from || 0, to = a.to != null ? a.to : 0.5;
+        const c = a.cycle || model.cycle || 1, f = mod(u, c) / c, w = a.win || (a.type === 'scale' ? [0, 0.5] : [a.from || 0, a.to != null ? a.to : 0.5]), from = w[0], to = w[1];
         const len = mod(to - from, 1) || 1; let x = mod(f - from, 1); if (x > len) return 0; x /= len;
         const r = a.ramp != null ? a.ramp : 0.2; return r <= 0 ? 1 : x < r ? smooth(x / r) : x > 1 - r ? smooth((1 - x) / r) : 1;
       }
@@ -355,14 +369,25 @@
     }
     const { View, label } = Mini3D._;
     const v = new View(host, { rx: o.rx != null ? o.rx : 0.32, ry: o.ry != null ? o.ry : -0.55, auto: o.auto === true });
-    v.height = o.height || 460; v._resize();
+    v.height = o.height || 460;
+    /* sui telefoni il canvas diventa più alto (quasi quadrato) */
+    const baseResize = v._resize.bind(v);
+    v._resize = function () {
+      baseResize();
+      const w = this.W, want = Math.min(this.height, Math.round(w * 1.02));
+      if (w < 620 && want > this.H && this.canvas && this.ctx) {
+        const dpr = window.devicePixelRatio || 1;
+        this.canvas.height = want * dpr; this.canvas.style.height = want + 'px'; this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0); this.H = want;
+      }
+    };
+    v._resize();
     v.autoSpeed = 0.15;
     host.classList.add('mdl');
     const parts = (o.parts || []).map(buildPart);
     const byId = Object.fromEntries(parts.map((p) => [p.id, p]));
     const cycle = o.cycle || 1;
-    const S = { U: 0, playing: o.play !== false, speed: 1, explode: o.explode || 0, exT: o.explode || 0, labels: o.labels !== false, sel: null, hover: null, only: null, focus: null, loop: null,
-      cam: [0, 0, 0], camT: [0, 0, 0], zoomT: null, viewT: null, drawn: [] };
+    const S = { U: 0, playing: o.play !== false, speed: 1, explode: o.explode || 0, exT: o.explode || 0, labels: o.labels != null ? o.labels : v.W >= 520, sel: null, hover: null, only: null, focus: null, loop: null,
+      cam: [0, 0, 0], camT: [0, 0, 0], zoomT: null, viewT: null, items: [] };
 
     /* adattamento: centro e scala del modello fermo */
     let bb = [[1e9, 1e9, 1e9], [-1e9, -1e9, -1e9]];
@@ -380,9 +405,10 @@
     });
     const C0 = [0, 1, 2].map((i) => (bb[0][i] + bb[1][i]) / 2);
     const R0 = Math.max(0.1, Math.hypot(bb[1][0] - bb[0][0], bb[1][1] - bb[0][1], bb[1][2] - bb[0][2]) / 2);
-    const K = (o.fit || 1.45) / R0;
+    const HX = (bb[1][0] - bb[0][0]) / 2, HY = (bb[1][1] - bb[0][1]) / 2, HZ = (bb[1][2] - bb[0][2]) / 2;
+    const K = (o.fit || 1) * Math.min(1.4 / Math.max(0.1, HY), 2.05 / Math.max(0.1, HX, HZ), 1.95 / R0);
     const FIT = Mx.mul(Mx.s(K, K, K), Mx.t(-C0[0], -C0[1], -C0[2]));
-    const floorY = (bb[0][1] - C0[1]) * K;
+    const floorY = (bb[0][1] - C0[1]) * K, FX = Math.max(0.3, (bb[1][0] - bb[0][0]) / 2 * K), FZ = Math.max(0.3, (bb[1][2] - bb[0][2]) / 2 * K);
 
     /* ---- interfaccia ---- */
     const hud = el('div', 'mdl-hud'); v.wrap.appendChild(hud);
@@ -446,9 +472,9 @@
     let down = null;
     v.canvas.addEventListener('pointerdown', (e) => { down = [e.clientX, e.clientY]; });
     const pick = (mx, my) => {
-      let ghostHit = null;
-      for (let i = S.drawn.length - 1; i >= 0; i--) {
-        const d = S.drawn[i]; if (!inPoly(mx, my, d.s)) continue;
+      let ghostHit = null; const L = (S.items || []).slice().sort((a, b) => a.z - b.z);
+      for (let i = L.length - 1; i >= 0; i--) {
+        const d = L[i]; if (!inPoly(mx, my, d.r.map((q) => v.proj(q)))) continue;
         if (d.a >= 0.5) return d.part; if (!ghostHit) ghostHit = d.part;
       }
       return ghostHit;
@@ -529,85 +555,91 @@
         if (hud._ph !== ph.label) { hud._ph = ph.label; hud.innerHTML = o.phases.map((p) => `<span class="${p === ph ? 'on' : ''}" style="--pc:${p.color || '#4c7cf3'}">${esc(p.label)}</span>`).join(''); }
       }
       const dark = o.bg === 'space' || o.bg === 'orbit' || o.bg === 'sea' || o.bg === 'sky';
-      const cy = v.cy_, sy = v.sy_, cx = v.cx_, sx = v.sx_;
-      // matrice vista = Rx' * Ry' (come View.rot), poi spostamento verso il pezzo isolato
-      const VIEW = Mx.mul(Mx.mul([1, 0, 0, 0, 0, cx, -sx, 0, 0, sx, cx, 0], [cy, 0, sy, 0, 0, 1, 0, 0, -sy, 0, cy, 0]), Mx.t(-S.cam[0], -S.cam[1], -S.cam[2]));
       // ombra a terra
       if (!dark && o.floor !== false) {
-        const base = Mx.mul(VIEW, Mx.id());
-        for (const [rr, al] of [[1.15, 0.05], [0.85, 0.06], [0.55, 0.07]]) {
+        const base = Mx.t(-S.cam[0], -S.cam[1], -S.cam[2]);
+        for (const [rr, al] of [[1.08, 0.045], [0.9, 0.05], [0.7, 0.06]]) {
           ctx.beginPath();
-          for (let i = 0; i <= 36; i++) { const a = (i / 36) * TAU; const q = v.proj(Mx.ap(base, [Math.cos(a) * rr * 1.2, floorY - 0.02, Math.sin(a) * rr])); i ? ctx.lineTo(q[0], q[1]) : ctx.moveTo(q[0], q[1]); }
+          for (let i = 0; i <= 36; i++) { const a = (i / 36) * TAU; const q = v.P(Mx.ap(base, [Math.cos(a) * rr * FX, floorY - 0.02, Math.sin(a) * rr * FZ])); i ? ctx.lineTo(q[0], q[1]) : ctx.moveTo(q[0], q[1]); }
           ctx.fillStyle = `rgba(30,41,59,${al})`; ctx.fill();
         }
       }
-      const list = []; const pulse = 0.28 + 0.14 * Math.sin(T * 5);
+      const opaque = [], decals = [], trans = [], items = []; const pulse = 0.28 + 0.14 * Math.sin(T * 5);
       const anchors = [];
+      const WORLD = Mx.t(-S.cam[0], -S.cam[1], -S.cam[2]);
       for (const p of parts) {
         if (S.only && S.only !== p) continue;
         const ghost = S.focus && !S.focus.has(p.id);
         const e = p.explode, ex = S.explode;
-        const Mpart = Mx.mul(VIEW, Mx.mul(FIT, Mx.t(e[0] * ex, e[1] * ex, e[2] * ex)));
-        const hl = S.sel === p ? pulse : S.hover === p ? 0.14 : 0;
+        const Mpart = Mx.mul(WORLD, Mx.mul(FIT, Mx.t(e[0] * ex, e[1] * ex, e[2] * ex)));
+        const hl = S.sel === p ? pulse : S.hover === p ? 0.14 : 0; p._n = 0;
         const walk = (node, Mparent, mix, mixCol, alpha) => {
           const A = node.anims.length ? evalAnims(node.anims, Ueff, o) : null;
           let W = Mx.mul(Mparent, node.local); if (A && A.m) W = Mx.mul(W, A.m);
           let mx = mix, mc = mixCol, al = alpha;
           if (A) { if (A.mix > mx) { mx = A.mix; mc = A.mixCol; } al *= A.alpha; }
-          if (node === p.root) anchors.push({ p, s: v.proj(Mx.ap(W, p.anchorL)) });
+          if (node === p.root) anchors.push({ p, s: v.P(Mx.ap(W, p.anchorL)) });
           if (al > 0.01) for (const f of node.faces) {
-            const r = f.p.map((q) => Mx.ap(W, q));
-            const n = newell(r); const m = Math.hypot(n[0], n[1], n[2]) || 1; n[0] /= m; n[1] /= m; n[2] /= m;
+            const w = f.p.map((q) => Mx.ap(W, q)); const r = w.map((q) => v.rot(q));
             let zc = 0, xc = 0, yc = 0; for (const q of r) { xc += q[0]; yc += q[1]; zc += q[2]; } xc /= r.length; yc /= r.length; zc /= r.length;
-            if (!f.ds && n[0] * -xc + n[1] * -yc + n[2] * (6 - zc) < 0) continue;
-            const L = Math.abs(n[0] * LIGHT[0] + n[1] * LIGHT[1] + n[2] * LIGHT[2]);
-            let rgb = hexRgb(f.col); if (mx > 0 && mc) rgb = lerp3(rgb, mc, mx);
-            rgb = lit(rgb, 0.55 + 0.6 * L); if (hl) rgb = lerp3(rgb, YELLOW, hl);
+            if (!f.ds) { const n = newell(r); if (n[0] * -xc + n[1] * -yc + n[2] * (6 - zc) < 0) continue; }
+            let rgb = hexRgb(f.col); if (mx > 0 && mc) rgb = lerp3(rgb, mc, mx); if (hl) rgb = lerp3(rgb, YELLOW, hl);
             let a = f.a * al; if (ghost) a *= 0.16;
-            list.push({ r, z: zc + (p.def.zBias || 0), rgb, a, sm: f.sm, edge: f.edge, part: p, ghost });
+            const z = zc + (p.def.zBias || 0);
+            items.push({ r, z, part: p, a: ghost ? 0.1 : a }); if (a > 0.08) p._n++;
+            if (a >= 0.98) (f.decal ? (decals[+f.decal] = decals[+f.decal] || []) : opaque).push({ pts: w, color: css(rgb), kind: f.sm ? 'side' : 'flat' });
+            else trans.push({ r, z, rgb, a, sm: f.sm });
           }
           for (const k of node.kids) walk(k, W, mx, mc, al);
         };
         walk(p.root, Mpart, 0, null, 1);
       }
-      list.sort((a, b) => a.z - b.z);
-      const drawn = [];
-      ctx.lineJoin = 'round';
-      for (const it of list) {
+      // 1) solidi opachi con il motore condiviso (Mini3D._.drawFaces); 2) superfici trasparenti sopra, dalla più lontana
+      Mini3D._.drawFaces(v, ctx, opaque, { color: '#94a3b8', edges: false, cull: false });
+      decals.forEach((L) => L && L.length && Mini3D._.drawFaces(v, ctx, L, { color: '#94a3b8', edges: false, cull: false }));
+      trans.sort((a, b) => a.z - b.z);
+      for (const it of trans) {
         const s = it.r.map((q) => v.proj(q));
         ctx.beginPath(); for (let i = 0; i < s.length; i++) i ? ctx.lineTo(s[i][0], s[i][1]) : ctx.moveTo(s[i][0], s[i][1]); ctx.closePath();
-        const fill = css(it.rgb, it.a); ctx.fillStyle = fill; ctx.fill();
-        if (it.a >= 0.98) {
-          if (it.sm || !it.edge) { ctx.strokeStyle = fill; ctx.lineWidth = 0.7; } else { ctx.strokeStyle = 'rgba(15,23,42,.35)'; ctx.lineWidth = 0.8; }
-          ctx.stroke();
-        } else if (!it.sm && it.edge && it.a > 0.12) { ctx.strokeStyle = `rgba(15,23,42,${(it.a * 0.5).toFixed(2)})`; ctx.lineWidth = 0.7; ctx.stroke(); }
-        drawn.push({ s, part: it.part, a: it.ghost ? 0.1 : it.a });
+        const n = newell(it.r); const m = Math.hypot(n[0], n[1], n[2]) || 1;
+        const L = Math.abs((n[0] * LIGHT[0] + n[1] * LIGHT[1] + n[2] * LIGHT[2]) / m);
+        ctx.fillStyle = css(lit(it.rgb, 0.55 + 0.6 * L), it.a); ctx.fill();
       }
-      S.drawn = drawn;
+      S.items = items;
       // etichette
-      if (S.labels || S.sel) {
-        const cen = v.proj(Mx.ap(VIEW, [0, 0, 0])); const rects = [];
-        ctx.font = '700 12px system-ui, sans-serif';
+      const autoLbl = !S.labels && S.focus && S.focus.size <= 6;
+      if (S.labels || S.sel || autoLbl) {
+        const cen = v.P([-S.cam[0], -S.cam[1], -S.cam[2]]);
+        ctx.font = '700 12px system-ui, sans-serif'; ctx.save(); ctx.lineJoin = 'round';
+        /* etichette a "richiamo": due colonne (sinistra/destra), ordinate per altezza e distanziate */
+        const top = o.phases ? 44 : 12, gap = 19, L = [], Rr = [];
         for (const an of anchors) {
-          const p = an.p; if (p.def.noLabel && S.sel !== p) continue;
-          if (!S.labels && S.sel !== p) continue;
+          const p = an.p; if ((p.def.noLabel || !p._n) && S.sel !== p) continue;
+          if (an.s[0] < 0 || an.s[0] > v.W || an.s[1] < 0 || an.s[1] > v.H) continue;
+          if (!S.labels && !autoLbl && S.sel !== p) continue;
           if (S.focus && !S.focus.has(p.id) && S.sel !== p) continue;
-          const txt = p.def.label || p.def.name || p.id;
-          let dx = an.s[0] - cen[0], dy = an.s[1] - cen[1]; const dl = Math.hypot(dx, dy);
-          if (dl < 8) { dx = 1; dy = -0.3; } const k = 1 / (Math.hypot(dx, dy) || 1); dx *= k; dy *= k;
-          let lx = an.s[0] + dx * 30, ly = an.s[1] + dy * 22; const w = ctx.measureText(txt).width + 8; const right = dx >= 0;
-          for (let tries = 0; tries < 8; tries++) {
-            const x0 = right ? lx : lx - w; const hit = rects.some((q) => x0 < q[0] + q[2] && x0 + w > q[0] && ly - 9 < q[1] + 18 && ly + 9 > q[1]);
-            if (!hit) break; ly += dy >= 0 ? 17 : -17;
-          }
-          lx = clamp(lx, right ? 4 : w + 4, right ? v.W - w - 4 : v.W - 4); ly = clamp(ly, 10, v.H - 10);
-          rects.push([right ? lx : lx - w, ly - 9, w, 18]);
-          ctx.strokeStyle = dark ? 'rgba(255,255,255,.6)' : 'rgba(30,41,59,.55)'; ctx.lineWidth = 1;
+          const txt = p.def.label || p.def.name || p.id; const w = ctx.measureText(txt).width + 10;
+          (an.s[0] < cen[0] ? L : Rr).push({ an, p, txt, w, y: an.s[1] });
+        }
+        const place = (col) => {
+          col.sort((a, b) => a.y - b.y);
+          for (let i = 0; i < col.length; i++) col[i].ly = Math.max(col[i].y, top, i ? col[i - 1].ly + gap : -1e9);
+          const over = col.length ? col[col.length - 1].ly - (v.H - 10) : 0;
+          if (over > 0) for (let i = col.length - 1; i >= 0; i--) { col[i].ly -= over; if (i && col[i - 1].ly > col[i].ly - gap) col[i - 1].ly = col[i].ly - gap; else break; }
+        };
+        place(L); place(Rr);
+        const draw1 = (it, right) => {
+          const { an, p, txt } = it; const ly = clamp(it.ly, 10, v.H - 10);
+          let lx = right ? an.s[0] + 34 + Math.abs(ly - an.s[1]) * 0.25 : an.s[0] - 34 - Math.abs(ly - an.s[1]) * 0.25;
+          lx = right ? Math.min(lx, v.W - it.w - 2) : Math.max(lx, it.w + 2);
+          ctx.strokeStyle = dark ? 'rgba(255,255,255,.6)' : 'rgba(30,41,59,.5)'; ctx.lineWidth = 1;
           ctx.beginPath(); ctx.moveTo(an.s[0], an.s[1]); ctx.lineTo(lx, ly); ctx.stroke();
           ctx.fillStyle = dark ? '#fff' : '#1e293b'; ctx.beginPath(); ctx.arc(an.s[0], an.s[1], 2.6, 0, TAU); ctx.fill();
           const on = S.sel === p;
-          label(ctx, lx + (right ? 2 : -2), ly, txt, on ? '#92400e' : dark ? '#f8fafc' : '#1e293b', right ? 'left' : 'right', on ? 'rgba(254,240,138,.95)' : dark ? 'rgba(2,6,23,.85)' : 'rgba(255,255,255,.92)');
-        }
+          label(ctx, lx + (right ? 3 : -3), ly, txt, on ? '#92400e' : dark ? '#f8fafc' : '#1e293b', right ? 'left' : 'right', on ? 'rgba(254,240,138,.95)' : dark ? 'rgba(2,6,23,.85)' : 'rgba(255,255,255,.92)');
+        };
+        L.forEach((it) => draw1(it, false)); Rr.forEach((it) => draw1(it, true));
+        ctx.restore();
       }
     };
 

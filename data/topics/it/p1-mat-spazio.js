@@ -218,6 +218,22 @@ TOPIC('it', {
           html: `<p>Anche i numeri hanno una posizione! Sulla retta, i numeri <b>più piccoli</b> stanno a <b>sinistra</b> e quelli <b>più grandi</b> a <b>destra</b>. Il 3 sta a sinistra del 7; il 12 sta a destra del 5.</p>`,
           widget: "numberLine",
           options: { min: 0, max: 20, step: 1, marks: [3, 12] }
+        },
+        {
+          "label": "🇨🇳 Il tangram cinese",
+          "html": "<p>Il <b>tangram</b> è un gioco antico che viene dalla <b>Cina</b>. In cinese si chiama 七巧板, «le sette tavolette dell'abilità». È un quadrato tagliato in <b>7 pezzi</b>: 5 triangoli, 1 quadrato e 1 parallelogramma.</p><p>Gioca con un amico:</p><ol><li>Ritagliate i 7 pezzi da un cartoncino (o usate il disegno).</li><li>Uno dà gli ordini, l'altro esegue: «Metti il quadrato <b>sopra</b> il triangolo grande». «Metti il triangolo piccolo <b>a destra</b> del quadrato». «Il parallelogramma va <b>sotto</b>».</li><li>Poi vi scambiate i ruoli.</li></ol><p>Con i pezzi puoi costruire un gatto, una casa, una barca… Per riuscirci devi pensare sempre a dove va ogni pezzo: sopra, sotto, a destra, a sinistra, vicino, lontano.</p><p>🎯 Guarda il disegno: dove sta il triangolo verde rispetto al triangolo rosso?</p>",
+          "svg": "<svg viewBox=\"0 0 600 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"300\" fill=\"#f8fafc\"/><polygon points=\"50,30 270,30 160,140\" fill=\"#ef4444\" stroke=\"#1e293b\" stroke-width=\"3\"/><polygon points=\"50,30 160,140 50,250\" fill=\"#3b82f6\" stroke=\"#1e293b\" stroke-width=\"3\"/><polygon points=\"160,250 270,250 270,140\" fill=\"#22c55e\" stroke=\"#1e293b\" stroke-width=\"3\"/><polygon points=\"270,30 270,140 215,85\" fill=\"#eab308\" stroke=\"#1e293b\" stroke-width=\"3\"/><polygon points=\"215,85 270,140 215,195 160,140\" fill=\"#a855f7\" stroke=\"#1e293b\" stroke-width=\"3\"/><polygon points=\"160,140 215,195 105,195\" fill=\"#f97316\" stroke=\"#1e293b\" stroke-width=\"3\"/><polygon points=\"50,250 105,195 215,195 160,250\" fill=\"#14b8a6\" stroke=\"#1e293b\" stroke-width=\"3\"/><text x=\"320\" y=\"50\" font-size=\"18\" font-family=\"sans-serif\" fill=\"#1e293b\" font-weight=\"bold\">Il tangram: 7 pezzi</text><text x=\"320\" y=\"85\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#1e293b\">🔺 5 triangoli</text><text x=\"320\" y=\"110\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#1e293b\">🟪 1 quadrato</text><text x=\"320\" y=\"135\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#1e293b\">▱ 1 parallelogramma</text><text x=\"320\" y=\"175\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#b91c1c\" font-weight=\"bold\">Il triangolo rosso sta IN ALTO.</text><text x=\"320\" y=\"200\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#1d4ed8\" font-weight=\"bold\">Il triangolo blu sta A SINISTRA.</text><text x=\"320\" y=\"225\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#15803d\" font-weight=\"bold\">Il triangolo verde sta IN BASSO,</text><text x=\"320\" y=\"247\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#15803d\" font-weight=\"bold\">A DESTRA.</text></svg>"
+        },
+        {
+          "label": "🇩🇪 I cubetti di Fröbel (Germania)",
+          "html": "<p><b>Friedrich Fröbel</b> era un maestro <b>tedesco</b>: nel 1840 chiamò la sua scuola per i più piccoli <b>«Kindergarten»</b>, cioè «giardino dei bambini». Inventò i <b>«doni»</b>: scatole di legno con forme per giocare e imparare. Il <b>terzo dono</b> è un cubo tagliato in <b>8 cubetti</b> uguali.</p><p>Prova con 8 cubetti (o con quelli qui sotto, che puoi girare):</p><ol><li>Costruisci un cubo grande: 4 cubetti <b>sotto</b> e 4 cubetti <b>sopra</b>.</li><li>Quanti cubetti stanno <b>davanti</b>? Quanti <b>dietro</b>?</li><li>Ora gira il cubo: quelli che erano davanti adesso dove sono?</li><li>Costruisci una torre: un cubetto <b>sopra</b> l'altro. E un treno: un cubetto <b>dietro</b> l'altro.</li></ol>",
+          "scene": "blocks",
+          "options": {
+            "mode": "volume",
+            "a": 2,
+            "b": 2,
+            "c": 2
+          }
         }
       ]
     },

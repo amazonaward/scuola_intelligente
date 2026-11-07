@@ -4,11 +4,12 @@
 const fs = require('fs'), path = require('path'), vm = require('vm');
 const root = path.join(__dirname, '..');
 const COUNTRIES = [
+  ['mes', '🏛️', /babilon|sumer|mesopotam/i], ['rome', '🏛️', /antichi romani|numeri romani|dei romani|roma antica/i],
   ['jp', '🇯🇵', /giappon|soroban|🇯🇵/i], ['cn', '🇨🇳', /cin[ae]s|cina|gougu|tangram|🇨🇳/i], ['ru', '🇷🇺', /russ|🇷🇺/i],
-  ['eg', '𓂀', /egizi|egitt|𓂀|🏺|faraon|scrib/i], ['ar', '🕌', /arab|gelosia|al-khwarizmi|🕌/i], ['in', '🇮🇳', /india|vedic|🇮🇳/i],
-  ['mes', '🏛️', /babilon|sumer|mesopotam/i], ['gr', '🇬🇷', /grec|euclide|eratostene|archimede|🇬🇷/i], ['sg', '🇸🇬', /singapore|bar model|barre|🇸🇬/i],
-  ['us', '🇺🇸', /americ|usa|stati uniti|algebra tiles|🇺🇸/i], ['gb', '🇬🇧', /ingles|inghilterra|chunking|🇬🇧/i], ['fr', '🇫🇷', /franc|🇫🇷/i],
-  ['de', '🇩🇪', /german|🇩🇪/i], ['maya', '🗿', /maya|azteca/i], ['ro', '🇷🇴', /romani|🇷🇴/i], ['md', '🇲🇩', /moldav|🇲🇩/i], ['fi', '🇫🇮', /finland|🇫🇮/i], ['kr', '🇰🇷', /corea|🇰🇷/i]
+  ['eg', '𓂀', /egizi|egitt|𓂀|faraon|scrib/i], ['ar', '🕌', /arab|gelosia|al-khwarizmi|🕌/i], ['in', '🇮🇳', /india|vedic|🇮🇳/i],
+  ['gr', '🇬🇷', /grec|euclide|eratostene|archimede|🇬🇷/i], ['sg', '🇸🇬', /singapore|bar model|🇸🇬/i], ['fr', '🇫🇷', /franc|🇫🇷/i],
+  ['gb', '🇬🇧', /ingles|inghilterra|chunking|🇬🇧/i], ['us', '🇺🇸', /americ|usa\b|stati uniti|algebra tiles|🇺🇸/i],
+  ['de', '🇩🇪', /german|🇩🇪/i], ['maya', '🗿', /maya|azteca/i], ['md', '🇲🇩', /moldav|🇲🇩/i], ['ro', '🇷🇴', /romania|romen|🇷🇴/i], ['fi', '🇫🇮', /finland|🇫🇮/i], ['kr', '🇰🇷', /corea|🇰🇷/i]
 ];
 const LANGS = ['it', 'en', 'fr', 'ru', 'ro'];
 const ctx = {}; ctx.window = ctx; let cur = null; ctx.TOPIC = (l, t) => { cur = t; }; vm.createContext(ctx);
