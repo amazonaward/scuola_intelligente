@@ -5,7 +5,6 @@ const { decode } = require('./_lib');
 
 module.exports = async (req, res) => {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  if (!process.env.BLOB_READ_WRITE_TOKEN) { res.setHeader('Cache-Control', 'no-store'); res.statusCode = 503; return res.end('{"error":"no store"}'); }
   try {
     const best = new Map();   // ogni sessione può avere più aggiornamenti: teniamo il più lungo
     let cursor;

@@ -14,7 +14,6 @@ function readBody(req) {
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') { res.statusCode = 405; return res.end(); }
-  if (!process.env.BLOB_READ_WRITE_TOKEN) { res.statusCode = 503; return res.end('no store'); }
   const b = await readBody(req);
   if (!b || !clean(b.sid, 16) || !clean(b.vid, 16) || !(b.sec >= 5)) { res.statusCode = 204; return res.end(); }
   const ua = String(req.headers['user-agent'] || '');
