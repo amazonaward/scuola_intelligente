@@ -80,30 +80,30 @@
   };
   const fx = (k) => (FX[lang()] || FX.it)[k] || FX.it[k];
   const tx = (o) => (o == null ? '' : typeof o === 'string' ? o : o[lang()] || o.it || o.en || '');
-  const LV = { home: ['✅', 'fx-home'], lab: ['⚠️', 'fx-lab'], danger: ['☠️', 'fx-danger'] };
+  const LV = { home: ['✅', 'efx-home'], lab: ['⚠️', 'efx-lab'], danger: ['☠️', 'efx-danger'] };
 
   function effectsSection(labBox) {
     const D = window.CHEM_EFFECTS; if (!D) return null;
-    const sec = Z.el('section', 'card fx', `<h2>✨ ${fx('title')}</h2><p class="muted">${fx('sub')}</p>
-      <div class="fx-warn" role="alert"><span aria-hidden="true">🚨</span><p>${fx('warn')}</p></div>
-      <div class="fx-chips" role="tablist"></div><div class="fx-list" aria-live="polite"></div>
-      <details class="fx-rules"><summary>🛡️ ${fx('rules')}</summary><ul>${(D.rules[lang()] || D.rules.it).map((r) => `<li>${Z.esc(r)}</li>`).join('')}</ul></details>`);
-    const chips = sec.querySelector('.fx-chips'), list = sec.querySelector('.fx-list');
+    const sec = Z.el('section', 'card efx', `<h2>✨ ${fx('title')}</h2><p class="muted">${fx('sub')}</p>
+      <div class="efx-warn" role="alert"><span aria-hidden="true">🚨</span><p>${fx('warn')}</p></div>
+      <div class="efx-chips" role="tablist"></div><div class="efx-list" aria-live="polite"></div>
+      <details class="efx-rules"><summary>🛡️ ${fx('rules')}</summary><ul>${(D.rules[lang()] || D.rules.it).map((r) => `<li>${Z.esc(r)}</li>`).join('')}</ul></details>`);
+    const chips = sec.querySelector('.efx-chips'), list = sec.querySelector('.efx-list');
     function show(e) {
       chips.querySelectorAll('button').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.id === e.id)));
       const order = { home: 0, lab: 1, danger: 2 };
       list.innerHTML = '';
       e.items.slice().sort((a, b) => order[a.safe] - order[b.safe]).forEach((it) => {
         const [ic, cls] = LV[it.safe]; const d = it.safe === 'danger';
-        const c = Z.el('article', 'fx-card ' + cls, `
-          <div class="fx-badge">${ic} ${fx(it.safe)}</div>
+        const c = Z.el('article', 'efx-card ' + cls, `
+          <div class="efx-badge">${ic} ${fx(it.safe)}</div>
           <h3>${Z.esc(tx(it.name))}</h3>
           <p><b>${d ? fx('never') : fx('mix')}:</b> ${Z.esc(tx(it.mix))}</p>
           <p><b>${d ? fx('why') : fx('what')}:</b> ${Z.esc(tx(it.what))}</p>
-          ${it.eq && !d ? `<p class="fx-eq">${Z.esc(it.eq)}</p>` : ''}
-          ${it.note ? `<p class="fx-note">⚠️ <b>${fx('note')}:</b> ${Z.esc(tx(it.note))}</p>` : ''}`);
+          ${it.eq && !d ? `<p class="efx-eq">${Z.esc(it.eq)}</p>` : ''}
+          ${it.note ? `<p class="efx-note">⚠️ <b>${fx('note')}:</b> ${Z.esc(tx(it.note))}</p>` : ''}`);
         if (it.lab && labBox) {
-          const b = Z.el('button', 'btn btn-small fx-try', '🧪 ' + fx('try'));
+          const b = Z.el('button', 'btn btn-small efx-try', '🧪 ' + fx('try'));
           b.onclick = () => labBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
           c.appendChild(b);
         }
@@ -111,7 +111,7 @@
       });
     }
     D.effects.forEach((e, i) => {
-      const b = Z.el('button', 'fx-chip', `<span aria-hidden="true">${e.icon}</span> ${Z.esc(tx(e.name))}`);
+      const b = Z.el('button', 'efx-chip', `<span aria-hidden="true">${e.icon}</span> ${Z.esc(tx(e.name))}`);
       b.dataset.id = e.id; b.setAttribute('role', 'tab'); b.onclick = () => show(e);
       chips.appendChild(b); if (!i) show(e);
     });
