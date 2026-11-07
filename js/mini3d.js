@@ -375,7 +375,7 @@
         }
         ctx.globalAlpha = 1;
         // scala adatta: le orbite riempiono la scena
-        v.scale = Math.min(W * 0.42 / 3.1, H * 0.44 / (3.1 * 0.44)) * v.zoom;
+        v.scale = Math.min(W * 0.37 / 3.1, H / 3.1) * v.zoom;
         orbits.forEach((pts) => line3d(v, ctx, pts, 'rgba(170,190,255,.26)', 1, { closed: true }));
         const sunR = 0.26;
         const sp = v.P([0, 0, 0]);
