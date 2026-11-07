@@ -39,7 +39,7 @@
   function renderChrome() {
     const p = Store.current();
     $('#tagline').textContent = t('app.tagline');
-    $('#nav').innerHTML = `<a href="#/">${t('nav.home')}</a><a href="#/programma">${t('nav.program')}</a><a href="#/libreria">${t('nav.library')}</a><a href="#/coding">${t('nav.coding')}</a><a href="#/luoghi">${t('nav.places')}</a><a href="#/storico">${t('nav.history')}</a><a href="#/profili">${t('nav.profiles')}</a>`;
+    $('#nav').innerHTML = `<a href="#/">${t('nav.home')}</a><a href="#/programma">${t('nav.program')}</a><a href="#/metodi">${t('nav.methods')}</a><a href="#/libreria">${t('nav.library')}</a><a href="#/coding">${t('nav.coding')}</a><a href="#/luoghi">${t('nav.places')}</a><a href="#/spazio">${t('nav.space')}</a><a href="#/storico">${t('nav.history')}</a><a href="#/profili">${t('nav.profiles')}</a>`;
     $('#who').innerHTML = p ? `<a href="#/profili" class="who" title="${t('profile.switch')}"><span class="av" style="background:${p.color}">${p.avatar}</span><span>${esc(p.name)}</span></a>` : '';
     $('#lang').innerHTML = LANGS.map((l) => `<option value="${l.id}" ${l.id === i18n.lang ? 'selected' : ''}>${l.flag} ${l.name}</option>`).join('');
     $('#search').placeholder = t('search.placeholder');
@@ -59,7 +59,7 @@
       case '': case undefined: return pageHome();
       case 'programma': return pageProgram(a);
       case 'anno': return pageYear(a, b);
-      case 't': return pageTopic(a);
+      case 't': return pageTopic(a, b);
       case 'storico': return pageHistory();
       case 'profili': return pageProfiles(!Store.current());
       case 'cerca': return pageSearch(a || '');
@@ -94,6 +94,13 @@
     C.years.forEach((yy) => { const c = el('a', 'ychip' + (yy === y ? ' active' : ''), t('year.' + yy)); c.href = '#/anno/' + yy; c.style.setProperty('--c', YEAR_COLOR[yy]); chips.appendChild(c); });
     head.firstChild.appendChild(chips);
     m.appendChild(head);
+    // sezioni libere, indipendenti dalla classe
+    const ex = el('section', 'card explore', `<h3>🧭 ${t('explore.title')}</h3><p class="muted">${t('explore.sub')}</p>`);
+    const eg = el('div', 'explore-grid');
+    [['metodi', '🌍', 'nav.methods', 'explore.methods', '#16a34a'], ['libreria', '⚙️', 'nav.library', 'explore.library', '#f97316'], ['coding', '🤖', 'nav.coding', 'explore.coding', '#8b5cf6'], ['luoghi', '🌍', 'nav.places', 'explore.places', '#0ea5e9'], ['spazio', '🔭', 'nav.space', 'explore.space', '#1e1b4b']].forEach(([r, ic, k1, k2, c]) => {
+      const a = el('a', 'explore-tile', `<span>${ic}</span><b>${t(k1)}</b><small>${t(k2)}</small>`); a.href = '#/' + r; a.style.setProperty('--c', c); eg.appendChild(a);
+    });
+    ex.appendChild(eg); m.appendChild(ex);
     // riprendi
     const last = p.log.find((e) => INDEX[e.topic]);
     if (last) {
@@ -178,13 +185,13 @@
   }
 
   /* ---------- PAGINA ARGOMENTO ---------- */
-  async function pageTopic(id) {
+  async function pageTopic(id, jump) {
     const info = INDEX[id]; if (!info) return pageHome();
     const m = main(); m.innerHTML = `<p class="muted">${t('topic.loading')}</p>`;
     Store.visit(id);
     const { entry, year, subj } = info;
     const res = FULL.has(id) ? await loadTopic(id, i18n.lang) : null;
-    if (location.hash !== '#/t/' + id) return;
+    if (!location.hash.startsWith('#/t/' + id)) return;
     m.innerHTML = '';
     m.style.setProperty('--c', SUBJ_COLOR[subj]);
     m.appendChild(el('div', 'crumbs', `<a href="#/programma">${t('nav.program')}</a> › <a href="#/anno/${year}">${t('year.' + year)}</a> › <a href="#/anno/${year}/${subj}">${SUBJ_ICON[subj]} ${t('subj.' + subj)}</a>`));
@@ -200,6 +207,12 @@
       // indice
       const toc = el('nav', 'toc', `<b>${t('topic.contents')}:</b> `);
       m.appendChild(toc);
+      const altIdx = data.sections.findIndex((s) => s.type === 'alternatives');
+      if (altIdx >= 0) {
+        const ab = el('button', 'btn btn-small alt-jump', '🌍 ' + t('alt.jump')); ab.type = 'button';
+        ab.onclick = () => { const sec = document.getElementById('sec-' + altIdx); if (sec) sec.scrollIntoView({ behavior: 'smooth' }); };
+        head.appendChild(ab);
+      }
       data.sections.forEach((s, i) => {
         const sec = renderSection(s, id, i);
         sec.id = 'sec-' + i; m.appendChild(sec);
@@ -211,6 +224,11 @@
         m.appendChild(g);
       }
       if (data.verifica) m.appendChild(renderVerifica(id, data.verifica));
+      // salto diretto a una scheda delle alternative: #/t/<id>/alt<k>
+      if (jump && /^alt\d+$/.test(jump) && altIdx >= 0) {
+        const sec = document.getElementById('sec-' + altIdx);
+        setTimeout(() => { sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); const b = sec.querySelectorAll('.alt-tab')[+jump.slice(3)]; if (b) b.click(); }, 150);
+      }
     } else {
       m.appendChild(el('div', 'callout c-remember', C.gen[id] ? t('topic.soonText') : t('topic.soonNoGen')));
     }
@@ -269,8 +287,9 @@
       tabs.querySelectorAll('button').forEach((b, i) => b.classList.toggle('active', i === k));
       const tb = s.tabs[k]; body.innerHTML = tb.html || ''; mountVisual(body, tb);
     };
-    s.tabs.forEach((tb, k) => { const b = el('button', 'alt-tab', tb.label); b.type = 'button'; b.onclick = () => show(k); tabs.appendChild(b); });
-    lazy(body, () => show(0));
+    let shown = false;
+    s.tabs.forEach((tb, k) => { const b = el('button', 'alt-tab', tb.label); b.type = 'button'; b.onclick = () => { shown = true; show(k); }; tabs.appendChild(b); });
+    lazy(body, () => { if (!shown) show(0); });
   }
 
   function renderConceptMap(box, s) {

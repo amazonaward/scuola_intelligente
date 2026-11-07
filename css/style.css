@@ -287,3 +287,18 @@ footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 30
   .toc { top: 108px; }
   .match { grid-template-columns: 1fr; }
 }
+
+/* ---- esplora (sezioni libere) ---- */
+.explore-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.explore-tile { display: flex; flex-direction: column; gap: 4px; padding: 18px; border-radius: 18px; text-decoration: none; color: #fff; background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 60%, #000)); transition: transform .15s; }
+.explore-tile:hover { transform: translateY(-3px); }
+.explore-tile span { font-size: 2.4rem; } .explore-tile b { font-size: 1.2rem; } .explore-tile small { opacity: .9; }
+
+/* ---- matematica dal mondo ---- */
+.meth-chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 10px 0; }
+.meth-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.meth-card { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border-radius: 14px; background: #f0fdf4; border: 2px solid #bbf7d0; text-decoration: none; transition: transform .15s, box-shadow .15s; }
+.meth-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: #22c55e; }
+.meth-flag { font-size: 1.8rem; } .meth-card small { color: var(--muted); } .meth-card em { font-style: normal; font-size: .75rem; font-weight: 800; color: #15803d; }
+.alt-jump { margin-top: 8px; background: #16a34a; }
+.sec, .card { scroll-margin-top: 150px; }

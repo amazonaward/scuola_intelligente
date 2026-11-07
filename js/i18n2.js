@@ -2,6 +2,9 @@
 (function () {
   const X = {
     it: {
+      'nav.methods': "Matematica dal mondo", 'explore.methods': "Come si calcola in Giappone, Russia, Cina, Egitto, Singapore…", 'alt.jump': "Altri modi per capirlo (anche dal mondo)", 'meth.title': "Come si calcola nel mondo", 'meth.sub': "Chi non capisce il metodo di scuola trova qui altre strade: i metodi usati in altri Paesi e nell'antichità. Tocca un metodo per aprirlo nella lezione.", 'meth.all': "Tutti i Paesi", 'meth.n': "metodi",
+      'nav.space': "Spazio", 'explore.space': "Esplora in 3D pianeti, stelle e galassie veri",
+      'explore.title': "Esplora", 'explore.sub': "Per tutti, a ogni età: non dipende dalla classe.", 'explore.library': "Smonta in 3D macchine, pianeti e corpo umano", 'explore.coding': "Programma un robot e disegna con il codice", 'explore.places': "Scegli un luogo sul globo e viaggia nel tempo",
       'nav.library': 'Come funziona', 'nav.coding': 'Coding', 'nav.places': 'Storia dei luoghi',
       'g.gcd': 'MCD', 'g.lcm': 'mcm',
       'subj.tec': 'Tecnologia e informatica', 'subj.lat': 'Latino (LEL)',
@@ -32,6 +35,9 @@
       'pt.cat.metalloid': 'Semimetallo', 'pt.cat.nonmetal': 'Non metallo', 'pt.cat.halogen': 'Alogeno', 'pt.cat.noble': 'Gas nobile'
     },
     en: {
+      'nav.methods': "Maths around the world", 'explore.methods': "How people calculate in Japan, Russia, China, Egypt, Singapore…", 'alt.jump': "Other ways to understand it (also from the world)", 'meth.title': "How the world calculates", 'meth.sub': "If the school method doesn't click, find other paths here: methods used in other countries and in ancient times. Tap a method to open it in the lesson.", 'meth.all': "All countries", 'meth.n': "methods",
+      'nav.space': "Space", 'explore.space': "Explore real planets, stars and galaxies in 3D",
+      'explore.title': "Explore", 'explore.sub': "For everyone, any age: not tied to your class.", 'explore.library': "Take apart machines, planets and the human body in 3D", 'explore.coding': "Program a robot and draw with code", 'explore.places': "Pick a place on the globe and travel through time",
       'nav.library': 'How it works', 'nav.coding': 'Coding', 'nav.places': 'History of places',
       'g.gcd': 'GCD', 'g.lcm': 'LCM',
       'subj.tec': 'Technology & computing', 'subj.lat': 'Latin',
@@ -62,6 +68,9 @@
       'pt.cat.metalloid': 'Metalloid', 'pt.cat.nonmetal': 'Non-metal', 'pt.cat.halogen': 'Halogen', 'pt.cat.noble': 'Noble gas'
     },
     fr: {
+      'nav.methods': "Les maths du monde", 'explore.methods': "Comment on calcule au Japon, en Russie, en Chine, en Égypte, à Singapour…", 'alt.jump': "D'autres façons de comprendre (aussi du monde)", 'meth.title': "Comment on calcule dans le monde", 'meth.sub': "Si la méthode de l'école ne te parle pas, trouve ici d'autres chemins : les méthodes d'autres pays et de l'Antiquité. Touche une méthode pour l'ouvrir dans la leçon.", 'meth.all': "Tous les pays", 'meth.n': "méthodes",
+      'nav.space': "Espace", 'explore.space': "Explore en 3D de vraies planètes, étoiles et galaxies",
+      'explore.title': "Explorer", 'explore.sub': "Pour tous, à tout âge : indépendant de la classe.", 'explore.library': "Démonte en 3D des machines, des planètes et le corps humain", 'explore.coding': "Programme un robot et dessine avec du code", 'explore.places': "Choisis un lieu sur le globe et voyage dans le temps",
       'nav.library': 'Comment ça marche', 'nav.coding': 'Codage', 'nav.places': 'Histoire des lieux',
       'g.gcd': 'PGCD', 'g.lcm': 'PPCM',
       'subj.tec': 'Technologie et informatique', 'subj.lat': 'Latin',
@@ -92,6 +101,9 @@
       'pt.cat.metalloid': 'Métalloïde', 'pt.cat.nonmetal': 'Non-métal', 'pt.cat.halogen': 'Halogène', 'pt.cat.noble': 'Gaz noble'
     },
     ru: {
+      'nav.methods': "Математика мира", 'explore.methods': "Как считают в Японии, России, Китае, Египте, Сингапуре…", 'alt.jump': "Другие способы понять (в том числе из других стран)", 'meth.title': "Как считают в мире", 'meth.sub': "Если школьный способ непонятен, здесь есть другие пути: методы других стран и древних народов. Нажми на метод, чтобы открыть его в уроке.", 'meth.all': "Все страны", 'meth.n': "методов",
+      'nav.space': "Космос", 'explore.space': "Исследуй в 3D настоящие планеты, звёзды и галактики",
+      'explore.title': "Исследуй", 'explore.sub': "Для всех, в любом возрасте: не зависит от класса.", 'explore.library': "Разбери в 3D машины, планеты и тело человека", 'explore.coding': "Программируй робота и рисуй кодом", 'explore.places': "Выбери место на глобусе и путешествуй во времени",
       'nav.library': 'Как это устроено', 'nav.coding': 'Программирование', 'nav.places': 'История мест',
       'g.gcd': 'НОД', 'g.lcm': 'НОК',
       'subj.tec': 'Технология и информатика', 'subj.lat': 'Латынь',
@@ -122,6 +134,9 @@
       'pt.cat.metalloid': 'Полуметалл', 'pt.cat.nonmetal': 'Неметалл', 'pt.cat.halogen': 'Галоген', 'pt.cat.noble': 'Благородный газ'
     },
     ro: {
+      'nav.methods': "Matematica lumii", 'explore.methods': "Cum se calculează în Japonia, Rusia, China, Egipt, Singapore…", 'alt.jump': "Alte moduri de a înțelege (și din lume)", 'meth.title': "Cum se calculează în lume", 'meth.sub': "Dacă metoda de la școală nu te convinge, aici găsești alte drumuri: metode din alte țări și din Antichitate. Atinge o metodă ca s-o deschizi în lecție.", 'meth.all': "Toate țările", 'meth.n': "metode",
+      'nav.space': "Spațiu", 'explore.space': "Explorează în 3D planete, stele și galaxii reale",
+      'explore.title': "Explorează", 'explore.sub': "Pentru toți, la orice vârstă: nu depinde de clasă.", 'explore.library': "Demontează în 3D mașini, planete și corpul uman", 'explore.coding': "Programează un robot și desenează cu cod", 'explore.places': "Alege un loc pe glob și călătorește în timp",
       'nav.library': 'Cum funcționează', 'nav.coding': 'Programare', 'nav.places': 'Istoria locurilor',
       'g.gcd': 'c.m.m.d.c.', 'g.lcm': 'c.m.m.m.c.',
       'subj.tec': 'Tehnologie și informatică', 'subj.lat': 'Latină',
