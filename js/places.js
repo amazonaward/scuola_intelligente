@@ -269,6 +269,16 @@
       this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0); this.layer.getContext('2d').setTransform(dpr, 0, 0, dpr, 0, 0);
       this.W = w; this.H = h;
     }
+    _space(ctx) {
+      const W = this.W, H = this.H;
+      const bg = ctx.createRadialGradient(W / 2, H * 0.4, 10, W / 2, H / 2, Math.max(W, H) * 0.75);
+      bg.addColorStop(0, '#1e2a5a'); bg.addColorStop(1, '#070b1f');
+      ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+      if (!this._stars) { let s = 7; const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647); this._stars = Array.from({ length: 160 }, () => [rnd(), rnd(), rnd()]); }
+      const off = (this.lon0 / 360) % 1;
+      for (const [x, y, b] of this._stars) { ctx.globalAlpha = 0.25 + b * 0.7; ctx.fillStyle = b > 0.9 ? '#fde68a' : '#fff'; const px = (((x - off * 0.15) % 1) + 1) % 1 * W; ctx.fillRect(px, y * H, b > 0.8 ? 2 : 1.2, b > 0.8 ? 2 : 1.2); }
+      ctx.globalAlpha = 1;
+    }
     get R() { return Math.min(this.W, this.H) * 0.44 * this.zoom; }
     project(lat, lon) {
       const la = lat * DEG, dl = (lon - this.lon0) * DEG, la0 = this.lat0 * DEG;
@@ -354,6 +364,11 @@
     draw() {
       const ctx = this.ctx, W = this.W, H = this.H, R = this.R, cx = W / 2, cy = H / 2;
       ctx.clearRect(0, 0, W, H);
+      if (!this.o.mini) this._space(ctx);
+      // alone dell'atmosfera
+      const halo = ctx.createRadialGradient(cx, cy, R * 0.92, cx, cy, R * 1.16);
+      halo.addColorStop(0, this.o.mini ? 'rgba(96,165,250,.35)' : 'rgba(125,211,252,.55)'); halo.addColorStop(1, 'rgba(125,211,252,0)');
+      ctx.fillStyle = halo; ctx.beginPath(); ctx.arc(cx, cy, R * 1.16, 0, TAU); ctx.fill();
       // oceano
       const g = ctx.createRadialGradient(cx - R * 0.35, cy - R * 0.35, R * 0.1, cx, cy, R * 1.05);
       g.addColorStop(0, '#9fd0ff'); g.addColorStop(1, '#2563eb');
@@ -405,7 +420,7 @@
           ctx.font = (m.bold ? '800 ' : '700 ') + (m.size || 12) + 'px Nunito, system-ui, sans-serif';
           const w = ctx.measureText(m.label).width; const lx = x + r + 4, b = [lx - 2, y - 9, lx + w + 2, y + 9];
           if (!m.force && !free(b)) continue; boxes.push(b);
-          ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.lineWidth = 3.5; ctx.strokeStyle = 'rgba(255,255,255,.92)'; ctx.strokeText(m.label, lx, y);
+          ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.lineJoin = 'round'; ctx.lineWidth = 3.5; ctx.strokeStyle = 'rgba(255,255,255,.92)'; ctx.strokeText(m.label, lx, y);
           ctx.fillStyle = m.ink || '#1f2937'; ctx.fillText(m.label, lx, y);
         }
       }
@@ -637,10 +652,10 @@
     const evw = tl.querySelector('.pl-evts');
     eras.forEach((e) => (e.events || []).forEach((v) => { const d = el('b'); d.style.left = ax.pos(v.year) * 100 + '%'; d.title = fmtYear(v.year) + ' – ' + v.text.replace(/<[^>]+>/g, ''); evw.appendChild(d); }));
     const ticks = tl.querySelector('.pl-ticks');
-    let lastP = -1;
+    let lastP = -1; const minGap = Math.max(0.085, 90 / Math.max(200, (m.clientWidth || 600) - 40));
     [-2e6, -1e6, -5e5, -2e5, -1e5, -4e4, -1e4, -5000, -3000, -1000, 1, 500, 1000, 1500, 1800, 1900, 2000].forEach((y) => {
-      if (y < start || y > end) return; const p = ax.pos(y); if (p - lastP < 0.085 || p > 0.95) return; lastP = p;
-      const s = el('span', '', y < -10000 ? '−' + fmtN((NOW - y) / 1000) + 'k' : y < 0 ? fmtN(-y) + ' ' + t('w.bc') : y === 1 ? '0' : String(y)); s.style.left = p * 100 + '%'; ticks.appendChild(s);
+      if (y < start || y > end) return; const p = ax.pos(y); if (p - lastP < minGap || p > 1 - minGap * 0.8) return; lastP = p;
+      const s = el('span', '', y < -10000 ? '−' + Math.round(-y / 1000) + 'k' : y < 0 ? '−' + (-y) : y === 1 ? '0' : String(y)); s.style.left = p * 100 + '%'; ticks.appendChild(s);
     });
     const tEnd = el('span', 'end', t('pl.today')); tEnd.style.left = '100%'; ticks.appendChild(tEnd);
 
@@ -656,13 +671,13 @@
     mini.markers = [{ lat: place.lat, lon: place.lon, label: nameOf(place), color: '#ef4444', r: 5, pulse: true, force: true, bold: true }];
     const mapLegend = el('div', 'pl-legend');
     mapCard.append(mapBtns, mapLegend);
-    let mapView = null;
+    let mapView = null, mapUser = false;
     const setMapView = (v) => {
       mapView = v; mapBtns.querySelectorAll('[data-v]').forEach((b) => b.classList.toggle('sel', b.dataset.v === v));
       if (v === 'empire' && mini.extent) mini.fit(mini.extent.rings.concat(regionRings), 1.15);
       else mini.fit(regionRings, place.kind === 'region' || place.kind === 'city' ? 5 : 2.2);
     };
-    mapBtns.querySelectorAll('[data-v]').forEach((b) => (b.onclick = () => setMapView(b.dataset.v)));
+    mapBtns.querySelectorAll('[data-v]').forEach((b) => (b.onclick = () => { mapUser = true; setMapView(b.dataset.v); }));
     const extentOf = (e) => {
       if (!e.extent) return null;
       if (Array.isArray(e.extent)) return { rings: Array.isArray(e.extent[0][0]) ? e.extent : [e.extent], name: e.ruler };
@@ -733,10 +748,9 @@
       mini.extent = ex ? { rings: ex.rings, color: e.color || '#f59e0b' } : null; mini.dirty = true;
       mapLegend.innerHTML = ex ? `<span><i style="background:${e.color}"></i>${esc(ex.name)}</span><span><i style="background:#ef4444"></i>${esc(nameOf(place))}</span>` : `<span><i style="background:#ef4444"></i>${esc(nameOf(place))}</span>`;
       mapBtns.style.display = ex ? '' : 'none';
-      setMapView(ex ? (mapView || 'empire') : 'region');
+      setMapView(ex ? (mapUser ? mapView : 'empire') : 'region');
       clearTimeout(seenTimer);
-      seenTimer = setTimeout(() => { if (markEra(owner.id, k, eras.length)) Z.confetti && Z.confetti(); showProg(); }, playing ? 400 : 1200);
-      Z.registerTitle && 0;
+      seenTimer = setTimeout(() => { if (markEra(owner.id, k, eras.length)) celebrate(); showProg(); }, playing ? 400 : 1200);
     }
     range.oninput = () => { stop(); setYear(ax.year(range.value / 1000), true); };
     let raf = null, lastT = 0;
@@ -780,6 +794,12 @@
     gl.highlight = place.rings.length ? { rings: place.rings } : null; gl.markers = [{ lat: place.lat, lon: place.lon, label: nameOf(place), color: '#ef4444', pulse: true, force: true }];
     if (place.rings.length) setTimeout(() => gl.fit(place.rings, 2), 50);
     const back = el('a', 'btn', '← ' + t('pl.back')); back.href = '#/luoghi'; m.appendChild(back);
+  }
+
+  function celebrate() {
+    const c = el('div', 'confetti'); const cols = ['#f97316', '#22c55e', '#3b82f6', '#eab308', '#ec4899', '#a855f7'];
+    for (let i = 0; i < 70; i++) { const p = el('i'); p.style.left = Math.random() * 100 + '%'; p.style.background = cols[i % cols.length]; p.style.animationDelay = Math.random() * 0.8 + 's'; c.appendChild(p); }
+    document.body.appendChild(c); setTimeout(() => c.remove(), 3800);
   }
 
   /* ================= quiz generato dalle epoche ================= */

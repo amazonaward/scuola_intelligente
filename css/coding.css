@@ -271,7 +271,7 @@ a.cd-node:active .cd-node-b { transform: translateY(2px); box-shadow: 0 2px 0 co
   .cd-what-grid { grid-template-columns: 1fr; }
   .cd-maphead > .cd-illu { display: none; }
   .cd-maphead h1 { font-size: 1.5rem; }
-  .cd-path { padding: 14px 10px; gap: 12px 4px; justify-content: space-around; }
+  .cd-path { display: grid; grid-template-columns: repeat(4, 1fr); padding: 14px 8px; gap: 12px 2px; justify-items: center; }
   .cd-node { width: 74px; } .cd-node-b { width: 50px; height: 50px; font-size: 1.15rem; }
   .cd-node::after { display: none; }
   .cd-chapter header { padding: 12px 14px; } .cd-ch-ico { width: 42px; height: 42px; font-size: 1.3rem; }
@@ -285,6 +285,7 @@ a.cd-node:active .cd-node-b { transform: translateY(2px); box-shadow: 0 2px 0 co
   .cd-bbody { border-left-width: 10px; padding-left: 7px; padding-right: 4px; }
   .cd-gutter, .cd-editor textarea { height: 300px; font-size: 13px; }
   .cd-tgrid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .cd-foot { display: grid; grid-template-columns: 1fr 1fr; } .cd-foot > :nth-child(2) { grid-column: 1 / -1; grid-row: 1; justify-content: center; } .cd-foot .btn { justify-content: center; padding: 9px 12px; font-size: .9rem; } .cd-foot > span { display: none; }
   .cd-mapstat { padding: 8px 12px; } .cd-mapstat b { font-size: 1.3rem; }
   .cd-win-stars { font-size: 2.6rem; } .cd-win-stars i:nth-child(2) { font-size: 3.2rem; }
 }

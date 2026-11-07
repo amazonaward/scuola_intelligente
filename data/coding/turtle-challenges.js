@@ -94,7 +94,7 @@ window.CODING_TURTLE = {
   /* esempi per la modalità libera */
   examples: [
     { name: ['Spirale arcobaleno', 'Rainbow spiral', 'Spirale arc-en-ciel', 'Радужная спираль', 'Spirală curcubeu'],
-      code: 'spessore 3\nmetti lato 2\nripeti 120 [\n  colore ripetizione % 16\n  avanti :lato\n  destra 61\n  metti lato :lato + 2.5\n]' },
+      code: 'spessore 3\nmetti lato 2\nripeti 90 [\n  colore ripetizione % 16\n  avanti :lato\n  destra 61\n  metti lato :lato + 2\n]' },
     { name: ['Prato di fiori', 'Field of flowers', 'Champ de fleurs', 'Поле цветов', 'Câmp cu flori'],
       code: '; fiori in posti a caso\nper fiore :r\n  ripeti 8 [ripeti 36 [avanti :r destra 10] destra 45]\nfine\nripeti 6 [\n  penna su\n  vai casuale 300 - 150 casuale 300 - 150\n  penna giù\n  colore casuale 16\n  fiore 1 + casuale 3\n]' },
     { name: ['Albero colorato', 'Colourful tree', 'Arbre coloré', 'Цветное дерево', 'Arbore colorat'],

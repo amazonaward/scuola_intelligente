@@ -1,6 +1,8 @@
 /* Scene 3D aggiuntive: terrain (paesaggio), spacetime (storia spazio-tempo), blocks (cubetti), atom (modello di Bohr). */
 (function () {
-  const { View, drawFaces, label, ball, shade, el } = Mini3D._;
+  const { View, drawFaces, label, ball, shade, el, glOn, spheres, line3d, softShadow } = Mini3D._;
+  const GL = Mini3D._.gl;
+  const BG_SOFT = 'radial-gradient(circle at 50% 28%, #ffffff 0%, #eef2fb 52%, #d8e1f2 100%)';
   const TAU = Math.PI * 2;
   const smooth = (a, b, x) => { const t = Math.max(0, Math.min(1, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
   const segDist = (px, pz, ax, az, bx, bz) => {
@@ -96,9 +98,10 @@
       cells.push({ i, j, x, z, L, h, water, lake, lagoon, river });
     }
     const at = (i, j) => (i < 0 || j < 0 || i >= N || j >= N ? null : cells[i * N + j]);
+    const maxR = Math.round(6 * N / 52);
     for (const c of cells) {
       if (!c.water) c.coast = [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([a, b]) => { const n = at(c.i + a, c.j + b); return n && n.water && !n.lake; });
-      if (c.water && !c.lake) { let d = 0; for (let r = 1; r < 6; r++) { if ([[r, 0], [-r, 0], [0, r], [0, -r]].some(([a, b]) => { const n = at(c.i + a, c.j + b); return n && !n.water; })) break; d = r; } c.depth = d; }
+      if (c.water && !c.lake) { let d = 0; for (let r = 1; r < maxR; r++) { if ([[r, 0], [-r, 0], [0, r], [0, -r]].some(([a, b]) => { const n = at(c.i + a, c.j + b); return n && !n.water; })) break; d = r; } c.depth = d * 52 / N; c.dn = Math.min(1, d / (maxR - 1)); }
     }
     for (const c of cells) {
       let col;
@@ -118,10 +121,105 @@
     return cells;
   }
 
+  /* mesh WebGL del paesaggio: terreno (colori per vertice, normali morbide), acqua trasparente, bordi del plastico */
+  function terrainMeshes(cells, N, S, VY, mask) {
+    const rgba = GL.rgba, n1 = N + 1;
+    const mixc = (a, b, t) => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t];
+    const HL = rgba('#facc15');
+    const bed = (c) => (c.lake ? 0.085 : c.water ? -(0.015 + 0.06 * (c.dn || 0)) : c.h);
+    const cellCol = (c) => {
+      let k;
+      if (c.lake) k = rgba('#5f8f86');
+      else if (c.water) k = mixc(rgba('#e9d8a6'), rgba('#28566e'), Math.min(1, (c.dn || 0) * 1.4));
+      else if (c.river) k = rgba('#2f6fd6');
+      else if (Math.hypot(c.x - VOLC[0], c.z - VOLC[1]) < 0.05) k = rgba('#b4231b');
+      else if (c.h > 0.62) k = rgba('#f4f7fb');
+      else if (c.h > 0.42) k = rgba('#8a7458');
+      else if (c.h > 0.22) k = rgba('#5f8a38');
+      else if (c.coast && c.h < 0.06) k = rgba('#eedcaa');
+      else if (c.h > 0.09) k = rgba('#74ad3c');
+      else k = rgba('#94c95a');
+      if (mask && mask(c)) k = mixc(k, HL, 0.78);
+      return k;
+    };
+    const cc = cells.map(cellCol);
+    const H = new Float32Array(n1 * n1), pos = new Float32Array(n1 * n1 * 3), nor = new Float32Array(n1 * n1 * 3), col = new Float32Array(n1 * n1 * 3);
+    for (let i = 0; i <= N; i++) for (let j = 0; j <= N; j++) {
+      let s = 0, n = 0, r = 0, g = 0, b = 0, land = 0, snow = 0;
+      for (const [a, bb] of [[0, 0], [-1, 0], [0, -1], [-1, -1]]) {
+        const ii = i + a, jj = j + bb; if (ii < 0 || jj < 0 || ii >= N || jj >= N) continue;
+        const c = cells[ii * N + jj], k = cc[ii * N + jj];
+        s += bed(c); r += k[0]; g += k[1]; b += k[2]; n++; if (!c.water) land++; if (c.h > 0.62) snow++;
+      }
+      const v = i * n1 + j;
+      H[v] = (s / n) * VY;
+      pos[v * 3] = (-1 + (2 * j) / N) * S; pos[v * 3 + 1] = H[v]; pos[v * 3 + 2] = (-1 + (2 * i) / N) * S;
+      col[v * 3] = r / n; col[v * 3 + 1] = g / n; col[v * 3 + 2] = b / n;
+      pos.land = pos.land || new Uint8Array(n1 * n1); pos.land[v] = land && !snow ? 1 : 0;
+    }
+    const d = (2 * S) / N;
+    for (let i = 0; i <= N; i++) for (let j = 0; j <= N; j++) {
+      const v = i * n1 + j;
+      const hx = H[i * n1 + Math.min(N, j + 1)] - H[i * n1 + Math.max(0, j - 1)];
+      const hz = H[Math.min(N, i + 1) * n1 + j] - H[Math.max(0, i - 1) * n1 + j];
+      let nx = -hx / (2 * d), nz = -hz / (2 * d), ny = 1; const m = Math.hypot(nx, ny, nz); nx /= m; ny /= m; nz /= m;
+      nor[v * 3] = nx; nor[v * 3 + 1] = ny; nor[v * 3 + 2] = nz;
+      // roccia sui pendii ripidi
+      if (pos.land[v] && ny < 0.86) {
+        const t2 = Math.min(1, (0.86 - ny) * 2.6), k = mixc([col[v * 3], col[v * 3 + 1], col[v * 3 + 2]], rgba('#857865'), t2);
+        col[v * 3] = k[0]; col[v * 3 + 1] = k[1]; col[v * 3 + 2] = k[2];
+      }
+    }
+    const idx = [];
+    for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) { const a = i * n1 + j; idx.push(a, a + n1, a + 1, a + 1, a + n1, a + n1 + 1); }
+    const land = GL.createMesh({ pos, nor, fn: nor, col, idx });
+    // acqua: un quadrato per cella d'acqua, alla quota del mare (0) o del lago
+    const wp = [], wc = [], wx = [], wi = [];
+    const SEA_A = rgba('#45c6dc'), SEA_B = rgba('#1d3f9e');
+    for (const c of cells) {
+      if (!c.water) continue;
+      const y = c.lake ? 0.12 * VY : 0;
+      let k = c.lake ? rgba('#3aa0d8') : c.lagoon ? rgba('#2cc2b0') : mixc(SEA_A, SEA_B, Math.min(1, (c.dn || 0) * 1.25));
+      if (mask && mask(c)) k = mixc(k, HL, 0.8);
+      const x0 = (-1 + (2 * c.j) / N) * S, x1 = (-1 + (2 * (c.j + 1)) / N) * S, z0 = (-1 + (2 * c.i) / N) * S, z1 = (-1 + (2 * (c.i + 1)) / N) * S;
+      const b = wp.length / 3;
+      wp.push(x0, y, z0, x1, y, z0, x1, y, z1, x0, y, z1);
+      for (let q = 0; q < 4; q++) { wc.push(k[0], k[1], k[2]); wx.push(c.lake ? 0.6 : c.lagoon ? 0.25 : Math.min(1, 0.15 + (c.dn || 0))); }
+      wi.push(b, b + 1, b + 2, b, b + 2, b + 3);
+    }
+    const wn = new Float32Array(wp.length); for (let q = 1; q < wn.length; q += 3) wn[q] = 1;
+    const water = wi.length ? GL.createMesh({ pos: new Float32Array(wp), nor: wn, fn: wn, col: new Float32Array(wc), x: new Float32Array(wx), idx: wi }) : null;
+    // bordi del plastico
+    const bp = [], bn = [], bc = [], bi = [], Y0 = -0.24;
+    const TOPL = rgba('#7b5532'), TOPW = rgba('#2f74b5'), BOT = rgba('#3a2513');
+    const side = (list, n) => {
+      for (let k = 0; k < list.length - 1; k++) {
+        const [a, b] = [list[k], list[k + 1]];
+        const ya = Math.max(H[a], 0), yb = Math.max(H[b], 0);
+        const base = bp.length / 3;
+        bp.push(pos[a * 3], ya, pos[a * 3 + 2], pos[b * 3], yb, pos[b * 3 + 2], pos[b * 3], Y0, pos[b * 3 + 2], pos[a * 3], Y0, pos[a * 3 + 2]);
+        const ta = H[a] < 0.002 ? TOPW : TOPL, tb = H[b] < 0.002 ? TOPW : TOPL;
+        [ta, tb, BOT, BOT].forEach((k2) => bc.push(k2[0], k2[1], k2[2]));
+        for (let q = 0; q < 4; q++) bn.push(n[0], n[1], n[2]);
+        bi.push(base, base + 1, base + 2, base, base + 2, base + 3);
+      }
+    };
+    const rowI = (i) => Array.from({ length: n1 }, (_, j) => i * n1 + j), colJ = (j) => Array.from({ length: n1 }, (_, i) => i * n1 + j);
+    side(rowI(0), [0, 0, -1]); side(rowI(N), [0, 0, 1]); side(colJ(0), [-1, 0, 0]); side(colJ(N), [1, 0, 0]);
+    // fondo
+    const fb = bp.length / 3; bp.push(-S, Y0, -S, S, Y0, -S, S, Y0, S, -S, Y0, S); for (let q = 0; q < 4; q++) { bn.push(0, -1, 0); bc.push(BOT[0], BOT[1], BOT[2]); } bi.push(fb, fb + 1, fb + 2, fb, fb + 2, fb + 3);
+    const walls = GL.createMesh({ pos: new Float32Array(bp), nor: new Float32Array(bn), fn: new Float32Array(bn), col: new Float32Array(bc), idx: bi });
+    return { land, water, walls, free() { [land, water, walls].forEach((m) => m && GL.deleteMesh(m)); } };
+  }
+
   Mini3D.scenes.terrain = function (host, o) {
     const v = new View(host, { rx: 0.85, ry: 0.0, auto: false });
     v.height = 460;
-    const N = 52, cells = buildTerrain(N), S = 1.35, VY = 0.9;
+    v.onDemand = true;
+    const useGL = v._gl;
+    if (useGL) { v.wrap.style.background = 'linear-gradient(180deg, #b9d9ff 0%, #e2efff 55%, #f6f9ff 100%)'; GL.setFog(v, '#d6e8ff', 0.32); }
+    const N = useGL ? 96 : 52, cells = buildTerrain(N), S = 1.35, VY = 0.9;
+    let meshes = null, meshKey = null;
     const feats = o.features || {};
     const ids = Object.keys(feats).filter((k) => FEATURES[k]);
     let sel = null;
@@ -134,7 +232,7 @@
       sel = sel === id ? null : id;
       Object.entries(btns).forEach(([k, b]) => b.classList.toggle('active', k === sel));
       info.innerHTML = sel ? `<h4>${feats[sel].label || sel}</h4>${feats[sel].html || ''}` : `<p class="muted">👆 ${t('ter.tap')}</p>`;
-      v._ck = null;
+      v._ck = null; v.invalidate();
     }
     // vertici della griglia (altezze medie dei 4 vicini)
     const hv = (i, j) => {
@@ -152,7 +250,36 @@
       for (const p of pins) { const d = Math.hypot(p.s[0] - mx, p.s[1] - my); if (d < bd) { bd = d; best = p.id; } }
       if (best) select(best);
     });
-    v.draw = () => {
+    const drawPins = (ctx) => {
+      pins = ids.map((id, k) => {
+        const base = FEATURES[id].pin; const top = pinPos(id); const s = v.P(top); const g = v.P([base[0] * S, top[1] - 0.12, base[1] * S]);
+        ctx.strokeStyle = 'rgba(0,0,0,.5)'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(g[0], g[1]); ctx.lineTo(s[0], s[1]); ctx.stroke();
+        if (useGL) { ctx.fillStyle = 'rgba(0,0,0,.28)'; ctx.beginPath(); ctx.ellipse(g[0], g[1], 4, 2, 0, 0, TAU); ctx.fill(); }
+        ctx.fillStyle = id === sel ? '#facc15' : '#ffffff'; ctx.strokeStyle = '#111827'; ctx.lineWidth = 2;
+        ctx.beginPath(); ctx.arc(s[0], s[1], 11, 0, TAU); ctx.fill(); ctx.stroke();
+        ctx.fillStyle = '#111827'; ctx.font = 'bold 12px system-ui'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(String(k + 1), s[0], s[1] + 0.5);
+        if (id === sel) label(ctx, s[0] + 15, s[1], feats[id].label || id);
+        return { id, s };
+      });
+    };
+    const riverPts = [];
+    for (let k = 0; k < RIVER.length - 1; k++) for (let q = 0; q < 10; q++) {
+      const f = q / 10, x = RIVER[k][0] + (RIVER[k + 1][0] - RIVER[k][0]) * f, z = RIVER[k][1] + (RIVER[k + 1][1] - RIVER[k][1]) * f;
+      riverPts.push([x, z]);
+    }
+    riverPts.push(RIVER[RIVER.length - 1]);
+    v.draw = (ctx) => {
+      if (glOn(v, ctx)) {
+        const key = sel || '';
+        if (!meshes || meshKey !== key) { if (meshes) meshes.free(); meshes = terrainMeshes(cells, N, S, VY, sel ? FEATURES[sel].m : null); meshKey = key; }
+        GL.mesh(v, meshes.walls, null, { specular: 0.04, shininess: 8, rim: 0, fog: false });
+        GL.mesh(v, meshes.land, null, { specular: 0.1, shininess: 14, rim: 0.1, ambient: [0.5, 0.82, 0.12] });
+        // fiume sopra il terreno (nascosto dalle montagne davanti)
+        line3d(v, ctx, riverPts.map(([x, z]) => [x * S, Math.max(0.02, heightAt(x, z) * VY - 0.04) + 0.018, z * S]), sel === 'river' ? '#facc15' : '#1d5fe0', 3, { bias: 0.004 });
+        if (meshes.water) GL.mesh(v, meshes.water, null, { pattern: 10, specular: 1.2, shininess: 140, rim: 0.25, rimColor: '#ffffff', ambient: [0.55, 0.75, 0.1] });
+        drawPins(ctx);
+        return;
+      }
       cached(v, sel || '', (ctx) => {
         const R = verts.map((p) => v.rot(p));
         const P = R.map((r) => v.proj(r));
@@ -180,15 +307,7 @@
         RIVER.forEach((p, k) => { const q = v.P([p[0] * S, heightAt(p[0], p[1]) * VY + 0.01, p[1] * S]); k ? ctx.lineTo(q[0], q[1]) : ctx.moveTo(q[0], q[1]); });
         ctx.stroke();
         // segnaposto numerati
-        pins = ids.map((id, k) => {
-          const base = FEATURES[id].pin; const top = pinPos(id); const s = v.P(top); const g = v.P([base[0] * S, top[1] - 0.12, base[1] * S]);
-          ctx.strokeStyle = 'rgba(0,0,0,.5)'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(g[0], g[1]); ctx.lineTo(s[0], s[1]); ctx.stroke();
-          ctx.fillStyle = id === sel ? '#facc15' : '#ffffff'; ctx.strokeStyle = '#111827'; ctx.lineWidth = 2;
-          ctx.beginPath(); ctx.arc(s[0], s[1], 11, 0, TAU); ctx.fill(); ctx.stroke();
-          ctx.fillStyle = '#111827'; ctx.font = 'bold 12px system-ui'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(String(k + 1), s[0], s[1] + 0.5);
-          if (id === sel) label(ctx, s[0] + 15, s[1], feats[id].label || id);
-          return { id, s };
-        });
+        drawPins(ctx);
       });
     };
     return v;
@@ -316,6 +435,8 @@
   const PAL = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#06b6d4', '#3b82f6', '#8b5cf6', '#ec4899', '#14b8a6', '#84cc16'];
   Mini3D.scenes.blocks = function (host, o) {
     const v = new View(host, { rx: 0.6, ry: 0.6, auto: false });
+    v.onDemand = true;
+    if (v._gl) { v.wrap.style.background = BG_SOFT; GL.setFog(v, '#e3e9f6', 0.15); }
     const mode = o.mode || 'array';
     const st = { a: o.a || 3, b: o.b || 4, c: o.c || 2, value: o.value != null ? o.value : 123 };
     const ctl = el('div', 'm3d-slider');
@@ -330,7 +451,7 @@
     else if (mode === 'volume') { sl('a', 'a', 1, o.max || 6); sl('b', 'b', 1, o.max || 6); sl('c', 'c', 1, o.max || 6); }
     else sl('value', t('blk.number'), 0, o.max || 999);
     host.appendChild(ctl);
-    let faces = [], center = [0, 0, 0];
+    let faces = [], center = [0, 0, 0], foot = null;
     function rebuild() {
       const list = [];
       if (mode === 'array') {
@@ -353,10 +474,20 @@
       const size = mode === 'base10' ? 0.11 : Math.min(0.28, 2.6 / Math.max(st.a, st.b, mode === 'volume' ? st.c : 1, 4));
       faces = cubesMesh(list.map((c) => ({ ...c })), size).map((f) => ({ ...f, pts: f.pts.map((p) => [p[0] - center[0] * size, p[1] - center[1] * size, p[2] - center[2] * size]) }));
       // per base10 le x non sono intere: ricostruisci senza eliminazione facce per cubi separati
-      v._ck = null;
+      let x0 = 1e9, x1 = -1e9, z0 = 1e9, z1 = -1e9, y0 = 1e9;
+      for (const f of faces) for (const p of f.pts) { x0 = Math.min(x0, p[0]); x1 = Math.max(x1, p[0]); z0 = Math.min(z0, p[2]); z1 = Math.max(z1, p[2]); y0 = Math.min(y0, p[1]); }
+      foot = faces.length ? { c: [(x0 + x1) / 2, y0 - 0.01, (z0 + z1) / 2], rx: (x1 - x0) / 2 + 0.35, rz: (z1 - z0) / 2 + 0.35 } : null;
+      v._ck = null; v.invalidate();
     }
     rebuild();
-    v.draw = (ctx) => cached(v, JSON.stringify(st), (c) => drawFaces(v, c, faces, { edges: true }));
+    v.draw = (ctx) => {
+      if (glOn(v, ctx)) {
+        if (foot) softShadow(v, ctx, foot.c, foot.rx, foot.rz, 0.3);
+        drawFaces(v, ctx, faces, { edges: true, bevel: 0.1, edgeWidth: 1, edgeColor: 'rgba(15,23,42,.42)', specular: 0.35, shininess: 46 });
+        return;
+      }
+      cached(v, JSON.stringify(st), (c) => drawFaces(v, c, faces, { edges: true }));
+    };
     return v;
   };
 
@@ -373,6 +504,7 @@
   }
   Mini3D.scenes.atom = function (host, o) {
     const v = new View(host, { rx: 0.3, auto: false });
+    if (v._gl) v.wrap.style.background = 'radial-gradient(circle at 50% 45%, #24345e 0%, #121b36 55%, #070b18 100%)';
     const list = (o.elements || ['H', 'He', 'C', 'O', 'Na']).filter((s) => window.Chem && Chem.bySym[s]);
     let elem = Chem.bySym[o.element || list[0] || 'C'];
     const info = el('div', 'm3d-info'); v.wrap.appendChild(info);
@@ -395,9 +527,19 @@
     set(elem.sym);
     let time = 0;
     const tr = (p, tilt) => { const [a, b] = tilt; const y1 = p[1] * Math.cos(a) - p[2] * Math.sin(a), z1 = p[1] * Math.sin(a) + p[2] * Math.cos(a); const x2 = p[0] * Math.cos(b) + z1 * Math.sin(b), z2 = -p[0] * Math.sin(b) + z1 * Math.cos(b); return [x2, y1, z2]; };
+    const orbitPts = (sh) => { const a = []; for (let i = 0; i < 96; i++) { const t2 = (i / 96) * TAU; a.push(tr([sh.r * Math.cos(t2), 0, sh.r * Math.sin(t2)], sh.tilt)); } return a; };
     v.draw = (ctx, dt) => {
       time += dt;
       v.scale = Math.min(v.W, v.H) * (0.4 / (0.45 + shells.length * 0.32)) * v.zoom;
+      if (glOn(v, ctx)) {
+        for (const sh of shells) line3d(v, ctx, orbitPts(sh), 'rgba(140,190,255,.5)', 1.3, { closed: true });
+        spheres(v, ctx, nucleus.map((n) => ({ p: n.p, r: 0.05, color: n.proton ? '#ef4444' : '#d6dbe4' })), { specular: 0.7, shininess: 60, rim: 0.3, rimColor: '#9cc2ff' });
+        const el2 = [];
+        for (const sh of shells) for (let e = 0; e < sh.n; e++) { const a = (e / sh.n) * TAU + time * sh.speed; el2.push({ p: tr([sh.r * Math.cos(a), 0, sh.r * Math.sin(a)], sh.tilt), r: 0.042, color: '#4f8dff' }); }
+        spheres(v, ctx, el2, { emissive: 0.55, specular: 0.9, shininess: 80, rim: 0.4, rimColor: '#bcd6ff' });
+        for (const e of el2) { const z = v.rot(e.p)[2]; const s = v.P(e.p); GL.glow(v, e.p, e.r * v.scale * s[2] * 3.4, '#3b82f6', z < 0 ? 0.3 : 0.75); }
+        return;
+      }
       const items = [];
       for (const sh of shells) {
         ctx.strokeStyle = 'rgba(59,130,246,.35)'; ctx.lineWidth = 1.2; ctx.beginPath();

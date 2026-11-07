@@ -285,6 +285,7 @@
     curPage = page || ''; setActive(curPage); spy = null;
     const m = main();
     m.style.removeProperty('--c'); m.removeAttribute('aria-busy');
+    const fab = $('.to-top'); if (fab) fab.style.removeProperty('--c');
     document.body.dataset.page = curPage || 'home';
     const isZ = !!(window.ZPages && ZPages[page]) && (Store.current() || page === 'profili');
     m.classList.toggle('zpage', isZ && page !== 'metodi');
@@ -324,7 +325,7 @@
   /* anello di avanzamento (SVG) */
   function ring(pct, color, size = 64, inner = '', stroke) {
     const sw = stroke || Math.max(5, Math.round(size / 9)); const r = (size - sw) / 2; const c = 2 * Math.PI * r; const off = c * (1 - Math.max(0, Math.min(100, pct)) / 100);
-    return `<span class="ring" style="--rc:${color};width:${size}px;height:${size}px" role="img" aria-label="${pct}%"><svg viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" aria-hidden="true"><circle class="ring-bg" cx="${size / 2}" cy="${size / 2}" r="${r}" stroke-width="${sw}"/><circle class="ring-fg" cx="${size / 2}" cy="${size / 2}" r="${r}" stroke-width="${sw}" stroke-dasharray="${c.toFixed(2)}" stroke-dashoffset="${off.toFixed(2)}" style="--c0:${c.toFixed(2)}" transform="rotate(-90 ${size / 2} ${size / 2})"/></svg><span class="ring-in">${inner}</span></span>`;
+    return `<span class="ring" style="--rc:${color};width:${size}px;height:${size}px" role="img" aria-label="${pct}%"><svg viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" aria-hidden="true"><circle class="ring-bg" cx="${size / 2}" cy="${size / 2}" r="${r}" stroke-width="${sw}"/>${pct > 0 ? `<circle class="ring-fg" cx="${size / 2}" cy="${size / 2}" r="${r}" stroke-width="${sw}" stroke-dasharray="${c.toFixed(2)}" stroke-dashoffset="${off.toFixed(2)}" style="--c0:${c.toFixed(2)}" transform="rotate(-90 ${size / 2} ${size / 2})"/>` : ''}</svg><span class="ring-in">${inner}</span></span>`;
   }
   /* intestazione colorata delle pagine */
   function pageHead(icon, h1, sub, color, extra = '') {
@@ -530,6 +531,7 @@
     if (!location.hash.startsWith('#/t/' + id)) return;
     m.innerHTML = ''; m.removeAttribute('aria-busy'); animateIn();
     m.style.setProperty('--c', SUBJ_COLOR[subj]);
+    const fab = $('.to-top'); if (fab) fab.style.setProperty('--c', SUBJ_COLOR[subj]);
     const data = res && res.data;
     const head = el('header', 'topic-head', `<div class="th-band"><div class="crumbs"><a href="#/programma">${t('nav.program')}</a> › <a href="#/anno/${year}">${t('year.' + year)}</a> › <a href="#/anno/${year}/${subj}">${SUBJ_ICON[subj]} ${t('subj.' + subj)}</a></div>
       <div class="th-row"><span class="th-icon" aria-hidden="true">${SUBJ_ICON[subj]}</span><div class="th-titles"><span class="th-kicker">${t('subj.' + subj)} · ${t('year.' + year)}</span><h1>${esc(data ? data.title : i18n.topicTitle(entry))}</h1></div></div>

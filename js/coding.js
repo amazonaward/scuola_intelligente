@@ -155,7 +155,7 @@
     azzurro: '#0ea5e9', cyan: '#06b6d4', celeste: '#38bdf8', lightblue: '#38bdf8', oro: '#d4a017', gold: '#d4a017',
     turchese: '#14b8a6', teal: '#14b8a6', magenta: '#d946ef', lime: '#84cc16', lilla: '#c084fc'
   };
-  const PALETTE = ['#1e293b', '#2563eb', '#16a34a', '#06b6d4', '#ef4444', '#d946ef', '#eab308', '#ffffff', '#92400e', '#c2410c', '#84cc16', '#14b8a6', '#38bdf8', '#9333ea', '#f97316', '#64748b'];
+  const PALETTE = ['#1e293b', '#2563eb', '#16a34a', '#06b6d4', '#ef4444', '#d946ef', '#eab308', '#fb7185', '#92400e', '#c2410c', '#84cc16', '#14b8a6', '#38bdf8', '#9333ea', '#f97316', '#64748b'];
   const KNOWN_WORDS = Object.keys(CMD).concat(Object.keys(FUNCS));
 
   class LogoError { constructor(line, key, vars) { this.line = line; this.key = key; this.vars = vars || {}; } }
@@ -1011,8 +1011,8 @@
     let tiles = '';
     for (let y = 0; y < w.H; y++) for (let x = 0; x < w.W; x++) tiles += tileSVG(w.cells[y][x], x, y, w);
     let items = ''; for (const k in w.items) { const [x, y] = k.split(',').map(Number); items += itemSVG(w.items[k], x, y); }
-    return `<svg class="cd-board" viewBox="-4 -4 ${w.W * S + 8} ${w.H * S + 8}" role="img" aria-label="${esc(t('cd.robot'))}">${DEFS}
-      <rect x="-4" y="-4" width="${w.W * S + 8}" height="${w.H * S + 8}" rx="16" fill="#a3d977"/>
+    return `<svg class="cd-board" viewBox="-12 -12 ${w.W * S + 24} ${w.H * S + 24}" role="img" aria-label="${esc(t('cd.robot'))}">${DEFS}
+      <rect x="-12" y="-12" width="${w.W * S + 24}" height="${w.H * S + 24}" rx="20" fill="#a3d977"/><rect x="-5" y="-5" width="${w.W * S + 10}" height="${w.H * S + 10}" rx="12" fill="#8cc85f"/>
       <g class="cd-tiles">${tiles}</g><g class="cd-items">${items}</g>
       <g class="cd-rpos"><g class="cd-dir"><path d="M0 -41 l8 10 h-16z" fill="#f97316" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></g>${robotSprite()}</g></svg>`;
   }
@@ -1391,7 +1391,7 @@
         }
       }
       if (P.target) {
-        c.strokeStyle = 'rgba(148,163,184,.42)'; c.lineWidth = Math.max(5, 9 * k); c.lineCap = 'round'; c.lineJoin = 'round';
+        c.strokeStyle = 'rgba(148,163,184,.42)'; c.lineWidth = Math.max(P.targetW > 4 ? 4 : 1.5, (P.targetW || 9) * k); c.lineCap = 'round'; c.lineJoin = 'round';
         c.beginPath(); for (const s of P.target) { c.moveTo(X(s[0]), Y(s[1])); c.lineTo(X(s[2]), Y(s[3])); } c.stroke();
       }
       c.setTransform(1, 0, 0, 1, 0, 0); c.drawImage(layer, 0, 0); c.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -1481,7 +1481,10 @@
     const ta = $('textarea'), gutter = $('.cd-gutter'), hlErr = $('.cd-hl:not(.run)'), hlRun = $('.cd-hl.run'), msg = $('.cd-msg');
     ta.value = startCode;
     const painter = turtlePainter($('canvas'));
-    if (!free) painter.P.target = targetOf(i).segs;
+    if (!free) {
+      const segs = targetOf(i).segs, len = segs.reduce((a, q) => a + Math.hypot(q[2] - q[0], q[3] - q[1]), 0);
+      painter.P.target = segs; painter.P.targetW = len > 6000 ? 2.5 : len > 2500 ? 5 : 9;
+    }
     const setMsg = (txt, kind) => { msg.className = 'cd-msg' + (kind ? ' ' + kind : ''); msg.innerHTML = txt; };
     let errLine = 0;
     const lineH = () => parseFloat(getComputedStyle(ta).lineHeight) || 22;

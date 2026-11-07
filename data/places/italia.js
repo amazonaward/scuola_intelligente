@@ -14,13 +14,13 @@ PLACE({
     { name: 'Savoia', from: 1046, to: 1861, color: '#1d4ed8' }
   ],
   eras: [
-    { from: -850000, to: -40000, ruler: 'Nessuno: gruppi di cacciatori', color: '#a8a29e', title: 'I primi abitanti',
+    { from: -850000, to: -45000, ruler: 'Nessuno: gruppi di cacciatori', color: '#a8a29e', title: 'I primi abitanti',
       html: '<p>Le tracce più antiche di esseri umani in Italia hanno circa <b>850.000 anni</b> (Monte Poggiolo, vicino a Forlì). Poi vissero qui l\'<i>Homo heidelbergensis</i> e i <b>Neanderthal</b> (l\'Uomo di Altamura in Puglia).</p>',
       life: '<p>Piccoli gruppi nomadi cacciano elefanti antichi, cervi e bisonti, raccolgono frutti e usano il fuoco e strumenti di pietra.</p>',
       why: '<p>L\'Italia, attaccata all\'Europa e con il clima più mite del Mediterraneo, era un buon rifugio durante le glaciazioni.</p>',
       events: [{ year: -850000, text: 'Strumenti di pietra di Monte Poggiolo.' }, { year: -150000, text: 'Uomo di Altamura (Neanderthal).' }],
       lessons: ['p3-sto-primi-uomini', 'p3-sto-paleolitico'] },
-    { from: -40000, to: -6000, ruler: 'Cacciatori Sapiens', color: '#bdb6ae', title: 'Arrivano i Sapiens',
+    { from: -45000, to: -6000, ruler: 'Cacciatori Sapiens', color: '#bdb6ae', title: 'Arrivano i Sapiens',
       html: '<p>Circa 45.000 anni fa arrivano gli <b>esseri umani moderni</b>. Dipingono e incidono le grotte (Grotta dell\'Addaura a Palermo, Grotta di Fumane nel Veronese) e convivono per un po\' con gli ultimi Neanderthal.</p>',
       life: '<p>Si caccia con lance e propulsori, si cuciono vestiti con aghi d\'osso, si fanno collane di conchiglie. Il mare era più basso: si poteva andare a piedi dalla Toscana all\'Elba.</p>',
       why: '<p>I Sapiens avevano strumenti più vari e reti di scambio più ampie: per questo si diffusero ovunque, mentre i Neanderthal scomparvero.</p>',

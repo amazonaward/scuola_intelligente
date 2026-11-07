@@ -364,7 +364,7 @@
   function sceneModel(host, o) {
     if (o.object && !o.parts) {
       const wait = el('p', 'muted', '⏳ ' + t('lib.loading')); host.appendChild(wait);
-      loadObject(o.object).then((d) => { wait.remove(); if (d) sceneModel(host, Object.assign({}, d.model, { steps: o.steps ? d.steps : null }, o, { object: null, parts: d.model.parts })); });
+      loadObject(o.object).then((d) => { wait.remove(); if (d) sceneModel(host, Object.assign({}, d.model, o, { object: null, parts: d.model.parts, steps: o.steps === true ? d.steps : o.steps || null })); });
       return null;
     }
     const { View, label } = Mini3D._;
@@ -461,7 +461,7 @@
       if (S.only) {
         S.sel = S.only; Object.entries(chips).forEach(([k, b]) => b.classList.toggle('active', k === id));
         S.camT = Mx.ap(FIT, S.only.anchor.map((x, i) => x + S.only.explode[i] * S.explode));
-        S.zoomT = clamp(1.1 / (S.only.radius * K), 0.6, 3);
+        S.zoomT = clamp(0.75 / (S.only.radius * K), 0.6, 2.6);
       } else { S.camT = [0, 0, 0]; S.zoomT = 1; }
       renderPanel();
     }
