@@ -1,13 +1,13 @@
 TOPIC('fr', {
  "id": "m3-mat-solidi",
- "title": "Les solides : aire et volume",
- "intro": "Boîtes, canettes, cornets de glace, ballons : nous sommes entourés de solides. Apprenons à les reconnaître, à calculer combien de matériau il faut pour les construire (<b>aire</b>) et combien d'espace ils occupent (<b>volume</b>).",
+ "title": "Les solides : surface et volume",
+ "intro": "Boîtes, canettes, cornets de glace, ballons : nous sommes entourés de solides. Apprenons à les reconnaître, à calculer la quantité de matériau nécessaire pour les construire (<b>surface</b>) et l'espace qu'ils occupent (<b>volume</b>).",
  "minutes": 40,
  "sections": [
   {
    "type": "text",
    "title": "1. Polyèdres et solides de révolution",
-   "html": "<p>Un <b>solide</b> est une figure géométrique à trois dimensions : longueur, largeur, hauteur. On les divise en deux grandes familles :</p><ul><li><b>Polyèdres</b> : délimités uniquement par des polygones (les <b>faces</b>). Les faces se rencontrent sur les <b>arêtes</b>, les arêtes aux <b>sommets</b>. Exemples : cube, pavé droit, prisme, pyramide.</li><li><b>Solides de révolution</b> : on les obtient en faisant tourner une figure plane autour d'un axe. Ils ont des surfaces courbes. Exemples : cylindre (rectangle qui tourne), cône (triangle rectangle qui tourne), sphère (demi-disque qui tourne).</li></ul>"
+   "html": "<p>Un <b>solide</b> est une figure géométrique à trois dimensions : longueur, largeur, hauteur. On les divise en deux grandes familles :</p><ul><li><b>Polyèdres</b> : délimités seulement par des polygones (les <b>faces</b>). Les faces se rencontrent dans les <b>arêtes</b>, les arêtes dans les <b>sommets</b>. Exemples : cube, parallélépipède, prisme, pyramide.</li><li><b>Solides de révolution</b> : on les obtient en faisant tourner une figure plane autour d'un axe. Ils ont des surfaces courbes. Exemples : cylindre (rectangle qui tourne), cône (triangle rectangle qui tourne), sphère (demi-disque qui tourne).</li></ul>"
   },
   {
    "type": "3d",
@@ -36,38 +36,38 @@ TOPIC('fr', {
   },
   {
    "type": "text",
-   "title": "2. Aire et volume : quelle différence ?",
-   "html": "<ul><li>L'<b>aire latérale</b> (A<sub>l</sub>) est l'aire des faces latérales.</li><li>L'<b>aire totale</b> (A<sub>t</sub>) est A<sub>l</sub> + l'aire des bases. Elle se mesure en cm², m²…</li><li>Le <b>volume</b> (V) est l'espace occupé. Il se mesure en cm³, dm³, m³.</li></ul><p>Rappelle-toi les équivalences : <b>1 dm³ = 1 litre</b> ; 1 m³ = 1000 dm³ = 1000 litres ; 1 cm³ = 1 ml.</p><p>Pour calculer l'aire, il est utile d'imaginer le <b>patron</b> du solide : on « l'ouvre » et on l'étale sur la table.</p>"
+   "title": "2. Surface et volume : quelle différence ?",
+   "html": "<ul><li>La <b>surface latérale</b> (S<sub>l</sub>) est l'aire des faces latérales.</li><li>La <b>surface totale</b> (S<sub>t</sub>) est S<sub>l</sub> + l'aire des bases. Elle se mesure en cm², m²…</li><li>Le <b>volume</b> (V) est l'espace occupé. Il se mesure en cm³, dm³, m³.</li></ul><p>Rappelle-toi les équivalences : <b>1 dm³ = 1 litre</b> ; 1 m³ = 1000 dm³ = 1000 litres ; 1 cm³ = 1 ml.</p><p>Pour calculer la surface, il est utile d'imaginer le <b>patron</b> du solide : on l'« ouvre » et on l'étale sur la table.</p>"
   },
   {
    "type": "svg",
    "title": "Le patron du cube et du cylindre",
-   "svg": "<svg viewBox=\"0 0 600 320\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"320\" fill=\"#ffffff\"/><g fill=\"#bfdbfe\" stroke=\"#1e3a8a\" stroke-width=\"2\"><rect x=\"80\" y=\"30\" width=\"60\" height=\"60\"/><rect x=\"20\" y=\"90\" width=\"60\" height=\"60\"/><rect x=\"80\" y=\"90\" width=\"60\" height=\"60\"/><rect x=\"140\" y=\"90\" width=\"60\" height=\"60\"/><rect x=\"200\" y=\"90\" width=\"60\" height=\"60\"/><rect x=\"80\" y=\"150\" width=\"60\" height=\"60\"/></g><text x=\"140\" y=\"250\" font-size=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\">Cube : 6 carrés identiques</text><text x=\"140\" y=\"275\" font-size=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\">A<tspan font-size=\"12\" dy=\"4\">t</tspan><tspan dy=\"-4\"> = 6 · c²</tspan></text><g stroke=\"#9a3412\" stroke-width=\"2\"><rect x=\"330\" y=\"95\" width=\"220\" height=\"90\" fill=\"#fed7aa\"/><circle cx=\"440\" cy=\"60\" r=\"35\" fill=\"#fdba74\"/><circle cx=\"440\" cy=\"220\" r=\"35\" fill=\"#fdba74\"/></g><text x=\"440\" y=\"145\" font-size=\"16\" text-anchor=\"middle\" font-family=\"sans-serif\">base = 2πr (circonférence)</text><text x=\"560\" y=\"145\" font-size=\"16\" font-family=\"sans-serif\">h</text><text x=\"440\" y=\"290\" font-size=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\">Cylindre : 1 rectangle + 2 disques</text></svg>",
+   "svg": "<svg viewBox=\"0 0 600 320\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"320\" fill=\"#ffffff\"/><g fill=\"#bfdbfe\" stroke=\"#1e3a8a\" stroke-width=\"2\"><rect x=\"80\" y=\"30\" width=\"60\" height=\"60\"/><rect x=\"20\" y=\"90\" width=\"60\" height=\"60\"/><rect x=\"80\" y=\"90\" width=\"60\" height=\"60\"/><rect x=\"140\" y=\"90\" width=\"60\" height=\"60\"/><rect x=\"200\" y=\"90\" width=\"60\" height=\"60\"/><rect x=\"80\" y=\"150\" width=\"60\" height=\"60\"/></g><text x=\"140\" y=\"250\" font-size=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\">Cube : 6 carrés identiques</text><text x=\"140\" y=\"275\" font-size=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\">S<tspan font-size=\"12\" dy=\"4\">t</tspan><tspan dy=\"-4\"> = 6 · s²</tspan></text><g stroke=\"#9a3412\" stroke-width=\"2\"><rect x=\"330\" y=\"95\" width=\"220\" height=\"90\" fill=\"#fed7aa\"/><circle cx=\"440\" cy=\"60\" r=\"35\" fill=\"#fdba74\"/><circle cx=\"440\" cy=\"220\" r=\"35\" fill=\"#fdba74\"/></g><text x=\"440\" y=\"145\" font-size=\"16\" text-anchor=\"middle\" font-family=\"sans-serif\">base = 2πr (circonférence)</text><text x=\"560\" y=\"145\" font-size=\"16\" font-family=\"sans-serif\">h</text><text x=\"440\" y=\"290\" font-size=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\">Cylindre : 1 rectangle + 2 disques</text></svg>",
    "caption": "Patron : le cube s'ouvre en 6 carrés, le cylindre en un rectangle (la surface latérale) et deux disques."
   },
   {
    "type": "alternatives",
    "title": "D'autres façons de comprendre : pourquoi les formules sont ainsi",
-   "intro": "Les formules des volumes ne s'apprennent pas seulement par cœur : on peut les « voir » et même les toucher.",
+   "intro": "Les formules des volumes ne sont pas seulement à apprendre par cœur : on peut les « voir » et même les toucher.",
    "tabs": [
     {
      "label": "🪙 Principe de Cavalieri",
-     "html": "<p>Prends une pile de pièces bien droite puis pousse-la sur le côté : elle devient penchée, mais les pièces sont les mêmes, donc le <b>volume ne change pas</b>. Bonaventura Cavalieri (1635), élève de Galilée, en fit un principe : <b>si deux solides ont la même hauteur et, à chaque hauteur, des sections de même aire, ils ont le même volume</b>. C'est pourquoi un prisme oblique a le même volume qu'un prisme droit : V = A<sub>base</sub> × h.</p>",
+     "html": "<p>Prends une pile de pièces bien droite, puis pousse-la sur le côté : elle devient penchée, mais les pièces sont les mêmes, donc le <b>volume ne change pas</b>. Bonaventura Cavalieri (1635), élève de Galilée, en fit un principe : <b>si deux solides ont la même hauteur et que, à chaque hauteur, leurs sections ont la même aire, ils ont le même volume</b>. C'est pourquoi un prisme oblique a le même volume qu'un prisme droit : V = A<sub>base</sub> × h.</p>",
      "svg": "<svg viewBox=\"0 0 600 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"300\" fill=\"#f8fafc\"/><ellipse cx=\"150\" cy=\"255\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"150\" cy=\"235\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"150\" cy=\"215\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"150\" cy=\"195\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"150\" cy=\"175\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"150\" cy=\"155\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"150\" cy=\"135\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"150\" cy=\"115\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"150\" cy=\"95\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"150\" cy=\"75\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"400\" cy=\"255\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"420\" cy=\"235\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"438\" cy=\"215\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"453\" cy=\"195\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"463\" cy=\"175\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"469\" cy=\"155\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"471\" cy=\"135\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"468\" cy=\"115\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"462\" cy=\"95\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><ellipse cx=\"454\" cy=\"75\" rx=\"60\" ry=\"10\" fill=\"#fbbf24\" stroke=\"#92400e\" stroke-width=\"2\"/><text x=\"150\" y=\"292\" font-size=\"16\" text-anchor=\"middle\" fill=\"#1f2937\">Pile droite</text><text x=\"440\" y=\"292\" font-size=\"16\" text-anchor=\"middle\" fill=\"#1f2937\">Pile penchée</text><text x=\"300\" y=\"40\" font-size=\"18\" text-anchor=\"middle\" fill=\"#b91c1c\" font-weight=\"bold\">Mêmes pièces = même volume</text></svg>"
     },
     {
      "label": "📐 Patrons",
-     "html": "<p>Coupe le solide le long de quelques arêtes et ouvre-le sur la table : tu obtiens le <b>patron</b>. L'aire du patron est l'<b>aire totale</b>. Le cylindre devient un rectangle (aussi long que la circonférence, 2πr) plus deux disques ; le cône un secteur circulaire plus un disque.</p>",
+     "html": "<p>Coupe le solide le long de quelques arêtes et ouvre-le sur la table : tu obtiens le <b>patron</b>. L'aire du patron est la <b>surface totale</b>. Le cylindre devient un rectangle (long comme la circonférence, 2πr) plus deux disques ; le cône un secteur circulaire plus un disque.</p>",
      "svg": "<svg viewBox=\"0 0 600 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"300\" fill=\"#f0f9ff\"/><g transform=\"translate(20,40)\" stroke=\"#1e3a8a\" stroke-width=\"2\" fill=\"#bfdbfe\"><rect x=\"50\" y=\"0\" width=\"50\" height=\"50\"/><rect x=\"0\" y=\"50\" width=\"50\" height=\"50\"/><rect x=\"50\" y=\"50\" width=\"50\" height=\"50\"/><rect x=\"100\" y=\"50\" width=\"50\" height=\"50\"/><rect x=\"150\" y=\"50\" width=\"50\" height=\"50\"/><rect x=\"50\" y=\"100\" width=\"50\" height=\"50\"/></g><text x=\"120\" y=\"230\" font-size=\"16\" text-anchor=\"middle\" fill=\"#1f2937\">Cube : 6 carrés</text><g transform=\"translate(260,30)\" stroke=\"#166534\" stroke-width=\"2\" fill=\"#bbf7d0\"><circle cx=\"60\" cy=\"25\" r=\"25\"/><rect x=\"0\" y=\"50\" width=\"157\" height=\"80\"/><circle cx=\"60\" cy=\"155\" r=\"25\"/></g><text x=\"340\" y=\"230\" font-size=\"15\" text-anchor=\"middle\" fill=\"#1f2937\">Cylindre : rectangle</text><text x=\"340\" y=\"250\" font-size=\"15\" text-anchor=\"middle\" fill=\"#1f2937\">long de 2πr + 2 disques</text><g transform=\"translate(470,40)\" stroke=\"#9a3412\" stroke-width=\"2\" fill=\"#fed7aa\"><path d=\"M60,0 L0,110 A125,125 0 0 0 120,110 Z\"/><circle cx=\"60\" cy=\"158\" r=\"28\"/></g><text x=\"530\" y=\"230\" font-size=\"15\" text-anchor=\"middle\" fill=\"#1f2937\">Cône : secteur</text><text x=\"530\" y=\"250\" font-size=\"15\" text-anchor=\"middle\" fill=\"#1f2937\">circulaire + disque</text></svg>"
     },
     {
      "label": "💧 Avec de l'eau",
-     "html": "<p>Prends un cône et un cylindre en plastique avec la <b>même base et la même hauteur</b>. Remplis le cône d'eau et verse-la dans le cylindre : il faut exactement <b>3 cônes</b> pour le remplir. Voilà pourquoi V<sub>cône</sub> = πr²h : 3. C'est pareil pour la pyramide et le prisme. Archimède découvrit aussi que la sphère a les <b>2/3</b> du volume du cylindre dans lequel elle est inscrite.</p>",
+     "html": "<p>Prends un cône et un cylindre en plastique avec la <b>même base et la même hauteur</b>. Remplis le cône d'eau et verse-le dans le cylindre : il faut exactement <b>3 cônes</b> pour le remplir. Voilà pourquoi V<sub>cône</sub> = πr²h : 3. Il en va de même pour la pyramide et le prisme. Archimède découvrit aussi que la sphère a les <b>2/3</b> du volume du cylindre dans lequel elle est inscrite.</p>",
      "svg": "<svg viewBox=\"0 0 600 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"300\" fill=\"#f8fafc\"/><g transform=\"translate(60,40)\"><polygon points=\"0,0 120,0 60,180\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"3\"/><text x=\"60\" y=\"210\" font-size=\"16\" text-anchor=\"middle\" fill=\"#1f2937\">cône plein d'eau</text></g><text x=\"235\" y=\"140\" font-size=\"28\" fill=\"#b91c1c\" font-weight=\"bold\">× 3 =</text><g transform=\"translate(340,40)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"180\" fill=\"#fff\" stroke=\"#1e3a8a\" stroke-width=\"3\"/><rect x=\"0\" y=\"0\" width=\"120\" height=\"180\" fill=\"#93c5fd\" opacity=\".85\"/><line x1=\"0\" y1=\"60\" x2=\"120\" y2=\"60\" stroke=\"#1e3a8a\" stroke-dasharray=\"5 4\"/><line x1=\"0\" y1=\"120\" x2=\"120\" y2=\"120\" stroke=\"#1e3a8a\" stroke-dasharray=\"5 4\"/><text x=\"60\" y=\"210\" font-size=\"16\" text-anchor=\"middle\" fill=\"#1f2937\">cylindre plein</text></g><text x=\"520\" y=\"100\" font-size=\"15\" fill=\"#1f2937\">même base</text><text x=\"520\" y=\"125\" font-size=\"15\" fill=\"#1f2937\">même</text><text x=\"520\" y=\"148\" font-size=\"15\" fill=\"#1f2937\">hauteur</text></svg>"
     },
     {
-     "label": "🧊 Cubes 3D",
-     "html": "<p>Le volume est le <b>nombre de cubes unités</b> qui remplissent le solide. Un pavé droit 4 × 3 × 2 contient 4 × 3 = 12 cubes par couche, et il y a 2 couches : 24 cubes. Change les mesures avec les curseurs et compte !</p>",
+     "label": "🧊 Petits cubes 3D",
+     "html": "<p>Le volume est le <b>nombre de petits cubes unitaires</b> qui remplissent le solide. Un parallélépipède 4 × 3 × 2 contient 4 × 3 = 12 petits cubes par couche, et il y a 2 couches : 24 petits cubes. Change les mesures avec les curseurs et compte !</p>",
      "scene": "blocks",
      "options": {
       "mode": "volume",
@@ -78,7 +78,7 @@ TOPIC('fr', {
     },
     {
      "label": "🔺 3 pyramides = 1 cube",
-     "html": "<p>Un cube peut se diviser en <b>3 pyramides identiques</b> à base carrée, toutes avec leur sommet dans le même coin du cube. Chacune a donc un tiers du volume du cube : V = c² × c : 3. Fais tourner la pyramide et imagine d'en assembler trois.</p>",
+     "html": "<p>Un cube peut se diviser en <b>3 pyramides identiques</b> à base carrée, toutes avec le sommet dans le même coin du cube. Chacune a donc un tiers du volume du cube : V = c² × c : 3. Fais tourner la pyramide et imagine d'en assembler trois.</p>",
      "scene": "solid",
      "options": {
       "shape": "pyramid",
@@ -86,28 +86,38 @@ TOPIC('fr', {
       "h": 1.4,
       "labels": true
      }
+    },
+    {
+     "label": "🇨🇳 Le principe de Zu Geng (Chine)",
+     "html": "<p>Plus de <b>mille ans avant</b> Cavalieri, en <b>Chine</b>, le mathématicien <b>Zu Geng</b> (Vᵉ–VIᵉ siècle apr. J.-C., fils du célèbre Zu Chongzhi) écrivit le même principe : <b>si deux solides ont, à chaque hauteur, des sections de même aire, leurs volumes ne peuvent pas être différents</b>. En Chine, on l'appelle aujourd'hui le <b>principe de Zu Geng</b>.</p><p>Avec cette idée, Zu Geng trouva le <b>volume de la sphère</b>. Voici le raisonnement, en bref :</p><ol><li>Déjà <b>Liu Hui</b> (IIIᵉ siècle) avait imaginé deux cylindres de rayon r qui se croisent à l'intérieur d'un cube de côté 2r : la partie commune s'appelle le <b>« double parapluie carré »</b> (牟合方盖). La sphère se trouve à l'intérieur du double parapluie.</li><li>En coupant à n'importe quelle hauteur, la section de la sphère est un <b>disque</b> inscrit dans la section du double parapluie, qui est un <b>carré</b>. Un disque et le carré qui le contient sont toujours dans le rapport <b>π : 4</b>. Donc aussi : V<sub>sphère</sub> : V<sub>parapluie</sub> = π : 4.</li><li>Zu Geng, avec son principe, démontra que le double parapluie occupe <b>2/3 du cube</b> : 2/3 × (2r)³ = 16/3 r³.</li><li>Alors V<sub>sphère</sub> = π/4 × 16/3 r³ = <b>4/3 π r³</b>, la même formule que tu utilises !</li></ol>",
+     "svg": "<svg viewBox=\"0 0 600 290\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"290\" fill=\"#f8fafc\"/><rect x=\"60\" y=\"40\" width=\"220\" height=\"220\" fill=\"#fde68a\" stroke=\"#92400e\" stroke-width=\"3\"/><circle cx=\"170\" cy=\"150\" r=\"110\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"3\"/><text x=\"170\" y=\"155\" font-size=\"18\" font-family=\"sans-serif\" fill=\"#1e3a8a\" text-anchor=\"middle\" font-weight=\"bold\">disque</text><text x=\"170\" y=\"32\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#92400e\" text-anchor=\"middle\" font-weight=\"bold\">carré</text><text x=\"310\" y=\"70\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#1e293b\" font-weight=\"bold\">Section à une certaine hauteur :</text><text x=\"310\" y=\"100\" font-size=\"15\" font-family=\"sans-serif\" fill=\"#1e3a8a\">• de la sphère → un disque</text><text x=\"310\" y=\"124\" font-size=\"15\" font-family=\"sans-serif\" fill=\"#92400e\">• du « double parapluie »</text><text x=\"310\" y=\"146\" font-size=\"15\" font-family=\"sans-serif\" fill=\"#92400e\">   → le carré autour</text><text x=\"310\" y=\"186\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#1e293b\" font-weight=\"bold\">À chaque hauteur :</text><text x=\"310\" y=\"212\" font-size=\"17\" font-family=\"sans-serif\" fill=\"#dc2626\" font-weight=\"bold\">disque : carré = π : 4</text><text x=\"310\" y=\"242\" font-size=\"15\" font-family=\"sans-serif\" fill=\"#1e293b\">donc aussi les volumes</text><text x=\"310\" y=\"264\" font-size=\"15\" font-family=\"sans-serif\" fill=\"#1e293b\">sont dans le rapport π : 4</text></svg>"
+    },
+    {
+     "label": "𓂀 Le tronc de pyramide dans le papyrus de Moscou",
+     "html": "<p>Le <b>papyrus de Moscou</b> (Égypte, vers 1850 av. J.-C., aujourd'hui conservé au musée Pouchkine de Moscou) contient un problème très célèbre, le numéro 14 : le volume d'un <b>tronc de pyramide</b> à base carrée de <b>hauteur 6</b>, de côté de base en bas <b>4</b> et de côté en haut <b>2</b>.</p><p>Le scribe procède ainsi :</p><ol><li>4 × 4 = 16 (carré du grand côté)</li><li>4 × 2 = 8 (grand côté × petit côté)</li><li>2 × 2 = 4 (carré du petit côté)</li><li>16 + 8 + 4 = 28</li><li>un tiers de 6 est 2 ; 28 × 2 = <b>56</b>.</li></ol><p>C'est exactement la formule que l'on utilise encore aujourd'hui : <b>V = h/3 × (a² + a·b + b²)</b>. Il y a presque 4000 ans !</p><p><b>Vérifions avec notre méthode</b> : le tronc est une grande pyramide dont on a retiré la pointe. Le côté passe de 4 à 2 (il est divisé par deux) en montant de 6, donc la pyramide entière a pour hauteur <b>12</b> et la pointe retirée a pour hauteur 6.</p><ul><li>V<sub>grande</sub> = 4 × 4 × 12 : 3 = 64</li><li>V<sub>pointe</sub> = 2 × 2 × 6 : 3 = 8</li><li>V<sub>tronc</sub> = 64 − 8 = <b>56</b> ✔</li></ul>",
+     "svg": "<svg viewBox=\"0 0 600 290\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"600\" height=\"290\" fill=\"#fffbeb\"/><polygon points=\"120,250 400,250 460,200 180,200\" fill=\"#fde68a\" stroke=\"#92400e\" stroke-width=\"2\"/><polygon points=\"210,110 330,110 355,88 235,88\" fill=\"#fef3c7\" stroke=\"#92400e\" stroke-width=\"2\"/><line x1=\"120\" y1=\"250\" x2=\"210\" y2=\"110\" stroke=\"#92400e\" stroke-width=\"2\"/><line x1=\"400\" y1=\"250\" x2=\"330\" y2=\"110\" stroke=\"#92400e\" stroke-width=\"2\"/><line x1=\"460\" y1=\"200\" x2=\"355\" y2=\"88\" stroke=\"#92400e\" stroke-width=\"2\"/><line x1=\"180\" y1=\"200\" x2=\"235\" y2=\"88\" stroke=\"#92400e\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><line x1=\"290\" y1=\"99\" x2=\"290\" y2=\"225\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"298\" y=\"170\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#dc2626\" font-weight=\"bold\">h = 6</text><text x=\"260\" y=\"275\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"bold\">a = 4</text><text x=\"270\" y=\"80\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"bold\">b = 2</text><text x=\"470\" y=\"60\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#1e293b\" text-anchor=\"middle\" font-weight=\"bold\">Le scribe :</text><text x=\"470\" y=\"90\" font-size=\"15\" font-family=\"sans-serif\" fill=\"#1e293b\" text-anchor=\"middle\">4 × 4 = 16</text><text x=\"470\" y=\"112\" font-size=\"15\" font-family=\"sans-serif\" fill=\"#1e293b\" text-anchor=\"middle\">4 × 2 = 8</text><text x=\"470\" y=\"134\" font-size=\"15\" font-family=\"sans-serif\" fill=\"#1e293b\" text-anchor=\"middle\">2 × 2 = 4</text><text x=\"470\" y=\"156\" font-size=\"15\" font-family=\"sans-serif\" fill=\"#1e293b\" text-anchor=\"middle\">16 + 8 + 4 = 28</text><text x=\"470\" y=\"178\" font-size=\"16\" font-family=\"sans-serif\" fill=\"#b45309\" text-anchor=\"middle\" font-weight=\"bold\">28 × (6 : 3) = 56</text></svg>"
     }
    ]
   },
   {
    "type": "text",
    "title": "3. Le formulaire",
-   "html": "<table><tr><th>Solide</th><th>Aire latérale</th><th>Aire totale</th><th>Volume</th></tr><tr><td>Cube (arête c)</td><td>4·c²</td><td>6·c²</td><td>c³</td></tr><tr><td>Pavé droit (a, b, c)</td><td>2p<sub>b</sub>·c = 2(a+b)·c</td><td>2(ab + bc + ac)</td><td>a·b·c</td></tr><tr><td>Prisme droit</td><td>2p<sub>b</sub>·h</td><td>A<sub>l</sub> + 2·A<sub>b</sub></td><td>A<sub>b</sub>·h</td></tr><tr><td>Pyramide régulière (apothème a)</td><td>p<sub>b</sub>·a (demi-périmètre × apothème)</td><td>A<sub>l</sub> + A<sub>b</sub></td><td>A<sub>b</sub>·h / 3</td></tr><tr><td>Cylindre</td><td>2πr·h</td><td>2πr·h + 2πr²</td><td>πr²·h</td></tr><tr><td>Cône (apothème a)</td><td>πr·a</td><td>πr·a + πr²</td><td>πr²·h / 3</td></tr><tr><td>Sphère</td><td>—</td><td>4πr²</td><td>4/3·πr³</td></tr></table><p>Dans le cône, l'apothème se trouve avec Pythagore : <b>a = √(r² + h²)</b>. Dans la pyramide à base carrée de côté l : <b>a = √(h² + (l/2)²)</b>.</p>"
+   "html": "<table><tr><th>Solide</th><th>Surface latérale</th><th>Surface totale</th><th>Volume</th></tr><tr><td>Cube (arête s)</td><td>4·s²</td><td>6·s²</td><td>s³</td></tr><tr><td>Parallélépipède (a, b, c)</td><td>2p<sub>b</sub>·c = 2(a+b)·c</td><td>2(ab + bc + ac)</td><td>a·b·c</td></tr><tr><td>Prisme droit</td><td>2p<sub>b</sub>·h</td><td>S<sub>l</sub> + 2·A<sub>b</sub></td><td>A<sub>b</sub>·h</td></tr><tr><td>Pyramide régulière (apothème a)</td><td>p<sub>b</sub>·a (demi-périmètre × apothème)</td><td>S<sub>l</sub> + A<sub>b</sub></td><td>A<sub>b</sub>·h / 3</td></tr><tr><td>Cylindre</td><td>2πr·h</td><td>2πr·h + 2πr²</td><td>πr²·h</td></tr><tr><td>Cône (apothème a)</td><td>πr·a</td><td>πr·a + πr²</td><td>πr²·h / 3</td></tr><tr><td>Sphère</td><td>—</td><td>4πr²</td><td>4/3·πr³</td></tr></table><p>Dans le cône, l'apothème se trouve avec Pythagore : <b>a = √(r² + h²)</b>. Dans la pyramide à base carrée de côté c : <b>a = √(h² + (c/2)²)</b>.</p>"
   },
   {
    "type": "remember",
    "title": "La règle du « divisé par 3 »",
-   "html": "<p>La pyramide et le cône ont un volume égal à <b>un tiers</b> de celui du prisme et du cylindre de même base et de même hauteur. Avec un cône plein d'eau, on remplit le cylindre correspondant en exactement <b>3 transvasements</b>.</p>"
+   "html": "<p>La pyramide et le cône ont un volume égal à <b>un tiers</b> de celui du prisme et du cylindre de même base et de même hauteur. Avec un cône plein d'eau, on remplit le cylindre correspondant exactement en <b>3 versements</b>.</p>"
   },
   {
    "type": "example",
-   "title": "Exemple : combien d'eau contient l'aquarium ?",
-   "html": "<p>Un aquarium en forme de pavé droit mesure 60 cm × 30 cm × 40 cm.</p><p>V = 60 × 30 × 40 = <b>72 000 cm³</b> = 72 dm³ = <b>72 litres</b>.</p><p>Pour savoir combien de verre il faut (sans couvercle) : aire de base 60×30 = 1800 cm², parois 2·(60×40) + 2·(30×40) = 4800 + 2400 = 7200 cm². Total : <b>9000 cm²</b> = 0,9 m².</p>"
+   "title": "Exemple : quelle quantité d'eau contient l'aquarium ?",
+   "html": "<p>Un aquarium en forme de parallélépipède mesure 60 cm × 30 cm × 40 cm.</p><p>V = 60 × 30 × 40 = <b>72 000 cm³</b> = 72 dm³ = <b>72 litres</b>.</p><p>Pour savoir combien de verre il faut (sans couvercle) : aire de la base 60×30 = 1800 cm², parois 2·(60×40) + 2·(30×40) = 4800 + 2400 = 7200 cm². Total : <b>9000 cm²</b> = 0,9 m².</p>"
   },
   {
    "type": "example",
    "title": "Exemple : l'étiquette de la canette",
-   "html": "<p>Une canette cylindrique a un rayon de 3,3 cm et une hauteur de 11,5 cm.</p><ul><li>Étiquette (aire latérale) : 2π·3,3·11,5 ≈ <b>238,4 cm²</b>.</li><li>Volume : π·3,3²·11,5 ≈ 3,14·10,89·11,5 ≈ <b>393 cm³</b>, soit environ 0,39 litre : c'est la canette de 33 cl, avec un peu d'espace vide en haut !</li></ul>"
+   "html": "<p>Une canette cylindrique a un rayon de 3,3 cm et une hauteur de 11,5 cm.</p><ul><li>Étiquette (surface latérale) : 2π·3,3·11,5 ≈ <b>238,4 cm²</b>.</li><li>Volume : π·3,3²·11,5 ≈ 3,14·10,89·11,5 ≈ <b>393 cm³</b>, soit environ 0,39 litre : c'est la canette de 33 cl, avec un peu de vide en haut !</li></ul>"
   },
   {
    "type": "quiz",
@@ -119,7 +129,7 @@ TOPIC('fr', {
      "answer": 125,
      "tol": 0,
      "unit": "cm³",
-     "explain": "V = c³ = 5 × 5 × 5 = 125 cm³."
+     "explain": "V = s³ = 5 × 5 × 5 = 125 cm³."
     },
     {
      "type": "mc",
@@ -131,32 +141,32 @@ TOPIC('fr', {
       "Cube"
      ],
      "answer": 2,
-     "explain": "On obtient le cône en faisant tourner un triangle rectangle autour d'un côté de l'angle droit."
+     "explain": "Le cône s'obtient en faisant tourner un triangle rectangle autour d'un côté de l'angle droit."
     },
     {
      "type": "num",
      "q": "Combien de litres font 3 dm³ ?",
      "answer": 3,
      "tol": 0,
-     "unit": "litri",
+     "unit": "litres",
      "explain": "1 dm³ = 1 litre."
     }
    ]
   },
   {
    "type": "text",
-   "title": "4. Masse volumique : du volume à la masse",
-   "html": "<p>Chaque matériau a sa <b>masse volumique</b> (ρ) : combien de grammes pèse 1 cm³. <b>Masse = Volume × ρ</b>.</p><table><tr><th>Matériau</th><th>ρ (g/cm³)</th></tr><tr><td>Liège</td><td>0,25</td></tr><tr><td>Bois de sapin</td><td>0,5</td></tr><tr><td>Eau</td><td>1</td></tr><tr><td>Verre</td><td>2,5</td></tr><tr><td>Fer</td><td>7,8</td></tr><tr><td>Or</td><td>19,3</td></tr></table><p>Un cube de fer de 10 cm d'arête : V = 1000 cm³ → masse = 1000 × 7,8 = <b>7800 g = 7,8 kg</b>. Si ρ est inférieure à 1, l'objet <b>flotte</b> sur l'eau.</p>"
+   "title": "4. Masse volumique : du volume au poids",
+   "html": "<p>Chaque matériau a sa <b>masse volumique</b> (mv) : combien de grammes pèse 1 cm³. <b>Masse = Volume × mv</b>.</p><table><tr><th>Matériau</th><th>mv (g/cm³)</th></tr><tr><td>Liège</td><td>0,25</td></tr><tr><td>Bois de sapin</td><td>0,5</td></tr><tr><td>Eau</td><td>1</td></tr><tr><td>Verre</td><td>2,5</td></tr><tr><td>Fer</td><td>7,8</td></tr><tr><td>Or</td><td>19,3</td></tr></table><p>Un cube de fer de 10 cm d'arête : V = 1000 cm³ → masse = 1000 × 7,8 = <b>7800 g = 7,8 kg</b>. Si la mv est inférieure à 1, l'objet <b>flotte</b> sur l'eau.</p>"
   },
   {
    "type": "curiosity",
-   "title": "La fierté d'Archimède",
-   "html": "<p>Archimède de Syracuse (IIIe siècle av. J.-C.) démontra que le volume d'une sphère est exactement les <b>2/3</b> du volume du cylindre qui la contient. Il en était si fier qu'il voulut une sphère inscrite dans un cylindre sur sa tombe. Des siècles plus tard, Cicéron retrouva la tombe justement grâce à ce dessin.</p>"
+   "title": "Le prix d'Archimède",
+   "html": "<p>Archimède de Syracuse (IIIᵉ siècle av. J.-C.) démontra que le volume d'une sphère est exactement les <b>2/3</b> du volume du cylindre qui la contient. Il en était si fier qu'il voulut une sphère inscrite dans un cylindre sur sa tombe. Des siècles plus tard, Cicéron retrouva la tombe justement grâce à ce dessin.</p>"
   },
   {
    "type": "curiosity",
    "title": "Pourquoi les bulles sont-elles sphériques ?",
-   "html": "<p>Parmi tous les solides de même volume, la <b>sphère</b> est celui qui a la plus petite aire. Le film de savon « tire » pour occuper le moins de surface possible, et devient ainsi une sphère. Pour la même raison, les animaux se roulent en boule quand il fait froid : ils réduisent la surface par laquelle ils perdent de la chaleur.</p>"
+   "html": "<p>Parmi tous les solides de même volume, la <b>sphère</b> est celui qui a la plus petite surface. La pellicule de savon « tire » pour occuper la plus petite surface possible, et ainsi elle devient une sphère. Pour la même raison, les animaux se roulent en boule quand il fait froid : ils réduisent la surface par laquelle ils perdent de la chaleur.</p>"
   },
   {
    "type": "quiz",
@@ -164,7 +174,7 @@ TOPIC('fr', {
    "questions": [
     {
      "type": "num",
-     "q": "Un pavé droit a pour dimensions 4 cm, 5 cm, 10 cm. Volume ?",
+     "q": "Un parallélépipède a pour dimensions 4 cm, 5 cm, 10 cm. Volume ?",
      "answer": 200,
      "tol": 0,
      "unit": "cm³",
@@ -184,7 +194,7 @@ TOPIC('fr', {
     },
     {
      "type": "tf",
-     "q": "Dans un polyèdre on a F + S − A = 2.",
+     "q": "Dans un polyèdre, on a F + S − A = 2.",
      "answer": true,
      "explain": "C'est la relation d'Euler."
     }
@@ -192,7 +202,7 @@ TOPIC('fr', {
   },
   {
    "type": "conceptMap",
-   "title": "Carte mentale : d'où viennent les formules",
+   "title": "Carte conceptuelle : d'où viennent les formules",
    "nodes": [
     {
      "id": "unita",
@@ -201,16 +211,16 @@ TOPIC('fr', {
      "y": 6,
      "color": "#64748b",
      "html": "<p>1 cm³ est un cube de 1 cm d'arête ; 1 dm³ = 1 litre.</p>",
-     "why": "<p>Mesurer, c'est comparer avec une unité. Pour les longueurs on utilise un segment, pour les aires un petit carré, pour les volumes un petit cube. Le système métrique (France, 1795) a relié le litre au décimètre cube.</p>"
+     "why": "<p>Mesurer, c'est comparer avec une unité. Pour les longueurs, on utilise un segment, pour les aires un petit carré, pour les volumes un petit cube. Le système métrique (France, 1795) relia le litre au décimètre cube.</p>"
     },
     {
      "id": "par",
-     "label": "Pavé droit : V = a·b·c",
+     "label": "Parallélépipède : V = a·b·c",
      "x": 22,
      "y": 24,
      "color": "#2563eb",
-     "html": "<p>Des couches de cubes : a·b cubes par couche, c couches.</p>",
-     "why": "<p>C'est un simple comptage : lignes × colonnes × couches. Cela marche aussi avec des mesures non entières, en passant à des cubes de plus en plus petits.</p>"
+     "html": "<p>Des couches de petits cubes : a·b cubes par couche, c couches.</p>",
+     "why": "<p>C'est un simple comptage : lignes × colonnes × couches. Cela fonctionne aussi avec des mesures non entières en passant à des cubes de plus en plus petits.</p>"
     },
     {
      "id": "cav",
@@ -219,7 +229,7 @@ TOPIC('fr', {
      "y": 24,
      "color": "#7c3aed",
      "html": "<p>Mêmes sections à chaque hauteur → même volume.</p>",
-     "why": "<p>Cavalieri (1635) voyait le solide comme une pile de feuilles très fines (« indivisibles »). C'est une idée qui annonce le calcul intégral de Newton et Leibniz.</p>"
+     "why": "<p>Cavalieri (1635) pensait le solide comme une pile de feuilles très fines (les « indivisibles »). C'est une idée qui annonce le calcul intégral de Newton et Leibniz.</p>"
     },
     {
      "id": "prisma",
@@ -227,8 +237,8 @@ TOPIC('fr', {
      "x": 50,
      "y": 44,
      "color": "#0d9488",
-     "html": "<p>Aire de base fois hauteur.</p>",
-     "why": "<p>Tout prisme a les mêmes sections qu'un pavé droit de même aire de base : d'après Cavalieri, ils ont le même volume. Le cylindre est comme un prisme avec une infinité de côtés.</p>"
+     "html": "<p>Aire de la base fois la hauteur.</p>",
+     "why": "<p>Tout prisme a les mêmes sections qu'un parallélépipède de même aire de base : d'après Cavalieri, ils ont le même volume. Le cylindre est comme un prisme à une infinité de côtés.</p>"
     },
     {
      "id": "piramide",
@@ -245,8 +255,8 @@ TOPIC('fr', {
      "x": 78,
      "y": 66,
      "color": "#dc2626",
-     "html": "<p>Et aire A = 4πr².</p>",
-     "why": "<p>Archimède (IIIe s. av. J.-C.) démontra que la sphère a les 2/3 du volume et de l'aire du cylindre circonscrit. Il en était si fier qu'il voulut la figure sphère-cylindre sur sa tombe.</p>"
+     "html": "<p>Et surface S = 4πr².</p>",
+     "why": "<p>Archimède (IIIᵉ siècle av. J.-C.) démontra que la sphère a les 2/3 du volume et de la surface du cylindre circonscrit. Il en était si fier qu'il voulut la figure sphère-cylindre sur sa tombe.</p>"
     },
     {
      "id": "eulero",
@@ -254,8 +264,8 @@ TOPIC('fr', {
      "x": 22,
      "y": 90,
      "color": "#a855f7",
-     "html": "<p>Elle est vraie pour tout polyèdre convexe.</p>",
-     "why": "<p>Euler la publia en 1758. Si tu ajoutes un sommet en coupant un coin, les faces, les sommets et les arêtes augmentent ensemble de façon que le total reste 2 : c'est pourquoi la règle ne change jamais.</p>"
+     "html": "<p>Elle vaut pour tout polyèdre convexe.</p>",
+     "why": "<p>Euler la publia en 1758. Si tu ajoutes un sommet en coupant un coin, faces, sommets et arêtes augmentent ensemble de façon que la somme reste 2 : c'est pourquoi la règle ne change jamais.</p>"
     },
     {
      "id": "peso",
@@ -263,15 +273,15 @@ TOPIC('fr', {
      "x": 78,
      "y": 90,
      "color": "#475569",
-     "html": "<p>À partir du volume, on trouve la masse d'un objet.</p>",
-     "why": "<p>Chaque matériau a sa densité (eau 1 g/cm³, fer environ 7,8). Archimède comprit que la couronne de Hiéron n'était pas en or pur en mesurant son volume grâce à l'eau déplacée.</p>"
+     "html": "<p>À partir du volume, on obtient la masse d'un objet.</p>",
+     "why": "<p>Chaque matériau a sa densité (eau 1 g/cm³, fer environ 7,8). Archimède comprit que la couronne de Hiéron n'était pas en or pur en mesurant son volume avec l'eau déplacée.</p>"
     }
    ],
    "edges": [
     [
      "unita",
      "par",
-     "je compte les cubes"
+     "je compte les petits cubes"
     ],
     [
      "par",
@@ -301,7 +311,7 @@ TOPIC('fr', {
     [
      "prisma",
      "peso",
-     "sert à"
+     "sert pour"
     ],
     [
      "piramide",
@@ -322,15 +332,15 @@ TOPIC('fr', {
   },
   {
    "t": "Arête",
-   "d": "Segment où se rencontrent deux faces d'un polyèdre."
+   "d": "Segment dans lequel se rencontrent deux faces d'un polyèdre."
   },
   {
    "t": "Apothème",
-   "d": "Dans la pyramide, hauteur d'une face latérale ; dans le cône, segment allant du sommet au cercle de base."
+   "d": "Dans la pyramide, hauteur d'une face latérale ; dans le cône, segment du sommet à la circonférence de la base."
   },
   {
    "t": "Patron",
-   "d": "La figure plane qu'on obtient en « ouvrant » la surface d'un solide."
+   "d": "La figure plane que l'on obtient en « ouvrant » la surface d'un solide."
   },
   {
    "t": "Volume",
@@ -338,7 +348,7 @@ TOPIC('fr', {
   },
   {
    "t": "Masse volumique",
-   "d": "Masse d'une unité de volume d'un matériau (ex. g/cm³)."
+   "d": "Masse de l'unité de volume d'un matériau (par ex. g/cm³)."
   }
  ],
  "verifica": {
@@ -346,7 +356,7 @@ TOPIC('fr', {
   "questions": [
    {
     "type": "num",
-    "q": "Aire totale d'un cube d'arête 3 cm ?",
+    "q": "Surface totale d'un cube d'arête 3 cm ?",
     "answer": 54,
     "tol": 0,
     "unit": "cm²",
@@ -394,7 +404,7 @@ TOPIC('fr', {
      "πr·a"
     ],
     "answer": 1,
-    "explain": "Aire de base (πr²) fois hauteur."
+    "explain": "Aire de la base (πr²) fois la hauteur."
    },
    {
     "type": "mc",
@@ -412,7 +422,7 @@ TOPIC('fr', {
     "type": "tf",
     "q": "1 m³ correspond à 1000 litres.",
     "answer": true,
-    "explain": "1 m³ = 1000 dm³ et 1 dm³ = 1 l."
+    "explain": "1 m³ = 1000 dm³ e 1 dm³ = 1 l."
    },
    {
     "type": "num",
@@ -429,10 +439,10 @@ TOPIC('fr', {
      "supérieure à 1",
      "inférieure à 1",
      "égale à 7,8",
-     "n'importe laquelle"
+     "quelconque"
     ],
     "answer": 1,
-    "explain": "S'il est moins dense que l'eau (ρ < 1 g/cm³), il flotte."
+    "explain": "S'il est moins dense que l'eau (mv < 1 g/cm³), il flotte."
    },
    {
     "type": "text",
