@@ -11,7 +11,7 @@ LIBRARY_INDEX({
   ],
   items: [
     /* ---- pronti ---- */
-    { id: 'computer', emoji: '🖥️', shelf: 'casa', status: 'ready', year: 'p2', tags: 'pc cpu processore ram ssd scheda madre video monitor tastiera mouse informatica',
+    { id: 'computer', langs: ['en'], emoji: '🖥️', shelf: 'casa', status: 'ready', year: 'p2', tags: 'pc cpu processore ram ssd scheda madre video monitor tastiera mouse informatica',
       name: { it: 'Il computer', en: 'The computer', fr: 'L\'ordinateur', ru: 'Компьютер', ro: 'Calculatorul', de: 'Der Computer' },
       topics: ['p2-tec-computer', 'p5-tec-dati-binario', 'm3-tec-elettricita-elettronica', 'm2-tec-reti', 'p5-tec-ia-intro'] },
     { id: 'motore-scoppio', emoji: '⚙️', shelf: 'motori', status: 'ready', year: 'p5', tags: 'motore auto benzina pistone cilindro quattro tempi candela valvole',
@@ -26,7 +26,7 @@ LIBRARY_INDEX({
     { id: 'sottomarino', emoji: '🐋', shelf: 'mare', status: 'ready', year: 'p5', tags: 'sottomarino sommergibile zavorra sonar periscopio elica archimede',
       name: { it: 'Il sottomarino', en: 'The submarine', fr: 'Le sous-marin', ru: 'Подводная лодка', ro: 'Submarinul', de: 'Das U-Boot' },
       topics: ['m2-sci-forze-moto', 'p3-geo-mare-coste', 'm1-sci-materia-stati', 'p5-sci-luce-suono'] },
-    { id: 'cuore', emoji: '🫀', shelf: 'corpo', status: 'ready', year: 'p5', tags: 'cuore sangue circolazione battito atrio ventricolo valvole aorta',
+    { id: 'cuore', langs: ['en'], emoji: '🫀', shelf: 'corpo', status: 'ready', year: 'p5', tags: 'cuore sangue circolazione battito atrio ventricolo valvole aorta',
       name: { it: 'Il cuore umano', en: 'The human heart', fr: 'Le cœur humain', ru: 'Сердце человека', ro: 'Inima omului', de: 'Das menschliche Herz' },
       topics: ['m2-sci-apparato-circolatorio', 'p5-sci-corpo-umano', 'm2-sci-apparato-respiratorio', 'p1-sci-corpo'] },
 
@@ -41,13 +41,13 @@ LIBRARY_INDEX({
       name: { it: 'La lampadina', en: 'The light bulb', fr: 'L\'ampoule', ru: 'Лампочка', ro: 'Becul', de: 'Die Glühbirne' }, topics: ['m3-sci-elettricita', 'p5-sci-luce-suono', 'm3-tec-elettricita-elettronica', 'p5-sci-energia'] },
     { id: 'motore-elettrico', emoji: '🔌', shelf: 'motori', status: 'ready', year: 'm3', tags: 'magnete calamita bobina rotore statore commutatore spazzole elettromagnete corrente dinamo',
       name: { it: 'Il motore elettrico', en: 'The electric motor', fr: 'Le moteur électrique', ru: 'Электродвигатель', ro: 'Motorul electric', de: 'Der Elektromotor' }, topics: ['m3-sci-elettricita', 'm3-tec-elettricita-elettronica', 'p5-sci-energia', 'm2-tec-energia'] },
-    { id: 'bicicletta', emoji: '🚲', shelf: 'motori', status: 'ready', year: 'p3', tags: 'bici pedali catena ingranaggi corona pignone cambio freni ruote raggi leva attrito',
+    { id: 'bicicletta', langs: ['en'], emoji: '🚲', shelf: 'motori', status: 'ready', year: 'p3', tags: 'bici pedali catena ingranaggi corona pignone cambio freni ruote raggi leva attrito',
       name: { it: 'La bicicletta', en: 'The bicycle', fr: 'Le vélo', ru: 'Велосипед', ro: 'Bicicleta', de: 'Das Fahrrad' }, topics: ['m2-sci-forze-moto', 'p1-tec-oggetti', 'm1-tec-materiali', 'p5-sci-energia'] },
     { id: 'treno', emoji: '🚆', shelf: 'motori', status: 'ready', year: 'p5', tags: 'locomotiva binari alta velocita frecciarossa pantografo catenaria motore elettrico ruote rotaie ferrovia',
       name: { it: 'Il treno', en: 'The train', fr: 'Le train', ru: 'Поезд', ro: 'Trenul', de: 'Der Zug' }, topics: ['m2-sto-seconda-rivoluzione-industriale', 'm2-tec-energia', 'm3-sci-elettricita', 'm2-sci-forze-moto'] },
-    { id: 'aereo', emoji: '✈️', shelf: 'motori', status: 'ready', year: 'p5', tags: 'ali volo jet portanza spinta resistenza motore turbofan alettoni timone flap carrello',
+    { id: 'aereo', langs: ['en'], emoji: '✈️', shelf: 'motori', status: 'ready', year: 'p5', tags: 'ali volo jet portanza spinta resistenza motore turbofan alettoni timone flap carrello',
       name: { it: 'L\'aereo', en: 'The airplane', fr: 'L\'avion', ru: 'Самолёт', ro: 'Avionul', de: 'Das Flugzeug' }, topics: ['m2-sci-forze-moto', 'p3-sci-aria', 'p5-sci-energia'] },
-    { id: 'elicottero', emoji: '🚁', shelf: 'motori', status: 'ready', year: 'p5', tags: 'rotore pale volo stazionario portanza piatto oscillante rotore di coda turbina soccorso',
+    { id: 'elicottero', langs: ['en'], emoji: '🚁', shelf: 'motori', status: 'ready', year: 'p5', tags: 'rotore pale volo stazionario portanza piatto oscillante rotore di coda turbina soccorso',
       name: { it: 'L\'elicottero', en: 'The helicopter', fr: 'L\'hélicoptère', ru: 'Вертолёт', ro: 'Elicopterul', de: 'Der Hubschrauber' }, topics: ['m2-sci-forze-moto', 'p3-sci-aria'] },
     { id: 'iss', emoji: '🛸', shelf: 'spazio', status: 'ready', year: 'p5', tags: 'stazione spaziale internazionale astronauti orbita moduli pannelli solari canadarm cupola',
       name: { it: 'La Stazione Spaziale', en: 'The Space Station', fr: 'La Station spatiale', ru: 'Космическая станция', ro: 'Stația Spațială', de: 'Die Raumstation' }, topics: ['m3-sci-universo', 'p5-sci-sistema-solare', 'm2-sci-forze-moto'] },
@@ -77,7 +77,7 @@ LIBRARY_INDEX({
       name: { it: 'La pala eolica', en: 'The wind turbine', fr: 'L\'éolienne', ru: 'Ветряк', ro: 'Turbina eoliană', de: 'Das Windrad' }, topics: ['m2-tec-energia', 'p5-sci-energia', 'm3-sci-elettricita', 'p3-sci-aria'] },
     { id: 'pannello-solare', emoji: '🔆', shelf: 'energia', status: 'ready', year: 'p5', tags: 'fotovoltaico celle silicio inverter fotoni rinnovabile',
       name: { it: 'Il pannello solare', en: 'The solar panel', fr: 'Le panneau solaire', ru: 'Солнечная панель', ro: 'Panoul solar', de: 'Die Solarzelle' }, topics: ['m2-tec-energia', 'p5-sci-energia', 'm3-tec-elettricita-elettronica', 'm3-sci-elettricita'] },
-    { id: 'diga', emoji: '🏗️', shelf: 'energia', status: 'ready', year: 'm2', tags: 'idroelettrica turbina acqua lago generatore condotta forzata energia rinnovabile centrale',
+    { id: 'diga', langs: ['en'], emoji: '🏗️', shelf: 'energia', status: 'ready', year: 'm2', tags: 'idroelettrica turbina acqua lago generatore condotta forzata energia rinnovabile centrale',
       name: { it: 'La diga', en: 'The dam', fr: 'Le barrage', ru: 'Плотина', ro: 'Barajul', de: 'Der Staudamm' }, topics: ['m2-tec-energia', 'p3-geo-fiumi-laghi', 'p5-sci-energia', 'm3-sci-elettricita', 'p3-sci-ciclo-acqua'] }
   ]
 });
