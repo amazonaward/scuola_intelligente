@@ -530,7 +530,29 @@
     return { ok: best >= 0.96, score: best };
   }
 
-  W.Coding = { makeWorld, runRobot, solveRobot, countBlocks, progCount, fromShort, cond, tokenize, parseLogo, runLogo, segmentsOf, compareDrawing, COLORS, PALETTE, LogoError };
+  /* Converte il codice Logo scritto con i comandi italiani in comandi inglesi (per le lingue diverse dall'italiano).
+     Cambia solo le parole chiave: variabili (:lato), nomi di procedure, numeri e commenti restano uguali. */
+  const IT2EN = {
+    avanti: 'forward', av: 'forward', indietro: 'back', ind: 'back', destra: 'right', dx: 'right', sinistra: 'left', sx: 'left',
+    pennasu: 'penup', alzapenna: 'penup', pennagiu: 'pendown', abbassapenna: 'pendown', penna: 'pen',
+    colore: 'color', spessore: 'width', ripeti: 'repeat', metti: 'make', assegna: 'make', per: 'to', fine: 'end',
+    se: 'if', sealtrimenti: 'ifelse', altrimenti: 'else', ferma: 'stop', cancella: 'clear', pulisci: 'clear',
+    casa: 'home', centro: 'home', nascondi: 'hideturtle', mostra: 'showturtle', vai: 'setxy', vaia: 'setxy', direzione: 'setheading',
+    casuale: 'random', radice: 'sqrt', radq: 'sqrt', seno: 'sin', sen: 'sin', coseno: 'cos', arrotonda: 'round', intero: 'int',
+    assoluto: 'abs', ripetizione: 'repcount',
+    nero: 'black', bianco: 'white', rosso: 'red', verde: 'green', blu: 'blue', giallo: 'yellow', arancione: 'orange', viola: 'purple',
+    rosa: 'pink', marrone: 'brown', grigio: 'gray', azzurro: 'cyan', celeste: 'lightblue', oro: 'gold', turchese: 'teal', lilla: 'violet'
+  };
+  function toEnglish(src) {
+    return String(src).split('\n').map((ln) => {
+      const c = ln.search(/;|\/\//), body = c < 0 ? ln : ln.slice(0, c), rest = c < 0 ? '' : ln.slice(c);
+      let out = body.replace(/(^|[^:\p{L}\p{N}_"])([\p{L}_][\p{L}\p{N}_]*)/gu, (m, pre, w) => pre + (IT2EN[deacc(w)] || w));
+      out = out.replace(/\bpen(\s+)(su|gi[uù])(?![\p{L}\p{N}_])/gu, (m, sp, v) => 'pen' + sp + (v === 'su' ? 'up' : 'down'));
+      return out + rest;
+    }).join('\n');
+  }
+
+  W.Coding = { makeWorld, runRobot, solveRobot, countBlocks, progCount, fromShort, cond, tokenize, parseLogo, runLogo, segmentsOf, compareDrawing, COLORS, PALETTE, LogoError, toEnglish };
 
   /* =====================================================================
      TESTI DELL'INTERFACCIA (6 lingue)
@@ -655,7 +677,7 @@
       'cd.hub.lead': 'Apprends à programmer en jouant : guide un robot avec des blocs ou fais dessiner une tortue en écrivant du vrai code.',
       'cd.hub.rec': 'Conseillé pour toi', 'cd.hub.primaria': 'École primaire · blocs', 'cd.hub.medie': 'Collège · code Logo',
       'cd.hub.robotDesc': 'Emmène le robot sur l’étoile : séquences, boucles, conditions et fonctions en 34 niveaux.',
-      'cd.hub.turtleDesc': 'Écris des commandes comme « avanti 100 » et « ripeti 4 [ … ] » et dessine étoiles, spirales, arbres et fractales.',
+      'cd.hub.turtleDesc': 'Écris des commandes comme « forward 100 » et « repeat 4 [ … ] » et dessine étoiles, spirales, arbres et fractales.',
       'cd.levelsDone': '{n} niveaux sur {tot}', 'cd.challDone': '{n} défis sur {tot}', 'cd.play': 'Jouer', 'cd.continue': 'Continuer', 'cd.open': 'Ouvrir',
       'cd.what.title': 'C’est quoi, le codage ?', 'cd.what.seqT': 'Séquence', 'cd.what.seq': 'Un programme est une liste d’instructions exécutées l’une après l’autre, dans le bon ordre.',
       'cd.what.loopT': 'Boucle', 'cd.what.loop': 'Quand une chose se répète, on l’écrit une seule fois et on dit combien de fois la refaire.',
@@ -683,24 +705,24 @@
       'cd.challenge': 'Défi {n}', 'cd.solved': 'Réussi', 'cd.allChall': 'Tous les défis', 'cd.draw': 'Dessiner', 'cd.stop': 'Arrêter', 'cd.examples': 'Exemples', 'cd.savePng': 'Enregistrer l’image',
       'cd.ref': 'Commandes', 'cd.ref.move': 'Se déplacer', 'cd.ref.pen': 'Crayon', 'cd.ref.loop': 'Répéter et compter', 'cd.ref.proc': 'Procédures et choix',
       'cd.ref.note': 'Les commandes marchent en italien et en anglais : forward, back, right, left, penup, pendown, color, width, repeat, make "x, to … end, if, random.',
-      'cd.codeLabel': 'Code', 'cd.codePh': 'Écris ici les commandes, par exemple :\navanti 100\ndestra 90', 'cd.targetLegend': 'le dessin à faire',
+      'cd.codeLabel': 'Code', 'cd.codePh': 'Écris ici les commandes, par exemple :\nforward 100\nright 90', 'cd.targetLegend': 'le dessin à faire',
       'cd.heading': 'direction', 'cd.penDown': 'crayon baissé', 'cd.penUp': 'crayon levé', 'cd.lineN': 'Ligne {n} :',
-      'cd.need.repeat': 'utiliser ripeti', 'cd.need.to': 'utiliser per … fine', 'cd.need.make': 'utiliser une variable', 'cd.need.recursion': 'utiliser la récursion',
-      'cd.t.ready': 'Écris le code et appuie sur ▶ Dessiner (ou Ctrl+Entrée).', 'cd.t.empty': 'Écris au moins une commande, par exemple avanti 100.', 'cd.t.drawing': 'La tortue dessine…',
+      'cd.need.repeat': 'utiliser repeat', 'cd.need.to': 'utiliser to … end', 'cd.need.make': 'utiliser une variable', 'cd.need.recursion': 'utiliser la récursion',
+      'cd.t.ready': 'Écris le code et appuie sur ▶ Dessiner (ou Ctrl+Entrée).', 'cd.t.empty': 'Écris au moins une commande, par exemple forward 100.', 'cd.t.drawing': 'La tortue dessine…',
       'cd.t.doneFree': 'Fini ! Quel beau dessin.', 'cd.t.ok': 'Bravo ! Le dessin est juste.', 'cd.t.no': 'Pas encore : ton dessin ressemble à {p} % au dessin gris. Vérifie les longueurs et les angles.',
       'cd.t.needs': 'Le dessin est juste ! Mais ce défi te demande de {w}.', 'cd.t.stopped': 'Arrêté.', 'cd.msg.solutionT': 'Voici une solution. Lis-la ligne par ligne et essaie de la modifier !',
       'cd.loadErr': 'Impossible de charger les niveaux. Recharge la page.',
       'lg.err.unknown': 'je ne connais pas la commande « {w} ».', 'lg.err.unknownS': 'je ne connais pas « {w} ». Tu voulais écrire « {s} » ?',
-      'lg.err.neednum': 'après « {c} » il faut un nombre (par exemple {c} 50).', 'lg.err.nocmd': 'je ne sais pas quoi faire de « {w} ». Chaque ligne doit commencer par une commande, par exemple avanti.',
-      'lg.err.noclose': 'il manque le crochet fermant « ] ».', 'lg.err.extraclose': 'il y a un « ] » en trop.', 'lg.err.strayopen': 'un « [ » doit venir après une commande comme ripeti.',
+      'lg.err.neednum': 'après « {c} » il faut un nombre (par exemple {c} 50).', 'lg.err.nocmd': 'je ne sais pas quoi faire de « {w} ». Chaque ligne doit commencer par une commande, par exemple forward.',
+      'lg.err.noclose': 'il manque le crochet fermant « ] ».', 'lg.err.extraclose': 'il y a un « ] » en trop.', 'lg.err.strayopen': 'un « [ » doit venir après une commande comme repeat.',
       'lg.err.needblock': 'après « {c} » il faut un bloc entre crochets [ … ].', 'lg.err.paren': 'il manque la parenthèse fermante « ) ».',
-      'lg.err.novar': 'la variable :{w} n’existe pas. Crée-la d’abord avec « metti {w} … » ou vérifie l’orthographe.',
-      'lg.err.makename': 'après « metti », écris le nom de la variable puis la valeur, par exemple metti lato 50.', 'lg.err.makereserved': '« {w} » est une commande : choisis un autre nom de variable.',
-      'lg.err.pen': 'écris « penna su » ou « penna giù » (ou penup / pendown).', 'lg.err.color': 'je ne connais pas la couleur « {w} ». Essaie rosso, blu, red, blue… ou un code comme #ff8800.', 'lg.err.colorS': 'je ne connais pas la couleur « {w} ». Tu voulais « {s} » ?',
+      'lg.err.novar': 'la variable :{w} n’existe pas. Crée-la d’abord avec « make {w} … » ou vérifie l’orthographe.',
+      'lg.err.makename': 'après « make », écris le nom de la variable puis la valeur, par exemple make lato 50.', 'lg.err.makereserved': '« {w} » est une commande : choisis un autre nom de variable.',
+      'lg.err.pen': 'écris « pen up » ou « pen down » (ou penup / pendown).', 'lg.err.color': 'je ne connais pas la couleur « {w} ». Essaie red, blue, green… ou un code comme #ff8800.', 'lg.err.colorS': 'je ne connais pas la couleur « {w} ». Tu voulais « {s} » ?',
       'lg.err.hex': 'la couleur « {w} » n’est pas valide : utilise # et 3 ou 6 chiffres, par exemple #f80 ou #ff8800.',
       'lg.err.toname': 'après « per » écris le nom de la nouvelle procédure.', 'lg.err.toreserved': '« {w} » est déjà une commande : choisis un autre nom.',
       'lg.err.noend': 'la procédure « {w} » ne finit jamais : il manque « fine ».', 'lg.err.endalone': 'il y a un « fine » sans « per » avant.', 'lg.err.tonested': 'tu ne peux pas créer une procédure dans une autre : ferme d’abord avec « fine ».',
-      'lg.err.else': '« altrimenti » doit venir juste après le bloc [ … ] d’un « se ».', 'lg.err.funcalone': '« {w} » calcule un nombre : utilise-le dans une commande, par exemple avanti {w} 100.',
+      'lg.err.else': '« else » doit venir juste après le bloc [ … ] d’un « if ».', 'lg.err.funcalone': '« {w} » calcule un nombre : utilise-le dans une commande, par exemple forward {w} 100.',
       'lg.err.div0': 'on ne peut pas diviser par zéro !', 'lg.err.sqrt': 'pas de racine carrée d’un nombre négatif.', 'lg.err.big': 'ce nombre est trop grand pour la toile.',
       'lg.err.toolong': 'le dessin est trop long : une boucle ou une récursion ne s’arrête peut-être jamais ?', 'lg.err.deep': 'la procédure « {w} » s’appelle trop de fois : il faut une règle d’arrêt, par exemple se :l < 5 [stop].',
       'lg.err.negrep': 'on ne peut pas répéter un nombre négatif de fois.', 'lg.err.width': 'l’épaisseur doit être entre 0 et 60.',
@@ -888,6 +910,8 @@
   if (typeof document === 'undefined') return; // (test in Node: solo motori)
   const LANG_IDX = ['it', 'en', 'fr', 'ru', 'ro', 'de'];
   const L = (arr) => (arr ? (arr[Math.max(0, LANG_IDX.indexOf(i18n.lang))] || arr[0]) : '');
+  /* il codice Logo di esempi, soluzioni e riferimento è scritto in italiano: nelle altre lingue lo mostriamo con i comandi inglesi */
+  const LG = (code) => (i18n.lang === 'it' ? code : Coding.toEnglish(code));
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
   const rid = (n) => 'code:robot:' + n, tid = (n) => 'code:turtle:' + n;
@@ -1501,7 +1525,7 @@
     const id = free ? 'code:turtle:free' : tid(i);
     Store.visit(id);
     const draftKey = 'turtle:' + (free ? 'free' : i);
-    const startCode = getDraft(draftKey) || (free ? W.CODING_TURTLE.examples[0].code : '');
+    const startCode = getDraft(draftKey) || (free ? LG(W.CODING_TURTLE.examples[0].code) : '');
     let fails = 0, speed = +(getDraft('tspeed') || 3), lastRun = null;
     m.innerHTML = crumbs([`<a href="#/coding/tartaruga">${t('cd.turtle')}</a>`, free ? t('cd.free') : t('cd.challenge', { n: i })]) +
       `<div class="cd-lvhead cd-tu-head"><span class="cd-lvnum t">${free ? '🎨' : i}</span><div><small>${free ? t('cd.freeDesc') : (ch.need ? '⚙️ ' + ch.need.map((x) => t('cd.need.' + x)).join(', ') : t('cd.turtle'))}</small><h1>${free ? t('cd.free') : esc(L(ch.name))}</h1></div>
@@ -1525,7 +1549,7 @@
             <button class="btn btn-ghost btn-small cd-refb">📖 ${t('cd.ref')}</button>
           </div>
           <div class="cd-hint" hidden></div>
-          <div class="cd-ref" hidden>${REF.map(([k, items]) => `<div><b>${t(k)}</b>${items.map((s) => `<button type="button" class="cd-chip" data-ins="${esc(s)}">${esc(s.replace(/\n\s*\n/, ' … '))}</button>`).join('')}</div>`).join('')}
+          <div class="cd-ref" hidden>${REF.map(([k, items]) => `<div><b>${t(k)}</b>${items.map(LG).map((s) => `<button type="button" class="cd-chip" data-ins="${esc(s)}">${esc(s.replace(/\n\s*\n/, ' … '))}</button>`).join('')}</div>`).join('')}
             <p class="small muted">${t('cd.ref.note')}</p></div>
         </div>
         <div class="cd-tu-canvas"><div class="cd-canvasbox"><canvas aria-label="${t('cd.turtle')}"></canvas>${free ? '' : `<span class="cd-legend"><i></i>${t('cd.targetLegend')}</span>`}</div>
@@ -1625,11 +1649,11 @@
       insert((pre && !/\s$/.test(pre) ? '\n' : '') + s + (s.endsWith('fine') ? '\n' : ' '));
     }));
     if (free) {
-      $('.cd-ex').onchange = (e) => { const k = e.target.value; if (k === '') return; ta.value = W.CODING_TURTLE.examples[k].code; ta.dispatchEvent(new Event('input')); e.target.value = ''; draw(); };
+      $('.cd-ex').onchange = (e) => { const k = e.target.value; if (k === '') return; ta.value = LG(W.CODING_TURTLE.examples[k].code); ta.dispatchEvent(new Event('input')); e.target.value = ''; draw(); };
       $('.cd-png').onclick = () => { const a = document.createElement('a'); a.download = 'tartaruga.png'; a.href = $('canvas').toDataURL('image/png'); a.click(); };
     } else {
       $('.cd-hintb').onclick = () => { const hb = $('.cd-hint'); hb.hidden = !hb.hidden; hb.innerHTML = `💡 ${esc(L(ch.hint))}`; };
-      $('.cd-solb').onclick = () => { ta.value = ch.sol; ta.dispatchEvent(new Event('input')); setMsg(t('cd.msg.solutionT')); };
+      $('.cd-solb').onclick = () => { ta.value = LG(ch.sol); ta.dispatchEvent(new Event('input')); setMsg(t('cd.msg.solutionT')); };
     }
     gutterUpdate();
     const ro = new ResizeObserver(() => painter.resize()); ro.observe($('.cd-canvasbox'));
