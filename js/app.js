@@ -13,7 +13,8 @@
 
   /* ---------- testi nuovi dell'interfaccia (aggiunti solo se mancano nei dizionari) ---------- */
   const UI = {
-    it: { 'ui.menu': 'Menu', 'ui.close': 'Chiudi', 'ui.themeDark': 'Tema scuro', 'ui.themeLight': 'Tema chiaro', 'ui.theme': 'Tema', 'ui.toTop': 'Torna su',
+    it: { 'app.docTitle': 'Zainetto · Scuola intelligente', 'app.metaDesc': 'Impara giocando dalla 1ª elementare alla 3ª media: programma ministeriale, lezioni con 3D, spiegazioni alternative, mappe concettuali, quiz e verifiche. In italiano, inglese, francese, russo, rumeno e tedesco.', 'ui.map': 'Mappa', 'ui.quiz': 'Quiz',
+      'ui.menu': 'Menu', 'ui.close': 'Chiudi', 'ui.themeDark': 'Tema scuro', 'ui.themeLight': 'Tema chiaro', 'ui.theme': 'Tema', 'ui.toTop': 'Torna su',
       'ui.today': 'Il consiglio di oggi', 'ui.start': 'Inizia', 'ui.continueBtn': 'Continua', 'ui.streak': 'giorni di fila', 'ui.lessonsDone': 'lezioni studiate',
       'ui.medals': 'medaglie', 'ui.morning': 'Buongiorno', 'ui.afternoon': 'Buon pomeriggio', 'ui.evening': 'Buonasera', 'ui.overall': 'in tutto',
       'ui.perfect': 'Perfetto, tutte giuste!', 'ui.great': 'Bravo, ottimo lavoro!', 'ui.doneToast': 'Lezione segnata come studiata!', 'ui.allDone': 'Hai studiato tutte le lezioni della tua classe: scegline una di un altro anno!',
@@ -21,7 +22,8 @@
       'ui.minutes': 'min', 'ui.progress': 'Avanzamento',
       'badge.0': 'Primo passo', 'badge.0d': 'Studia la prima lezione', 'badge.1': 'Lettore', 'badge.1d': 'Studia 5 lezioni', 'badge.2': 'Studioso', 'badge.2d': 'Studia 15 lezioni',
       'badge.3': 'Campione', 'badge.3d': 'Supera una verifica', 'badge.4': 'Perfezione', 'badge.4d': '100% in una verifica', 'badge.5': 'Costanza', 'badge.5d': '3 giorni di studio', 'badge.6': 'Esploratore', 'badge.6d': '4 materie diverse' },
-    en: { 'ui.menu': 'Menu', 'ui.close': 'Close', 'ui.themeDark': 'Dark theme', 'ui.themeLight': 'Light theme', 'ui.theme': 'Theme', 'ui.toTop': 'Back to top',
+    en: { 'app.docTitle': 'Zainetto · Smart school', 'app.metaDesc': 'Learn by playing from Year 1 of primary to Year 3 of middle school: Italian national curriculum, 3D lessons, alternative explanations, concept maps, quizzes and tests. In Italian, English, French, Russian, Romanian and German.', 'ui.map': 'Map', 'ui.quiz': 'Quiz',
+      'ui.menu': 'Menu', 'ui.close': 'Close', 'ui.themeDark': 'Dark theme', 'ui.themeLight': 'Light theme', 'ui.theme': 'Theme', 'ui.toTop': 'Back to top',
       'ui.today': "Today's tip", 'ui.start': 'Start', 'ui.continueBtn': 'Continue', 'ui.streak': 'days in a row', 'ui.lessonsDone': 'lessons studied',
       'ui.medals': 'medals', 'ui.morning': 'Good morning', 'ui.afternoon': 'Good afternoon', 'ui.evening': 'Good evening', 'ui.overall': 'overall',
       'ui.perfect': 'Perfect, all correct!', 'ui.great': 'Well done, great job!', 'ui.doneToast': 'Lesson marked as studied!', 'ui.allDone': 'You studied every lesson for your class: pick one from another year!',
@@ -29,7 +31,8 @@
       'ui.minutes': 'min', 'ui.progress': 'Progress',
       'badge.0': 'First step', 'badge.0d': 'Study your first lesson', 'badge.1': 'Reader', 'badge.1d': 'Study 5 lessons', 'badge.2': 'Scholar', 'badge.2d': 'Study 15 lessons',
       'badge.3': 'Champion', 'badge.3d': 'Pass a test', 'badge.4': 'Perfection', 'badge.4d': '100% in a test', 'badge.5': 'Steady', 'badge.5d': '3 study days', 'badge.6': 'Explorer', 'badge.6d': '4 different subjects' },
-    fr: { 'ui.menu': 'Menu', 'ui.close': 'Fermer', 'ui.themeDark': 'Thème sombre', 'ui.themeLight': 'Thème clair', 'ui.theme': 'Thème', 'ui.toTop': 'Haut de page',
+    fr: { 'app.docTitle': 'Zainetto · L’école intelligente', 'app.metaDesc': 'Apprends en jouant du CP à la 3e média : programme officiel italien, leçons en 3D, explications alternatives, cartes mentales, quiz et contrôles. En italien, anglais, français, russe, roumain et allemand.', 'ui.map': 'Carte', 'ui.quiz': 'Quiz',
+      'ui.menu': 'Menu', 'ui.close': 'Fermer', 'ui.themeDark': 'Thème sombre', 'ui.themeLight': 'Thème clair', 'ui.theme': 'Thème', 'ui.toTop': 'Haut de page',
       'ui.today': 'La suggestion du jour', 'ui.start': 'Commencer', 'ui.continueBtn': 'Continuer', 'ui.streak': "jours d'affilée", 'ui.lessonsDone': 'leçons étudiées',
       'ui.medals': 'médailles', 'ui.morning': 'Bonjour', 'ui.afternoon': 'Bon après-midi', 'ui.evening': 'Bonsoir', 'ui.overall': 'au total',
       'ui.perfect': 'Parfait, tout est juste !', 'ui.great': 'Bravo, beau travail !', 'ui.doneToast': 'Leçon marquée comme étudiée !', 'ui.allDone': "Tu as étudié toutes les leçons de ta classe : choisis-en une d'une autre année !",
@@ -37,7 +40,8 @@
       'ui.minutes': 'min', 'ui.progress': 'Progression',
       'badge.0': 'Premier pas', 'badge.0d': 'Étudie ta première leçon', 'badge.1': 'Lecteur', 'badge.1d': 'Étudie 5 leçons', 'badge.2': 'Savant', 'badge.2d': 'Étudie 15 leçons',
       'badge.3': 'Champion', 'badge.3d': 'Réussis un contrôle', 'badge.4': 'Perfection', 'badge.4d': '100 % à un contrôle', 'badge.5': 'Régularité', 'badge.5d': "3 jours d'étude", 'badge.6': 'Explorateur', 'badge.6d': '4 matières différentes' },
-    ru: { 'ui.menu': 'Меню', 'ui.close': 'Закрыть', 'ui.themeDark': 'Тёмная тема', 'ui.themeLight': 'Светлая тема', 'ui.theme': 'Тема', 'ui.toTop': 'Наверх',
+    ru: { 'app.docTitle': 'Zainetto · Умная школа', 'app.metaDesc': 'Учись играя с 1-го класса начальной школы до 3-го класса средней: официальная итальянская программа, уроки в 3D, альтернативные объяснения, карты понятий, викторины и проверочные работы. На итальянском, английском, французском, русском, румынском и немецком.', 'ui.map': 'Карта', 'ui.quiz': 'Викторина',
+      'ui.menu': 'Меню', 'ui.close': 'Закрыть', 'ui.themeDark': 'Тёмная тема', 'ui.themeLight': 'Светлая тема', 'ui.theme': 'Тема', 'ui.toTop': 'Наверх',
       'ui.today': 'Совет дня', 'ui.start': 'Начать', 'ui.continueBtn': 'Продолжить', 'ui.streak': 'дней подряд', 'ui.lessonsDone': 'уроков изучено',
       'ui.medals': 'медалей', 'ui.morning': 'Доброе утро', 'ui.afternoon': 'Добрый день', 'ui.evening': 'Добрый вечер', 'ui.overall': 'всего',
       'ui.perfect': 'Отлично, всё верно!', 'ui.great': 'Молодец, отличная работа!', 'ui.doneToast': 'Урок отмечен как изученный!', 'ui.allDone': 'Ты изучил все уроки своего класса: выбери урок другого года!',
@@ -45,7 +49,8 @@
       'ui.minutes': 'мин', 'ui.progress': 'Прогресс',
       'badge.0': 'Первый шаг', 'badge.0d': 'Изучи первый урок', 'badge.1': 'Читатель', 'badge.1d': 'Изучи 5 уроков', 'badge.2': 'Знаток', 'badge.2d': 'Изучи 15 уроков',
       'badge.3': 'Чемпион', 'badge.3d': 'Сдай проверку', 'badge.4': 'Безупречно', 'badge.4d': '100% в проверке', 'badge.5': 'Упорство', 'badge.5d': '3 дня занятий', 'badge.6': 'Исследователь', 'badge.6d': '4 разных предмета' },
-    ro: { 'ui.menu': 'Meniu', 'ui.close': 'Închide', 'ui.themeDark': 'Temă întunecată', 'ui.themeLight': 'Temă luminoasă', 'ui.theme': 'Temă', 'ui.toTop': 'Sus',
+    ro: { 'app.docTitle': 'Zainetto · Școala inteligentă', 'app.metaDesc': 'Învață jucându-te, din clasa I primară până în clasa a III-a de gimnaziu: programa oficială italiană, lecții în 3D, explicații alternative, hărți conceptuale, chestionare și teste. În italiană, engleză, franceză, rusă, română și germană.', 'ui.map': 'Hartă', 'ui.quiz': 'Chestionar',
+      'ui.menu': 'Meniu', 'ui.close': 'Închide', 'ui.themeDark': 'Temă întunecată', 'ui.themeLight': 'Temă luminoasă', 'ui.theme': 'Temă', 'ui.toTop': 'Sus',
       'ui.today': 'Sugestia zilei', 'ui.start': 'Începe', 'ui.continueBtn': 'Continuă', 'ui.streak': 'zile la rând', 'ui.lessonsDone': 'lecții studiate',
       'ui.medals': 'medalii', 'ui.morning': 'Bună dimineața', 'ui.afternoon': 'Bună ziua', 'ui.evening': 'Bună seara', 'ui.overall': 'în total',
       'ui.perfect': 'Perfect, toate corecte!', 'ui.great': 'Bravo, foarte bine!', 'ui.doneToast': 'Lecție marcată ca studiată!', 'ui.allDone': 'Ai studiat toate lecțiile clasei tale: alege una din alt an!',
@@ -53,7 +58,8 @@
       'ui.minutes': 'min', 'ui.progress': 'Progres',
       'badge.0': 'Primul pas', 'badge.0d': 'Studiază prima lecție', 'badge.1': 'Cititor', 'badge.1d': 'Studiază 5 lecții', 'badge.2': 'Învățat', 'badge.2d': 'Studiază 15 lecții',
       'badge.3': 'Campion', 'badge.3d': 'Promovează un test', 'badge.4': 'Perfecțiune', 'badge.4d': '100% la un test', 'badge.5': 'Constanță', 'badge.5d': '3 zile de studiu', 'badge.6': 'Explorator', 'badge.6d': '4 materii diferite' },
-    de: { 'ui.menu': 'Menü', 'ui.close': 'Schließen', 'ui.themeDark': 'Dunkles Design', 'ui.themeLight': 'Helles Design', 'ui.theme': 'Design', 'ui.toTop': 'Nach oben',
+    de: { 'app.docTitle': 'Zainetto · Die schlaue Schule', 'app.metaDesc': 'Spielend lernen von der 1. Klasse Grundschule bis zur 3. Klasse Mittelschule: italienischer Lehrplan, 3D-Lektionen, alternative Erklärungen, Begriffslandkarten, Quizze und Tests. Auf Italienisch, Englisch, Französisch, Russisch, Rumänisch und Deutsch.', 'ui.map': 'Karte', 'ui.quiz': 'Quiz',
+      'ui.menu': 'Menü', 'ui.close': 'Schließen', 'ui.themeDark': 'Dunkles Design', 'ui.themeLight': 'Helles Design', 'ui.theme': 'Design', 'ui.toTop': 'Nach oben',
       'ui.today': 'Der Tipp des Tages', 'ui.start': 'Los geht’s', 'ui.continueBtn': 'Weiter', 'ui.streak': 'Tage am Stück', 'ui.lessonsDone': 'Lektionen gelernt',
       'ui.medals': 'Medaillen', 'ui.morning': 'Guten Morgen', 'ui.afternoon': 'Guten Tag', 'ui.evening': 'Guten Abend', 'ui.overall': 'insgesamt',
       'ui.perfect': 'Perfekt, alles richtig!', 'ui.great': 'Super, toll gemacht!', 'ui.doneToast': 'Lektion als gelernt markiert!', 'ui.allDone': 'Du hast alle Lektionen deiner Klasse gelernt: Such dir eine aus einer anderen Klasse aus!',
@@ -217,6 +223,7 @@
   function renderChrome() {
     buildChrome();
     const p = Store.current();
+    document.title = t('app.docTitle'); const md = $('meta[name="description"]'); if (md) md.content = t('app.metaDesc');
     $('#tagline').textContent = t('app.tagline');
     $('#nav').innerHTML = NAV.filter((n) => n.top).map((n) => navLink(n, 'nv')).join('');
     const dn = $('.dr-nav'); if (dn) dn.innerHTML = NAV.map((n) => navLink(n, 'dv')).join('');
@@ -578,7 +585,7 @@
       data.sections.forEach((s, i) => {
         const sec = renderSection(s, id, i);
         sec.id = 'sec-' + i; m.appendChild(sec);
-        const label = s.title || (s.type === 'quiz' ? '✏️ Quiz' : s.type === 'curiosity' ? '💡' : s.type === 'example' ? '🧩' : null);
+        const label = s.title || (s.type === 'quiz' ? '✏️ ' + t('ui.quiz') : s.type === 'curiosity' ? '💡' : s.type === 'example' ? '🧩' : null);
         if (label) { const a = el('a', 'chip', esc(label)); a.href = '#sec-' + i; a.onclick = (e) => { e.preventDefault(); sec.scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth' }); }; row.appendChild(a); items.push({ sec, chip: a }); }
       });
       if (data.glossary && data.glossary.length) {
@@ -638,7 +645,7 @@
       case '3d': { box.innerHTML = h('🧊'); const w = el('div', 'scene3d'); box.appendChild(w); lazy(w, () => Mini3D.mount(w, s.scene, s.options)); if (s.caption) box.appendChild(el('p', 'caption', s.caption)); break; }
       case 'widget': { box.innerHTML = h('🎮'); const w = el('div', 'widget'); box.appendChild(w); lazy(w, () => Widgets.mount(w, s.widget, s.options)); if (s.caption) box.appendChild(el('p', 'caption', s.caption)); break; }
       case 'video': box.innerHTML = h('🎬') + `<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(s.youtube)}" title="${esc(s.title || 'video')}" allowfullscreen loading="lazy"></iframe></div>` + (s.caption ? `<p class="caption">${s.caption}</p>` : ''); break;
-      case 'quiz': box.innerHTML = h('✏️') || `<h2><span class="h-ic" aria-hidden="true">✏️</span> Quiz</h2>`; box.appendChild(Quiz.render(s.questions, { onDone: (ok, n) => { Store.quizResult(topicId, 'q' + idx, ok, n); celebrate(ok, n); } })); break;
+      case 'quiz': box.innerHTML = h('✏️') || `<h2><span class="h-ic" aria-hidden="true">✏️</span> ${t('ui.quiz')}</h2>`; box.appendChild(Quiz.render(s.questions, { onDone: (ok, n) => { Store.quizResult(topicId, 'q' + idx, ok, n); celebrate(ok, n); } })); break;
       case 'alternatives': renderAlternatives(box, s); break;
       case 'conceptMap': renderConceptMap(box, s); break;
       case 'decision': renderDecision(box, s); break;
@@ -671,7 +678,7 @@
 
   function renderConceptMap(box, s) {
     box.classList.add('cmap-sec');
-    box.innerHTML = `<h2><span class="h-ic" aria-hidden="true">🗺️</span> ${s.title || 'Mappa'}</h2><p class="muted">👆 ${t('map.tap')}</p>`;
+    box.innerHTML = `<h2><span class="h-ic" aria-hidden="true">🗺️</span> ${s.title || t('ui.map')}</h2><p class="muted">👆 ${t('map.tap')}</p>`;
     const wrap = el('div', 'cmap'); const detail = el('div', 'cmap-detail'); detail.setAttribute('aria-live', 'polite');
     box.append(wrap, detail);
     const nodes = s.nodes || [], byId = Object.fromEntries(nodes.map((n) => [n.id, n]));

@@ -37,6 +37,7 @@
       tap: 'Tocca un oggetto', hint: 'Trascina · zoom con rotella o due dita · tocca', full: 'Schermo intero', reset: 'Ricomincia', objects: '{n} oggetti',
       daylight: 'Il Sole è alto: la sua luce nasconde le stelle. Togli "Luce del giorno" per vederle comunque.', sunSet: 'Il Sole è sotto l\'orizzonte.',
       ly: 'anni luce', ly1: 'anno luce', au: 'UA', km: 'km', times: 'volte il Sole', sunLike: 'come il Sole', yrs: 'anni', days: 'giorni', hours: 'ore', min: 'minuti', sec: 'secondi',
+      'sd.earth': 'La Terra, la nostra casa: 12.742 km di diametro. La Luna le gira intorno a circa 384.400 km.', 'sd.solar': 'Il Sole e gli otto pianeti. La luce del Sole impiega circa 4 ore per arrivare fino a Nettuno.', 'sd.oort': 'Oltre i pianeti, miliardi di comete ghiacciate formano la Nube di Oort, che arriva forse fino a 1,5 anni luce dal Sole.', 'sd.stars': 'Le stelle più vicine. Proxima Centauri è a 4,24 anni luce: la sua luce impiega più di 4 anni per arrivare.', 'sd.mw': 'La Via Lattea: tra 100 e 400 miliardi di stelle in un disco largo circa 100.000 anni luce. Il Sole è in un braccio laterale.', 'sd.lg': 'Il Gruppo Locale: Via Lattea, Andromeda, Triangolo e decine di galassie nane, in circa 10 milioni di anni luce.', 'sd.uni': 'L\'Universo osservabile: una sfera di circa 93 miliardi di anni luce di diametro, con miliardi di galassie disposte in una rete cosmica.',
       'st.earth': 'Terra', 'st.solar': 'Sistema Solare', 'st.oort': 'Nube di Oort', 'st.stars': 'Stelle vicine', 'st.mw': 'Via Lattea', 'st.lg': 'Gruppo Locale', 'st.uni': 'Universo osservabile',
       card: 'N', cardE: 'E', cardS: 'S', cardW: 'O', posFrom: 'Punto di vista', nearSun: 'il Sole', moonPhase: 'Luna', planets: 'Pianeti', notVisible: 'Da qui non si vede',
       dayN: 'Giorno', nightN: 'Notte', twilight: 'Crepuscolo', viewOf: 'Vista', moons: 'Lune', note: 'Nota', vis: 'Visibile', trail: 'Scie',
@@ -63,6 +64,7 @@
       tap: 'Tap an object', hint: 'Drag · zoom with wheel or pinch · tap', full: 'Full screen', reset: 'Restart', objects: '{n} objects',
       daylight: 'The Sun is up: its light hides the stars. Switch off "Daylight" to see them anyway.', sunSet: 'The Sun is below the horizon.',
       ly: 'light years', ly1: 'light year', au: 'AU', km: 'km', times: 'times the Sun', sunLike: 'like the Sun', yrs: 'years', days: 'days', hours: 'hours', min: 'minutes', sec: 'seconds',
+      'sd.earth': 'Earth, our home: 12,742 km across. The Moon orbits it at about 384,400 km.', 'sd.solar': 'The Sun and the eight planets. Sunlight takes about 4 hours to reach Neptune.', 'sd.oort': 'Beyond the planets, billions of icy comets form the Oort Cloud, which may reach out to 1.5 light years from the Sun.', 'sd.stars': 'The nearest stars. Proxima Centauri is 4.24 light years away: its light takes more than 4 years to get here.', 'sd.mw': 'The Milky Way: 100 to 400 billion stars in a disc about 100,000 light years wide. The Sun is in a minor spiral arm.', 'sd.lg': 'The Local Group: the Milky Way, Andromeda, Triangulum and dozens of dwarf galaxies, spread over about 10 million light years.', 'sd.uni': 'The observable Universe: a sphere about 93 billion light years across, with billions of galaxies arranged in a cosmic web.',
       'st.earth': 'Earth', 'st.solar': 'Solar System', 'st.oort': 'Oort Cloud', 'st.stars': 'Nearby stars', 'st.mw': 'Milky Way', 'st.lg': 'Local Group', 'st.uni': 'Observable Universe',
       card: 'N', cardE: 'E', cardS: 'S', cardW: 'W', posFrom: 'Viewpoint', nearSun: 'the Sun', moonPhase: 'Moon', planets: 'Planets', notVisible: 'Not visible from here',
       dayN: 'Day', nightN: 'Night', twilight: 'Twilight', viewOf: 'View', moons: 'Moons', note: 'Note', vis: 'Visible', trail: 'Trails',
@@ -89,6 +91,7 @@
       tap: 'Touche un objet', hint: 'Glisse · zoom molette ou deux doigts · touche', full: 'Plein écran', reset: 'Recommencer', objects: '{n} objets',
       daylight: 'Le Soleil est levé : sa lumière cache les étoiles. Désactive « Lumière du jour » pour les voir.', sunSet: 'Le Soleil est sous l\'horizon.',
       ly: 'années-lumière', ly1: 'année-lumière', au: 'UA', km: 'km', times: 'fois le Soleil', sunLike: 'comme le Soleil', yrs: 'ans', days: 'jours', hours: 'heures', min: 'minutes', sec: 'secondes',
+      'sd.earth': 'La Terre, notre maison : 12 742 km de diamètre. La Lune tourne autour d\'elle à environ 384 400 km.', 'sd.solar': 'Le Soleil et les huit planètes. La lumière du Soleil met environ 4 heures pour atteindre Neptune.', 'sd.oort': 'Au-delà des planètes, des milliards de comètes glacées forment le nuage d\'Oort, qui s\'étend peut-être jusqu\'à 1,5 année-lumière du Soleil.', 'sd.stars': 'Les étoiles les plus proches. Proxima du Centaure est à 4,24 années-lumière : sa lumière met plus de 4 ans à nous parvenir.', 'sd.mw': 'La Voie lactée : entre 100 et 400 milliards d\'étoiles dans un disque large d\'environ 100 000 années-lumière. Le Soleil est dans un bras secondaire.', 'sd.lg': 'Le Groupe local : la Voie lactée, Andromède, le Triangle et des dizaines de galaxies naines, sur environ 10 millions d\'années-lumière.', 'sd.uni': 'L\'Univers observable : une sphère d\'environ 93 milliards d\'années-lumière de diamètre, avec des milliards de galaxies disposées en toile cosmique.',
       'st.earth': 'Terre', 'st.solar': 'Système solaire', 'st.oort': 'Nuage d\'Oort', 'st.stars': 'Étoiles proches', 'st.mw': 'Voie lactée', 'st.lg': 'Groupe local', 'st.uni': 'Univers observable',
       card: 'N', cardE: 'E', cardS: 'S', cardW: 'O', posFrom: 'Point de vue', nearSun: 'le Soleil', moonPhase: 'Lune', planets: 'Planètes', notVisible: 'Pas visible d\'ici',
       dayN: 'Jour', nightN: 'Nuit', twilight: 'Crépuscule', viewOf: 'Vue', moons: 'Lunes', note: 'Note', vis: 'Visible', trail: 'Traînées',
@@ -115,6 +118,7 @@
       tap: 'Нажми на объект', hint: 'Тяни · масштаб колёсиком или пальцами · нажми', full: 'Во весь экран', reset: 'Сначала', objects: '{n} объектов',
       daylight: 'Солнце над горизонтом: его свет скрывает звёзды. Выключи «Дневной свет», чтобы их увидеть.', sunSet: 'Солнце под горизонтом.',
       ly: 'световых лет', ly1: 'световой год', au: 'а. е.', km: 'км', times: 'Солнц', sunLike: 'как Солнце', yrs: 'лет', days: 'дней', hours: 'часов', min: 'минут', sec: 'секунд',
+      'sd.earth': 'Земля, наш дом: 12 742 км в диаметре. Луна обращается вокруг неё на расстоянии около 384 400 км.', 'sd.solar': 'Солнце и восемь планет. Свету Солнца нужно около 4 часов, чтобы дойти до Нептуна.', 'sd.oort': 'За планетами миллиарды ледяных комет образуют облако Оорта, которое, возможно, простирается до 1,5 светового года от Солнца.', 'sd.stars': 'Ближайшие звёзды. Проксима Центавра находится в 4,24 светового года: её свету нужно больше 4 лет, чтобы добраться до нас.', 'sd.mw': 'Млечный Путь: от 100 до 400 миллиардов звёзд в диске шириной около 100 000 световых лет. Солнце находится в боковом рукаве.', 'sd.lg': 'Местная группа: Млечный Путь, Андромеда, Треугольник и десятки карликовых галактик на пространстве около 10 миллионов световых лет.', 'sd.uni': 'Наблюдаемая Вселенная: шар диаметром около 93 миллиардов световых лет, в котором миллиарды галактик образуют космическую паутину.',
       'st.earth': 'Земля', 'st.solar': 'Солнечная система', 'st.oort': 'Облако Оорта', 'st.stars': 'Ближние звёзды', 'st.mw': 'Млечный Путь', 'st.lg': 'Местная группа', 'st.uni': 'Наблюдаемая Вселенная',
       card: 'С', cardE: 'В', cardS: 'Ю', cardW: 'З', posFrom: 'Точка обзора', nearSun: 'Солнце', moonPhase: 'Луна', planets: 'Планеты', notVisible: 'Отсюда не видно',
       dayN: 'День', nightN: 'Ночь', twilight: 'Сумерки', viewOf: 'Вид', moons: 'Спутники', note: 'Примечание', vis: 'Видно', trail: 'Следы',
@@ -141,6 +145,7 @@
       tap: 'Atinge un obiect', hint: 'Trage · zoom cu rotița sau degetele · atinge', full: 'Ecran complet', reset: 'De la capăt', objects: '{n} obiecte',
       daylight: 'Soarele este sus: lumina lui ascunde stelele. Oprește „Lumina zilei” ca să le vezi oricum.', sunSet: 'Soarele este sub orizont.',
       ly: 'ani-lumină', ly1: 'an-lumină', au: 'UA', km: 'km', times: 'ori Soarele', sunLike: 'ca Soarele', yrs: 'ani', days: 'zile', hours: 'ore', min: 'minute', sec: 'secunde',
+      'sd.earth': 'Pământul, casa noastră: 12.742 km în diametru. Luna se rotește în jurul lui la aproximativ 384.400 km.', 'sd.solar': 'Soarele și cele opt planete. Lumina Soarelui are nevoie de aproximativ 4 ore ca să ajungă la Neptun.', 'sd.oort': 'Dincolo de planete, miliarde de comete înghețate formează Norul lui Oort, care poate ajunge până la 1,5 ani-lumină de Soare.', 'sd.stars': 'Cele mai apropiate stele. Proxima Centauri se află la 4,24 ani-lumină: lumina ei are nevoie de peste 4 ani ca să ajungă la noi.', 'sd.mw': 'Calea Lactee: între 100 și 400 de miliarde de stele într-un disc lat de aproximativ 100.000 de ani-lumină. Soarele se află într-un braț lateral.', 'sd.lg': 'Grupul Local: Calea Lactee, Andromeda, Triunghiul și zeci de galaxii pitice, pe o întindere de circa 10 milioane de ani-lumină.', 'sd.uni': 'Universul observabil: o sferă cu un diametru de aproximativ 93 de miliarde de ani-lumină, cu miliarde de galaxii așezate într-o rețea cosmică.',
       'st.earth': 'Pământ', 'st.solar': 'Sistemul Solar', 'st.oort': 'Norul lui Oort', 'st.stars': 'Stele apropiate', 'st.mw': 'Calea Lactee', 'st.lg': 'Grupul Local', 'st.uni': 'Universul observabil',
       card: 'N', cardE: 'E', cardS: 'S', cardW: 'V', posFrom: 'Punct de vedere', nearSun: 'Soarele', moonPhase: 'Luna', planets: 'Planete', notVisible: 'Nu se vede de aici',
       dayN: 'Zi', nightN: 'Noapte', twilight: 'Amurg', viewOf: 'Vedere', moons: 'Sateliți', note: 'Notă', vis: 'Vizibil', trail: 'Urme',
@@ -167,6 +172,7 @@
       tap: 'Tippe auf ein Objekt', hint: 'Ziehen · zoomen mit Mausrad oder zwei Fingern · tippen', full: 'Vollbild', reset: 'Neu beginnen', objects: '{n} Objekte',
       daylight: 'Die Sonne steht hoch: Ihr Licht verdeckt die Sterne. Schalte „Tageslicht“ aus, um sie trotzdem zu sehen.', sunSet: 'Die Sonne ist unter dem Horizont.',
       ly: 'Lichtjahre', ly1: 'Lichtjahr', au: 'AE', km: 'km', times: 'mal die Sonne', sunLike: 'wie die Sonne', yrs: 'Jahre', days: 'Tage', hours: 'Stunden', min: 'Minuten', sec: 'Sekunden',
+      'sd.earth': 'Die Erde, unser Zuhause: 12.742 km Durchmesser. Der Mond umkreist sie in etwa 384.400 km Entfernung.', 'sd.solar': 'Die Sonne und die acht Planeten. Das Sonnenlicht braucht etwa 4 Stunden bis zum Neptun.', 'sd.oort': 'Hinter den Planeten bilden Milliarden eisiger Kometen die Oortsche Wolke, die vielleicht bis zu 1,5 Lichtjahre von der Sonne reicht.', 'sd.stars': 'Die nächsten Sterne. Proxima Centauri ist 4,24 Lichtjahre entfernt: Ihr Licht braucht mehr als 4 Jahre bis zu uns.', 'sd.mw': 'Die Milchstraße: 100 bis 400 Milliarden Sterne in einer Scheibe von etwa 100.000 Lichtjahren Durchmesser. Die Sonne liegt in einem Seitenarm.', 'sd.lg': 'Die Lokale Gruppe: Milchstraße, Andromeda, Dreiecksnebel und Dutzende Zwerggalaxien auf etwa 10 Millionen Lichtjahren.', 'sd.uni': 'Das beobachtbare Universum: eine Kugel von etwa 93 Milliarden Lichtjahren Durchmesser mit Milliarden von Galaxien, die ein kosmisches Netz bilden.',
       'st.earth': 'Erde', 'st.solar': 'Sonnensystem', 'st.oort': 'Oortsche Wolke', 'st.stars': 'Nahe Sterne', 'st.mw': 'Milchstraße', 'st.lg': 'Lokale Gruppe', 'st.uni': 'Beobachtbares Universum',
       card: 'N', cardE: 'O', cardS: 'S', cardW: 'W', posFrom: 'Standpunkt', nearSun: 'die Sonne', moonPhase: 'Mond', planets: 'Planeten', notVisible: 'Von hier nicht sichtbar',
       dayN: 'Tag', nightN: 'Nacht', twilight: 'Dämmerung', viewOf: 'Ansicht', moons: 'Monde', note: 'Hinweis', vis: 'Sichtbar', trail: 'Spuren',
@@ -550,12 +556,12 @@
 
   /* testi extra */
   const STR2 = {
-    it: { ps1: '1 giorno al secondo', psN: '{n} giorni al secondo', psH: '1 ora al secondo', psM: '{n} minuti al secondo', focus: 'Centra', zoomIn: 'Avvicina', zoomOut: 'Allontana' },
-    en: { ps1: '1 day per second', psN: '{n} days per second', psH: '1 hour per second', psM: '{n} minutes per second', focus: 'Centre on', zoomIn: 'Zoom in', zoomOut: 'Zoom out' },
-    fr: { ps1: '1 jour par seconde', psN: '{n} jours par seconde', psH: '1 heure par seconde', psM: '{n} minutes par seconde', focus: 'Centrer', zoomIn: 'Rapprocher', zoomOut: 'Éloigner' },
-    ru: { ps1: '1 день в секунду', psN: '{n} дн. в секунду', psH: '1 час в секунду', psM: '{n} мин. в секунду', focus: 'Центр', zoomIn: 'Ближе', zoomOut: 'Дальше' },
-    ro: { ps1: '1 zi pe secundă', psN: '{n} zile pe secundă', psH: '1 oră pe secundă', psM: '{n} minute pe secundă', focus: 'Centrează', zoomIn: 'Apropie', zoomOut: 'Depărtează' },
-    de: { ps1: '1 Tag pro Sekunde', psN: '{n} Tage pro Sekunde', psH: '1 Stunde pro Sekunde', psM: '{n} Minuten pro Sekunde', focus: 'Zentrieren', zoomIn: 'Heranzoomen', zoomOut: 'Herauszoomen' }
+    it: { orbEa2: 'orbita della Terra', orbMa2: 'orbita di Marte', refTM: 'Torino ↔ Milano', refMe: '⌀ orbita di Mercurio', refEa: '⌀ orbita della Terra', refNe: '⌀ orbita di Nettuno', evHor: '⌀ orizzonte degli eventi', ps1: '1 giorno al secondo', psN: '{n} giorni al secondo', psH: '1 ora al secondo', psM: '{n} minuti al secondo', focus: 'Centra', zoomIn: 'Avvicina', zoomOut: 'Allontana' },
+    en: { orbEa2: 'Earth\'s orbit', orbMa2: 'Mars\'s orbit', refTM: 'Turin ↔ Milan', refMe: '⌀ of Mercury\'s orbit', refEa: '⌀ of Earth\'s orbit', refNe: '⌀ of Neptune\'s orbit', evHor: '⌀ event horizon', ps1: '1 day per second', psN: '{n} days per second', psH: '1 hour per second', psM: '{n} minutes per second', focus: 'Centre on', zoomIn: 'Zoom in', zoomOut: 'Zoom out' },
+    fr: { orbEa2: 'orbite de la Terre', orbMa2: 'orbite de Mars', refTM: 'Turin ↔ Milan', refMe: '⌀ de l\'orbite de Mercure', refEa: '⌀ de l\'orbite de la Terre', refNe: '⌀ de l\'orbite de Neptune', evHor: '⌀ de l\'horizon des événements', ps1: '1 jour par seconde', psN: '{n} jours par seconde', psH: '1 heure par seconde', psM: '{n} minutes par seconde', focus: 'Centrer', zoomIn: 'Rapprocher', zoomOut: 'Éloigner' },
+    ru: { orbEa2: 'орбита Земли', orbMa2: 'орбита Марса', refTM: 'Турин ↔ Милан', refMe: '⌀ орбиты Меркурия', refEa: '⌀ орбиты Земли', refNe: '⌀ орбиты Нептуна', evHor: '⌀ горизонта событий', ps1: '1 день в секунду', psN: '{n} дн. в секунду', psH: '1 час в секунду', psM: '{n} мин. в секунду', focus: 'Центр', zoomIn: 'Ближе', zoomOut: 'Дальше' },
+    ro: { orbEa2: 'orbita Pământului', orbMa2: 'orbita lui Marte', refTM: 'Torino ↔ Milano', refMe: '⌀ orbitei lui Mercur', refEa: '⌀ orbitei Pământului', refNe: '⌀ orbitei lui Neptun', evHor: '⌀ orizontului evenimentelor', ps1: '1 zi pe secundă', psN: '{n} zile pe secundă', psH: '1 oră pe secundă', psM: '{n} minute pe secundă', focus: 'Centrează', zoomIn: 'Apropie', zoomOut: 'Depărtează' },
+    de: { orbEa2: 'Erdbahn', orbMa2: 'Marsbahn', refTM: 'Turin ↔ Mailand', refMe: '⌀ der Merkurbahn', refEa: '⌀ der Erdbahn', refNe: '⌀ der Neptunbahn', evHor: '⌀ Ereignishorizont', ps1: '1 Tag pro Sekunde', psN: '{n} Tage pro Sekunde', psH: '1 Stunde pro Sekunde', psM: '{n} Minuten pro Sekunde', focus: 'Zentrieren', zoomIn: 'Heranzoomen', zoomOut: 'Herauszoomen' }
   };
   for (const l in STR2) for (const k in STR2[l]) I18N[l]['sp.' + k] = STR2[l][k];
   const perSec = (d) => (d < 1 / 24 + 1e-9 ? (d * 1440 < 59 ? tr('psM', { n: fmt(d * 1440, 0) }) : tr('psH')) : d === 1 ? tr('ps1') : tr('psN', { n: fmt(d, 0) }));
@@ -1026,11 +1032,11 @@
     ['grande-nube', 'Grande Nube di Magellano', 280.47, -32.89, 1.6e5, 32000, [80.89, -69.76, 35, 170]],
     ['piccola-nube', 'Piccola Nube di Magellano', 302.80, -44.30, 2.0e5, 19000, null],
     [null, 'M32', 121.15, -21.98, 2.49e6, 6500, null], [null, 'M110', 120.72, -21.14, 2.69e6, 17000, null],
-    [null, 'Nana del Sagittario', 5.6, -14.2, 7.0e4, 10000, null], [null, 'NGC 6822', 25.34, -18.40, 1.6e6, 7000, null],
+    [null, ['Nana del Sagittario', 'Sagittarius Dwarf', 'Naine du Sagittaire', 'Карлик в Стрельце', 'Pitica din Săgetător', 'Sagittarius-Zwerggalaxie'], 5.6, -14.2, 7.0e4, 10000, null], [null, 'NGC 6822', 25.34, -18.40, 1.6e6, 7000, null],
     [null, 'IC 10', 118.97, -3.33, 2.2e6, 5000, null], [null, 'IC 1613', 129.73, -60.58, 2.38e6, 12000, null],
-    [null, 'WLM', 75.86, -73.62, 3.04e6, 8000, null], [null, 'Leo I', 225.99, 49.11, 8.2e5, 2000, null], [null, 'Leo II', 220.17, 67.23, 6.9e5, 2000, null],
-    [null, 'Fornace', 237.10, -65.65, 4.6e5, 4000, null], [null, 'Scultore', 287.53, -83.16, 2.9e5, 3000, null], [null, 'Draco', 86.37, 34.72, 2.6e5, 2000, null],
-    [null, 'Orsa Minore (nana)', 104.97, 44.80, 2.25e5, 1000, null], [null, 'Carena (nana)', 260.11, -22.22, 3.3e5, 1500, null], [null, 'Sestante', 243.50, 42.27, 2.9e5, 3000, null],
+    [null, 'WLM', 75.86, -73.62, 3.04e6, 8000, null], [null, ['Leo I', 'Leo I', 'Lion I', 'Лев I', 'Leo I', 'Leo I'], 225.99, 49.11, 8.2e5, 2000, null], [null, ['Leo II', 'Leo II', 'Lion II', 'Лев II', 'Leo II', 'Leo II'], 220.17, 67.23, 6.9e5, 2000, null],
+    [null, ['Fornace', 'Fornax Dwarf', 'Naine du Fourneau', 'Карлик в Печи', 'Pitica din Cuptor', 'Fornax-Zwerggalaxie'], 237.10, -65.65, 4.6e5, 4000, null], [null, ['Scultore', 'Sculptor Dwarf', 'Naine du Sculpteur', 'Карлик в Скульпторе', 'Pitica din Sculptor', 'Sculptor-Zwerggalaxie'], 287.53, -83.16, 2.9e5, 3000, null], [null, ['Draco', 'Draco Dwarf', 'Naine du Dragon', 'Карлик в Драконе', 'Pitica din Dragon', 'Draco-Zwerggalaxie'], 86.37, 34.72, 2.6e5, 2000, null],
+    [null, ['Orsa Minore (nana)', 'Ursa Minor Dwarf', 'Naine de la Petite Ourse', 'Карлик в Малой Медведице', 'Pitica din Ursa Mică', 'Ursa-Minor-Zwerggalaxie'], 104.97, 44.80, 2.25e5, 1000, null], [null, ['Carena (nana)', 'Carina Dwarf', 'Naine de la Carène', 'Карлик в Киле', 'Pitica din Carena', 'Carina-Zwerggalaxie'], 260.11, -22.22, 3.3e5, 1500, null], [null, ['Sestante', 'Sextans Dwarf', 'Naine du Sextant', 'Карлик в Секстанте', 'Pitica din Sextant', 'Sextans-Zwerggalaxie'], 243.50, 42.27, 2.9e5, 3000, null],
     [null, 'NGC 185', 120.79, -14.48, 2.08e6, 8000, null], [null, 'NGC 147', 119.82, -14.25, 2.53e6, 10000, null]
   ].map(([obj, name, l, b, d, D, ori]) => ({ obj, name, pos: galLB(l, b, d), D, ori }));
   const STAGES = [
@@ -1136,7 +1142,7 @@
           const q = cam.p(g.pos); if (!q) continue; const px = cam.px(g.D / 2, q[2]);
           if (g.parts && px > 6) for (const p of g.parts) { const qq = cam.p(p.p); if (qq) { ctx.fillStyle = rgbStr(p.c, p.a * la * 0.6); ctx.fillRect(qq[0], qq[1], 1.2, 1.2); } }
           glow(ctx, q[0], q[1], Math.max(4, px * 0.9), g.parts ? [230, 220, 255] : [200, 210, 255], (g.parts ? 0.5 : 0.35) * la);
-          drawn.push({ name: g.obj && BY[g.obj] ? objName(BY[g.obj]) : g.name, obj: g.obj, x: q[0], y: q[1], r: Math.max(5, px * 0.6), dist: V.len(g.pos), D: g.D, lbl: la, big: !!g.obj, go: g.D * 3 });
+          drawn.push({ name: g.obj && BY[g.obj] ? objName(BY[g.obj]) : Array.isArray(g.name) ? g.name[LI()] : g.name, obj: g.obj, x: q[0], y: q[1], r: Math.max(5, px * 0.6), dist: V.len(g.pos), D: g.D, lbl: la, big: !!g.obj, go: g.D * 3 });
         }
         // ammassi e superammassi
         const ca = smooth(6.8, 7.6, L) * (1 - smooth(10, 10.6, L));
@@ -1211,7 +1217,7 @@
         // HUD
         let cur = 0; STAGES.forEach((s, i) => { if (L >= Math.log10(s[1]) - 0.9) cur = i; });
         sbtn.forEach((b, i) => b.classList.toggle('on', i === cur));
-        v.hud.innerHTML = `<b>${tr('st.' + STAGES[cur][0])}</b><small>${STAGES[cur][2]}</small>`;
+        v.hud.innerHTML = `<b>${tr('st.' + STAGES[cur][0])}</b><small>${tr('sd.' + STAGES[cur][0])}</small>`;
         scaleBar(v, cam.worldPerPx(), 1);
       };
     }
@@ -1824,20 +1830,20 @@
       items = items.map(([id, r, c]) => ({ n: nm(id, id), v: r, c, lab: fmt(r * 2, 0) + ' ' + tr('km') }));
     } else if (o.rs) {
       items = [{ n: objName(o), v: o.rs, c: objColor(o), lab: '≈ ' + fmt(o.rs, o.rs < 10 ? 2 : 0) + ' × ☀️' }, { n: nm('sole', 'Sole'), v: 1, c: '#fbbf24', lab: '1 × ☀️' }];
-      if (o.rs < 0.3) items.push({ n: nm('giove', 'Giove'), v: 0.1005, c: '#d8a878', lab: '0,1 × ☀️' });
+      if (o.rs < 0.3) items.push({ n: nm('giove', 'Giove'), v: 0.1005, c: '#d8a878', lab: fmt(0.1, 1) + ' × ☀️' });
       if (o.rs > 100) extra = 'orbits';
     } else if (o.cat === 'galaxy') {
       items = [{ n: objName(o), v: o.dly, c: '#c7d2fe', lab: big(o.dly) + ' ' + tr('ly') }];
-      if (o.id !== 'via-lattea') items.push({ n: nm('via-lattea', 'Via Lattea'), v: 100000, c: '#e0e7ff', lab: '100.000 ' + tr('ly') }); else items.push({ n: 'Sistema Solare', v: 0.0016, c: '#fbbf24', lab: '≈ 0,002 ' + tr('ly') });
+      if (o.id !== 'via-lattea') items.push({ n: nm('via-lattea', 'Via Lattea'), v: 100000, c: '#e0e7ff', lab: big(100000) + ' ' + tr('ly') }); else items.push({ n: tr('st.solar'), v: 0.0016, c: '#fbbf24', lab: '≈ ' + fmt(0.002, 3) + ' ' + tr('ly') });
     } else if (o.cat === 'nebula') {
-      mode = 'bar'; items = [{ n: objName(o), v: o.dly, c: '#f0abfc', lab: fmt(o.dly, o.dly < 10 ? 1 : 0) + ' ' + tr('ly') }, { n: nm('sole', 'Sole') + ' → ' + nm('proxima', 'Proxima'), v: 4.24, c: '#fde68a', lab: '4,24 ' + tr('ly') }];
+      mode = 'bar'; items = [{ n: objName(o), v: o.dly, c: '#f0abfc', lab: fmt(o.dly, o.dly < 10 ? 1 : 0) + ' ' + tr('ly') }, { n: nm('sole', 'Sole') + ' → ' + nm('proxima', 'Proxima'), v: 4.24, c: '#fde68a', lab: fmt(4.24, 2) + ' ' + tr('ly') }];
     } else if (o.cat === 'blackhole') {
-      const D = 2 * 2.953 * o.massSun; const refs = [['Torino ↔ Milano', 125], [nm('terra', 'Terra'), 12742], [nm('sole', 'Sole'), 1392000], ['⌀ orbita di Mercurio', 116e6], ['⌀ orbita della Terra', 299.2e6], ['⌀ orbita di Nettuno', 9e9]];
+      const D = 2 * 2.953 * o.massSun; const refs = [[tr('refTM'), 125], [nm('terra', 'Terra'), 12742], [nm('sole', 'Sole'), 1392000], [tr('refMe'), 116e6], [tr('refEa'), 299.2e6], [tr('refNe'), 9e9]];
       const ref = refs.reduce((b, r) => (Math.abs(Math.log(D / r[1])) < Math.abs(Math.log(D / b[1])) ? r : b), refs[0]);
-      items = [{ n: '⌀ orizzonte degli eventi', v: D, c: '#111827', lab: big(D) + ' ' + tr('km'), bh: true }, { n: ref[0], v: ref[1], c: '#94a3b8', lab: big(ref[1]) + ' ' + tr('km') }];
-      mode = ref[0].includes('↔') ? 'bar' : 'circle';
+      items = [{ n: tr('evHor'), v: D, c: '#111827', lab: big(D) + ' ' + tr('km'), bh: true }, { n: ref[0], v: ref[1], c: '#94a3b8', lab: big(ref[1]) + ' ' + tr('km') }];
+      mode = ref === refs[0] ? 'bar' : 'circle';
     } else if (o.cat === 'comet') {
-      mode = 'bar'; items = [{ n: objName(o), v: o.r * 2, c: '#93c5fd', lab: '≈ ' + fmt(o.r * 2, 0) + ' ' + tr('km') }, { n: 'Everest ↕', v: 8.85, c: '#cbd5e1', lab: '8,8 ' + tr('km') }];
+      mode = 'bar'; items = [{ n: objName(o), v: o.r * 2, c: '#93c5fd', lab: '≈ ' + fmt(o.r * 2, 0) + ' ' + tr('km') }, { n: (i18n.lang === 'ru' ? 'Эверест' : 'Everest') + ' ↕', v: 8.85, c: '#cbd5e1', lab: fmt(8.8, 1) + ' ' + tr('km') }];
     }
     if (!items.length) return '';
     const W = 620, H = 230; let s = `<svg viewBox="0 0 ${W} ${H}" class="sp-cmp" role="img">`;
@@ -1847,7 +1853,7 @@
     } else {
       const mx = Math.max(...items.map((x) => x.v)); const RMAX = 92; let x = 20;
       const rad = items.map((it) => Math.max(1.5, (it.v / mx) * RMAX));
-      if (extra === 'orbits') { const k = RMAX / mx; [[215, 'orbita della Terra'], [327, 'orbita di Marte']].forEach(([rr, n]) => { if (rr * k < 300) s += `<circle cx="${20 + RMAX}" cy="${H / 2 - 10}" r="${rr * k}" fill="none" stroke="#64748b" stroke-dasharray="4 5"/><text x="${20 + RMAX + rr * k * 0.7 + 4}" y="${H / 2 - 10 - rr * k * 0.72}" class="t3">${n}</text>`; }); }
+      if (extra === 'orbits') { const k = RMAX / mx; [[215, tr('orbEa2')], [327, tr('orbMa2')]].forEach(([rr, n]) => { if (rr * k < 300) s += `<circle cx="${20 + RMAX}" cy="${H / 2 - 10}" r="${rr * k}" fill="none" stroke="#64748b" stroke-dasharray="4 5"/><text x="${20 + RMAX + rr * k * 0.7 + 4}" y="${H / 2 - 10 - rr * k * 0.72}" class="t3">${n}</text>`; }); }
       items.forEach((it, i) => {
         const r = rad[i]; const cx = x + r; const cy = H / 2 - 10;
         s += it.bh ? `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#000" stroke="#f59e0b" stroke-width="3"/>` : `<defs><radialGradient id="g${i}" cx="35%" cy="35%"><stop offset="0" stop-color="#fff" stop-opacity=".8"/><stop offset=".35" stop-color="${it.c}"/><stop offset="1" stop-color="${it.c}" stop-opacity=".75"/></radialGradient></defs><circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#g${i})"/>`;
