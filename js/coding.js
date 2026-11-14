@@ -157,6 +157,55 @@
   };
   const PALETTE = ['#1e293b', '#2563eb', '#16a34a', '#06b6d4', '#ef4444', '#d946ef', '#eab308', '#fb7185', '#92400e', '#c2410c', '#84cc16', '#14b8a6', '#38bdf8', '#9333ea', '#f97316', '#64748b'];
   const KNOWN_WORDS = Object.keys(CMD).concat(Object.keys(FUNCS));
+  /* Comandi nella lingua del bambino (oltre a italiano e inglese, sempre accettati).
+     Scritti con gli accenti: le chiavi vengono normalizzate con deacc. Solo la lingua attiva è attiva, così «si» (fr) non urta «si» (it). */
+  const LKW = {
+    fr: { cmd: { fd: 'avance', bk: 'recule', rt: 'droite', lt: 'gauche', pu: 'lèvecrayon', pd: 'baissecrayon', pen: 'crayon', color: 'couleur', width: 'épaisseur',
+            repeat: 'répète', make: 'donne', to: 'pour', end: 'fin', if: 'si', ifelse: 'sisinon', else: 'sinon', stop: 'stop', clear: 'efface',
+            home: 'origine', ht: 'cache', st: 'montre', setxy: 'va', seth: 'cap' },
+          fn: { random: 'hasard', sqrt: 'racine', sin: 'sin', cos: 'cos', round: 'arrondi', int: 'entier', abs: 'abs', repcount: 'compteur' },
+          up: 'haut', down: 'bas',
+          col: { '#1e293b': 'noir', '#ffffff': 'blanc', '#ef4444': 'rouge', '#16a34a': 'vert', '#2563eb': 'bleu', '#eab308': 'jaune', '#f97316': 'orange',
+            '#9333ea': 'violet', '#ec4899': 'rose', '#92400e': 'marron', '#64748b': 'gris', '#0ea5e9': 'azur', '#38bdf8': 'ciel', '#d4a017': 'or', '#14b8a6': 'turquoise', '#c084fc': 'lilas', '#06b6d4': 'cyan', '#d946ef': 'magenta', '#84cc16': 'citron' } },
+    de: { cmd: { fd: 'vorwärts', bk: 'rückwärts', rt: 'rechts', lt: 'links', pu: 'stifthoch', pd: 'stiftrunter', pen: 'stift', color: 'farbe', width: 'dicke',
+            repeat: 'wiederhole', make: 'setze', to: 'lerne', end: 'ende', if: 'wenn', ifelse: 'wennsonst', else: 'sonst', stop: 'stopp', clear: 'lösche',
+            home: 'mitte', ht: 'verstecke', st: 'zeige', setxy: 'gehe', seth: 'richtung' },
+          fn: { random: 'zufall', sqrt: 'wurzel', sin: 'sin', cos: 'cos', round: 'runde', int: 'ganzzahl', abs: 'betrag', repcount: 'zähler' },
+          up: 'hoch', down: 'runter',
+          col: { '#1e293b': 'schwarz', '#ffffff': 'weiß', '#ef4444': 'rot', '#16a34a': 'grün', '#2563eb': 'blau', '#eab308': 'gelb', '#f97316': 'orange',
+            '#9333ea': 'lila', '#ec4899': 'rosa', '#92400e': 'braun', '#64748b': 'grau', '#0ea5e9': 'himmelblau', '#38bdf8': 'hellblau', '#d4a017': 'gold', '#14b8a6': 'türkis', '#c084fc': 'flieder', '#06b6d4': 'cyan', '#d946ef': 'magenta', '#84cc16': 'hellgrün' } },
+    ro: { cmd: { fd: 'înainte', bk: 'înapoi', rt: 'dreapta', lt: 'stânga', pu: 'ridicăcreion', pd: 'coboarăcreion', pen: 'creion', color: 'culoare', width: 'grosime',
+            repeat: 'repetă', make: 'pune', to: 'învață', end: 'sfârșit', if: 'dacă', ifelse: 'dacăaltfel', else: 'altfel', stop: 'stop', clear: 'șterge',
+            home: 'acasă', ht: 'ascunde', st: 'arată', setxy: 'mergi', seth: 'direcție' },
+          fn: { random: 'aleator', sqrt: 'radical', sin: 'sin', cos: 'cos', round: 'rotunjește', int: 'întreg', abs: 'modul', repcount: 'contor' },
+          up: 'sus', down: 'jos',
+          col: { '#1e293b': 'negru', '#ffffff': 'alb', '#ef4444': 'roșu', '#16a34a': 'verde', '#2563eb': 'albastru', '#eab308': 'galben', '#f97316': 'portocaliu',
+            '#9333ea': 'mov', '#ec4899': 'roz', '#92400e': 'maro', '#64748b': 'gri', '#0ea5e9': 'azuriu', '#38bdf8': 'bleu', '#d4a017': 'auriu', '#14b8a6': 'turcoaz', '#c084fc': 'lila', '#06b6d4': 'cyan', '#d946ef': 'magenta', '#84cc16': 'lime' } },
+    ru: { cmd: { fd: 'вперёд', bk: 'назад', rt: 'направо', lt: 'налево', pu: 'поднимиперо', pd: 'опустиперо', pen: 'перо', color: 'цвет', width: 'толщина',
+            repeat: 'повтори', make: 'пусть', to: 'научи', end: 'конец', if: 'если', ifelse: 'еслииначе', else: 'иначе', stop: 'стоп', clear: 'очисти',
+            home: 'домой', ht: 'спрячь', st: 'покажи', setxy: 'иди', seth: 'направление' },
+          fn: { random: 'случайно', sqrt: 'корень', sin: 'sin', cos: 'cos', round: 'округли', int: 'целое', abs: 'модуль', repcount: 'счётчик' },
+          up: 'вверх', down: 'вниз',
+          col: { '#1e293b': 'чёрный', '#ffffff': 'белый', '#ef4444': 'красный', '#16a34a': 'зелёный', '#2563eb': 'синий', '#eab308': 'жёлтый', '#f97316': 'оранжевый',
+            '#9333ea': 'фиолетовый', '#ec4899': 'розовый', '#92400e': 'коричневый', '#64748b': 'серый', '#0ea5e9': 'голубой', '#38bdf8': 'небесный', '#d4a017': 'золотой', '#14b8a6': 'бирюзовый', '#c084fc': 'сиреневый', '#06b6d4': 'циан', '#d946ef': 'пурпурный', '#84cc16': 'салатовый' } }
+  };
+  /* parole di base (italiano + inglese), da ripristinare quando cambia lingua */
+  const BASE = { CMD: Object.assign({}, CMD), FUNCS: Object.assign({}, FUNCS), COLORS: Object.assign({}, COLORS), KNOWN: KNOWN_WORDS.slice() };
+  const PEN_UP = new Set(['su', 'up']), PEN_DOWN = new Set(['giu', 'down']);
+  ['fr', 'de', 'ro', 'ru'].forEach((l) => { PEN_UP.add(deacc(LKW[l].up)); PEN_DOWN.add(deacc(LKW[l].down)); });
+  let kwLang = null;
+  function useLang(lang) {
+    lang = LKW[lang] ? lang : 'it';
+    if (lang === kwLang) return; kwLang = lang;
+    const reset = (o, b) => { for (const k in o) delete o[k]; Object.assign(o, b); };
+    reset(CMD, BASE.CMD); reset(FUNCS, BASE.FUNCS); reset(COLORS, BASE.COLORS);
+    KNOWN_WORDS.length = 0; KNOWN_WORDS.push(...BASE.KNOWN);
+    const T = LKW[lang]; if (!T) return;
+    for (const c in T.cmd) { CMD[deacc(T.cmd[c])] = c; KNOWN_WORDS.push(deacc(T.cmd[c])); }
+    for (const f in T.fn) { FUNCS[deacc(T.fn[f])] = [f, BASE.FUNCS[f][1]]; KNOWN_WORDS.push(deacc(T.fn[f])); }
+    for (const h in T.col) COLORS[deacc(T.col[h])] = h;
+  }
+  const curLang = () => (W.i18n && W.i18n.lang) || 'it';
 
   class LogoError { constructor(line, key, vars) { this.line = line; this.key = key; this.vars = vars || {}; } }
   const STOP = { stop: true };
@@ -221,6 +270,7 @@
   }
 
   function parseLogo(src) {
+    useLang(curLang());
     const toks = tokenize(src);
     const procs = {};
     const used = { repeat: false, to: false, make: false, if: false, recursion: false };
@@ -274,7 +324,7 @@
       if (k === 'pen') {
         const a = next();
         const v = a && a.t === 'word' ? a.v : '';
-        if (v === 'su' || v === 'up') k = 'pu'; else if (v === 'giu' || v === 'down') k = 'pd';
+        if (PEN_UP.has(v)) k = 'pu'; else if (PEN_DOWN.has(v)) k = 'pd';
         else throw new LogoError(line, 'lg.err.pen');
       }
       switch (k) {
@@ -543,16 +593,44 @@
     nero: 'black', bianco: 'white', rosso: 'red', verde: 'green', blu: 'blue', giallo: 'yellow', arancione: 'orange', viola: 'purple',
     rosa: 'pink', marrone: 'brown', grigio: 'gray', azzurro: 'cyan', celeste: 'lightblue', oro: 'gold', turchese: 'teal', lilla: 'violet'
   };
-  function toEnglish(src) {
+  /* nomi di variabili/procedure e commenti usati negli esempi, tradotti per lingua */
+  const VARS = {
+    en: { lato: 'side', fiore: 'flower', albero: 'tree', stella: 'star', poligono: 'polygon', quadrato: 'square', spirale: 'spiral', liv: 'lev', nome: 'name' },
+    fr: { lato: 'cote', fiore: 'fleur', albero: 'arbre', stella: 'etoile', poligono: 'polygone', quadrato: 'carre', spirale: 'spirale', liv: 'niv', nome: 'nom' },
+    de: { lato: 'seite', fiore: 'blume', albero: 'baum', stella: 'stern', poligono: 'vieleck', quadrato: 'quadrat', spirale: 'spirale', liv: 'stufe', nome: 'name' },
+    ro: { lato: 'latura', fiore: 'floare', albero: 'copac', stella: 'stea', poligono: 'poligon', quadrato: 'patrat', spirale: 'spirala', liv: 'niv', nome: 'nume' },
+    ru: { lato: 'сторона', fiore: 'цветок', albero: 'дерево', stella: 'звезда', poligono: 'многоугольник', quadrato: 'квадрат', spirale: 'спираль', liv: 'ур', nome: 'имя' }
+  };
+  const COMMENTS = {
+    'fiori in posti a caso': { en: 'flowers in random places', fr: 'des fleurs au hasard', de: 'Blumen an zufälligen Orten', ro: 'flori în locuri la întâmplare', ru: 'цветы в случайных местах' }
+  };
+  /* Converte il codice Logo scritto in italiano nella lingua indicata (comandi, colori, nomi degli esempi, commenti).
+     Il disegno che ne risulta è identico. */
+  function toLang(src, lang) {
+    if (!lang || lang === 'it') return String(src);
+    const T = LKW[lang], V = VARS[lang] || {};
+    const word = (w) => {
+      const d = deacc(w), en = IT2EN[d];
+      if (!en) return V[d] || w;
+      if (!T) return en;
+      const c = BASE.CMD[en]; if (c && T.cmd[c]) return T.cmd[c];
+      const f = BASE.FUNCS[en]; if (f && T.fn[f[0]]) return T.fn[f[0]];
+      const h = BASE.COLORS[en]; if (h && T.col[h]) return T.col[h];
+      return en;
+    };
+    const up = T ? T.up : 'up', down = T ? T.down : 'down', pen = T ? T.cmd.pen : 'pen';
     return String(src).split('\n').map((ln) => {
-      const c = ln.search(/;|\/\//), body = c < 0 ? ln : ln.slice(0, c), rest = c < 0 ? '' : ln.slice(c);
-      let out = body.replace(/(^|[^:\p{L}\p{N}_"])([\p{L}_][\p{L}\p{N}_]*)/gu, (m, pre, w) => pre + (IT2EN[deacc(w)] || w));
-      out = out.replace(/\bpen(\s+)(su|gi[uù])(?![\p{L}\p{N}_])/gu, (m, sp, v) => 'pen' + sp + (v === 'su' ? 'up' : 'down'));
-      return out + rest;
+      const c = ln.search(/;|\/\//), body = c < 0 ? ln : ln.slice(0, c);
+      let rest = c < 0 ? '' : ln.slice(c);
+      const cm = rest.replace(/^(;|\/\/)\s*/, '').trim(); if (COMMENTS[cm] && COMMENTS[cm][lang]) rest = rest.replace(cm, COMMENTS[cm][lang]);
+      let out = body.replace(/\bpenna(\s+)(su|gi[uù])(?![\p{L}\p{N}_])/gu, (m, sp, v) => '\u0001' + sp + (v === 'su' ? up : down));
+      out = out.replace(/(^|[^\p{L}\p{N}_"])(:?)([\p{L}_][\p{L}\p{N}_]*)/gu, (m, pre, colon, w) => pre + colon + (colon ? (V[deacc(w)] || w) : word(w)));
+      return out.replace(/\u0001/g, pen) + rest;
     }).join('\n');
   }
+  const toEnglish = (src) => toLang(src, 'en');
 
-  W.Coding = { makeWorld, runRobot, solveRobot, countBlocks, progCount, fromShort, cond, tokenize, parseLogo, runLogo, segmentsOf, compareDrawing, COLORS, PALETTE, LogoError, toEnglish };
+  W.Coding = { makeWorld, runRobot, solveRobot, countBlocks, progCount, fromShort, cond, tokenize, parseLogo, runLogo, segmentsOf, compareDrawing, COLORS, PALETTE, LogoError, toEnglish, toLang, useLang };
 
   /* =====================================================================
      TESTI DELL'INTERFACCIA (6 lingue)
@@ -911,7 +989,7 @@
   const LANG_IDX = ['it', 'en', 'fr', 'ru', 'ro', 'de'];
   const L = (arr) => (arr ? (arr[Math.max(0, LANG_IDX.indexOf(i18n.lang))] || arr[0]) : '');
   /* il codice Logo di esempi, soluzioni e riferimento è scritto in italiano: nelle altre lingue lo mostriamo con i comandi inglesi */
-  const LG = (code) => (i18n.lang === 'it' ? code : Coding.toEnglish(code));
+  const LG = (code) => Coding.toLang(code, i18n.lang);
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
   const rid = (n) => 'code:robot:' + n, tid = (n) => 'code:turtle:' + n;
