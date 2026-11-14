@@ -1771,6 +1771,7 @@
     if (!VIEWS.some((x) => x[0] === vname)) vname = 'solare';
     const hero = el('section', 'sp-hero', `<div class="sp-hero-txt"><h1>🔭 ${tr('title')}</h1><p>${tr('sub')}</p></div>`);
     m.appendChild(hero);
+    if (window.Voyager) { const vg = el('a', 'sp-voyager', `<span>🛰️</span><span><b>${t('vg.nav')}</b><small>${t('vg.card')}</small></span><span>→</span>`); vg.href = '#/spazio/voyager'; m.appendChild(vg); }
     const tabs = el('div', 'sp-tabs'); m.appendChild(tabs);
     const box = el('div', 'sp-viewbox'); m.appendChild(box);
     const desc = el('p', 'sp-vdesc'); m.appendChild(desc);
