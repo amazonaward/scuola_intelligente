@@ -91,6 +91,7 @@
     { r: 'metodi', ic: '🧮', k: 'nav.methods', c: '#16a34a', top: true },
     { r: 'libreria', ic: '⚙️', k: 'nav.library', c: '#f97316', top: true },
     { r: 'coding', ic: '🤖', k: 'nav.coding', c: '#8b5cf6', top: true },
+    { r: 'corpo', ic: '🫀', k: 'nav.body', c: '#e11d48', top: true },
     { r: 'laboratorio', ic: '🧪', k: 'nav.lab', c: '#db2777', top: true },
     { r: 'luoghi', ic: '🏰', k: 'nav.places', c: '#0ea5e9', top: true },
     { r: 'spazio', ic: '🔭', k: 'nav.space', c: '#4338ca', top: true },
@@ -98,7 +99,7 @@
     { r: 'profili', ic: '👥', k: 'nav.profiles', c: '#14b8a6', top: false },
     { r: 'contatti', ic: '✉️', k: 'nav.contacts', c: '#0891b2', top: false }
   ];
-  const EXPLORE = [['metodi', '🧮', 'nav.methods', 'explore.methods', '#16a34a'], ['libreria', '⚙️', 'nav.library', 'explore.library', '#f97316'], ['coding', '🤖', 'nav.coding', 'explore.coding', '#8b5cf6'], ['laboratorio', '🧪', 'nav.lab', 'explore.lab', '#db2777'], ['luoghi', '🏰', 'nav.places', 'explore.places', '#0ea5e9'], ['spazio', '🔭', 'nav.space', 'explore.space', '#312e81']];
+  const EXPLORE = [['metodi', '🧮', 'nav.methods', 'explore.methods', '#16a34a'], ['libreria', '⚙️', 'nav.library', 'explore.library', '#f97316'], ['coding', '🤖', 'nav.coding', 'explore.coding', '#8b5cf6'], ['corpo', '🫀', 'nav.body', 'explore.body', '#e11d48'], ['laboratorio', '🧪', 'nav.lab', 'explore.lab', '#db2777'], ['luoghi', '🏰', 'nav.places', 'explore.places', '#0ea5e9'], ['spazio', '🔭', 'nav.space', 'explore.space', '#312e81']];
 
   /* ---------- indice argomenti ---------- */
   const INDEX = {}; const ORDER = [];

@@ -1,0 +1,44 @@
+/* Il corpo umano (#/corpo) */
+.body-head { display: flex; gap: 14px; align-items: center; margin: 4px 0 12px; }
+.body-head h1 { margin: 0; }
+.body-head .lead { margin: 4px 0 0; }
+.body-em { font-size: 2.6rem; line-height: 1; }
+.body-view { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.body-stage { min-width: 0; }
+.body-side { min-width: 0; display: flex; flex-direction: column; gap: 10px; max-height: 760px; overflow: auto; }
+.body-side h3 { margin: 2px 0 6px; font-size: 1rem; color: var(--muted); }
+.body-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.body-chip { --sc: #94a3b8; border-left: 4px solid var(--sc); }
+.body-chip.active { background: var(--sc); color: #fff; border-color: var(--sc); }
+.body-chip i, .body-link i, .body-ch h3 i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.body-chips.small .chip { font-size: .82rem; padding: 3px 8px; }
+.body-card { background: var(--card, #fff); border: 2px solid #fecdd3; border-radius: 14px; padding: 10px 14px; min-height: 60px; }
+.body-ch { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--sc, #e11d48); margin-bottom: 6px; }
+.body-ch h3 { margin: 4px 0; font-size: 1.15rem; color: inherit; }
+.body-insys { margin: 4px 0 8px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.body-sec { margin: 8px 0; }
+.body-sec h4 { margin: 0 0 4px; font-size: .95rem; display: inline; }
+details.body-sec > summary { cursor: pointer; margin-bottom: 4px; }
+.body-sec p { margin: 4px 0; }
+.body-links { list-style: none; padding: 0; margin: 4px 0; }
+.body-links li { margin: 5px 0; }
+.body-link { font: inherit; font-weight: 700; border: 1px solid #fda4af; background: #fff1f2; border-radius: 999px; padding: 1px 9px; cursor: pointer; color: #9f1239; }
+.body-link:hover { background: #ffe4e6; }
+.body-prob { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 10px; padding: 6px 10px; margin: 6px 0; }
+.body-prob .tag { display: inline-block; font-size: .72rem; font-weight: 800; text-transform: uppercase; border-radius: 6px; padding: 0 6px; margin-right: 4px; color: #fff; }
+.body-prob .tag.c { background: #ea580c; } .body-prob .tag.e { background: #dc2626; } .body-prob .tag.p { background: #16a34a; }
+.body-fact { background: #eff6ff; border-radius: 10px; padding: 6px 10px; }
+.body-act { margin-top: 8px; }
+.body-lessons { display: flex; flex-direction: column; gap: 4px; }
+.body-lessons a { text-decoration: none; font-weight: 600; }
+.body-lessons small { color: var(--muted); font-weight: 400; margin-left: 4px; }
+.body-list > summary { cursor: pointer; font-weight: 700; color: var(--muted); margin-bottom: 6px; }
+.body-tour .btn { margin-bottom: 8px; }
+[data-theme="dark"] .body-card { background: #1f2937; border-color: #9f1239; }
+[data-theme="dark"] .body-prob { background: #2a1d12; border-color: #9a3412; }
+[data-theme="dark"] .body-fact { background: #172554; }
+[data-theme="dark"] .body-link { background: #4c0519; color: #fecdd3; border-color: #9f1239; }
+@media (max-width: 900px) {
+  .body-view { grid-template-columns: minmax(0, 1fr); }
+  .body-side { max-height: none; }
+}
