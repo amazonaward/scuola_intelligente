@@ -1908,7 +1908,9 @@
       m.appendChild(el('section', 'card c-curiosity sp-cur', `<h2>💡 ${tr('cur')}</h2><ul>${o.cur.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>`));
       const cmp = compareSVG(o); if (cmp) m.appendChild(el('section', 'card sp-cmpbox', `<h2>📏 ${tr('compare')}</h2><div class="sp-cmpwrap">${cmp}</div>`));
       const qz = el('section', 'card sp-quiz', `<h2>✏️ ${tr('quiz')}</h2>`);
-      qz.appendChild(Quiz.render(o.quiz, { onDone: (ok, n) => Store.quizResult(sid, 'q', ok, n) })); m.appendChild(qz);
+      if (window.Levels) Levels.mount(qz, { key: 'spazio-' + o.id, base: o.quiz, count: 6, onDone: (ok, n) => Store.quizResult(sid, 'q', ok, n) });
+      else qz.appendChild(Quiz.render(o.quiz, { onDone: (ok, n) => Store.quizResult(sid, 'q', ok, n) }));
+      m.appendChild(qz);
       m.appendChild(el('section', 'card sp-lessons', `<h2>🎒 ${tr('lessons')}</h2><div class="tlist">${lessonLinks()}</div>`));
       // fondo pagina
       const foot = el('div', 'topic-foot');

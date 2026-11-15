@@ -230,8 +230,10 @@
     doneBtn.onclick = () => setDone(!Store.topic('corpo').done);
     if (quiz) {
       const q = el('section', 'card body-quiz', `<h2>✏️ ${t('body.quiz')}</h2>`); const area = el('div'); q.appendChild(area);
-      const mk = () => { area.innerHTML = ''; area.appendChild(Quiz.render(Z.shuffle(quiz), { onDone: (ok, n) => { Store.quizResult('corpo', 'quiz', ok, n); if (ok / n >= 0.7 && !Store.topic('corpo').done) setDone(true); }, onRetry: mk })); };
-      mk(); m.appendChild(q);
+      const fin = (ok, n) => { Store.quizResult('corpo', 'quiz', ok, n); if (ok / n >= 0.7 && !Store.topic('corpo').done) setDone(true); };
+      const mk = () => { area.innerHTML = ''; area.appendChild(Quiz.render(Z.shuffle(quiz), { onDone: fin, onRetry: mk })); };
+      if (window.Levels) Levels.mount(area, { key: 'corpo', base: quiz, count: 8, onDone: fin }); else mk();
+      m.appendChild(q);
     }
     const rel = el('section', 'card body-rel'); rel.innerHTML = lessonsBox([].concat(LESSONS.all, ...Object.keys(LESSONS).filter((k) => k !== 'all').map((k) => LESSONS[k])));
     if (rel.innerHTML) m.appendChild(rel);
