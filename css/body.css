@@ -43,3 +43,4 @@ details.body-sec > summary { cursor: pointer; margin-bottom: 4px; }
   .body-view { grid-template-columns: minmax(0, 1fr); }
   .body-side { max-height: none; }
 }
+.body-sex { display: flex; align-items: center; gap: 6px; margin: 0 0 8px; flex-wrap: wrap; }

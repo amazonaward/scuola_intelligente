@@ -13,7 +13,8 @@ BODY_TEXT({
     digerente: { name: "L'apparato digerente", intro: "<p>Trasforma il cibo in sostanze abbastanza piccole da passare nel sangue. Il cibo percorre un lungo tubo di circa 8-9 metri: bocca, esofago, stomaco, intestino tenue e intestino crasso. Fegato, cistifellea e pancreas aiutano con succhi speciali.</p>" },
     urinario: { name: "L'apparato urinario", intro: "<p>È il sistema di filtraggio del corpo. I reni puliscono il sangue, eliminano le scorie e l'acqua in eccesso e li trasformano in urina, che scende nella vescica fino a quando è il momento di andare in bagno.</p>" },
     endocrino: { name: "Il sistema endocrino", intro: "<p>Le ghiandole endocrine producono gli ormoni, messaggeri chimici che viaggiano nel sangue e dicono agli organi cosa fare: crescere, usare gli zuccheri, reagire a uno spavento. Agiscono più lentamente dei nervi, ma i loro effetti durano più a lungo.</p>" },
-    immunitario: { name: "Il sistema immunitario", intro: "<p>È l'esercito di difesa del corpo. Globuli bianchi e altre cellule riconoscono virus, batteri e altri intrusi e li eliminano. Milza, timo e linfonodi sono le basi dove queste cellule si formano, si allenano e fanno la guardia.</p>" }
+    immunitario: { name: "Il sistema immunitario", intro: "<p>È l'esercito di difesa del corpo. Globuli bianchi e altre cellule riconoscono virus, batteri e altri intrusi e li eliminano. Milza, timo e linfonodi sono le basi dove queste cellule si formano, si allenano e fanno la guardia.</p>" },
+    riproduttivo: { name: "L'apparato riproduttivo", intro: "<p>Permette alla vita di continuare: è l'apparato con cui, da adulti, si può avere un bambino. Per tutta l'infanzia riposa; con la <b>pubertà</b> si \"sveglia\", grazie agli ormoni comandati dal cervello (<b>ipotalamo</b> e <b>ipofisi</b>). Gli organi femminili e maschili sono diversi, ma lavorano insieme: una cellula uovo e uno spermatozoo si uniscono e danno inizio a una nuova vita. Ognuno cresce e cambia con i suoi tempi: arrivare prima o dopo degli altri è del tutto normale.</p>" }
   },
   organs: {
     pelle: {
@@ -552,6 +553,62 @@ BODY_TEXT({
         { title: "Ghiandole ingrossate", causes: "mal di gola, raffreddore o altre infezioni.", effects: "senti sotto il mento dei \"pallini\" dolenti che di solito si sgonfiano da soli.", prevent: "riposo, bere, lavarsi le mani; se restano gonfi per molto tempo, parlane con un adulto o col medico." }
       ],
       fact: "I linfonodi del collo spesso si gonfiano quando hai mal di gola: significa che il tuo corpo si sta difendendo."
+    },
+    utero: {
+      name: "L'utero", label: "Utero",
+      what: "<p>L'utero è un organo cavo e muscoloso, a forma di pera rovesciata, che si trova nella pancia delle donne. È la \"culla\" dove può crescere un bambino prima di nascere.</p>",
+      how: "<p>Ha pareti di muscolo molto forte e all'interno è rivestito da uno strato morbido, l'<b>endometrio</b>. Ogni mese l'endometrio si prepara ad accogliere un'eventuale cellula uovo fecondata. Se non arriva, lo strato si stacca ed esce con un po' di sangue: sono le <b>mestruazioni</b>, un processo naturale che dura pochi giorni. Se invece inizia una gravidanza, l'embrione si sistema nell'utero e vi cresce per circa 9 mesi, mentre l'utero si allarga moltissimo. Al momento della nascita i suoi muscoli si contraggono per aiutare il bambino a uscire.</p>",
+      links: [
+        { to: "ovaie", text: "Riceve dalle ovaie la cellula uovo, attraverso le tube." },
+        { to: "vescica", text: "Sta proprio dietro la vescica." },
+        { to: "bacino", text: "È protetto dalle ossa del bacino." }
+      ],
+      problems: [
+        { title: "Mal di pancia durante le mestruazioni", causes: "i muscoli dell'utero si contraggono per eliminare lo strato interno.", effects: "senti crampi nella parte bassa della pancia, a volte con mal di schiena o stanchezza.", prevent: "una borsa d'acqua calda e riposo possono aiutare; se il dolore è forte, parlane con un adulto o con il medico." }
+      ],
+      fact: "Durante una gravidanza l'utero può diventare circa 500 volte più grande e poi tornare quasi com'era."
+    },
+    ovaie: {
+      name: "Le ovaie", label: "Ovaie",
+      what: "<p>Le ovaie sono due piccoli organi a forma di mandorla, uno per lato. Contengono le cellule uovo e producono ormoni.</p>",
+      how: "<p>Alla nascita le ovaie contengono già moltissime cellule uovo, che restano \"addormentate\" fino alla pubertà. Da allora, circa una volta al mese, una cellula uovo matura ed esce dall'ovaia: è l'<b>ovulazione</b>. Le ovaie producono gli ormoni <b>estrogeni</b> e <b>progesterone</b>, che guidano lo sviluppo del corpo femminile e preparano l'utero. Questo ciclo di circa un mese si chiama <b>ciclo mestruale</b>: è un segno che il corpo sta crescendo come deve. All'inizio può essere irregolare, ed è normale. Il cervello coordina tutto con i suoi ormoni.</p>",
+      links: [
+        { to: "utero", text: "La cellula uovo passa dall'ovaia all'utero attraverso la tuba." },
+        { to: "cervello", text: "Ipotalamo e ipofisi mandano gli ormoni che comandano le ovaie." },
+        { to: "vescica", text: "Si trovano nella parte bassa della pancia, vicino alla vescica." }
+      ],
+      problems: [
+        { title: "Ciclo doloroso o irregolare", causes: "gli ormoni sono ancora in assestamento, oppure le contrazioni dell'utero sono forti.", effects: "dolore o ritardi nelle mestruazioni, soprattutto nei primi anni.", prevent: "parlane con un adulto di fiducia o con il medico, che può aiutarti a stare meglio e a capire se è tutto a posto." }
+      ],
+      fact: "Ogni mese di solito matura una sola cellula uovo: è la cellula più grande del corpo, ma è grande come un granello di sabbia."
+    },
+    testicoli: {
+      name: "I testicoli", label: "Testicoli",
+      what: "<p>I testicoli sono due organi tondeggianti, dentro un sacchetto di pelle chiamato scroto. Producono gli spermatozoi e un ormone.</p>",
+      how: "<p>Dalla pubertà i testicoli producono milioni di <b>spermatozoi</b>, le cellule maschili che servono per dare inizio a una nuova vita, e l'ormone <b>testosterone</b>, che fa cambiare la voce, crescere i peli e i muscoli. Gli spermatozoi si formano meglio se fa un po' meno caldo che nel resto del corpo: per questo i testicoli stanno fuori, nello scroto, che si avvicina o si allontana dal corpo per regolare la temperatura. Gli spermatozoi maturano in un tubicino arrotolato, l'epididimo, e poi viaggiano verso l'uretra. Il cervello controlla la produzione con i suoi ormoni.</p>",
+      links: [
+        { to: "prostata", text: "Gli spermatozoi viaggiano verso la prostata e si mescolano al suo liquido." },
+        { to: "cervello", text: "Gli ormoni di ipotalamo e ipofisi dicono ai testicoli quando lavorare." },
+        { to: "muscoli", text: "Un piccolo muscolo li avvicina o li allontana dal corpo per regolare la temperatura." }
+      ],
+      problems: [
+        { title: "Colpi e infortuni nello sport", causes: "i testicoli sono sporgenti e delicati.", effects: "un colpo può fare molto male e a volte gonfiare la zona.", prevent: "nello sport usa la protezione adatta; se il dolore non passa, avvisa subito un adulto e il medico." }
+      ],
+      fact: "Un testicolo di solito pende un po' più in basso dell'altro, così non si schiacciano a vicenda."
+    },
+    prostata: {
+      name: "La prostata", label: "Prostata",
+      what: "<p>La prostata è una piccola ghiandola, grande più o meno come una noce, che hanno solo i maschi. Sta sotto la vescica.</p>",
+      how: "<p>La prostata produce un liquido chiaro che si unisce agli spermatozoi: insieme formano il <b>liquido seminale</b>. Questo liquido nutre gli spermatozoi e li aiuta a muoversi. La ghiandola circonda il primo tratto dell'uretra, il canale che porta fuori anche l'urina, e ha muscoli che impediscono all'urina e al liquido seminale di uscire nello stesso momento. Crescendo da ragazzi si sviluppa e arriva alla grandezza da adulto.</p>",
+      links: [
+        { to: "testicoli", text: "Aggiunge il suo liquido agli spermatozoi prodotti dai testicoli." },
+        { to: "vescica", text: "Si trova subito sotto la vescica e circonda l'uretra." },
+        { to: "bacino", text: "È protetta dentro la conca del bacino." }
+      ],
+      problems: [
+        { title: "Problemi della prostata negli adulti", causes: "di solito compaiono in uomini anziani, con l'età.", effects: "la prostata si ingrossa e può rendere più difficile fare pipì.", prevent: "controlli periodici dal medico; non riguarda i bambini e i ragazzi." }
+      ],
+      fact: "Il nome viene dal greco e significa \"che sta davanti\": la prostata sta proprio davanti alla vescica."
     }
   },
   tour: [
@@ -564,7 +621,8 @@ BODY_TEXT({
     { icon: "🍽️", title: "Digerire", html: "<p>Il cibo scende per l'<b>esofago</b> nello <b>stomaco</b>, poi nell'<b>intestino tenue</b>, dove <b>fegato</b>, <b>cistifellea</b> e <b>pancreas</b> aiutano a digerire. Nel <b>crasso</b> si recupera l'acqua.</p>", focus: ["esofago", "stomaco", "fegato", "cistifellea", "pancreas", "intestino_tenue", "intestino_crasso"], explode: 0.5 },
     { icon: "🚽", title: "Filtrare e pulire", html: "<p>I <b>reni</b> filtrano il sangue e producono l'urina, che scende nella <b>vescica</b>.</p>", focus: ["reni", "vescica"], explode: 0.5 },
     { icon: "⚗️", title: "Gli ormoni", html: "<p><b>Tiroide</b>, <b>surrenali</b> e <b>pancreas</b> mandano nel sangue ormoni, messaggeri chimici che regolano crescita, energia e reazioni allo stress.</p>", focus: ["tiroide", "surrenali", "pancreas"], explode: 0.5 },
-    { icon: "🛡️", title: "Le difese", html: "<p><b>Milza</b>, <b>timo</b> e <b>linfonodi</b> sono la base dei globuli bianchi, che riconoscono ed eliminano virus e batteri.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 }
+    { icon: "🛡️", title: "Le difese", html: "<p><b>Milza</b>, <b>timo</b> e <b>linfonodi</b> sono la base dei globuli bianchi, che riconoscono ed eliminano virus e batteri.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 },
+    { icon: "🌱", title: "Riprodursi", html: "<p>L'<b>apparato riproduttivo</b> permette alla vita di continuare. Nel corpo femminile ci sono <b>utero</b> e <b>ovaie</b>, in quello maschile <b>testicoli</b> e <b>prostata</b>. Nella pagina trovi l'interruttore femminile/maschile per vedere l'uno o l'altro corpo. Si \"sveglia\" con la pubertà, e ognuno ha i suoi tempi.</p>", focus: ["utero", "ovaie", "testicoli", "prostata"], explode: 0.3, view: { rx: 0.1, ry: -0.3 }, zoom: 1.6 }
   ],
   quiz: [
     { type: "mc", q: "Quale organo fa passare l'ossigeno dall'aria al sangue?", options: ["Lo stomaco", "I polmoni", "I reni"], answer: 1, explain: "Negli alveoli dei polmoni l'ossigeno passa nel sangue e l'anidride carbonica passa nell'aria." },
@@ -580,6 +638,8 @@ BODY_TEXT({
     { type: "mc", q: "Dove maturano i linfociti T?", options: ["Nel timo", "Nella milza", "Nello stomaco"], answer: 0, explain: "Nel timo i linfociti T imparano a riconoscere ciò che è estraneo al corpo, e per questo si chiamano \"T\"." },
     { type: "num", q: "Quanti metri è lungo circa l'intestino tenue di un adulto?", answer: 6, tol: 1, unit: "m", explain: "Il tenue misura circa 6-7 metri: ripiegato nella pancia assorbe i nutrienti." },
     { type: "mc", q: "Quale legame è corretto?", options: ["Cuore e polmoni: il sangue prende ossigeno", "Esofago e reni: portano l'urina", "Tiroide e vescica: producono la bile"], answer: 0, explain: "Il cuore manda ai polmoni sangue povero di ossigeno, che torna ossigenato." },
-    { type: "tf", q: "Il cervelletto serve soprattutto a digerire il cibo.", answer: false, explain: "Il cervelletto coordina i movimenti e l'equilibrio." }
+    { type: "tf", q: "Il cervelletto serve soprattutto a digerire il cibo.", answer: false, explain: "Il cervelletto coordina i movimenti e l'equilibrio." },
+    { "type":"mc","q":"Dove cresce un bambino prima di nascere?","options":["Nello stomaco","Nell'utero","Nella vescica"],"answer":1,"explain":"L'embrione si sistema nell'utero, un organo muscolare che si allarga per circa 9 mesi."},
+    { "type":"tf","q":"I testicoli producono gli spermatozoi e un ormone, il testosterone.","answer":true,"explain":"I testicoli producono sia gli spermatozoi sia il testosterone, che guida i cambiamenti della pubertà."}
   ]
 });

@@ -398,6 +398,35 @@
     return { id: 'linfonodi', systems: ['immunitario'], color: '#22c55e', explode: [0, 0, 58], anchor: [15, 130, 2], shapes: sh };
   };
 
+
+  /* ================= RIPRODUTTIVO (sex: 'f' | 'm': la pagina mostra un solo corpo alla volta) ================= */
+  const utero = () => ({ id: 'utero', sex: 'f', systems: ['riproduttivo'], color: '#f472b6',
+    explode: [0, -10, 34], anchor: [0, 79, 1.5],
+    shapes: [E([0, 78.6, 0.4], [2.6, 3.2, 2], '#f472b6', [12, 0, 0], 12, 18),
+      mk('cyl', { pos: [0, 74.6, 0.9], r: 0.9, r2: 1.3, h: 2.4, n: 12, color: '#f9a8d4', rot: [12, 0, 0] }),
+      P([[0, 73.4, 1.2], [0, 71, 2.2], [0, 69.4, 3.2]], 0.7, '#f9a8d4', 8)] });
+  const ovaie = () => {
+    const sh = [];
+    SIDES.forEach((s) => {
+      sh.push(E([s * 6.4, 79.6, -0.4], [1.3, 0.9, 0.8], '#fb7185', null, 8, 12));                                  // ovaio
+      sh.push(P(mir([[2.2, 80.6, 0.4], [4.2, 81.4, 0.3], [6.2, 81.2, -0.1], [7.4, 80, 0.2]], s), 0.32, '#fda4af', 6));  // tuba
+      sh.push(mk('cone', { pos: [s * 7.7, 79.5, 0.3], r: 0.8, h: 1, n: 10, color: '#fda4af', rot: [0, 0, s * 140] }));  // padiglione
+    });
+    return { id: 'ovaie', sex: 'f', systems: ['riproduttivo', 'endocrino'], color: '#fb7185', explode: [0, -4, 26], anchor: [6.4, 80, 0], shapes: sh };
+  };
+  const testicoli = () => {
+    const sh = [];
+    SIDES.forEach((s) => {
+      sh.push(E([s * 1.7, 66.4, 6.2], [1.15, 1.6, 1.15], '#f0abfc', null, 10, 14));
+      sh.push(P(mir([[1.7, 67.8, 6], [2.6, 71, 5.4], [3.6, 75.8, 4.4], [3.4, 78.6, 2.4], [1.6, 77.2, 0.4], [0.6, 72.6, 1.2]], s), 0.22, '#e879f9', 6)); // dotto deferente
+    });
+    return { id: 'testicoli', sex: 'm', systems: ['riproduttivo', 'endocrino'], color: '#f0abfc', explode: [0, -26, 34], anchor: [1.7, 66.4, 6.6], shapes: sh };
+  };
+  const prostata = () => ({ id: 'prostata', sex: 'm', systems: ['riproduttivo'], color: '#c084fc',
+    explode: [0, -12, 24], anchor: [0, 71.8, 2.6],
+    shapes: [E([0, 71.8, 2.4], [1.5, 1.1, 1.2], '#c084fc', null, 10, 14),
+      P([[0, 70.6, 2.8], [0, 69, 4.4], [0, 68.4, 6.4], [0, 66.8, 8]], 0.32, '#e9a8a0', 6)] });
+
   BODY_MODEL({
     systems: [
       { id: 'scheletro', emoji: '🦴', color: '#e5e7eb' },
@@ -410,6 +439,7 @@
       { id: 'urinario', emoji: '💧', color: '#facc15' },
       { id: 'endocrino', emoji: '🦋', color: '#a855f7' },
       { id: 'immunitario', emoji: '🛡️', color: '#22c55e' },
+      { id: 'riproduttivo', emoji: '🌱', color: '#ec4899' },
       { id: 'pelle', emoji: '🖐️', color: '#fdba74' }
     ],
     options: { rx: 0.12, ry: -0.45, height: 640, bg: 'body', floor: false, labels: false },
@@ -421,7 +451,8 @@
       cuore(), arterie(), vene(),
       trachea(), polmoni(),
       esofago(), stomaco(), fegato(), cistifellea(), pancreas(), intestinoTenue(), intestinoCrasso(),
-      reni(), vescica(), tiroide(), surrenali(), milza(), timo(), linfonodi()
+      reni(), vescica(), tiroide(), surrenali(), milza(), timo(), linfonodi(),
+      utero(), ovaie(), testicoli(), prostata()
     ]
   });
 })();

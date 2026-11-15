@@ -13,7 +13,8 @@ BODY_TEXT({
     digerente: { name: "The digestive system", intro: "<p>It turns food into substances small enough to pass into the blood. Food travels along a long tube about 8-9 meters long: mouth, esophagus, stomach, small intestine and large intestine. The liver, gallbladder and pancreas help with special juices.</p>" },
     urinario: { name: "The urinary system", intro: "<p>This is the body's filtering system. The kidneys clean the blood, remove waste and extra water and turn them into urine, which flows down into the bladder until it is time to go to the bathroom.</p>" },
     endocrino: { name: "The endocrine system", intro: "<p>The endocrine glands make hormones, chemical messengers that travel in the blood and tell the organs what to do: grow, use sugars, react to a scare. They act more slowly than nerves, but their effects last longer.</p>" },
-    immunitario: { name: "The immune system", intro: "<p>This is the body's defense army. White blood cells and other cells recognize viruses, bacteria and other intruders and get rid of them. The spleen, thymus and lymph nodes are the bases where these cells are made, trained and keep watch.</p>" }
+    immunitario: { name: "The immune system", intro: "<p>This is the body's defense army. White blood cells and other cells recognize viruses, bacteria and other intruders and get rid of them. The spleen, thymus and lymph nodes are the bases where these cells are made, trained and keep watch.</p>" },
+    riproduttivo: { name: "The reproductive system", intro: "<p>It lets life continue: it is the system that, in adulthood, makes it possible to have a baby. It rests during childhood and \"wakes up\" at <b>puberty</b>, thanks to hormones controlled by the brain (the <b>hypothalamus</b> and the <b>pituitary gland</b>). Female and male organs are different, but they work together: an egg cell and a sperm cell join and start a new life. Everyone grows and changes at their own pace, so starting earlier or later than others is completely normal.</p>" }
   },
   organs: {
     pelle: {
@@ -552,6 +553,62 @@ BODY_TEXT({
         { title: "Swollen glands", causes: "a sore throat, a cold or other infections.", effects: "you feel tender \"little balls\" under your chin that usually shrink by themselves.", prevent: "rest, drink, wash your hands; if they stay swollen for a long time, talk to an adult or the doctor." }
       ],
       fact: "The lymph nodes in the neck often swell when you have a sore throat: it means your body is defending itself."
+    },
+    utero: {
+      name: "The uterus", label: "Uterus",
+      what: "<p>The uterus is a hollow, muscular, pear-shaped organ in the lower belly of women. It is the \"cradle\" where a baby can grow before it is born.</p>",
+      how: "<p>Its walls are made of strong muscle and the inside is lined with a soft layer called the <b>endometrium</b>. Every month this lining gets ready to welcome a fertilised egg cell. If none arrives, the lining comes away and leaves the body with a little blood: this is <b>menstruation</b>, a natural process that lasts a few days. If a pregnancy begins, the embryo settles in the uterus and grows there for about 9 months while the uterus stretches a great deal. At birth its muscles squeeze to help the baby come out.</p>",
+      links: [
+        { to: "ovaie", text: "It receives the egg cell from the ovaries through the fallopian tubes." },
+        { to: "vescica", text: "It sits right behind the bladder." },
+        { to: "bacino", text: "It is protected by the bones of the pelvis." }
+      ],
+      problems: [
+        { title: "Tummy ache during periods", causes: "the muscles of the uterus squeeze to release the inner lining.", effects: "you feel cramps low in the belly, sometimes with backache or tiredness.", prevent: "a hot-water bottle and rest can help; if the pain is strong, talk to an adult or a doctor." }
+      ],
+      fact: "During pregnancy the uterus can grow about 500 times bigger, then go back almost to its old size."
+    },
+    ovaie: {
+      name: "The ovaries", label: "Ovaries",
+      what: "<p>The ovaries are two small almond-shaped organs, one on each side. They hold egg cells and make hormones.</p>",
+      how: "<p>At birth the ovaries already hold a great many egg cells, which stay \"asleep\" until puberty. From then on, about once a month, an egg cell matures and leaves an ovary: this is called <b>ovulation</b>. The ovaries make the hormones <b>oestrogen</b> and <b>progesterone</b>, which guide the development of the female body and prepare the uterus. This cycle of about a month is the <b>menstrual cycle</b>: it is a sign that the body is growing as it should. At first it can be irregular, and that is normal. The brain coordinates everything with its own hormones.</p>",
+      links: [
+        { to: "utero", text: "The egg cell travels from the ovary to the uterus through a tube." },
+        { to: "cervello", text: "The hypothalamus and pituitary send the hormones that control the ovaries." },
+        { to: "vescica", text: "They lie low in the belly, near the bladder." }
+      ],
+      problems: [
+        { title: "Painful or irregular periods", causes: "hormones are still settling down, or the uterus squeezes strongly.", effects: "pain or late periods, especially in the first years.", prevent: "talk to a trusted adult or a doctor, who can help you feel better and check that all is well." }
+      ],
+      fact: "Usually only one egg cell ripens each month: it is the biggest cell in the body, yet only the size of a grain of sand."
+    },
+    testicoli: {
+      name: "The testicles", label: "Testicles",
+      what: "<p>The testicles are two round organs inside a pouch of skin called the scrotum. They make sperm cells and a hormone.</p>",
+      how: "<p>From puberty the testicles make millions of <b>sperm cells</b>, the male cells that are needed to start a new life, and the hormone <b>testosterone</b>, which deepens the voice and makes hair and muscles grow. Sperm form best when it is a little cooler than in the rest of the body, which is why the testicles hang outside in the scrotum, which moves closer to or further from the body to control the temperature. The sperm cells mature in a coiled tube, the epididymis, and then travel on towards the urethra. The brain controls production with its hormones.</p>",
+      links: [
+        { to: "prostata", text: "Sperm cells travel on to the prostate and mix with its fluid." },
+        { to: "cervello", text: "Hormones from the hypothalamus and pituitary tell the testicles when to work." },
+        { to: "muscoli", text: "A small muscle moves them closer to or further from the body to control the temperature." }
+      ],
+      problems: [
+        { title: "Knocks and injuries in sport", causes: "the testicles stick out and are delicate.", effects: "a knock can hurt a lot and sometimes cause swelling.", prevent: "wear the right protection in sport; if the pain does not go away, tell an adult and see a doctor." }
+      ],
+      fact: "One testicle usually hangs a little lower than the other, so they do not squash each other."
+    },
+    prostata: {
+      name: "The prostate", label: "Prostate",
+      what: "<p>The prostate is a small gland, about the size of a walnut, that only males have. It sits just below the bladder.</p>",
+      how: "<p>The prostate makes a clear fluid that joins the sperm cells: together they form <b>semen</b>. This fluid feeds the sperm cells and helps them swim. The gland wraps around the first part of the urethra, the tube that also carries urine out, and has muscles that stop urine and semen from leaving at the same moment. It develops during the teenage years and reaches its adult size.</p>",
+      links: [
+        { to: "testicoli", text: "It adds its fluid to the sperm cells made in the testicles." },
+        { to: "vescica", text: "It sits just below the bladder and surrounds the urethra." },
+        { to: "bacino", text: "It is sheltered inside the bowl of the pelvis." }
+      ],
+      problems: [
+        { title: "Prostate problems in adults", causes: "they mostly appear in older men, with age.", effects: "the prostate gets bigger and can make peeing harder.", prevent: "regular check-ups with the doctor; it does not affect children and teenagers." }
+      ],
+      fact: "The name comes from Greek and means \"standing in front\": the prostate sits right in front of the bladder."
     }
   },
   tour: [
@@ -564,7 +621,8 @@ BODY_TEXT({
     { icon: "🍽️", title: "Digesting", html: "<p>Food goes down the <b>esophagus</b> into the <b>stomach</b>, then into the <b>small intestine</b>, where the <b>liver</b>, <b>gallbladder</b> and <b>pancreas</b> help with digestion. In the <b>large intestine</b> the water is taken back.</p>", focus: ["esofago", "stomaco", "fegato", "cistifellea", "pancreas", "intestino_tenue", "intestino_crasso"], explode: 0.5 },
     { icon: "🚽", title: "Filtering and cleaning", html: "<p>The <b>kidneys</b> filter the blood and make urine, which flows down into the <b>bladder</b>.</p>", focus: ["reni", "vescica"], explode: 0.5 },
     { icon: "⚗️", title: "Hormones", html: "<p>The <b>thyroid</b>, <b>adrenal glands</b> and <b>pancreas</b> send hormones into the blood, chemical messengers that control growth, energy and reactions to stress.</p>", focus: ["tiroide", "surrenali", "pancreas"], explode: 0.5 },
-    { icon: "🛡️", title: "The defenses", html: "<p>The <b>spleen</b>, <b>thymus</b> and <b>lymph nodes</b> are the base of the white blood cells, which recognize and remove viruses and bacteria.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 }
+    { icon: "🛡️", title: "The defenses", html: "<p>The <b>spleen</b>, <b>thymus</b> and <b>lymph nodes</b> are the base of the white blood cells, which recognize and remove viruses and bacteria.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 },
+    { icon: "🌱", title: "Making new life", html: "<p>The <b>reproductive system</b> lets life continue. The female body has the <b>uterus</b> and <b>ovaries</b>, the male body has the <b>testicles</b> and <b>prostate</b>. On this page there is a female/male body switch so you can look at either one. It \"wakes up\" at puberty, and everyone has their own pace.</p>", focus: ["utero", "ovaie", "testicoli", "prostata"], explode: 0.3, view: { rx: 0.1, ry: -0.3 }, zoom: 1.6 }
   ],
   quiz: [
     { type: "mc", q: "Which organ lets oxygen pass from the air into the blood?", options: ["The stomach", "The lungs", "The kidneys"], answer: 1, explain: "In the alveoli of the lungs, oxygen passes into the blood and carbon dioxide passes into the air." },
@@ -580,6 +638,8 @@ BODY_TEXT({
     { type: "mc", q: "Where do T lymphocytes mature?", options: ["In the thymus", "In the spleen", "In the stomach"], answer: 0, explain: "In the thymus, T lymphocytes learn to recognize what is foreign to the body, and that is why they are called \"T\"." },
     { type: "num", q: "About how many meters long is an adult's small intestine?", answer: 6, tol: 1, unit: "m", explain: "The small intestine is about 6-7 meters long: folded up in the belly, it absorbs the nutrients." },
     { type: "mc", q: "Which pairing is correct?", options: ["Heart and lungs: the blood picks up oxygen", "Esophagus and kidneys: they carry urine", "Thyroid and bladder: they make bile"], answer: 0, explain: "The heart sends oxygen-poor blood to the lungs, and it comes back full of oxygen." },
-    { type: "tf", q: "The cerebellum is mainly used to digest food.", answer: false, explain: "The cerebellum coordinates movement and balance." }
+    { type: "tf", q: "The cerebellum is mainly used to digest food.", answer: false, explain: "The cerebellum coordinates movement and balance." },
+    { "type":"mc","q":"Where does a baby grow before it is born?","options":["In the stomach","In the uterus","In the bladder"],"answer":1,"explain":"The embryo settles in the uterus, a muscular organ that stretches for about 9 months."},
+    { "type":"tf","q":"The testicles make sperm cells and a hormone called testosterone.","answer":true,"explain":"The testicles make both sperm cells and testosterone, which guides the changes of puberty."}
   ]
 });

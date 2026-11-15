@@ -13,7 +13,8 @@ BODY_TEXT({
     digerente: { name: "Aparatul digestiv", intro: "<p>Transformă mâncarea în substanțe suficient de mici ca să treacă în sânge. Hrana parcurge un tub lung de aproximativ 8-9 metri: gura, esofagul, stomacul, intestinul subțire și intestinul gros. Ficatul, vezica biliară și pancreasul ajută cu sucuri speciale.</p>" },
     urinario: { name: "Aparatul urinar", intro: "<p>Este sistemul de filtrare al corpului. Rinichii curăță sângele, elimină deșeurile și apa în exces și le transformă în urină, care coboară în vezica urinară până când vine momentul să mergi la baie.</p>" },
     endocrino: { name: "Sistemul endocrin", intro: "<p>Glandele endocrine produc hormonii, mesageri chimici care călătoresc prin sânge și le spun organelor ce au de făcut: să crească, să folosească zaharurile, să reacționeze la o sperietură. Acționează mai încet decât nervii, dar efectele lor durează mai mult.</p>" },
-    immunitario: { name: "Sistemul imunitar", intro: "<p>Este armata de apărare a corpului. Globulele albe și alte celule recunosc virusurile, bacteriile și alți intruși și îi elimină. Splina, timusul și ganglionii limfatici sunt bazele unde aceste celule se formează, se antrenează și stau de pază.</p>" }
+    immunitario: { name: "Sistemul imunitar", intro: "<p>Este armata de apărare a corpului. Globulele albe și alte celule recunosc virusurile, bacteriile și alți intruși și îi elimină. Splina, timusul și ganglionii limfatici sunt bazele unde aceste celule se formează, se antrenează și stau de pază.</p>" },
+    riproduttivo: { name: "Aparatul reproducător", intro: "<p>Permite vieții să continue: datorită lui, la maturitate se poate avea un copil. În copilărie se odihnește, iar la <b>pubertate</b> se „trezește”, datorită hormonilor comandați de creier (<b>hipotalamusul</b> și <b>hipofiza</b>). Organele feminine și cele masculine sunt diferite, dar lucrează împreună: un ovul și un spermatozoid se unesc și încep o viață nouă. Fiecare crește în ritmul lui: să începi mai devreme sau mai târziu decât ceilalți este absolut normal.</p>" }
   },
   organs: {
     pelle: {
@@ -552,6 +553,62 @@ BODY_TEXT({
         { title: "Ganglioni măriți", causes: "durere în gât, răceală sau alte infecții.", effects: "simți sub bărbie niște „bobițe” dureroase care de obicei se dezumflă singure.", prevent: "odihnă, lichide, spălarea mâinilor; dacă rămân umflați mult timp, vorbește cu un adult sau cu medicul." }
       ],
       fact: "Ganglionii gâtului se umflă adesea când te doare în gât: înseamnă că organismul tău se apără."
+    },
+    utero: {
+      name: "Uterul", label: "Uter",
+      what: "<p>Uterul este un organ gol pe dinăuntru și musculos, în formă de pară întoarsă, aflat în partea de jos a abdomenului femeilor. Este „leagănul” în care poate crește un bebeluș înainte să se nască.</p>",
+      how: "<p>Pereții lui sunt făcuți dintr-un mușchi foarte puternic, iar în interior are un strat moale, <b>endometrul</b>. În fiecare lună, acest strat se pregătește să primească un ovul fecundat. Dacă nu vine niciunul, stratul se desprinde și iese din corp împreună cu puțin sânge: este <b>menstruația</b>, un proces natural care durează câteva zile. Dacă începe o sarcină, embrionul se așază în uter și crește acolo aproximativ 9 luni, iar uterul se mărește foarte mult. La naștere, mușchii lui se contractă și ajută bebelușul să iasă.</p>",
+      links: [
+        { to: "ovaie", text: "Primește ovulul de la ovare prin trompe." },
+        { to: "vescica", text: "Se află chiar în spatele vezicii urinare." },
+        { to: "bacino", text: "Este protejat de oasele bazinului." }
+      ],
+      problems: [
+        { title: "Dureri de burtă în timpul menstruației", causes: "mușchii uterului se contractă ca să elimine stratul interior.", effects: "se simt crampe jos în burtă, uneori cu dureri de spate sau oboseală.", prevent: "o pungă cu apă caldă și odihna pot ajuta; dacă durerea este puternică, vorbește cu un adult sau cu medicul." }
+      ],
+      fact: "În timpul sarcinii, uterul poate deveni de aproximativ 500 de ori mai mare, apoi revine aproape la mărimea de dinainte."
+    },
+    ovaie: {
+      name: "Ovarele", label: "Ovare",
+      what: "<p>Ovarele sunt două organe mici, în formă de migdală, câte unul de fiecare parte. Conțin ovule și produc hormoni.</p>",
+      how: "<p>La naștere, ovarele conțin deja foarte multe ovule, care „dorm” până la pubertate. Apoi, aproximativ o dată pe lună, un ovul se maturizează și părăsește un ovar: aceasta se numește <b>ovulație</b>. Ovarele produc hormonii <b>estrogen</b> și <b>progesteron</b>, care ghidează dezvoltarea corpului feminin și pregătesc uterul. Acest ciclu de aproximativ o lună se numește <b>ciclu menstrual</b>: este un semn că organismul crește cum trebuie. La început poate fi neregulat, și asta e normal. Creierul coordonează totul prin hormonii lui.</p>",
+      links: [
+        { to: "utero", text: "Ovulul ajunge de la ovar la uter printr-o trompă." },
+        { to: "cervello", text: "Hipotalamusul și hipofiza trimit hormonii care comandă ovarele." },
+        { to: "vescica", text: "Se află jos în abdomen, aproape de vezica urinară." }
+      ],
+      problems: [
+        { title: "Menstruație dureroasă sau neregulată", causes: "hormonii încă se echilibrează, sau uterul se contractă puternic.", effects: "dureri sau întârzieri ale menstruației, mai ales în primii ani.", prevent: "vorbește cu un adult de încredere sau cu medicul, care te poate ajuta să te simți mai bine și să verifice dacă totul e în regulă." }
+      ],
+      fact: "De obicei se maturizează un singur ovul pe lună: este cea mai mare celulă din corp, dar are doar cât un grăunte de nisip."
+    },
+    testicoli: {
+      name: "Testiculele", label: "Testicule",
+      what: "<p>Testiculele sunt două organe rotunde, aflate într-un săculeț de piele numit scrot. Produc spermatozoizi și un hormon.</p>",
+      how: "<p>De la pubertate, testiculele produc milioane de <b>spermatozoizi</b>, celulele masculine necesare pentru a începe o viață nouă, și hormonul <b>testosteron</b>, care schimbă vocea și face să crească perii și mușchii. Spermatozoizii se formează mai bine când e puțin mai răcoare decât în restul corpului: de aceea testiculele stau în afară, în scrot, care se apropie sau se depărtează de corp ca să regleze temperatura. Spermatozoizii se maturizează într-un tub încolăcit, epididimul, apoi călătoresc spre uretră. Creierul controlează producția prin hormonii lui.</p>",
+      links: [
+        { to: "prostata", text: "Spermatozoizii ajung spre prostată și se amestecă cu lichidul ei." },
+        { to: "cervello", text: "Hormonii hipotalamusului și ai hipofizei spun testiculelor când să lucreze." },
+        { to: "muscoli", text: "Un mușchi mic le apropie sau le depărtează de corp ca să regleze temperatura." }
+      ],
+      problems: [
+        { title: "Lovituri și accidentări la sport", causes: "testiculele sunt expuse și delicate.", effects: "o lovitură poate durea foarte tare și uneori face zona să se umfle.", prevent: "poartă echipamentul de protecție potrivit la sport; dacă durerea nu trece, spune unui adult și mergi la medic." }
+      ],
+      fact: "Un testicul atârnă de obicei puțin mai jos decât celălalt, ca să nu se strivească unul pe altul."
+    },
+    prostata: {
+      name: "Prostata", label: "Prostata",
+      what: "<p>Prostata este o glandă mică, cam cât o nucă, pe care o au doar bărbații și băieții. Se află chiar sub vezica urinară.</p>",
+      how: "<p>Prostata produce un lichid clar care se amestecă cu spermatozoizii: împreună formează <b>lichidul seminal</b>. Acest lichid hrănește spermatozoizii și îi ajută să se miște. Glanda înconjoară prima parte a uretrei, canalul prin care iese și urina, și are mușchi care împiedică urina și lichidul seminal să iasă în același timp. Se dezvoltă în adolescență și ajunge la mărimea de adult.</p>",
+      links: [
+        { to: "testicoli", text: "Adaugă lichidul ei la spermatozoizii produși de testicule." },
+        { to: "vescica", text: "Se află chiar sub vezică și înconjoară uretra." },
+        { to: "bacino", text: "Este adăpostită în cavitatea bazinului." }
+      ],
+      problems: [
+        { title: "Probleme ale prostatei la adulți", causes: "apar mai ales la bărbații în vârstă, odată cu înaintarea în vârstă.", effects: "prostata se mărește și poate îngreuna urinatul.", prevent: "controale regulate la medic; nu îi privește pe copii și pe adolescenți." }
+      ],
+      fact: "Numele vine din greacă și înseamnă „cea care stă în față”: prostata se află chiar în fața vezicii urinare."
     }
   },
   tour: [
@@ -564,7 +621,8 @@ BODY_TEXT({
     { icon: "🍽️", title: "A digera", html: "<p>Mâncarea coboară prin <b>esofag</b> în <b>stomac</b>, apoi în <b>intestinul subțire</b>, unde <b>ficatul</b>, <b>vezica biliară</b> și <b>pancreasul</b> ajută la digestie. În <b>intestinul gros</b> se recuperează apa.</p>", focus: ["esofago", "stomaco", "fegato", "cistifellea", "pancreas", "intestino_tenue", "intestino_crasso"], explode: 0.5 },
     { icon: "🚽", title: "A filtra și a curăța", html: "<p><b>Rinichii</b> filtrează sângele și produc urina, care coboară în <b>vezica urinară</b>.</p>", focus: ["reni", "vescica"], explode: 0.5 },
     { icon: "⚗️", title: "Hormonii", html: "<p><b>Tiroida</b>, <b>suprarenalele</b> și <b>pancreasul</b> trimit în sânge hormoni, mesageri chimici care reglează creșterea, energia și reacțiile la stres.</p>", focus: ["tiroide", "surrenali", "pancreas"], explode: 0.5 },
-    { icon: "🛡️", title: "Apărarea", html: "<p><b>Splina</b>, <b>timusul</b> și <b>ganglionii limfatici</b> sunt baza globulelor albe, care recunosc și elimină virusurile și bacteriile.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 }
+    { icon: "🛡️", title: "Apărarea", html: "<p><b>Splina</b>, <b>timusul</b> și <b>ganglionii limfatici</b> sunt baza globulelor albe, care recunosc și elimină virusurile și bacteriile.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 },
+    { icon: "🌱", title: "A da viață", html: "<p><b>Aparatul reproducător</b> permite vieții să continue. Corpul feminin are <b>uterul</b> și <b>ovarele</b>, cel masculin are <b>testiculele</b> și <b>prostata</b>. Pe pagină există un comutator corp feminin/masculin, ca să poți vedea unul sau celălalt. Se „trezește” la pubertate, iar fiecare are ritmul lui.</p>", focus: ["utero", "ovaie", "testicoli", "prostata"], explode: 0.3, view: { rx: 0.1, ry: -0.3 }, zoom: 1.6 }
   ],
   quiz: [
     { type: "mc", q: "Care organ face ca oxigenul din aer să treacă în sânge?", options: ["Stomacul", "Plămânii", "Rinichii"], answer: 1, explain: "În alveolele plămânilor, oxigenul trece în sânge, iar dioxidul de carbon trece în aer." },
@@ -580,6 +638,8 @@ BODY_TEXT({
     { type: "mc", q: "Unde se maturizează limfocitele T?", options: ["În timus", "În splină", "În stomac"], answer: 0, explain: "În timus, limfocitele T învață să recunoască ce este străin de corp și de aceea se numesc „T”." },
     { type: "num", q: "Aproximativ câți metri are intestinul subțire al unui adult?", answer: 6, tol: 1, unit: "m", explain: "Intestinul subțire are aproximativ 6-7 metri: îndoit în burtă, absoarbe substanțele hrănitoare." },
     { type: "mc", q: "Care legătură este corectă?", options: ["Inimă și plămâni: sângele ia oxigen", "Esofag și rinichi: duc urina", "Tiroidă și vezică urinară: produc bila"], answer: 0, explain: "Inima trimite plămânilor sânge sărac în oxigen, care se întoarce oxigenat." },
-    { type: "tf", q: "Cerebelul servește mai ales la digerarea mâncării.", answer: false, explain: "Cerebelul coordonează mișcările și echilibrul." }
+    { type: "tf", q: "Cerebelul servește mai ales la digerarea mâncării.", answer: false, explain: "Cerebelul coordonează mișcările și echilibrul." },
+    { "type":"mc","q":"Unde crește un bebeluș înainte să se nască?","options":["În stomac","În uter","În vezica urinară"],"answer":1,"explain":"Embrionul se așază în uter, un organ musculos care se mărește timp de aproximativ 9 luni."},
+    { "type":"tf","q":"Testiculele produc spermatozoizi și un hormon numit testosteron.","answer":true,"explain":"Testiculele produc atât spermatozoizi, cât și testosteron, care ghidează schimbările pubertății."}
   ]
 });

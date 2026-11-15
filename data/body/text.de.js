@@ -13,7 +13,8 @@ BODY_TEXT({
     digerente: { name: "Das Verdauungssystem", intro: "<p>Es verwandelt Nahrung in Stoffe, die klein genug sind, um ins Blut überzutreten. Die Nahrung wandert durch einen langen Schlauch von etwa 8–9 Metern: Mund, Speiseröhre, Magen, Dünndarm und Dickdarm. Leber, Gallenblase und Bauchspeicheldrüse helfen mit besonderen Säften.</p>" },
     urinario: { name: "Das Harnsystem", intro: "<p>Es ist das Filtersystem des Körpers. Die Nieren reinigen das Blut, scheiden Abfallstoffe und überschüssiges Wasser aus und machen daraus Urin, der in die Blase fließt, bis es Zeit ist, zur Toilette zu gehen.</p>" },
     endocrino: { name: "Das Hormonsystem", intro: "<p>Die Hormondrüsen bilden Hormone, chemische Botenstoffe, die im Blut reisen und den Organen sagen, was sie tun sollen: wachsen, Zucker verwerten, auf einen Schreck reagieren. Sie wirken langsamer als die Nerven, aber ihre Wirkung hält länger an.</p>" },
-    immunitario: { name: "Das Immunsystem", intro: "<p>Es ist die Verteidigungsarmee des Körpers. Weiße Blutkörperchen und andere Zellen erkennen Viren, Bakterien und andere Eindringlinge und beseitigen sie. Milz, Thymus und Lymphknoten sind die Stützpunkte, in denen diese Zellen entstehen, trainieren und Wache halten.</p>" }
+    immunitario: { name: "Das Immunsystem", intro: "<p>Es ist die Verteidigungsarmee des Körpers. Weiße Blutkörperchen und andere Zellen erkennen Viren, Bakterien und andere Eindringlinge und beseitigen sie. Milz, Thymus und Lymphknoten sind die Stützpunkte, in denen diese Zellen entstehen, trainieren und Wache halten.</p>" },
+    riproduttivo: { name: "Die Fortpflanzungsorgane", intro: "<p>Sie lassen das Leben weitergehen: Mit ihnen kann man als Erwachsener ein Baby bekommen. In der Kindheit ruhen sie und „wachen“ in der <b>Pubertät</b> auf, dank Hormonen, die das Gehirn (<b>Hypothalamus</b> und <b>Hirnanhangdrüse</b>) steuert. Weibliche und männliche Organe sind verschieden, arbeiten aber zusammen: Eine Eizelle und eine Samenzelle verschmelzen und beginnen ein neues Leben. Jeder wächst und verändert sich in seinem eigenen Tempo – früher oder später als andere anzufangen ist völlig normal.</p>" }
   },
   organs: {
     pelle: {
@@ -552,6 +553,62 @@ BODY_TEXT({
         { title: "Geschwollene Drüsen", causes: "Halsschmerzen, Schnupfen oder andere Infektionen.", effects: "du spürst unter dem Kinn schmerzhafte „Kügelchen“, die meist von selbst wieder abschwellen.", prevent: "Ruhe, Trinken, Hände waschen; wenn sie lange geschwollen bleiben, sprich mit einem Erwachsenen oder der Ärztin bzw. dem Arzt." }
       ],
       fact: "Die Lymphknoten am Hals schwellen oft an, wenn du Halsschmerzen hast: Das bedeutet, dass sich dein Körper wehrt."
+    },
+    utero: {
+      name: "Die Gebärmutter", label: "Gebärmutter",
+      what: "<p>Die Gebärmutter ist ein hohles, muskulöses, birnenförmiges Organ im Unterbauch von Frauen. Sie ist die „Wiege“, in der ein Baby vor der Geburt wachsen kann.</p>",
+      how: "<p>Ihre Wände bestehen aus sehr kräftigem Muskel, innen ist sie mit einer weichen Schicht ausgekleidet, der <b>Gebärmutterschleimhaut</b>. Jeden Monat bereitet sich diese Schicht darauf vor, eine befruchtete Eizelle aufzunehmen. Kommt keine, löst sie sich ab und verlässt den Körper mit etwas Blut: Das ist die <b>Regelblutung</b> (Periode), ein natürlicher Vorgang, der einige Tage dauert. Beginnt eine Schwangerschaft, nistet sich der Embryo in der Gebärmutter ein und wächst dort etwa 9 Monate, während sich die Gebärmutter stark dehnt. Bei der Geburt ziehen sich ihre Muskeln zusammen und helfen dem Baby, hinauszukommen.</p>",
+      links: [
+        { to: "ovaie", text: "Sie erhält die Eizelle aus den Eierstöcken durch die Eileiter." },
+        { to: "vescica", text: "Sie liegt direkt hinter der Blase." },
+        { to: "bacino", text: "Sie wird von den Knochen des Beckens geschützt." }
+      ],
+      problems: [
+        { title: "Bauchschmerzen bei der Periode", causes: "die Muskeln der Gebärmutter ziehen sich zusammen, um die innere Schicht abzustoßen.", effects: "man spürt Krämpfe im Unterbauch, manchmal mit Rückenschmerzen oder Müdigkeit.", prevent: "eine Wärmflasche und Ruhe können helfen; bei starken Schmerzen sprich mit einem Erwachsenen oder der Ärztin." }
+      ],
+      fact: "In der Schwangerschaft kann die Gebärmutter etwa 500-mal größer werden und danach fast wieder ihre alte Größe annehmen."
+    },
+    ovaie: {
+      name: "Die Eierstöcke", label: "Eierstöcke",
+      what: "<p>Die Eierstöcke sind zwei kleine mandelförmige Organe, einer auf jeder Seite. Sie enthalten Eizellen und bilden Hormone.</p>",
+      how: "<p>Schon bei der Geburt enthalten die Eierstöcke sehr viele Eizellen, die bis zur Pubertät „schlafen“. Danach reift etwa einmal im Monat eine Eizelle heran und verlässt einen Eierstock: Das nennt man <b>Eisprung</b>. Die Eierstöcke bilden die Hormone <b>Östrogen</b> und <b>Progesteron</b>, die die Entwicklung des weiblichen Körpers steuern und die Gebärmutter vorbereiten. Dieser Kreislauf von etwa einem Monat heißt <b>Menstruationszyklus</b>: Er zeigt, dass der Körper so wächst, wie er soll. Am Anfang kann er unregelmäßig sein, das ist normal. Das Gehirn koordiniert alles mit seinen Hormonen.</p>",
+      links: [
+        { to: "utero", text: "Die Eizelle wandert vom Eierstock durch den Eileiter zur Gebärmutter." },
+        { to: "cervello", text: "Hypothalamus und Hirnanhangdrüse schicken die Hormone, die die Eierstöcke steuern." },
+        { to: "vescica", text: "Sie liegen tief im Bauch, nahe der Blase." }
+      ],
+      problems: [
+        { title: "Schmerzhafte oder unregelmäßige Periode", causes: "die Hormone müssen sich noch einpendeln, oder die Gebärmutter zieht sich stark zusammen.", effects: "Schmerzen oder eine verspätete Periode, vor allem in den ersten Jahren.", prevent: "sprich mit einem Erwachsenen deines Vertrauens oder der Ärztin; sie können helfen und prüfen, ob alles in Ordnung ist." }
+      ],
+      fact: "Meist reift pro Monat nur eine Eizelle: Sie ist die größte Zelle des Körpers, aber nur so groß wie ein Sandkorn."
+    },
+    testicoli: {
+      name: "Die Hoden", label: "Hoden",
+      what: "<p>Die Hoden sind zwei runde Organe in einem Hautbeutel, dem Hodensack. Sie bilden Samenzellen und ein Hormon.</p>",
+      how: "<p>Ab der Pubertät bilden die Hoden Millionen von <b>Samenzellen</b>, den männlichen Zellen, die ein neues Leben beginnen lassen, und das Hormon <b>Testosteron</b>, das die Stimme tiefer macht und Haare und Muskeln wachsen lässt. Samenzellen entstehen besser, wenn es etwas kühler ist als im übrigen Körper. Deshalb hängen die Hoden außerhalb im Hodensack, der sich dem Körper nähert oder entfernt, um die Temperatur zu regeln. Die Samenzellen reifen in einem aufgewickelten Röhrchen, dem Nebenhoden, und wandern dann weiter zur Harnröhre. Das Gehirn steuert die Bildung mit seinen Hormonen.</p>",
+      links: [
+        { to: "prostata", text: "Die Samenzellen wandern zur Prostata und mischen sich mit ihrer Flüssigkeit." },
+        { to: "cervello", text: "Hormone aus Hypothalamus und Hirnanhangdrüse sagen den Hoden, wann sie arbeiten sollen." },
+        { to: "muscoli", text: "Ein kleiner Muskel zieht sie näher an den Körper oder lässt sie weiter weg, um die Temperatur zu regeln." }
+      ],
+      problems: [
+        { title: "Stöße und Verletzungen beim Sport", causes: "die Hoden stehen vor und sind empfindlich.", effects: "ein Stoß kann sehr wehtun und manchmal eine Schwellung verursachen.", prevent: "beim Sport den passenden Schutz tragen; geht der Schmerz nicht weg, sag es einem Erwachsenen und geh zum Arzt." }
+      ],
+      fact: "Ein Hoden hängt meist etwas tiefer als der andere, damit sie sich nicht gegenseitig quetschen."
+    },
+    prostata: {
+      name: "Die Prostata", label: "Prostata",
+      what: "<p>Die Prostata ist eine kleine Drüse, etwa so groß wie eine Walnuss, die nur Männer haben. Sie liegt direkt unter der Blase.</p>",
+      how: "<p>Die Prostata bildet eine klare Flüssigkeit, die sich mit den Samenzellen mischt: Zusammen bilden sie die <b>Samenflüssigkeit</b>. Diese Flüssigkeit ernährt die Samenzellen und hilft ihnen beim Schwimmen. Die Drüse umgibt den ersten Abschnitt der Harnröhre, die auch den Urin hinausführt, und hat Muskeln, die verhindern, dass Urin und Samenflüssigkeit gleichzeitig austreten. Sie entwickelt sich in der Jugend und erreicht dann ihre Erwachsenengröße.</p>",
+      links: [
+        { to: "testicoli", text: "Sie fügt den in den Hoden gebildeten Samenzellen ihre Flüssigkeit hinzu." },
+        { to: "vescica", text: "Sie liegt direkt unter der Blase und umgibt die Harnröhre." },
+        { to: "bacino", text: "Sie liegt geschützt in der Beckenschale." }
+      ],
+      problems: [
+        { title: "Prostataprobleme bei Erwachsenen", causes: "sie treten vor allem bei älteren Männern auf, mit dem Alter.", effects: "die Prostata wird größer und kann das Wasserlassen erschweren.", prevent: "regelmäßige Kontrollen beim Arzt; Kinder und Jugendliche betrifft das nicht." }
+      ],
+      fact: "Der Name kommt aus dem Griechischen und bedeutet „die Davorstehende“: Die Prostata liegt direkt vor der Blase."
     }
   },
   tour: [
@@ -564,7 +621,8 @@ BODY_TEXT({
     { icon: "🍽️", title: "Verdauen", html: "<p>Die Nahrung rutscht durch die <b>Speiseröhre</b> in den <b>Magen</b>, dann in den <b>Dünndarm</b>, wo <b>Leber</b>, <b>Gallenblase</b> und <b>Bauchspeicheldrüse</b> bei der Verdauung helfen. Im <b>Dickdarm</b> wird das Wasser zurückgewonnen.</p>", focus: ["esofago", "stomaco", "fegato", "cistifellea", "pancreas", "intestino_tenue", "intestino_crasso"], explode: 0.5 },
     { icon: "🚽", title: "Filtern und reinigen", html: "<p>Die <b>Nieren</b> filtern das Blut und bilden den Urin, der in die <b>Blase</b> fließt.</p>", focus: ["reni", "vescica"], explode: 0.5 },
     { icon: "⚗️", title: "Die Hormone", html: "<p><b>Schilddrüse</b>, <b>Nebennieren</b> und <b>Bauchspeicheldrüse</b> schicken Hormone ins Blut, chemische Botenstoffe, die Wachstum, Energie und Reaktionen auf Stress regeln.</p>", focus: ["tiroide", "surrenali", "pancreas"], explode: 0.5 },
-    { icon: "🛡️", title: "Die Abwehr", html: "<p><b>Milz</b>, <b>Thymus</b> und <b>Lymphknoten</b> sind der Stützpunkt der weißen Blutkörperchen, die Viren und Bakterien erkennen und beseitigen.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 }
+    { icon: "🛡️", title: "Die Abwehr", html: "<p><b>Milz</b>, <b>Thymus</b> und <b>Lymphknoten</b> sind der Stützpunkt der weißen Blutkörperchen, die Viren und Bakterien erkennen und beseitigen.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 },
+    { icon: "🌱", title: "Neues Leben", html: "<p>Die <b>Fortpflanzungsorgane</b> lassen das Leben weitergehen. Der weibliche Körper hat <b>Gebärmutter</b> und <b>Eierstöcke</b>, der männliche <b>Hoden</b> und <b>Prostata</b>. Auf der Seite gibt es einen Schalter weiblich/männlich, mit dem du den einen oder den anderen Körper ansehen kannst. Sie „wachen“ in der Pubertät auf, und jeder hat sein eigenes Tempo.</p>", focus: ["utero", "ovaie", "testicoli", "prostata"], explode: 0.3, view: { rx: 0.1, ry: -0.3 }, zoom: 1.6 }
   ],
   quiz: [
     { type: "mc", q: "Welches Organ lässt den Sauerstoff aus der Luft ins Blut übergehen?", options: ["Der Magen", "Die Lunge", "Die Nieren"], answer: 1, explain: "In den Lungenbläschen geht der Sauerstoff ins Blut und das Kohlendioxid in die Luft über." },
@@ -580,6 +638,8 @@ BODY_TEXT({
     { type: "mc", q: "Wo reifen die T-Lymphozyten heran?", options: ["Im Thymus", "In der Milz", "Im Magen"], answer: 0, explain: "Im Thymus lernen die T-Lymphozyten, das zu erkennen, was dem Körper fremd ist, und heißen deshalb „T“." },
     { type: "num", q: "Wie viele Meter lang ist der Dünndarm eines Erwachsenen ungefähr?", answer: 6, tol: 1, unit: "m", explain: "Der Dünndarm misst etwa 6–7 Meter: Im Bauch zusammengelegt nimmt er die Nährstoffe auf." },
     { type: "mc", q: "Welche Verbindung ist richtig?", options: ["Herz und Lunge: Das Blut nimmt Sauerstoff auf", "Speiseröhre und Nieren: Sie leiten den Urin", "Schilddrüse und Blase: Sie bilden die Galle"], answer: 0, explain: "Das Herz schickt sauerstoffarmes Blut zur Lunge, das mit Sauerstoff angereichert zurückkommt." },
-    { type: "tf", q: "Das Kleinhirn dient vor allem dazu, die Nahrung zu verdauen.", answer: false, explain: "Das Kleinhirn koordiniert die Bewegungen und das Gleichgewicht." }
+    { type: "tf", q: "Das Kleinhirn dient vor allem dazu, die Nahrung zu verdauen.", answer: false, explain: "Das Kleinhirn koordiniert die Bewegungen und das Gleichgewicht." },
+    { "type":"mc","q":"Wo wächst ein Baby vor der Geburt?","options":["Im Magen","In der Gebärmutter","In der Blase"],"answer":1,"explain":"Der Embryo nistet sich in der Gebärmutter ein, einem Muskelorgan, das sich etwa 9 Monate lang dehnt."},
+    { "type":"tf","q":"Die Hoden bilden Samenzellen und ein Hormon namens Testosteron.","answer":true,"explain":"Die Hoden bilden Samenzellen und Testosteron, das die Veränderungen der Pubertät steuert."}
   ]
 });

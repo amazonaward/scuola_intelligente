@@ -20,8 +20,11 @@
 | `urinario` | reni, vescica |
 | `endocrino` | tiroide, surrenali, pancreas |
 | `immunitario` | milza, timo, linfonodi |
+| `riproduttivo` | utero, ovaie (femminile), testicoli, prostata (maschile) |
 
 Un organo può stare in più apparati (pancreas, diaframma, naso, lingua).
+
+Le parti con `sex: 'f'|'m'` (utero, ovaie = `f`; testicoli, prostata = `m`) sono mostrate solo nel corpo corrispondente (interruttore femminile/maschile nella pagina).
 
 ## Geometria: `data/body/model.js`
 

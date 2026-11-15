@@ -8,7 +8,7 @@
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
   const TXT = {
-    it: { 'nav.body': 'Corpo umano', 'explore.body': 'Esplora il corpo in 3D: organi, apparati e come lavorano insieme',
+    it: { 'body.sexLabel': 'Corpo:', 'body.female': 'femminile', 'body.male': 'maschile', 'nav.body': 'Corpo umano', 'explore.body': 'Esplora il corpo in 3D: organi, apparati e come lavorano insieme',
       'body.title': 'Il corpo umano', 'body.sub': 'Ruota il corpo, fallo esplodere e tocca un organo: scopri a cosa serve, con chi lavora e cosa succede se si ammala.',
       'body.systems': 'Apparati', 'body.all': 'Tutto il corpo', 'body.organs': 'Organi', 'body.tap': 'Tocca un organo nel modello o scegline uno dall’elenco.',
       'body.what': 'A cosa serve', 'body.how': 'Come funziona', 'body.links': 'Lavora con', 'body.problems': 'Se si ammala',
@@ -17,7 +17,7 @@
       'body.tourStop': '✕ Esci dalla visita', 'body.quiz': 'Mettiti alla prova', 'body.related': 'Lezioni collegate', 'body.inSystems': 'Fa parte di',
       'body.italian': 'Questa sezione non è ancora tradotta nella tua lingua: la vedi in italiano.', 'body.loading': 'Sto preparando il corpo…', 'body.error': 'Non riesco a caricare il corpo umano. Riprova.',
       'body.done': 'Ho esplorato il corpo umano', 'body.doneOk': 'Esplorato ✓' },
-    en: { 'nav.body': 'Human body', 'explore.body': 'Explore the body in 3D: organs, systems and how they work together',
+    en: { 'body.sexLabel': 'Body:', 'body.female': 'female', 'body.male': 'male', 'nav.body': 'Human body', 'explore.body': 'Explore the body in 3D: organs, systems and how they work together',
       'body.title': 'The human body', 'body.sub': 'Rotate the body, explode it and tap an organ: find out what it does, who it works with and what happens if it gets sick.',
       'body.systems': 'Body systems', 'body.all': 'Whole body', 'body.organs': 'Organs', 'body.tap': 'Tap an organ on the model or pick one from the list.',
       'body.what': 'What it is for', 'body.how': 'How it works', 'body.links': 'Works with', 'body.problems': 'If it gets sick',
@@ -26,7 +26,7 @@
       'body.tourStop': '✕ Leave the tour', 'body.quiz': 'Test yourself', 'body.related': 'Related lessons', 'body.inSystems': 'Part of',
       'body.italian': 'This section is not translated into your language yet: you are seeing it in Italian.', 'body.loading': 'Getting the body ready…', 'body.error': 'I can’t load the human body. Please try again.',
       'body.done': 'I explored the human body', 'body.doneOk': 'Explored ✓' },
-    fr: { 'nav.body': 'Corps humain', 'explore.body': 'Explore le corps en 3D : organes, appareils et comment ils travaillent ensemble',
+    fr: { 'body.sexLabel': 'Corps :', 'body.female': 'féminin', 'body.male': 'masculin', 'nav.body': 'Corps humain', 'explore.body': 'Explore le corps en 3D : organes, appareils et comment ils travaillent ensemble',
       'body.title': 'Le corps humain', 'body.sub': 'Fais tourner le corps, fais-le exploser et touche un organe : découvre à quoi il sert, avec qui il travaille et ce qui se passe s’il tombe malade.',
       'body.systems': 'Appareils et systèmes', 'body.all': 'Tout le corps', 'body.organs': 'Organes', 'body.tap': 'Touche un organe sur le modèle ou choisis-en un dans la liste.',
       'body.what': 'À quoi il sert', 'body.how': 'Comment il fonctionne', 'body.links': 'Il travaille avec', 'body.problems': 'S’il tombe malade',
@@ -35,7 +35,7 @@
       'body.tourStop': '✕ Quitter la visite', 'body.quiz': 'Teste-toi', 'body.related': 'Leçons liées', 'body.inSystems': 'Fait partie de',
       'body.italian': 'Cette section n’est pas encore traduite dans ta langue : tu la vois en italien.', 'body.loading': 'Je prépare le corps…', 'body.error': 'Impossible de charger le corps humain. Réessaie.',
       'body.done': 'J’ai exploré le corps humain', 'body.doneOk': 'Exploré ✓' },
-    ru: { 'nav.body': 'Тело человека', 'explore.body': 'Исследуй тело в 3D: органы, системы и как они работают вместе',
+    ru: { 'body.sexLabel': 'Тело:', 'body.female': 'женское', 'body.male': 'мужское', 'nav.body': 'Тело человека', 'explore.body': 'Исследуй тело в 3D: органы, системы и как они работают вместе',
       'body.title': 'Тело человека', 'body.sub': 'Поворачивай тело, разбирай его на части и нажимай на орган: узнай, для чего он, с кем работает и что бывает, если он заболеет.',
       'body.systems': 'Системы органов', 'body.all': 'Всё тело', 'body.organs': 'Органы', 'body.tap': 'Нажми на орган на модели или выбери его в списке.',
       'body.what': 'Для чего он', 'body.how': 'Как он работает', 'body.links': 'Работает вместе с', 'body.problems': 'Если он заболеет',
@@ -44,7 +44,7 @@
       'body.tourStop': '✕ Выйти из экскурсии', 'body.quiz': 'Проверь себя', 'body.related': 'Связанные уроки', 'body.inSystems': 'Входит в',
       'body.italian': 'Этот раздел ещё не переведён на твой язык: ты видишь его по-итальянски.', 'body.loading': 'Готовлю тело…', 'body.error': 'Не получается загрузить тело человека. Попробуй ещё раз.',
       'body.done': 'Я исследовал тело человека', 'body.doneOk': 'Исследовано ✓' },
-    ro: { 'nav.body': 'Corpul uman', 'explore.body': 'Explorează corpul în 3D: organe, sisteme și cum lucrează împreună',
+    ro: { 'body.sexLabel': 'Corp:', 'body.female': 'feminin', 'body.male': 'masculin', 'nav.body': 'Corpul uman', 'explore.body': 'Explorează corpul în 3D: organe, sisteme și cum lucrează împreună',
       'body.title': 'Corpul uman', 'body.sub': 'Rotește corpul, desfă-l în bucăți și atinge un organ: află la ce folosește, cu cine lucrează și ce se întâmplă dacă se îmbolnăvește.',
       'body.systems': 'Aparate și sisteme', 'body.all': 'Tot corpul', 'body.organs': 'Organe', 'body.tap': 'Atinge un organ pe model sau alege unul din listă.',
       'body.what': 'La ce folosește', 'body.how': 'Cum funcționează', 'body.links': 'Lucrează cu', 'body.problems': 'Dacă se îmbolnăvește',
@@ -53,7 +53,7 @@
       'body.tourStop': '✕ Ieși din vizită', 'body.quiz': 'Pune-te la încercare', 'body.related': 'Lecții legate', 'body.inSystems': 'Face parte din',
       'body.italian': 'Secțiunea nu este încă tradusă în limba ta: o vezi în italiană.', 'body.loading': 'Pregătesc corpul…', 'body.error': 'Nu pot încărca corpul uman. Încearcă din nou.',
       'body.done': 'Am explorat corpul uman', 'body.doneOk': 'Explorat ✓' },
-    de: { 'nav.body': 'Menschlicher Körper', 'explore.body': 'Entdecke den Körper in 3D: Organe, Organsysteme und wie sie zusammenarbeiten',
+    de: { 'body.sexLabel': 'Körper:', 'body.female': 'weiblich', 'body.male': 'männlich', 'nav.body': 'Menschlicher Körper', 'explore.body': 'Entdecke den Körper in 3D: Organe, Organsysteme und wie sie zusammenarbeiten',
       'body.title': 'Der menschliche Körper', 'body.sub': 'Dreh den Körper, zerleg ihn und tippe auf ein Organ: Finde heraus, wofür es da ist, mit wem es zusammenarbeitet und was passiert, wenn es krank wird.',
       'body.systems': 'Organsysteme', 'body.all': 'Ganzer Körper', 'body.organs': 'Organe', 'body.tap': 'Tippe auf ein Organ im Modell oder wähle eins aus der Liste.',
       'body.what': 'Wofür es da ist', 'body.how': 'Wie es funktioniert', 'body.links': 'Arbeitet zusammen mit', 'body.problems': 'Wenn es krank wird',
@@ -71,7 +71,7 @@
     scheletro: ['m2-sci-scheletro-muscoli'], muscoli: ['m2-sci-scheletro-muscoli'], nervoso: ['m3-sci-sistema-nervoso'],
     sensi: ['p1-sci-cinque-sensi', 'm3-sci-sistema-nervoso'], circolatorio: ['m2-sci-apparato-circolatorio'],
     respiratorio: ['m2-sci-apparato-respiratorio'], digerente: ['m2-sci-apparato-digerente', 'p5-sci-alimentazione'],
-    urinario: ['p5-sci-corpo-umano'], endocrino: ['m3-sci-sistema-nervoso'], immunitario: ['p5-sci-corpo-umano'], pelle: ['p1-sci-cinque-sensi']
+    urinario: ['p5-sci-corpo-umano'], endocrino: ['m3-sci-sistema-nervoso'], immunitario: ['p5-sci-corpo-umano'], pelle: ['p1-sci-cinque-sensi'], riproduttivo: ['m3-sci-riproduzione-genetica']
   };
 
   let MODEL = null; const TEXTS = {};
@@ -121,8 +121,13 @@
     const listRow = el('div', 'body-chips small'); listBox.appendChild(listRow);
     side.append(sysBox, card, listBox);
 
-    const partsById = {}; M.parts.forEach((p) => { partsById[p.id] = p; });
-    const parts = M.parts.map((p) => { const o = O(p.id); return Object.assign({}, p, { name: o.name, label: o.label || o.name, info: o.what || '', more: o.how || '', chip: true }); });
+    const SEXK = 'zainetto-body-sex'; let sex = 'f'; try { sex = localStorage.getItem(SEXK) === 'm' ? 'm' : 'f'; } catch (e) { /* niente */ }
+    const PARTS = M.parts.filter((p) => !p.sex || p.sex === sex);
+    const sexRow = el('div', 'body-sex', `<small class="muted">${t('body.sexLabel')}</small>`);
+    [['f', '♀ ' + t('body.female')], ['m', '♂ ' + t('body.male')]].forEach(([k, lbl]) => { const b = el('button', 'chip body-chip' + (k === sex ? ' active' : ''), lbl); b.type = 'button'; b.onclick = () => { if (k === sex) return; try { localStorage.setItem(SEXK, k); } catch (e) { /* niente */ } page(m, sel && partsById[sel] && !partsById[sel].sex ? sel : null); }; sexRow.appendChild(b); });
+    sysBox.appendChild(sexRow);
+    const partsById = {}; PARTS.forEach((p) => { partsById[p.id] = p; });
+    const parts = PARTS.map((p) => { const o = O(p.id); return Object.assign({}, p, { name: o.name, label: o.label || o.name, info: o.what || '', more: o.how || '', chip: true }); });
     const sysColor = {}; (M.systems || []).forEach((s) => { sysColor[s.id] = s.color; });
     let sys = null, sel = null, only = false;
 
@@ -133,7 +138,7 @@
     if (!v || !v.model) { stage.innerHTML = `<p class="muted">${t('body.error')}</p>`; return; }
     const api = v.model;
 
-    function organsOf(sid) { return M.parts.filter((p) => (p.systems || []).includes(sid)).map((p) => p.id); }
+    function organsOf(sid) { return PARTS.filter((p) => (p.systems || []).includes(sid)).map((p) => p.id); }
     function syncFocus() {
       if (sel) { const o = O(sel); api.setFocus([sel].concat((o.links || []).map((x) => x.to)).filter((x) => partsById[x])); }
       else api.setFocus(sys ? organsOf(sys) : null);
@@ -149,7 +154,7 @@
     });
     // elenco degli organi
     const orgChips = {};
-    M.parts.forEach((p) => {
+    PARTS.forEach((p) => {
       const b = el('button', 'chip body-chip', `<i style="background:${p.color || '#94a3b8'}"></i>${esc(O(p.id).label || O(p.id).name)}`); b.type = 'button';
       b.onclick = () => selectOrgan(p.id); orgChips[p.id] = b; listRow.appendChild(b);
     });

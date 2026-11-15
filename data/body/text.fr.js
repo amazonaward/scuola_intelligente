@@ -13,7 +13,8 @@ BODY_TEXT({
     digerente: { name: "L'appareil digestif", intro: "<p>Il transforme les aliments en substances assez petites pour passer dans le sang. Les aliments parcourent un long tube d'environ 8 à 9 mètres : bouche, œsophage, estomac, intestin grêle et gros intestin. Le foie, la vésicule biliaire et le pancréas aident avec des sucs spéciaux.</p>" },
     urinario: { name: "L'appareil urinaire", intro: "<p>C'est le système de filtrage du corps. Les reins nettoient le sang, éliminent les déchets et l'excès d'eau et les transforment en urine, qui descend dans la vessie jusqu'au moment d'aller aux toilettes.</p>" },
     endocrino: { name: "Le système endocrinien", intro: "<p>Les glandes endocrines fabriquent les hormones, des messagers chimiques qui voyagent dans le sang et disent aux organes quoi faire : grandir, utiliser les sucres, réagir à une frayeur. Elles agissent plus lentement que les nerfs, mais leurs effets durent plus longtemps.</p>" },
-    immunitario: { name: "Le système immunitaire", intro: "<p>C'est l'armée de défense du corps. Les globules blancs et d'autres cellules reconnaissent les virus, les bactéries et les autres intrus et les éliminent. La rate, le thymus et les ganglions lymphatiques sont les bases où ces cellules se forment, s'entraînent et montent la garde.</p>" }
+    immunitario: { name: "Le système immunitaire", intro: "<p>C'est l'armée de défense du corps. Les globules blancs et d'autres cellules reconnaissent les virus, les bactéries et les autres intrus et les éliminent. La rate, le thymus et les ganglions lymphatiques sont les bases où ces cellules se forment, s'entraînent et montent la garde.</p>" },
+    riproduttivo: { name: "L'appareil reproducteur", intro: "<p>Il permet à la vie de continuer : c'est grâce à lui qu'à l'âge adulte on peut avoir un bébé. Il se repose pendant l'enfance et se « réveille » à la <b>puberté</b>, grâce à des hormones commandées par le cerveau (l'<b>hypothalamus</b> et l'<b>hypophyse</b>). Les organes féminins et masculins sont différents, mais ils travaillent ensemble : un ovule et un spermatozoïde s'unissent et font naître une nouvelle vie. Chacun grandit à son rythme : commencer plus tôt ou plus tard que les autres est tout à fait normal.</p>" }
   },
   organs: {
     pelle: {
@@ -552,6 +553,62 @@ BODY_TEXT({
         { title: "Ganglions gonflés", causes: "mal de gorge, rhume ou autres infections.", effects: "tu sens sous le menton des « petites boules » douloureuses qui, en général, dégonflent toutes seules.", prevent: "repos, boire, se laver les mains ; s'ils restent gonflés longtemps, parles-en à un adulte ou au médecin." }
       ],
       fact: "Les ganglions du cou gonflent souvent quand tu as mal à la gorge : cela signifie que ton corps se défend."
+    },
+    utero: {
+      name: "L'utérus", label: "Utérus",
+      what: "<p>L'utérus est un organe creux et musclé, en forme de poire renversée, situé dans le bas du ventre des femmes. C'est le « berceau » où un bébé peut grandir avant de naître.</p>",
+      how: "<p>Ses parois sont faites d'un muscle très fort et l'intérieur est tapissé d'une couche douce, l'<b>endomètre</b>. Chaque mois, cette couche se prépare à accueillir un ovule fécondé. S'il n'y en a pas, elle se détache et sort avec un peu de sang : ce sont les <b>règles</b> (menstruations), un phénomène naturel qui dure quelques jours. Si une grossesse commence, l'embryon s'installe dans l'utérus et y grandit pendant environ 9 mois, tandis que l'utérus s'agrandit beaucoup. À la naissance, ses muscles se contractent pour aider le bébé à sortir.</p>",
+      links: [
+        { to: "ovaie", text: "Il reçoit l'ovule venu des ovaires par les trompes." },
+        { to: "vescica", text: "Il se trouve juste derrière la vessie." },
+        { to: "bacino", text: "Il est protégé par les os du bassin." }
+      ],
+      problems: [
+        { title: "Mal au ventre pendant les règles", causes: "les muscles de l'utérus se contractent pour évacuer la couche intérieure.", effects: "on ressent des crampes dans le bas du ventre, parfois avec mal de dos ou fatigue.", prevent: "une bouillotte et du repos peuvent aider ; si la douleur est forte, parles-en à un adulte ou au médecin." }
+      ],
+      fact: "Pendant la grossesse, l'utérus peut devenir environ 500 fois plus gros, puis retrouver presque sa taille d'avant."
+    },
+    ovaie: {
+      name: "Les ovaires", label: "Ovaires",
+      what: "<p>Les ovaires sont deux petits organes en forme d'amande, un de chaque côté. Ils contiennent les ovules et fabriquent des hormones.</p>",
+      how: "<p>À la naissance, les ovaires contiennent déjà un très grand nombre d'ovules, qui restent « endormis » jusqu'à la puberté. Ensuite, environ une fois par mois, un ovule mûrit et quitte un ovaire : c'est l'<b>ovulation</b>. Les ovaires fabriquent les hormones <b>œstrogènes</b> et <b>progestérone</b>, qui guident le développement du corps féminin et préparent l'utérus. Ce cycle d'environ un mois s'appelle le <b>cycle menstruel</b> : c'est le signe que le corps grandit comme il faut. Au début, il peut être irrégulier, et c'est normal. Le cerveau coordonne tout avec ses hormones.</p>",
+      links: [
+        { to: "utero", text: "L'ovule passe de l'ovaire à l'utérus par une trompe." },
+        { to: "cervello", text: "L'hypothalamus et l'hypophyse envoient les hormones qui commandent les ovaires." },
+        { to: "vescica", text: "Ils se trouvent dans le bas du ventre, près de la vessie." }
+      ],
+      problems: [
+        { title: "Règles douloureuses ou irrégulières", causes: "les hormones se mettent encore en place, ou l'utérus se contracte fortement.", effects: "douleurs ou retard des règles, surtout les premières années.", prevent: "parles-en à un adulte de confiance ou au médecin, qui pourra t'aider à te sentir mieux et vérifier que tout va bien." }
+      ],
+      fact: "Généralement un seul ovule mûrit par mois : c'est la plus grosse cellule du corps, mais elle n'a que la taille d'un grain de sable."
+    },
+    testicoli: {
+      name: "Les testicules", label: "Testicules",
+      what: "<p>Les testicules sont deux organes ronds, dans une poche de peau appelée scrotum. Ils fabriquent les spermatozoïdes et une hormone.</p>",
+      how: "<p>À partir de la puberté, les testicules fabriquent des millions de <b>spermatozoïdes</b>, les cellules masculines nécessaires pour donner naissance à une nouvelle vie, et l'hormone <b>testostérone</b>, qui fait changer la voix et pousser les poils et les muscles. Les spermatozoïdes se forment mieux quand il fait un peu moins chaud que dans le reste du corps : c'est pourquoi les testicules sont à l'extérieur, dans le scrotum, qui se rapproche ou s'éloigne du corps pour régler la température. Les spermatozoïdes mûrissent dans un petit tube enroulé, l'épididyme, puis continuent vers l'urètre. Le cerveau contrôle la production avec ses hormones.</p>",
+      links: [
+        { to: "prostata", text: "Les spermatozoïdes continuent vers la prostate et se mélangent à son liquide." },
+        { to: "cervello", text: "Les hormones de l'hypothalamus et de l'hypophyse disent aux testicules quand travailler." },
+        { to: "muscoli", text: "Un petit muscle les rapproche ou les éloigne du corps pour régler la température." }
+      ],
+      problems: [
+        { title: "Coups et blessures au sport", causes: "les testicules sont en saillie et fragiles.", effects: "un coup peut faire très mal et parfois faire gonfler la zone.", prevent: "porte la protection adaptée pour le sport ; si la douleur ne passe pas, préviens un adulte et consulte un médecin." }
+      ],
+      fact: "Un testicule pend en général un peu plus bas que l'autre, pour qu'ils ne s'écrasent pas."
+    },
+    prostata: {
+      name: "La prostate", label: "Prostate",
+      what: "<p>La prostate est une petite glande, grosse comme une noix, que seuls les garçons et les hommes ont. Elle se trouve juste sous la vessie.</p>",
+      how: "<p>La prostate fabrique un liquide clair qui se mélange aux spermatozoïdes : ensemble, ils forment le <b>sperme</b>. Ce liquide nourrit les spermatozoïdes et les aide à se déplacer. La glande entoure le début de l'urètre, le canal qui évacue aussi l'urine, et possède des muscles qui empêchent l'urine et le sperme de sortir en même temps. Elle se développe pendant l'adolescence et atteint sa taille adulte.</p>",
+      links: [
+        { to: "testicoli", text: "Elle ajoute son liquide aux spermatozoïdes fabriqués par les testicules." },
+        { to: "vescica", text: "Elle se trouve juste sous la vessie et entoure l'urètre." },
+        { to: "bacino", text: "Elle est abritée dans la cuvette du bassin." }
+      ],
+      problems: [
+        { title: "Problèmes de prostate chez l'adulte", causes: "ils apparaissent surtout chez les hommes âgés, avec l'âge.", effects: "la prostate grossit et peut rendre plus difficile le fait d'uriner.", prevent: "contrôles réguliers chez le médecin ; cela ne concerne pas les enfants ni les adolescents." }
+      ],
+      fact: "Le nom vient du grec et veut dire « qui se tient devant » : la prostate se trouve juste devant la vessie."
     }
   },
   tour: [
@@ -564,7 +621,8 @@ BODY_TEXT({
     { icon: "🍽️", title: "Digérer", html: "<p>Les aliments descendent par l'<b>œsophage</b> dans l'<b>estomac</b>, puis dans l'<b>intestin grêle</b>, où le <b>foie</b>, la <b>vésicule biliaire</b> et le <b>pancréas</b> aident à digérer. Dans le <b>gros intestin</b>, on récupère l'eau.</p>", focus: ["esofago", "stomaco", "fegato", "cistifellea", "pancreas", "intestino_tenue", "intestino_crasso"], explode: 0.5 },
     { icon: "🚽", title: "Filtrer et nettoyer", html: "<p>Les <b>reins</b> filtrent le sang et fabriquent l'urine, qui descend dans la <b>vessie</b>.</p>", focus: ["reni", "vescica"], explode: 0.5 },
     { icon: "⚗️", title: "Les hormones", html: "<p>La <b>thyroïde</b>, les <b>surrénales</b> et le <b>pancréas</b> envoient dans le sang des hormones, des messagers chimiques qui règlent la croissance, l'énergie et les réactions au stress.</p>", focus: ["tiroide", "surrenali", "pancreas"], explode: 0.5 },
-    { icon: "🛡️", title: "Les défenses", html: "<p>La <b>rate</b>, le <b>thymus</b> et les <b>ganglions lymphatiques</b> sont la base des globules blancs, qui reconnaissent et éliminent virus et bactéries.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 }
+    { icon: "🛡️", title: "Les défenses", html: "<p>La <b>rate</b>, le <b>thymus</b> et les <b>ganglions lymphatiques</b> sont la base des globules blancs, qui reconnaissent et éliminent virus et bactéries.</p>", focus: ["milza", "timo", "linfonodi"], explode: 0.5 },
+    { icon: "🌱", title: "Donner la vie", html: "<p>L'<b>appareil reproducteur</b> permet à la vie de continuer. Le corps féminin a l'<b>utérus</b> et les <b>ovaires</b>, le corps masculin a les <b>testicules</b> et la <b>prostate</b>. Sur la page, un interrupteur féminin/masculin permet de voir l'un ou l'autre corps. Il se « réveille » à la puberté, et chacun a son rythme.</p>", focus: ["utero", "ovaie", "testicoli", "prostata"], explode: 0.3, view: { rx: 0.1, ry: -0.3 }, zoom: 1.6 }
   ],
   quiz: [
     { type: "mc", q: "Quel organe fait passer l'oxygène de l'air au sang ?", options: ["L'estomac", "Les poumons", "Les reins"], answer: 1, explain: "Dans les alvéoles des poumons, l'oxygène passe dans le sang et le dioxyde de carbone passe dans l'air." },
@@ -580,6 +638,8 @@ BODY_TEXT({
     { type: "mc", q: "Où mûrissent les lymphocytes T ?", options: ["Dans le thymus", "Dans la rate", "Dans l'estomac"], answer: 0, explain: "Dans le thymus, les lymphocytes T apprennent à reconnaître ce qui est étranger au corps, et c'est pour cela qu'on les appelle « T »." },
     { type: "num", q: "Combien de mètres mesure environ l'intestin grêle d'un adulte ?", answer: 6, tol: 1, unit: "m", explain: "L'intestin grêle mesure environ 6 à 7 mètres : replié dans le ventre, il absorbe les nutriments." },
     { type: "mc", q: "Quel lien est correct ?", options: ["Cœur et poumons : le sang prend de l'oxygène", "Œsophage et reins : ils portent l'urine", "Thyroïde et vessie : elles fabriquent la bile"], answer: 0, explain: "Le cœur envoie aux poumons du sang pauvre en oxygène, qui revient oxygéné." },
-    { type: "tf", q: "Le cervelet sert surtout à digérer les aliments.", answer: false, explain: "Le cervelet coordonne les mouvements et l'équilibre." }
+    { type: "tf", q: "Le cervelet sert surtout à digérer les aliments.", answer: false, explain: "Le cervelet coordonne les mouvements et l'équilibre." },
+    { "type":"mc","q":"Où grandit un bébé avant de naître ?","options":["Dans l'estomac","Dans l'utérus","Dans la vessie"],"answer":1,"explain":"L'embryon s'installe dans l'utérus, un organe musclé qui s'agrandit pendant environ 9 mois."},
+    { "type":"tf","q":"Les testicules fabriquent les spermatozoïdes et une hormone, la testostérone.","answer":true,"explain":"Les testicules fabriquent à la fois les spermatozoïdes et la testostérone, qui guide les changements de la puberté."}
   ]
 });
