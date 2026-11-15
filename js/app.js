@@ -594,6 +594,10 @@
         g.id = 'sec-gloss'; m.appendChild(g);
         const a = el('a', 'chip', '📒 ' + t('topic.glossary')); a.href = '#sec-gloss'; a.onclick = (e) => { e.preventDefault(); g.scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth' }); }; row.appendChild(a); items.push({ sec: g, chip: a });
       }
+      if (window.Levels) {
+        const base = data.sections.filter((s) => s.type === 'quiz').flatMap((s) => s.questions || []);
+        const lc = Levels.card(id, { base, count: 6, onDone: (ok, n, lv) => Store.quizResult(id, 'lv-' + lv, ok, n) }); lc.id = 'sec-livelli'; m.appendChild(lc);
+      }
       if (data.verifica) {
         const v = renderVerifica(id, data.verifica); v.id = 'sec-verifica'; m.appendChild(v);
         const a = el('a', 'chip chip-v', '🏁 ' + t('topic.verifica')); a.href = '#sec-verifica'; a.onclick = (e) => { e.preventDefault(); const x = document.getElementById('sec-verifica'); if (x) x.scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth' }); }; row.appendChild(a); items.push({ get sec() { return document.getElementById('sec-verifica') || v; }, chip: a });

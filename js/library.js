@@ -867,8 +867,10 @@
     // quiz
     if (d.quiz && d.quiz.length) {
       const q = el('section', 'card lib-quiz', `<h2>✏️ ${t('lib.quiz')}</h2>`); const area = el('div'); q.appendChild(area);
-      const mk = () => { area.innerHTML = ''; area.appendChild(Quiz.render(Z.shuffle(d.quiz), { onDone: (ok, n) => { Store.quizResult(key, 'quiz', ok, n); if (ok / n >= 0.7 && !Store.topic(key).done) setDone(true); }, onRetry: mk })); };
-      mk(); m.appendChild(q);
+      const fin = (ok, n) => { Store.quizResult(key, 'quiz', ok, n); if (ok / n >= 0.7 && !Store.topic(key).done) setDone(true); };
+      const mk = () => { area.innerHTML = ''; area.appendChild(Quiz.render(Z.shuffle(d.quiz), { onDone: fin, onRetry: mk })); };
+      if (window.Levels) Levels.mount(area, { key: 'lib-' + it.id, base: d.quiz, count: 6, onDone: fin }); else mk();
+      m.appendChild(q);
     }
     const r = relatedBox(it); if (r) m.appendChild(r);
     const foot = el('div', 'topic-foot'); foot.appendChild(doneBtn);

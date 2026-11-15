@@ -134,3 +134,12 @@ da dove viene, quali postulati/assiomi o scoperte stanno sotto, chi e come ci è
   glossario, **verifica finale da 8–12 domande** di tipi diversi.
 - Niente immagini esterne: le illustrazioni sono SVG scritti a mano dentro il file.
 - Dati corretti e verificati.
+
+## Esercizi per livello (`data/quiz/`)
+
+Ogni lezione, luogo, oggetto della libreria, oggetto dello spazio e il corpo umano possono avere una banca di domande
+divisa per difficoltà: `data/quiz/<lingua>/<chiave>.js` →
+`QBANK("it", "<chiave>", { "f": [...], "m": [...], "d": [...] })` (facile, medio, difficile; stesse domande dei quiz).
+Chiavi: id della lezione, `luogo-<id>`, `lib-<id>`, `spazio-<id>`, `corpo`. Il riquadro "🎯 Allenati per livello"
+(js/levels.js) pesca ogni volta domande diverse; le domande già presenti nella pagina contano come livello medio.
+Le traduzioni devono avere le stesse domande nello stesso ordine: controlla con `node scripts/check-quiz.js`.

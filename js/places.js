@@ -809,7 +809,8 @@
     (S.sections || []).forEach((s, i) => m.appendChild(Z.renderSection(s, pkey(owner.id), 'p' + i)));
     const qc = el('section', 'card pl-quiz', `<h2>✏️ ${t('pl.quiz')}</h2>`); m.appendChild(qc);
     const makeQuiz = () => { qc.querySelectorAll('.quiz').forEach((x) => x.remove()); qc.appendChild(Quiz.render(buildQuiz(S, eras, sName), { onDone: (ok, n) => Store.quizResult(pkey(owner.id), 'auto', ok, n), onRetry: makeQuiz, retryLabel: t('quiz.newSet') })); };
-    makeQuiz();
+    if (window.Levels) Levels.mount(qc, { key: 'luogo-' + owner.id, base: () => buildQuiz(S, eras, sName), count: 6, onDone: (ok, n) => Store.quizResult(pkey(owner.id), 'auto', ok, n) });
+    else makeQuiz();
     const foot = el('div', 'topic-foot'); const back = el('a', 'btn btn-ghost', '← ' + t('pl.back')); back.href = '#/luoghi'; foot.appendChild(back); m.appendChild(foot);
 
     showProg();
