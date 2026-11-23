@@ -35,15 +35,42 @@
   const getLv = () => { try { return localStorage.getItem('zainetto-level') || 'm'; } catch (e) { return 'm'; } };
   const setLv = (v) => { try { localStorage.setItem('zainetto-level', v); } catch (e) { /* niente */ } };
 
+  /* Memoria delle domande già viste (per chiave), così a ogni tentativo escono prima quelle nuove.
+     Si salva solo un'impronta del testo, nel browser; niente dati personali. */
+  const SEEN_KEY = 'zainetto-seen';
+  const qid = (q) => { const s = String(q.q || '') + '|' + JSON.stringify(q.options || q.items || '') ; let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); };
+  const readSeen = () => { try { return JSON.parse(localStorage.getItem(SEEN_KEY) || '{}'); } catch (e) { return {}; } };
+  function remember(key, qs) {
+    try {
+      const all = readSeen(); const prev = all[key] || [];
+      all[key] = qs.map(qid).concat(prev.filter((h) => !qs.some((q) => qid(q) === h))).slice(0, 60);
+      const keys = Object.keys(all); if (keys.length > 400) keys.slice(0, keys.length - 400).forEach((k) => delete all[k]);
+      localStorage.setItem(SEEN_KEY, JSON.stringify(all));
+    } catch (e) { /* niente */ }
+  }
+  /* Sceglie n domande dal mucchio: prima quelle mai viste, poi le meno recenti; ordine casuale. */
+  function fresh(key, pool, n) {
+    const uniq = []; const ids = new Set();
+    pool.forEach((q) => { const h = qid(q); if (!ids.has(h)) { ids.add(h); uniq.push(q); } });
+    if (uniq.length <= n) return shuffle(uniq);
+    const recent = readSeen()[key] || [];
+    const age = (q) => { const i = recent.indexOf(qid(q)); return i < 0 ? Infinity : i; };
+    // a parità di "età" l'ordine resta casuale
+    const out = shuffle(uniq).sort((a, b) => age(b) - age(a)).slice(0, n);
+    remember(key, out);
+    return shuffle(out);
+  }
+
   /* Costruisce le domande per un livello. */
-  function pick(bank, base, lv, count) {
+  function pick(bank, base, lv, count, key) {
     const B = { f: (bank && bank.f) || [], m: ((bank && bank.m) || []).concat(base || []), d: (bank && bank.d) || [] };
+    const k = (l) => (key || '?') + ':' + l;
     if (lv === 'x') {
       // misto: un po' di ogni livello, dal più facile al più difficile
       const per = Math.max(1, Math.round(count / 3));
-      return ['f', 'm', 'd'].flatMap((l) => shuffle(B[l]).slice(0, per));
+      return ['f', 'm', 'd'].flatMap((l) => fresh(k(l), B[l], per));
     }
-    return shuffle(B[lv]).slice(0, count);
+    return fresh(k(lv), B[lv], count);
   }
 
   /* Monta la scelta del livello + il quiz in host.
@@ -59,7 +86,7 @@
       let cur = getLv(); if (!avail.some(([l]) => l === cur)) cur = avail.length ? (avail.find(([l]) => l === 'm') || avail[0])[0] : null;
       const draw = () => {
         area.innerHTML = '';
-        const qs = cur ? pick(bank, base(), cur, count) : shuffle(base());
+        const qs = cur ? pick(bank, base(), cur, count, opts.key) : fresh(opts.key + ':b', base(), count);
         if (!qs.length) return;
         area.appendChild(Quiz.render(qs, { onDone: (ok, n) => opts.onDone && opts.onDone(ok, n, cur || 'm'), onRetry: draw, retryLabel: t('lv.new') }));
       };
@@ -85,5 +112,5 @@
     return box;
   }
 
-  window.Levels = { load, mount, card, pick };
+  window.Levels = { load, mount, card, pick, fresh };
 })();

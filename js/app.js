@@ -599,7 +599,7 @@
         const lc = Levels.card(id, { base, count: 6, onDone: (ok, n, lv) => Store.quizResult(id, 'lv-' + lv, ok, n) }); lc.id = 'sec-livelli'; m.appendChild(lc);
       }
       if (data.verifica) {
-        const v = renderVerifica(id, data.verifica); v.id = 'sec-verifica'; m.appendChild(v);
+        const v = renderVerifica(id, Object.assign({}, data.verifica, { _inline: data.sections.filter((s) => s.type === 'quiz').flatMap((s) => s.questions || []) })); v.id = 'sec-verifica'; m.appendChild(v);
         const a = el('a', 'chip chip-v', '🏁 ' + t('topic.verifica')); a.href = '#sec-verifica'; a.onclick = (e) => { e.preventDefault(); const x = document.getElementById('sec-verifica'); if (x) x.scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth' }); }; row.appendChild(a); items.push({ get sec() { return document.getElementById('sec-verifica') || v; }, chip: a });
       }
       spy = { toc, row, items, bar: $('.toc-prog i', toc), pct: $('.toc-pct', toc), cur: null };
@@ -650,7 +650,7 @@
       case '3d': { box.innerHTML = h('🧊'); const w = el('div', 'scene3d'); box.appendChild(w); lazy(w, () => Mini3D.mount(w, s.scene, s.options)); if (s.caption) box.appendChild(el('p', 'caption', s.caption)); break; }
       case 'widget': { box.innerHTML = h('🎮'); const w = el('div', 'widget'); box.appendChild(w); lazy(w, () => Widgets.mount(w, s.widget, s.options)); if (s.caption) box.appendChild(el('p', 'caption', s.caption)); break; }
       case 'video': box.innerHTML = h('🎬') + `<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(s.youtube)}" title="${esc(s.title || 'video')}" allowfullscreen loading="lazy"></iframe></div>` + (s.caption ? `<p class="caption">${s.caption}</p>` : ''); break;
-      case 'quiz': box.innerHTML = h('✏️') || `<h2><span class="h-ic" aria-hidden="true">✏️</span> ${t('ui.quiz')}</h2>`; box.appendChild(Quiz.render(s.questions, { onDone: (ok, n) => { Store.quizResult(topicId, 'q' + idx, ok, n); celebrate(ok, n); } })); break;
+      case 'quiz': box.innerHTML = h('✏️') || `<h2><span class="h-ic" aria-hidden="true">✏️</span> ${t('ui.quiz')}</h2>`; box.appendChild(Quiz.render(shuffle(s.questions), { onDone: (ok, n) => { Store.quizResult(topicId, 'q' + idx, ok, n); celebrate(ok, n); } })); break;
       case 'alternatives': renderAlternatives(box, s); break;
       case 'conceptMap': renderConceptMap(box, s); break;
       case 'decision': renderDecision(box, s); break;
@@ -747,13 +747,25 @@
     if (tp.best != null) $('.vf-head div', box).appendChild(el('p', 'vf-best', `${t('quiz.best', { p: tp.best })} ${tp.passedAt ? '🏆' : ''}`));
     const start = el('button', 'btn btn-big', '🚀 ' + t('topic.start'));
     box.appendChild(start);
-    start.onclick = () => {
-      const qs = shuffle(v.questions.concat(Generators.batch(v.gen || [])));
+    start.onclick = async () => {
+      start.disabled = true;
+      // Ogni tentativo pesca dal mucchio: domande della verifica + banca dei livelli + quiz della lezione,
+      // preferendo quelle non viste di recente. Le domande generate cambiano sempre i numeri.
+      const n = Math.max(8, Math.min(12, v.questions.length));
+      let pool = v.questions;
+      if (window.Levels) {
+        const bank = await Levels.load(id).catch(() => null);
+        const inline = (v._inline || []);
+        if (bank) pool = pool.concat(bank.m || [], bank.d || [], inline);
+      }
+      const picked = window.Levels ? Levels.fresh('vf:' + id, pool, n) : shuffle(pool).slice(0, n);
+      const qs = shuffle(picked.concat(Generators.batch(v.gen || [])));
       start.remove();
       box.appendChild(Quiz.render(qs, {
         oneByOne: true, pass: v.pass || 0.7,
         onDone: (ok, n) => { Store.verificaResult(id, ok, n, ok / n >= (v.pass || 0.7)); if (ok / n >= (v.pass || 0.7)) toast('🏆 ' + t('quiz.passed'), 'good'); },
-        onRetry: () => { const nb = renderVerifica(id, v); nb.id = box.id; box.replaceWith(nb); }
+        onRetry: () => { const nb = renderVerifica(id, v); nb.id = box.id; box.replaceWith(nb); nb.querySelector('.btn-big').click(); },
+        retryLabel: t('lv.new')
       }));
     };
     return box;
