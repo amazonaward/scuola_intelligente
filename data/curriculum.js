@@ -1268,10 +1268,14 @@ window.CURRICULUM = {
     'l4-sum-rousseau-pestalozzi', 'l4-sum-pedagogia-ottocento', 'l4-sum-sociologia-classici', 'l4-sum-antropologia-religione',
     'l4-sum-antropologia-parentela', 'l4-sum-psicologia-personalita', 'l4-ing-restoration-novel', 'l4-ing-romantic-poetry',
     'l4-ing-gothic-novel', 'l4-ing-victorian-age', 'l4-ing-advanced-grammar', 'l4-ing-argumentative-writing',
-    'l4-lat-lucrezio', 'l4-lat-virgilio', 'l4-lat-orazio', 'l4-lat-elegia-ovidio',
-    'l4-lat-livio', 'l4-lat-sintassi-periodo', 'l4-grc-teatro-eschilo', 'l4-grc-sofocle',
-    'l4-grc-euripide', 'l4-grc-aristofane', 'l4-grc-tucidide', 'l4-grc-oratoria',
-    'l4-art-manierismo', 'l4-art-barocco', 'l4-art-settecento', 'l4-art-neoclassicismo',
-    'l4-art-romanticismo', 'l4-art-realismo-impressionismo'
+    'l4-fra-lumieres', 'l4-fra-romantisme', 'l4-fra-realisme', 'l4-fra-baudelaire',
+    'l4-fra-argumenter-b2', 'l4-spa-barroco', 'l4-spa-ilustracion-romanticismo', 'l4-spa-realismo',
+    'l4-spa-modernismo', 'l4-spa-argumentar-b2', 'l4-ted-klassik', 'l4-ted-romantik',
+    'l4-ted-realismus', 'l4-ted-konjunktiv', 'l4-ted-argumentieren-b2', 'l4-lat-lucrezio',
+    'l4-lat-virgilio', 'l4-lat-orazio', 'l4-lat-elegia-ovidio', 'l4-lat-livio',
+    'l4-lat-sintassi-periodo', 'l4-grc-teatro-eschilo', 'l4-grc-sofocle', 'l4-grc-euripide',
+    'l4-grc-aristofane', 'l4-grc-tucidide', 'l4-grc-oratoria', 'l4-art-manierismo',
+    'l4-art-barocco', 'l4-art-settecento', 'l4-art-neoclassicismo', 'l4-art-romanticismo',
+    'l4-art-realismo-impressionismo'
   ]
 };
