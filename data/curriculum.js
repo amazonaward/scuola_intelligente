@@ -1190,6 +1190,14 @@ window.CURRICULUM = {
     'l1-fis-grandezze-misure', 'l1-fis-errori-misura', 'l1-fis-vettori-forze', 'l1-fis-equilibrio-solidi',
     'l1-fis-equilibrio-fluidi', 'l1-fis-ottica-geometrica', 'l1-sci-materia-miscugli', 'l1-sci-trasformazioni',
     'l1-sci-leggi-ponderali', 'l1-sci-terra-sistema-solare', 'l1-sci-moti-terra', 'l1-sci-idrosfera',
-    'l1-sci-atmosfera'
+    'l1-sci-atmosfera', 'l1-sto-preistoria', 'l1-sto-mesopotamia-egitto', 'l1-sto-ebrei-fenici',
+    'l1-sto-grecia-polis', 'l1-sto-guerre-persiane-pericle', 'l1-sto-alessandro-ellenismo', 'l1-sto-roma-repubblica',
+    'l1-geo-strumenti', 'l1-geo-clima-ambienti', 'l1-geo-popolazione', 'l1-geo-migrazioni',
+    'l1-geo-citta', 'l1-geo-risorse-sostenibilita', 'l1-ing-present-tenses', 'l1-ing-past-tenses',
+    'l1-ing-future-forms', 'l1-ing-modal-verbs', 'l1-ing-describing', 'l1-ing-writing-emails',
+    'l1-lat-alfabeto-pronuncia', 'l1-lat-prima-seconda-declinazione', 'l1-lat-indicativo-coniugazioni', 'l1-lat-aggettivi-prima-classe',
+    'l1-lat-complementi', 'l1-lat-terza-declinazione', 'l1-lat-metodo-traduzione', 'l1-art-costruzioni-geometriche',
+    'l1-art-proiezioni-ortogonali', 'l1-art-preistoria', 'l1-art-mesopotamia-egitto', 'l1-art-creta-micene',
+    'l1-art-grecia-templi', 'l1-art-grecia-scultura'
   ]
 };
