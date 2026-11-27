@@ -1253,6 +1253,16 @@ window.CURRICULUM = {
     'l3-lat-cesare', 'l3-lat-sallustio', 'l3-lat-cicerone', 'l3-grc-perfetto-sintassi',
     'l3-grc-omero', 'l3-grc-esiodo', 'l3-grc-lirica-arcaica', 'l3-grc-lirica-corale',
     'l3-grc-erodoto', 'l3-art-primo-rinascimento', 'l3-art-quattrocento', 'l3-art-leonardo',
-    'l3-art-michelangelo', 'l3-art-raffaello', 'l3-art-venezia', 'l3-art-prospettiva'
+    'l3-art-michelangelo', 'l3-art-raffaello', 'l3-art-venezia', 'l3-art-prospettiva',
+    'l4-mat-goniometria', 'l4-mat-equazioni-goniometriche', 'l4-mat-trigonometria', 'l4-mat-esponenziali-logaritmi',
+    'l4-mat-numeri-complessi', 'l4-mat-geometria-spazio', 'l4-mat-calcolo-combinatorio', 'l4-mat-probabilita-condizionata',
+    'l4-fis-onde-meccaniche', 'l4-fis-suono', 'l4-fis-luce-onda', 'l4-fis-carica-campo-elettrico',
+    'l4-fis-potenziale-condensatori', 'l4-fis-corrente-circuiti', 'l4-fil-rivoluzione-scientifica', 'l4-fil-cartesio',
+    'l4-fil-spinoza-leibniz', 'l4-fil-hobbes-locke', 'l4-fil-empirismo-hume', 'l4-fil-kant',
+    'l4-fil-idealismo-hegel', 'l4-ing-restoration-novel', 'l4-ing-romantic-poetry', 'l4-ing-gothic-novel',
+    'l4-ing-victorian-age', 'l4-ing-advanced-grammar', 'l4-ing-argumentative-writing', 'l4-lat-lucrezio',
+    'l4-lat-virgilio', 'l4-lat-orazio', 'l4-lat-elegia-ovidio', 'l4-lat-livio',
+    'l4-lat-sintassi-periodo', 'l4-art-manierismo', 'l4-art-barocco', 'l4-art-settecento',
+    'l4-art-neoclassicismo', 'l4-art-romanticismo', 'l4-art-realismo-impressionismo'
   ]
 };
