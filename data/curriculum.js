@@ -1193,11 +1193,19 @@ window.CURRICULUM = {
     'l1-sci-atmosfera', 'l1-sto-preistoria', 'l1-sto-mesopotamia-egitto', 'l1-sto-ebrei-fenici',
     'l1-sto-grecia-polis', 'l1-sto-guerre-persiane-pericle', 'l1-sto-alessandro-ellenismo', 'l1-sto-roma-repubblica',
     'l1-geo-strumenti', 'l1-geo-clima-ambienti', 'l1-geo-popolazione', 'l1-geo-migrazioni',
-    'l1-geo-citta', 'l1-geo-risorse-sostenibilita', 'l1-ing-present-tenses', 'l1-ing-past-tenses',
+    'l1-geo-citta', 'l1-geo-risorse-sostenibilita', 'l1-sum-psicologia-intro', 'l1-sum-percezione-attenzione',
+    'l1-sum-memoria-apprendimento', 'l1-sum-metodo-studio', 'l1-sum-educazione-antica', 'l1-sum-educazione-roma',
+    'l1-dir-norma-giuridica', 'l1-dir-persone-diritti', 'l1-dir-stato', 'l1-dir-costituzione-principi',
+    'l1-dir-economia-bisogni', 'l1-dir-sistemi-economici', 'l1-ing-present-tenses', 'l1-ing-past-tenses',
     'l1-ing-future-forms', 'l1-ing-modal-verbs', 'l1-ing-describing', 'l1-ing-writing-emails',
-    'l1-lat-alfabeto-pronuncia', 'l1-lat-prima-seconda-declinazione', 'l1-lat-indicativo-coniugazioni', 'l1-lat-aggettivi-prima-classe',
-    'l1-lat-complementi', 'l1-lat-terza-declinazione', 'l1-lat-metodo-traduzione', 'l1-art-costruzioni-geometriche',
-    'l1-art-proiezioni-ortogonali', 'l1-art-preistoria', 'l1-art-mesopotamia-egitto', 'l1-art-creta-micene',
-    'l1-art-grecia-templi', 'l1-art-grecia-scultura'
+    'l1-fra-se-presenter', 'l1-fra-present', 'l1-fra-quotidien', 'l1-fra-negation-questions',
+    'l1-fra-passe-compose', 'l1-spa-presentarse', 'l1-spa-presente', 'l1-spa-vida-cotidiana',
+    'l1-spa-gustar', 'l1-spa-preterito-perfecto', 'l1-ted-sich-vorstellen', 'l1-ted-praesens',
+    'l1-ted-artikel-kasus', 'l1-ted-alltag', 'l1-ted-modalverben', 'l1-lat-alfabeto-pronuncia',
+    'l1-lat-prima-seconda-declinazione', 'l1-lat-indicativo-coniugazioni', 'l1-lat-aggettivi-prima-classe', 'l1-lat-complementi',
+    'l1-lat-terza-declinazione', 'l1-lat-metodo-traduzione', 'l1-grc-alfabeto', 'l1-grc-articolo-prima-declinazione',
+    'l1-grc-seconda-declinazione', 'l1-grc-presente-indicativo', 'l1-grc-imperfetto-aumento', 'l1-grc-verbi-contratti',
+    'l1-grc-metodo-traduzione', 'l1-art-costruzioni-geometriche', 'l1-art-proiezioni-ortogonali', 'l1-art-preistoria',
+    'l1-art-mesopotamia-egitto', 'l1-art-creta-micene', 'l1-art-grecia-templi', 'l1-art-grecia-scultura'
   ]
 };
