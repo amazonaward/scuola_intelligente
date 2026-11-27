@@ -1,0 +1,23 @@
+QBANK("fr", "l1-fis-equilibrio-fluidi", {
+ "f": [
+  { "type": "mc", "q": "Quelle est l'unité de pression dans le Système international ?", "options": ["newton", "pascal", "joule"], "answer": 1, "explain": "La pression se mesure en pascals : 1 Pa = 1 N/m²." },
+  { "type": "num", "q": "Une force de 100 N agit perpendiculairement sur 2 m². Quelle pression (en Pa) exerce-t-elle ?", "answer": 50, "unit": "Pa", "explain": "p = F/S = 100/2 = 50 Pa." },
+  { "type": "tf", "q": "À poids égal, une personne à skis exerce sur la neige une pression plus faible qu'une personne en chaussures de montagne.", "answer": true, "explain": "Les skis ont une surface bien plus grande : à force égale, la pression p = F/S est plus faible." },
+  { "type": "text", "q": "Quel savant de Syracuse a énoncé le principe de la poussée reçue par les corps plongés dans un fluide ?", "answer": ["archimède", "archimede", "archimède de syracuse"], "explain": "Archimède de Syracuse (IIIe siècle av. J.-C.) a formulé le principe qui porte son nom." },
+  { "type": "mc", "q": "Un objet coule dans l'eau quand sa masse volumique est…", "options": ["inférieure à 1000 kg/m³", "égale à 1000 kg/m³", "supérieure à 1000 kg/m³"], "answer": 2, "explain": "Si la masse volumique du corps dépasse celle de l'eau, le poids l'emporte sur la poussée et le corps coule." }
+ ],
+ "m": [
+  { "type": "num", "q": "Quelle pression (en Pa) l'eau (ρ = 1000 kg/m³, g = 10 m/s²) exerce-t-elle à 8 m de profondeur, sans compter l'atmosphère ?", "answer": 80000, "unit": "Pa", "explain": "p = ρ g h = 1000 × 10 × 8 = 80 000 Pa." },
+  { "type": "mc", "q": "D'après le principe de Pascal, dans un fluide en équilibre, une pression appliquée en un point…", "options": ["reste seulement en ce point", "se transmet intégralement en tout point du fluide", "diminue avec la distance"], "answer": 1, "explain": "La pression se transmet intégralement dans tout le fluide et aux parois." },
+  { "type": "num", "q": "Une presse hydraulique a des pistons de section 10 cm² et 500 cm². En poussant le petit avec 20 N, quelle force (en N) obtient-on sur le grand ?", "answer": 1000, "unit": "N", "explain": "F2 = F1·S2/S1 = 20 × 500/10 = 1000 N." },
+  { "type": "tf", "q": "La poussée d'Archimède sur un corps complètement immergé dépend du volume du corps mais pas de sa forme.", "answer": true, "explain": "FA = ρ V g : seul compte le volume de fluide déplacé." },
+  { "type": "mc", "q": "Un bloc de glace (917 kg/m³) flotte dans l'eau. Quelle fraction de son volume est immergée, environ ?", "options": ["8 %", "50 %", "92 %"], "answer": 2, "explain": "La fraction immergée est ρglace/ρeau = 917/1000, soit environ 92 %." }
+ ],
+ "d": [
+  { "type": "num", "q": "Un cube de bois de 20 cm de côté et de masse 6,4 kg est complètement immergé dans l'eau (ρ = 1000 kg/m³, g = 10 m/s²). Quelle est la force résultante (en N, positive si vers le haut) qui s'exerce sur lui ?", "answer": 16, "unit": "N", "explain": "V = 0,008 m³ : FA = 1000 × 0,008 × 10 = 80 N ; P = 6,4 × 10 = 64 N. Résultante vers le haut : 80 − 64 = 16 N." },
+  { "type": "num", "q": "Dans un tube en U contenant de l'eau d'un côté et de l'huile de l'autre, la colonne d'eau mesure 20 cm. Si la masse volumique de l'huile est 800 kg/m³, quelle est la hauteur (en cm) de la colonne d'huile, mesurée à partir de la même surface de séparation ?", "answer": 25, "unit": "cm", "explain": "ρ1h1 = ρ2h2 : 1000 × 20 = 800 × h, donc h = 25 cm." },
+  { "type": "mc", "q": "Pourquoi la colonne de mercure d'un baromètre mesure-t-elle environ 760 mm, alors qu'une colonne d'eau mesurerait plus de 10 m ?", "options": ["Parce que le mercure est beaucoup plus dense que l'eau (environ 13,6 fois)", "Parce que le mercure est plus froid", "Parce que le mercure n'est pas soumis à la gravité"], "answer": 0, "explain": "La colonne doit avoir un poids par unité de surface égal à la pression atmosphérique : ρ g h = constante. Avec ρ 13,6 fois plus grand, h est 13,6 fois plus petit." },
+  { "type": "tf", "q": "Un plongeur qui descend de 10 m à 30 m de profondeur dans l'eau de mer voit la pression totale augmenter d'environ 2 atm.", "answer": true, "explain": "Chaque tranche de 10 m d'eau ajoute environ 1 atm : 20 m de plus correspondent à environ 2 atm de plus." },
+  { "type": "mc", "q": "Un bateau chargé de marchandises s'enfonce davantage dans l'eau. Qu'arrive-t-il à la poussée d'Archimède ?", "options": ["Elle diminue", "Elle augmente, jusqu'à égaler le nouveau poids", "Elle reste la même et le bateau coule"], "answer": 1, "explain": "En s'enfonçant davantage, le bateau déplace plus d'eau : la poussée augmente jusqu'à égaler le poids total, et l'équilibre se rétablit." }
+ ]
+});
