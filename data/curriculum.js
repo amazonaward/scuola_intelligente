@@ -1182,6 +1182,14 @@ window.CURRICULUM = {
     'm3-geo-globalizzazione', 'm3-geo-asia', 'm3-geo-africa', 'm3-geo-america',
     'm3-geo-oceania', 'm3-ing-present-perfect', 'm3-ing-conditionals', 'm3-ing-passive',
     'm3-ing-reported-speech', 'm3-tec-assonometria', 'm3-tec-elettricita-elettronica', 'm3-tec-ia-dati',
-    'm3-tec-robotica', 'm3-lat-casi-funzioni', 'm3-lat-verbo-sum', 'm3-lat-motti-celebri'
+    'm3-tec-robotica', 'm3-lat-casi-funzioni', 'm3-lat-verbo-sum', 'm3-lat-motti-celebri',
+    'l1-ita-comunicazione-registri', 'l1-ita-morfologia-sintassi', 'l1-ita-testo-narrativo', 'l1-ita-generi-narrativi',
+    'l1-ita-epica-omero', 'l1-ita-eneide', 'l1-ita-riassunto-espositivo', 'l1-mat-insiemi-logica',
+    'l1-mat-insiemi-numerici', 'l1-mat-monomi-polinomi', 'l1-mat-scomposizione', 'l1-mat-frazioni-algebriche',
+    'l1-mat-equazioni-primo-grado', 'l1-mat-geometria-euclidea', 'l1-mat-parallelismo', 'l1-mat-statistica',
+    'l1-fis-grandezze-misure', 'l1-fis-errori-misura', 'l1-fis-vettori-forze', 'l1-fis-equilibrio-solidi',
+    'l1-fis-equilibrio-fluidi', 'l1-fis-ottica-geometrica', 'l1-sci-materia-miscugli', 'l1-sci-trasformazioni',
+    'l1-sci-leggi-ponderali', 'l1-sci-terra-sistema-solare', 'l1-sci-moti-terra', 'l1-sci-idrosfera',
+    'l1-sci-atmosfera'
   ]
 };
