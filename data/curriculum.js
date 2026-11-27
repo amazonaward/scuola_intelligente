@@ -1242,7 +1242,17 @@ window.CURRICULUM = {
     'l3-sto-monarchie-nazionali', 'l3-sto-signorie-rinascimento', 'l3-sto-scoperte-geografiche', 'l3-sto-riforma-controriforma',
     'l3-sto-carlo-v-filippo-ii', 'l3-sto-seicento', 'l3-fil-nascita-presocratici', 'l3-fil-sofisti-socrate',
     'l3-fil-platone', 'l3-fil-aristotele', 'l3-fil-ellenismo', 'l3-fil-agostino',
-    'l3-fil-scolastica-tommaso', 'l3-ing-middle-ages-chaucer', 'l3-ing-renaissance', 'l3-ing-shakespeare',
-    'l3-ing-mixed-tenses', 'l3-ing-linking-words', 'l3-ing-speaking-b2'
+    'l3-fil-scolastica-tommaso', 'l3-sum-antropologia-cultura', 'l3-sum-antropologia-metodi', 'l3-sum-sociologia-nascita',
+    'l3-sum-psicologia-sviluppo', 'l3-sum-umanesimo-comenio', 'l3-sum-controriforma-gesuiti', 'l3-ing-middle-ages-chaucer',
+    'l3-ing-renaissance', 'l3-ing-shakespeare', 'l3-ing-mixed-tenses', 'l3-ing-linking-words',
+    'l3-ing-speaking-b2', 'l3-fra-moyen-age', 'l3-fra-renaissance', 'l3-fra-classicisme',
+    'l3-fra-subjonctif', 'l3-fra-analyse-texte', 'l3-spa-edad-media', 'l3-spa-siglo-de-oro',
+    'l3-spa-cervantes', 'l3-spa-subjuntivo', 'l3-spa-analisis-texto', 'l3-ted-mittelalter',
+    'l3-ted-aufklaerung', 'l3-ted-praeteritum', 'l3-ted-passiv', 'l3-ted-textanalyse',
+    'l3-lat-sintassi-casi', 'l3-lat-gerundio-gerundivo', 'l3-lat-origini-teatro', 'l3-lat-catullo',
+    'l3-lat-cesare', 'l3-lat-sallustio', 'l3-lat-cicerone', 'l3-grc-perfetto-sintassi',
+    'l3-grc-omero', 'l3-grc-esiodo', 'l3-grc-lirica-arcaica', 'l3-grc-lirica-corale',
+    'l3-grc-erodoto', 'l3-art-primo-rinascimento', 'l3-art-quattrocento', 'l3-art-leonardo',
+    'l3-art-michelangelo', 'l3-art-raffaello', 'l3-art-venezia', 'l3-art-prospettiva'
   ]
 };
