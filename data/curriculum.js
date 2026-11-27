@@ -1217,7 +1217,19 @@ window.CURRICULUM = {
     'l2-sci-ecosistemi', 'l2-sto-crisi-repubblica', 'l2-sto-augusto-impero', 'l2-sto-cristianesimo',
     'l2-sto-crisi-caduta', 'l2-sto-regni-bizantini', 'l2-sto-islam', 'l2-sto-carlo-magno-feudalesimo',
     'l2-geo-europa-ue', 'l2-geo-italia-mondo', 'l2-geo-asia', 'l2-geo-africa',
-    'l2-geo-americhe', 'l2-geo-globalizzazione', 'l2-ing-present-perfect', 'l2-ing-conditionals',
-    'l2-ing-passive', 'l2-ing-relative-clauses', 'l2-ing-reported-speech', 'l2-ing-essay-writing'
+    'l2-geo-americhe', 'l2-geo-globalizzazione', 'l2-sum-comunicazione', 'l2-sum-psicologia-sociale',
+    'l2-sum-emozioni-motivazione', 'l2-sum-intelligenza', 'l2-sum-educazione-cristiana', 'l2-sum-medioevo-universita',
+    'l2-dir-parlamento', 'l2-dir-governo-presidente', 'l2-dir-magistratura-corte', 'l2-dir-ue-onu',
+    'l2-dir-mercato', 'l2-dir-moneta-pil', 'l2-ing-present-perfect', 'l2-ing-conditionals',
+    'l2-ing-passive', 'l2-ing-relative-clauses', 'l2-ing-reported-speech', 'l2-ing-essay-writing',
+    'l2-fra-imparfait', 'l2-fra-futur-conditionnel', 'l2-fra-pronoms', 'l2-fra-france-francophonie',
+    'l2-fra-ecrire-b1', 'l2-spa-indefinido', 'l2-spa-futuro-condicional', 'l2-spa-ser-estar',
+    'l2-spa-mundo-hispano', 'l2-spa-escribir-b1', 'l2-ted-perfekt', 'l2-ted-dativ-praepositionen',
+    'l2-ted-nebensaetze', 'l2-ted-deutschland', 'l2-ted-schreiben-b1', 'l2-lat-terza-aggettivi-seconda',
+    'l2-lat-quarta-quinta', 'l2-lat-pronomi', 'l2-lat-perfetto', 'l2-lat-participio-ablativo',
+    'l2-lat-congiuntivo-finali', 'l2-lat-cum-infinitive', 'l2-grc-terza-declinazione', 'l2-grc-aggettivi-comparativi',
+    'l2-grc-pronomi', 'l2-grc-verbi-mi', 'l2-grc-futuro-aoristo', 'l2-grc-participio',
+    'l2-grc-congiuntivo-ottativo', 'l2-art-roma', 'l2-art-paleocristiana-bizantina', 'l2-art-romanico',
+    'l2-art-gotico', 'l2-art-proiezioni-solidi', 'l2-art-assonometria'
   ]
 };
