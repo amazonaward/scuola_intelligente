@@ -1276,6 +1276,11 @@ window.CURRICULUM = {
     'l4-lat-sintassi-periodo', 'l4-grc-teatro-eschilo', 'l4-grc-sofocle', 'l4-grc-euripide',
     'l4-grc-aristofane', 'l4-grc-tucidide', 'l4-grc-oratoria', 'l4-art-manierismo',
     'l4-art-barocco', 'l4-art-settecento', 'l4-art-neoclassicismo', 'l4-art-romanticismo',
-    'l4-art-realismo-impressionismo'
+    'l4-art-realismo-impressionismo', 'l5-mat-limiti', 'l5-mat-continuita', 'l5-mat-derivate',
+    'l5-mat-teoremi-calcolo', 'l5-mat-studio-funzione', 'l5-mat-integrali', 'l5-mat-equazioni-differenziali',
+    'l5-mat-distribuzioni-probabilita', 'l5-fis-campo-magnetico', 'l5-fis-induzione', 'l5-fis-maxwell-onde-em',
+    'l5-fis-relativita', 'l5-fis-quantistica', 'l5-fis-nucleare-particelle', 'l5-ing-modernism',
+    'l5-ing-war-poets', 'l5-ing-dystopian-novel', 'l5-ing-theatre-absurd', 'l5-ing-contemporary',
+    'l5-ing-exam-skills'
   ]
 };
