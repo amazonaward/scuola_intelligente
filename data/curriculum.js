@@ -1283,13 +1283,17 @@ window.CURRICULUM = {
     'l5-sci-gruppi-funzionali', 'l5-sci-biochimica', 'l5-sci-biotecnologie', 'l5-sci-tettonica',
     'l5-sci-vulcani-terremoti', 'l5-sci-clima-atmosfera', 'l5-fil-schopenhauer-kierkegaard', 'l5-fil-marx',
     'l5-fil-positivismo', 'l5-fil-nietzsche', 'l5-fil-freud', 'l5-fil-epistemologia',
-    'l5-fil-esistenzialismo', 'l5-fil-filosofia-politica', 'l5-ing-modernism', 'l5-ing-war-poets',
-    'l5-ing-dystopian-novel', 'l5-ing-theatre-absurd', 'l5-ing-contemporary', 'l5-ing-exam-skills',
+    'l5-fil-esistenzialismo', 'l5-fil-filosofia-politica', 'l5-sum-attivismo-dewey', 'l5-sum-montessori',
+    'l5-sum-pedagogia-novecento', 'l5-sum-sociologia-globalizzazione', 'l5-sum-welfare-lavoro', 'l5-sum-media-comunicazione',
+    'l5-sum-ricerca-sociale', 'l5-ing-modernism', 'l5-ing-war-poets', 'l5-ing-dystopian-novel',
+    'l5-ing-theatre-absurd', 'l5-ing-contemporary', 'l5-ing-exam-skills', 'l5-fra-proust',
+    'l5-fra-surrealisme', 'l5-fra-existentialisme', 'l5-fra-francophonie-litterature', 'l5-fra-esame',
     'l5-spa-generacion-98-27', 'l5-spa-guerra-civil', 'l5-spa-boom', 'l5-spa-contemporanea',
-    'l5-spa-examen', 'l5-lat-seneca', 'l5-lat-lucano-petronio', 'l5-lat-quintiliano-marziale',
-    'l5-lat-tacito', 'l5-lat-apuleio', 'l5-lat-letteratura-cristiana', 'l5-grc-platone-greco',
-    'l5-grc-menandro', 'l5-grc-ellenismo-poesia', 'l5-grc-polibio-plutarco', 'l5-grc-seconda-sofistica',
-    'l5-grc-nuovo-testamento', 'l5-art-postimpressionismo', 'l5-art-art-nouveau', 'l5-art-avanguardie',
-    'l5-art-astrattismo-dada', 'l5-art-architettura-moderna', 'l5-art-contemporanea'
+    'l5-spa-examen', 'l5-ted-jahrhundertwende', 'l5-ted-kafka', 'l5-ted-expressionismus-brecht',
+    'l5-ted-nachkriegszeit', 'l5-ted-pruefung', 'l5-lat-seneca', 'l5-lat-lucano-petronio',
+    'l5-lat-quintiliano-marziale', 'l5-lat-tacito', 'l5-lat-apuleio', 'l5-lat-letteratura-cristiana',
+    'l5-grc-platone-greco', 'l5-grc-menandro', 'l5-grc-ellenismo-poesia', 'l5-grc-polibio-plutarco',
+    'l5-grc-seconda-sofistica', 'l5-grc-nuovo-testamento', 'l5-art-postimpressionismo', 'l5-art-art-nouveau',
+    'l5-art-avanguardie', 'l5-art-astrattismo-dada', 'l5-art-architettura-moderna', 'l5-art-contemporanea'
   ]
 };
