@@ -1230,6 +1230,19 @@ window.CURRICULUM = {
     'l2-lat-congiuntivo-finali', 'l2-lat-cum-infinitive', 'l2-grc-terza-declinazione', 'l2-grc-aggettivi-comparativi',
     'l2-grc-pronomi', 'l2-grc-verbi-mi', 'l2-grc-futuro-aoristo', 'l2-grc-participio',
     'l2-grc-congiuntivo-ottativo', 'l2-art-roma', 'l2-art-paleocristiana-bizantina', 'l2-art-romanico',
-    'l2-art-gotico', 'l2-art-proiezioni-solidi', 'l2-art-assonometria'
+    'l2-art-gotico', 'l2-art-proiezioni-solidi', 'l2-art-assonometria', 'l3-ita-stilnovo',
+    'l3-ita-dante', 'l3-ita-inferno', 'l3-ita-petrarca', 'l3-ita-boccaccio',
+    'l3-ita-umanesimo-rinascimento', 'l3-ita-ariosto', 'l3-ita-machiavelli', 'l3-ita-tasso',
+    'l3-mat-equazioni-disequazioni', 'l3-mat-funzioni', 'l3-mat-retta-analitica', 'l3-mat-parabola',
+    'l3-mat-circonferenza', 'l3-mat-ellisse-iperbole', 'l3-mat-successioni', 'l3-mat-statistica-bivariata',
+    'l3-fis-quantita-moto-urti', 'l3-fis-moto-rotatorio', 'l3-fis-gravitazione', 'l3-fis-fluidodinamica',
+    'l3-fis-gas-perfetti', 'l3-fis-primo-principio', 'l3-fis-secondo-principio', 'l3-sci-modelli-atomici',
+    'l3-sci-tavola-periodica', 'l3-sci-legami-chimici', 'l3-sci-nomenclatura', 'l3-sci-reazioni-stechiometria',
+    'l3-sci-dna-genetica', 'l3-sci-corpo-umano', 'l3-sto-comuni-impero-papato', 'l3-sto-crisi-trecento',
+    'l3-sto-monarchie-nazionali', 'l3-sto-signorie-rinascimento', 'l3-sto-scoperte-geografiche', 'l3-sto-riforma-controriforma',
+    'l3-sto-carlo-v-filippo-ii', 'l3-sto-seicento', 'l3-fil-nascita-presocratici', 'l3-fil-sofisti-socrate',
+    'l3-fil-platone', 'l3-fil-aristotele', 'l3-fil-ellenismo', 'l3-fil-agostino',
+    'l3-fil-scolastica-tommaso', 'l3-ing-middle-ages-chaucer', 'l3-ing-renaissance', 'l3-ing-shakespeare',
+    'l3-ing-mixed-tenses', 'l3-ing-linking-words', 'l3-ing-speaking-b2'
   ]
 };
