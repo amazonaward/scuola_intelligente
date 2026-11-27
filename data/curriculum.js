@@ -1206,6 +1206,18 @@ window.CURRICULUM = {
     'l1-lat-terza-declinazione', 'l1-lat-metodo-traduzione', 'l1-grc-alfabeto', 'l1-grc-articolo-prima-declinazione',
     'l1-grc-seconda-declinazione', 'l1-grc-presente-indicativo', 'l1-grc-imperfetto-aumento', 'l1-grc-verbi-contratti',
     'l1-grc-metodo-traduzione', 'l1-art-costruzioni-geometriche', 'l1-art-proiezioni-ortogonali', 'l1-art-preistoria',
-    'l1-art-mesopotamia-egitto', 'l1-art-creta-micene', 'l1-art-grecia-templi', 'l1-art-grecia-scultura'
+    'l1-art-mesopotamia-egitto', 'l1-art-creta-micene', 'l1-art-grecia-templi', 'l1-art-grecia-scultura',
+    'l2-ita-promessi-sposi', 'l2-ita-testo-poetico', 'l2-ita-figure-retoriche', 'l2-ita-teatro',
+    'l2-ita-sintassi-periodo', 'l2-ita-testo-argomentativo', 'l2-ita-origini-letteratura', 'l2-mat-disequazioni-primo-grado',
+    'l2-mat-sistemi-lineari', 'l2-mat-radicali', 'l2-mat-piano-cartesiano-retta', 'l2-mat-equazioni-secondo-grado',
+    'l2-mat-circonferenza-poligoni', 'l2-mat-equivalenza-pitagora', 'l2-mat-similitudine', 'l2-mat-probabilita',
+    'l2-fis-moto-rettilineo', 'l2-fis-moto-accelerato', 'l2-fis-moti-piano', 'l2-fis-principi-dinamica',
+    'l2-fis-lavoro-energia', 'l2-fis-temperatura-calore', 'l2-sci-mole', 'l2-sci-molecole-vita',
+    'l2-sci-cellula', 'l2-sci-membrana-trasporti', 'l2-sci-mitosi-meiosi', 'l2-sci-evoluzione-classificazione',
+    'l2-sci-ecosistemi', 'l2-sto-crisi-repubblica', 'l2-sto-augusto-impero', 'l2-sto-cristianesimo',
+    'l2-sto-crisi-caduta', 'l2-sto-regni-bizantini', 'l2-sto-islam', 'l2-sto-carlo-magno-feudalesimo',
+    'l2-geo-europa-ue', 'l2-geo-italia-mondo', 'l2-geo-asia', 'l2-geo-africa',
+    'l2-geo-americhe', 'l2-geo-globalizzazione', 'l2-ing-present-perfect', 'l2-ing-conditionals',
+    'l2-ing-passive', 'l2-ing-relative-clauses', 'l2-ing-reported-speech', 'l2-ing-essay-writing'
   ]
 };
