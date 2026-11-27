@@ -171,7 +171,7 @@ TOPIC('it', {
       html: `<table>
 <tr><th>Attivo</th><th>Passivo</th></tr>
 <tr><td><i>Magister puerum laudat.</i><br>Il maestro loda il ragazzo.</td><td><i>Puer a magistro laudatur.</i><br>Il ragazzo è lodato dal maestro.</td></tr>
-<tr><td><i>Agricolae agros arabant.</i><br>I contadini arano i campi.</td><td><i>Agri ab agricolis arabantur.</i><br>I campi erano arati dai contadini.</td></tr>
+<tr><td><i>Agricolae agros arabant.</i><br>I contadini aravano i campi.</td><td><i>Agri ab agricolis arabantur.</i><br>I campi erano arati dai contadini.</td></tr>
 <tr><td><i>Poeta carmen scribet.</i><br>Il poeta scriverà un carme.</td><td><i>Carmen a poeta scribetur.</i><br>Un carme sarà scritto dal poeta.</td></tr>
 </table>
 <p>L'<b>oggetto</b> della frase attiva diventa il <b>soggetto</b> della passiva (accusativo ➜ nominativo); il vecchio soggetto diventa <b>complemento d'agente</b> (<i>a/ab</i> + ablativo). Il verbo passivo concorda con il nuovo soggetto in persona e numero.</p>`
