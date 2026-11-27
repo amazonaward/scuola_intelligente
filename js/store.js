@@ -25,10 +25,10 @@
     logout() { data.current = null; save(); },
     getLang() { const p = this.current(); return (p && p.lang) || data.lang || null; },
     setLang(l) { data.lang = l; const p = this.current(); if (p) p.lang = l; save(); },
-    create({ name, avatar, year, lang }) {
+    create({ name, avatar, year, lang, track }) {
       const id = uid();
       data.profiles[id] = {
-        id, name, avatar, year, lang, created: Date.now(),
+        id, name, avatar, year, lang, track, created: Date.now(),
         color: COLORS[Object.keys(data.profiles).length % COLORS.length],
         topics: {}, log: [], days: []
       };

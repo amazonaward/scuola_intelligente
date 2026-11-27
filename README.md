@@ -1,7 +1,9 @@
 # 🎒 Zainetto · Scuola intelligente
 
-Sito educativo per ragazzi **dalla 1ª elementare alla 3ª media**, con il programma diviso per anno secondo le
-**Indicazioni nazionali 2025** (D.M. 221 del 9 dicembre 2025, in vigore dall'a.s. 2026/27 a partire dalle classi prime).
+Sito educativo per ragazzi **dalla 1ª elementare alla 5ª liceo**, con il programma diviso per anno secondo le
+**Indicazioni nazionali 2025** (D.M. 221 del 9 dicembre 2025, in vigore dall'a.s. 2026/27 a partire dalle classi prime)
+e, per il liceo, le **Indicazioni nazionali per i licei** (D.M. 211/2010) con quattro indirizzi: scientifico, classico,
+linguistico e scienze umane (materie per indirizzo in `tracks` di `data/curriculum.js`).
 
 Funziona tutto nel browser: è un sito statico (HTML, CSS e JavaScript puro) senza server, database o librerie esterne,
 ed è pubblicabile direttamente su **GitHub Pages**.

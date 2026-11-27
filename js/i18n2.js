@@ -7,7 +7,7 @@
       'explore.title': "Esplora", 'explore.sub': "Per tutti, a ogni età: non dipende dalla classe.", 'explore.library': "Smonta in 3D macchine, pianeti e corpo umano", 'explore.coding': "Programma un robot e disegna con il codice", 'explore.places': "Scegli un luogo sul globo e viaggia nel tempo",
       'nav.library': 'Come funziona', 'nav.coding': 'Coding', 'nav.places': 'Storia dei luoghi',
       'g.gcd': 'MCD', 'g.lcm': 'mcm',
-      'subj.tec': 'Tecnologia e informatica', 'subj.lat': 'Latino (LEL)',
+      'subj.tec': 'Tecnologia e informatica', 'subj.lat': 'Latino',
       'ref.note': 'Programma secondo le Indicazioni nazionali 2025 (D.M. 221/2025), in vigore dall\'a.s. 2026/27 a partire dalle classi prime.',
       'alt.title': 'Altri modi per capirlo', 'alt.hint': 'Non ti convince il metodo di scuola? Prova un\'altra strada:',
       'map.tap': 'Tocca un concetto per esplorarlo', 'map.what': 'Che cos\'è', 'map.why': 'Perché? Da dove viene?',

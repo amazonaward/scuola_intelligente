@@ -5,15 +5,15 @@
   const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
-  const SUBJ_ICON = { ita: '📖', mat: '🔢', sci: '🔬', sto: '🏛️', geo: '🌍', ing: '🇬🇧', tec: '💻', lat: '🏺' };
-  const SUBJ_COLOR = { ita: '#e85d75', mat: '#4c7cf3', sci: '#2fb67c', sto: '#d08a2e', geo: '#18a5b8', ing: '#8a5cf6', tec: '#64748b', lat: '#b45309' };
-  const YEAR_COLOR = { p1: '#ff7a59', p2: '#f59e0b', p3: '#84cc16', p4: '#14b8a6', p5: '#3b82f6', m1: '#8b5cf6', m2: '#ec4899', m3: '#ef4444' };
+  const SUBJ_ICON = { ita: '📖', mat: '🔢', sci: '🔬', sto: '🏛️', geo: '🌍', ing: '🇬🇧', tec: '💻', lat: '🏺', fis: '⚛️', fil: '🦉', sum: '🧠', dir: '⚖️', fra: '🇫🇷', spa: '🇪🇸', ted: '🇩🇪', grc: '🏛', art: '🎨' };
+  const SUBJ_COLOR = { ita: '#e85d75', mat: '#4c7cf3', sci: '#2fb67c', sto: '#d08a2e', geo: '#18a5b8', ing: '#8a5cf6', tec: '#64748b', lat: '#b45309', fis: '#0ea5e9', fil: '#7c3aed', sum: '#db2777', dir: '#0f766e', fra: '#2563eb', spa: '#dc2626', ted: '#a16207', grc: '#9a3412', art: '#c026d3' };
+  const YEAR_COLOR = { p1: '#ff7a59', p2: '#f59e0b', p3: '#84cc16', p4: '#14b8a6', p5: '#3b82f6', m1: '#8b5cf6', m2: '#ec4899', m3: '#ef4444', l1: '#0891b2', l2: '#0d9488', l3: '#4f46e5', l4: '#9333ea', l5: '#be123c' };
   const FULL = new Set(C.full);
   const reduceMotion = () => window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- testi nuovi dell'interfaccia (aggiunti solo se mancano nei dizionari) ---------- */
   const UI = {
-    it: { 'app.docTitle': 'Zainetto · Scuola intelligente', 'app.metaDesc': 'Impara giocando dalla 1ª elementare alla 3ª media: programma ministeriale, lezioni con 3D, spiegazioni alternative, mappe concettuali, quiz e verifiche. In italiano, inglese, francese, russo, rumeno e tedesco.', 'ui.map': 'Mappa', 'ui.quiz': 'Quiz',
+    it: { 'app.docTitle': 'Zainetto · Scuola intelligente', 'app.metaDesc': 'Impara giocando dalla 1ª elementare alla 5ª liceo: programma ministeriale, lezioni con 3D, spiegazioni alternative, mappe concettuali, quiz e verifiche. In italiano, inglese, francese, russo, rumeno e tedesco.', 'ui.map': 'Mappa', 'ui.quiz': 'Quiz',
       'ui.menu': 'Menu', 'ui.close': 'Chiudi', 'ui.themeDark': 'Tema scuro', 'ui.themeLight': 'Tema chiaro', 'ui.theme': 'Tema', 'ui.toTop': 'Torna su',
       'ui.today': 'Il consiglio di oggi', 'ui.start': 'Inizia', 'ui.continueBtn': 'Continua', 'ui.streak': 'giorni di fila', 'ui.lessonsDone': 'lezioni studiate',
       'ui.medals': 'medaglie', 'ui.morning': 'Buongiorno', 'ui.afternoon': 'Buon pomeriggio', 'ui.evening': 'Buonasera', 'ui.overall': 'in tutto',
@@ -22,7 +22,7 @@
       'ui.minutes': 'min', 'ui.progress': 'Avanzamento',
       'badge.0': 'Primo passo', 'badge.0d': 'Studia la prima lezione', 'badge.1': 'Lettore', 'badge.1d': 'Studia 5 lezioni', 'badge.2': 'Studioso', 'badge.2d': 'Studia 15 lezioni',
       'badge.3': 'Campione', 'badge.3d': 'Supera una verifica', 'badge.4': 'Perfezione', 'badge.4d': '100% in una verifica', 'badge.5': 'Costanza', 'badge.5d': '3 giorni di studio', 'badge.6': 'Esploratore', 'badge.6d': '4 materie diverse' },
-    en: { 'app.docTitle': 'Zainetto · Smart school', 'app.metaDesc': 'Learn by playing from Year 1 of primary to Year 3 of middle school: Italian national curriculum, 3D lessons, alternative explanations, concept maps, quizzes and tests. In Italian, English, French, Russian, Romanian and German.', 'ui.map': 'Map', 'ui.quiz': 'Quiz',
+    en: { 'app.docTitle': 'Zainetto · Smart school', 'app.metaDesc': 'Learn by playing from Year 1 of primary to the last year of high school: Italian national curriculum, 3D lessons, alternative explanations, concept maps, quizzes and tests. In Italian, English, French, Russian, Romanian and German.', 'ui.map': 'Map', 'ui.quiz': 'Quiz',
       'ui.menu': 'Menu', 'ui.close': 'Close', 'ui.themeDark': 'Dark theme', 'ui.themeLight': 'Light theme', 'ui.theme': 'Theme', 'ui.toTop': 'Back to top',
       'ui.today': "Today's tip", 'ui.start': 'Start', 'ui.continueBtn': 'Continue', 'ui.streak': 'days in a row', 'ui.lessonsDone': 'lessons studied',
       'ui.medals': 'medals', 'ui.morning': 'Good morning', 'ui.afternoon': 'Good afternoon', 'ui.evening': 'Good evening', 'ui.overall': 'overall',
@@ -68,6 +68,28 @@
       'badge.0': 'Erster Schritt', 'badge.0d': 'Lerne deine erste Lektion', 'badge.1': 'Leseratte', 'badge.1d': 'Lerne 5 Lektionen', 'badge.2': 'Lernprofi', 'badge.2d': 'Lerne 15 Lektionen',
       'badge.3': 'Champion', 'badge.3d': 'Bestehe einen Test', 'badge.4': 'Perfektion', 'badge.4d': '100 % in einem Test', 'badge.5': 'Ausdauer', 'badge.5d': '3 Lerntage', 'badge.6': 'Entdecker', 'badge.6d': '4 verschiedene Fächer' }
   };
+  /* liceo: anni, indirizzi e nuove materie */
+  const LICEO = {
+    it: { 'ui.noFullYet': 'Le lezioni complete per la tua classe sono in arrivo: intanto eccone una di un altro anno!', 'school.l': 'Liceo', 'year.l1': '1ª liceo', 'year.l2': '2ª liceo', 'year.l3': '3ª liceo', 'year.l4': '4ª liceo', 'year.l5': '5ª liceo',
+      'track.label': 'Indirizzo del liceo', 'track.scientifico': 'Scientifico', 'track.classico': 'Classico', 'track.linguistico': 'Linguistico', 'track.umane': 'Scienze umane', 'track.all': 'Tutte le materie',
+      'subj.fis': 'Fisica', 'subj.fil': 'Filosofia', 'subj.sum': 'Scienze umane', 'subj.dir': 'Diritto ed economia', 'subj.fra': 'Francese', 'subj.spa': 'Spagnolo', 'subj.ted': 'Tedesco', 'subj.grc': 'Greco', 'subj.art': 'Arte e disegno' },
+    en: { 'ui.noFullYet': 'Full lessons for your class are coming soon: meanwhile, here is one from another year!', 'school.l': 'High school (liceo)', 'year.l1': 'High school – Year 1', 'year.l2': 'High school – Year 2', 'year.l3': 'High school – Year 3', 'year.l4': 'High school – Year 4', 'year.l5': 'High school – Year 5',
+      'track.label': 'High school track', 'track.scientifico': 'Sciences', 'track.classico': 'Classics', 'track.linguistico': 'Languages', 'track.umane': 'Human sciences', 'track.all': 'All subjects',
+      'subj.fis': 'Physics', 'subj.fil': 'Philosophy', 'subj.sum': 'Human sciences', 'subj.dir': 'Law & economics', 'subj.fra': 'French', 'subj.spa': 'Spanish', 'subj.ted': 'German', 'subj.grc': 'Ancient Greek', 'subj.art': 'Art & drawing' },
+    fr: { 'ui.noFullYet': "Les leçons complètes de ta classe arrivent bientôt : en attendant, en voici une d'une autre année !", 'school.l': 'Lycée', 'year.l1': '1re année lycée', 'year.l2': '2e année lycée', 'year.l3': '3e année lycée', 'year.l4': '4e année lycée', 'year.l5': '5e année lycée',
+      'track.label': 'Filière du lycée', 'track.scientifico': 'Scientifique', 'track.classico': 'Classique', 'track.linguistico': 'Langues', 'track.umane': 'Sciences humaines', 'track.all': 'Toutes les matières',
+      'subj.fis': 'Physique', 'subj.fil': 'Philosophie', 'subj.sum': 'Sciences humaines', 'subj.dir': 'Droit et économie', 'subj.fra': 'Français', 'subj.spa': 'Espagnol', 'subj.ted': 'Allemand', 'subj.grc': 'Grec ancien', 'subj.art': 'Arts et dessin' },
+    ru: { 'ui.noFullYet': 'Полные уроки для твоего класса скоро появятся: а пока вот урок из другого года!', 'school.l': 'Лицей', 'year.l1': '1 класс (лицей)', 'year.l2': '2 класс (лицей)', 'year.l3': '3 класс (лицей)', 'year.l4': '4 класс (лицей)', 'year.l5': '5 класс (лицей)',
+      'track.label': 'Профиль лицея', 'track.scientifico': 'Естественно-научный', 'track.classico': 'Классический', 'track.linguistico': 'Лингвистический', 'track.umane': 'Гуманитарный', 'track.all': 'Все предметы',
+      'subj.fis': 'Физика', 'subj.fil': 'Философия', 'subj.sum': 'Гуманитарные науки', 'subj.dir': 'Право и экономика', 'subj.fra': 'Французский', 'subj.spa': 'Испанский', 'subj.ted': 'Немецкий', 'subj.grc': 'Древнегреческий', 'subj.art': 'Искусство и черчение' },
+    ro: { 'ui.noFullYet': 'Lecțiile complete pentru clasa ta vin în curând: între timp, iată una din alt an!', 'school.l': 'Liceu', 'year.l1': 'Clasa I liceu', 'year.l2': 'Clasa a II-a liceu', 'year.l3': 'Clasa a III-a liceu', 'year.l4': 'Clasa a IV-a liceu', 'year.l5': 'Clasa a V-a liceu',
+      'track.label': 'Profilul liceului', 'track.scientifico': 'Real', 'track.classico': 'Clasic', 'track.linguistico': 'Filologie', 'track.umane': 'Științe sociale', 'track.all': 'Toate materiile',
+      'subj.fis': 'Fizică', 'subj.fil': 'Filozofie', 'subj.sum': 'Științe umane', 'subj.dir': 'Drept și economie', 'subj.fra': 'Franceză', 'subj.spa': 'Spaniolă', 'subj.ted': 'Germană', 'subj.grc': 'Greacă veche', 'subj.art': 'Artă și desen' },
+    de: { 'ui.noFullYet': 'Die vollständigen Lektionen für deine Klasse kommen bald: hier ist inzwischen eine aus einem anderen Jahr!', 'school.l': 'Gymnasium (Liceo)', 'year.l1': '1. Klasse Liceo', 'year.l2': '2. Klasse Liceo', 'year.l3': '3. Klasse Liceo', 'year.l4': '4. Klasse Liceo', 'year.l5': '5. Klasse Liceo',
+      'track.label': 'Zweig des Liceo', 'track.scientifico': 'Naturwissenschaftlich', 'track.classico': 'Humanistisch', 'track.linguistico': 'Sprachlich', 'track.umane': 'Humanwissenschaften', 'track.all': 'Alle Fächer',
+      'subj.fis': 'Physik', 'subj.fil': 'Philosophie', 'subj.sum': 'Humanwissenschaften', 'subj.dir': 'Recht und Wirtschaft', 'subj.fra': 'Französisch', 'subj.spa': 'Spanisch', 'subj.ted': 'Deutsch', 'subj.grc': 'Altgriechisch', 'subj.art': 'Kunst und Zeichnen' }
+  };
+  for (const l of Object.keys(LICEO)) Object.assign(UI[l] = UI[l] || {}, LICEO[l]);
   for (const l of Object.keys(UI)) { if (!I18N[l]) continue; for (const k of Object.keys(UI[l])) if (!(k in I18N[l])) I18N[l][k] = UI[l][k]; }
 
   /* ---------- icone SVG dell'interfaccia ---------- */
@@ -105,8 +127,13 @@
   const INDEX = {}; const ORDER = [];
   for (const y of C.years) for (const s of C.subjects) for (const e of (C.program[y][s] || [])) { INDEX[e[0]] = { entry: e, year: y, subj: s }; ORDER.push(e[0]); }
   const title = (id) => (INDEX[id] ? i18n.topicTitle(INDEX[id].entry) : id);
-  const subjectsOf = (y) => C.subjects.filter((s) => (C.program[y][s] || []).length);
-  const yearIds = (y) => C.subjects.flatMap((s) => (C.program[y][s] || []).map((e) => e[0]));
+  /* indirizzo del liceo (scientifico, classico, linguistico, umane oppure 'all') */
+  const TRACKS = Object.keys(C.tracks || {});
+  const TRACK_KEY = 'zainetto-track';
+  const getTrack = () => { const p = Store.current(); let v = p && p.track; if (!v) { try { v = localStorage.getItem(TRACK_KEY); } catch (e) { /* niente */ } } return v === 'all' || TRACKS.includes(v) ? v : (TRACKS[0] || 'all'); };
+  const setTrack = (v) => { try { localStorage.setItem(TRACK_KEY, v); } catch (e) { /* niente */ } const p = Store.current(); if (p) Store.update(p.id, { track: v }); };
+  const subjectsOf = (y) => { const tr = y[0] === 'l' && getTrack() !== 'all' && C.tracks[getTrack()]; return C.subjects.filter((s) => (C.program[y][s] || []).length && (!tr || (tr[y] || []).includes(s))); };
+  const yearIds = (y) => subjectsOf(y).flatMap((s) => C.program[y][s].map((e) => e[0]));
 
   /* ---------- caricamento lezioni ---------- */
   const TOPICS = {};
@@ -430,7 +457,7 @@
     const last = p.log.find((e) => INDEX[e.topic]);
     if (sug) {
       const info = INDEX[sug.id]; const sc = SUBJ_COLOR[info.subj];
-      const s = el('a', 'card today-card', `<span class="tc-kicker">✨ ${t('ui.today')}</span><div class="tc-main"><span class="tc-icon" aria-hidden="true">${SUBJ_ICON[info.subj]}</span><div><b class="tc-title">${esc(title(sug.id))}</b><small>${esc(i18n.topicDesc(info.entry))}</small><span class="tc-meta"><em>${t('subj.' + info.subj)}</em><em>${t('year.' + info.year)}</em></span></div></div><span class="btn tc-go">${Store.status(sug.id) === 'seen' ? t('ui.continueBtn') : t('ui.start')} ${ICONS.arrow}</span>${sug.other ? `<p class="muted small">${t('ui.allDone')}</p>` : ''}`);
+      const s = el('a', 'card today-card', `<span class="tc-kicker">✨ ${t('ui.today')}</span><div class="tc-main"><span class="tc-icon" aria-hidden="true">${SUBJ_ICON[info.subj]}</span><div><b class="tc-title">${esc(title(sug.id))}</b><small>${esc(i18n.topicDesc(info.entry))}</small><span class="tc-meta"><em>${t('subj.' + info.subj)}</em><em>${t('year.' + info.year)}</em></span></div></div><span class="btn tc-go">${Store.status(sug.id) === 'seen' ? t('ui.continueBtn') : t('ui.start')} ${ICONS.arrow}</span>${sug.other ? `<p class="muted small">${t(C.full.some((id) => INDEX[id].year === y) ? 'ui.allDone' : 'ui.noFullYet')}</p>` : ''}`);
       s.href = '#/t/' + sug.id; s.style.setProperty('--c', sc); today.appendChild(s);
     }
     if (last && (!sug || last.topic !== sug.id)) {
@@ -501,8 +528,10 @@
     const m = main(); m.innerHTML = '';
     m.appendChild(pageHead('📚', t('nav.program'), t('ref.note'), '#ff7a59'));
     const py = (Store.current() || {}).year;
-    ['p', 'm'].forEach((school) => {
-      m.appendChild(el('h2', 'school-h', `${school === 'p' ? '🏫' : '🎓'} ${t('school.' + school)}`));
+    ['p', 'm', 'l'].forEach((school) => {
+      if (!C.years.some((y) => y[0] === school)) return;
+      m.appendChild(el('h2', 'school-h', `${{ p: '🏫', m: '🎓', l: '🏛️' }[school]} ${t('school.' + school)}`));
+      if (school === 'l' && TRACKS.length) m.appendChild(trackChips(pageProgram));
       const g = el('div', 'year-grid');
       C.years.filter((y) => y[0] === school).forEach((y) => {
         const ids = yearIds(y); const pr = progressOf(ids);
@@ -514,6 +543,17 @@
     });
   }
 
+  function trackChips(rerender) {
+    const box = el('div', 'tabs track-chips'); box.setAttribute('role', 'group'); box.setAttribute('aria-label', t('track.label'));
+    box.appendChild(el('span', 'muted', t('track.label') + ':'));
+    const cur = getTrack();
+    [...TRACKS, 'all'].forEach((tr) => {
+      const b = el('button', 'tab' + (tr === cur ? ' active' : ''), t('track.' + tr)); b.type = 'button'; b.setAttribute('aria-pressed', String(tr === cur));
+      b.onclick = () => { setTrack(tr); rerender(); }; box.appendChild(b);
+    });
+    return box;
+  }
+
   function pageYear(y, subj) {
     if (!C.program[y]) return pageProgram();
     const m = main(); m.innerHTML = '';
@@ -521,6 +561,7 @@
     const head = pageHead(`<span class="yc-num">${y.slice(1)}</span>`, t('year.' + y), `${t('topic.count', { n: pr.n })} · ✅ ${pr.done}`, YEAR_COLOR[y], ring(pr.pct, '#fff', 64, `<b>${pr.pct}%</b>`));
     head.insertBefore(el('div', 'crumbs', `<a href="#/programma">${t('nav.program')}</a> › <b>${t('year.' + y)}</b>`), head.firstChild);
     m.appendChild(head);
+    if (y[0] === 'l' && TRACKS.length) m.appendChild(trackChips(() => pageYear(y, subj)));
     const tabs = el('nav', 'tabs'); tabs.setAttribute('aria-label', t('nav.program'));
     const subs = subjectsOf(y);
     const cur = subj && subs.includes(subj) ? subj : null;
@@ -835,6 +876,7 @@
       <label>${t('profile.name')}<input name="name" required maxlength="30" value="${p ? esc(p.name) : ''}" autocomplete="off"></label>
       <div class="mb-2"><label>${t('profile.year')}<select name="year">${C.years.map((y) => `<option value="${y}" ${p && p.year === y ? 'selected' : ''}>${t('year.' + y)}</option>`).join('')}</select></label>
       <label>${t('profile.lang')}<select name="lang">${LANGS.map((l) => `<option value="${l.id}" ${(p ? p.lang : i18n.lang) === l.id ? 'selected' : ''}>${l.flag} ${l.name}</option>`).join('')}</select></label></div>
+      <label class="pf-track">${t('track.label')}<select name="track">${[...TRACKS, 'all'].map((tr) => `<option value="${tr}" ${(p ? p.track || getTrack() : getTrack()) === tr ? 'selected' : ''}>${t('track.' + tr)}</option>`).join('')}</select></label>
       <div class="mb-lbl">${t('profile.avatar')}</div><div class="avatars" role="radiogroup" aria-label="${esc(t('profile.avatar'))}">${Store.AVATARS.map((a) => `<button type="button" role="radio" aria-checked="${a === sel.avatar}" class="avpick ${a === sel.avatar ? 'active' : ''}">${a}</button>`).join('')}</div>
       <div class="row"><button type="button" class="btn btn-ghost cancel">${t('misc.cancel')}</button><button class="btn">${p ? t('profile.save') : t('profile.create')}</button></div></form>`;
     document.body.appendChild(dlg);
@@ -847,7 +889,7 @@
     dlg.querySelector('input').focus();
     dlg.querySelector('form').onsubmit = (e) => {
       e.preventDefault(); const f = new FormData(e.target);
-      const data = { name: f.get('name').trim(), year: f.get('year'), lang: f.get('lang'), avatar: sel.avatar };
+      const data = { name: f.get('name').trim(), year: f.get('year'), lang: f.get('lang'), track: f.get('track') || getTrack(), avatar: sel.avatar };
       if (!data.name) return;
       if (p) Store.update(p.id, data); else Store.create(data);
       dlg.remove(); document.removeEventListener('keydown', onKey); i18n.lang = data.lang; document.documentElement.lang = data.lang; renderChrome();
