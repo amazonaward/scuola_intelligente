@@ -10,7 +10,7 @@ window.LANGS = [
 
 window.I18N = {
   it: {
-    'app.tagline': 'Impara giocando, dalla 1ª elementare alla 3ª media',
+    'app.tagline': 'Impara giocando, dalla 1ª elementare alla 5ª liceo',
     'nav.home': 'Home', 'nav.program': 'Programma', 'nav.history': 'Storico', 'nav.profiles': 'Profili', 'nav.search': 'Cerca',
     'profile.who': 'Chi sta studiando oggi?', 'profile.new': 'Nuovo profilo', 'profile.name': 'Nome',
     'profile.avatar': 'Scegli un avatar', 'profile.year': 'Classe', 'profile.create': 'Crea profilo', 'profile.edit': 'Modifica',
@@ -72,7 +72,7 @@ window.I18N = {
     'footer.text': 'Zainetto è un progetto educativo libero. I dati restano sul tuo dispositivo.'
   },
   en: {
-    'app.tagline': 'Learn by playing, from Year 1 of primary to Year 3 of middle school',
+    'app.tagline': 'Learn by playing, from Year 1 of primary to the last year of high school',
     'nav.home': 'Home', 'nav.program': 'Curriculum', 'nav.history': 'History', 'nav.profiles': 'Profiles', 'nav.search': 'Search',
     'profile.who': 'Who is studying today?', 'profile.new': 'New profile', 'profile.name': 'Name',
     'profile.avatar': 'Choose an avatar', 'profile.year': 'Class', 'profile.create': 'Create profile', 'profile.edit': 'Edit',
@@ -134,7 +134,7 @@ window.I18N = {
     'footer.text': 'Zainetto is a free educational project. Your data stays on your device.'
   },
   fr: {
-    'app.tagline': 'Apprendre en jouant, du CP à la fin du collège (3e média)',
+    'app.tagline': 'Apprendre en jouant, du CP à la fin du lycée',
     'nav.home': 'Accueil', 'nav.program': 'Programme', 'nav.history': 'Historique', 'nav.profiles': 'Profils', 'nav.search': 'Chercher',
     'profile.who': 'Qui étudie aujourd\'hui ?', 'profile.new': 'Nouveau profil', 'profile.name': 'Prénom',
     'profile.avatar': 'Choisis un avatar', 'profile.year': 'Classe', 'profile.create': 'Créer le profil', 'profile.edit': 'Modifier',
@@ -196,7 +196,7 @@ window.I18N = {
     'footer.text': 'Zainetto est un projet éducatif libre. Tes données restent sur ton appareil.'
   },
   ru: {
-    'app.tagline': 'Учимся играя — с 1-го класса начальной школы до 3-го класса средней',
+    'app.tagline': 'Учимся играя — с 1-го класса начальной школы до последнего класса лицея',
     'nav.home': 'Главная', 'nav.program': 'Программа', 'nav.history': 'История', 'nav.profiles': 'Профили', 'nav.search': 'Поиск',
     'profile.who': 'Кто сегодня учится?', 'profile.new': 'Новый профиль', 'profile.name': 'Имя',
     'profile.avatar': 'Выбери аватар', 'profile.year': 'Класс', 'profile.create': 'Создать профиль', 'profile.edit': 'Изменить',
@@ -258,7 +258,7 @@ window.I18N = {
     'footer.text': 'Zainetto — свободный образовательный проект. Данные остаются на твоём устройстве.'
   },
   ro: {
-    'app.tagline': 'Învață jucându-te, din clasa I primară până în clasa a III-a de gimnaziu',
+    'app.tagline': 'Învață jucându-te, din clasa I primară până la finalul liceului',
     'nav.home': 'Acasă', 'nav.program': 'Programa', 'nav.history': 'Istoric', 'nav.profiles': 'Profiluri', 'nav.search': 'Caută',
     'profile.who': 'Cine învață astăzi?', 'profile.new': 'Profil nou', 'profile.name': 'Nume',
     'profile.avatar': 'Alege un avatar', 'profile.year': 'Clasa', 'profile.create': 'Creează profilul', 'profile.edit': 'Modifică',
@@ -320,7 +320,7 @@ window.I18N = {
     'footer.text': 'Zainetto este un proiect educațional liber. Datele rămân pe dispozitivul tău.'
   },
   de: {
-    'app.tagline': 'Spielend lernen, von der 1. Klasse Grundschule bis zur 3. Klasse Mittelschule',
+    'app.tagline': 'Spielend lernen, von der 1. Klasse Grundschule bis zum Abschluss des Liceo',
     'nav.home': 'Start', 'nav.program': 'Lehrplan', 'nav.history': 'Verlauf', 'nav.profiles': 'Profile', 'nav.search': 'Suchen',
     'profile.who': 'Wer lernt heute?', 'profile.new': 'Neues Profil', 'profile.name': 'Name',
     'profile.avatar': 'Wähle einen Avatar', 'profile.year': 'Klasse', 'profile.create': 'Profil erstellen', 'profile.edit': 'Bearbeiten',

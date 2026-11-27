@@ -738,7 +738,7 @@
   document.addEventListener('DOMContentLoaded', () => setTimeout(loadCatalog, 0));
 
   /* indice delle lezioni del programma */
-  const SUBJ_ICON = { ita: '📖', mat: '🔢', sci: '🔬', sto: '🏛️', geo: '🌍', ing: '🇬🇧', tec: '💻', lat: '🏺' };
+  const SUBJ_ICON = { ita: '📖', mat: '🔢', sci: '🔬', sto: '🏛️', geo: '🌍', ing: '🇬🇧', tec: '💻', lat: '🏺', fis: '⚛️', fil: '🦉', sum: '🧠', dir: '⚖️', fra: '🇫🇷', spa: '🇪🇸', ted: '🇩🇪', grc: '🏛', art: '🎨' };
   const SUBJ_COLOR = { ita: '#e85d75', mat: '#4c7cf3', sci: '#2fb67c', sto: '#d08a2e', geo: '#18a5b8', ing: '#8a5cf6', tec: '#64748b', lat: '#b45309' };
   let TIDX = null;
   function topicIndex() {
