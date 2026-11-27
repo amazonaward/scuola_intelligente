@@ -1281,6 +1281,10 @@ window.CURRICULUM = {
     'l5-mat-distribuzioni-probabilita', 'l5-fis-campo-magnetico', 'l5-fis-induzione', 'l5-fis-maxwell-onde-em',
     'l5-fis-relativita', 'l5-fis-quantistica', 'l5-fis-nucleare-particelle', 'l5-ing-modernism',
     'l5-ing-war-poets', 'l5-ing-dystopian-novel', 'l5-ing-theatre-absurd', 'l5-ing-contemporary',
-    'l5-ing-exam-skills'
+    'l5-ing-exam-skills', 'l5-lat-seneca', 'l5-lat-lucano-petronio', 'l5-lat-quintiliano-marziale',
+    'l5-lat-tacito', 'l5-lat-apuleio', 'l5-lat-letteratura-cristiana', 'l5-grc-platone-greco',
+    'l5-grc-menandro', 'l5-grc-ellenismo-poesia', 'l5-grc-polibio-plutarco', 'l5-grc-seconda-sofistica',
+    'l5-grc-nuovo-testamento', 'l5-art-postimpressionismo', 'l5-art-art-nouveau', 'l5-art-avanguardie',
+    'l5-art-astrattismo-dada', 'l5-art-architettura-moderna', 'l5-art-contemporanea'
   ]
 };
