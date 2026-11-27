@@ -1,0 +1,23 @@
+QBANK("it", "l4-sum-rousseau-pestalozzi", {
+  "f": [
+    { "type": "mc", "q": "Chi scrisse l'Emilio?", "options": ["Jean-Jacques Rousseau", "Johann Heinrich Pestalozzi", "Friedrich Froebel", "John Locke"], "answer": 0, "explain": "L'Emilio, o dell'educazione è l'opera pedagogica di Rousseau, pubblicata nel 1762." },
+    { "type": "tf", "q": "Friedrich Froebel è l'ideatore dei giardini d'infanzia.", "answer": true, "explain": "Nel 1840 diede il nome di Kindergarten alla sua istituzione per i bambini piccoli." },
+    { "type": "mc", "q": "Quale dei tre autori diresse l'istituto di Yverdon?", "options": ["Pestalozzi", "Rousseau", "Locke", "Comenio"], "answer": 0, "explain": "Pestalozzi diresse Yverdon dal 1805 al 1825; Froebel vi si formò." },
+    { "type": "text", "q": "Qual è il nome tedesco dei «giardini d'infanzia»?", "answer": ["kindergarten"], "explain": "Kindergarten significa letteralmente «giardino dei bambini»." },
+    { "type": "tf", "q": "Per Rousseau il bambino è un piccolo adulto da correggere il prima possibile.", "answer": false, "explain": "Per Rousseau l'infanzia ha una propria natura e un proprio valore, e non va accelerata." }
+  ],
+  "m": [
+    { "type": "mc", "q": "Che cosa sono i «doni» di Froebel?", "options": ["Oggetti geometrici e materiali di gioco educativo", "I premi per gli allievi migliori", "Le tasse scolastiche", "I libri di testo"], "answer": 0, "explain": "Palle, sfere, cubi, cilindri e mattoncini servono a scoprire forma, numero e relazioni giocando." },
+    { "type": "mc", "q": "Qual è la formula con cui si riassume l'educazione di Pestalozzi?", "options": ["Testa, cuore, mano", "Leggere, scrivere e far di conto", "Ragione, fede, obbedienza", "Gioco, canto, disegno"], "answer": 0, "explain": "Pestalozzi vuole uno sviluppo armonico di intelligenza, sentimento morale e abilità pratica." },
+    { "type": "mc", "q": "Quale libro di Pestalozzi racconta la rinascita di un villaggio grazie a una madre?", "options": ["Leonardo e Gertrude", "Il contratto sociale", "L'educazione dell'uomo", "Pensieri sull'educazione"], "answer": 0, "explain": "Leonardo e Gertrude (1781-1787) è il suo romanzo educativo; Come Gertrude istruisce i suoi figli è del 1801." },
+    { "type": "tf", "q": "L'Emilio fu bruciato a Ginevra e condannato a Parigi.", "answer": true, "explain": "Le autorità lo condannarono soprattutto per la parte sulla religione naturale." },
+    { "type": "mc", "q": "Quale mestiere impara Emilio nel romanzo di Rousseau?", "options": ["Il falegname", "Il medico", "Il notaio", "Il soldato"], "answer": 0, "explain": "Il lavoro manuale rende l'uomo libero e non dipendente dagli altri." }
+  ],
+  "d": [
+    { "type": "mc", "q": "In che senso l'«educazione negativa» di Rousseau è diversa da una educazione punitiva?", "options": ["Non punisce: evita le prediche e lascia che le conseguenze naturali insegnino", "Impone regole più severe", "Proibisce ogni attività al bambino", "Sostituisce il maestro con i libri"], "answer": 0, "explain": "«Negativa» indica l'astensione dall'insegnamento verbale diretto: si protegge il bambino e si organizza l'ambiente." },
+    { "type": "mc", "q": "Qual è la differenza essenziale tra Rousseau e Pestalozzi?", "options": ["Pestalozzi aggiunge un metodo graduale e si occupa di bambini poveri reali", "Rousseau si occupò solo di bambini poveri", "Pestalozzi rifiutava l'osservazione diretta", "Non c'è alcuna differenza"], "answer": 0, "explain": "Rousseau costruisce un modello ideale; Pestalozzi lo mette alla prova in istituti reali, elabora il metodo elementare e insiste su amore e riscatto sociale." },
+    { "type": "tf", "q": "Il governo prussiano nel 1851 vietò i Kindergarten, sospettandoli di idee rivoluzionarie e irreligiose.", "answer": true, "explain": "Dopo il 1848 le autorità temevano i movimenti liberali, e i giardini d'infanzia furono sospettati di far parte di quel clima." },
+    { "type": "mc", "q": "Perché la tesi di Ariès sull'«invenzione dell'infanzia» è utile ma discussa?", "options": ["Perché mostra un cambiamento di mentalità, ma gli storici ne contestano la radicalità", "Perché è stata dimostrata falsa del tutto", "Perché riguarda solo il Novecento", "Perché non ha nessun rapporto con la pedagogia"], "answer": 0, "explain": "Ariès (1960) sostenne che l'infanzia come età speciale si sia affermata in età moderna; altri storici hanno mostrato che l'attenzione all'infanzia esisteva già prima." },
+    { "type": "text", "q": "Come si chiama, in Pestalozzi, l'osservazione diretta degli oggetti concreti come punto di partenza della conoscenza? (parola tedesca)", "answer": ["anschauung"], "explain": "L'Anschauung (intuizione) precede il concetto astratto nel metodo elementare." }
+  ]
+});
