@@ -262,7 +262,7 @@ TOPIC('it', {
       { type: "tf", q: "\"I am liking this song\" è la forma standard corretta.", answer: false, explain: "Like è uno stative verb: I like this song." },
       { type: "text", q: "Scrivi la forma corretta: \"Does she (play) the piano?\" Scrivi solo il verbo.", answer: ["play"], explain: "Dopo does il verbo resta alla forma base: play." },
       { type: "order", q: "Metti in ordine: usually / I / by bus / go / to school", items: ["I", "usually", "go", "to school", "by bus"], explain: "L'avverbio di frequenza sta prima del verbo principale." },
-      { type: "mc", q: "Quale frase usa correttamente il present continuous per un'azione temporanea?", options: ["She works in a café this summer, so she is wearing a uniform.", "She is working in a café every Monday.", "She wears a uniform right now every day."], answer: 0, explain: "This summer indica un periodo temporaneo." },
+      { type: "mc", q: "Quale frase usa correttamente il present continuous per un'azione temporanea?", options: ["She is working in a café this summer, so she is wearing a uniform.", "She is working in a café every Monday.", "She wears a uniform right now every day."], answer: 0, explain: "This summer indica un periodo temporaneo." },
       { type: "mc", q: "Completa: Water ___ at 0 degrees Celsius.", options: ["freezes", "is freezing", "freeze"], answer: 0, explain: "Verità scientifica: present simple, 3ª persona con -s." },
       { type: "tf", q: "\"He's always losing his phone\" esprime un fastidio di chi parla.", answer: true, explain: "Always + continuous indica un'azione ripetuta che infastidisce." },
       { type: "text", q: "Scrivi il gerundio di \"write\".", answer: ["writing"], explain: "Verbo in -e muta: si toglie la e → writing." },
