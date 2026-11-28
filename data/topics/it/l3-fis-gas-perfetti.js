@@ -138,7 +138,7 @@ TOPIC('it', {
 <line x1="90" y1="80" x2="60" y2="60" stroke="#dc2626" stroke-width="3" marker-end="url(#gpA)"/>
 <line x1="250" y1="180" x2="280" y2="190" stroke="#dc2626" stroke-width="3" marker-end="url(#gpA)"/>
 <line x1="140" y1="140" x2="175" y2="120" stroke="#dc2626" stroke-width="3" marker-end="url(#gpA)"/>
-<text x="170" y="270" font-size="15" fill="#0f172a" text-anchor="middle">T bassa: poche molecole lente</text>
+<text x="170" y="270" font-size="15" fill="#0f172a" text-anchor="middle">T bassa: molecole lente</text>
 <rect x="330" y="40" width="240" height="200" fill="#ffffff" stroke="#334155" stroke-width="5"/>
 <g fill="#ea580c">
 <circle cx="370" cy="80" r="8"/><circle cx="420" cy="140" r="8"/><circle cx="480" cy="90" r="8"/><circle cx="530" cy="180" r="8"/><circle cx="390" cy="200" r="8"/><circle cx="460" cy="210" r="8"/><circle cx="520" cy="70" r="8"/>

@@ -88,7 +88,7 @@ TOPIC('it', {
       html: `<p><b>Effetto Venturi.</b> Un tubo orizzontale in cui l'acqua passa da v<sub>1</sub> = 2,0 m/s a v<sub>2</sub> = 6,0 m/s. La differenza di pressione è Δp = ½·ρ·(v<sub>2</sub>² − v<sub>1</sub>²) = ½ × 1000 × (36 − 4) = <b>16 000 Pa</b> (0,16 atm circa): la pressione nel tratto stretto è più bassa di 16 kPa. Misurando questa differenza con due tubicini verticali (manometri) si calcola la portata: è il <b>venturimetro</b>, usato anche nei carburatori.</p>
 <p><b>Torricelli.</b> Un serbatoio con un foro a profondità h sotto il pelo libero. Sul pelo libero e sul foro la pressione è atmosferica; la velocità del pelo libero è trascurabile. Bernoulli dà ρ·g·h = ½·ρ·v² ⟹</p>
 <p style="text-align:center"><b>v = √(2·g·h)</b> (teorema di Torricelli, 1643)</p>
-<p>È la stessa velocità che avrebbe un sasso caduto dall'altezza h. Con h = 1,25 m: v = √(2·9,8·1,25) ≈ <b>4,9 m/s</b>. Il getto ha una portata Q = A<sub>foro</sub>·v: ecco perché in una bottiglia forata il getto del buco più in basso va più lontano.</p>`
+<p>È la stessa velocità che avrebbe un sasso caduto dall'altezza h. Con h = 1,25 m: v = √(2·9,8·1,25) ≈ <b>4,9 m/s</b>. Il getto ha una portata Q = A<sub>foro</sub>·v: ecco perché in una bottiglia forata il getto del buco più in basso esce più veloce (quanto lontano arriva dipende anche dall'altezza del buco dal suolo).</p>`
     },
     {
       type: "text",
@@ -159,7 +159,7 @@ TOPIC('it', {
       title: "Moto laminare e moto turbolento",
       html: `<p>Quando un fluido scorre lentamente il moto è <b>laminare</b>: gli strati scorrono paralleli. Se la velocità cresce oltre un certo limite il moto si fa <b>turbolento</b>: compaiono vortici, il flusso diventa caotico e la resistenza aumenta. Il passaggio è controllato da un numero adimensionale, il <b>numero di Reynolds</b>:</p>
 <p style="text-align:center"><b>Re = ρ · v · d / η</b> &nbsp; (d = diametro del tubo)</p>
-<p>In un tubo circolare il flusso è laminare per Re ≲ 2000 e turbolento per Re ≳ 4000 (in mezzo è instabile). Si vede bene nel fumo di una candela spenta, che sale in un filo ordinato (moto laminare) e a una certa altezza si spezza in vortici. Il rumore del cuore misurato con il fonendoscopio (i «toni» e i soffi) o il rumore di un rubinetto aperto al massimo sono causati dalla turbolenza. Il teorema di Bernoulli vale solo per flussi laminari e non viscosi: nella turbolenza e nella viscosità una parte dell'energia meccanica si trasforma in calore.</p>`
+<p>In un tubo circolare il flusso è laminare per Re ≲ 2000 e turbolento per Re ≳ 4000 (in mezzo è instabile). Si vede bene nel fumo di una candela spenta, che sale in un filo ordinato (moto laminare) e a una certa altezza si spezza in vortici. I soffi cardiaci ascoltati con il fonendoscopio o il rumore di un rubinetto aperto al massimo sono causati dalla turbolenza. Il teorema di Bernoulli vale solo per flussi laminari e non viscosi: nella turbolenza e nella viscosità una parte dell'energia meccanica si trasforma in calore.</p>`
     },
     {
       type: "alternatives",
