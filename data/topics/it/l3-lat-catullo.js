@@ -73,7 +73,7 @@ TOPIC('it', {
       html: `<p>Il cuore del <i>liber</i> è la storia con <b>Lesbia</b>, pseudonimo di una donna che, secondo Apuleio (<i>Apologia</i> 10), si chiamava <b>Clodia</b>: quasi certamente <b>Clodia Metelli</b>, sorella di Publio Clodio Pulcro e moglie del console Metello Celere, donna colta, libera, di alta società (la stessa che Cicerone attaccò nella <i>Pro Caelio</i>). Il nome Lesbia richiama Saffo, la poetessa greca di Lesbo: è un omaggio alla poesia.</p>
 <p>Il "romanzo" si può ricostruire in fasi:</p>
 <ol>
-<li><b>Innamoramento</b>: carme 51 (traduzione di Saffo, <i>Ille mi par esse deo videtur</i>: "A me sembra uguale a un dio…"), i carmi dei passerotto (2, 3) e dei baci (5, 7);</li>
+<li><b>Innamoramento</b>: carme 51 (traduzione di Saffo, <i>Ille mi par esse deo videtur</i>: "A me sembra uguale a un dio…"), i carmi del passero (2, 3) e dei baci (5, 7);</li>
 <li><b>Felicità e patto</b>: Catullo sogna un amore eterno, un <i>foedus</i> (patto) fondato su fides (fedeltà) e pietas, concetti della morale romana applicati a una relazione privata;</li>
 <li><b>Tradimento e crisi</b>: Lesbia lo tradisce, Catullo soffre, la chiama "meretrice" in molti carmi; carme 8 (<i>Miser Catulle, desinas ineptire</i>): si ordina di smettere di soffrire, in metro <b>scazonte</b>;</li>
 <li><b>Contraddizione</b>: carmi 72, 75, 85 (<i>Odi et amo</i>): la disperazione di amare chi non si può più stimare.</li>
@@ -90,7 +90,7 @@ TOPIC('it', {
       type: `example`, title: `Carme 85: "Odi et amo"`,
       html: `<p><b>Testo</b>: <i>Odi et amo. Quare id faciam, fortasse requiris. / Nescio, sed fieri sentio et excrucior.</i></p>
 <p><b>Traduzione</b>: "Odio e amo. Perché lo faccia, forse ti chiedi. Non lo so, ma sento che accade e ne sono tormentato."</p>
-<p><b>Commento</b>: è un distico elegiaco (esametro + pentametro), il metro degli epigrammi. Due soli versi bastano per dire il paradosso: due verbi opposti uniti da <i>et</i> senza collegamento logico (<i>asindeto avversativo</i> implicito), seguiti da una domanda e da una risposta che non risponde. <i>Excrucior</i> è passivo: Catullo si sente "messo in croce", una vittima del suo sentimento (<i>crux</i> = croce, strumento di tortura). È una frase che sintetizza la psicologia dell'amore moderno.</p>`
+<p><b>Commento</b>: è un distico elegiaco (esametro + pentametro), il metro degli epigrammi. Due soli versi bastano per dire il paradosso: due verbi di significato opposto accostati da <i>et</i> in un'antitesi netta, seguiti da una domanda e da una risposta che non risponde. <i>Excrucior</i> è passivo: Catullo si sente "messo in croce", una vittima del suo sentimento (<i>crux</i> = croce, strumento di tortura). È una frase che sintetizza la psicologia dell'amore moderno.</p>`
     },
     {
       type: `quiz`, title: `Mini-quiz: Catullo e Lesbia`,
@@ -105,7 +105,7 @@ TOPIC('it', {
       type: `text`, title: `4. Amici, nemici, fratello`,
       html: `<p>Accanto ai carmi per Lesbia, il <i>liber</i> è pieno di <b>vita sociale</b>:</p>
 <ul>
-<li><b>Amici</b>: carme 9 (ritorno di Veranio dalla Spagna: "Verani, omnibus e meis amicis…"), carme 13 (invito a cena: "Cenabis bene, mi Fabulle, apud me… si tecum attuleris bene atque magnam cenam", con la promessa di un profumo che "fa diventare tutto naso"), carme 31 (<i>Paene insularum, Sirmio, insularumque ocelle</i>, il ritorno alla penisola amata di Sirmione);</li>
+<li><b>Amici</b>: carme 9 (ritorno di Veranio dalla Spagna: "Verani, omnibus e meis amicis…"), carme 13 (invito a cena: "Cenabis bene, mi Fabulle, apud me… si tecum attuleris bonam atque magnam cenam", con la promessa di un profumo che "fa diventare tutto naso"), carme 31 (<i>Paene insularum, Sirmio, insularumque ocelle</i>, il ritorno alla penisola amata di Sirmione);</li>
 <li><b>Invettive</b> e carmi di scherno: contro rivali (Egnazio che mostra i denti bianchi, carme 39), contro Mamurra, l'ufficiale di Cesare e suo ricco beneficiario, contro lo stesso <b>Cesare</b> (carmi 29, 57). Cesare, secondo Svetonio, ne fu ferito, ma accettò di cenare con il poeta e lo perdonò;</li>
 <li><b>Dolore per il fratello</b>: carme 101, che inizia <b>"Multas per gentes et multa per aequora vectus / advenio has miseras, frater, ad inferias"</b> ("Trasportato attraverso molti popoli e molti mari giungo, fratello, a queste misere offerte funebri"), e termina con il celebre saluto: <b>"atque in perpetuum, frater, ave atque vale"</b>, "e per sempre, fratello, salve e addio". Il fratello era morto in Troade (vicino all'antica Troia): Catullo vi andò, probabilmente durante il viaggio in Bitinia.</li>
 </ul>

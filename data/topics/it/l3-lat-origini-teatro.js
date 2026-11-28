@@ -103,7 +103,7 @@ TOPIC('it', {
 <li><b><i>Pseudolus</i></b>, <b><i>Mostellaria</i></b>, <b><i>Rudens</i></b>, <b><i>Casina</i></b>, <b><i>Asinaria</i></b>, <b><i>Bacchides</i></b>.</li>
 </ul>
 <p><b>Caratteristiche</b>: le trame sono prese dalla <b>commedia nuova greca</b> (Menandro, Difilo, Filemone), ma Plauto le <b>trasforma</b> (<i>contaminatio</i>: fusione di due modelli), inserisce parti cantate (<i>cantica</i>) e recitative, battute, giochi di parole, neologismi, scherzi osceni, riferimenti a Roma. I personaggi sono <b>tipi fissi</b>: il <i>senex</i> (vecchio avaro o severo), l'<i>adulescens</i> (giovane innamorato), il <i>servus callidus</i> (servo astuto, vero motore dell'intrigo), il <i>miles gloriosus</i>, il <i>parasitus</i> (mangiaufo), la <i>meretrix</i> (cortigiana), il <i>leno</i> (lenone). L'intreccio parte spesso da un amore ostacolato e si risolve con un inganno del servo.</p>
-<p>La lingua è <b>vivace e colloquiale</b>, piena di arcaismi e inventiva (parole composte buffe come <i>pugnipotens</i>). È l'unico autore antico che ci offre un campione di latino parlato "in scena".</p>`
+<p>La lingua è <b>vivace e colloquiale</b>, piena di arcaismi e inventiva (parole composte buffe come <i>dentifrangibula</i> "spaccadenti", nei <i>Bacchides</i>). È l'unico autore antico che ci offre un campione di latino parlato "in scena".</p>`
     },
     {
       type: `example`, title: `Una frase celebre di Plauto: "homo homini lupus"`,

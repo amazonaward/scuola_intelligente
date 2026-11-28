@@ -22,7 +22,7 @@ TOPIC('it', {
 <li><b>accusativo</b>: <i>ad pugnandum</i> "per combattere" (finale);</li>
 <li><b>ablativo</b>: <i>docendo discimus</i> "insegnando impariamo" (strumentale/modale).</li>
 </ul>
-<p>Il proverbio di Ovidio <b>"Gutta cavat lapidem, non vi, sed saepe cadendo"</b> (<i>Epistulae ex Ponto</i> IV, 10, 5) contiene un gerundio ablativo: "la goccia scava la pietra non con la forza, ma cadendo spesso".</p>`
+<p>Il proverbio <b>"Gutta cavat lapidem, non vi, sed saepe cadendo"</b> (di Ovidio, <i>Epistulae ex Ponto</i> IV, 10, 5, è solo <i>gutta cavat lapidem</i>; il resto è un'aggiunta medievale) contiene un gerundio ablativo: "la goccia scava la pietra non con la forza, ma cadendo spesso".</p>`
     },
     {
       type: `text`, title: `2. Il gerundivo: un aggettivo che "deve essere fatto"`,
@@ -31,7 +31,7 @@ TOPIC('it', {
 <li><b>necessità / obbligo</b> ("che deve essere…, da…"): <i>liber legendus</i> "libro da leggere";</li>
 <li><b>valore finale o di collegamento al gerundio</b> quando sostituisce il gerundio transitivo.</li>
 </ul>
-<p>Il gerundivo ha anche la forma sostantivata <b>neutra</b>: <i>agendum</i> "ciò che si deve fare" (in italiano: "agenda", "laurea", "referendum" "ciò che deve essere riferito", "addenda").</p>`
+<p>Il gerundivo ha anche la forma sostantivata <b>neutra</b>: <i>agendum</i> "ciò che si deve fare" (in italiano: "agenda", "referendum" "ciò che deve essere riferito", "addenda").</p>`
     },
     {
       type: `remember`, title: `Il gerundio si "converte" in gerundivo`,
@@ -41,7 +41,7 @@ TOPIC('it', {
 <li><i>causa pacem petendi</i> ✗ ➜ <b><i>causa pacis petendae</i></b> ✓ "per chiedere la pace";</li>
 <li><i>consilium hostes superandi</i> ✗ ➜ <b><i>consilium hostium superandorum</i></b> ✓ "il piano di vincere i nemici".</li>
 </ul>
-<p>Il gerundio <b>tiene</b> il suo oggetto quando l'oggetto è un <b>pronome neutro o un aggettivo neutro</b> (<i>ars multa sciendi</i>, <i>ad haec facienda</i>), oppure quando il verbo è intransitivo (<i>ad pugnandum</i>). Il significato è identico: cambia solo la struttura.</p>`
+<p>Il gerundio <b>tiene</b> il suo oggetto quando l'oggetto è un <b>pronome neutro o un aggettivo neutro</b> (<i>ars multa sciendi</i>, <i>studium aliquid agendi</i>), oppure quando il verbo è intransitivo (<i>ad pugnandum</i>). Il significato è identico: cambia solo la struttura.</p>`
     },
     {
       type: `svg`, title: `Dal gerundio al gerundivo`,
@@ -69,7 +69,7 @@ TOPIC('it', {
       type: `example`, title: `Gerundio e gerundivo in frase`,
       html: `<ol>
 <li><i>Legendi studium est utile.</i> "Il desiderio di leggere è utile." (gerundio genitivo, intransitivo senza oggetto espresso)</li>
-<li><i>Caesar legatos ad pacem petendam misit.</i> "Cesare mandò ambasciatori a chiedere la pace." (gerundivo: pace petendam; acc. con <i>ad</i>, finale)</li>
+<li><i>Caesar legatos ad pacem petendam misit.</i> "Cesare mandò ambasciatori a chiedere la pace." (gerundivo: pacem petendam; acc. con <i>ad</i>, finale)</li>
 <li><i>Cives hortandi sunt ad pacem servandam.</i> "I cittadini devono essere esortati a mantenere la pace."</li>
 <li><i>Hostes nuntios pacis petendae causa miserunt.</i> "I nemici inviarono messaggeri per chiedere la pace." (causa + genitivo = finale)</li>
 <li><i>Ars bene vivendi difficilis est.</i> "L'arte del vivere bene è difficile."</li>
