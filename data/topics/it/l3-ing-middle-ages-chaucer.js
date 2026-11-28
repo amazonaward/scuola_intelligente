@@ -157,7 +157,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "A rude comedy, a medieval joke",
-      html: `<p>Tra i <i>Canterbury Tales</i> ci sono anche racconti volgari: nel <i>Miller's Tale</i>, un giovane studente inganna un vecchio carpentiere raccontandogli che arriverà un secondo diluvio, e lo convince a restare appeso in una tinozza sul tetto mentre lui visita la moglie. Il pubblico del Trecento rideva di scherzi che oggi sembrano irriverenti. Chaucer sa che alcuni lettori si scandalizzeranno e, con ironia, nel Prologo avverte: chi non vuole leggere certe storie, «turn over the leef» (giri pagina) e scelga un'altra storia.</p>`
+      html: `<p>Tra i <i>Canterbury Tales</i> ci sono anche racconti volgari: nel <i>Miller's Tale</i>, un giovane studente inganna un vecchio carpentiere raccontandogli che arriverà un secondo diluvio, e lo convince a restare appeso in una tinozza sul tetto mentre lui visita la moglie. Il pubblico del Trecento rideva di scherzi che oggi sembrano irriverenti. Chaucer sa che alcuni lettori si scandalizzeranno e, con ironia, nel Prologo del Mugnaio (<i>Miller's Prologue</i>) avverte: chi non vuole leggere certe storie, «turn over the leef» (giri pagina) e scelga un'altra storia.</p>`
     },
     {
       type: "alternatives",

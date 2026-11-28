@@ -10,7 +10,7 @@ TOPIC('it', {
       html: `<p>Nel <b>1485</b> la <b>battaglia di Bosworth</b> pone fine alla Guerra delle Due Rose, la lunga guerra civile tra le casate di <b>Lancaster</b> (rosa rossa) e <b>York</b> (rosa bianca): <b>Henry Tudor</b> sconfigge Richard III e diventa <b>Henry VII</b>. La nuova dinastia, i <b>Tudors</b>, governerà fino al 1603.</p>
 <table>
 <tr><th>Monarch</th><th>Reign</th><th>Key facts</th></tr>
-<tr><td><b>Henry VII</b></td><td>1485 – 1509</td><td>pacifica il Paese, riempie le casse dello Stato, sposa la sua erede con Scozia e Spagna</td></tr>
+<tr><td><b>Henry VII</b></td><td>1485 – 1509</td><td>pacifica il Paese, riempie le casse dello Stato, fa sposare i figli nelle case reali di Scozia e Spagna</td></tr>
 <tr><td><b>Henry VIII</b></td><td>1509 – 1547</td><td>rompe con Roma (<b>Act of Supremacy</b>, 1534), si dichiara capo della Chiesa d'Inghilterra, sposa sei volte</td></tr>
 <tr><td><b>Edward VI</b></td><td>1547 – 1553</td><td>re bambino; il protestantesimo si rafforza (<i>Book of Common Prayer</i>)</td></tr>
 <tr><td><b>Mary I</b></td><td>1553 – 1558</td><td>cattolica, restaura il cattolicesimo, fa bruciare circa 280 protestanti: «Bloody Mary»</td></tr>
