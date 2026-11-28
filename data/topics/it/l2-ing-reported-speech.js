@@ -104,7 +104,7 @@ TOPIC('it', {
         { type: "mc", q: "\"I'm busy,\" she said. → She said she ___ busy.", options: ["is", "was", "has been"], answer: 1, explain: "Present simple → past simple: was." },
         { type: "mc", q: "\"I will call you tomorrow,\" he said. → He said he ___ me the next day.", options: ["will call", "would call", "called"], answer: 1, explain: "will → would; tomorrow → the next day." },
         { type: "tf", q: "\"She told that she was tired\" è corretto.", answer: false, explain: "Tell richiede un complemento di persona: She told me that she was tired / She said that she was tired." },
-        { type: "text", q: "Completa: \"I have finished,\" he said. → He said he ___ finished. (due parole)", answer: ["had"], explain: "Present perfect → past perfect: had finished." }
+        { type: "text", q: "Completa: \"I have finished,\" he said. → He said he ___ finished. (una parola)", answer: ["had"], explain: "Present perfect → past perfect: had finished." }
       ]
     },
     {
