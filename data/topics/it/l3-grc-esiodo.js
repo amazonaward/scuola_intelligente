@@ -44,7 +44,7 @@ TOPIC('it', {
 <rect x="215" y="42" width="170" height="34" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
 <text x="300" y="65" font-size="16" font-weight="bold" fill="#0f172a" text-anchor="middle">Χάος (Caos)</text>
 <line x1="270" y1="76" x2="170" y2="108" stroke="#475569" stroke-width="2"/>
-<line x1="330" y1="76" x2="430" y2="108" stroke="#475569" stroke-width="2"/>
+<line x1="245" y1="108" x2="355" y2="108" stroke="#475569" stroke-width="2"/>
 <rect x="95" y="108" width="150" height="34" rx="8" fill="#bbf7d0" stroke="#15803d" stroke-width="2"/>
 <text x="170" y="131" font-size="16" font-weight="bold" fill="#14532d" text-anchor="middle">Γαῖα (Terra)</text>
 <rect x="355" y="108" width="150" height="34" rx="8" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
@@ -106,7 +106,7 @@ TOPIC('it', {
 <li>Dopo il solstizio d'estate si può <b>navigare</b>, ma solo per un breve periodo: Esiodo, uomo di terra, diffida del mare.</li>
 <li>L'inverno è il tempo da evitare: con la neve e il vento di Borea, meglio restare al riparo.</li>
 </ul>
-<p>Per Esiodo il tempo non è astratto: è il <b>ritmo del lavoro</b>, collegato al cielo. Due millenni dopo, Virgilio lo prenderà a modello nelle <i>Georgiche</i>.</p>`
+<p>Per Esiodo il tempo non è astratto: è il <b>ritmo del lavoro</b>, collegato al cielo. Sette secoli dopo, Virgilio lo prenderà a modello nelle <i>Georgiche</i>.</p>`
     },
     {
       type: `example`, title: `Lettura: lo sparviero e l'usignolo`,

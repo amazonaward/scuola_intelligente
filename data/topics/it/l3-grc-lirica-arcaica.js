@@ -62,7 +62,7 @@ TOPIC('it', {
 <text x="560" y="196" text-anchor="end">adonio</text>
 </g>
 <rect x="40" y="220" width="520" height="60" rx="10" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
-<text x="300" y="246" font-size="15" fill="#831843" text-anchor="middle" font-weight="bold">Il terzo piede del primo verso è un coriambo (— ⏑⏑ —)</text>
+<text x="300" y="246" font-size="15" fill="#831843" text-anchor="middle" font-weight="bold">Al centro di ogni endecasillabo c'è un coriambo (— ⏑⏑ —)</text>
 <text x="300" y="268" font-size="15" fill="#831843" text-anchor="middle">× = sillaba libera (lunga o breve)</text>
 </svg>`
     },
@@ -113,7 +113,7 @@ TOPIC('it', {
       type: `example`, title: `Lettura guidata: la prima strofe del fr. 31`,
       html: `<p><i>φαίνεταί μοι κῆνος ἴσος θέοισιν<br>ἔμμεν᾽ ὤνηρ, ὄττις ἐνάντιός τοι<br>ἰζάνει καὶ πλάσιον ἆδυ φωνεί-<br>σας ὑπακούει</i></p>
 <ol>
-<li><b>φαίνεταί μοι</b> "mi sembra"; <b>κῆνος</b> è la forma eolica per <b>ἐκεῖνος</b> "quello" (psilosi e forma ridotta).</li>
+<li><b>φαίνεταί μοι</b> "mi sembra"; <b>κῆνος</b> è la forma eolica per <b>ἐκεῖνος</b> "quello".</li>
 <li><b>ἴσος θέοισιν ἔμμεν᾽</b> "uguale agli dei, essere"; <b>ἔμμεν᾽</b> è l'infinito eolico di <b>εἶναι</b>; <b>θέοισιν</b> è il dativo plurale in <b>-οισι</b> (come in omerico).</li>
 <li><b>ὤνηρ</b> = <b>ὁ ἀνήρ</b> per crasi; <b>ὄττις</b> (eolico per <b>ὅστις</b>) "chi".</li>
 <li><b>ἐνάντιός τοι ἰζάνει</b> "siede di fronte a te"; <b>πλάσιον</b> "vicino"; <b>ἆδυ φωνείσας ὑπακούει</b> "e ascolta da vicino la tua dolce voce" (il participio <b>φωνείσας</b> è eolico: <b>φωνούσης</b> in attico).</li>
@@ -122,7 +122,7 @@ TOPIC('it', {
     },
     {
       type: `example`, title: `Lettura guidata: la nave di Alceo`,
-      html: `<p>Alceo, nel fr. 6, descrive la nave: "Non capisco la direzione dei venti: da una parte viene un'onda, dall'altra un'altra, e noi nel mezzo siamo portati dalla nera nave, travagliati dalla grande tempesta. L'acqua riempie la sentina; la vela già è tutta trasparente, vi sono grandi squarci."</p>
+      html: `<p>Alceo, nel fr. 208, descrive la nave: "Non capisco la direzione dei venti: da una parte viene un'onda, dall'altra un'altra, e noi nel mezzo siamo portati dalla nera nave, travagliati dalla grande tempesta. L'acqua riempie la sentina; la vela già è tutta trasparente, vi sono grandi squarci."</p>
 <ul>
 <li>Il lettore antico intende: la nave è la <b>città</b> (Mitilene) e la tempesta le <b>lotte civili</b>.</li>
 <li>Il tema ha una lunga storia: si trova in <b>Teognide</b>, nelle tragedie di Eschilo (<i>Sette contro Tebe</i>), nelle <b>Odi di Orazio</b> (I,14) e fino ai poemi politici dell'Ottocento.</li>

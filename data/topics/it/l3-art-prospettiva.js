@@ -66,7 +66,7 @@ TOPIC('it', {
     },
     {
       type: `text`, title: `4. Prospettiva accidentale: due punti di fuga`,
-      html: `<p>Nella <b>prospettiva accidentale</b> (o angolare) l'oggetto è <b>ruotato</b>: nessuna delle sue facce orizzontali è parallela al quadro, e lo spigolo più vicino ci viene incontro. Una scatola, una casa vista dall'angolo, un edificio: due sistemi di spigoli orizzontali, ciascuno con il proprio punto di fuga, <b>F1</b> e <b>F2</b>, entrambi sulla linea d'orizzonte. Gli spigoli verticali restano <b>verticali</b> (sono paralleli al quadro).</p>
+      html: `<p>Nella <b>prospettiva accidentale</b> (o angolare) l'oggetto è <b>ruotato</b>: nessuna delle sue facce verticali è parallela al quadro, e lo spigolo più vicino ci viene incontro. Una scatola, una casa vista dall'angolo, un edificio: due sistemi di spigoli orizzontali, ciascuno con il proprio punto di fuga, <b>F1</b> e <b>F2</b>, entrambi sulla linea d'orizzonte. Gli spigoli verticali restano <b>verticali</b> (sono paralleli al quadro).</p>
 <p><b>Costruzione di un cubo (parallelepipedo) in accidentale:</b></p>
 <ol>
 <li>Traccia la linea d'orizzonte e segna F1 a sinistra e F2 a destra (ben distanziati, anche fuori dal foglio, per evitare deformazioni).</li>

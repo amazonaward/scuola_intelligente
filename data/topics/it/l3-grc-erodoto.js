@@ -115,7 +115,7 @@ TOPIC('it', {
     },
     {
       type: `example`, title: `Lettura: Creso e Solone`,
-      html: `<p>Nel libro I (30-33) Creso, re di Lidia, mostra a <b>Solone</b>, ospite ad Atene, i suoi tesori e gli chiede chi sia l'uomo più felice del mondo, aspettandosi di sentirsi nominare. Solone risponde invece con <b>Tello l'ateniese</b> (cittadino dalla vita buona e dalla morte gloriosa in battaglia), poi con <b>Cleobi e Bitone</b>, giovani argivi morti nel sonno dopo aver trainato il carro della madre sacerdotessa fino al tempio di Era. Creso si irrita; Solone spiega:</p>
+      html: `<p>Nel libro I (30-33) Creso, re di Lidia, mostra a <b>Solone</b>, ospite a Sardi, i suoi tesori e gli chiede chi sia l'uomo più felice del mondo, aspettandosi di sentirsi nominare. Solone risponde invece con <b>Tello l'ateniese</b> (cittadino dalla vita buona e dalla morte gloriosa in battaglia), poi con <b>Cleobi e Bitone</b>, giovani argivi morti nel sonno dopo aver trainato il carro della madre sacerdotessa fino al tempio di Era. Creso si irrita; Solone spiega:</p>
 <ul>
 <li>la vita umana dura circa 70 anni, e nessun giorno è uguale all'altro: "<b>l'uomo è tutto caso</b>" (<i>πᾶν ἐστι ἄνθρωπος συμφορή</i>);</li>
 <li>"il divino è tutto invidioso e turbolento" (<i>τὸ θεῖον πᾶν ἐὸν φθονερόν τε καὶ ταραχῶδες</i>);</li>
@@ -147,7 +147,7 @@ TOPIC('it', {
 <table>
 <tr><th>Tratto</th><th>Ionico</th><th>Attico</th></tr>
 <tr><td>η al posto di α dopo ι, ε, ρ</td><td>ἱστορίη, ἡμέρη, χώρη</td><td>ἱστορία, ἡμέρα, χώρα</td></tr>
-<tr><td>Genitivo in -εω</td><td>Ἁλικαρνησσέος, Πέρσεω</td><td>Ἁλικαρνασσέως, Πέρσου</td></tr>
+<tr><td>Genitivo in -εος, -εω</td><td>Ἁλικαρνησσέος, Πέρσεω</td><td>Ἁλικαρνασσέως, Πέρσου</td></tr>
 <tr><td>Assenza di contrazione</td><td>ἑωυτοῦ, ἐόν, ποιέω</td><td>ἑαυτοῦ, ὄν, ποιῶ</td></tr>
 <tr><td>Dativo plurale in -οισι, -ῃσι</td><td>βαρβάροισι, ἡμέρῃσι</td><td>βαρβάροις, ἡμέραις</td></tr>
 <tr><td>Preposizione ἐς</td><td>ἐς τὴν Ἑλλάδα</td><td>εἰς τὴν Ἑλλάδα</td></tr>
@@ -178,7 +178,7 @@ TOPIC('it', {
     },
     {
       type: `curiosity`, title: `Lo sapevi che… la "maratona" nasce da una leggenda che Erodoto non racconta?`,
-      html: `<p>La corsa del soldato che da <b>Maratona</b> avrebbe corso fino ad Atene per annunciare la vittoria, e che sarebbe morto gridando "<i>νενικήκαμεν</i>" (<i>"abbiamo vinto"</i>), non è in Erodoto. Erodoto parla di un altro corridore, <b>Fidippide</b> (o Filippide), che corse da Atene a <b>Sparta</b> (circa 240 km in meno di due giorni) per chiedere aiuto prima della battaglia; incontrò anche il dio Pan, che promise il suo aiuto agli Ateniesi. La storia del soldato di Maratona compare molto più tardi (Plutarco, Luciano). La maratona moderna di 42 km nacque alle Olimpiadi del 1896, ad Atene.</p>`
+      html: `<p>La corsa del soldato che da <b>Maratona</b> avrebbe corso fino ad Atene per annunciare la vittoria, e che sarebbe morto gridando "<i>νενικήκαμεν</i>" (<i>"abbiamo vinto"</i>), non è in Erodoto. Erodoto parla di un altro corridore, <b>Fidippide</b> (o Filippide), che corse da Atene a <b>Sparta</b> (circa 240 km in meno di due giorni) per chiedere aiuto prima della battaglia; incontrò anche il dio Pan, che promise il suo aiuto agli Ateniesi. La storia del soldato di Maratona compare molto più tardi (Plutarco, Luciano). La maratona moderna nacque alle Olimpiadi del 1896, ad Atene; la distanza di 42,195 km fu fissata in seguito.</p>`
     },
     {
       type: `alternatives`, title: `Altri modi per capire Erodoto`,
