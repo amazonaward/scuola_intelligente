@@ -135,7 +135,7 @@ TOPIC('it', {
       tabs: [
         {
           label: "🔗 Il modello della «catena di crisi»",
-          html: `<p>Pensa a una scacchiera di domino: <b>clima</b> peggiora → <b>raccolti scarsi</b> → <b>fame</b> → corpi indeboliti → <b>peste</b> si diffonde → <b>spopolamento</b> → salari più alti e redditi signorili in calo → <b>tensione sociale</b> → <b>rivolte</b> e repressione. Nessuna crisi spiega da sola il quadro: la forza del Trecento sta nella concatenazione. Per questo gli storici parlano di «crisi sistemica»: il sistema feudale e agricolo del Duecento non regge più e cede il passo a nuovi equilibri.</p>`
+          html: `<p>Pensa a una fila di tessere del domino: <b>clima</b> peggiora → <b>raccolti scarsi</b> → <b>fame</b> → corpi indeboliti → <b>peste</b> si diffonde → <b>spopolamento</b> → salari più alti e redditi signorili in calo → <b>tensione sociale</b> → <b>rivolte</b> e repressione. Nessuna crisi spiega da sola il quadro: la forza del Trecento sta nella concatenazione. Per questo gli storici parlano di «crisi sistemica»: il sistema feudale e agricolo del Duecento non regge più e cede il passo a nuovi equilibri.</p>`
         },
         {
           label: "📅 Linea del tempo",

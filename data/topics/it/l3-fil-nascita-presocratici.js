@@ -198,7 +198,7 @@ TOPIC('it', {
     },
     {
       type: "curiosity",
-      title: "Il filosofo e l'eclissi",
+      title: "Il filosofo nel pozzo",
       html: `<p>Una famosa aneddotica su Talete racconta che, mentre osservava le stelle, cadde in un pozzo, e una serva tracia lo prese in giro perché voleva conoscere il cielo senza vedere ciò che aveva ai piedi. Platone riporta l'aneddoto nel <i>Teeteto</i>. Aristotele, al contrario, racconta che Talete, prevedendo un'ottima raccolta di olive, prese in affitto tutti i frantoi per dimostrare che i filosofi, se volessero, potrebbero arricchirsi.</p>`
     },
     {
