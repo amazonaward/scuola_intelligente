@@ -113,13 +113,13 @@ TOPIC('it', {
       title: "Il triangolo rettangolo e le sue proiezioni",
       svg: `<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
 <rect width="600" height="300" fill="#f8fafc"/>
-<polygon points="40,250 400,250 144,106" fill="#e0e7ff" stroke="#4338ca" stroke-width="4"/>
-<line x1="144" y1="106" x2="144" y2="250" stroke="#dc2626" stroke-width="4" stroke-dasharray="8 6"/>
+<polygon points="40,250 400,250 144,87" fill="#e0e7ff" stroke="#4338ca" stroke-width="4"/>
+<line x1="144" y1="87" x2="144" y2="250" stroke="#dc2626" stroke-width="4" stroke-dasharray="8 6"/>
 <rect x="144" y="236" width="14" height="14" fill="none" stroke="#dc2626" stroke-width="3"/>
-<circle cx="40" cy="250" r="6" fill="#1f2937"/><circle cx="400" cy="250" r="6" fill="#1f2937"/><circle cx="144" cy="106" r="6" fill="#1f2937"/><circle cx="144" cy="250" r="6" fill="#dc2626"/>
+<circle cx="40" cy="250" r="6" fill="#1f2937"/><circle cx="400" cy="250" r="6" fill="#1f2937"/><circle cx="144" cy="87" r="6" fill="#1f2937"/><circle cx="144" cy="250" r="6" fill="#dc2626"/>
 <text x="22" y="276" font-size="16" fill="#1f2937">B</text>
 <text x="404" y="276" font-size="16" fill="#1f2937">C</text>
-<text x="136" y="94" font-size="16" fill="#1f2937">A (angolo retto)</text>
+<text x="136" y="75" font-size="16" fill="#1f2937">A (angolo retto)</text>
 <text x="136" y="274" font-size="16" fill="#dc2626">H</text>
 <text x="76" y="272" font-size="16" fill="#166534" font-weight="bold">p</text>
 <text x="262" y="272" font-size="16" fill="#c2410c" font-weight="bold">q</text>
@@ -171,10 +171,10 @@ TOPIC('it', {
           svg: `<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
 <rect width="600" height="300" fill="#f8fafc"/>
 <rect x="30" y="30" width="200" height="200" fill="#fef9c3" stroke="#1f2937" stroke-width="3"/>
-<polygon points="30,30 98,30 30,98" fill="#a5b4fc" stroke="#1f2937" stroke-width="2"/>
-<polygon points="230,30 230,98 162,30" fill="#a5b4fc" stroke="#1f2937" stroke-width="2"/>
-<polygon points="230,230 162,230 230,162" fill="#a5b4fc" stroke="#1f2937" stroke-width="2"/>
-<polygon points="30,230 30,162 98,230" fill="#a5b4fc" stroke="#1f2937" stroke-width="2"/>
+<polygon points="30,30 98,30 30,162" fill="#a5b4fc" stroke="#1f2937" stroke-width="2"/>
+<polygon points="230,30 230,98 98,30" fill="#a5b4fc" stroke="#1f2937" stroke-width="2"/>
+<polygon points="230,230 162,230 230,98" fill="#a5b4fc" stroke="#1f2937" stroke-width="2"/>
+<polygon points="30,230 30,162 162,230" fill="#a5b4fc" stroke="#1f2937" stroke-width="2"/>
 <polygon points="98,30 230,98 162,230 30,162" fill="#fde68a" stroke="#b45309" stroke-width="3" fill-opacity="0.6"/>
 <text x="95" y="140" font-size="16" fill="#92400e" font-weight="bold">c²</text>
 <rect x="330" y="30" width="200" height="200" fill="#fef9c3" stroke="#1f2937" stroke-width="3"/>

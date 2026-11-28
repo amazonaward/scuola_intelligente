@@ -100,7 +100,7 @@ TOPIC('it', {
     {
       type: "example",
       title: "Come si dimostra (idea)",
-      html: `<p>Prendi un angolo alla circonferenza BPC in cui il centro O sta all'interno e traccia il raggio OP. I triangoli OPB e OPC sono <b>isosceli</b> (due lati sono raggi). Per l'angolo esterno di un triangolo, l'angolo al centro BOP è uguale alla somma dei due angoli alla base: vale quindi <b>il doppio</b> dell'angolo OPB. Lo stesso accade dall'altra parte, con COP e OPC. Sommando i due pezzi: <b>BOC = 2 · BPC</b>.</p>
+      html: `<p>Prendi un angolo alla circonferenza BPC in cui il centro O sta all'interno e traccia il raggio OP. I triangoli OPB e OPC sono <b>isosceli</b> (due lati sono raggi). Prolunga PO oltre O: l'angolo esterno del triangolo OPB, compreso tra OB e il prolungamento di PO, è uguale alla somma dei due angoli alla base, che sono uguali tra loro. Esso vale quindi <b>il doppio</b> dell'angolo OPB. Lo stesso accade dall'altra parte, con COP e OPC. Sommando i due pezzi: <b>BOC = 2 · BPC</b>.</p>
 <p>Esempio numerico: l'angolo al centro BOC misura 140°. Qualunque punto P preso sull'arco "grande" vede BC sotto un angolo di 70°. Se sposti P lungo l'arco, l'angolo non cambia: è la base degli strumenti che misurano gli angoli e della costruzione degli <b>archi capaci</b> usati in topografia.</p>`
     },
     {
@@ -175,7 +175,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Lo sapevi che…? Il pentagono e la costruzione di Gauss",
-      html: `<p>Con riga e compasso, Euclide sapeva inscrivere in una circonferenza il triangolo, il quadrato, il pentagono e l'esagono regolari. Per oltre duemila anni nessuno trovò altri poligoni regolari costruibili. Nel 1796, a soli 19 anni, <b>Carl Friedrich Gauss</b> dimostrò che si può costruire anche il <b>poligono regolare di 17 lati</b>: ne fu così orgoglioso che, secondo la tradizione, desiderò un ettadecagono sulla sua lapide. Stabilì poi esattamente quali poligoni regolari sono costruibili: per esempio il poligono di 7 o di 9 lati non lo è.</p>`
+      html: `<p>Con riga e compasso, Euclide sapeva inscrivere in una circonferenza il triangolo, il quadrato, il pentagono e l'esagono regolari. Per oltre duemila anni nessuno trovò altri poligoni regolari costruibili. Nel 1796, a soli 18 anni, <b>Carl Friedrich Gauss</b> dimostrò che si può costruire anche il <b>poligono regolare di 17 lati</b>: ne fu così orgoglioso che, secondo la tradizione, desiderò un ettadecagono sulla sua lapide. Stabilì poi esattamente quali poligoni regolari sono costruibili: per esempio il poligono di 7 o di 9 lati non lo è.</p>`
     },
     {
       type: "alternatives",

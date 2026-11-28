@@ -100,7 +100,7 @@ TOPIC('en', {
     {
       type: "example",
       title: "How it is proved (the idea)",
-      html: `<p>Take an angle at the circumference BPC with the centre O inside it and draw the radius OP. Triangles OPB and OPC are <b>isosceles</b> (two sides are radii). By the exterior angle theorem, the central angle BOP equals the sum of the two base angles, so it is <b>twice</b> the angle OPB. The same happens on the other side, with COP and OPC. Adding the two parts: <b>BOC = 2 · BPC</b>.</p>
+      html: `<p>Take an angle at the circumference BPC with the centre O inside it and draw the radius OP. Triangles OPB and OPC are <b>isosceles</b> (two sides are radii). Extend PO beyond O: the exterior angle of triangle OPB, between OB and the extension of PO, equals the sum of the two base angles, which are equal, so it is <b>twice</b> the angle OPB. The same happens on the other side, with COP and OPC. Adding the two parts: <b>BOC = 2 · BPC</b>.</p>
 <p>Numerical example: the central angle BOC measures 140°. Any point P on the "major" arc sees BC at an angle of 70°. If you move P along the arc, the angle does not change: this is the basis of instruments that measure angles and of the construction of <b>arcs of a given angle</b> used in surveying.</p>`
     },
     {
@@ -175,7 +175,7 @@ TOPIC('en', {
     {
       type: "curiosity",
       title: "Did you know…? The pentagon and Gauss's construction",
-      html: `<p>With straightedge and compasses, Euclid could inscribe the regular triangle, square, pentagon and hexagon in a circle. For over two thousand years nobody found any other constructible regular polygons. In 1796, aged just 19, <b>Carl Friedrich Gauss</b> proved that the <b>regular 17-sided polygon</b> can also be constructed: he was so proud of it that, according to tradition, he wanted a heptadecagon on his tombstone. He then established exactly which regular polygons are constructible: for example, the 7-sided and 9-sided polygons are not.</p>`
+      html: `<p>With straightedge and compasses, Euclid could inscribe the regular triangle, square, pentagon and hexagon in a circle. For over two thousand years nobody found any other constructible regular polygons. In 1796, aged just 18, <b>Carl Friedrich Gauss</b> proved that the <b>regular 17-sided polygon</b> can also be constructed: he was so proud of it that, according to tradition, he wanted a heptadecagon on his tombstone. He then established exactly which regular polygons are constructible: for example, the 7-sided and 9-sided polygons are not.</p>`
     },
     {
       type: "alternatives",
