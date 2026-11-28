@@ -178,7 +178,7 @@ TOPIC('it', {
         },
         {
           label: "📋 Tabella di una caduta",
-          html: `<p>Con g ≈ 9,8 m/s² (arrotondiamo a 10 per leggere meglio i numeri), partendo da fermo:</p>
+          html: `<p>Con g ≈ 9,8 m/s², partendo da fermo:</p>
 <table><tr><th>t (s)</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><th>v (m/s)</th><td>0</td><td>9,8</td><td>19,6</td><td>29,4</td><td>39,2</td></tr><tr><th>s (m)</th><td>0</td><td>4,9</td><td>19,6</td><td>44,1</td><td>78,4</td></tr></table>
 <p>Osserva: la velocità aumenta di 9,8 ogni secondo (linea retta nel grafico v-t); lo spazio cresce molto più in fretta: 4,9 → 19,6 → 44,1 → 78,4, cioè 1 : 4 : 9 : 16.</p>`
         },
@@ -198,7 +198,7 @@ TOPIC('it', {
         ["v = −10 m/s e a = −2 m/s²", 0],
         ["v = −10 m/s e a = +2 m/s²", 1],
         ["v = +30 m/s e a = 0", 2],
-        ["Una sasso in caduta libera (senza aria)", 0],
+        ["Un sasso in caduta libera (senza aria)", 0],
         ["Un'auto che frena a un semaforo rosso", 1]
       ] },
       caption: "Regola: se v e a hanno lo stesso segno il corpo accelera; se hanno segni opposti rallenta."

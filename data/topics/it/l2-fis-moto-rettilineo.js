@@ -124,7 +124,7 @@ TOPIC('it', {
     {
       type: "example",
       title: "Esempio: il sorpasso in autostrada",
-      html: `<p>Un'auto viaggia a 126 km/h (35 m/s) e si avvicina a un camion che va a 90 km/h (25 m/s). L'auto è 40 m dietro il camion e vuole sorpassarlo: deve arrivare 20 m davanti. Serve quindi recuperare 40 + 20 = 60 m (le lunghezze dei veicoli, per semplicità, si trascurano). La velocità relativa è 35 − 25 = 10 m/s, quindi il sorpasso dura 60 / 10 = <b>6 s</b>. In quei 6 secondi l'auto percorre 35 · 6 = <b>210 m</b>. Se in senso opposto arriva un'altra auto a 90 km/h (25 m/s), la distanza di avvicinamento è (35 + 25) · 6 = 360 m: serve una strada libera per almeno 570 m!</p>`
+      html: `<p>Un'auto viaggia a 126 km/h (35 m/s) e si avvicina a un camion che va a 90 km/h (25 m/s). L'auto è 40 m dietro il camion e vuole sorpassarlo: deve arrivare 20 m davanti. Serve quindi recuperare 40 + 20 = 60 m (le lunghezze dei veicoli, per semplicità, si trascurano). La velocità relativa è 35 − 25 = 10 m/s, quindi il sorpasso dura 60 / 10 = <b>6 s</b>. In quei 6 secondi l'auto percorre 35 · 6 = <b>210 m</b>. Se in senso opposto arriva un'altra auto a 90 km/h (25 m/s), la distanza di avvicinamento è (35 + 25) · 6 = 360 m: l'auto che arriva deve trovarsi a più di 360 m quando inizia il sorpasso!</p>`
     },
     {
       type: "text",

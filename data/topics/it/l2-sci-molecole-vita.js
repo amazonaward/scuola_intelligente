@@ -224,7 +224,7 @@ TOPIC('it', {
     pass: 0.7,
     questions: [
       { type: "mc", q: "Quale proprietà dell'acqua spiega perché sudare ci raffredda?", options: ["Il basso punto di fusione", "L'elevato calore latente di evaporazione", "La bassa densità", "La neutralità del pH"], answer: 1, explain: "Per evaporare l'acqua assorbe molto calore, sottraendolo al corpo." },
-      { type: "tf", q: "L'acqua ha densità massima a 4 °C, perciò il ghiaccio galleggia.", answer: true, explain: "Il ghiaccio ha una struttura più rarefatta dell'acqua liquida, quindi è meno denso." },
+      { type: "tf", q: "L'acqua ha densità massima a 4 °C e il ghiaccio, meno denso dell'acqua liquida, galleggia.", answer: true, explain: "Il ghiaccio ha una struttura più rarefatta dell'acqua liquida, quindi è meno denso." },
       { type: "mc", q: "Quale polisaccaride è la riserva di energia degli animali?", options: ["Amido", "Glicogeno", "Cellulosa", "Chitina"], answer: 1, explain: "Il glicogeno è immagazzinato nel fegato e nei muscoli." },
       { type: "tf", q: "L'uomo non digerisce la cellulosa perché non ha gli enzimi capaci di spezzare i legami β del glucosio.", answer: true, explain: "La cellulosa passa nell'intestino come fibra." },
       { type: "mc", q: "Un trigliceride è formato da...", options: ["Tre amminoacidi", "Glicerolo e tre acidi grassi", "Tre glucosi", "Tre nucleotidi"], answer: 1, explain: "Una molecola di glicerolo esterificata con tre acidi grassi." },
