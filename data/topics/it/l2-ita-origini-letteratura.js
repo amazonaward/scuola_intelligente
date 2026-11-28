@@ -133,7 +133,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Il più antico verso d'amore in Italia?",
-      html: `<p>Prima dei poeti siciliani esistono già versi in volgare, come il <i>Contrasto di Cielo d'Alcamo</i> (circa 1230-1240), dove un giovane corteggia una fanciulla con parole vivaci e comiche («Rosa fresca aulentissima ch'apari inver' la state...»). Dunque la letteratura italiana nasce con due voci: quella <b>religiosa</b>, popolare e semplice (San Francesco), e quella <b>cortese</b>, raffinata e colta (Scuola siciliana). Le due strade si incontreranno nel Dolce stil novo e in Dante.</p>`
+      html: `<p>Accanto ai poeti siciliani nascono anche versi in volgare più popolari, come il <i>Contrasto di Cielo d'Alcamo</i> (circa 1230-1240), dove un giovane corteggia una fanciulla con parole vivaci e comiche («Rosa fresca aulentissima ch'apari inver' la state...»). Dunque la letteratura italiana nasce con due voci: quella <b>religiosa</b>, popolare e semplice (San Francesco), e quella <b>cortese</b>, raffinata e colta (Scuola siciliana). Le due strade si incontreranno nel Dolce stil novo e in Dante.</p>`
     },
     {
       type: "alternatives",
