@@ -129,7 +129,7 @@ TOPIC('it', {
 <li><b>Circonferenza</b>: luogo dei punti a distanza r da un centro (la vedremo nelle prossime lezioni); <b>parabola</b>, <b>ellisse</b>, <b>iperbole</b>: luoghi definiti da distanze da un punto e da una retta o da due punti (le coniche).</li>
 </ul>
 <p><b>Metodo</b>: (1) disegna la situazione; (2) scegli le coordinate (spesso conviene mettere i punti dati in posizioni comode, come A(0, 0)); (3) traduci la proprietà con le formule di distanza; (4) semplifica; (5) riconosci la curva e controlla casi particolari (punti esclusi, valori impossibili).</p>
-<p><b>Esempio: il rapporto fisso.</b> Trova il luogo dei punti P(x, y) tali che PA² − PB² = 8, con A(0, 0) e B(4, 0). Si ottiene x² + y² − (x − 4)² − y² = 8 → 8x − 16 = 8 → <b>x = 3</b>: una retta verticale (perpendicolare ad AB). In generale PA² − PB² costante dà sempre una retta perpendicolare ad AB.</p>`
+<p><b>Esempio: la differenza fissa.</b> Trova il luogo dei punti P(x, y) tali che PA² − PB² = 8, con A(0, 0) e B(4, 0). Si ottiene x² + y² − (x − 4)² − y² = 8 → 8x − 16 = 8 → <b>x = 3</b>: una retta verticale (perpendicolare ad AB). In generale PA² − PB² costante dà sempre una retta perpendicolare ad AB.</p>`
     },
     {
       type: "example",

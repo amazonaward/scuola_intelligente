@@ -146,7 +146,7 @@ TOPIC('it', {
 <ul>
 <li><b>f⁻¹(f(x)) = x</b> per ogni x di A e <b>f(f⁻¹(y)) = y</b> per ogni y di B: l'inversa "annulla" la funzione.</li>
 <li>Dominio di f⁻¹ = codominio (= immagine) di f, e viceversa.</li>
-<li>Il grafico di f⁻¹ è il simmetrico di quello di f rispetto alla <b>bisettiva y = x</b> (perché (a, b) sul grafico di f ⟺ (b, a) sul grafico di f⁻¹).</li>
+<li>Il grafico di f⁻¹ è il simmetrico di quello di f rispetto alla <b>bisettrice y = x</b> (perché (a, b) sul grafico di f ⟺ (b, a) sul grafico di f⁻¹).</li>
 </ul>
 <p><b>Come si calcola.</b> (1) Si controlla che f sia biettiva (eventualmente restringendo dominio e codominio). (2) Si scrive y = f(x) e si <b>ricava x in funzione di y</b>. (3) Si scambiano i nomi delle variabili (x ↔ y).</p>
 <p><b>Esempio 1.</b> f(x) = 2x + 3: y = 2x + 3 → x = (y − 3)/2 → <b>f⁻¹(x) = (x − 3)/2</b>.</p>
@@ -181,7 +181,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Lo sapevi che…? La storia del concetto di funzione",
-      html: `<p>La parola <i>funzione</i> fu usata da <b>Leibniz</b> alla fine del Seicento, ma il concetto era legato a formule e curve. La notazione <b>f(x)</b> si deve a <b>Eulero</b> (metà del Settecento). La definizione moderna, in cui la funzione è una <i>corrispondenza arbitraria</i> e non per forza una formula, si consolida nell'Ottocento con <b>Dirichlet</b> (1837): come esempio egli propose la funzione che vale 1 sui razionali e 0 sugli irrazionali, impossibile da disegnare! Oggi, nella teoria degli insiemi, una funzione è semplicemente un insieme di coppie ordinate.</p>`
+      html: `<p>La parola <i>funzione</i> fu usata da <b>Leibniz</b> alla fine del Seicento, ma il concetto era legato a formule e curve. La notazione <b>f(x)</b> si deve a <b>Eulero</b> (metà del Settecento). La definizione moderna, in cui la funzione è una <i>corrispondenza arbitraria</i> e non per forza una formula, si consolida nell'Ottocento con <b>Dirichlet</b> (1837); già nel 1829 egli aveva proposto come esempio la funzione che vale 1 sui razionali e 0 sugli irrazionali, impossibile da disegnare! Oggi, nella teoria degli insiemi, una funzione è semplicemente un insieme di coppie ordinate.</p>`
     },
     {
       type: "curiosity",

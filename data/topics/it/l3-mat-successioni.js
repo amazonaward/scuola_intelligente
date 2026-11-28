@@ -135,7 +135,7 @@ TOPIC('it', {
     },
     {
       type: "example",
-      title: "Esempio pratico: la scacchiera e il riso",
+      title: "Esempio pratico: la scacchiera e i chicchi di grano",
       html: `<p>Secondo la leggenda dell'inventore degli scacchi, un sovrano gli promise qualsiasi ricompensa e lui chiese un chicco di grano sulla prima casella della scacchiera, due sulla seconda, quattro sulla terza e così via raddoppiando. È una progressione geometrica con a₁ = 1 e q = 2, su 64 caselle. La somma è S₆₄ = (2⁶⁴ − 1)/(2 − 1) = 2⁶⁴ − 1 = <b>18 446 744 073 709 551 615</b> chicchi: più di 18 miliardi di miliardi, molto più di quanto il mondo ne produca in secoli.</p>
 <p>Il messaggio è che la crescita esponenziale è <b>controintuitiva</b>: anche partendo da un chicco, il raddoppio continuo supera in fretta ogni immaginazione. Lo stesso accade con un virus che raddoppia ogni giorno, con una catena di messaggi, con un debito che accumula interessi composti.</p>`
     },
