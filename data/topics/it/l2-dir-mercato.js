@@ -238,7 +238,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Il paradosso dell'acqua e dei diamanti",
-      html: `<p>L'acqua è indispensabile alla vita ma costa pochissimo; i diamanti non servono a sopravvivere ma costano moltissimo. Adam Smith se ne accorse: spiegò che il prezzo non dipende dall'utilità totale, ma da quanto un bene è <b>scarso</b>. Oggi gli economisti lo spiegano con l'<b>utilità marginale</b>: l'ultimo litro d'acqua vale poco perché ce n'è in abbondanza, mentre l'ultimo diamante vale molto perché sono rari. In un deserto, però, un bicchiere d'acqua varrebbe molto più di un diamante.</p>`
+      html: `<p>L'acqua è indispensabile alla vita ma costa pochissimo; i diamanti non servono a sopravvivere ma costano moltissimo. Adam Smith se ne accorse e distinse il «valore d'uso» dal «valore di scambio»; più tardi si capì che il prezzo non dipende dall'utilità totale, ma da quanto un bene è <b>scarso</b>. Oggi gli economisti lo spiegano con l'<b>utilità marginale</b>: l'ultimo litro d'acqua vale poco perché ce n'è in abbondanza, mentre l'ultimo diamante vale molto perché sono rari. In un deserto, però, un bicchiere d'acqua varrebbe molto più di un diamante.</p>`
     },
     {
       type: "quiz",
