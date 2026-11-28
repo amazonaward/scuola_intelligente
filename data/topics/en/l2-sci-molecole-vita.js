@@ -224,7 +224,7 @@ TOPIC('en', {
     pass: 0.7,
     questions: [
       { type: "mc", q: "Which property of water explains why sweating cools us down?", options: ["Its low melting point", "Its high latent heat of vaporisation", "Its low density", "Its neutral pH"], answer: 1, explain: "To evaporate, water absorbs a lot of heat, taking it away from the body." },
-      { type: "tf", q: "Water is densest at 4 °C, which is why ice floats.", answer: true, explain: "Ice has a more open structure than liquid water, so it is less dense." },
+      { type: "tf", q: "Water is densest at 4 °C, and ice, being less dense than liquid water, floats.", answer: true, explain: "Ice has a more open structure than liquid water, so it is less dense." },
       { type: "mc", q: "Which polysaccharide is the energy store of animals?", options: ["Starch", "Glycogen", "Cellulose", "Chitin"], answer: 1, explain: "Glycogen is stored in the liver and muscles." },
       { type: "tf", q: "Humans cannot digest cellulose because they lack the enzymes able to break the β bonds between glucose units.", answer: true, explain: "Cellulose passes through the intestine as fibre." },
       { type: "mc", q: "A triglyceride is made of...", options: ["Three amino acids", "Glycerol and three fatty acids", "Three glucose molecules", "Three nucleotides"], answer: 1, explain: "A glycerol molecule esterified with three fatty acids." },

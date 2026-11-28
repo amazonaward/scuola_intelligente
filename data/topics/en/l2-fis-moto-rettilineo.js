@@ -124,7 +124,7 @@ TOPIC('en', {
     {
       type: "example",
       title: "Example: overtaking on the motorway",
-      html: `<p>A car travelling at 126 km/h (35 m/s) approaches a lorry going at 90 km/h (25 m/s). The car is 40 m behind the lorry and wants to overtake it: it has to end up 20 m in front. So it must gain 40 + 20 = 60 m (for simplicity, the lengths of the vehicles are ignored). The relative velocity is 35 − 25 = 10 m/s, so overtaking takes 60 / 10 = <b>6 s</b>. In those 6 seconds the car covers 35 · 6 = <b>210 m</b>. If another car is coming the other way at 90 km/h (25 m/s), the closing distance is (35 + 25) · 6 = 360 m: you need a clear road of at least 570 m!</p>`
+      html: `<p>A car travelling at 126 km/h (35 m/s) approaches a lorry going at 90 km/h (25 m/s). The car is 40 m behind the lorry and wants to overtake it: it has to end up 20 m in front. So it must gain 40 + 20 = 60 m (for simplicity, the lengths of the vehicles are ignored). The relative velocity is 35 − 25 = 10 m/s, so overtaking takes 60 / 10 = <b>6 s</b>. In those 6 seconds the car covers 35 · 6 = <b>210 m</b>. If another car is coming the other way at 90 km/h (25 m/s), the closing distance is (35 + 25) · 6 = 360 m: the oncoming car must be more than 360 m away when the overtaking starts!</p>`
     },
     {
       type: "text",

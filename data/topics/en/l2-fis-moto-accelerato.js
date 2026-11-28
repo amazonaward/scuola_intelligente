@@ -178,7 +178,7 @@ TOPIC('en', {
         },
         {
           label: "📋 Table of a fall",
-          html: `<p>With g ≈ 9.8 m/s² (you could round it to 10 to read the numbers more easily), starting from rest:</p>
+          html: `<p>With g ≈ 9.8 m/s², starting from rest:</p>
 <table><tr><th>t (s)</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><th>v (m/s)</th><td>0</td><td>9.8</td><td>19.6</td><td>29.4</td><td>39.2</td></tr><tr><th>s (m)</th><td>0</td><td>4.9</td><td>19.6</td><td>44.1</td><td>78.4</td></tr></table>
 <p>Notice: the velocity increases by 9.8 every second (a straight line on the v-t graph); the distance grows much faster: 4.9 → 19.6 → 44.1 → 78.4, i.e. 1 : 4 : 9 : 16.</p>`
         },
