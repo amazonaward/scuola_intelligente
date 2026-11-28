@@ -48,7 +48,7 @@ TOPIC('it', {
     {
       type: "example",
       title: "Come si smaschera un falso",
-      html: `<p>Immagina di trovare un presunto biglietto scritto da un cittadino di Firenze nel 1450 che contiene la parola «smartphone». Non serve un laboratorio: la parola stessa tradisce il falso. Valla fece lo stesso con la Donazione di Costantino: il testo parlava di «feudi» e usava termini che nel IV secolo non esistevano ancora. Il metodo è quello della <b>critica storica</b>: ogni testo ha un'epoca, una lingua, un contesto. È lo stesso principio che usa oggi chi controlla se una notizia o una foto è autentica.</p>`
+      html: `<p>Immagina di trovare un presunto biglietto scritto da un cittadino di Firenze nel 1450 che contiene la parola «smartphone». Non serve un laboratorio: la parola stessa tradisce il falso. Valla fece lo stesso con la Donazione di Costantino: il testo usava parole e concetti che nel IV secolo non esistevano ancora. Il metodo è quello della <b>critica storica</b>: ogni testo ha un'epoca, una lingua, un contesto. È lo stesso principio che usa oggi chi controlla se una notizia o una foto è autentica.</p>`
     },
     {
       type: "quiz",

@@ -125,14 +125,14 @@ TOPIC('it', {
       type: "text",
       title: "La porta e l'antinferno",
       html: `<p>Nel <b>canto III</b> Dante e Virgilio arrivano alla porta dell'Inferno, dove una scritta ammonisce: «<i>Per me si va ne la città dolente, per me si va ne l'etterno dolore, per me si va tra la perduta gente</i>» e, alla fine, <b>«Lasciate ogne speranza, voi ch'intrate»</b>. La giustizia di Dio, dice la scritta, «mosse il mio alto fattore»: l'Inferno è opera di giustizia divina, della «somma sapienza» e del «primo amore».</p>
-<p>Subito dopo la porta, nell'<b>Antinferno</b>, c'è la schiera degli <b>ignavi</b>: coloro che in vita non hanno mai scelto né il bene né il male, «che visser sanza infamia e sanza lodo». Sono disprezzati da Dio e dal Diavolo, e non hanno nemmeno un nome: Dante dice di Virgilio, parlando con lui, «non ragioniam di lor, ma guarda e passa». Il contrappasso è per analogia e contrasto: chi non ebbe «insegna» in vita deve ora correre senza posa dietro un'insegna vuota, punto da vespe e mosconi.</p>
+<p>Subito dopo la porta, nell'<b>Antinferno</b>, c'è la schiera degli <b>ignavi</b>: coloro che in vita non hanno mai scelto né il bene né il male, «che visser sanza infamia e sanza lodo». Sono disprezzati da Dio e dal Diavolo, e non hanno nemmeno un nome: Virgilio dice a Dante: «non ragioniam di lor, ma guarda e passa». Il contrappasso è per analogia e contrasto: chi non ebbe «insegna» in vita deve ora correre senza posa dietro un'insegna vuota, punto da vespe e mosconi.</p>
 <p>Poi Caronte traghetta le anime sull'Acheronte; Dante sviene e si ritrova nell'<b>Limbo</b> (canto IV), il primo cerchio, dove stanno i non battezzati e i grandi spiriti dell'antichità: Omero, Orazio, Ovidio, Lucano, Virgilio stesso, e poi i filosofi (Aristotele, «maestro di color che sanno») e gli eroi. Non soffrono pene fisiche, ma vivono nel desiderio inappagato di Dio: «sanza speme vivemo in disio».</p>`
     },
     {
       type: "text",
       title: "Canto V: Paolo e Francesca",
       html: `<p>Nel <b>secondo cerchio</b> Minosse giudica le anime e le manda ai cerchi assegnati cingendosi la coda intorno al corpo tante volte quanti sono i gradi da scendere. Qui i <b>lussuriosi</b> sono trascinati da una <b>bufera infernale</b> che «mai non resta» (il contrappasso: chi si lasciò travolgere dalla passione, ora è travolto dal vento).</p>
-<p>Dante incontra <b>Francesca da Polenta</b>, figlia del signore di Ravenna, che fu data in sposa a Gianciotto Malatesta, signore di Rimini, per ragioni politiche. Si innamorò del cognato <b>Paolo</b>, e il marito li uccise nel 1285 circa. Francesca racconta come scoppiò l'amore, leggendo insieme il romanzo cavalleresco di <b>Lancillotto e Ginevra</b>:</p>
+<p>Dante incontra <b>Francesca da Polenta</b>, figlia del signore di Ravenna, che fu data in sposa a Gianciotto Malatesta, della famiglia dei signori di Rimini, per ragioni politiche. Si innamorò del cognato <b>Paolo</b>, e il marito li uccise nel 1285 circa. Francesca racconta come scoppiò l'amore, leggendo insieme il romanzo cavalleresco di <b>Lancillotto e Ginevra</b>:</p>
 <p><i>«Amor, ch'a nullo amato amar perdona,<br>mi prese del costui piacer sì forte,<br>che, come vedi, ancor non m'abbandona.»</i></p>
 <p>E il libro stesso fu il tramite: <i>«Galeotto fu 'l libro e chi lo scrisse»</i> (Galeotto è il nome del mediatore tra Lancillotto e Ginevra). Alla fine del canto, mentre Paolo piange, Dante sviene «come corpo morto cade»: è tanto la pietà quanto il riconoscimento di un proprio rischio.</p>
 <p>Perché il canto è famoso? Dante condanna il peccato, ma non l'amore in sé: Francesca parla con grazia e dolcezza, e il lettore prova compassione. Dante però fa vedere anche i limiti della sua versione: Francesca incolpa il libro e l'Amore, senza prendersi la responsabilità. Il canto è un esempio del tema della <b>responsabilità personale</b>, centrale nella <i>Commedia</i>.</p>`
@@ -156,7 +156,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Brunetto Latini, il maestro ritrovato",
-      html: `<p>Nel canto XV Dante incontra il suo maestro <b>Brunetto Latini</b> tra i violenti contro natura. È un incontro commovente: Dante lo chiama «caro e buon padre» e gli rivolge parole di gratitudine, perché «m'insegnavate come l'uom s'etterna» (come l'uomo si rende eterno, cioè con la fama e con la cultura). La pena è feroce, ma il tono è carico di affetto: è un esempio di come Dante giudichi il peccato senza smettere di rispettare la persona.</p>`
+      html: `<p>Nel canto XV Dante incontra il suo maestro <b>Brunetto Latini</b> tra i violenti contro natura. È un incontro commovente: Dante lo chiama «la cara e buona imagine paterna» e gli rivolge parole di gratitudine, perché «m'insegnavate come l'uom s'etterna» (come l'uomo si rende eterno, cioè con la fama e con la cultura). La pena è feroce, ma il tono è carico di affetto: è un esempio di come Dante giudichi il peccato senza smettere di rispettare la persona.</p>`
     },
     {
       type: "text",

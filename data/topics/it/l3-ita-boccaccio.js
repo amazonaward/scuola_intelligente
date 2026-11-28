@@ -62,13 +62,13 @@ TOPIC('it', {
       html: `<p>Il <b>Decameron</b> (dal greco <i>deka hemerai</i>, «dieci giorni») fu scritto tra il <b>1349 e il 1351</b> circa, dopo la peste del 1348. Il sottotitolo è <b>«Prencipe Galeotto»</b>, un riferimento a Dante (<i>Inferno</i> V: «Galeotto fu 'l libro e chi lo scrisse»): è un libro che parla d'amore e che fa da mediatore tra le persone.</p>
 <p>Il <b>Proemio</b> è rivolto alle donne che soffrono per amore e hanno pochi modi per distrarsi: per loro Boccaccio scrive cento novelle, per offrire «alcuno sollazzo» e consigli.</p>
 <p>La <b>cornice</b>: dopo una terribile descrizione della peste a Firenze (che occupa l'inizio della prima giornata), sette giovani donne si incontrano nella chiesa di <b>Santa Maria Novella</b>: <b>Pampinea</b>, <b>Fiammetta</b>, <b>Filomena</b>, <b>Emilia</b>, <b>Lauretta</b>, <b>Neifile</b> ed <b>Elissa</b>. Con loro si uniscono tre giovani: <b>Panfilo</b>, <b>Filostrato</b> e <b>Dioneo</b>. Decidono di lasciare la città e di rifugiarsi in una villa sulle colline. Qui trascorrono due settimane, durante le quali, in dieci giorni, ciascuno racconta una novella al giorno. Il venerdì (giorno di penitenza) e il sabato (giorno per la cura del corpo) non si racconta.</p>
-<p>Ogni giornata ha un <b>re</b> o una <b>regina</b>, scelti per sorteggio, che stabilisce il tema. Solo <b>Dioneo</b> ha il privilegio di raccontare per ultimo e di scegliere liberamente l'argomento (è il più licenzioso e spiritoso).</p>`
+<p>Ogni giornata ha un <b>re</b> o una <b>regina</b>, che stabilisce il tema. Non sono estratti a sorte: Pampinea è scelta come prima regina e poi ogni sovrano incorona il successivo. Solo <b>Dioneo</b> ha il privilegio di raccontare per ultimo e di scegliere liberamente l'argomento (è il più licenzioso e spiritoso).</p>`
     },
     {
       type: "remember",
       title: "I temi delle dieci giornate",
       html: `<ul>
-<li><b>I</b>: tema libero (re Pampinea)</li>
+<li><b>I</b>: tema libero (regina Pampinea)</li>
 <li><b>II</b>: persone che dopo molte disavventure arrivano a un lieto fine inatteso (la <b>Fortuna</b>)</li>
 <li><b>III</b>: chi con l'<b>industria</b> (l'ingegno) ottiene ciò che desidera o recupera ciò che ha perso</li>
 <li><b>IV</b>: amori a <b>tragico fine</b></li>
@@ -102,10 +102,10 @@ TOPIC('it', {
       title: "Le novelle più famose",
       html: `<p><b>Ser Ciappelletto</b> (I, 1): il peggiore uomo del mondo (notaio imbroglione, bestemmiatore, falso testimone), in punto di morte si confessa a un frate ingenuo mentendo con tanta abilità da farsi credere un santo. Dopo la morte è venerato come San Ciappelletto. Boccaccio mostra con ironia come la fede ingenua e l'apparenza possano ingannare, e conclude che Dio ascolta chi lo prega anche se il santo è falso.</p>
 <p><b>Melchisedech e i tre anelli</b> (I, 3): il sultano Saladino, per spillare denaro all'ebreo Melchisedech, gli chiede quale sia la vera religione tra ebraismo, cristianesimo e islamismo. L'uomo risponde con l'apologo dei tre anelli: un padre aveva un anello prezioso e ne fece fare due copie identiche per i tre figli; nessuno sa quale sia l'originale. Così le tre religioni: ognuna crede di avere la verità. Una lezione di tolleranza.</p>
-<p><b>Andreuccia da Perugia</b> (II, 5): un giovane mercante a Napoli subisce tre disavventure in una sola notte (cade in un pozzo nero, è derubato, finisce in una tomba), ma ne esce arricchito di un anello prezioso. Il tema è la Fortuna.</p>
+<p><b>Andreuccio da Perugia</b> (II, 5): un giovane mercante a Napoli subisce tre disavventure in una sola notte (cade in un pozzo nero, è derubato, finisce in una tomba), ma ne esce arricchito di un anello prezioso. Il tema è la Fortuna.</p>
 <p><b>Tancredi e Ghismunda</b> (IV, 1): il principe di Salerno Tancredi scopre che sua figlia ha un amante, Guiscardo, di umile origine, lo fa uccidere e le manda il cuore dell'uomo in una coppa d'oro; la figlia beve un veleno. Ghismunda difende con orgoglio il proprio diritto ad amare: la vera nobiltà è la virtù, non il sangue (tema stilnovista).</p>
 <p><b>Lisabetta da Messina</b> (IV, 5): i fratelli di Lisabetta uccidono il suo amante, un garzone; lei sotterra la testa in un vaso di basilico, che bagna con le sue lacrime, finché i fratelli, scoperto il vaso, lo portano via e lei muore di dolore.</p>
-<p><b>Federigo degli Alberighi</b> (V, 9): il giovane Federigo spreca tutta la sua fortuna per conquistare monna Giovanna, che non lo ricambia. Ridotto in povertà, vive in campagna con il solo falcone. Un giorno monna Giovanna, per il figlio malato, chiede proprio quel falcone: Federigo lo cucina per offrirglielo a pranzo, perché non ha altro. Quando lei, vedendo il suo gesto, capisce, si innamora di lui: Federigo ottiene ciò che ha cercato con tanto sacrificio. È una novella sulla <b>cortesia</b> e sull'amore generoso.</p>
+<p><b>Federigo degli Alberighi</b> (V, 9): il giovane Federigo spreca tutta la sua fortuna per conquistare monna Giovanna, che non lo ricambia. Ridotto in povertà, vive in campagna con il solo falcone. Un giorno monna Giovanna, vedova, va a trovarlo: Federigo, senza sapere perché sia venuta, cucina il falcone per offrirglielo a pranzo, perché non ha altro. Solo dopo il pranzo lei gli chiede proprio quel falcone per il figlio malato; il bambino muore poco dopo. Più tardi Giovanna, ammirando il suo gesto, lo sposa: Federigo ottiene ciò che ha cercato con tanto sacrificio. È una novella sulla <b>cortesia</b> e sull'amore generoso.</p>
 <p><b>Chichibio e la gru</b> (VI, 4), <b>Frate Cipolla</b> (VI, 10), <b>Calandrino</b> (VIII, 3 e altre) sono invece novelle comiche: la prontezza di spirito di un cuoco, un frate che mostra false reliquie (una «penna dell'angelo Gabriele»), uno sciocco pittore che si lascia ingannare dagli amici.</p>
 <p>L'ultima novella, <b>Griselda</b> (X, 10), raccontata da Dioneo, presenta una moglie che sopporta in silenzio prove crudeli dal marito Gualtieri. Petrarca la tradusse in latino (1373) come esempio di virtù.</p>`
     },
@@ -120,7 +120,7 @@ TOPIC('it', {
         { label: "Le offro il falcone vivo, spiegando che è tutto ciò che ho", outcome: "Sarebbe sincero, ma a quel punto lei non avrebbe potuto sapere il valore del tuo gesto." }
       ],
       answer: 0,
-      explain: "Federigo cucina il falcone per onorare l'ospite. Quando scopre perché Giovanna fosse venuta, ne soffre; ma il suo gesto di <b>cortesia</b> commuove la donna, che lo sposa e lo rende ricco. Boccaccio mostra la forza di un'azione generosa e disinteressata, e insieme la capriciosa ironia della Fortuna."
+      explain: "Federigo cucina il falcone per onorare l'ospite. Quando scopre perché Giovanna fosse venuta, ne soffre; ma il suo gesto di <b>cortesia</b> commuove la donna, che più tardi lo sposa e lo rende ricco. Boccaccio mostra la forza di un'azione generosa e disinteressata, e insieme la capricciosa ironia della Fortuna."
     },
     {
       type: "example",
@@ -154,7 +154,7 @@ TOPIC('it', {
           options: { pairs: [
             ["Ser Ciappelletto", "Il peggiore degli uomini creduto santo"],
             ["Melchisedech", "I tre anelli e la tolleranza"],
-            ["Andreuccia da Perugia", "La Fortuna in una sola notte"],
+            ["Andreuccio da Perugia", "La Fortuna in una sola notte"],
             ["Tancredi e Ghismunda", "Amore a tragico fine"],
             ["Federigo degli Alberighi", "Il falcone e la cortesia"],
             ["Calandrino", "La beffa del credulone"],

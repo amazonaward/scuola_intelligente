@@ -80,7 +80,7 @@ TOPIC('it', {
     {
       type: "decision",
       title: "Ungheria o Ferrara? (1517)",
-      html: `<p>Sei Ludovico Ariosto. Hai quarantatré anni, sei al servizio del cardinale Ippolito d'Este, che ti paga e ti protegge. Ippolito ti ordina di seguirlo in <b>Ungheria</b>, dove è stato nominato vescovo. Tu però hai appena pubblicato il <i>Furioso</i>, desideri continuare a scrivere, hai una famiglia e una salute non robusta. Se rifiuti, perdi lo stipendio e il favore del cardinale.</p>`,
+      html: `<p>Sei Ludovico Ariosto. Hai quarantatré anni, sei al servizio del cardinale Ippolito d'Este, che ti paga e ti protegge. Ippolito ti ordina di seguirlo in <b>Ungheria</b>, dove è stato nominato vescovo di Eger (Agria). Tu però hai appena pubblicato il <i>Furioso</i>, desideri continuare a scrivere, hai una famiglia e una salute non robusta. Se rifiuti, perdi lo stipendio e il favore del cardinale.</p>`,
       question: "Che cosa avresti deciso?",
       options: [
         { label: "Seguire il cardinale", outcome: "Avresti mantenuto lo stipendio e la carica, ma avresti passato molti anni lontano da casa, in un paese straniero, con poco tempo per la poesia." },
