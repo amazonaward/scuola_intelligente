@@ -1,7 +1,7 @@
 TOPIC('it', {
   id: "l3-fil-scolastica-tommaso",
   title: "La Scolastica e Tommaso d'Aquino",
-  intro: "Intorno all'anno Mille, nell'Europa cristiana, nascono le <b>scuole</b> nei monasteri e nelle cattedrali, e poi le prime <b>università</b>: Bologna, Parigi, Oxford. Nella <b>Scolastica</b> si studia, si discute, si argomenta con regole precise: ogni tesi riceve obiezioni e risposte. Tra Duecento e Trecento arrivano in Occidente le opere di <b>Aristotele</b> (spesso tramite i filosofi arabi). Che farne? Per alcuni sono un pericolo per la fede, per <b>Tommaso d'Aquino</b> sono un'occasione. Poi un frate inglese, <b>Guglielmo di Ockham</b>, con un «rasoio» taglierà molto di quel sapere. Questa lezione racconta la grande sintesi medievale di fede e ragione, e la sua crisi.",
+  intro: "Intorno all'anno Mille, nell'Europa cristiana, nascono le <b>scuole</b> nei monasteri e nelle cattedrali, e poi le prime <b>università</b>: Bologna, Parigi, Oxford. Nella <b>Scolastica</b> si studia, si discute, si argomenta con regole precise: ogni tesi riceve obiezioni e risposte. Tra XII e XIII secolo arrivano in Occidente le opere di <b>Aristotele</b> (spesso tramite i filosofi arabi). Che farne? Per alcuni sono un pericolo per la fede, per <b>Tommaso d'Aquino</b> sono un'occasione. Poi un frate inglese, <b>Guglielmo di Ockham</b>, con un «rasoio» taglierà molto di quel sapere. Questa lezione racconta la grande sintesi medievale di fede e ragione, e la sua crisi.",
   minutes: 50,
   sections: [
     {
@@ -197,12 +197,12 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Lo sapevi che...?",
-      html: `<p>Tommaso era di corporatura grossa e taciturno: i compagni lo chiamavano «bue muto». Alberto Magno rispose che «questo bue muggirà così forte che il suo muggito riempirà il mondo». Alla fine di dicembre 1273, dopo un'esperienza spirituale, smise di scrivere dicendo che tutto ciò che aveva scritto gli pareva «paglia» in confronto a ciò che aveva visto: la <i>Summa</i> rimase incompiuta.</p>`
+      html: `<p>Tommaso era di corporatura grossa e taciturno: i compagni lo chiamavano «bue muto». Alberto Magno rispose che «questo bue muggirà così forte che il suo muggito riempirà il mondo». Nel dicembre 1273, dopo un'esperienza spirituale, smise di scrivere dicendo che tutto ciò che aveva scritto gli pareva «paglia» in confronto a ciò che aveva visto: la <i>Summa</i> rimase incompiuta.</p>`
     },
     {
       type: "curiosity",
       title: "Dante e Tommaso",
-      html: `<p>Nel <i>Paradiso</i> (canto X) Dante colloca Tommaso nel cielo del Sole, tra gli spiriti sapienti, e gli fa raccontare le vite di san Francesco; nel canto XI è Tommaso a lodare Francesco, e nel XII Bonaventura loda Domenico: un elogio incrociato tra i due ordini rivali. La visione ordinata di Dante sul cosmo e sulla morale deve molto alla sintesi tommasiana.</p>`
+      html: `<p>Nel <i>Paradiso</i> (canto X) Dante colloca Tommaso nel cielo del Sole, dove presenta gli altri spiriti sapienti; nel canto XI è Tommaso a raccontare la vita di san Francesco, e nel XII Bonaventura loda Domenico: un elogio incrociato tra i due ordini rivali. La visione ordinata di Dante sul cosmo e sulla morale deve molto alla sintesi tommasiana.</p>`
     },
     {
       type: "example",
@@ -247,7 +247,7 @@ TOPIC('it', {
   verifica: {
     pass: 0.7,
     questions: [
-      { type: "mc", q: "Quale testo autorevole è chiamato semplicemente «il Filosofo» nella Scolastica?", options: ["Aristotele", "Platone", "Agostino"], answer: 0, explain: "Le sue opere sono studiate e commentate." },
+      { type: "mc", q: "Quale autore è chiamato semplicemente «il Filosofo» nella Scolastica?", options: ["Aristotele", "Platone", "Agostino"], answer: 0, explain: "Le sue opere sono studiate e commentate." },
       { type: "mc", q: "Che cos'è la prova ontologica di Anselmo?", options: ["Dio è ciò di cui non si può pensare nulla di più grande, e quindi esiste", "Dio è il primo motore", "Dio esiste perché c'è ordine nel mondo"], answer: 0, explain: "Tommaso non la accettò." },
       { type: "tf", q: "Tommaso partiva dal concetto di Dio per dimostrarne l'esistenza.", answer: false, explain: "Le cinque vie sono prove a posteriori." },
       { type: "mc", q: "Che cosa significa che fede e ragione, per Tommaso, non si contraddicono?", options: ["Hanno la stessa origine in Dio", "La fede non ha bisogno della ragione", "La ragione deve negare la fede"], answer: 0, explain: "La verità è una." },
