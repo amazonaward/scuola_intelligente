@@ -61,7 +61,7 @@ TOPIC('it', {
     {
       type: "text",
       title: "4. Preposizioni con il dativo",
-      html: `<p>Nove preposizioni vogliono <b>sempre</b> il dativo. Un aiuto è la serie: <b>aus, bei, mit, nach, seit, von, zu</b> (e <i>gegenüber</i>, <i>ab</i>, <i>außer</i>).</p>
+      html: `<p>Alcune preposizioni vogliono <b>sempre</b> il dativo. Un aiuto è la serie: <b>aus, bei, mit, nach, seit, von, zu</b> (e <i>gegenüber</i>, <i>ab</i>, <i>außer</i>).</p>
 <table>
 <tr><th>Preposizione</th><th>Uso principale</th><th>Esempio</th></tr>
 <tr><td><b>aus</b></td><td>da (origine), di (materiale)</td><td>Ich komme aus <b>der</b> Schweiz. Der Tisch ist aus <b>Holz</b>.</td></tr>

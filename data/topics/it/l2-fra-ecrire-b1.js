@@ -7,7 +7,7 @@ TOPIC('it', {
     {
       type: "text",
       title: "1. Che cosa si chiede al livello B1",
-      html: `<p>Al livello <b>B1</b> (<i>utilisateur indépendant</i>) dovresti essere in grado di scrivere <b>testi semplici e coerenti</b> su argomenti familiari o di interesse personale: lettere e mail personali, descrizioni di esperienze, racconti di eventi, brevi testi in cui esprimi un'opinione e la giustifichi. Nelle prove di certificazione (per esempio il <b>DELF B1</b>) la produzione scritta comprende di solito <b>un testo di circa 160 parole</b> e prevede due compiti: una <b>lettera o mail</b> (informale o formale) e un <b>testo d'opinione</b> (<i>essai argumentatif</i>).</p>
+      html: `<p>Al livello <b>B1</b> (<i>utilisateur indépendant</i>) dovresti essere in grado di scrivere <b>testi semplici e coerenti</b> su argomenti familiari o di interesse personale: lettere e mail personali, descrizioni di esperienze, racconti di eventi, brevi testi in cui esprimi un'opinione e la giustifichi. Nelle prove di certificazione (per esempio il <b>DELF B1</b>) la produzione scritta consiste in <b>un testo di almeno 160 parole</b>, che può essere una <b>lettera o mail</b> (informale o formale) oppure un <b>testo d'opinione</b> (<i>essai argumentatif</i>).</p>
 <p>Un buon testo B1 è valutato su cinque criteri:</p>
 <ul>
 <li><b>Rispetto della consegna</b>: rispondi a tutte le richieste (per esempio \"racconta, descrivi, chiedi\").</li>

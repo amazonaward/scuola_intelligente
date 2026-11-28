@@ -139,7 +139,7 @@ TOPIC('it', {
       tabs: [
         {
           label: "🚪 L'infinito intero",
-          html: `<p>Pensa a una <b>porta</b>: la stanza è l'infinito (<i>viajar</i>) e la maniglia è la desinenza. Il futuro e il condicional entrano sempre dalla stessa stanza: non togli niente, aggiungi soltanto. Per questo non esistono verbi che perdano la <i>-r</i> (solo i dodici irregolari che accorciano la radice).</p>`
+          html: `<p>Pensa a una <b>porta</b>: la stanza è l'infinito (<i>viajar</i>) e la maniglia è la desinenza. Il futuro e il condicional entrano sempre dalla stessa stanza: non togli niente, aggiungi soltanto. Per questo non esistono verbi che perdano la <i>-r</i> (solo la dozzina di irregolari che accorciano la radice).</p>`
         },
         {
           label: "🇮🇹 Dall'italiano",
@@ -203,7 +203,7 @@ TOPIC('it', {
       html: `<ul>
 <li><b>Futuro</b> = infinito + é, ás, á, emos, éis, án.</li>
 <li><b>Condicional</b> = infinito + ía, ías, ía, íamos, íais, ían.</li>
-<li>Dodici radici irregolari valgono per entrambi (<i>tendr-, podr-, har-, dir-...</i>).</li>
+<li>Circa dodici radici irregolari valgono per entrambi (<i>tendr-, podr-, har-, dir-...</i>).</li>
 <li><i>Ir a + infinito</i> sostituisce spesso il futuro nel parlato.</li>
 <li>Condicional per consigli, cortesia, desideri, futuro nel passato.</li>
 </ul>`

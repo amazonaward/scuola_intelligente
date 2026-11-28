@@ -28,7 +28,7 @@ TOPIC('it', {
 <tr><td><b>Ringraziamento</b></td><td><i>¡Mil gracias! Gracias por todo.</i></td><td><i>Le agradezco de antemano su atención.</i></td></tr>
 <tr><td><b>Congedo</b></td><td><i>Un abrazo / Besos / Hasta pronto / Nos vemos</i></td><td><i>Atentamente, / Cordialmente, / Un cordial saludo,</i></td></tr>
 </table>
-<p>Dopo il saluto si mettono i <b>due punti</b> (<i>Querida Ana:</i>) e si continua con la minuscola o la maiuscola (entrambe accettate). Nel registro formale si usa <b>usted</b> (3ª persona singolare): <i>¿Podría usted ayudarme?</i> e si evitano abbreviazioni.</p>
+<p>Dopo il saluto si mettono i <b>due punti</b> (<i>Querida Ana:</i>) e si va a capo, iniziando con la maiuscola. Nel registro formale si usa <b>usted</b> (3ª persona singolare): <i>¿Podría usted ayudarme?</i> e si evitano abbreviazioni.</p>
 <p>Verbi e frasi utili: <i>escribir, contestar, adjuntar (un archivo), enviar, reservar, confirmar, agradecer, disculparse, invitar, quedar</i>. Per scusarti: <i>Lo siento mucho, perdona el retraso</i>. Per chiedere una risposta: <i>Espero tu respuesta / Quedo a la espera de su respuesta</i>.</p>`
     },
     {
@@ -193,7 +193,7 @@ TOPIC('it', {
       title: "Mappa della scrittura B1",
       nodes: [
         { id: "plan", label: "Pianificare", x: 50, y: 8, color: "#2563eb", html: "A chi scrivo? Perché? Quali idee?", why: "La retorica classica (Cicerone, Quintiliano) divideva la scrittura in inventio (trovare le idee), dispositio (ordinarle) ed elocutio (dar loro forma). Ancora oggi un buon testo parte dallo stesso schema in tre fasi." },
-        { id: "registro", label: "Registro", x: 18, y: 40, color: "#d97706", html: "tú / usted; formale e informale.", why: "In spagnolo il registro è marcato da forme grammaticali (usted + 3ª persona) e da formule stabili. Deriva dall'antico <i>vuestra merced</i> («vostra grazia») → vuested → usted: una forma di cortesia che si è fusa in un pronome." },
+        { id: "registro", label: "Registro", x: 18, y: 40, color: "#d97706", html: "tú / usted; formale e informale.", why: "In spagnolo il registro è marcato da forme grammaticali (usted + 3ª persona) e da formule stabili. Deriva dall'antico <i>vuestra merced</i> («vostra grazia») → vuesarced → usted: una forma di cortesia che si è fusa in un pronome." },
         { id: "gen", label: "Generi di testo", x: 50, y: 40, color: "#16a34a", html: "mail, racconto, opinione.", why: "Ogni genere ha una struttura convenzionale: la mail ha i cinque blocchi, il racconto un inizio-problema-fine, l'opinione tesi-argomenti-conclusione. La convenzione facilita la comprensione di chi legge." },
         { id: "conn", label: "Connettori", x: 82, y: 40, color: "#a855f7", html: "además, sin embargo, por eso...", why: "I connettori nascono dalla grammatica del discorso: servono a segnalare relazioni logiche (aggiunta, contrasto, causa, conseguenza). Per questo conoscerne molti permette di costruire testi più chiari." },
         { id: "orto", label: "Ortografia", x: 30, y: 78, color: "#db2777", html: "tilde, ¿ ¡, minuscole, porque/por qué.", why: "L'ortografia spagnola è stata fissata dalla Real Academia nel Settecento (Ortografía del 1741) con regole in gran parte fonetiche: si scrive quasi sempre come si pronuncia, con poche eccezioni (b/v, h, g/j)." },

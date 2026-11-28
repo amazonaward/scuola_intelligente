@@ -138,7 +138,7 @@ TOPIC('it', {
       title: "4. América Latina: paesi e culture",
       html: `<p>L'America Latina è un mosaico di paesaggi e di culture indigene, europee e africane.</p>
 <ul>
-<li><b>México</b>: le piramidi di <b>Teotihuacán</b> e di <b>Chichén Itzá</b> (civiltà maya), il <b>Día de Muertos</b> (1-2 novembre, patrimonio UNESCO dal 2008), la cucina con <i>tacos, mole, guacamole</i>, i pittori <b>Frida Kahlo</b> e <b>Diego Rivera</b>. La capitale sorge sul sito dell'antica Tenochtitlan, capitale azteca.</li>
+<li><b>México</b>: le piramidi di <b>Teotihuacán</b> (più antiche degli aztechi) e di <b>Chichén Itzá</b> (civiltà maya), il <b>Día de Muertos</b> (1-2 novembre, patrimonio UNESCO dal 2008), la cucina con <i>tacos, mole, guacamole</i>, i pittori <b>Frida Kahlo</b> e <b>Diego Rivera</b>. La capitale sorge sul sito dell'antica Tenochtitlan, capitale azteca.</li>
 <li><b>Cuba</b> e <b>República Dominicana</b>: <i>son, salsa, bachata, merengue</i>, ritmi caraibici.</li>
 <li><b>Colombia</b>: caffè, la città coloniale di <b>Cartagena de Indias</b>, lo scrittore <b>Gabriel García Márquez</b>.</li>
 <li><b>Perú</b>: <b>Machu Picchu</b>, città inca costruita nel XV secolo sulle Ande vicino a Cusco; il <i>ceviche</i>.</li>
