@@ -139,7 +139,7 @@ TOPIC('it', {
       { type: `mc`, q: `Quale stanza vaticana contiene la Scuola di Atene?`, options: [`Stanza della Segnatura`, `Stanza di Eliodoro`, `Sala di Costantino`], answer: 0, explain: `Fu dipinta tra il 1508 e il 1511.` },
       { type: `tf`, q: `Nella Scuola di Atene Aristotele indica il cielo.`, answer: false, explain: `Indica il cielo Platone; Aristotele stende la mano verso terra.` },
       { type: `num`, q: `In che anno morì Raffaello?`, answer: 1520, tol: 0, explain: `Il 6 aprile 1520.` },
-      { type: `text`, q: `Come si chiama il pittore che fu primo maestro di Raffaello, detto Vannucci?`, answer: [`perugino`, `il perugino`], explain: `Il Perugino.` },
+      { type: `text`, q: `Qual era il soprannome del primo maestro di Raffaello, il cui vero nome era Pietro Vannucci?`, answer: [`perugino`, `il perugino`], explain: `Il Perugino.` },
       { type: `order`, q: `Ordina cronologicamente.`, items: [`Sposalizio della Vergine`, `Arrivo a Roma`, `Scuola di Atene`, `Architetto di San Pietro`, `Morte`], explain: `1504; 1508; 1509-1511; 1514; 1520.` },
       { type: `mc`, q: `Quale papa chiamò Raffaello a Roma?`, options: [`Giulio II`, `Leone X`, `Paolo III`], answer: 0, explain: `Giulio II nel 1508.` },
       { type: `mc`, q: `Dove è conservata la Madonna Sistina?`, options: [`Dresda`, `Parigi`, `Madrid`], answer: 0, explain: `Gemäldegalerie Alte Meister di Dresda.` },

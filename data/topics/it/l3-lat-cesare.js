@@ -146,11 +146,11 @@ TOPIC('it', {
 <li><b>Giustificazione</b>: dimostrare che le guerre erano legittime. Nel I libro presenta come "casus belli" la minaccia degli Elvezi e dei Germani; nel VII, i Galli si ribellano per "tradimento" e non per libertà;</li>
 <li><b>Memoria</b>: lasciare ai posteri la versione ufficiale. Per due millenni, quello che sappiamo della conquista della Gallia viene da lui: <b>chi scrive la storia vince due volte</b>.</li>
 </ul>
-<p>Eppure c'è una vena di sincerità: Cesare descrive i suoi errori tattici (come l'assalto a Gergovia) e ammette la disfatta. Anche i Galli compaiono con tratti nobili: Vercingetorige parla davanti a Cesare con dignità, presentandosi come difensore della libertà (VII, 89).</p>`
+<p>Eppure c'è una vena di sincerità: Cesare descrive i suoi errori tattici (come l'assalto a Gergovia) e ammette la disfatta. Anche i Galli compaiono con tratti nobili: Vercingetorige si rivolge al proprio consiglio di capi galli con dignità, presentandosi come difensore della libertà (VII, 89).</p>`
     },
     {
       type: `curiosity`, title: `Lo sapevi che… "Veni, vidi, vici" non è nei Commentarii?`,
-      html: `<p>La celebre frase <b>"Veni, vidi, vici"</b> ("Venni, vidi, vinsi") è attribuita a Cesare da Plutarco e Svetonio, dopo la vittoria rapidissima sul re Farnace del Ponto a <b>Zela</b> (47 a.C.). Non è nei Commentarii ma nel trionfo: i cartelli del corteo mostravano la scritta. Come la frase "alea iacta est" (il dado è tratto) per il Rubicone, è una sintesi che ha conquistato la cultura popolare. Anche il "Tu quoque, Brute?" è una formula tardiva (Shakespeare): Svetonio riporta, al massimo, la frase greca "anche tu, figlio mio?" riferita come ipotesi.</p>`
+      html: `<p>La celebre frase <b>"Veni, vidi, vici"</b> ("Venni, vidi, vinsi") è attribuita a Cesare da Plutarco e Svetonio, dopo la vittoria rapidissima sul re Farnace del Ponto a <b>Zela</b> (47 a.C.). Non è nei Commentarii ma nel trionfo: i cartelli del corteo mostravano la scritta. Come la frase "alea iacta est" (il dado è tratto) per il Rubicone, è una sintesi che ha conquistato la cultura popolare. Anche il "Tu quoque, Brute?" (in Shakespeare: "Et tu, Brute?") è una formula tardiva: Svetonio riporta, al massimo, la frase greca "anche tu, figlio mio?" riferita come ipotesi.</p>`
     },
     {
       type: `curiosity`, title: `Lo sapevi che… Cesare ha lasciato parole nel nostro calendario?`,

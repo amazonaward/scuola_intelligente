@@ -139,7 +139,7 @@ TOPIC('it', {
     },
     {
       type: `example`, title: `Humanitas: il valore di una parola`,
-      html: `<p>La parola <b><i>humanitas</i></b> in Cicerone indica un ideale: <b>l'umanità colta</b>, cioè la formazione completa dell'uomo con le lettere, la filosofia, l'educazione e la gentilezza. Nel <i>Pro Archia</i> (62 a.C.) difende il poeta greco accusato di non avere la cittadinanza e coglie l'occasione per elogiare gli studi: le lettere "nutrono la giovinezza, rallegrano la vecchiaia, abbelliscono la buona sorte, danno rifugio e conforto nelle avversità". Gli umanisti del XV secolo (Petrarca, Poggio Bracciolini) riscoprirono Cicerone proprio per questo ideale. Quando oggi diciamo <i>studi umanistici</i>, usiamo ancora quella parola.</p>`
+      html: `<p>La parola <b><i>humanitas</i></b> in Cicerone indica un ideale: <b>l'umanità colta</b>, cioè la formazione completa dell'uomo con le lettere, la filosofia, l'educazione e la gentilezza. Nel <i>Pro Archia</i> (62 a.C.) difende il poeta greco accusato di non avere la cittadinanza e coglie l'occasione per elogiare gli studi: le lettere "nutrono la giovinezza, rallegrano la vecchiaia, abbelliscono la buona sorte, danno rifugio e conforto nelle avversità". Gli umanisti del XIV e XV secolo (Petrarca, Poggio Bracciolini) riscoprirono Cicerone proprio per questo ideale. Quando oggi diciamo <i>studi umanistici</i>, usiamo ancora quella parola.</p>`
     },
     {
       type: `text`, title: `5. Le lettere: Cicerone in pantofole`,
@@ -161,7 +161,7 @@ TOPIC('it', {
         { label: `Fuggire in Grecia e unirsi a Bruto`, outcome: `Avrebbe potuto sopravvivere, come altri senatori. Cicerone ci provò, ma tornò indietro, poi tentò di imbarcarsi: fu raggiunto a Formia dai sicari di Antonio.` }
       ],
       answer: 1,
-      explain: `Cicerone scelse la lotta: pronunciò 14 Filippiche (settembre 44 – aprile 43). In una lettera Cicerone dice di Ottaviano che era "da lodare, da elevare" (laudandum adulescentem, ornandum, tollendum), e la parola "tollendum" fu poi interpretata come un segno della sua ingenuità. Dopo la Lex Titia (novembre 43) fu proscritto e ucciso il 7 dicembre. Antonio fece esporre sui Rostri la testa e le mani che avevano scritto le Filippiche.`
+      explain: `Cicerone scelse la lotta: pronunciò 14 Filippiche (settembre 44 – aprile 43). Una lettera di Decimo Bruto (<i>Ad familiares</i> XI, 20) riferisce una battuta di Cicerone su Ottaviano: il giovane era "da lodare, da onorare, da elevare" (laudandum adulescentem, ornandum, tollendum); ma "tollendum" può significare anche "da eliminare", e il gioco di parole, riferito a Ottaviano, fu visto come un segno del doppio gioco di Cicerone. Dopo la Lex Titia (novembre 43) fu proscritto e ucciso il 7 dicembre. Antonio fece esporre sui Rostri la testa e le mani che avevano scritto le Filippiche.`
     },
     {
       type: `curiosity`, title: `Lo sapevi che… Cicerone aveva un soprannome sul naso?`,
