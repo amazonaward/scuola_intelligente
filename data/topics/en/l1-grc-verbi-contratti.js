@@ -216,7 +216,7 @@ TOPIC('en', {
         },
         {
           label: `🏛️ Comparison with Latin`,
-          html: `<p>Latin has a similar contraction in verbs in <i>-āre</i>: <i>amāvit ➜ amāt</i>, <i>amavisti ➜ amasti</i>. But in Greek contraction is a general system, and the result is always a long vowel or a diphthong. Vowel length is what gave Greek poetry its rhythm.</p>`
+          html: `<p>Latin has a similar contraction in verbs in <i>-āre</i>: <i>amāvērunt ➜ amārunt</i>, <i>amavisti ➜ amasti</i>. But in Greek contraction is a general system, and the result is always a long vowel or a diphthong. Vowel length is what gave Greek poetry its rhythm.</p>`
         }
       ]
     },
