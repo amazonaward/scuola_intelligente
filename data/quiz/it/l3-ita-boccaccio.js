@@ -14,7 +14,7 @@ QBANK("it", "l3-ita-boccaccio", {
   { "type": "text", "q": "In quale città Boccaccio visse da giovane, alla corte angioina?", "answer": ["napoli"], "explain": "Dal 1327 circa, alla corte di Roberto d'Angiò." }
  ],
  "d": [
-  { "type": "mc", "q": "Quale novella ha per protagonista un giovane che sacrifica il suo falcone per onorare la donna amata?", "options": ["Federigo degli Alberighi", "Andreuccia da Perugia", "Lisabetta da Messina", "Griselda"], "answer": 0, "explain": "Novella V, 9: esempio di cortesia." },
+  { "type": "mc", "q": "Quale novella ha per protagonista un giovane che sacrifica il suo falcone per onorare la donna amata?", "options": ["Federigo degli Alberighi", "Andreuccio da Perugia", "Lisabetta da Messina", "Griselda"], "answer": 0, "explain": "Novella V, 9: esempio di cortesia." },
   { "type": "mc", "q": "Che significa dire che la sintassi di Boccaccio è latineggiante?", "options": ["Costruisce lunghi periodi sul modello della prosa di Cicerone", "Usa solo parole latine", "Scrive frasi brevissime", "Evita le subordinate"], "answer": 0, "explain": "Boccaccio imita il periodo ciceroniano per nobilitare la prosa volgare." },
   { "type": "mc", "q": "Quali sono le tre forze che governano le novelle del Decameron?", "options": ["Fortuna, Amore, Ingegno", "Fede, Speranza, Carità", "Guerra, Pace, Politica", "Onore, Gloria, Ricchezza"], "answer": 0, "explain": "L'uomo cerca di governare con l'ingegno un destino capriccioso e l'amore." },
   { "type": "tf", "q": "Nel Decameron Dioneo racconta sempre per ultimo e sceglie liberamente il tema.", "answer": true, "explain": "È il suo privilegio; le sue novelle sono spesso le più licenziose e spiritose." },

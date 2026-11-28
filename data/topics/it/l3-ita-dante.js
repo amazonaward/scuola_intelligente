@@ -67,7 +67,7 @@ TOPIC('it', {
     {
       type: "decision",
       title: "1315: tornare a Firenze a queste condizioni?",
-      html: `<p>Nel 1315 il Comune di Firenze, indebolito dalle guerre, concede un'amnistia ai fuoriusciti. Ma c'è una condizione: chi vuole tornare deve pagare una somma di denaro e sottoporsi a un rito di umiliazione pubblica (essere portato in processione con una candela e ricevere l'offerta in chiesa, in segno di confessione di colpa). Dante ha 50 anni, è lontano dalla sua città da 13 anni e sente un dolore profondo per la lontananza. Un amico fiorentino lo invita ad accettare.</p>`,
+      html: `<p>Nel 1315 il Comune di Firenze, indebolito dalle guerre, concede un'amnistia ai fuoriusciti. Ma c'è una condizione: chi vuole tornare deve pagare una somma di denaro e sottoporsi a un rito di umiliazione pubblica (essere portato in processione con una candela ed essere «offerto» nel Battistero di San Giovanni, in segno di confessione di colpa). Dante ha 50 anni, è lontano dalla sua città da 13 anni e sente un dolore profondo per la lontananza. Un amico fiorentino lo invita ad accettare.</p>`,
       question: "Tu cosa avresti fatto?",
       options: [
         { label: "Accettare: tornare a casa è più importante dell'orgoglio", outcome: "Avresti rivisto la tua città e la tua famiglia, ma al prezzo di ammettere una colpa che non avevi commesso, e di rinunciare alla tua dignità di uomo innocente." },
@@ -154,7 +154,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Il ritratto di Dante e il «naso aquilino»",
-      html: `<p>L'immagine più celebre di Dante (il profilo con il cappuccio rosso e l'alloro) viene soprattutto dalla tradizione pittorica: i ritratti più antichi sono di Giotto (forse nel Bargello di Firenze) e di Raffaello e Botticelli, e la descrizione del «naso aquilino» e del volto severo viene da Boccaccio. In realtà nessun ritratto è sicuramente stato fatto dal vero: dopo secoli, il Dante che abbiamo in mente è soprattutto una creazione degli artisti.</p>`
+      html: `<p>L'immagine più celebre di Dante (il profilo con il cappuccio rosso e l'alloro) viene soprattutto dalla tradizione pittorica: il ritratto più antico è attribuito a Giotto o alla sua bottega (Bargello di Firenze), mentre quelli di Botticelli e Raffaello sono molto più tardi, e la descrizione del «naso aquilino» e del volto severo viene da Boccaccio. In realtà nessun ritratto è sicuramente stato fatto dal vero: dopo secoli, il Dante che abbiamo in mente è soprattutto una creazione degli artisti.</p>`
     },
     {
       type: "alternatives",

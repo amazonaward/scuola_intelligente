@@ -117,7 +117,7 @@ TOPIC('it', {
       type: "text",
       title: "Laura, l'aura e il lauro",
       html: `<p>Laura è ben diversa dalla Beatrice di Dante: è una donna <b>reale</b> (anche se sfuggente), con i capelli biondi, gli occhi luminosi e un passo leggero, ma non è un tramite verso Dio. È un'apparizione che attira il poeta verso la terra. Il suo nome è al centro di giochi di parole continui: <b>Laura</b>, <b>l'aura</b> (il vento, la brezza), <b>l'auro</b> (l'oro dei capelli), <b>il lauro</b> (la pianta dell'alloro, simbolo della gloria poetica e dell'incoronazione). In questo modo l'amore e la poesia si confondono: amare Laura e aspirare alla corona poetica sono la stessa cosa.</p>
-<p>Una lettura famosa è il sonetto <b>«Erano i capei d'oro a l'aura sparsi»</b> (CXCII): Laura appare come una visione luminosa: i capelli d'oro mossi dalla brezza, lo sguardo splendente e un modo di camminare che non sembra appartenere a una creatura mortale.</p>
+<p>Una lettura famosa è il sonetto <b>«Erano i capei d'oro a l'aura sparsi»</b> (XC): Laura appare come una visione luminosa: i capelli d'oro mossi dalla brezza, lo sguardo splendente e un modo di camminare che non sembra appartenere a una creatura mortale.</p>
 <p>La poesia di Petrarca non descrive grandi eventi, ma <b>stati d'animo</b>: la speranza, l'attesa, la gelosia, la malinconia, la tristezza dopo la morte. Per questo il Canzoniere è il primo grande libro di <b>psicologia</b> in poesia della nostra letteratura.</p>`
     },
     {
@@ -125,7 +125,7 @@ TOPIC('it', {
       title: "Tre testi da conoscere",
       html: `<p><b>«Solo et pensoso i più deserti campi»</b> (XXXV): il poeta cammina da solo, a passi lenti e misurati, in campagne deserte, evitando gli sguardi degli uomini. Ma anche nella solitudine non trova pace: per quanto cerchi vie aspre e selvagge, Amore lo raggiunge e continua a «ragionare» con lui. Il paesaggio diventa specchio dell'anima.</p>
 <p><b>«Pace non trovo, et non ò da far guerra»</b> (CXXXIV): è una serie di <b>antitesi</b>, cioè di contrasti. «Temo, e spero; et ardo, et son un ghiaccio; / et volo sopra 'l cielo, et giaccio in terra». Così Petrarca descrive la contraddizione dell'amore: ogni emozione ha il suo contrario.</p>
-<p><b>«Chiare, fresche et dolci acque»</b> (CXXVI): la canzone ambientata a Valchiusa, vicino al fiume Sorga. Il poeta immagina Laura, seduta sull'erba, mentre sui suoi capelli cade una pioggia di petali di fiori. Il paesaggio è idealizzato, quasi un giardino senza tempo. Nel finale il poeta immagina la propria morte accanto alla sua amata.</p>
+<p><b>«Chiare, fresche et dolci acque»</b> (CXXVI): la canzone ambientata a Valchiusa, vicino al fiume Sorga. Il poeta immagina Laura, seduta sull'erba, mentre sui suoi capelli cade una pioggia di petali di fiori. Il paesaggio è idealizzato, quasi un giardino senza tempo. Nel finale il poeta immagina di essere sepolto in quel luogo e Laura che piange sulla sua tomba.</p>
 <p>Un ultimo testo diverso, di carattere politico: <b>«Italia mia, benché 'l parlar sia indarno»</b> (CXXVIII), canzone in cui Petrarca si rivolge ai signori italiani perché cessino le guerre e le lotte fra Stati. Qui l'<b>Italia</b> è considerata un'unità culturale e morale, con accenti che anticipano il Risorgimento.</p>`
     },
     {
