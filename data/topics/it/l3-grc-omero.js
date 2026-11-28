@@ -98,7 +98,7 @@ TOPIC('it', {
         { type: `mc`, q: `Qual è il tema dell'Iliade, dichiarato nella prima parola?`, options: [`l'ira (μῆνις) di Achille`, `il ritorno (νόστος) di Odisseo`, `la fondazione di Troia`], answer: 0, explain: `μῆνιν è la prima parola del poema.` },
         { type: `mc`, q: `Quanti piedi ha l'esametro?`, options: [`quattro`, `sei`, `otto`], answer: 1, explain: `Esa- = sei.` },
         { type: `tf`, q: `Il ritmo dell'esametro si basa sulla quantità delle sillabe.`, answer: true, explain: `Sillabe lunghe e brevi, non accenti.` },
-        { type: `mc`, q: `Come si fa riconoscere Odisseo la sera dell'arrivo a Itaca dalla nutrice Euriclea?`, options: [`dalla cicatrice`, `dalla voce`, `dall'anello`], answer: 0, explain: `Euriclea, lavandogli i piedi, vede la cicatrice sulla gamba.` }
+        { type: `mc`, q: `Come riconosce Odisseo la nutrice Euriclea, quando è tornato nella sua reggia?`, options: [`dalla cicatrice`, `dalla voce`, `dall'anello`], answer: 0, explain: `Euriclea, lavandogli i piedi, vede la cicatrice sulla gamba.` }
       ]
     },
     {
@@ -106,11 +106,11 @@ TOPIC('it', {
       html: `<p>La lingua omerica non è mai stata parlata da nessuno: è una <b>lingua poetica artificiale</b>, nata in secoli di recitazione. Il suo nucleo è lo <b>ionico antico</b>, con elementi <b>eolici</b> (dalla più antica poesia della Grecia orientale) e qualche traccia micenea. Ecco i tratti da riconoscere subito:</p>
 <table>
 <tr><th>Tratto</th><th>Omerico</th><th>Attico</th></tr>
-<tr><td>Genitivo singolare in -οιο</td><td>θεοῖο, Ἀτρεΐδαο</td><td>θεοῦ, Ἀτρείδου</td></tr>
+<tr><td>Genitivo singolare in -οιο, -αο</td><td>θεοῖο, Ἀτρεΐδαο</td><td>θεοῦ, Ἀτρείδου</td></tr>
 <tr><td>Genitivo plurale in -άων</td><td>θεάων</td><td>θεῶν</td></tr>
 <tr><td>Dativo plurale in -ῃσι, -οισι, -εσσι</td><td>θεῇσι, ἔπεσσι</td><td>θεαῖς, ἔπεσι</td></tr>
 <tr><td>Infinito in -μεναι</td><td>ἔμμεναι</td><td>εἶναι</td></tr>
-<tr><td>Vocalismo ionico (η al posto di α)</td><td>ἠέλιος, μοῦνος, ξεῖνος</td><td>ἥλιος, μόνος, ξένος</td></tr>
+<tr><td>Vocalismo ionico-epico (forme non contratte, vocali allungate)</td><td>ἠέλιος, μοῦνος, ξεῖνος</td><td>ἥλιος, μόνος, ξένος</td></tr>
 <tr><td>Articolo</td><td>ὁ ἡ τό come <b>dimostrativo/pronome</b></td><td>articolo determinativo</td></tr>
 <tr><td>Aumento</td><td><b>facoltativo</b>: βῆ, ἔβη</td><td>obbligatorio</td></tr>
 <tr><td>Preposizioni separate dal verbo (<b>tmesi</b>)</td><td>ἀπὸ δ᾽ ἔτραπε</td><td>ἀπέτραπε</td></tr>
@@ -152,14 +152,14 @@ TOPIC('it', {
 <li>quando serve un nome più breve: <i>… πολύμητις Ὀδυσσεύς</i> ("Odisseo dal molteplice ingegno")</li>
 <li>al caso accusativo: <i>… δῖον Ὀδυσσῆα</i></li>
 </ul>
-<p>Sono <b>mattoncini</b> già pronti, con la forma giusta per il caso richiesto e per la posizione. Il cantore non sceglie "quale aggettivo è più bello", ma "quale entra nel verso". Questa tecnica non impoverisce il testo: Omero riesce comunque a trasformare una formula in un'emozione, per esempio quando <i>ἔπεα πτερόεντα</i> apre le parole più commoventi di Priamo ad Achille.</p>`
+<p>Sono <b>mattoncini</b> già pronti, con la forma giusta per il caso richiesto e per la posizione. Il cantore non sceglie "quale aggettivo è più bello", ma "quale entra nel verso". Questa tecnica non impoverisce il testo: Omero riesce comunque a trasformare una formula in un'emozione, per esempio quando una frase fissa introduce alcune delle parole più commoventi del poema.</p>`
     },
     {
       type: `example`, title: `Analisi del proemio dell'Odissea`,
       html: `<p><i>ἄνδρα μοι ἔννεπε, Μοῦσα, πολύτροπον, ὃς μάλα πολλὰ<br>πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν</i></p>
 <ol>
 <li><i>ἄνδρα</i>: accusativo, complemento oggetto, <b>prima parola</b> dell'<i>Odissea</i>; l'<i>Iliade</i> inizia con <i>μῆνιν</i>: l'accento è su un uomo, non su un evento.</li>
-<li><i>ἔννεπε</i>: imperativo (aoristo forte) di <i>ἐνέπω</i> "racconta"; <i>μοι</i> "a me"; <i>Μοῦσα</i> vocativo.</li>
+<li><i>ἔννεπε</i>: imperativo presente di <i>ἐννέπω</i> (forma epica di <i>ἐνέπω</i>) "racconta"; <i>μοι</i> "a me"; <i>Μοῦσα</i> vocativo.</li>
 <li><i>πολύτροπον</i>: "dalle molte vie, dai molti volti" (il celebre epiteto di Odisseo: sia "molto viaggiatore" sia "versatile").</li>
 <li><i>πλάγχθη</i>: aoristo passivo di <i>πλάζω</i> "errare"; <i>πτολίεθρον</i> forma epica per <i>πόλις</i>; <i>ἔπερσεν</i>: aoristo di <i>πέρθω</i> "distruggere".</li>
 </ol>

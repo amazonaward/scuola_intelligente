@@ -19,7 +19,7 @@ TOPIC('it', {
 <tr><td>3ª</td><td>λέλυκε(ν)</td><td>λελύκασι(ν)</td></tr>
 </table>
 <p>Infinito <i>λελυκέναι</i>, participio <i>λελυκώς, -υῖα, -ός</i>. Il significato è "ho sciolto (e ora ho sciolto: la cosa è sciolta)".</p>
-<p><b>Perfetto medio-passivo</b>: senza <i>-κ-</i>, desinenze attaccate al tema raddoppiato, accento sul tema (non sul raddoppiamento) come nel presente medio-passivo:</p>
+<p><b>Perfetto medio-passivo</b>: senza <i>-κ-</i>, desinenze attaccate al tema raddoppiato; le forme finite hanno accento recessivo (<i>λέλυμαι</i>), mentre l'infinito e il participio accentano il tema (<i>λελύσθαι, λελυμένος</i>):</p>
 <table>
 <tr><th></th><th>Singolare</th><th>Plurale</th></tr>
 <tr><td>1ª</td><td>λέλυμαι</td><td>λελύμεθα</td></tr>
@@ -39,7 +39,7 @@ TOPIC('it', {
 <tr><td>gruppo di consonanti, ζ, ξ, ψ, σ+cons.</td><td>solo <i>ε</i>, come l'aumento</td><td>στέλλω ➜ ἔσταλκα; ζητέω ➜ ἐζήτηκα</td></tr>
 <tr><td>vocale</td><td><b>aumento temporale</b> (allungamento)</td><td>ἀγγέλλω ➜ ἤγγελκα; ἐλπίζω ➜ ἤλπικα</td></tr>
 </table>
-<p>Nei verbi composti il raddoppiamento si inserisce <b>dopo la preposizione</b>: <i>ἀποθνῄσκω ➜ ἀποτέθνηκα</i>, <i>καταλείπω ➜ καταλέλοιπα</i>.</p>
+<p>Nei verbi composti il raddoppiamento si inserisce <b>dopo la preposizione</b>: <i>ἀποπέμπω ➜ ἀποπέπομφα</i>, <i>καταλείπω ➜ καταλέλοιπα</i>.</p>
 <h4>Perfetti forti e perfetti da imparare a memoria</h4>
 <p>Alcuni verbi formano il perfetto senza <i>-κ-</i> (perfetto "forte" o "secondo"): <b>γίγνομαι ➜ γέγονα</b> "sono nato, sono divenuto"; <b>λείπω ➜ λέλοιπα</b>; <b>φεύγω ➜ πέφευγα</b>; <b>πείθω ➜ πέποιθα</b> ("mi fido", cioè "sono stato persuaso"); <b>ἀκούω ➜ ἀκήκοα</b>. Altri sono irregolari e vanno memorizzati: <b>λέγω ➜ εἴρηκα</b>, <b>ὁράω ➜ ἑόρακα</b>, <b>γιγνώσκω ➜ ἔγνωκα</b>, <b>μανθάνω ➜ μεμάθηκα</b>.</p>
 <p>Il medio-passivo dei verbi con tema in consonante subisce assimilazioni: <b>γράφω ➜ γέγραμμαι, γέγραψαι, γέγραπται, γεγράμμεθα, γέγραφθε, γεγραμμένοι εἰσί</b> (la terza plurale è perifrastica).</p>`
@@ -106,7 +106,7 @@ TOPIC('it', {
 <h4>a) Con ὅτι o ὡς + indicativo</h4>
 <p>È la forma esplicita, come il nostro "che". Si usa dopo <i>λέγω, ἀγγέλλω, ἀποκρίνομαι, οἶδα, γιγνώσκω</i>, ecc. La <b>negazione</b> è <i>οὐ</i>.</p>
 <p><i>Λέγει ὅτι οἱ Ἕλληνες νενικήκασιν.</i> ➜ "Dice che i Greci hanno vinto."</p>
-<p>Dopo un <b>tempo storico</b> il greco può usare l'<b>ottativo obliquo</b>: il verbo subordinato passa all'ottativo (con lo stesso tempo che avrebbe nel discorso diretto) per segnalare che si riporta il pensiero altrui. Non è obbligatorio: <i>Εἶπεν ὅτι ὁ βασιλεὺς ἔλθοι</i> "Disse che il re sarebbe venuto" (o <i>ἔρχεται</i> in discorso più vivo). Il tempo non cambia: l'ottativo conserva l'<b>aspetto</b> del discorso diretto.</p>
+<p>Dopo un <b>tempo storico</b> il greco può usare l'<b>ottativo obliquo</b>: il verbo subordinato passa all'ottativo (con lo stesso tempo che avrebbe nel discorso diretto) per segnalare che si riporta il pensiero altrui. Non è obbligatorio: <i>Εἶπεν ὅτι ὁ βασιλεὺς ἔλθοι</i> "Disse che il re era venuto" (o <i>ἦλθε</i> in discorso più vivo). Il tempo non cambia: l'ottativo conserva l'<b>aspetto</b> del discorso diretto.</p>
 <h4>b) Infinitiva: accusativo + infinito</h4>
 <p>Dopo <b>φημί</b> "dico, affermo", <b>νομίζω, οἴομαι, ἡγέομαι</b> "ritengo, penso", <b>ὑπισχνέομαι</b> "prometto", <b>δοκέω</b> si usa l'infinitiva. Il soggetto è all'<b>accusativo</b>; se coincide con il soggetto della principale, <b>non si esprime</b> e il predicato resta al <b>nominativo</b>.</p>
 <p><i>Νομίζω τὸν ξένον ἥκειν.</i> ➜ "Penso che lo straniero sia arrivato."<br><i>Φησὶν ἀγαθὸς εἶναι.</i> ➜ "Afferma di essere buono."</p>
@@ -141,7 +141,7 @@ TOPIC('it', {
 <p><b>2. Οἱ ξένοι ἤκουσαν ὅτι ἡ πόλις ἑάλω.</b> ➜ "Gli stranieri sentirono che la città era stata presa."</p>
 <p><b>3. Ἡ ἐπιστολὴ γέγραπται, ὅτι ὁ πατὴρ ἀπῆλθεν.</b> ➜ "La lettera è stata scritta perché il padre è partito." (perfetto passivo + causale)</p>
 <p><b>4. Οἱ παῖδες πεφεύγασιν, ἐπεὶ ὁ διδάσκαλος ἦλθεν.</b> ➜ "I ragazzi sono in fuga, poiché è arrivato il maestro." (perfetto con valore di stato)</p>
-<p><b>5. Οἴομαι σε ταῦτα ἔγνωκέναι.</b> ➜ "Penso che tu abbia capito queste cose." (infinito perfetto: <i>ἔγνωκα</i>)</p>`
+<p><b>5. Οἴομαί σε ταῦτα ἐγνωκέναι.</b> ➜ "Penso che tu abbia capito queste cose." (infinito perfetto: <i>ἔγνωκα</i>)</p>`
     },
     {
       type: `example`, title: `Analisi di un periodo`,

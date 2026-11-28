@@ -1,7 +1,7 @@
 TOPIC('it', {
   id: `l3-grc-lirica-corale`,
   title: `La lirica corale`,
-  intro: `Mentre Saffo e Alceo cantavano da soli per un gruppo ristretto, in tutta la Grecia, nelle grandi feste religiose e nelle celebrazioni delle vittorie, si esibivano <b>cori</b> di decine di danzatori-cantori che eseguivano componimenti composti da un poeta professionista. È la <b>lirica corale</b>: una poesia pubblica, musicale, <b>cantata e danzata</b>, con un dialetto particolare (il dorico letterario) e una struttura metrica ardita, la <b>triade</b>. In questa lezione conosci i suoi quattro grandi nomi: <b>Alcmane</b> (Sparta, con le fanciulle dei partenei), <b>Simonide</b> (il poeta dei Termopili), <b>Pindaro</b> (il maestro dell'epinicio e dell'aristocrazia degli atleti) e <b>Bacchilide</b> (rivale e nipote di Simonide, riscoperto nel 1896). 🏆`,
+  intro: `Mentre Saffo e Alceo cantavano da soli per un gruppo ristretto, in tutta la Grecia, nelle grandi feste religiose e nelle celebrazioni delle vittorie, si esibivano <b>cori</b> di decine di danzatori-cantori che eseguivano componimenti composti da un poeta professionista. È la <b>lirica corale</b>: una poesia pubblica, musicale, <b>cantata e danzata</b>, con un dialetto particolare (il dorico letterario) e una struttura metrica ardita, la <b>triade</b>. In questa lezione conosci i suoi quattro grandi nomi: <b>Alcmane</b> (Sparta, con le fanciulle dei partenei), <b>Simonide</b> (il poeta dei Termopili), <b>Pindaro</b> (il maestro dell'epinicio e dell'aristocrazia degli atleti) e <b>Bacchilide</b> (rivale di Pindaro e nipote di Simonide, riscoperto nel 1896). 🏆`,
   minutes: 55,
   sections: [
     {
@@ -62,7 +62,7 @@ TOPIC('it', {
     },
     {
       type: `text`, title: `4. Simonide di Ceo`,
-      html: `<p><b>Simonide</b> nacque a <b>Iulide</b>, nell'isola di <b>Ceo</b>, intorno al 556 a.C. e morì a Siracusa nel 468. Fu il primo grande poeta "internazionale": visse ad Atene presso Ipparco, in Tessaglia, in Sicilia alla corte di Ierone. Secondo gli antichi fu anche il primo a farsi pagare per la sua poesia (e per questo venne accusato di avarizia). Celebre per la <b>brevità e la finezza</b>, scrisse inni, peani, ditirambi, <b>encomi</b>, <b>epinici</b>, <b>threnoi</b> ed <b>epigrammi</b>.</p>
+      html: `<p><b>Simonide</b> nacque a <b>Iulide</b>, nell'isola di <b>Ceo</b>, intorno al 556 a.C. e morì in Sicilia nel 468. Fu il primo grande poeta "internazionale": visse ad Atene presso Ipparco, in Tessaglia, in Sicilia alla corte di Ierone. Secondo gli antichi fu anche il primo a farsi pagare per la sua poesia (e per questo venne accusato di avarizia). Celebre per la <b>brevità e la finezza</b>, scrisse inni, peani, ditirambi, <b>encomi</b>, <b>epinici</b>, <b>threnoi</b> ed <b>epigrammi</b>.</p>
 <ul>
 <li><b>L'epigramma dei caduti alle Termopili</b> (480 a.C.), riportato da Erodoto (VII, 228): <i>ὦ ξεῖν᾽, ἀγγέλλειν Λακεδαιμονίοις ὅτι τῇδε κείμεθα τοῖς κείνων ῥήμασι πειθόμενοι</i> "Straniero, va' a dire agli Spartani che qui giacciamo, obbedendo alle loro leggi".</li>
 <li><b>Il threnos di Danae</b>: Danae chiusa in una cassa con il figlio Perseo in mezzo al mare, notte e tempesta: una scena di tenerezza materna.</li>
@@ -84,7 +84,7 @@ TOPIC('it', {
       type: `text`, title: `5. Pindaro e l'epinicio`,
       html: `<p><b>Pindaro</b> nacque a <b>Cinocefale</b>, presso <b>Tebe</b> (Beozia), intorno al 518 a.C., da famiglia aristocratica, e morì dopo il 446. Lavorò per tutta la Grecia: nobili di Egina, tiranni di Sicilia (<b>Ierone di Siracusa</b>, Terone di Agrigento), città come Cirene. Gli antichi ne raccolsero l'opera in 17 libri; ci restano solo gli <b>Epinici</b>, 45 odi in 4 libri, legati ai quattro giochi panellenici:</p>
 <table>
-<tr><th>Libro</th><th>Giochi</th><th>Luogo</th><th>Numero</th></tr>
+<tr><th>Libro</th><th>Sede</th><th>Note</th><th>Numero</th></tr>
 <tr><td><b>Olimpiche</b></td><td>Olimpia</td><td>Elide, ogni 4 anni</td><td>14</td></tr>
 <tr><td><b>Pitiche</b></td><td>Delfi</td><td>Apollo</td><td>12</td></tr>
 <tr><td><b>Nemee</b></td><td>Nemea</td><td>Zeus nemeo</td><td>11</td></tr>
@@ -159,7 +159,7 @@ TOPIC('it', {
     },
     {
       type: `curiosity`, title: `Lo sapevi che… l'Olimpica 1 non è un'ode sulla corsa?`,
-      html: `<p>Pindaro compose le odi per vittorie con carri e cavalli, non per i corridori: i vincitori erano <b>i proprietari</b> dei cavalli (come Ierone), quindi aristocratici e tiranni. L'epinicio non loda solo la forza fisica, ma la <b>ricchezza</b>, la <b>stirpe</b> e la <b>fortuna</b> che rendono possibile la vittoria. Il premio era un ramoscello (olivo selvatico a Olimpia, alloro a Delfi, sedano a Nemea, pino all'Istmo): la gloria vale più dell'oro, e Pindaro lo ricorda spesso.</p>`
+      html: `<p>Molte delle odi più prestigiose di Pindaro celebrano vittorie con carri e cavalli, non dei corridori: i vincitori erano <b>i proprietari</b> dei cavalli (come Ierone), quindi aristocratici e tiranni. L'epinicio non loda solo la forza fisica, ma la <b>ricchezza</b>, la <b>stirpe</b> e la <b>fortuna</b> che rendono possibile la vittoria. Il premio era un ramoscello (olivo selvatico a Olimpia, alloro a Delfi, sedano a Nemea, pino all'Istmo): la gloria vale più dell'oro, e Pindaro lo ricorda spesso.</p>`
     },
     {
       type: `alternatives`, title: `Altri modi per capire la lirica corale`,

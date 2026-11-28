@@ -96,7 +96,7 @@ TOPIC('it', {
     },
     {
       type: `curiosity`, title: `Lo sapevi che… Tiziano dipingeva "con le dita"?`,
-      html: `<p>Un allievo, Palma il Giovane, raccontò che Tiziano, in vecchiaia, stendeva i colori con le dita e con una pennellata larghissima e rapida, rifinendo con pochi tocchi. Per chi guarda da vicino, l'immagine si scompone in macchie di colore, che da lontano si ricompongono. Alcuni secoli dopo, gli impressionisti e Velázquez, Rubens e Rembrandt si ispirarono proprio a questa libertà.</p>`
+      html: `<p>Un allievo, Palma il Giovane, raccontò che Tiziano, in vecchiaia, stendeva i colori con le dita e con una pennellata larghissima e rapida, rifinendo con pochi tocchi. Per chi guarda da vicino, l'immagine si scompone in macchie di colore, che da lontano si ricompongono. Pittori successivi come Rubens, Velázquez e Rembrandt, e secoli dopo gli impressionisti, si ispirarono proprio a questa libertà.</p>`
     },
     {
       type: `remember`, title: `Da ricordare`,
