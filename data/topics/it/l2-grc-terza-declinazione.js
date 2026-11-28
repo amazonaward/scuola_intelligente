@@ -178,7 +178,7 @@ TOPIC('it', {
 <li><i>ἀνδράσι</i>: dativo plurale di <i>ἀνήρ, ἀνδρός</i>, tema <i>ἀνδρ-</i> con vocale d'appoggio <i>α</i> (<i>ἀνδρ-</i> + <i>σι</i> ➜ <i>ἀνδράσι</i>, come <i>πατράσι</i>).</li>
 <li>Traduzione: "agli uomini" (termine) o "con gli uomini" (compagnia/mezzo), a seconda della frase.</li>
 </ol>
-<p>Prova da solo con <b>τῶν πόλεων</b>: articolo gen. plur. + <i>πόλεων</i>, gen. plur. di <i>πόλις</i> (accento fisso sulla penultima, "attico") ➜ "delle città".</p>`
+<p>Prova da solo con <b>τῶν πόλεων</b>: articolo gen. plur. + <i>πόλεων</i>, gen. plur. di <i>πόλις</i> (accento sulla terzultima nonostante la finale lunga: genitivo "attico") ➜ "delle città".</p>`
     },
     {
       type: `widget`, title: `Gioco: forma e funzione`,
