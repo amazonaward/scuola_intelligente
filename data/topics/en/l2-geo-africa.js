@@ -134,7 +134,7 @@ TOPIC('en', {
     {
       type: "curiosity",
       title: "The misleading map",
-      html: `<p>Many world maps use the <b>Mercator projection</b>, which enlarges areas far from the Equator: so Africa looks only a little bigger than Greenland. In reality Africa covers 30.3 million km²; Greenland about 2.2 million, i.e. <b>14 times less</b>. Africa could contain the United States, China, India and Japan together, with room to spare. In 2020 the African Union supported the «Correct the map» campaign to show the real proportions.</p>`
+      html: `<p>Many world maps use the <b>Mercator projection</b>, which enlarges areas far from the Equator: so Africa looks only a little bigger than Greenland. In reality Africa covers 30.3 million km²; Greenland about 2.2 million, i.e. <b>14 times less</b>. Africa could contain the United States, China, India and Japan together, with room to spare. In 2025 the African Union supported the «Correct the map» campaign to show the real proportions.</p>`
     },
     {
       type: "decision",

@@ -134,7 +134,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "La mappa che inganna",
-      html: `<p>Molti planisferi usano la <b>proiezione di Mercatore</b>, che ingrandisce le aree lontane dall'Equatore: così l'Africa sembra poco più grande della Groenlandia. In realtà l'Africa ha 30,3 milioni di km²: la Groenlandia circa 2,2 milioni, cioè <b>14 volte meno</b>. L'Africa potrebbe contenere Stati Uniti, Cina, India e Giappone insieme, con spazio ancora avanzato. Nel 2020 l'Unione africana ha sostenuto la campagna «Correct the map» per mostrare le proporzioni reali.</p>`
+      html: `<p>Molti planisferi usano la <b>proiezione di Mercatore</b>, che ingrandisce le aree lontane dall'Equatore: così l'Africa sembra poco più grande della Groenlandia. In realtà l'Africa ha 30,3 milioni di km²: la Groenlandia circa 2,2 milioni, cioè <b>14 volte meno</b>. L'Africa potrebbe contenere Stati Uniti, Cina, India e Giappone insieme, con spazio ancora avanzato. Nel 2025 l'Unione africana ha sostenuto la campagna «Correct the map» per mostrare le proporzioni reali.</p>`
     },
     {
       type: "decision",

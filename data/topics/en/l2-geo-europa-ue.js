@@ -123,7 +123,7 @@ TOPIC('en', {
     {
       type: "example",
       title: "What changes in everyday life",
-      html: `<p>A 17-year-old Italian girl can spend a semester in Lisbon with the <b>Erasmus+</b> programme (launched in 1987 and used by millions of young people). A Polish electrician can work in Milan without a residence permit thanks to the free movement of workers. With the <b>European Health Insurance Card</b> you can get treatment in other EU countries. Since 2017 <b>roaming</b> charges have been abolished: calling from Spain costs the same as calling from home. With the <b>euro</b> (adopted by 20 countries between 1999 and 2023) there is no need to change money and prices can be compared. And <b>Schengen</b> (agreement 1985, convention 1990, applied from 1995) removes systematic checks at internal borders between the states in the area, which today includes 29 countries, some of them outside the EU, such as Switzerland and Norway.</p>`
+      html: `<p>A 17-year-old Italian girl can spend a semester in Lisbon with the <b>Erasmus+</b> programme (launched in 1987 and used by millions of young people). A Polish electrician can work in Milan without a residence permit thanks to the free movement of workers. With the <b>European Health Insurance Card</b> you can get treatment in other EU countries. Since 2017 <b>roaming</b> charges have been abolished: calling from Spain costs the same as calling from home. With the <b>euro</b> (adopted by 21 countries between 1999 and 2026) there is no need to change money and prices can be compared. And <b>Schengen</b> (agreement 1985, convention 1990, applied from 1995) removes systematic checks at internal borders between the states in the area, which today includes 29 countries, some of them outside the EU, such as Switzerland and Norway.</p>`
     },
     {
       type: "example",
@@ -151,7 +151,7 @@ TOPIC('en', {
         },
         {
           label: "🌍 Other examples of unions",
-          html: `<p>The EU is not the only experiment: the <b>African Union</b> (2002) has 55 members, <b>ASEAN</b> (1967) brings together ten Southeast Asian countries, <b>Mercosur</b> (1991) some South American countries, and the <b>USMCA</b> (2020, formerly NAFTA) links the USA, Canada and Mexico. None of them, however, has a directly elected parliament, a court with binding power over the states and a common currency like the EU: that is why it is considered the most advanced case of integration.</p>`
+          html: `<p>The EU is not the only experiment: the <b>African Union</b> (2002) has 55 members, <b>ASEAN</b> (1967) brings together eleven Southeast Asian countries, <b>Mercosur</b> (1991) some South American countries, and the <b>USMCA</b> (2020, formerly NAFTA) links the USA, Canada and Mexico. None of them, however, has a directly elected parliament, a court with binding power over the states and a common currency like the EU: that is why it is considered the most advanced case of integration.</p>`
         },
         {
           label: "📊 In figures",
