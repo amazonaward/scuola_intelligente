@@ -51,7 +51,7 @@ TOPIC('it', {
 <li>vigila sul sistema bancario e sui pagamenti.</li>
 </ul>
 <p>Nella <b>zona euro</b> la politica monetaria è affidata alla <b>Banca centrale europea (BCE)</b>, con sede a <b>Francoforte</b>, istituita il <b>1° giugno 1998</b>, che insieme alle banche centrali nazionali (la Banca d'Italia, fondata nel 1893, ne fa parte) forma l'<b>Eurosistema</b>. L'obiettivo principale è la <b>stabilità dei prezzi</b>: la BCE punta a un'inflazione del <b>2% annuo nel medio termine</b>. Ha anche altri compiti, come la vigilanza sulle grandi banche.</p>
-<p>Come agisce? Con il <b>tasso di interesse</b> ufficiale: se la BCE <b>alza i tassi</b>, il credito costa di più, famiglie e imprese prendono meno prestiti, la domanda si raffredda e l'inflazione scende. Se li <b>abbassa</b>, il credito è più economico e l'economia viene stimolata. Un'altra politica è l'acquisto di titoli di Stato da parte della BCE (nel 2015-2018 e di nuovo dal 2020), per immettere moneta.</p>
+<p>Come agisce? Con il <b>tasso di interesse</b> ufficiale: se la BCE <b>alza i tassi</b>, il credito costa di più, famiglie e imprese prendono meno prestiti, la domanda si raffredda e l'inflazione scende. Se li <b>abbassa</b>, il credito è più economico e l'economia viene stimolata. Un'altra politica è l'acquisto di titoli di Stato da parte della BCE (nel 2015-2018 e di nuovo dal 2019-2020), per immettere moneta.</p>
 <p>La BCE è <b>indipendente</b>: i trattati vietano ai governi di darle ordini. L'indipendenza serve a proteggere le decisioni monetarie da pressioni politiche di breve periodo, come stampare moneta per finanziare le spese elettorali, che alla lunga produce inflazione.</p>`
     },
     {
@@ -231,7 +231,7 @@ TOPIC('it', {
         { id: "pil", label: "PIL", x: 70, y: 52, color: "#f59e0b", html: "Valore dei beni e servizi finali prodotti in un anno: C + I + G + (X − M).", why: "Si è affermato dopo la crisi del 1929 e la seconda guerra mondiale, perché i governi avevano bisogno di una misura per guidare la politica economica. Ha limiti: non misura benessere, ambiente e distribuzione." },
         { id: "ben", label: "Benessere", x: 50, y: 88, color: "#0891b2", html: "ISU, BES, Agenda 2030: oltre il PIL.", why: "Economisti come Sen hanno mostrato che ricchezza e benessere non coincidono: la ricchezza è un mezzo, non un fine. Per questo si affiancano al PIL indicatori di salute, istruzione, ambiente." }
       ],
-      edges: [["moneta", "banche", "è creata da"], ["banche", "bce", "controllate da"], ["bce", "infl", "contrasta"], ["infl", "pil", "si misura sul"], ["pil", "ben", "è completato da"]]
+      edges: [["moneta", "banche", "è creata da"], ["banche", "bce", "controllate da"], ["bce", "infl", "contrasta"], ["infl", "pil", "si toglie nel PIL reale"], ["pil", "ben", "è completato da"]]
     },
     {
       type: "curiosity",

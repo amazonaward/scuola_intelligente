@@ -95,7 +95,7 @@ TOPIC('it', {
     {
       type: "example",
       title: "Che cosa cambia nella vita di tutti i giorni",
-      html: `<p>Un'azienda italiana può vendere i propri prodotti a Madrid senza dazi doganali e uno studente può studiare a Lisbona con il programma <b>Erasmus</b> (nato nel 1987). Un caricabatterie unico USB-C è reso obbligatorio per i dispositivi elettronici da un <b>regolamento europeo</b>; le norme sulla protezione dei dati personali (GDPR, in vigore dal 2018) valgono per tutti gli Stati. Durante la pandemia da Covid-19 l'UE ha acquistato vaccini in comune e con il programma <b>NextGenerationEU</b> (2020) ha finanziato la ripresa: in Italia è il Piano nazionale di ripresa e resilienza (PNRR). In tutti questi casi, le decisioni sono state prese a livello europeo perché più efficaci di quelle di un singolo Stato.</p>`
+      html: `<p>Un'azienda italiana può vendere i propri prodotti a Madrid senza dazi doganali e uno studente può studiare a Lisbona con il programma <b>Erasmus</b> (nato nel 1987). Un caricabatterie unico USB-C è reso obbligatorio per i dispositivi elettronici da una <b>direttiva europea</b>; le norme sulla protezione dei dati personali (GDPR, in vigore dal 2018) valgono per tutti gli Stati. Durante la pandemia da Covid-19 l'UE ha acquistato vaccini in comune e con il programma <b>NextGenerationEU</b> (2020) ha finanziato la ripresa: in Italia è il Piano nazionale di ripresa e resilienza (PNRR). In tutti questi casi, le decisioni sono state prese a livello europeo perché più efficaci di quelle di un singolo Stato.</p>`
     },
     {
       type: "text",
@@ -136,7 +136,7 @@ TOPIC('it', {
 <ul>
 <li><b>Consiglio d'Europa</b> (Strasburgo, 1949): organizzazione di 46 Stati, diversa dall'UE; ha promosso la <b>Convenzione europea dei diritti dell'uomo</b> (1950), applicata dalla <b>Corte europea dei diritti dell'uomo</b> di Strasburgo, a cui possono rivolgersi i cittadini dopo aver esaurito i ricorsi nazionali;</li>
 <li><b>Unione europea</b>: ha la <b>Carta dei diritti fondamentali</b> (2000) e la Corte di giustizia (Lussemburgo);</li>
-<li><b>ONU</b>: Dichiarazione universale, Corte internazionale di giustizia (L'Aia) e Corte penale internazionale (CPI, L'Aia), istituita con lo <b>Statuto di Roma</b> del 1998 (in vigore dal 2002), che giudica persone accusate dei crimini più gravi: genocidio, crimini contro l'umanità, crimini di guerra.</li>
+<li><b>ONU</b>: Dichiarazione universale, Corte internazionale di giustizia (L'Aia). Accanto all'ONU, ma indipendente da essa, opera la Corte penale internazionale (CPI, L'Aia), istituita con lo <b>Statuto di Roma</b> del 1998 (in vigore dal 2002), che giudica persone accusate dei crimini più gravi: genocidio, crimini contro l'umanità, crimini di guerra.</li>
 </ul>
 <p>Un'altra organizzazione internazionale importante è la <b>NATO</b> (Alleanza atlantica, 1949), alleanza militare di difesa collettiva: non va confusa con l'ONU.</p>`
     },
