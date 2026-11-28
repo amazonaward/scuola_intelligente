@@ -20,7 +20,7 @@ TOPIC('it', {
     },
     {
       type: `example`, title: `Esempio: Urbino, una corte come un'opera d'arte`,
-      html: `<p>Federico da Montefeltro (1422-1482), condottiero e duca di Urbino, trasformò la sua città in un centro di cultura: fece costruire il <b>Palazzo Ducale</b> (progettato da <b>Luciano Laurana</b>), con una biblioteca ricchissima di manoscritti, e ospitò artisti, tra cui Piero e il giovane Raffaello, nato a Urbino nel 1483. Il suo <b>studiolo</b>, una piccola stanza di lavoro rivestita di tarsie lignee che imitano armadi aperti, strumenti musicali e libri, è un esempio di <b>illusione prospettica</b> (trompe-l'oeil). Come in un'opera di Piero, ogni cosa è ordinata e misurata.</p>`
+      html: `<p>Federico da Montefeltro (1422-1482), condottiero e duca di Urbino, trasformò la sua città in un centro di cultura: fece costruire il <b>Palazzo Ducale</b> (progettato da <b>Luciano Laurana</b>), con una biblioteca ricchissima di manoscritti, e ospitò artisti, come Piero; a questa corte crebbe il giovane Raffaello, nato a Urbino nel 1483. Il suo <b>studiolo</b>, una piccola stanza di lavoro rivestita di tarsie lignee che imitano armadi aperti, strumenti musicali e libri, è un esempio di <b>illusione prospettica</b> (trompe-l'oeil). Come in un'opera di Piero, ogni cosa è ordinata e misurata.</p>`
     },
     {
       type: `text`, title: `3. Botticelli: la linea e il mito`,

@@ -115,7 +115,7 @@ TOPIC('it', {
       html: `<p><b>Giugurta</b> era nipote e figlio adottivo di <b>Micipsa</b>, re di Numidia (Africa del Nord), alleato di Roma. Alla morte di Micipsa (118 a.C.) il regno fu diviso tra Giugurta e i due cugini Aderbale e Iempsale; Giugurta fece uccidere Iempsale, attaccò Aderbale e lo fece massacrare a Cirta, anche uccidendo mercanti italici. Roma, indignata, intervenne:</p>
 <ul>
 <li><b>111 a.C.</b>: il console <b>Calpurnio Bestia</b> inizia la guerra, ma Giugurta lo corrompe e ottiene una pace vergognosa;</li>
-<li><b>110-109</b>: nuovi insuccessi romani; il tribuno <b>Memmio</b> denuncia la corruzione della nobilitas;</li>
+<li><b>111-109</b>: il tribuno <b>Memmio</b> (111) denuncia la corruzione della nobilitas; seguono nuovi insuccessi romani;</li>
 <li><b>109-108</b>: il console <b>Quinto Cecilio Metello</b> ristabilisce la disciplina e ottiene successi; <b>Gaio Mario</b>, suo luogotenente (<i>legatus</i>), lo accusa e si fa eleggere console per il 107 (era un <i>homo novus</i>);</li>
 <li><b>105 a.C.</b>: il <b>questore Lucio Cornelio Silla</b> ottiene la consegna di Giugurta dal re mauritano Bocco, tradendo il genero. Giugurta sfilò nel trionfo di Mario del 104 e morì nel carcere Tulliano.</li>
 </ul>
