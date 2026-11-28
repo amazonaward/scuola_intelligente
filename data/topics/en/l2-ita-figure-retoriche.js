@@ -116,7 +116,7 @@ TOPIC('en', {
     {
       type: "example",
       title: "Analysing a text: a guided example",
-      html: `<p>Let's take the lines from the <i>Comedy</i> written on the gate of Hell:</p>
+      html: `<p>Let's take the lines written on the gate of Hell (<i>Inferno</i> III):</p>
 <p><i>Per me si va ne la città dolente,<br>per me si va ne l'etterno dolore,<br>per me si va tra la perduta gente.</i></p>
 <p>(“Through me you go into the city of grief, / through me you go into eternal pain, / through me you go among the lost people.”)</p>
 <p>1. <b>Anaphora</b>: “per me si va” repeated three times. 2. <b>Effect</b>: the gate speaks in the first person and hammers the words like a warning, a solemn inscription. 3. <b>Other elements</b>: the words “dolente” and “dolore” are close together (figura etymologica), and “città”, “dolore” and “gente” list the consequences. Recognising the figure helps you answer a typical exam question: <b>“Which figure of speech is present, and with what effect?”</b>.</p>`
@@ -133,8 +133,8 @@ TOPIC('en', {
     },
     {
       type: "curiosity",
-      title: "Cicero and Veni, vidi, vici",
-      html: `<p>The phrase «<i>Veni, vidi, vici</i>» (“I came, I saw, I conquered”) is attributed to <b>Julius Caesar</b>, who in 47 BC wrote it to the Senate to announce his swift victory over Pharnaces II of Pontus at Zela. The asyndeton, that is the absence of “and”, conveys the speed of the success. Three short verbs, three words: a perfect example of how a figure turns a piece of information into a memorable message.</p>`
+      title: "Caesar and Veni, vidi, vici",
+      html: `<p>The phrase «<i>Veni, vidi, vici</i>» (“I came, I saw, I conquered”) is attributed to <b>Julius Caesar</b>, who in 47 BC wrote it to Rome to announce his swift victory over Pharnaces II of Pontus at Zela. The asyndeton, that is the absence of “and”, conveys the speed of the success. Three short verbs, two syllables each: a perfect example of how a figure turns a piece of information into a memorable message.</p>`
     },
     {
       type: "widget",

@@ -18,6 +18,6 @@ QBANK("it", "l2-ita-testo-poetico", {
     { type: "mc", q: "In quale tipo di componimento Ungaretti scrisse «Mi illumino / d'immenso»?", options: ["Verso libero", "Sonetto", "Ode in terzine", "Ottava"], answer: 0, explain: "È un testo del 1917 in versi liberi e brevissimi." },
     { type: "tf", q: "L'enjambement fa coincidere sempre la fine della frase con la fine del verso.", answer: false, explain: "Fa l'opposto: la frase continua nel verso successivo." },
     { type: "mc", q: "Perché la rima era importante nella poesia antica?", options: ["Aiutava a memorizzare e a recitare i versi", "Serviva solo come decorazione", "Rendeva i testi più brevi", "Era obbligatoria per legge"], answer: 0, explain: "In una cultura orale ritmo e rima facilitavano la memoria." },
-    { type: "text", q: "Come si chiama il verso di dieci sillabe, con accento sulla nona?", answer: ["decasillabo"], explain: "Il decasillabo è molto usato per testi cantati e corali (Manzoni, Adelchi)." }
+    { type: "text", q: "Come si chiama il verso di dieci sillabe, con accento sulla nona?", answer: ["decasillabo"], explain: "Il decasillabo è molto usato per testi cantati e corali (Manzoni, «S'ode a destra uno squillo di tromba», dal Conte di Carmagnola)." }
   ]
 });

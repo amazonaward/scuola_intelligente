@@ -50,7 +50,7 @@ TOPIC('it', {
 <li><b>Placito capuano</b> (marzo 960): è un verbale di una causa tra il monastero di Montecassino e un signore locale sulla proprietà di alcune terre. I testimoni dichiarano: <i>«Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti»</i> («So che quelle terre, entro quei confini che qui sono descritti, per trent'anni le ha possedute il monastero di San Benedetto»). Si usa il volgare perché i testimoni, che non conoscevano il latino, dovevano capire ciò che giuravano. È il più antico documento giuridico in volgare italiano.</li>
 <li><b>Iscrizione di San Clemente</b> (Roma, fine dell'XI secolo): sull'affresco della basilica di San Clemente si leggono frasi in volgare romano a fianco di scritte in latino.</li>
 </ul>
-<p>Fuori d'Italia, i <b>Giuramenti di Strasburgo</b> (842) sono il più antico testo in francese e in tedesco antichi. Già nell'813 il <b>Concilio di Tours</b> aveva chiesto ai sacerdoti di predicare «nella lingua romana rustica», perché la gente non capiva più il latino.</p>`
+<p>Fuori d'Italia, i <b>Giuramenti di Strasburgo</b> (842) sono il più antico testo in antico francese, con una versione parallela in antico alto tedesco. Già nell'813 il <b>Concilio di Tours</b> aveva chiesto ai sacerdoti di predicare «nella lingua romana rustica», perché la gente non capiva più il latino.</p>`
     },
     {
       type: "remember",

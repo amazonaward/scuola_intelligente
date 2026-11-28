@@ -28,7 +28,7 @@ TOPIC('en', {
 <li><b>Synaloepha</b> (<i>sinalefe</i>): when a word ends in a vowel and the next one begins with a vowel, the two syllables merge into one. <i>«Tanto gentile e tanto onesta pare»</i> (“So gentle and so honest she appears”, Dante): <i>gentile e</i> counts as one syllable, and so does <i>tanto onesta</i>.</li>
 <li><b>Dialoepha</b> (<i>dialefe</i>): the two vowels stay separate (an exception, often for expressive effect).</li>
 <li><b>Synaeresis</b> (<i>sineresi</i>): two neighbouring vowels in the same word count as one syllable (e.g. <i>mia</i> as one syllable instead of two).</li>
-<li><b>Diaeresis</b> (<i>dieresi</i>): two vowels that are normally pronounced together are split (e.g. <i>pa-ùra</i>).</li>
+<li><b>Diaeresis</b> (<i>dieresi</i>): two vowels that are normally pronounced together are split (e.g. <i>o-rï-en-te</i>).</li>
 <li><b>Last word</b>: if it is <b>piana</b> (stress on the second-to-last syllable, the most common case) you count the real syllables; if it is <b>tronca</b> (stress on the last syllable) you <b>add</b> one syllable; if it is <b>sdrucciola</b> (stress on the third-to-last) you <b>take away</b> one.</li>
 </ul>
 <p>The last fixed stress of the line is what gives it its name: the hendecasyllable always has its stress on the <b>tenth syllable</b>.</p>`

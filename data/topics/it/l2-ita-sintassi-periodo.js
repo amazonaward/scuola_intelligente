@@ -130,7 +130,7 @@ TOPIC('it', {
     },
     {
       type: "example",
-      title: "Analisi logica di un periodo reale",
+      title: "Analisi del periodo di una frase reale",
       html: `<p>Prendiamo una frase tratta dal mondo di tutti i giorni: <i>«Siccome domani non ho scuola, vorrei uscire con gli amici, se i miei genitori me lo permettono.»</i></p>
 <ol>
 <li>Verbi: <i>ho</i>, <i>vorrei uscire</i> (<i>vorrei</i> è finito, <i>uscire</i> è infinito dipendente da <i>vorrei</i> come perifrasi: conta come una sola proposizione), <i>permettono</i>.</li>
