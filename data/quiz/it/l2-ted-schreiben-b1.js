@@ -134,7 +134,7 @@ QBANK("it", "l2-ted-schreiben-b1", {
   },
   {
    "type": "text",
-   "q": "Completa: Ich möchte mich ___ den langen Warteschlangen beschweren. (su)",
+   "q": "Completa: Ich möchte mich ___ die langen Warteschlangen beschweren. (su)",
    "answer": [
     "über"
    ],

@@ -122,7 +122,7 @@ TOPIC('it', {
     {
       type: "text",
       title: "4. La Scuola di Palo Alto: i cinque assiomi",
-      html: `<p>Negli anni Sessanta, a <b>Palo Alto</b> (California), un gruppo di studiosi del <i>Mental Research Institute</i> (con lo psichiatra <b>Paul Watzlawick</b>, nato in Austria nel 1921 e morto nel 2007, insieme a Janet Beavin e Don Jackson) studiò la comunicazione dentro le famiglie con difficoltà. Nel <b>1967</b> pubblicarono <i>Pragmatica della comunicazione umana</i>, che propone cinque «assiomi», cioè principi di base.</p>
+      html: `<p>Negli anni Sessanta, a <b>Palo Alto</b> (California), un gruppo di studiosi del <i>Mental Research Institute</i> (con lo psicologo e psicoterapeuta <b>Paul Watzlawick</b>, nato in Austria nel 1921 e morto nel 2007, insieme a Janet Beavin e Don Jackson) studiò la comunicazione dentro le famiglie con difficoltà. Nel <b>1967</b> pubblicarono <i>Pragmatica della comunicazione umana</i>, che propone cinque «assiomi», cioè principi di base.</p>
 <ol>
 <li><b>Non si può non comunicare.</b> Ogni comportamento, anche il silenzio o l'assenza, comunica qualcosa a chi lo osserva. Lo studente che guarda fuori dalla finestra «sta dicendo» qualcosa, anche se non vuole.</li>
 <li><b>Ogni comunicazione ha un aspetto di contenuto e uno di relazione.</b> Oltre a <i>che cosa</i> dico, comunico <i>che rapporto c'è</i> tra me e te. «Metti in ordine!» e «Mi aiuteresti a mettere in ordine?» hanno lo stesso contenuto ma relazioni diverse (comando contro richiesta).</li>
