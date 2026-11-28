@@ -8,7 +8,7 @@ QBANK("it", "l3-sto-signorie-rinascimento", {
  ],
  m: [
   { type: "mc", q: "Che cosa erano i capitani di ventura?", options: ["Condottieri a capo di compagnie mercenarie", "Nobili veneziani", "Ambasciatori residenti"], answer: 0, explain: "Servivano chi li pagava, con una condotta." },
-  { type: "mc", q: "Perché Lorenzo de' Medici è detto «ago della bilancia»?", options: ["Per il ruolo diplomatico nel mantenere l'equilibrio italiano", "Per le sue gioielliere", "Per il suo potere militare"], answer: 0, explain: "La sua diplomazia attiva teneva insieme la Lega italica." },
+  { type: "mc", q: "Perché Lorenzo de' Medici è detto «ago della bilancia»?", options: ["Per il ruolo diplomatico nel mantenere l'equilibrio italiano", "Per le sue gioiellerie", "Per il suo potere militare"], answer: 0, explain: "La sua diplomazia attiva teneva insieme la Lega italica." },
   { type: "tf", q: "A Venezia dopo la Serrata del 1297 solo le famiglie nobili iscritte potevano governare.", answer: true, explain: "Fu l'oligarchia che governò la Repubblica per secoli." },
   { type: "mc", q: "Che cosa dimostrò Lorenzo Valla nel 1440?", options: ["Che la Donazione di Costantino era un falso", "Che la Terra gira attorno al Sole", "Che Dante era ghibellino"], answer: 0, explain: "Con l'analisi del latino, fondando la filologia moderna." },
   { type: "order", q: "Metti in ordine", items: ["Cupola di Brunelleschi", "Bibbia di Gutenberg", "Congiura dei Pazzi", "Il Principe"], explain: "1436, c. 1455, 1478, 1513." }

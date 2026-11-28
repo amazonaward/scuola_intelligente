@@ -9,7 +9,7 @@ QBANK("it", "l3-sto-crisi-trecento", {
  m: [
   { type: "mc", q: "Perché dopo la peste i salari aumentarono?", options: ["Perché c'erano meno lavoratori", "Perché il re lo ordinò", "Perché i prezzi del grano salirono"], answer: 0, explain: "La scarsità di braccia aumentò il potere contrattuale dei lavoratori." },
   { type: "mc", q: "Chi furono i ciompi?", options: ["Operai della lana a Firenze", "Mercanti genovesi", "Soldati inglesi"], answer: 0, explain: "Nel 1378 ottennero per poco una parte del governo." },
-  { type: "tf", q: "Il Concilio di Pisa (1409) risolse lo scisma eleggendo un terzo papa senza che gli altri si dimettessero.", answer: true, explain: "Il risultato fu di avere tre papi." },
+  { type: "tf", q: "Il Concilio di Pisa (1409) tentò di risolvere lo scisma eleggendo un terzo papa senza che gli altri si dimettessero.", answer: true, explain: "Il risultato fu di avere tre papi." },
   { type: "order", q: "Metti in ordine", items: ["Carestia", "Peste a Messina", "Ciompi", "Fine dello scisma"], explain: "1315, 1347, 1378, 1417." },
   { type: "mc", q: "Perché la parola «quarantena» si lega a Venezia e a Ragusa?", options: ["Furono tra le prime città a imporre un isolamento alle navi sospette", "Vi nacque il medico della peste", "Vi nacque Boccaccio"], answer: 0, explain: "Ragusa 1377 con un isolamento di trenta giorni, poi quaranta a Venezia." }
  ],

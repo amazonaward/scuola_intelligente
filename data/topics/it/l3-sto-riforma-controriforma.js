@@ -27,7 +27,7 @@ TOPIC('it', {
 <li><b>sola fide</b>: la salvezza viene dalla fede, non dalle opere;</li>
 <li><b>sola scriptura</b>: l'unica autorità in materia di fede è la Bibbia, che ogni fedele può leggere e interpretare (non la tradizione e il papa);</li>
 <li><b>sacerdozio universale</b>: tutti i battezzati sono sacerdoti; il clero non ha un potere speciale;</li>
-<li>solo due (poi tre) sacramenti: battesimo ed eucaristia (e per un certo tempo la penitenza); niente culto dei santi, indulgenze, monachesimo; i preti possono sposarsi (Lutero stesso sposò l'ex monaca Katharina von Bora nel 1525).</li>
+<li>solo due sacramenti (per un periodo contò come terzo anche la penitenza): battesimo ed eucaristia; niente culto dei santi, indulgenze, monachesimo; i preti possono sposarsi (Lutero stesso sposò l'ex monaca Katharina von Bora nel 1525).</li>
 </ul>`
     },
     {
@@ -217,7 +217,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Lo sapevi che…? Sant'Ignazio soldato",
-      html: `<p>Ignazio di Loyola (1491-1556) era un soldato basco ferito a Pamplona (1521): durante la lunga convalescenza lesse libri religiosi e cambiò vita. Nei suoi <i>Esercizi spirituali</i> propose un metodo di meditazione di un mese. I gesuiti hanno ancora oggi fama di grandi educatori; papa Francesco (eletto nel 2013) è il primo papa gesuita.</p>`
+      html: `<p>Ignazio di Loyola (1491-1556) era un soldato basco ferito a Pamplona (1521): durante la lunga convalescenza lesse libri religiosi e cambiò vita. Nei suoi <i>Esercizi spirituali</i> propose un metodo di meditazione di un mese. I gesuiti hanno ancora oggi fama di grandi educatori; papa Francesco (eletto nel 2013) è stato il primo papa gesuita.</p>`
     },
     {
       type: "remember",

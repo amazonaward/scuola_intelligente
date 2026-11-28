@@ -117,7 +117,7 @@ TOPIC('it', {
     {
       type: "text",
       title: "4. Il primo giro del mondo e la conquista dell'America",
-      html: `<p>Il portoghese <b>Ferdinando Magellano</b>, al servizio della Spagna, partì da Siviglia (poi da Sanlúcar) il 20 settembre 1519 con cinque navi e circa 240 uomini, per raggiungere le Molucche (isole delle spezie) verso ovest. Attraversò l'Atlantico, costeggiò il Sudamerica e trovò il passaggio tra Atlantico e Pacifico che oggi porta il suo nome (<b>stretto di Magellano</b>, 1520). Attraversò il Pacifico (che chiamò così per la calma delle acque dopo le tempeste) con una fame terribile. Raggiunse le Filippine, dove nell'aprile 1521 fu ucciso in uno scontro a Mactan. Il comandante <b>Juan Sebastián Elcano</b> proseguì con la sola nave <i>Victoria</i>, e il 6 settembre 1522 rientrò a Siviglia con 18 uomini superstiti: era il <b>primo giro del mondo</b>. Una prova definitiva che la Terra è sferica e che gli oceani sono collegati, e un modo per scoprire che esiste un giorno «guadagnato» o «perso» (i marinai scoprirono di aver perso un giorno nel calendario).</p>
+      html: `<p>Il portoghese <b>Ferdinando Magellano</b>, al servizio della Spagna, partì da Siviglia (poi da Sanlúcar) il 20 settembre 1519 con cinque navi e circa 240 uomini, per raggiungere le Molucche (isole delle spezie) verso ovest. Attraversò l'Atlantico, costeggiò il Sudamerica e trovò il passaggio tra Atlantico e Pacifico che oggi porta il suo nome (<b>stretto di Magellano</b>, 1520). Attraversò il Pacifico (che chiamò così per la calma delle acque dopo le tempeste) con una fame terribile. Raggiunse le Filippine, dove nell'aprile 1521 fu ucciso in uno scontro a Mactan. Il comandante <b>Juan Sebastián Elcano</b> proseguì con la sola nave <i>Victoria</i>, e il 6 settembre 1522 rientrò in Spagna (a Sanlúcar, poi a Siviglia) con 18 uomini superstiti: era il <b>primo giro del mondo</b>. Una prova definitiva che la Terra è sferica e che gli oceani sono collegati, e un modo per scoprire che esiste un giorno «guadagnato» o «perso» (i marinai scoprirono di aver perso un giorno nel calendario).</p>
 <p>Intanto, in America, gli Spagnoli passavano alla <b>conquista</b>. I <i>conquistadores</i> erano avventurieri, spesso nobili poveri, in cerca di oro, gloria e terre.</p>
 <ul>
 <li><b>Hernán Cortés</b> sbarcò in Messico nel 1519 con poche centinaia di uomini, cavalli e cannoni. Con l'aiuto di popoli ostili agli Aztechi (come i Tlaxcaltechi) e di un'interprete indigena, <b>Malinche</b>, giunse alla capitale <b>Tenochtitlán</b> (l'attuale Città del Messico) dove regnava <b>Montezuma II</b>. Dopo un anno di scontri, un'epidemia di <b>vaiolo</b> e un lungo assedio, la città cadde il 13 agosto 1521.</li>
@@ -128,7 +128,7 @@ TOPIC('it', {
     {
       type: "alternatives",
       title: "Altri modi per capire le scoperte",
-      intro: "Un globo da ruotare, una linea del tempo e una tabella dei protagonisti.",
+      intro: "Un globo da ruotare, una linea del tempo e un gioco di abbinamento.",
       tabs: [
         {
           label: "🌍 Il globo e le rotte",

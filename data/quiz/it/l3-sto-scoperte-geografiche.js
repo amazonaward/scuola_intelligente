@@ -4,7 +4,7 @@ QBANK("it", "l3-sto-scoperte-geografiche", {
   { type: "tf", q: "La caravella era una nave adatta alle esplorazioni oceaniche.", answer: true, explain: "Leggera, maneggevole, con vele latine." },
   { type: "text", q: "Come si chiama il capo africano doppiato da Dias nel 1488? (iniziale: Capo di ...)", answer: ["buona speranza", "capo di buona speranza"], explain: "Prima chiamato Capo delle Tempeste." },
   { type: "mc", q: "Quale pianta americana oggi è base della cucina italiana?", options: ["Il pomodoro", "Il grano", "L'olivo"], answer: 0, explain: "Il pomodoro arrivò dall'America nel Cinquecento." },
-  { type: "num", q: "In che anno Elcano rientrò a Siviglia dopo il giro del mondo?", answer: 1522, tol: 0, explain: "Il 6 settembre 1522, con 18 uomini." }
+  { type: "num", q: "In che anno Elcano rientrò in Spagna dopo il giro del mondo?", answer: 1522, tol: 0, explain: "Il 6 settembre 1522, con 18 uomini." }
  ],
  m: [
   { type: "mc", q: "Perché Colombo credeva di essere in Asia?", options: ["Aveva sottostimato la circonferenza terrestre e non conosceva l'America", "Perché lo aveva letto sul diario di Marco Polo", "Perché aveva trovato la Cina"], answer: 0, explain: "Il continente americano si trovava dove lui aspettava l'Asia." },
