@@ -17,7 +17,7 @@ TOPIC('it', {
 <tr><td>vous</td><td>parl<b>ez</b></td><td>-ez</td><td>[parle]</td></tr>
 <tr><td>ils / elles</td><td>parl<b>ent</b></td><td>-ent</td><td>[parl]</td></tr>
 </table>
-<p>⚠️ <b>Tre forme su sei suonano uguali</b>: je parle, tu parles, il parle, ils parlent si pronunciano [parl]. Per distinguerle serve il pronome, quindi non dimenticarlo mai.</p>
+<p>⚠️ <b>Quattro forme su sei suonano uguali</b>: je parle, tu parles, il parle, ils parlent si pronunciano [parl]. Per distinguerle serve il pronome, quindi non dimenticarlo mai.</p>
 <p>Verbi molto frequenti in -er: <b>aimer, habiter, travailler, étudier, manger, regarder, écouter, jouer, chanter, danser, détester, adorer, penser, rester, trouver, donner, demander, arriver</b>.</p>
 <p><b>Élision</b>: davanti a vocale o h muta <i>je → j'</i>: <i>j'aime, j'habite, j'étudie</i>.</p>
 <p><b>Piccole irregolarità ortografiche</b> (il suono resta quello giusto):</p>

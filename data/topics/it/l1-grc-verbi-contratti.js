@@ -216,7 +216,7 @@ TOPIC('it', {
         },
         {
           label: `🇮🇹 Confronto con il latino`,
-          html: `<p>Il latino ha una contrazione simile nei verbi in <i>-āre</i>: <i>amāvit ➜ amāt</i>, <i>amavisti ➜ amasti</i>. Ma in greco la contrazione è un sistema generale, e il risultato è sempre una vocale lunga o un dittongo. La lunghezza delle vocali è ciò che ha dato il ritmo alla poesia greca.</p>`
+          html: `<p>Il latino ha una contrazione simile nei verbi in <i>-āre</i>: <i>amāvērunt ➜ amārunt</i>, <i>amavisti ➜ amasti</i>. Ma in greco la contrazione è un sistema generale, e il risultato è sempre una vocale lunga o un dittongo. La lunghezza delle vocali è ciò che ha dato il ritmo alla poesia greca.</p>`
         }
       ]
     },
