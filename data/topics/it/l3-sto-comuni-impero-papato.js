@@ -188,7 +188,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Lo sapevi che…? Da dove viene «ghibellino»",
-      html: `<p>I nomi delle fazioni vengono dalla Germania: <b>guelfi</b> da <i>Welf</i> (casata bavarese avversaria degli Svevi), <b>ghibellini</b> da <i>Waiblingen</i>, castello degli Hohenstaufen (Svevi). Arrivati in Italia, i due termini persero il significato originario e diventarono etichette di partito: a Firenze si arrivò a odiarsi per generazioni, e Dante, ghibellino «per se stesso» secondo molti studiosi, ne fece le spese con l'esilio.</p>`
+      html: `<p>I nomi delle fazioni vengono dalla Germania: <b>guelfi</b> da <i>Welf</i> (casata bavarese avversaria degli Svevi), <b>ghibellini</b> da <i>Waiblingen</i>, castello degli Hohenstaufen (Svevi). Arrivati in Italia, i due termini persero il significato originario e diventarono etichette di partito: a Firenze si arrivò a odiarsi per generazioni, e Dante, guelfo bianco, ne fece le spese con l'esilio: da esule fece «parte per se stesso».</p>`
     },
     {
       type: "remember",

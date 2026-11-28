@@ -1,7 +1,7 @@
 TOPIC('it', {
   id: "l3-sci-legami-chimici",
   title: "I legami chimici",
-  intro: "Perché l'ossigeno dell'aria è O₂ e non O? Perché il sale da cucina è un solido duro che si scioglie in acqua e conduce solo se disciolto, mentre il rame è un filo flessibile che conduce sempre? La risposta sta nel modo in cui gli atomi condividono, cedono o mettono in comune i <b>elettroni di valenza</b>. In questa lezione studiamo il legame <b>ionico</b>, <b>covalente</b> e <b>metallico</b>, impariamo a disegnare le strutture di Lewis e a prevedere la <b>forma delle molecole</b> con il modello <b>VSEPR</b>.",
+  intro: "Perché l'ossigeno dell'aria è O₂ e non O? Perché il sale da cucina è un solido duro che si scioglie in acqua e conduce solo se disciolto, mentre il rame è un filo flessibile che conduce sempre? La risposta sta nel modo in cui gli atomi condividono, cedono o mettono in comune gli <b>elettroni di valenza</b>. In questa lezione studiamo il legame <b>ionico</b>, <b>covalente</b> e <b>metallico</b>, impariamo a disegnare le strutture di Lewis e a prevedere la <b>forma delle molecole</b> con il modello <b>VSEPR</b>.",
   minutes: 50,
   sections: [
     {
@@ -30,7 +30,7 @@ TOPIC('it', {
     },
     {
       type: "svg",
-      title: "Dal covalente al ionico",
+      title: "Dal covalente allo ionico",
       svg: `<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
 <rect width="600" height="300" fill="#f8fafc"/>
 <defs><linearGradient id="gr" x1="0" x2="1"><stop offset="0" stop-color="#4ade80"/><stop offset="0.5" stop-color="#facc15"/><stop offset="1" stop-color="#f87171"/></linearGradient></defs>
