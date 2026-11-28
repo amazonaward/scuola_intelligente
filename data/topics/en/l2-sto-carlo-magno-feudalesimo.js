@@ -97,7 +97,7 @@ TOPIC('en', {
           { lat: 50.77, lon: 6.08, label: "Aachen" },
           { lat: 45.2, lon: 9.2, label: "Pavia" },
           { lat: 46.6, lon: 0.35, label: "Poitiers" },
-          { lat: 49.1, lon: 6.2, label: "Verdun" }
+          { lat: 49.1, lon: 5.4, label: "Verdun" }
         ],
         events: [
           { id: "poit", lat: 46.6, lon: 0.35, year: 732, label: "Poitiers", html: "Charles Martel stops the Arabs.", causes: [] },

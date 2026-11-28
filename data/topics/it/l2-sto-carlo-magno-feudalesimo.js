@@ -97,7 +97,7 @@ TOPIC('it', {
           { lat: 50.77, lon: 6.08, label: "Aquisgrana" },
           { lat: 45.2, lon: 9.2, label: "Pavia" },
           { lat: 46.6, lon: 0.35, label: "Poitiers" },
-          { lat: 49.1, lon: 6.2, label: "Verdun" }
+          { lat: 49.1, lon: 5.4, label: "Verdun" }
         ],
         events: [
           { id: "poit", lat: 46.6, lon: 0.35, year: 732, label: "Poitiers", html: "Carlo Martello ferma gli Arabi.", causes: [] },
@@ -141,7 +141,7 @@ TOPIC('it', {
     {
       type: "text",
       title: "7. La curtis e la vita nelle campagne",
-      html: `<p>L'economia dell'alto Medioevo era soprattutto <b>agricola e chiusa</b>: poche città, pochi commerci, poca moneta. L'unità produttiva tipica era la <b>curtis</b> (in Italia corte, in Francia <i>manse</i>/signoria fondiaria), una grande proprietà di un signore (laico o ecclesiastico) divisa in due parti:</p>
+      html: `<p>L'economia dell'alto Medioevo era soprattutto <b>agricola e chiusa</b>: poche città, pochi commerci, poca moneta. L'unità produttiva tipica era la <b>curtis</b> (in Italia corte, in Francia <i>villa</i>/signoria fondiaria), una grande proprietà di un signore (laico o ecclesiastico) divisa in due parti:</p>
 <ul>
 <li>la <b>pars dominica</b> (riserva signorile): la terra gestita direttamente dal signore, con il castello o la casa padronale, i mulini, il forno, le officine; era lavorata dai servi e dalle <b>corvées</b> (giornate di lavoro gratuite) dei contadini;</li>
 <li>la <b>pars massaricia</b>: divisa in poderi (<b>mansi</b>) affidati a famiglie di contadini, che versavano una parte del raccolto e prestavano le corvées.</li>

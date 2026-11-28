@@ -123,7 +123,7 @@ TOPIC('it', {
     {
       type: "example",
       title: "Che cosa cambia nella vita di tutti i giorni",
-      html: `<p>Un'italiana di 17 anni può passare un semestre a Lisbona con il programma <b>Erasmus+</b> (nato nel 1987 e frequentato da milioni di giovani). Un elettricista polacco può lavorare a Milano senza permesso di soggiorno grazie alla libera circolazione dei lavoratori. Con la <b>tessera europea di assicurazione malattia</b> si è curati in altri Paesi UE. Dal 2017 le tariffe di <b>roaming</b> sono abolite: chiamare dalla Spagna costa come chiamare da casa. Con l'<b>euro</b> (adottato da 20 Paesi tra il 1999 e il 2023) non si cambia più valuta e i prezzi sono confrontabili. E <b>Schengen</b> (accordo 1985, convenzione 1990, applicata dal 1995) elimina i controlli sistematici alle frontiere interne tra gli Stati dell'area, che oggi comprende 29 Paesi, anche non UE come Svizzera e Norvegia.</p>`
+      html: `<p>Un'italiana di 17 anni può passare un semestre a Lisbona con il programma <b>Erasmus+</b> (nato nel 1987 e frequentato da milioni di giovani). Un elettricista polacco può lavorare a Milano senza permesso di soggiorno grazie alla libera circolazione dei lavoratori. Con la <b>tessera europea di assicurazione malattia</b> si è curati in altri Paesi UE. Dal 2017 le tariffe di <b>roaming</b> sono abolite: chiamare dalla Spagna costa come chiamare da casa. Con l'<b>euro</b> (adottato da 21 Paesi tra il 1999 e il 2026) non si cambia più valuta e i prezzi sono confrontabili. E <b>Schengen</b> (accordo 1985, convenzione 1990, applicata dal 1995) elimina i controlli sistematici alle frontiere interne tra gli Stati dell'area, che oggi comprende 29 Paesi, anche non UE come Svizzera e Norvegia.</p>`
     },
     {
       type: "example",
@@ -151,7 +151,7 @@ TOPIC('it', {
         },
         {
           label: "🌍 Altri esempi di unioni",
-          html: `<p>L'UE non è l'unico esperimento: l'<b>Unione africana</b> (2002) ha 55 membri, l'<b>ASEAN</b> (1967) riunisce dieci Paesi del Sud-est asiatico, il <b>Mercosur</b> (1991) alcuni Paesi sudamericani, l'<b>USMCA</b> (2020, ex NAFTA) lega USA, Canada e Messico. Nessuno però ha un parlamento eletto direttamente, una Corte con potere vincolante sugli Stati e una moneta comune come l'UE: per questo è considerata il caso più avanzato di integrazione.</p>`
+          html: `<p>L'UE non è l'unico esperimento: l'<b>Unione africana</b> (2002) ha 55 membri, l'<b>ASEAN</b> (1967) riunisce undici Paesi del Sud-est asiatico, il <b>Mercosur</b> (1991) alcuni Paesi sudamericani, l'<b>USMCA</b> (2020, ex NAFTA) lega USA, Canada e Messico. Nessuno però ha un parlamento eletto direttamente, una Corte con potere vincolante sugli Stati e una moneta comune come l'UE: per questo è considerata il caso più avanzato di integrazione.</p>`
         },
         {
           label: "📊 In cifre",
