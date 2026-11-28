@@ -209,7 +209,7 @@ TOPIC('it', {
               { front: "Suisse", back: "Berne" },
               { front: "Canada", back: "Ottawa (Québec: la ville de Québec)" },
               { front: "Sénégal", back: "Dakar" },
-              { front: "Côte d'Ivoire", back: "Yamoussoukro (capitale politique) · Abidjan (économica)" },
+              { front: "Côte d'Ivoire", back: "Yamoussoukro (capitale politique) · Abidjan (économique)" },
               { front: "RD Congo", back: "Kinshasa" },
               { front: "Maroc", back: "Rabat" },
               { front: "Haïti", back: "Port-au-Prince" },
