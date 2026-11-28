@@ -136,7 +136,7 @@ TOPIC('it', {
 <ul>
 <li><b>Parete cellulare</b> di <b>cellulosa</b>, esterna alla membrana: rigida, dà forma e sostegno (il legno è fatto di pareti). Le cellule comunicano tra loro attraverso i <b>plasmodesmi</b>, canali che bucano la parete.</li>
 <li><b>Cloroplasti</b>: contengono la <b>clorofilla</b> e fanno la <b>fotosintesi</b>: con la luce trasformano acqua e anidride carbonica in glucosio e ossigeno (6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂). Hanno doppia membrana e un proprio DNA.</li>
-<li><b>Vacuolo centrale</b>: una grande sacca (anche l'80-90% del volume) piena di acqua e sostanze; spinge contro la parete, producendo la <b>turgore</b> che tiene dritta una pianta (una piantina senza acqua appassisce: i vacuoli si sgonfiano).</li>
+<li><b>Vacuolo centrale</b>: una grande sacca (anche l'80-90% del volume) piena di acqua e sostanze; spinge contro la parete, producendo il <b>turgore</b> che tiene dritta una pianta (una piantina senza acqua appassisce: i vacuoli si sgonfiano).</li>
 </ul>
 <p>La cellula animale ha invece i <b>centrioli</b>, ha lisosomi ben sviluppati, non ha parete e quindi può assumere forme variabili (neuroni, globuli rossi, cellule muscolari) e inglobare particelle. Le cellule dei <b>funghi</b> hanno parete di <b>chitina</b>, ma non cloroplasti.</p>
 <table>

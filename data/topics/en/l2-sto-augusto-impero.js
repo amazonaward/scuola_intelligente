@@ -151,7 +151,7 @@ TOPIC('en', {
         },
         {
           label: "⏳ A timeline",
-          html: `<p>The main events from the beginning of the Empire to the end of the 2nd century.</p>`,
+          html: `<p>The main events from Actium to the early 3rd century.</p>`,
           widget: "timeline",
           options: { events: [
             { year: -31, label: "Actium", icon: "⚓" },

@@ -71,7 +71,7 @@ TOPIC('it', {
         ["Zooplancton", 1],
         ["Batteri del suolo", 2]
       ] },
-      caption: "Il lombrico è un detritivore: nello schema semplice lo mettiamo con i decompositori. Chi non fa fotosintesi né chemiosintesi non è mai un produttore."
+      caption: "Il lombrico è un detritivoro: nello schema semplice lo mettiamo con i decompositori. Chi non fa fotosintesi né chemiosintesi non è mai un produttore."
     },
     {
       type: "svg",
