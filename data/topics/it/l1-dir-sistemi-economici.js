@@ -149,7 +149,7 @@ TOPIC('it', {
 <li><b>Art. 35 e 36</b>: tutela del lavoro e retribuzione dignitosa. <b>Art. 38</b>: assistenza sociale e previdenza.</li>
 </ul>
 <p>Negli anni Trenta lo Stato italiano creò l'<b>IRI</b> (Istituto per la ricostruzione industriale, 1933), che salvò banche e imprese in crisi e controllò per decenni grandi settori. Dagli anni Novanta molte imprese pubbliche sono state <b>privatizzate</b>.</p>
-<p>L'Italia fa inoltre parte dell'<b>Unione europea</b> e, dal 2002, dell'<b>euro</b>: la politica monetaria è affidata alla Banca centrale europea.</p>`
+<p>L'Italia fa inoltre parte dell'<b>Unione europea</b> e, dal 1999, dell'<b>euro</b> (monete e banconote dal 2002): la politica monetaria è affidata alla Banca centrale europea.</p>`
     },
     {
       type: "decision",

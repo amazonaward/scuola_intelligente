@@ -96,7 +96,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Dal 1975 a 18 anni",
-      html: `<p>In Italia la maggiore età era fissata a <b>21 anni</b> fino al 1975. La legge di riforma del diritto di famiglia (1975) la abbassò a 18, riconoscendo ai giovani una responsabilità più precoce. In molti Paesi la soglia varia: 18 anni è la più comune, ma negli Stati Uniti per bere alcolici servono 21 anni.</p>`
+      html: `<p>In Italia la maggiore età era fissata a <b>21 anni</b> fino al 1975. La legge n. 39 dell'8 marzo 1975 la abbassò a 18, riconoscendo ai giovani una responsabilità più precoce. In molti Paesi la soglia varia: 18 anni è la più comune, ma negli Stati Uniti per bere alcolici servono 21 anni.</p>`
     },
     {
       type: "text",

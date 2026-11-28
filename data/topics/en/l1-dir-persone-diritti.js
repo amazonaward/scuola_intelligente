@@ -96,7 +96,7 @@ TOPIC('en', {
     {
       type: "curiosity",
       title: "18 since 1975",
-      html: `<p>In Italy the age of majority was set at <b>21</b> until 1975. The family law reform of 1975 lowered it to 18, recognising that young people take on responsibility earlier. The threshold varies from country to country: 18 is the most common, but in the United States you have to be 21 to drink alcohol.</p>`
+      html: `<p>In Italy the age of majority was set at <b>21</b> until 1975. Law no. 39 of 8 March 1975 lowered it to 18, recognising that young people take on responsibility earlier. The threshold varies from country to country: 18 is the most common, but in the United States you have to be 21 to drink alcohol.</p>`
     },
     {
       type: "text",

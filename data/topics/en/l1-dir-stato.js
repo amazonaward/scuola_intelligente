@@ -181,7 +181,7 @@ TOPIC('en', {
     {
       type: "decision",
       title: "2 June 1946: Republic or Monarchy?",
-      html: `<p>Italy has just emerged from Fascism and the war. The Savoy monarchy had supported the Fascist regime, and King Victor Emmanuel III had fled Rome on 8 September 1943. On 2 June 1946 all Italians, men and <b>women for the first time in a national vote</b>, are called to choose the form of the State in a referendum and to elect the Constituent Assembly.</p>`,
+      html: `<p>Italy has just emerged from Fascism and the war. The Savoy monarchy had supported the Fascist regime, and King Victor Emmanuel III had fled Rome on the night of 8-9 September 1943. On 2 June 1946 all Italians, men and <b>women for the first time in a national vote</b>, are called to choose the form of the State in a referendum and to elect the Constituent Assembly.</p>`,
       question: "How would you have voted?",
       options: [
         { label: "Monarchy: it guarantees continuity and unity", outcome: "This was the choice of a large part of the country (about 10.7 million votes), especially in the South. But many people held the Crown responsible for having allowed Fascism." },
