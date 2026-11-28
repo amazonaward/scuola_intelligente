@@ -111,7 +111,7 @@ TOPIC('it', {
 <ul>
 <li><b>and</b>, <b>also</b>, <b>as well as</b> (+ nome/-ing): <i>She plays tennis <b>as well as</b> swimming.</i></li>
 <li><b>in addition (to)</b>, <b>besides</b>, <b>moreover</b>, <b>furthermore</b>, <b>what is more</b> (più formali, spesso a inizio frase, con virgola): <i>The flat is cheap. <b>Moreover</b>, it is in the centre.</i></li>
-<li><b>not only... but also</b>: <i><b>Not only</b> is he talented, <b>but also</b> hard-working.</i> (con «not only» a inizio frase, il verbo ausiliare precede il soggetto: inversione)</li>
+<li><b>not only... but also</b>: <i><b>Not only</b> is he talented, <b>but</b> he is <b>also</b> hard-working.</i> (con «not only» a inizio frase, il verbo ausiliare precede il soggetto: inversione)</li>
 <li><b>both... and</b>, <b>neither... nor</b>.</li>
 </ul>
 <p><b>Esemplificare</b>: <i>for example, for instance, such as, like, namely</i>. Per introdurre una spiegazione: <i>that is (i.e.), in other words</i>.</p>

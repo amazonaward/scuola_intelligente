@@ -10,7 +10,7 @@ TOPIC('it', {
 <ul>
 <li><b>Doppio nominativo</b>: con i verbi <i>videor</i> (sembro), <i>dicor</i> (si dice che io), <i>putor</i> (sono ritenuto), <i>existimor</i>, <i>appellor</i>, <i>nominor</i> la costruzione è <b>personale</b>: <i>Romulus primus rex Romae esse dicitur</i> "Si dice che Romolo sia stato il primo re di Roma" (letteralmente "Romolo è detto essere…"). L'italiano preferisce la forma impersonale.</li>
 <li><b>Verbi di nomina al passivo</b>: <i>Cicero pater patriae appellatus est</i> "Cicerone fu chiamato padre della patria". All'attivo si avrebbe il <b>doppio accusativo</b>: <i>Ciceronem patrem patriae appellaverunt</i> (vedi oltre).</li>
-<li><b>Nominativo e infinito</b>: nella costruzione personale i due nominativi concordano, mentre nell'impersonale (<i>traditur, fertur</i>) il soggetto passa all'accusativo con l'infinito.</li>
+<li><b>Nominativo e infinito</b>: nella costruzione personale i due nominativi concordano, mentre nell'impersonale (tipica dei tempi composti: <i>traditum est</i>, <i>dictum est</i>; con <i>traditur, fertur</i> si usa di norma la costruzione personale) il soggetto passa all'accusativo con l'infinito.</li>
 </ul>
 <p>Il <b>vocativo</b> si usa per chiamare qualcuno: coincide con il nominativo tranne che nei nomi in <i>-us</i> della seconda declinazione (<i>Brute, mi fili</i>), e nei nomi in <i>-ius</i> (<i>Vergili</i>, <i>fili</i>).</p>`
     },
@@ -27,7 +27,7 @@ TOPIC('it', {
 <tr><td><b>di stima</b></td><td>con <i>aestimo, facio, pendo, duco</i></td><td><i>magni aestimare</i>, <i>pluris</i>, <i>minimi facere</i></td></tr>
 <tr><td><b>di colpa e pena</b></td><td>con <i>accuso, damno, absolvo, convinco</i></td><td><i>accusare aliquem furti</i> "accusare di furto"; <i>capitis damnare</i> "condannare a morte"</td></tr>
 </table>
-<p>Attenzione al <b>genitivo di pertinenza</b>: in italiano diciamo "è compito di…", "è proprio di…", "spetta a…". Cicerone, nelle <i>Filippiche</i> (XII), scrive la celebre frase <b>"Cuiusvis hominis est errare"</b>, "è proprio di ogni uomo sbagliare" (completata dal proverbio medievale "nullius nisi insipientis in errore perseverare").</p>
+<p>Attenzione al <b>genitivo di pertinenza</b>: in italiano diciamo "è compito di…", "è proprio di…", "spetta a…". Cicerone, nelle <i>Filippiche</i> (XII), scrive la celebre frase <b>"Cuiusvis hominis est errare"</b>, "è proprio di ogni uomo sbagliare" (la frase continua: "nullius nisi insipientis in errore perseverare", "ma perseverare nell'errore è solo dello stolto", sempre da Cicerone, <i>Filippiche</i> XII).</p>
 <p>Il genitivo di stima compare in forme fisse: <i>magni, parvi, pluris, minoris, tanti, quanti, nihili</i> (<i>Hoc mihi magni est</i> "Questo per me ha grande valore"). Il prezzo preciso invece va all'ablativo: <i>decem sestertiis emere</i>.</p>`
     },
     {
@@ -67,7 +67,7 @@ TOPIC('it', {
 <li><b>Doppio dativo</b>: dativo di fine + dativo di persona con <i>sum, do, relinquo, venio, habeo</i>: <i>Hoc tibi est magno usui</i> "Questo ti è di grande utilità"; <i>Cui bono?</i> "A chi giova?" (formula con cui Cicerone, nel <i>Pro Roscio Amerino</i>, riporta il celebre criterio del giudice Cassio: cercare chi trae vantaggio dal delitto).</li>
 <li><b>Dativo di vantaggio / svantaggio</b> (<i>commodi / incommodi</i>): <i>Non scholae, sed vitae discimus</i> "impariamo per la vita, non per la scuola" (Seneca, <i>Lettere a Lucilio</i> 106, lamentava il contrario: <i>non vitae, sed scholae discimus</i>).</li>
 <li><b>Dativo d'agente</b>: con il gerundivo e con alcuni perfetti passivi poetici: <i>Hoc tibi faciendum est</i> "Questo devi farlo tu".</li>
-<li><b>Dativo dopo i verbi composti</b> con <i>ad, ante, con, in, inter, ob, prae, sub, super</i>: <i>Caesar exercitui praeest</i> "Cesare comanda l'esercito"; <i>Fortuna audaces iuvat</i>.</li>
+<li><b>Dativo dopo i verbi composti</b> con <i>ad, ante, con, in, inter, ob, prae, sub, super</i>: <i>Caesar exercitui praeest</i> "Cesare comanda l'esercito"; <i>Hannibal Romanis bellum intulit</i> "Annibale portò guerra ai Romani" (<i>inferre</i> + dativo).</li>
 </ul>
 <p><b>Verbi intransitivi in latino che reggono il dativo</b> (e non l'accusativo, a differenza dell'italiano): <i>pareo</i> (obbedire), <i>credo</i> (credere), <i>faveo</i> (favorire), <i>noceo</i> (nuocere), <i>resisto</i>, <i>placeo</i>, <i>persuadeo</i>, <i>studeo</i>, <i>impero</i>, <i>invideo</i>, <i>ignosco</i> (perdonare), <i>medeor</i> (curare). Questi verbi, essendo intransitivi, al passivo sono usati solo in modo impersonale: <i>mihi creditur</i> "mi si crede".</p>`
     },
@@ -80,7 +80,7 @@ TOPIC('it', {
       html: `<ol>
 <li><i>Caesari nuntiatum est Helvetios iter facere.</i> "A Cesare fu annunciato che gli Elvezi stavano marciando." (dativo di termine, verbo passivo impersonale)</li>
 <li><i>Hic liber mihi magno usui est.</i> "Questo libro mi è di grande utilità." (doppio dativo)</li>
-<li><i>Civibus parere debemus legibus.</i> "Dobbiamo obbedire alle leggi" (<i>pareo</i> + dativo).</li>
+<li><i>Legibus parere debemus.</i> "Dobbiamo obbedire alle leggi" (<i>pareo</i> + dativo).</li>
 <li><i>Cui bono fuerit?</i> "A chi sarebbe stato di vantaggio?"</li>
 <li><i>Quinto Fabio Maximo cognomen Cunctator fuit.</i> "Quinto Fabio Massimo ebbe il soprannome di Temporeggiatore." (dativo di possesso)</li>
 </ol>`
