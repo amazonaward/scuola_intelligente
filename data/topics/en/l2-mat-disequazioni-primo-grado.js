@@ -142,7 +142,7 @@ TOPIC('en', {
     },
     {
       type: "example",
-      title: "Example: racing against the deadline",
+      title: "Example: the delivery van",
       html: `<p>A delivery company has to deliver a parcel within 3 hours. Loading and unloading take a fixed 40 minutes; the road is 120 km long. What minimum average speed (in km/h) must the van travel at?</p>
 <ul>
 <li>Time available for driving: 3 h − 2/3 h = 7/3 h.</li>

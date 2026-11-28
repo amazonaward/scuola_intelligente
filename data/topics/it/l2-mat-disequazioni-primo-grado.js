@@ -142,7 +142,7 @@ TOPIC('it', {
     },
     {
       type: "example",
-      title: "Esempio: il velocista e il traguardo",
+      title: "Esempio: il furgone delle consegne",
       html: `<p>Un'azienda di spedizioni deve consegnare un pacco entro 3 ore. Tra carico e scarico servono 40 minuti fissi; la strada è lunga 120 km. A che velocità media minima (in km/h) deve viaggiare il furgone?</p>
 <ul>
 <li>Tempo disponibile per guidare: 3 h − 2/3 h = 7/3 h.</li>

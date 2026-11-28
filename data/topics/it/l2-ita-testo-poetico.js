@@ -28,7 +28,7 @@ TOPIC('it', {
 <li><b>Sinalefe</b>: quando una parola finisce con vocale e la successiva comincia con vocale, le due sillabe si fondono in una. <i>«Tanto gentile e tanto onesta pare»</i> (Dante): <i>gentile e</i> conta una sillaba, <i>tanto onesta</i> pure.</li>
 <li><b>Dialefe</b>: l'incontro tra le vocali resta separato (eccezione, spesso per effetto espressivo).</li>
 <li><b>Sineresi</b>: due vocali vicine nella stessa parola si contano come una sillaba (es. <i>mia</i> in una sola sillaba invece di due).</li>
-<li><b>Dieresi</b>: due vocali che di solito sono insieme si dividono (es. <i>pa-ùra</i>).</li>
+<li><b>Dieresi</b>: due vocali che di solito sono insieme si dividono (es. <i>o-rï-en-te</i>).</li>
 <li><b>Ultima parola</b>: se è <b>piana</b> (accento sulla penultima, la più comune) si contano le sillabe reali; se è <b>tronca</b> (accento sull'ultima) si <b>aggiunge</b> una sillaba; se è <b>sdrucciola</b> (accento sulla terzultima) se ne <b>toglie</b> una.</li>
 </ul>
 <p>L'ultimo accento fisso del verso è quello che ne definisce il nome: l'endecasillabo ha sempre l'accento sulla <b>decima sillaba</b>.</p>`

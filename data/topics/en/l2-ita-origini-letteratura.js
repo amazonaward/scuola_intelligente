@@ -50,7 +50,7 @@ TOPIC('en', {
 <li><b>Placito capuano</b> (March 960): the record of a lawsuit between the monastery of Montecassino and a local lord over the ownership of some land. The witnesses declare: <i>«Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti»</i> (“I know that those lands, within the boundaries described here, have been owned for thirty years by the monastery of Saint Benedict”). The vernacular is used because the witnesses, who did not know Latin, had to understand what they were swearing to. It is the oldest legal document in the Italian vernacular.</li>
 <li><b>Inscription of San Clemente</b> (Rome, late 11th century): on the fresco in the Basilica of San Clemente, phrases in Roman vernacular can be read next to inscriptions in Latin.</li>
 </ul>
-<p>Outside Italy, the <b>Oaths of Strasbourg</b> (842) are the oldest text in Old French and Old High German. Already in 813 the <b>Council of Tours</b> had asked priests to preach “in the rustic Roman language”, because people no longer understood Latin.</p>`
+<p>Outside Italy, the <b>Oaths of Strasbourg</b> (842) are the oldest text in Old French, with a parallel version in Old High German. Already in 813 the <b>Council of Tours</b> had asked priests to preach “in the rustic Roman language”, because people no longer understood Latin.</p>`
     },
     {
       type: "remember",

@@ -18,6 +18,6 @@ QBANK("en", "l2-ita-testo-poetico", {
     { type: "mc", q: "In what kind of verse did Ungaretti write «Mi illumino / d'immenso» (“I light myself up / with immensity”)?", options: ["Free verse", "Sonnet", "Ode in tercets", "Ottava"], answer: 0, explain: "It is a 1917 text in very short free-verse lines." },
     { type: "tf", q: "Enjambment always makes the end of the sentence coincide with the end of the line.", answer: false, explain: "It does the opposite: the sentence continues into the next line." },
     { type: "mc", q: "Why was rhyme important in ancient poetry?", options: ["It helped people memorise and recite the lines", "It was only decoration", "It made texts shorter", "It was required by law"], answer: 0, explain: "In an oral culture, rhythm and rhyme made memorising easier." },
-    { type: "text", q: "What is the ten-syllable line with the stress on the ninth syllable called?", answer: ["decasillabo", "decasyllable"], explain: "The decasillabo is often used for sung and choral texts (Manzoni, Adelchi)." }
+    { type: "text", q: "What is the ten-syllable line with the stress on the ninth syllable called?", answer: ["decasillabo", "decasyllable"], explain: "The decasillabo is often used for sung and choral texts (Manzoni, «S'ode a destra uno squillo di tromba», from the Conte di Carmagnola)." }
   ]
 });

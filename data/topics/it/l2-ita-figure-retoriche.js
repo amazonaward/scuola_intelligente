@@ -116,7 +116,7 @@ TOPIC('it', {
     {
       type: "example",
       title: "Analizziamo un testo: un esempio guidato",
-      html: `<p>Prendiamo l'incipit della <i>Commedia</i> sulla porta dell'Inferno:</p>
+      html: `<p>Prendiamo i versi incisi sulla porta dell'Inferno (<i>Inferno</i> III):</p>
 <p><i>Per me si va ne la città dolente,<br>per me si va ne l'etterno dolore,<br>per me si va tra la perduta gente.</i></p>
 <p>1. <b>Anafora</b>: «per me si va» ripetuto tre volte. 2. <b>Effetto</b>: la porta parla in prima persona e martella le parole come un monito, un'iscrizione solenne. 3. <b>Altri elementi</b>: la parola «dolente» e «dolore» sono vicine (figura etimologica), «città», «dolore» e «gente» enumerano le conseguenze. Riconoscere la figura serve a rispondere a una domanda d'esame: <b>«Quale figura retorica è presente e con quale effetto?»</b>.</p>`
     },
@@ -132,8 +132,8 @@ TOPIC('it', {
     },
     {
       type: "curiosity",
-      title: "Cicerone e Veni, vidi, vici",
-      html: `<p>La frase «<i>Veni, vidi, vici</i>» è attribuita a <b>Giulio Cesare</b>, che nel 47 a.C. la scrisse al Senato per annunciare la rapida vittoria contro Farnace II del Ponto a Zela. L'asindeto, cioè l'assenza di «e», trasmette la velocità del successo. Tre verbi brevi, tre sillabe: un perfetto esempio di come una figura trasformi un'informazione in un messaggio memorabile.</p>`
+      title: "Cesare e Veni, vidi, vici",
+      html: `<p>La frase «<i>Veni, vidi, vici</i>» è attribuita a <b>Giulio Cesare</b>, che nel 47 a.C. la scrisse a Roma per annunciare la rapida vittoria contro Farnace II del Ponto a Zela. L'asindeto, cioè l'assenza di «e», trasmette la velocità del successo. Tre verbi brevi, due sillabe ciascuno: un perfetto esempio di come una figura trasformi un'informazione in un messaggio memorabile.</p>`
     },
     {
       type: "widget",

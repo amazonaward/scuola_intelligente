@@ -18,6 +18,6 @@ QBANK("it", "l2-ita-teatro", {
     { type: "mc", q: "Che cosa vuole ottenere Brecht con l'effetto di straniamento?", options: ["Impedire l'immedesimazione e stimolare la riflessione critica", "Far piangere il pubblico", "Eliminare gli attori", "Rispettare le tre unità"], answer: 0, explain: "L'attore prende distanza dal personaggio e invita il pubblico a ragionare." },
     { type: "tf", q: "Aristotele impose nella Poetica le tre unità di tempo, luogo e azione come regole obbligatorie.", answer: false, explain: "Fu il Rinascimento a ricavarle e rendere fisse; Aristotele parla chiaramente solo dell'unità d'azione." },
     { type: "mc", q: "Quale opera di Pirandello mette in scena personaggi che cercano un autore?", options: ["Sei personaggi in cerca d'autore", "Enrico IV", "Il fu Mattia Pascal", "La giara"], answer: 0, explain: "Fu rappresentata nel 1921." },
-    { type: "text", q: "Quale drammaturgo vinse il Nobel per la letteratura nel 1997 con «Mistero buffo»?", answer: ["dario fo", "fo"], explain: "Dario Fo (1926-2016) si ispirò ai giullari medievali." }
+    { type: "text", q: "Quale drammaturgo, autore di «Mistero buffo», è premio Nobel per la letteratura 1997?", answer: ["dario fo", "fo"], explain: "Dario Fo (1926-2016) si ispirò ai giullari medievali." }
   ]
 });
