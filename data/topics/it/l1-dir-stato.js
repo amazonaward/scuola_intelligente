@@ -181,7 +181,7 @@ TOPIC('it', {
     {
       type: "decision",
       title: "2 giugno 1946: Repubblica o Monarchia?",
-      html: `<p>L'Italia è appena uscita dal fascismo e dalla guerra. La monarchia dei Savoia aveva appoggiato il regime fascista e il re Vittorio Emanuele III era fuggito da Roma l'8 settembre 1943. Il 2 giugno 1946 tutti gli italiani, uomini e <b>donne per la prima volta in una votazione nazionale</b>, sono chiamati a scegliere con un referendum la forma dello Stato e a eleggere l'Assemblea Costituente.</p>`,
+      html: `<p>L'Italia è appena uscita dal fascismo e dalla guerra. La monarchia dei Savoia aveva appoggiato il regime fascista e il re Vittorio Emanuele III era fuggito da Roma nella notte tra l'8 e il 9 settembre 1943. Il 2 giugno 1946 tutti gli italiani, uomini e <b>donne per la prima volta in una votazione nazionale</b>, sono chiamati a scegliere con un referendum la forma dello Stato e a eleggere l'Assemblea Costituente.</p>`,
       question: "Tu cosa avresti votato?",
       options: [
         { label: "Monarchia: garantisce continuità e unità", outcome: "Fu la scelta di una parte consistente del Paese (circa 10,7 milioni di voti), soprattutto nel Sud. Ma molti vedevano nella corona la responsabilità di aver permesso il fascismo." },

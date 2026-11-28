@@ -1,0 +1,23 @@
+QBANK("fr", "l1-dir-norma-giuridica", {
+ "f": [
+  { "type": "mc", "q": "Laquelle de ces règles est une règle de droit ?", "options": ["S'arrêter au feu rouge", "Dire bonjour aux voisins", "Céder sa place aux personnes âgées"], "answer": 0, "explain": "Le code de la route est un ensemble de règles de droit, garanties par des sanctions de l'État ; les autres sont des règles de savoir-vivre." },
+  { "type": "tf", "q": "La Gazzetta Ufficiale est l'endroit où sont publiées les lois de l'État italien.", "answer": true, "explain": "C'est la source de connaissance des lois." },
+  { "type": "mc", "q": "Que signifie qu'une règle est coercitive ?", "options": ["Qu'elle peut être imposée par la force de l'État", "Qu'elle ne vaut que pour les citoyens riches", "Qu'elle est écrite en latin"], "answer": 0, "explain": "Le caractère coercitif est la possibilité d'imposer la règle par des sanctions." },
+  { "type": "text", "q": "Comment s'appelle la conséquence négative prévue pour celui qui viole une règle de droit ?", "answer": ["sanction", "la sanction", "une sanction"], "explain": "La sanction peut être une amende, des dommages-intérêts ou une peine." },
+  { "type": "mc", "q": "Quelle source se trouve au sommet de la hiérarchie dans l'ordre juridique italien ?", "options": ["La Constitution", "Le règlement communal", "La coutume"], "answer": 0, "explain": "Toutes les autres sources nationales doivent respecter la Constitution." }
+ ],
+ "m": [
+  { "type": "mc", "q": "Quel caractère indique que la règle s'applique à tous les cas d'un certain type et non à un cas isolé ?", "options": ["Abstraction", "Généralité", "Positivité"], "answer": 0, "explain": "L'abstraction concerne le fait prévu (cas de figure) ; la généralité concerne les destinataires." },
+  { "type": "tf", "q": "Le décret-loi est adopté par le Gouvernement et doit être converti en loi par le Parlement.", "answer": true, "explain": "Dans les 60 jours suivant sa publication, sinon il perd son effet (art. 77)." },
+  { "type": "mc", "q": "Le droit privé règle surtout…", "options": ["Les rapports entre sujets placés sur un pied d'égalité", "L'organisation de l'État", "Les élections politiques"], "answer": 0, "explain": "Les personnes, la famille, la propriété et les contrats relèvent du droit privé." },
+  { "type": "mc", "q": "Quelle source se place juste en dessous de la loi ordinaire dans la hiérarchie ?", "options": ["Le règlement", "La Constitution", "La loi constitutionnelle"], "answer": 0, "explain": "Les règlements appliquent et précisent les lois, mais ne peuvent pas les contredire." },
+  { "type": "tf", "q": "La coutume peut l'emporter sur une loi qui l'interdit expressément.", "answer": false, "explain": "La coutume a un rang inférieur à la loi et ne vaut que si elle ne lui est pas contraire." }
+ ],
+ "d": [
+  { "type": "mc", "q": "Une loi est en conflit avec une règle plus spéciale mais de même rang. Quel critère applique-t-on en premier si la seconde règle un cas particulier ?", "options": ["Spécialité", "Hiérarchique", "Aucun : la première loi est toujours valable"], "answer": 0, "explain": "La règle spéciale l'emporte sur la règle générale de même rang." },
+  { "type": "mc", "q": "Pourquoi dit-on que la Constitution italienne est rigide ?", "options": ["Parce qu'on ne la modifie que par une procédure renforcée (art. 138)", "Parce qu'elle ne peut jamais être interprétée", "Parce qu'elle ne contient que des interdictions"], "answer": 0, "explain": "La révision exige deux délibérations par Chambre à au moins trois mois d'intervalle, contrairement aux lois ordinaires." },
+  { "type": "mc", "q": "Quelle est la fonction principale du principe de non-rétroactivité de la loi pénale ?", "options": ["Éviter d'être puni pour des faits qui n'étaient pas des infractions au moment où ils ont été commis", "Empêcher le Parlement de faire des lois", "Rendre les peines plus légères"], "answer": 0, "explain": "C'est une garantie de sécurité juridique : chacun doit pouvoir savoir à l'avance ce qui est interdit (art. 25 Const.)." },
+  { "type": "tf", "q": "Tous les actes ayant force de loi sont de même rang que les lois ordinaires.", "answer": true, "explain": "Les décrets-lois et les décrets législatifs ont la même force que la loi ordinaire, mais ils sont adoptés par le Gouvernement." },
+  { "type": "mc", "q": "Un décret-loi non converti dans les 60 jours…", "options": ["Perd son effet dès l'origine", "Devient un règlement", "Devient automatiquement une loi"], "answer": 0, "explain": "L'art. 77 prévoit que les décrets perdent leur effet dès l'origine s'ils ne sont pas convertis en loi." }
+ ]
+});

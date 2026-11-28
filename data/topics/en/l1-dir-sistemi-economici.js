@@ -149,7 +149,7 @@ TOPIC('en', {
 <li><b>Arts. 35 and 36</b>: protection of work and fair pay. <b>Art. 38</b>: social assistance and social security.</li>
 </ul>
 <p>In the 1930s the Italian State created <b>IRI</b> (the Institute for Industrial Reconstruction, 1933), which rescued banks and firms in crisis and for decades controlled major sectors. Since the 1990s many public enterprises have been <b>privatised</b>.</p>
-<p>Italy is also part of the <b>European Union</b> and, since 2002, of the <b>euro</b>: monetary policy is entrusted to the European Central Bank.</p>`
+<p>Italy is also part of the <b>European Union</b> and, since 1999, of the <b>euro</b> (coins and notes since 2002): monetary policy is entrusted to the European Central Bank.</p>`
     },
     {
       type: "decision",
