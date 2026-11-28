@@ -228,7 +228,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "La Terra rallenta, i giorni si allungano",
-      html: `<p>La Terra non ruota a velocità esattamente costante: le maree causate dalla Luna esercitano un momento frenante e la rotazione rallenta di circa 1,7 millisecondi per secolo. Poiché il momento angolare del sistema Terra-Luna si conserva, quello perso dalla Terra viene trasferito alla Luna, che si allontana di circa <b>3,8 cm all'anno</b> (misurato con i riflettori lasciati dagli astronauti Apollo). Centinaia di milioni di anni fa il giorno durava poco più di 20 ore: lo si deduce dagli anelli di crescita dei coralli fossili.</p>`
+      html: `<p>La Terra non ruota a velocità esattamente costante: le maree causate dalla Luna esercitano un momento frenante e la rotazione rallenta di circa 1,7 millisecondi per secolo. Poiché il momento angolare del sistema Terra-Luna si conserva, quello perso dalla Terra viene trasferito alla Luna, che si allontana di circa <b>3,8 cm all'anno</b> (misurato con i riflettori lasciati dagli astronauti Apollo). Circa 400 milioni di anni fa il giorno durava solo 22 ore circa: lo si deduce dagli anelli di crescita dei coralli fossili.</p>`
     },
     {
       type: "curiosity",
