@@ -14,7 +14,7 @@ QBANK("it", "l2-sto-cristianesimo", {
     { type: "mc", q: "Perché Giuliano è detto «l'Apostata»?", options: ["Tentò di restaurare il paganesimo", "Tradì l'imperatore", "Fu un monaco"], answer: 0, explain: "Regnò dal 361 al 363." }
   ],
   d: [
-    { type: "mc", q: "Che cosa chiese Traiano a Plinio sui cristiani?", options: ["Non cercarli, ma punire chi, denunciato, rifiuta di sacrificare", "Eliminarli tutti", "Proteggerli"], answer: 0, explain: "È la risposta alla lettera di Plinio (circa 112)." },
+    { type: "mc", q: "Che cosa rispose Traiano a Plinio sui cristiani?", options: ["Non cercarli, ma punire chi, denunciato, rifiuta di sacrificare", "Eliminarli tutti", "Proteggerli"], answer: 0, explain: "È la risposta alla lettera di Plinio (circa 112)." },
     { type: "tf", q: "Teodosio fu costretto a una penitenza pubblica dal vescovo Ambrogio.", answer: true, explain: "Dopo la strage di Tessalonica del 390." },
     { type: "mc", q: "Chi furono i lapsi?", options: ["I cristiani che cedettero durante la persecuzione di Decio", "I vescovi di Roma", "I soldati pretoriani"], answer: 0, explain: "Molti poi chiesero di essere riammessi nella Chiesa." },
     { type: "mc", q: "Chi tradusse la Bibbia in latino (Vulgata)?", options: ["Girolamo", "Agostino", "Ambrogio"], answer: 0, explain: "San Girolamo, tra IV e V secolo." },

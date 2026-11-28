@@ -100,7 +100,7 @@ TOPIC('en', {
         ],
         events: [
           { id: "tib", lat: 41.9, lon: 12.5, year: -133, label: "Tiberius Gracchus killed", html: "Tribune in 133 BC, he proposes the agrarian law and is killed by senators.", causes: [] },
-          { id: "gai", lat: 41.9, lon: 12.5, year: -121, label: "Death of Gaius Gracchus", html: "The Senate uses the emergency decree against a tribune for the first time.", causes: ["tib"] },
+          { id: "gai", lat: 41.9, lon: 12.5, year: -121, label: "Death of Gaius Gracchus", html: "The Senate uses the emergency decree against a former tribune for the first time.", causes: ["tib"] },
           { id: "giu", lat: 34.0, lon: 6.0, year: -105, label: "End of the Jugurthine War", html: "Marius and Sulla obtain Jugurtha's surrender in Numidia.", causes: ["gai"] },
           { id: "cim", lat: 43.5, lon: 5.4, year: -102, label: "Aquae Sextiae", html: "Marius defeats the Teutones in Provence; in 101 he defeats the Cimbri.", causes: ["giu"] },
           { id: "soc", lat: 42.5, lon: 14.0, year: -90, label: "Social War", html: "The Italian allies rebel: citizenship is extended (lex Iulia).", causes: ["cim"] },

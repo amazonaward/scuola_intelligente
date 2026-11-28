@@ -86,7 +86,7 @@ TOPIC('it', {
 <li><b>Speciazione allopatrica</b> (da "altra patria"): una barriera geografica (un braccio di mare, una catena montuosa, un fiume che cambia corso) separa una popolazione in due. Non scambiandosi più alleli, accumulano mutazioni diverse e subiscono selezioni diverse (e deriva). Se tornano a incontrarsi, non si incrociano più. È il modo più comune; esempio classico: i <b>fringuelli di Darwin</b> delle Galápagos, discendenti di un'unica specie arrivata dal continente, con becchi diversi per cibi diversi, e i ciclidi dei laghi africani.</li>
 <li><b>Speciazione simpatrica</b>: la nuova specie nasce nello stesso territorio, senza barriere. Nelle piante è frequente per <b>poliploidia</b> (errori di meiosi che producono gameti con numero doppio di cromosomi: il grano tenero è esaploide, 6n = 42) o per specializzazione ecologica.</li>
 </ul>
-<p>Le <b>barriere riproduttive</b> possono essere <b>prezigotiche</b> (impediscono la formazione dello zigote: riti di corteggiamento diversi, periodi di fioritura diversi, organi genitali incompatibili) o <b>postzigotiche</b> (l'ibrido nasce ma non sopravvive o è sterile: il <b>mulo</b>, ibrido di asina e cavallo, ha 63 cromosomi e non può produrre gameti normali).</p>
+<p>Le <b>barriere riproduttive</b> possono essere <b>prezigotiche</b> (impediscono la formazione dello zigote: riti di corteggiamento diversi, periodi di fioritura diversi, organi genitali incompatibili) o <b>postzigotiche</b> (l'ibrido nasce ma non sopravvive o è sterile: il <b>mulo</b>, ibrido di asino e cavalla, ha 63 cromosomi e non può produrre gameti normali).</p>
 <p>Altri due fenomeni importanti: l'<b>evoluzione convergente</b> (specie lontane sviluppano caratteri simili perché sottoposte a pressioni simili: le ali di insetti, uccelli e pipistrelli, o la forma idrodinamica di squali e delfini) e la <b>radiazione adattativa</b> (da un antenato derivano molte specie che occupano nicchie diverse: i mammiferi dopo l'estinzione dei dinosauri, 66 milioni di anni fa).</p>`
     },
     {
@@ -194,7 +194,7 @@ TOPIC('it', {
       scene: "molecule",
       options: {
         atoms: [
-          { x: 0, y: 0, z: 0, r: 0.45, color: "#ef4444", label: "ATP: ossigeno" },
+          { x: 0, y: 0, z: 0, r: 0.45, color: "#ef4444", label: "ATP: ribosio" },
           { x: 0.9, y: 0.4, z: 0, r: 0.4, color: "#f59e0b", label: "fosfato" },
           { x: 1.8, y: 0.1, z: 0.3, r: 0.4, color: "#f59e0b", label: "fosfato" },
           { x: 2.7, y: 0.5, z: 0, r: 0.4, color: "#f59e0b", label: "fosfato" },

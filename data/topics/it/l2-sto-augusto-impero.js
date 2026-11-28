@@ -81,7 +81,7 @@ TOPIC('it', {
           { id: "nerone", lat: 41.9, lon: 12.5, year: 64, label: "Incendio di Roma", html: "Sotto Nerone un grande incendio distrugge gran parte della città.", causes: ["morte"] },
           { id: "quattro", lat: 41.9, lon: 12.5, year: 69, label: "Anno dei quattro imperatori", html: "Dopo la morte di Nerone (68) quattro imperatori in un anno: vince Vespasiano.", causes: ["nerone"] },
           { id: "colosseo", lat: 41.89, lon: 12.49, year: 80, label: "Inaugurazione del Colosseo", html: "Sotto Tito, dinastia dei Flavi.", causes: ["quattro"] },
-          { id: "dacia", lat: 45.8, lon: 23.3, year: 106, label: "Conquista della Dacia", html: "Traiano vince Decebalo: nell'117 l'impero ha la sua massima estensione.", causes: ["colosseo"] },
+          { id: "dacia", lat: 45.8, lon: 23.3, year: 106, label: "Conquista della Dacia", html: "Traiano vince Decebalo: nel 117 l'impero ha la sua massima estensione.", causes: ["colosseo"] },
           { id: "adriano", lat: 55.0, lon: -2.3, year: 122, label: "Vallo di Adriano", html: "Adriano consolida i confini: fortificazioni in Britannia.", causes: ["dacia"] },
           { id: "marco", lat: 48.2, lon: 16.4, year: 180, label: "Morte di Marco Aurelio", html: "Finisce il secolo degli imperatori adottivi.", causes: ["adriano"] }
         ]
@@ -102,7 +102,7 @@ TOPIC('it', {
       title: "4. La pax romana, l'economia e la cultura",
       html: `<p>Dopo un secolo di guerre civili, il regime di Augusto portò <b>pace</b>: la <b>pax romana</b> («pace romana») durò, tra Augusto e Marco Aurelio, circa due secoli, durante i quali nell'impero (esclusi i confini) le guerre furono rare. L'<b>Ara Pacis Augustae</b> (dedicata nel 9 a.C.) la celebrava in marmo.</p>
 <p>La pace favorì l'<b>economia</b>: il Mediterraneo, il <i>mare nostrum</i>, ripulito dai pirati, divenne un'immensa via commerciale. Il grano d'Egitto e d'Africa nutriva Roma (circa un milione di abitanti nel I secolo d.C.); olio e vino arrivavano dalla Spagna e dalla Gallia; seta e spezie dall'Oriente via Mar Rosso e dall'India. Una moneta (denario d'argento, aureo d'oro), un sistema di strade (si dice circa 80.000 km), un sistema giuridico comune. Ma la ricchezza era diseguale: l'economia restava basata su <b>schiavi</b> e agricoltura, con poca innovazione tecnica, e Roma viveva anche di tributi.</p>
-<p>Augusto sostenne anche una <b>cultura di regime</b>: attraverso <b>Mecenate</b> protesse poeti come <b>Virgilio</b> (l'<i>Eneide</i>, poema di Enea, antenato di Roma e dei Giulii), <b>Orazio</b> (le <i>Odi</i>), lo storico <b>Livio</b> (<i>Ab urbe condita</i>), <b>Ovidio</b> (poi esiliato nel 8 d.C. a Tomi sul Mar Nero per motivi non del tutto chiari). Promosse una <b>restaurazione dei costumi</b> con leggi sul matrimonio e sulla famiglia. Questa fu l'<b>età augustea</b>, considerata il «secolo d'oro» della letteratura latina.</p>`
+<p>Augusto sostenne anche una <b>cultura di regime</b>: attraverso <b>Mecenate</b> protesse poeti come <b>Virgilio</b> (l'<i>Eneide</i>, poema di Enea, antenato di Roma e dei Giulii), <b>Orazio</b> (le <i>Odi</i>), lo storico <b>Livio</b> (<i>Ab urbe condita</i>), <b>Ovidio</b> (poi esiliato nell'8 d.C. a Tomi sul Mar Nero per motivi non del tutto chiari). Promosse una <b>restaurazione dei costumi</b> con leggi sul matrimonio e sulla famiglia. Questa fu l'<b>età augustea</b>, considerata il «secolo d'oro» della letteratura latina.</p>`
     },
     {
       type: "example",
@@ -151,7 +151,7 @@ TOPIC('it', {
         },
         {
           label: "⏳ Una linea del tempo",
-          html: `<p>Gli eventi principali dall'Impero alla fine del II secolo.</p>`,
+          html: `<p>Gli eventi principali da Azio all'inizio del III secolo.</p>`,
           widget: "timeline",
           options: { events: [
             { year: -31, label: "Azio", icon: "⚓" },

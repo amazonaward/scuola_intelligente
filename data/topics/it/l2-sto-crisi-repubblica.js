@@ -100,7 +100,7 @@ TOPIC('it', {
         ],
         events: [
           { id: "tib", lat: 41.9, lon: 12.5, year: -133, label: "Tiberio Gracco ucciso", html: "Tribuno nel 133 a.C., propone la legge agraria e viene ucciso dai senatori.", causes: [] },
-          { id: "gai", lat: 41.9, lon: 12.5, year: -121, label: "Morte di Gaio Gracco", html: "Il Senato usa per la prima volta il decreto estremo contro un tribuno.", causes: ["tib"] },
+          { id: "gai", lat: 41.9, lon: 12.5, year: -121, label: "Morte di Gaio Gracco", html: "Il Senato usa per la prima volta il decreto estremo contro un ex tribuno.", causes: ["tib"] },
           { id: "giu", lat: 34.0, lon: 6.0, year: -105, label: "Fine guerra giugurtina", html: "Mario e Silla ottengono la consegna di Giugurta in Numidia.", causes: ["gai"] },
           { id: "cim", lat: 43.5, lon: 5.4, year: -102, label: "Aquae Sextiae", html: "Mario sconfigge i Teutoni in Provenza; nel 101 vince i Cimbri.", causes: ["giu"] },
           { id: "soc", lat: 42.5, lon: 14.0, year: -90, label: "Guerra sociale", html: "Gli alleati italici si ribellano: la cittadinanza viene estesa (lex Iulia).", causes: ["cim"] },

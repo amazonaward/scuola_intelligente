@@ -86,7 +86,7 @@ TOPIC('en', {
 <li><b>Allopatric speciation</b> (from "other homeland"): a geographical barrier (a stretch of sea, a mountain range, a river that changes course) splits a population in two. Since they no longer exchange alleles, they accumulate different mutations and undergo different selection (and drift). If they meet again, they no longer interbreed. It is the most common way; a classic example: <b>Darwin's finches</b> in the Galápagos, descended from a single species that arrived from the mainland, with different beaks for different foods, and the cichlids of the African lakes.</li>
 <li><b>Sympatric speciation</b>: the new species arises in the same area, with no barriers. In plants it often happens through <b>polyploidy</b> (meiosis errors producing gametes with double the number of chromosomes: bread wheat is hexaploid, 6n = 42) or through ecological specialisation.</li>
 </ul>
-<p><b>Reproductive barriers</b> can be <b>prezygotic</b> (they prevent the zygote from forming: different courtship rituals, different flowering periods, incompatible genitals) or <b>postzygotic</b> (the hybrid is born but does not survive or is sterile: the <b>mule</b>, a hybrid of a female donkey and a horse, has 63 chromosomes and cannot produce normal gametes).</p>
+<p><b>Reproductive barriers</b> can be <b>prezygotic</b> (they prevent the zygote from forming: different courtship rituals, different flowering periods, incompatible genitals) or <b>postzygotic</b> (the hybrid is born but does not survive or is sterile: the <b>mule</b>, a hybrid of a male donkey and a mare, has 63 chromosomes and cannot produce normal gametes).</p>
 <p>Two other important phenomena: <b>convergent evolution</b> (distantly related species develop similar traits because they face similar pressures: the wings of insects, birds and bats, or the streamlined shape of sharks and dolphins) and <b>adaptive radiation</b> (many species occupying different niches derive from one ancestor: mammals after the extinction of the dinosaurs, 66 million years ago).</p>`
     },
     {
@@ -194,7 +194,7 @@ TOPIC('en', {
       scene: "molecule",
       options: {
         atoms: [
-          { x: 0, y: 0, z: 0, r: 0.45, color: "#ef4444", label: "ATP: oxygen" },
+          { x: 0, y: 0, z: 0, r: 0.45, color: "#ef4444", label: "ATP: ribose" },
           { x: 0.9, y: 0.4, z: 0, r: 0.4, color: "#f59e0b", label: "phosphate" },
           { x: 1.8, y: 0.1, z: 0.3, r: 0.4, color: "#f59e0b", label: "phosphate" },
           { x: 2.7, y: 0.5, z: 0, r: 0.4, color: "#f59e0b", label: "phosphate" },
