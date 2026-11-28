@@ -132,7 +132,7 @@ TOPIC('it', {
       type: "remember",
       title: "Formule del moto circolare uniforme",
       html: `<p><b>T = 1/f</b> · <b>ω = 2π/T</b> · <b>v = ω·r = 2πr/T</b> · <b>a<sub>c</sub> = v²/r = ω²·r</b> · <b>F<sub>c</sub> = m·v²/r</b>.</p>
-<p><b>Esempio.</b> Una ruota di raggio 0,30 m compie un giro in 0,50 s: ω = 2π/0,5 ≈ 12,6 rad/s; v = 12,6·0,30 ≈ 3,8 m/s; a = ω²r ≈ 47 m/s². La Terra all'equatore (r ≈ 6378 km, T ≈ 24 h) si muove a circa 465 m/s, ma ce ne accorgiamo perché la velocità è costante: sentiamo le accelerazioni, non le velocità.</p>`
+<p><b>Esempio.</b> Una ruota di raggio 0,30 m compie un giro in 0,50 s: ω = 2π/0,5 ≈ 12,6 rad/s; v = 12,6·0,30 ≈ 3,8 m/s; a = ω²r ≈ 47 m/s². La Terra all'equatore (r ≈ 6378 km, T ≈ 24 h) si muove a circa 465 m/s, ma non ce ne accorgiamo perché la velocità è costante: sentiamo le accelerazioni, non le velocità.</p>`
     },
     {
       type: "quiz",
