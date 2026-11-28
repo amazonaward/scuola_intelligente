@@ -27,7 +27,7 @@ TOPIC('it', {
     },
     {
       type: `example`, title: `Esempio: perché il ponte regge?`,
-      html: `<p>Un architrave di pietra lungo 5 m sotto il suo peso si spezza: la pietra resiste bene alla <b>compressione</b> (schiacciamento) ma poco alla <b>trazione</b> (allungamento) che nasce al centro di una trave inclinata. Un arco di pietra ha la stessa luce, ma i suoi conci sono <b>solo compressi</b>: la forma trasforma il peso in spinta lungo la curva. Per questo il <b>Pont du Gard</b> (acquedotto vicino a Nîmes, I sec. d.C., circa 48 m d'altezza su tre ordini di arcate) è ancora in piedi dopo duemila anni, e molti ponti romani (come il Ponte di Tiberio a Rimini, 14-21 d.C.) sono ancora usati dal traffico.</p>`
+      html: `<p>Un architrave di pietra lungo 5 m sotto il suo peso si spezza: la pietra resiste bene alla <b>compressione</b> (schiacciamento) ma poco alla <b>trazione</b> (allungamento) che nasce nella parte inferiore di una trave caricata. Un arco di pietra ha la stessa luce, ma i suoi conci sono <b>solo compressi</b>: la forma trasforma il peso in spinta lungo la curva. Per questo il <b>Pont du Gard</b> (acquedotto vicino a Nîmes, I sec. d.C., circa 48 m d'altezza su tre ordini di arcate) è ancora in piedi dopo duemila anni, e molti ponti romani (come il Ponte di Tiberio a Rimini, 14-21 d.C.) sono ancora usati dal traffico.</p>`
     },
     {
       type: `text`, title: `3. Il Colosseo`,

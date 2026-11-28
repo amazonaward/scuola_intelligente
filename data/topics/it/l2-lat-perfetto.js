@@ -146,7 +146,7 @@ TOPIC('it', {
 <tr><td><i>odi</i></td><td>odio</td><td>odiavo (oderam)</td><td>odierò (odero)</td></tr>
 <tr><td><i>coepi</i></td><td>ho cominciato</td><td>avevo cominciato</td><td>avrò cominciato</td></tr>
 </table>
-<p>Si traducono come presente, imperfetto e futuro: <i>Te odi</i> "ti odia"; <i>Memini te</i> "mi ricordo di te". Per il significato logico: la conoscenza è il risultato dell'avere appreso (<i>novi</i> "ho appreso" ➜ "so"), il ricordo di avere fissato nella memoria, l'odio di avere preso in odio.</p>`
+<p>Si traducono come presente, imperfetto e futuro: <i>Te odi</i> "ti odio"; <i>Memini te</i> "mi ricordo di te". Per il significato logico: la conoscenza è il risultato dell'avere appreso (<i>novi</i> "ho appreso" ➜ "so"), il ricordo di avere fissato nella memoria, l'odio di avere preso in odio.</p>`
     },
     {
       type: `widget`, title: `Gioco: abbina verbo e perfetto`,
