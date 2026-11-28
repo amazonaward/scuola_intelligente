@@ -204,7 +204,7 @@ TOPIC('it', {
   glossary: [
     { t: "Periodo", d: "Riga della tavola periodica; corrisponde al numero quantico principale del guscio più esterno." },
     { t: "Gruppo", d: "Colonna della tavola periodica; gli elementi hanno configurazione di valenza simile." },
-    { t: "Metalli alcalini", d: "Elementi del gruppo 1 (esclusa l'idrogeno): molto reattivi, un elettrone di valenza." },
+    { t: "Metalli alcalini", d: "Elementi del gruppo 1 (escluso l'idrogeno): molto reattivi, un elettrone di valenza." },
     { t: "Alogeni", d: "Elementi del gruppo 17 (F, Cl, Br, I): sette elettroni di valenza." },
     { t: "Gas nobili", d: "Elementi del gruppo 18: guscio esterno completo, quasi inerti." },
     { t: "Carica nucleare efficace", d: "Carica positiva che un elettrone di valenza realmente sente, tenendo conto dello schermo degli elettroni interni." },

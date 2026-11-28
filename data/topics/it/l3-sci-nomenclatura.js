@@ -28,7 +28,7 @@ TOPIC('it', {
 <li>Metalli alcalini <b>+1</b>, alcalino-terrosi <b>+2</b>, alluminio <b>+3</b>; gli altri alogeni <b>−1</b> nei composti binari con i metalli e con l'idrogeno.</li>
 </ol>
 <p><b>Esempio.</b> Qual è il n.o. dello zolfo in H₂SO₄? 2·(+1) + x + 4·(−2) = 0, quindi x = +6. E dell'azoto in HNO₃? (+1) + x + 3·(−2) = 0, quindi x = +5. Del manganese in KMnO₄? (+1) + x + 4·(−2) = 0, x = +7.</p>
-<p>Un elemento può avere più n.o.: lo zolfo −2, +4, +6; il cloro −1, +1, +3, +5, +7; il ferro +2 e +3. Il n.o. massimo di un elemento dei gruppi principali coincide di solito con il numero del gruppo (per i gruppi 1-2 e 13-17 con 10 in meno): S (gruppo 16) arriva a +6, Cl (17) a +7.</p>`
+<p>Un elemento può avere più n.o.: lo zolfo −2, +4, +6; il cloro −1, +1, +3, +5, +7; il ferro +2 e +3. Il n.o. massimo di un elemento dei gruppi principali coincide di solito con il numero del gruppo (uguale al numero del gruppo per i gruppi 1-2, numero del gruppo meno 10 per i gruppi 13-17): S (gruppo 16) arriva a +6, Cl (17) a +7.</p>`
     },
     {
       type: "svg",
@@ -193,7 +193,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Perché la ruggine si chiama ossido",
-      html: `<p>La ruggine è soprattutto <b>ossido di ferro(III) idrato</b>, Fe₂O₃·nH₂O. Il ferro (n.o. 0) viene ossidato dall'ossigeno e dall'acqua: il suo n.o. sale a +3, perciò si parla di <b>ossidazione</b> e il numero che abbiamo imparato a calcolare si chiama "di ossidazione". Questo concetto tornerà nelle reazioni di <b>ossido-riduzione</b>: quando un elemento sale di n.o. si ossida, quando scende si riduce. Il nome della famiglia, "ossidi", deriva da <i>oxys</i>, "acido" in greco: Lavoisier credeva che l'ossigeno fosse il principio di tutti gli acidi, il che si rivelò sbagliato (HCl non contiene ossigeno), ma il nome è rimasto.</p>`
+      html: `<p>La ruggine è soprattutto <b>ossido di ferro(III) idrato</b>, Fe₂O₃·nH₂O. Il ferro (n.o. 0) viene ossidato dall'ossigeno e dall'acqua: il suo n.o. sale a +3, perciò si parla di <b>ossidazione</b> e il numero che abbiamo imparato a calcolare si chiama "di ossidazione". Questo concetto tornerà nelle reazioni di <b>ossido-riduzione</b>: quando un elemento sale di n.o. si ossida, quando scende si riduce. Il nome "ossigeno", da cui deriva "ossido", viene dal greco <i>oxys</i>, "acido": Lavoisier credeva che l'ossigeno fosse il principio di tutti gli acidi, il che si rivelò sbagliato (HCl non contiene ossigeno), ma il nome è rimasto.</p>`
     },
     {
       type: "conceptMap",
@@ -227,7 +227,7 @@ TOPIC('it', {
     questions: [
       { type: "num", q: "Qual è il numero di ossidazione del carbonio in CO₂?", answer: 4, explain: "x + 2·(−2) = 0 → x = +4." },
       { type: "mc", q: "Quale formula corrisponde al triossido di zolfo?", options: ["SO₃", "SO₂", "S₂O₃", "S₃O"], answer: 0, explain: "Tri- indica 3 atomi di ossigeno e il mono- iniziale si omette: SO₃, in cui lo zolfo ha n.o. +6." },
-      { type: "mc", q: "Come si chiama NaOH?", options: ["Idrossido di sodio", "Ossido di sodio", "Idruro di sodio", "Perossido di sodio"], answer: 0, explain: "Contiene l'ione OH⁻: è l'idrossido di sodio (soda caustica)." },
+      { type: "mc", q: "Come si chiama NaOH?", options: ["Idrossido di sodio", "Ossido di sodio", "Idruro di sodio", "Perossido di sodio"], answer: 0, explain: "Contiene lo ione OH⁻: è l'idrossido di sodio (soda caustica)." },
       { type: "mc", q: "Qual è la formula dell'acido solforico?", options: ["H₂SO₄", "H₂SO₃", "HSO₄", "H₂S"], answer: 0, explain: "H₂SO₄ ha S con n.o. +6 (-ico); H₂SO₃ è l'acido solforoso (+4); H₂S è l'acido solfidrico." },
       { type: "mc", q: "Come si chiama CaCO₃?", options: ["Carbonato di calcio", "Carburo di calcio", "Ossido di calcio e carbonio", "Bicarbonato di calcio"], answer: 0, explain: "CO₃²⁻ è lo ione carbonato (da H₂CO₃, acido -ico): è il calcare, il marmo." },
       { type: "tf", q: "Un sale derivato da un acido -oso ha il nome terminante in -ito.", answer: true, explain: "Acido -oso → anione -ito (acido solforoso → solfito); acido -ico → -ato." },

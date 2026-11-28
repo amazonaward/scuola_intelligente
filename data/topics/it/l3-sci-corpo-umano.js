@@ -214,7 +214,7 @@ TOPIC('it', {
       questions: [
         { type: "mc", q: "Quale ormone abbassa la glicemia?", options: ["Insulina", "Glucagone", "Ossitocina", "Adrenalina"], answer: 0, explain: "L'insulina, prodotta dalle cellule β del pancreas, fa entrare il glucosio nelle cellule." },
         { type: "tf", q: "Il brivido è una risposta che produce calore quando la temperatura corporea scende.", answer: true, explain: "Le contrazioni rapide dei muscoli scheletrici producono calore." },
-        { type: "mc", q: "Quale esempio è una retroazione positiva?", options: ["Le contrazioni del parto stimolate dall'ossitocina", "La sudorazione", "La secrezione di insulina", "Il brivido"], answer: 0, explain: "Nel parto la contrazione stimola altro ossitocina, che aumenta la contrazione, fino alla nascita." }
+        { type: "mc", q: "Quale esempio è una retroazione positiva?", options: ["Le contrazioni del parto stimolate dall'ossitocina", "La sudorazione", "La secrezione di insulina", "Il brivido"], answer: 0, explain: "Nel parto la contrazione stimola il rilascio di altra ossitocina, che aumenta la contrazione, fino alla nascita." }
       ]
     },
     {
@@ -236,7 +236,7 @@ TOPIC('it', {
     {
       type: "curiosity",
       title: "Perché il corpo è fatto così: la scala e la superficie",
-      html: `<p>Una cellula grande ha bisogno di molta più energia per scambiare sostanze con l'esterno di quanta ne riesca a ricevere, perché il volume cresce più in fretta della superficie (volume ∝ r³, superficie ∝ r²). Per questo i corpi grandi non sono fatti da cellule giganti, ma da <b>moltissime cellule piccole</b>, e per i grandi organismi servono apparati specializzati che portano le sostanze vicino a ogni cellula: il circolatorio porta ossigeno, il digerente i nutrienti. Gli alveoli polmonari, se fossero spiegati, coprirebbero una superficie dell'ordine di 70 m² (come un piccolo appartamento), compressa nel torace: la superficie di scambio è la chiave dell'organizzazione.</p>`
+      html: `<p>Una cellula grande dovrebbe scambiare più sostanze con l'esterno di quante la sua superficie riesca a gestire, perché il volume cresce più in fretta della superficie (volume ∝ r³, superficie ∝ r²). Per questo i corpi grandi non sono fatti da cellule giganti, ma da <b>moltissime cellule piccole</b>, e per i grandi organismi servono apparati specializzati che portano le sostanze vicino a ogni cellula: il circolatorio porta ossigeno, il digerente i nutrienti. Gli alveoli polmonari, se fossero spiegati, coprirebbero una superficie dell'ordine di 70 m² (come un piccolo appartamento), compressa nel torace: la superficie di scambio è la chiave dell'organizzazione.</p>`
     },
     {
       type: "conceptMap",
